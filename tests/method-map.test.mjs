@@ -26,11 +26,21 @@ test('every paper has a sourced preview with a specific contribution type', () =
   }
 });
 
-test('spotlight retains the wiki shortlist rather than conference awards', () => {
-  const expected = ['2025-chavan-indego', '2024-grauman-ego-exo4d', '2024-huang-egoexolearn', '2024-goletto-amego', '2026-choi-merit', '2026-kim-ma-egoqa', '2026-wang-s-ember', '2026-wang-egomemreason', '2026-guo-aem', '2026-braun-skillspotter', '2026-wen-provia'];
+test('spotlight matches the user-selected wiki shortlist across the map and catalog', () => {
+  const expected = ['2025-chavan-indego', '2026-choi-merit', '2026-kim-ma-egoqa', '2026-wang-s-ember', '2026-huang-apm-bench', '2026-guo-aem', '2026-wen-provia', '2026-chaudhari-ledger', '2026-lee-carve', '2026-yeo-worldmm', '2026-chalk-whareformer'];
+  const wiki = read('wiki-papers.json');
   assert.deepEqual(Object.keys(details).filter(slug => details[slug].spotlight).sort(), expected.sort());
+  assert.deepEqual(Object.keys(wiki).filter(slug => wiki[slug].spotlight).sort(), expected.sort());
+  for (const slug of slugs) {
+    assert.equal(details[slug].spotlight, wiki[slug]?.spotlight || false, slug);
+    if (!details[slug].spotlight) {
+      assert.equal(details[slug].spotlightReason, undefined, `${slug}: stale Spotlight reason`);
+      assert.equal(details[slug].spotlightSource, undefined, `${slug}: stale Spotlight source`);
+    }
+  }
   for (const slug of expected) {
-    assert(details[slug].spotlightReason);
+    assert.equal(details[slug].spotlightReason, wiki[slug].spotlightReason);
+    assert.equal(details[slug].spotlightSource, wiki[slug].spotlightSource);
     assert.match(details[slug].spotlightSource, /manifest\.json/);
   }
 });

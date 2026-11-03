@@ -1173,7 +1173,7 @@
       "bristol-mavi"
     ],
     "reviewed": false,
-    "spotlight": true,
+    "spotlight": false,
     "sourceLinks": {
       "../raw/2024-goletto-amego.pdf": "https://arxiv.org/pdf/2409.10917v1",
       "../assets/2024-goletto-amego.png": "/media/wiki/2024-goletto-amego.png",
@@ -1187,10 +1187,7 @@
         "sha256": "ec34cd3fbb7f7586deabf3f39761a20e980820bc608727bf0c14aff275e39a17"
       }
     ],
-    "sourceSha256": "0a347103c6ec0cb4ea5af4354edfebc18538c68292d7f07c55b9abb5b133ba05",
-    "spotlightReason": "Inspectable interaction memory: persistent object tracks, visual features, times and locations. Complements caption retrieval with a concrete visual record of manipulated objects.",
-    "spotlightLimit": "Repeated similar objects and hand-interaction assumptions remain difficult. This is not validated defect detection or cheap all-day operation.",
-    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+    "sourceSha256": "0a347103c6ec0cb4ea5af4354edfebc18538c68292d7f07c55b9abb5b133ba05"
   },
   "2024-grauman-ego-exo4d": {
     "title": "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives",
@@ -1259,7 +1256,7 @@
       "ut-austin-vision"
     ],
     "reviewed": false,
-    "spotlight": true,
+    "spotlight": false,
     "sourceLinks": {
       "../raw/2024-grauman-ego-exo4d.pdf": "https://arxiv.org/pdf/2311.18259v4",
       "../assets/2024-grauman-ego-exo4d.png": "/media/wiki/2024-grauman-ego-exo4d.png",
@@ -1273,10 +1270,7 @@
         "sha256": "dcf8428ae7e099c1802c0be0e5c9c86354cd25bdd906575da90b987aea349c9a"
       }
     ],
-    "sourceSha256": "888a76ba9ace2ed5517569d96a9500102de33a1a6447fa2ab215c5738a44f53a",
-    "spotlightReason": "Foundational skilled-activity recordings with synchronized viewpoints and expert feedback. Defines useful observations and annotation formats before choosing a model.",
-    "spotlightLimit": "Its skill labels mix several proxies. Aggregate recording hours and expert feedback do not establish construction-worker competence.",
-    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+    "sourceSha256": "888a76ba9ace2ed5517569d96a9500102de33a1a6447fa2ab215c5738a44f53a"
   },
   "2024-huang-egoexolearn": {
     "title": "EgoExoLearn: A Dataset for Bridging Asynchronous Ego- and Exo-centric View of Procedural Activities in Real World",
@@ -1322,7 +1316,7 @@
       "shanghai-opengvlab"
     ],
     "reviewed": false,
-    "spotlight": true,
+    "spotlight": false,
     "sourceLinks": {
       "../raw/2024-huang-egoexolearn.pdf": "https://arxiv.org/pdf/2403.16182v3",
       "../assets/2024-huang-egoexolearn.png": "/media/wiki/2024-huang-egoexolearn.png",
@@ -1336,10 +1330,7 @@
         "sha256": "ad16655da830b39fbaf40bb38d42745c76989fae8b9a2a8221fe03aa6b8f6ffc"
       }
     ],
-    "sourceSha256": "5d9c370b6bcedbc431fc628455b7b17fc145ea9e8e507efbf25009182bba899f",
-    "spotlightReason": "Makes relative skill assessment concrete through 34,239 retained comparisons and asynchronous demonstrations. Its controls show that an expert reference alone need not improve ranking.",
-    "spotlightLimit": "Cooking-centered comparisons, inconsistent reference gains and no verified worker-disjoint construction generalization.",
-    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+    "sourceSha256": "5d9c370b6bcedbc431fc628455b7b17fc145ea9e8e507efbf25009182bba899f"
   },
   "2024-lee-egoper": {
     "title": "Error Detection in Egocentric Procedural Task Videos",
@@ -4352,7 +4343,7 @@
       "eth-siplab"
     ],
     "reviewed": false,
-    "spotlight": true,
+    "spotlight": false,
     "sourceLinks": {
       "../raw/2026-braun-skillspotter.pdf": "https://static.siplab.org/papers/eccv2026-skillspotter.pdf",
       "../assets/2026-braun-skillspotter.png": "/media/wiki/2026-braun-skillspotter.png",
@@ -4366,10 +4357,7 @@
         "sha256": "39c74f399215b63820889a32d245b7fc77cd5518b82197bdff74db760fb2601d"
       }
     ],
-    "sourceSha256": "a26449a61e04a3618f8462cdc14e00170170fc93d1c2731697050602f5ec7b30",
-    "spotlightReason": "Separates finding a feedback-worthy moment from grading it. A concrete starting point for selecting clips for human review instead of producing an unexplained overall skill score.",
-    "spotlightLimit": "Subtle cooking/music events remain weak, pose and offline context are required, and matched-detection grading hides missed moments.",
-    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+    "sourceSha256": "a26449a61e04a3618f8462cdc14e00170170fc93d1c2731697050602f5ec7b30"
   },
   "2026-cai-cfd": {
     "title": "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding",
@@ -4477,7 +4465,7 @@
       "bristol-mavi"
     ],
     "reviewed": false,
-    "spotlight": false,
+    "spotlight": true,
     "sourceLinks": {
       "../raw/2026-chalk-whareformer.pdf": "https://arxiv.org/pdf/2607.08537v1",
       "../assets/2026-chalk-whareformer.png": "/media/wiki/2026-chalk-whareformer.png",
@@ -4491,7 +4479,10 @@
         "sha256": "ec4e6fa4a785c1c3b2aed2b809ef3eafa31c025911a3ad5c85b59495774f6013"
       }
     ],
-    "sourceSha256": "d98dc55fbf58e3547219b165329a0d42df753ae40d03ae10408e5e0ff15b3ee4"
+    "sourceSha256": "d98dc55fbf58e3547219b165329a0d42df753ae40d03ae10408e5e0ff15b3ee4",
+    "spotlightReason": "Learns persistent object association through appearance and relative 3D location, including after camera turns and occlusion. A concrete candidate for preserving tool and component identity.",
+    "spotlightLimit": "Main results use ground-truth masks and prepared geometry. Predicted masks reduce performance, and minute-scale single-wearer tests do not establish shared memory across shifts or unseen object movements.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
   },
   "2026-chatterjee-spot-bench": {
     "title": "Don't Pause! Every prediction matters in a streaming video",
@@ -4589,7 +4580,7 @@
       "jhu-b3"
     ],
     "reviewed": false,
-    "spotlight": false,
+    "spotlight": true,
     "sourceLinks": {
       "../raw/2026-chaudhari-ledger.pdf": "https://arxiv.org/pdf/2610.10538v1",
       "../assets/2026-chaudhari-ledger.png": "/media/wiki/2026-chaudhari-ledger.png",
@@ -4603,7 +4594,10 @@
         "sha256": "b1fb8730924c47b77ac81d558f82eee91c492cd7e2a344e9f84298301beb6fc3"
       }
     ],
-    "sourceSha256": "6a2197dafe59b6008f4d4a08deb0b6627785b699648418fad30a47c1c371b49a"
+    "sourceSha256": "6a2197dafe59b6008f4d4a08deb0b6627785b699648418fad30a47c1c371b49a",
+    "spotlightReason": "Persistent object identities, geometry and observation histories support questions about where tools and materials were last seen, including objects the wearer never touched.",
+    "spotlightLimit": "Tracking is expensive, scene transitions and identity errors remain difficult, geometry is not uniformly metric, and last-observed locations do not establish current unseen states.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
   },
   "2026-chavan-indego-assistant": {
     "title": "AI-based worker guidance in assembly and disassembly operations using multimodal ego/exo-centric data capture and structured task knowledge",
@@ -5422,7 +5416,7 @@
     ],
     "researchGroups": [],
     "reviewed": false,
-    "spotlight": false,
+    "spotlight": true,
     "sourceLinks": {
       "../raw/2026-huang-apm-bench.pdf": "https://arxiv.org/pdf/2609.37559v2",
       "../assets/2026-huang-apm-bench.png": "/media/wiki/2026-huang-apm-bench.png",
@@ -5436,7 +5430,10 @@
         "sha256": "1d7799b8b40756f2cf5f929f4ad69206e35c5c9dcd2ed525cb1c95b37ec24be7"
       }
     ],
-    "sourceSha256": "e06072af848383c195de018f78a3f3bbf0cdbd4b69aade20ca741c114630a067"
+    "sourceSha256": "e06072af848383c195de018f78a3f3bbf0cdbd4b69aade20ca741c114630a067",
+    "spotlightReason": "Tests whether memory survives session boundaries and distinguishes unavailable historical evidence from wrong answers. A useful protocol for worker-camera memory across shifts.",
+    "spotlightLimit": "Constructed trajectories average about 69 video minutes, probes do not establish autonomous continuous assistance, and the checked release remains pending.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
   },
   "2026-isaac-sensing-scheduling": {
     "title": "From Sensing to Scheduling: Deviation-Based Framework for Sensor-Aware Progress Monitoring and Schedule Control",
@@ -5681,7 +5678,7 @@
     ],
     "researchGroups": [],
     "reviewed": false,
-    "spotlight": false,
+    "spotlight": true,
     "sourceLinks": {
       "../raw/2026-lee-carve.pdf": "https://arxiv.org/pdf/2606.13141v2",
       "../assets/2026-lee-carve.png": "/media/wiki/2026-lee-carve.png",
@@ -5695,7 +5692,10 @@
         "sha256": "644e960ce902dbcced6f9952362228e0aeba93ef287ceba8eca74100f511572c"
       }
     ],
-    "sourceSha256": "a2786b41b5b16cac05fd705f10b0daec0e40ca731adf182d2a4eca8f2e1f4991"
+    "sourceSha256": "a2786b41b5b16cac05fd705f10b0daec0e40ca731adf182d2a4eca8f2e1f4991",
+    "spotlightReason": "Separates retrieval quality from answer quality and selects visual or textual evidence at chunk-specific granularities. A direct design and evaluation reference for video archive RAG.",
+    "spotlightLimit": "The inspected version promises release upon acceptance. Benchmark filtering removes recurring answer-bearing events, limiting transfer to repetitive work, and comparisons use adapted baseline configurations.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
   },
   "2026-lee-roboreward": {
     "title": "RoboReward: General-Purpose Vision-Language Reward Models for Robotics",
@@ -7717,7 +7717,7 @@
     ],
     "researchGroups": [],
     "reviewed": false,
-    "spotlight": true,
+    "spotlight": false,
     "sourceLinks": {
       "../raw/2026-wang-egomemreason.pdf": "https://arxiv.org/abs/2605.09874v2",
       "../assets/2026-wang-egomemreason.png": "/media/wiki/2026-wang-egomemreason.png",
@@ -7731,10 +7731,7 @@
         "sha256": "047e858cb11a00228379786ab79c3dd6562ef4c60dac49ce311bbb83e0f15d54"
       }
     ],
-    "sourceSha256": "54a541cb83412ec5834dba7b4748e91a1f277fe8c68bf1ce9cc45718b2707641",
-    "spotlightReason": "Multi-day questions require several evidence segments. Oracle-evidence controls help distinguish retrieval failure from reasoning failure, complementing S-EMBER's localization test.",
-    "spotlightLimit": "Five hundred questions from the same six people and environment, unequal model budgets, and a released option-mapping revision.",
-    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+    "sourceSha256": "54a541cb83412ec5834dba7b4748e91a1f277fe8c68bf1ce9cc45718b2707641"
   },
   "2026-wang-parsee-vad": {
     "title": "PARSEE-VAD: Efficient Training-Free Online Video Anomaly Detection via Proposition-Aware Reasoning and Streaming Evidence Escalation",
@@ -8415,7 +8412,7 @@
       "ntu-adaptive-machine-intelligence"
     ],
     "reviewed": false,
-    "spotlight": false,
+    "spotlight": true,
     "sourceLinks": {
       "../raw/2026-yeo-worldmm.pdf": "https://arxiv.org/pdf/2512.02425v2",
       "../assets/2026-yeo-worldmm.png": "/media/wiki/2026-yeo-worldmm.png",
@@ -8429,7 +8426,10 @@
         "sha256": "743d9fa35beb3ff874d4d22ae6f7fe14be4a6ab5adca4c8dfc9c1f9b6b1225d3"
       }
     ],
-    "sourceSha256": "bd54fdfc3d15770ff550e775afdab4eaa141031daed77db7a19ff47a1c199e5a"
+    "sourceSha256": "bd54fdfc3d15770ff550e775afdab4eaa141031daed77db7a19ff47a1c199e5a",
+    "spotlightReason": "Combines episodic, semantic and visual memory with adaptive retrieval over multiple timescales. An architectural reference to compare against simpler episode retrieval before adopting graph stores.",
+    "spotlightLimit": "Prepared-memory latency excludes full ingestion cost. Caption errors, graph-building overhead and bounded retrieval remain, without validated construction-quality judgments.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
   },
   "2026-zeng-onestreamer": {
     "title": "OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction",

@@ -2,8 +2,10 @@
   "2026-chalk-whareformer": {
     "summary": "Whareformer learns to associate object observations with persistent tracks using appearance and relative 3D location, including when objects temporarily leave the camera view.",
     "kind": "Method",
-    "spotlight": false,
-    "summarySource": "aligned-wiki/wiki/2026-chalk-whareformer.md"
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-chalk-whareformer.md",
+    "spotlightReason": "Learns persistent object association through appearance and relative 3D location, including after camera turns and occlusion. A concrete candidate for preserving tool and component identity.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
   },
   "2026-ma-r4dsg": {
     "summary": "R4DSG writes object histories as changes relative to stable scene anchors, then retrieves compact records for questions about past locations and transitions.",
@@ -56,8 +58,10 @@
   "2026-lee-carve": {
     "summary": "CARVE selects an evidence representation per video chunk, while V-RAGBench separates retrieval quality from answer generation.",
     "kind": "Method & benchmark",
-    "spotlight": false,
-    "summarySource": "aligned-wiki/wiki/2026-lee-carve.md"
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-lee-carve.md",
+    "spotlightReason": "Separates retrieval quality from answer quality and selects visual or textual evidence at chunk-specific granularities. A direct design and evaluation reference for video archive RAG.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
   },
   "2025-jeong-videorag": {
     "summary": "VideoRAG retrieves instructional videos from a corpus and supplies selected visual evidence to an answer generator.",
@@ -92,10 +96,8 @@
   "2024-goletto-amego": {
     "summary": "AMEGO builds a reusable visual memory of hand-object interactions and activity locations, then answers queries about their timing, order and overlap.",
     "kind": "Method & benchmark",
-    "spotlight": true,
-    "summarySource": "aligned-wiki/wiki/2024-goletto-amego.md",
-    "spotlightReason": "Inspectable interaction memory: persistent object tracks, visual features, times and locations. Complements caption retrieval with a concrete visual record of manipulated objects.",
-    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-goletto-amego.md"
   },
   "2026-liang-capmem": {
     "summary": "Tests reusable caption memory against direct video QA with matched-frame controls, repeated-query cost accounting and sparse visual verification.",
@@ -150,8 +152,10 @@
   "2026-yeo-worldmm": {
     "summary": "WorldMM answers long-video questions by iteratively retrieving complementary episodic, semantic, and visual memories.",
     "kind": "Method",
-    "spotlight": false,
-    "summarySource": "aligned-wiki/wiki/2026-yeo-worldmm.md"
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-yeo-worldmm.md",
+    "spotlightReason": "Combines episodic, semantic and visual memory with adaptive retrieval over multiple timescales. An architectural reference to compare against simpler episode retrieval before adopting graph stores.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
   },
   "2025-luo-video-rag": {
     "summary": "Video-RAG augments an existing video model with question-relevant speech, visible text and object information extracted from the supplied video.",
@@ -186,8 +190,10 @@
   "2026-huang-apm-bench": {
     "summary": "Evaluates persistent video memory across interrupted sessions, jointly testing recall, current perception, proactive responses, missing evidence, storage and latency.",
     "kind": "Benchmark",
-    "spotlight": false,
-    "summarySource": "aligned-wiki/wiki/2026-huang-apm-bench.md"
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-huang-apm-bench.md",
+    "spotlightReason": "Tests whether memory survives session boundaries and distinguishes unavailable historical evidence from wrong answers. A useful protocol for worker-camera memory across shifts.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
   },
   "2026-chen-egomonth": {
     "summary": "Tests exact episodic recall and cross-day reasoning using first-person recordings spanning 20–120 days per participant.",
@@ -198,10 +204,8 @@
   "2026-wang-egomemreason": {
     "summary": "Tests whether video memories can combine multiple observations across days to track entities, order events and infer routines.",
     "kind": "Benchmark",
-    "spotlight": true,
-    "summarySource": "aligned-wiki/wiki/2026-wang-egomemreason.md",
-    "spotlightReason": "Multi-day questions require several evidence segments. Oracle-evidence controls help distinguish retrieval failure from reasoning failure, complementing S-EMBER's localization test.",
-    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-wang-egomemreason.md"
   },
   "2024-zhang-llovi": {
     "summary": "LLoVi describes short video segments and lets an LLM answer long-video questions from those captions and intermediate summaries.",
@@ -296,10 +300,8 @@
   "2024-huang-egoexolearn": {
     "summary": "EgoExoLearn connects third-person demonstrations with first-person task execution through gaze, procedural annotations and human pairwise skill judgments.",
     "kind": "Dataset",
-    "spotlight": true,
-    "summarySource": "aligned-wiki/wiki/2024-huang-egoexolearn.md",
-    "spotlightReason": "Makes relative skill assessment concrete through 34,239 retained comparisons and asynchronous demonstrations. Its controls show that an expert reference alone need not improve ranking.",
-    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-huang-egoexolearn.md"
   },
   "2022-elfeki-multi-ego": {
     "summary": "Multi-DPP jointly selects important events and representative camera views from recordings made by several moving wearers.",
@@ -322,10 +324,8 @@
   "2024-grauman-ego-exo4d": {
     "summary": "Ego-Exo4D pairs first-person and third-person recordings with expert critiques, procedural annotations and 3D pose to benchmark understanding of skilled human activity.",
     "kind": "Dataset",
-    "spotlight": true,
-    "summarySource": "aligned-wiki/wiki/2024-grauman-ego-exo4d.md",
-    "spotlightReason": "Foundational skilled-activity recordings with synchronized viewpoints and expert feedback. Defines useful observations and annotation formats before choosing a model.",
-    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-grauman-ego-exo4d.md"
   },
   "2026-kim-ma-egoqa": {
     "summary": "MA-EgoQA tests reasoning across multiple camera wearers, with EgoMAS as a shared-memory retrieval baseline.",
@@ -374,8 +374,10 @@
   "2026-chaudhari-ledger": {
     "summary": "LEDGER stores object identities, 3D locations, histories, and descriptions so later questions can use persistent memory without replaying video.",
     "kind": "Method",
-    "spotlight": false,
-    "summarySource": "aligned-wiki/wiki/2026-chaudhari-ledger.md"
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-chaudhari-ledger.md",
+    "spotlightReason": "Persistent object identities, geometry and observation histories support questions about where tools and materials were last seen, including objects the wearer never touched.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
   },
   "2026-steenbergen-hoist-case-identifiers": {
     "summary": "Tests how alternative event-grouping rules change estimated hoist utilization and discovered process structure when native ride identifiers are absent.",
@@ -742,10 +744,8 @@
   "2026-braun-skillspotter": {
     "summary": "SkillSpotter combines video features and body pose to locate moments of skilled activity and label them as good execution or needing improvement.",
     "kind": "Method",
-    "spotlight": true,
-    "summarySource": "aligned-wiki/wiki/2026-braun-skillspotter.md",
-    "spotlightReason": "Separates finding a feedback-worthy moment from grading it. A concrete starting point for selecting clips for human review instead of producing an unexplained overall skill score.",
-    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-braun-skillspotter.md"
   },
   "2025-ashutosh-expertaf": {
     "summary": "ExpertAF learns to turn a learner's video and body pose into corrective commentary, a retrieved expert demonstration, and a generated expert pose sequence.",

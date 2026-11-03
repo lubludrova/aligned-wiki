@@ -22,6 +22,7 @@ OUTPUT = SITE / 'content/wiki'
 REGISTER = SITE / 'content/wiki-papers.json'
 CITATIONS = SITE / 'content/citation-counts.json'
 PUBLICATION_TYPES = SITE / 'content/publication-types.json'
+MAP_DESCRIPTIONS = SITE / 'content/map-papers.json'
 MEDIA = SITE / 'public/media/wiki'
 spec = importlib.util.spec_from_file_location('paper_metadata', SITE / 'scripts/import-paper-metadata.py')
 metadata_import = importlib.util.module_from_spec(spec)
@@ -61,7 +62,10 @@ def main():
     citation_records = manifest['citation_counts']['papers']
     citation_snapshots = {}
     archived = {entry['file']: entry for entry in manifest['papers']}
-    spotlight = {Path(entry['note']).stem: entry for entry in manifest['full_review']['spotlight']['works']}
+    spotlight_selection = manifest['full_review']['spotlight']
+    spotlight = {Path(entry['note']).stem: entry for entry in spotlight_selection['works']}
+    assert len(spotlight) == len(spotlight_selection['works']) == spotlight_selection['count'], 'Duplicate or inconsistent Spotlight selection'
+    assert set(spotlight) <= set(names), 'Spotlight contains a missing wiki note'
     review = json.loads((SITE / 'content/en/papers.json').read_text())
     existing_metadata = json.loads((SITE / 'content/paper-metadata.json').read_text())
     records = {}
@@ -171,6 +175,16 @@ def main():
     CITATIONS.write_text(json.dumps(citation_snapshots, ensure_ascii=False, indent=2) + '\n')
     assert set(type_records) == review_slugs | set(records), 'Contribution types and publication inventory differ'
     PUBLICATION_TYPES.write_text(json.dumps({slug: record['types'] for slug, record in type_records.items()}, ensure_ascii=False, indent=2) + '\n')
+    map_descriptions = json.loads(MAP_DESCRIPTIONS.read_text())
+    for slug, description in map_descriptions.items():
+        description['spotlight'] = slug in spotlight
+        if slug in spotlight:
+            description['spotlightReason'] = records[slug]['spotlightReason']
+            description['spotlightSource'] = records[slug]['spotlightSource']
+        else:
+            description.pop('spotlightReason', None)
+            description.pop('spotlightSource', None)
+    MAP_DESCRIPTIONS.write_text(json.dumps(map_descriptions, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps({
         'wikiNotes': len(records), 'reviewPapers': len(review),
         'sameSlugOverlap': len(set(records) & review_slugs),
