@@ -171,31 +171,18 @@
       "archive"
     ],
     "headingTitles": [
-      "TVR and V-RAGBench: two different retrieval scales",
-      "XML: an early reference for corpus localization"
+      "TVR / XML: a historical corpus-localization reference"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "TVR and V-RAGBench: two different retrieval scales"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "XML: an early reference for corpus localization"
+        "headingTitle": "TVR / XML: a historical corpus-localization reference"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "TVR and V-RAGBench: two different retrieval scales"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "XML: an early reference for corpus localization"
+        "headingTitle": "TVR / XML: a historical corpus-localization reference"
       }
     ],
     "coverage": "discussion"
@@ -223,10 +210,6 @@
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
         "headingTitle": "EventFormer: an event index before precise localization"
       }
     ],
@@ -244,31 +227,18 @@
       "archive"
     ],
     "headingTitles": [
-      "TVR and V-RAGBench: two different retrieval scales",
-      "CARVE: retrieving and selecting different forms of evidence"
+      "CARVE and V-RAGBench: choose the useful representation of each chunk"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "TVR and V-RAGBench: two different retrieval scales"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "CARVE: retrieving and selecting different forms of evidence"
+        "headingTitle": "CARVE and V-RAGBench: choose the useful representation of each chunk"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "TVR and V-RAGBench: two different retrieval scales"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "CARVE: retrieving and selecting different forms of evidence"
+        "headingTitle": "CARVE and V-RAGBench: choose the useful representation of each chunk"
       }
     ],
     "coverage": "discussion"
@@ -285,31 +255,18 @@
       "archive"
     ],
     "headingTitles": [
-      "WikiHowQA and LongerVideos: answers over a collection",
-      "VideoRAG, Jeong et al., Findings of ACL 2025, arXiv:2501.05874"
+      "VideoRAG (Jeong): retrieve an instructional video first"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "WikiHowQA and LongerVideos: answers over a collection"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "VideoRAG, Jeong et al., Findings of ACL 2025, arXiv:2501.05874"
+        "headingTitle": "VideoRAG (Jeong): retrieve an instructional video first"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "WikiHowQA and LongerVideos: answers over a collection"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "VideoRAG, Jeong et al., Findings of ACL 2025, arXiv:2501.05874"
+        "headingTitle": "VideoRAG (Jeong): retrieve an instructional video first"
       }
     ],
     "coverage": "discussion"
@@ -326,31 +283,18 @@
       "archive"
     ],
     "headingTitles": [
-      "WikiHowQA and LongerVideos: answers over a collection",
-      "VideoRAG, Ren et al., arXiv:2502.01549, 2025 preprint"
+      "VideoRAG (Ren): graph and visual retrieval across videos"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "WikiHowQA and LongerVideos: answers over a collection"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "VideoRAG, Ren et al., arXiv:2502.01549, 2025 preprint"
+        "headingTitle": "VideoRAG (Ren): graph and visual retrieval across videos"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "WikiHowQA and LongerVideos: answers over a collection"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "VideoRAG, Ren et al., arXiv:2502.01549, 2025 preprint"
+        "headingTitle": "VideoRAG (Ren): graph and visual retrieval across videos"
       }
     ],
     "coverage": "discussion",
@@ -369,31 +313,18 @@
       "archive"
     ],
     "headingTitles": [
-      "QV-M²: a multi-moment protocol",
-      "FlashMMR: several intervals for one query"
+      "QV-M² / FlashMMR: several intervals for one query"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "QV-M²: a multi-moment protocol"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "FlashMMR: several intervals for one query"
+        "headingTitle": "QV-M² / FlashMMR: several intervals for one query"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "QV-M²: a multi-moment protocol"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "FlashMMR: several intervals for one query"
+        "headingTitle": "QV-M² / FlashMMR: several intervals for one query"
       }
     ],
     "coverage": "discussion"
@@ -419,10 +350,6 @@
       }
     ],
     "citationLocations": [
-      {
-        "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
       {
         "chapter": "archive",
         "headingTitle": "Benchmarks for reading a selected video"
@@ -453,10 +380,6 @@
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
         "headingTitle": "Benchmarks for reading a selected video"
       }
     ],
@@ -475,28 +398,15 @@
       "archive"
     ],
     "headingTitles": [
-      "AMB: the order of object interactions",
       "AMEGO: interaction memory"
     ],
     "locations": [
-      {
-        "chapter": "archive",
-        "headingTitle": "AMB: the order of object interactions"
-      },
       {
         "chapter": "archive",
         "headingTitle": "AMEGO: interaction memory"
       }
     ],
     "citationLocations": [
-      {
-        "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "AMB: the order of object interactions"
-      },
       {
         "chapter": "archive",
         "headingTitle": "AMEGO: interaction memory"
@@ -527,10 +437,6 @@
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
         "headingTitle": "CapMem: reusable caption memory"
       }
     ],
@@ -548,26 +454,18 @@
       "archive"
     ],
     "headingTitles": [
-      "VOCAL-UDF: teaching the system a new observable condition"
+      "VOCAL-UDF: add a missing observable condition"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "VOCAL-UDF: teaching the system a new observable condition"
+        "headingTitle": "VOCAL-UDF: add a missing observable condition"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "Protocols: cost, completeness, and predicate quality"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "VOCAL-UDF: teaching the system a new observable condition"
+        "headingTitle": "VOCAL-UDF: add a missing observable condition"
       }
     ],
     "coverage": "discussion"
@@ -584,22 +482,18 @@
       "archive"
     ],
     "headingTitles": [
-      "HPP, Rauf et al., EMNLP 2026: an agent programs its evidence search"
+      "HPP: programmatic evidence search"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "HPP, Rauf et al., EMNLP 2026: an agent programs its evidence search"
+        "headingTitle": "HPP: programmatic evidence search"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "HPP, Rauf et al., EMNLP 2026: an agent programs its evidence search"
+        "headingTitle": "HPP: programmatic evidence search"
       }
     ],
     "coverage": "discussion"
@@ -616,22 +510,18 @@
       "archive"
     ],
     "headingTitles": [
-      "EgoCITE, Zhang et al., 2026 preprint: finding the right fact at the right time"
+      "EgoCITE: temporal meaning and self-contained records"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "EgoCITE, Zhang et al., 2026 preprint: finding the right fact at the right time"
+        "headingTitle": "EgoCITE: temporal meaning and self-contained records"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "EgoCITE, Zhang et al., 2026 preprint: finding the right fact at the right time"
+        "headingTitle": "EgoCITE: temporal meaning and self-contained records"
       }
     ],
     "coverage": "discussion"
@@ -648,22 +538,18 @@
       "archive"
     ],
     "headingTitles": [
-      "MM-Ego, Ye et al., ICLR 2025: an overview first, detailed frames next"
+      "MM-Ego: an overview before detailed frames"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "MM-Ego, Ye et al., ICLR 2025: an overview first, detailed frames next"
+        "headingTitle": "MM-Ego: an overview before detailed frames"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "MM-Ego, Ye et al., ICLR 2025: an overview first, detailed frames next"
+        "headingTitle": "MM-Ego: an overview before detailed frames"
       }
     ],
     "coverage": "discussion"
@@ -680,22 +566,18 @@
       "archive"
     ],
     "headingTitles": [
-      "FLORA, Leng et al., 2026: training a memory writer to identify events"
+      "FLORA: prepare event records before retrieval"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "FLORA, Leng et al., 2026: training a memory writer to identify events"
+        "headingTitle": "FLORA: prepare event records before retrieval"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "FLORA, Leng et al., 2026: training a memory writer to identify events"
+        "headingTitle": "FLORA: prepare event records before retrieval"
       }
     ],
     "coverage": "discussion"
@@ -712,22 +594,18 @@
       "archive"
     ],
     "headingTitles": [
-      "Two different VideoAgents: active reading and reusable memory"
+      "VideoAgent (Fan): reusable temporal and object memory"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "Two different VideoAgents: active reading and reusable memory"
+        "headingTitle": "VideoAgent (Fan): reusable temporal and object memory"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks for reading a selected video"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "Two different VideoAgents: active reading and reusable memory"
+        "headingTitle": "VideoAgent (Fan): reusable temporal and object memory"
       }
     ],
     "coverage": "discussion"
@@ -744,26 +622,18 @@
       "archive"
     ],
     "headingTitles": [
-      "MERIT versus EM²Mem: where to perform semantic integration"
+      "MERIT: several keys per episode, context when needed"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "MERIT versus EM²Mem: where to perform semantic integration"
+        "headingTitle": "MERIT: several keys per episode, context when needed"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks for reading a selected video"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "MERIT versus EM²Mem: where to perform semantic integration"
+        "headingTitle": "MERIT: several keys per episode, context when needed"
       }
     ],
     "coverage": "discussion"
@@ -780,26 +650,18 @@
       "archive"
     ],
     "headingTitles": [
-      "Graph memory: EGAgent and WorldMM"
+      "WorldMM: choose between event, semantic, and visual memory"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "Graph memory: EGAgent and WorldMM"
+        "headingTitle": "WorldMM: choose between event, semantic, and visual memory"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks for reading a selected video"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "Graph memory: EGAgent and WorldMM"
+        "headingTitle": "WorldMM: choose between event, semantic, and visual memory"
       }
     ],
     "coverage": "discussion"
@@ -816,22 +678,18 @@
       "archive"
     ],
     "headingTitles": [
-      "Video-RAG, Luo et al., NeurIPS 2025, arXiv:2411.13093"
+      "Video-RAG (Luo): add speech, visible text, and object evidence"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "Video-RAG, Luo et al., NeurIPS 2025, arXiv:2411.13093"
+        "headingTitle": "Video-RAG (Luo): add speech, visible text, and object evidence"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Benchmarks for reading a selected video"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "Video-RAG, Luo et al., NeurIPS 2025, arXiv:2411.13093"
+        "headingTitle": "Video-RAG (Luo): add speech, visible text, and object evidence"
       }
     ],
     "coverage": "discussion"
@@ -848,27 +706,18 @@
       "archive"
     ],
     "headingTitles": [
-      "EgoLifeQA: from a clip to a week of memory",
-      "EgoButler / EgoRAG: a multi-day memory baseline"
+      "EgoLife / EgoButler: a multi-day reference setting"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "EgoButler / EgoRAG: a multi-day memory baseline"
+        "headingTitle": "EgoLife / EgoButler: a multi-day reference setting"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "EgoButler / EgoRAG: a multi-day memory baseline"
+        "headingTitle": "EgoLife / EgoButler: a multi-day reference setting"
       }
     ],
     "coverage": "discussion"
@@ -885,22 +734,18 @@
       "archive"
     ],
     "headingTitles": [
-      "MERIT versus EM²Mem: where to perform semantic integration"
+      "EM²Mem: bind modalities before retrieval"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "MERIT versus EM²Mem: where to perform semantic integration"
+        "headingTitle": "EM²Mem: bind modalities before retrieval"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "MERIT versus EM²Mem: where to perform semantic integration"
+        "headingTitle": "EM²Mem: bind modalities before retrieval"
       }
     ],
     "coverage": "discussion"
@@ -917,22 +762,18 @@
       "archive"
     ],
     "headingTitles": [
-      "Graph memory: EGAgent and WorldMM"
+      "EGAgent: explicit temporal relationships"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "Graph memory: EGAgent and WorldMM"
+        "headingTitle": "EGAgent: explicit temporal relationships"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "Graph memory: EGAgent and WorldMM"
+        "headingTitle": "EGAgent: explicit temporal relationships"
       }
     ],
     "coverage": "discussion"
@@ -949,27 +790,18 @@
       "archive"
     ],
     "headingTitles": [
-      "Ego-R1 Bench: questions for agentic search",
-      "Ego-R1: training a controller to seek additional evidence"
+      "Ego-R1: learning when to search and look again"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "Ego-R1 Bench: questions for agentic search"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "Ego-R1: training a controller to seek additional evidence"
+        "headingTitle": "Ego-R1: learning when to search and look again"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Ego-R1 Bench: questions for agentic search"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "Ego-R1: training a controller to seek additional evidence"
+        "headingTitle": "Ego-R1: learning when to search and look again"
       }
     ],
     "coverage": "discussion"
@@ -988,19 +820,15 @@
       "streaming"
     ],
     "headingTitles": [
-      "APM-Bench and EgoMonth: cross-session memory and long histories"
+      "APM-Bench: memory across interrupted sessions"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "APM-Bench and EgoMonth: cross-session memory and long histories"
+        "headingTitle": "APM-Bench: memory across interrupted sessions"
       }
     ],
     "citationLocations": [
-      {
-        "chapter": "archive",
-        "headingTitle": "APM-Bench and EgoMonth: cross-session memory and long histories"
-      },
       {
         "chapter": "states",
         "headingTitle": "Benchmarks and evaluation protocols"
@@ -1008,6 +836,10 @@
       {
         "chapter": "streaming",
         "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "APM-Bench: memory across interrupted sessions"
       }
     ],
     "coverage": "discussion"
@@ -1024,18 +856,18 @@
       "archive"
     ],
     "headingTitles": [
-      "APM-Bench and EgoMonth: cross-session memory and long histories"
+      "EgoMonth: a longer calendar span"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "APM-Bench and EgoMonth: cross-session memory and long histories"
+        "headingTitle": "EgoMonth: a longer calendar span"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "APM-Bench and EgoMonth: cross-session memory and long histories"
+        "headingTitle": "EgoMonth: a longer calendar span"
       }
     ],
     "coverage": "discussion"
@@ -1052,18 +884,18 @@
       "archive"
     ],
     "headingTitles": [
-      "EgoMemReason — a week of video does not yet mean a week of reasoning"
+      "EgoMemReason: test whether several episodes are actually needed"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "EgoMemReason — a week of video does not yet mean a week of reasoning"
+        "headingTitle": "EgoMemReason: test whether several episodes are actually needed"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "EgoMemReason — a week of video does not yet mean a week of reasoning"
+        "headingTitle": "EgoMemReason: test whether several episodes are actually needed"
       }
     ],
     "coverage": "discussion"
@@ -1166,18 +998,18 @@
       "archive"
     ],
     "headingTitles": [
-      "Two different VideoAgents: active reading and reusable memory"
+      "VideoAgent (Wang): active frame selection"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "Two different VideoAgents: active reading and reusable memory"
+        "headingTitle": "VideoAgent (Wang): active frame selection"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Two different VideoAgents: active reading and reusable memory"
+        "headingTitle": "VideoAgent (Wang): active frame selection"
       }
     ],
     "coverage": "discussion"
@@ -1195,18 +1027,18 @@
       "archive"
     ],
     "headingTitles": [
-      "Caption-once, Frames-on-Demand: checking pixels only when necessary"
+      "CFD: checking pixels only when necessary"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "Caption-once, Frames-on-Demand: checking pixels only when necessary"
+        "headingTitle": "CFD: checking pixels only when necessary"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Caption-once, Frames-on-Demand: checking pixels only when necessary"
+        "headingTitle": "CFD: checking pixels only when necessary"
       }
     ],
     "coverage": "discussion"
@@ -1223,18 +1055,18 @@
       "archive"
     ],
     "headingTitles": [
-      "MemLife: the memory writer also needs optimization"
+      "MemLife: optimize what the writer preserves"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "MemLife: the memory writer also needs optimization"
+        "headingTitle": "MemLife: optimize what the writer preserves"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "MemLife: the memory writer also needs optimization"
+        "headingTitle": "MemLife: optimize what the writer preserves"
       }
     ],
     "coverage": "discussion"
@@ -1251,22 +1083,18 @@
       "archive"
     ],
     "headingTitles": [
-      "Focus: dividing work between ingestion and querying"
+      "Focus: divide work between ingestion and questions"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "Focus: dividing work between ingestion and querying"
+        "headingTitle": "Focus: divide work between ingestion and questions"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Protocols: cost, completeness, and predicate quality"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "Focus: dividing work between ingestion and querying"
+        "headingTitle": "Focus: divide work between ingestion and questions"
       }
     ],
     "coverage": "discussion"
@@ -1283,22 +1111,18 @@
       "archive"
     ],
     "headingTitles": [
-      "BlazeIt and TASTI: statistics and index reuse"
+      "BlazeIt: distinguish statistics from example retrieval"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "BlazeIt and TASTI: statistics and index reuse"
+        "headingTitle": "BlazeIt: distinguish statistics from example retrieval"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Protocols: cost, completeness, and predicate quality"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "BlazeIt and TASTI: statistics and index reuse"
+        "headingTitle": "BlazeIt: distinguish statistics from example retrieval"
       }
     ],
     "coverage": "discussion"
@@ -1315,22 +1139,18 @@
       "archive"
     ],
     "headingTitles": [
-      "BlazeIt and TASTI: statistics and index reuse"
+      "TASTI: reuse an index across structured questions"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "BlazeIt and TASTI: statistics and index reuse"
+        "headingTitle": "TASTI: reuse an index across structured questions"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Protocols: cost, completeness, and predicate quality"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "BlazeIt and TASTI: statistics and index reuse"
+        "headingTitle": "TASTI: reuse an index across structured questions"
       }
     ],
     "coverage": "discussion"
@@ -1347,22 +1167,18 @@
       "archive"
     ],
     "headingTitles": [
-      "EQUI-VOCAL: the user defines an event through examples"
+      "EQUI-VOCAL: define an event through examples"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "EQUI-VOCAL: the user defines an event through examples"
+        "headingTitle": "EQUI-VOCAL: define an event through examples"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Protocols: cost, completeness, and predicate quality"
-      },
-      {
-        "chapter": "archive",
-        "headingTitle": "EQUI-VOCAL: the user defines an event through examples"
+        "headingTitle": "EQUI-VOCAL: define an event through examples"
       }
     ],
     "coverage": "discussion"
@@ -1379,18 +1195,18 @@
       "archive"
     ],
     "headingTitles": [
-      "Reducto: saving input processing costs"
+      "Reducto: filter before expensive processing"
     ],
     "locations": [
       {
         "chapter": "archive",
-        "headingTitle": "Reducto: saving input processing costs"
+        "headingTitle": "Reducto: filter before expensive processing"
       }
     ],
     "citationLocations": [
       {
         "chapter": "archive",
-        "headingTitle": "Reducto: saving input processing costs"
+        "headingTitle": "Reducto: filter before expensive processing"
       }
     ],
     "coverage": "discussion"

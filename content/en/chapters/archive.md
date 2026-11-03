@@ -1,506 +1,414 @@
+<div>
 <a id="chapter-2"></a>
-
-
-
-Questions about the same archive require different outputs. “Show the installation of this panel” asks for an episode. “Find all instances of rework on it” requires a complete set of events. “Why was it reworked?” requires an answer based on several pieces of evidence. “What fraction of the time was spent on rework?” requires a defined counting procedure. The chapter is therefore organized around these tasks. Text memory, visual embeddings, graphs, and agent tools are ways to solve them, rather than separate user tasks.
-
-For Aligned, the common input consists of camera recordings, audio, and metadata spanning several shifts. Throughout this chapter, it is important to distinguish what the model has already been given: the relevant clip, one long recording, or the entire corpus. Verification that the final answer is supported by the right evidence is addressed in [Chapter 4](/chapters/evidence/#chapter-4).
-
-### Benchmarks and evaluation protocols: a map of the tasks
-
-| Task | Benchmarks and data | What is evaluated and what is provided in advance | Limitation and reuse |
-|---|---|---|---|
-| Find a recording and a moment | **TVR**, **ActivityNet Captions**, **DiDeMo** | Corpus retrieval and temporal localization in the authors’ settings | EventFormer reuses TVR, ActivityNet Captions, and DiDeMo (§4.1, Tables 2–4). Localization results must not be conflated with clip retrieval from Chapter 1. [TVR PDF](https://arxiv.org/pdf/2001.09099), [EventFormer PDF](https://arxiv.org/pdf/2402.13566v1) |
-| Find evidence for an answer | **V-RAGBench** | `query → evidence chunk → answer` within a given long video | Episode uniqueness is enforced by filtering out repetitions. Independent reuse is not established here. [PDF, §4](https://arxiv.org/pdf/2606.13141v2) |
-| Answer through corpus retrieval | **WikiHowQA / HowTo100M**, **LongerVideos** | Instructional answers based on retrieved videos or synthesis across a collection | ROUGE-L and judge preference do not measure event coverage. HowTo100M is the retrieval corpus in the reported experiment. [Jeong PDF](https://aclanthology.org/2025.findings-acl.1096.pdf), [Ren PDF](https://arxiv.org/pdf/2502.01549v1) |
-| Find several moments | **QV-M² / QVHighlights** | Several annotated intervals in one video, multi-moment metrics | QV-M² extends QVHighlights annotations. Baselines in the original paper do not constitute independent reuse of the new test. Coverage across several cameras is not evaluated. [FlashMMR PDF](https://proceedings.nips.cc/paper_files/paper/2025/file/faaa187af979e46dc54f4d43f8b815b2-Paper-Conference.pdf) |
-| Find a past episode and connect events | **EgoLifeQA**, **Ego-R1 Bench** | Multi-day EgoLife recordings, but different question sets and available tools | EgoLifeQA is reused by EGAgent, WorldMM, MERIT, and EM²Mem. This is one source environment, rather than independent domains. The main Jake subset contains 500 questions. Sources and differences are given below |
-| Memory across sessions and reasoning over a long history | **APM-Bench**, **EgoMonth**, **EgoMemReason** | Cross-session memory, episodes/habits, and reasoning over temporally separated evidence | APM simulates a causal stream, EgoMonth’s calendar span does not equal continuous recording, and EgoMemReason uses EgoLife. Independent reuse of these new tests is not established here |
-| Understand a given video | **EgoSchema**, **NExT-QA**, **LongVideoBench**, **Video-MME**, **LVBench** | QA over a recording that has already been selected. A short clip and a long video impose different workloads | EgoSchema is used in LLoVi and both VideoAgent papers, while Video-MME is used in several methods below. This is not yet archive retrieval. [LongVideoBench](https://longvideobench.github.io/index.html), [Video-MME PDF](https://openaccess.thecvf.com/content/CVPR2025/papers/Fu_Video-MME_The_First-Ever_Comprehensive_Evaluation_Benchmark_of_Multi-modal_LLMs_in_CVPR_2025_paper.pdf) |
-| Reconstruct object interactions | **AMB** on **EPIC-KITCHENS** | Temporal order and overlap of interactions, visual multiple-choice queries | Some difficult identity cases are filtered out. Independent reuse of AMB is not established here. [AMEGO PDF](https://arxiv.org/pdf/2409.10917) |
-| Evaluate the cost of reusable memory | **CapMem evaluation set** | 75 videos, several questions per recording, frame coverage controls | This is the paper’s protocol. The visual override policy was selected based on errors on the same test. [CapMem PDF](https://aclanthology.org/2026.emnlp-industry.233.pdf) |
-| Execute a compound query | **CLEVRER, CityFlow-NL, Charades** in VOCAL-UDF | Query execution over objects and predicates in different domains | The presence of several datasets does not establish validation of construction codes. [VOCAL-UDF PDF](https://arxiv.org/pdf/2408.02243v2) |
-| Evaluate retrieval and aggregate costs | **Focus, BlazeIt, TASTI, and Reducto protocols** | Quality relative to a chosen labeler, ingest/query cost, sampling, or filtering | The teacher detector’s output often serves as the reference. This is not human ground truth for defects. Sources are discussed in §2.4 |
-| Find material and compile a report | **MultiVENT-Raw** | Corpus retrieval and a separate evaluation of supported claims | The detailed protocol and citation F1 are in [Chapter 4](/chapters/evidence/#chapter-4). Not a benchmark of construction hardhat cameras |
-| Understand a given long video through agentic search | **LongVideoBench, EgoSchema, Video-MME, MLVU** in HPP | QA and, for MLVU SSC, description of a localized scene. The code/tool calling comparison uses a separate set of 150 LVB-3600 questions | Independent reuse of general QA tests, but not a benchmark of event retrieval completeness. Subtitle access and the number of iterations are fixed only in the specified comparison. [HPP, §§4–5, Tables 2–4](https://aclanthology.org/2026.emnlp-main.2377.pdf#page=7) |
-| Evaluate the temporal meaning of memory retrieval | **EgoLifeQA, EgoMem, EgoR1-Bench** in EgoCITE | QA, retrieval hit rate, and sequential addition of components | All three tests use EgoLife. The main experiment receives human captions/transcripts, and the automatic variant retains a manual person-ID prior. This is data reuse, rather than transfer to a new environment. [PDF, Table 2, Appendix C.1](https://arxiv.org/pdf/2608.12627v3#page=8) |
-| Select visual details within a given video | **EgoMemoria** | 7 026 questions over 629 videos, mean debiased accuracy after filtering questions answerable from text alone | Filters and duration groups affect averaging. Data and reference frames come from narrations, and independent reuse is not established. [MM-Ego, §§3.1–3.3, Table 3](https://arxiv.org/pdf/2410.07177v2#page=8) |
-| Prepare intervals and descriptions for an index | **What’s Going On / WGO, DenseCaptionBench** | WGO: 100 human and robot episodes, segmentation F1, caption score with correct boundaries, and joint F1. DenseCaptionBench diagnoses captions separately | WGO provides an episode instruction, and the comparison does not equalize all computation. WGO is reused from earlier work. Independent reuse of the new DenseCaptionBench is not established here. [FLORA, §2.1](https://arxiv.org/pdf/2610.31779v1) |
-| Separate recording an action from evaluating its outcome | **DenseRewardBench, RubricBench** in FLORA | Dense execution-quality labels and criterion-based episode evaluation. DenseRewardBench contains 40 held-out robotics episodes | Additional writer/rewarder diagnostics, rather than archive retrieval or a live detector. Future context is allowed. Independent reuse is not established here. [PDF, §2.2–2.3, §4.2](https://arxiv.org/pdf/2610.31779v1) |
-
-A new name does not make a test stronger. Reuse is supported by specific papers and does not imply data independence. For new datasets, the absence of confirmation in this review does not mean that nobody has used them. The general HD-EPIC and Ego4D protocols are discussed in Chapters [5](/chapters/states/#chapter-5) and [3](/chapters/observations/#chapter-3).
-
-<a id="task-2-1"></a>
-
-### 2.1. Find the relevant recording and time interval
-
-The required outputs are the recording address and the event boundaries. Retrieval within one selected video is easier than corpus retrieval: the correct camera and shift are already known. For Aligned, this distinction determines whether the relevant installation will be found among operations that look identical.
-
-#### First, distinguish tasks often grouped under the term Video QA
-
-The question “What did Pedro do yesterday afternoon?” does not begin with answer generation. The system first needs to select his camera, correctly interpret the date and time zone, find events within the relevant interval, and then check whether they are sufficient to answer. “Who fixed yesterday’s defect?” is harder: it requires linking the object, its previous state, its new state, and several observations. These examples are our interpretation of Aligned’s requirements, rather than tasks already solved by the papers discussed below.
-
-It is useful to distinguish four levels:
-
-1. **Clip understanding.** The model receives a short segment that has already been selected and describes it. There is no retrieval yet.
-2. **Within-video retrieval / temporal grounding.** The system must return an interval matching a query from one known video. The correct recording has already been selected for it.
-3. **Corpus retrieval.** The system must first find the relevant recordings among many cameras, shifts, and days. Similar events in the wrong place or at the wrong time are particularly dangerous here.
-4. **Evidence-grounded reasoning.** The system must combine several retrieved intervals, explain its conclusion, and indicate what supports each part of the answer.
-
-A single QA accuracy percentage does not evaluate all four levels. A model can guess the correct answer option from the general meaning of the question. Or it can find the correct scene but misread the action. The development of this literature is therefore best understood as a gradual separation of memory, retrieval, verification, and generation.
-
-#### TVR and V-RAGBench: two different retrieval scales
-
-**TVR** contains 109 thousand queries over 21.8 thousand television clips. Queries may require visual evidence, textual evidence, or both. This is a useful “find the recording, then the interval” setting and a way to examine the value of subtitles. Television dialogue does not test ASR robustness to construction noise. The paper builds on the earlier corpus moment retrieval formulation and did not invent it. [TVR / XML, PDF v2, §§3–5, pp. 5–11](https://arxiv.org/pdf/2001.09099#page=5).
-
-**Rethinking RAG in Long Videos: What to Retrieve and How to Use It?, Lee et al., arXiv preprint 2026**, version v2 dated October 2, is an important addition to the wiki. The authors construct V-RAGBench as a set of `query → evidence chunk → answer` triples. For each question, the target answer must rely on one unique episode. Questions answerable without video are filtered out, as are cases where another episode supplies the answer. The final set contains **2,100 questions, 1,800 train and 300 test**. Retrieval takes place within the source long video. [PDF, §4](https://arxiv.org/pdf/2606.13141v2).
-
-For Aligned, an experimental design that evaluates retrieval and answering separately is useful. However, evidence uniqueness is deliberately enforced here by removing repeated events. On a real construction site, repetitions are a central difficulty. V-RAGBench is therefore useful for diagnosing retrieval and reading, while an in-house benchmark should additionally test selection of the correct instance among similar installations. In the checked PDF version, the authors promise to release the benchmark, code, and evaluation scripts after acceptance (PDF p. 10). This statement does not establish that code has been published. We have not reproduced this result.
-
-#### WikiHowQA and LongerVideos: answers over a collection
-
-**WikiHowQA** is used by Jeong’s VideoRAG for instructional questions with video retrieval from HowTo100M. ROUGE-L compares the answer with reference text, rather than measuring object or temporal accuracy. In the reported comparison, BM25 searches Wikipedia, so both the knowledge source and the modality change. This cannot be treated as a clean ablation of video versus text on one corpus. [PDF, §3.1 and Table 1](https://aclanthology.org/2025.findings-acl.1096.pdf).
-
-**LongerVideos**, introduced with Ren’s VideoRAG, contains **164 videos, 22 collections, 602 questions, and approximately 134.6 hours** in version v1 dated February 3, 2025, Table 1. These are lectures, documentaries, and entertainment recordings. In Table 2, with answers compared by GPT-4o-mini as judge, the win rate against NaiveRAG in the aggregate Overall Winner category is **53.26%**, and against LightRAG it is **57.14%**. This is pairwise answer preference under the authors’ evaluation protocol, rather than the proportion of factually correct answers or retrieval recall. [PDF v1, Tables 1–2](https://arxiv.org/pdf/2502.01549v1).
-
-These tests evaluate the answer after retrieval. Their results complement retrieval metrics but do not replace evaluation of all retrieved events or support for individual claims.
-
-#### XML: an early reference for corpus localization
-
-**Lei et al., 2020.** XML encodes video and subtitles separately, constructs modality-dependent query representations, selects 100 recordings, and localizes the start and end within the candidates. For Aligned, the important element is the decomposition into recording retrieval and interval localization. EventFormer is discussed below as another way to build an index for the same corpus-level task, rather than an automatically established direct successor to XML. [Paper card](/notes/2020-lei-tvr/), [PDF v2, §§3–5](https://arxiv.org/pdf/2001.09099#page=5).
-
-![XML: retrieving a recording and an interval](/media/assets/expansion-memory/tvr-xml-architecture.png)
-
-*Original Figure 4, p. 8.*
-
-#### EventFormer: an event index before precise localization
-
-**[EventFormer](/notes/2026-hou-eventformer/)** replaces purely frame-level indexing with a more compact event index: it groups video, extracts event representations through attention, retrieves the top-10 recordings, and runs a precise localizer. In Table 8 of the checked preprint, the K-means variant stores 31 MB of precomputed representations and takes 43 ms to retrieve recordings, versus 161 MB and 88 ms for ReLoCLNet. This is the index size for a specific TVR setup and retrieval time, rather than the entire system’s memory or a complete answer. Localization is reported separately at 103 ms. [PDF v1, Figure 2, p. 4, Table 8, p. 9](https://arxiv.org/pdf/2402.13566v1#page=9).
-
-For Aligned, this supports using events as index units, but does not guarantee that an event is represented correctly: merging adjacent frames can hide a brief defect. The method uses localization trained on annotated intervals, so it cannot be transferred to an open construction ontology without evaluation. An important source limitation is that the checked version is the 2024 arXiv preprint, while the published ECIR 2026 version adds Yanyan Lan as an author. The final publisher PDF was not obtained, and its tables were not separately verified. The authors’ repository was empty when checked. All numbers reported in this review refer specifically to the preprint.
-
-![EventFormer event index](/media/assets/expansion-memory/eventformer-retriever.png)
-
-*Original Figure 2 from the checked preprint, p. 4.*
-
-#### CARVE: retrieving and selecting different forms of evidence
-
-CARVE searches four representations in parallel: visual/frame, visual/clip, text/frame, and text/clip. Each candidate retains a label identifying how it was retrieved. A multimodal reranker selects the most useful representation for each episode. The generator receives these selected forms of evidence, rather than a single modality for the entire question.
-
-In Table 2, over 300 test questions, **Recall@5 = 0.603**, versus **0.510** for the strongest baseline on this metric, and **nDCG@5 = 0.433**. With Qwen3-VL-8B, the pass rate is **0.352**. This is the fraction of open-ended answers judged correct by Qwen3.6-35B-A3B, averaged over three generation runs (§6, Table 2). It illustrates why retrieval and answer quality should be reported together: retrieved evidence still needs to be read correctly. In the ablation, all four representations achieve 0.603 Recall@5, while the best single representation, visual/clip, achieves 0.507, Table 3. [CARVE, PDF v2, §6, Tables 2–3](https://arxiv.org/pdf/2606.13141v2).
-
-#### VideoRAG, Jeong et al., Findings of ACL 2025, arXiv:2501.05874
-
-This paper addresses **retrieval over video corpus**: finding videos useful for answering an instructional question. Video and text representations are used for retrieval, while the generator receives the visual content of the retrieved recordings. VideoRAG-V supplies only frames, whereas VideoRAG-VT adds subtitles or ASR text. Informative frames are also selected. This is an important step from “here is a video, answer” to “find the video first.” [PDF](https://aclanthology.org/2025.findings-acl.1096.pdf), [code](https://github.com/starsuzi/VideoRAG).
-
-In Table 1, on WikiHowQA with the HowTo100M video corpus and LLaVA-Video-7B, VideoRAG-V achieves **ROUGE-L 24.95**, while Text RAG with BM25 achieves **17.22**. However, the BM25 baseline retrieves documents from Wikipedia, so both the modality and the knowledge source change (§3.1). This is not a clean video-versus-text ablation on one corpus. ROUGE-L evaluates similarity to reference instructional text. It does not measure the correctness of a construction object reference, timestamp accuracy, or the quality of evidence for a defect. For Aligned, the paper supports using video itself in retrieval/generation, but its question “how do I perform this action?” differs from “what actually happened to this panel yesterday?”.
-
-#### VideoRAG, Ren et al., arXiv:2502.01549, 2025 preprint
-
-**A key paper for understanding multi-video RAG.** Ren and colleagues combine two channels: a textual knowledge graph spanning videos and visual retrieval over video segments. Transcripts and descriptions supply entities and relations, the graph helps find related information, and visual features preserve information that the text did not convey. After selecting candidates, the system refines the relevant context and generates an answer. [PDF, §3](https://arxiv.org/pdf/2502.01549v1), [code](https://github.com/HKUDS/VideoRAG).
-
-![VideoRAG Ren: multi-video indexing and two retrieval channels](/media/assets/pdf-audit-videorag-ren-figure1.png)
-
-*Original figure: Ren et al., arXiv:2502.01549v1, Figure 1, PDF p. 3. (a) Collection of source videos. (b) A VLM and ASR produce text, separate graphs are merged, and text and video features are indexed in parallel. (c) The query is routed to graph and visual retrieval, and retrieved clips are filtered and recaptioned for the answer. Graph links are semantic and do not by themselves establish the physical identity of objects.*
-
-For Aligned, linking documents and several videos is useful, but a semantic relationship is not physical identity. Two recordings about a “concrete wall” can concern different walls. Separate constraints on site, zone, time, and object are needed. The current GitHub repository contains `VideoRAG-algorithm` and a separate `Vimo-desktop` application, and the README reports KDD 2026. The numbers given here refer to the preprint that was read, rather than an unchecked final conference version. A separate earlier static inspection of `_op.py` confirms a distinct visual retrieval path over segments. An application in the repository does not demonstrate deployment on a construction site.
-
-<a id="task-2-2"></a>
-
-### 2.2. Find all matching episodes
-
-The query “when was this tool used?” can have several correct answers. Here, the evaluation unit is a set of intervals, rather than one successful hit. For Aligned’s archive, this additionally requires coverage across cameras and shifts, deduplication of the same event, and explicit boundaries of the material inspected.
-
-#### QV-M²: a multi-moment protocol
-
-The authors of QV-M² expand the annotations to 2 212 pairs with 6 384 intervals and use metrics with multiple ground truths. This makes it possible to evaluate missed repetitions within one video. Such a test does not yet establish completeness of the event register for an entire multi-camera archive. [PDF, §§3–5](https://proceedings.nips.cc/paper_files/paper/2025/file/faaa187af979e46dc54f4d43f8b815b2-Paper-Conference.pdf).
-
-#### FlashMMR: several intervals for one query
-
-**[QV-M² / FlashMMR](/notes/2025-cao-flashmmr/)** addresses a different gap. The question “when was this tool used?” can correspond to several non-overlapping intervals even within one video. Under the QV-M² protocol described above, FlashMMR combines SlowFast/CLIP features, query–video interaction, and a temporal pyramid. On QV-M², G-mAP is 35.14 versus 32.14 for FlashVTG, while for queries with three or more target intervals it is 22.89 versus 20.19. Even here, retrieving all repetitions remains difficult. [PDF, §§3–5, Table 3, p. 9](https://proceedings.nips.cc/paper_files/paper/2025/file/faaa187af979e46dc54f4d43f8b815b2-Paper-Conference.pdf#page=9).
-
-A possible interpretation of the term post-verification needs correcting: Figure 3 and the training description associate this block with learning from temporal IoU and representation consistency. This is not evidence of a separate fact-checking step for every user query. The released inference code likewise contains no such independent verifier. Its value for Aligned lies in localization training and the protocol for evaluating a set of episodes. No metric based solely on top-1 similarity can replace checks for misses, duplicates, and total coverage of all events. [PDF, Figure 3, p. 6](https://proceedings.nips.cc/paper_files/paper/2025/file/faaa187af979e46dc54f4d43f8b815b2-Paper-Conference.pdf#page=6), [authors’ inference code](https://github.com/Zhuo-Cao/QV-M2/blob/main/FlashMMR/model.py).
-
-![FlashMMR architecture](/media/assets/expansion-memory/flashmmr-architecture.png)
-
-*Original Figure 3, p. 6. The post-verification block belongs to training.*
-
-<a id="task-2-3"></a>
-
-### 2.3. Answer a question over a long history
-
-For the question “why did the work have to be redone?”, returning a similar clip is insufficient. The system must preserve source observations, retrieve related episodes, and combine them into an answer. Below, memory tests are discussed first, followed by reading and writing methods. Persistent memory is also useful for the tasks in §2.1–2.2, but the cost of lost context is particularly clear here.
-
-#### Benchmarks for reading a selected video
-
-**EgoSchema** evaluates multiple-choice understanding of approximately three-minute egocentric videos. **LongVideoBench** contains 6,678 questions and 17 categories of referred reasoning. **Video-MME** includes 900 videos, 2,700 questions, and about 254 hours, with short/medium/long variants and settings with or without subtitles. **LVBench** is used in the MERIT comparison as another long-video QA test. The relevant video has already been selected in these tasks, so QA accuracy cannot be interpreted as corpus retrieval recall.
-
-**NExT-QA** is used in Fan’s VideoAgent, with different subsets for the main comparison and ablations. This must be taken into account before comparing numbers. Sources: [LongVideoBench](https://longvideobench.github.io/index.html), [Video-MME paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Fu_Video-MME_The_First-Ever_Comprehensive_Evaluation_Benchmark_of_Multi-modal_LLMs_in_CVPR_2025_paper.pdf), [Video-MME code](https://github.com/MME-Benchmarks/Video-MME), [VideoAgent Fan, Tables 1 and 6](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf), [MERIT, Tables 1–2](https://arxiv.org/pdf/2608.07663v2).
-
-**LVBench and LongVideoBench are different benchmarks.** LVBench is reused by MERIT and WorldMM, as is Video-MME Long. LongVideoBench is also used by Luo’s Video-RAG, but its experiment omits the original test’s interleaved input format. Reuse therefore does not make all published numbers directly comparable. [MERIT, §4.1, Tables 1–2](https://arxiv.org/pdf/2608.07663v2), [WorldMM, §4.1, Table 1](https://arxiv.org/pdf/2512.02425v2), [Video-RAG Luo, §4.1, Table 3](https://arxiv.org/pdf/2411.13093v4).
-
-#### EgoLifeQA: from a clip to a week of memory
-
-**Key paper: EgoLife / EgoButler / EgoRAG, Yang et al., CVPR 2025.** Both the benchmark and the baseline matter here. Six participants live and interact in one house for a week. Approximately 300 hours were recorded, with 266 remaining after selection. EgoLifeQA contains 3,000 questions, but the main published EgoButler evaluation uses **500 questions for one participant, Jake**. It must not be presented as a test on all 3,000 questions. [PDF](https://arxiv.org/pdf/2503.03803v3), [project](https://egolife-ai.github.io/), [code](https://github.com/EvolvingLMMs-Lab/EgoLife).
-
-For Aligned, this is the closest early demonstration that multi-day memory is a task in its own right. However, a house with six participants, predominantly Chinese speech, and deliberately organized activities is not equivalent to a construction site with 100 cameras. Synchronized recording of several people does not by itself mean that the baseline reliably combines evidence across all cameras.
-
-Reuse of EgoLifeQA is confirmed by separate method studies: [MERIT, §4.1 and Table 1](https://arxiv.org/pdf/2608.07663v2), [WorldMM, §4.1 and Table 1](https://arxiv.org/pdf/2512.02425v2), [EM²Mem, §4.1 and Table 1](https://arxiv.org/pdf/2609.00551v1), [EGAgent, §4.1 and Table 1](https://arxiv.org/pdf/2601.18157v3). This is useful for comparing memory variants, but preprocessing, readers, and evidence budgets differ. Several papers on the same domestic week do not replace transfer evaluation in other environments.
-
-#### Ego-R1 Bench: questions for agentic search
-
-The version of Ego-R1 Bench described here contains 300 questions over the long EgoLife history. The system can successively query memory and visual evidence. Train and test use the same week, while a separate EgoLifeQA evaluation removes overlap with training without a clear remaining denominator. The controller training results below refer specifically to this protocol and the checked v1 preprint. [PDF, Table 3 and Appendix C](https://arxiv.org/pdf/2506.13654v1).
-
-#### APM-Bench and EgoMonth: cross-session memory and long histories
-
-**APM-Bench: evaluating a video assistant with cross-session memory**
-
-**[APM-Bench](/notes/2026-huang-apm-bench/), Huang et al., 2026** is a benchmark for comparing ways of storing past experience. The authors do not propose their own video assistant architecture. The central question is: **what should be preserved after one session ends so that it can be used when the camera is switched on again?**
-
-Experiments use **prerecorded videos with simulated streaming access**. The model sees only the recording up to the current moment, with no future frames. This evaluates assistant behavior as video arrives, rather than demonstrating a live service.
-
-The workflow is: **first session → store memory → break → memory + available portion of the next session → answer or decide to remain silent**.
-
-Three implementation options are compared:
-
-- **Video as memory:** preserve past recordings and feed them to the model again at query time.
-- **Text as memory:** create a summary at the end of each session, then supply past summaries with the current video at query time.
-- **Specialized systems:** process sessions sequentially while retaining the method’s internal memory, such as a KV-cache, visual features, an event tree, or another state.
-
-For evaluation, 104 sequences of related activities containing 549 sessions are assembled from EgoLife and HD-EPIC. The tests cover **recalling past sessions**, **understanding the current scene**, and **choosing when to help or remind**. Quality, response latency, and memory size are measured together. [PDF v2, §§3.1–3.3 and 4.1](https://arxiv.org/pdf/2609.37559v2#page=4).
-
-The key result is that preserving detailed history helps recall the past but costs more. For example, Gemini 3.6 Flash achieves **69.37%** on cross-session questions with video memory versus **47.50%** with text summaries. Yet even access to the relevant past does not guarantee appropriate proactive assistance. For Aligned, the paper is useful as a protocol for testing memory across shifts and breaks. [PDF v2, Table 3 and §4.3](https://arxiv.org/pdf/2609.37559v2#page=8).
-
-![APM-Bench protocol](/media/assets/expansion-memory/apm-bench-protocol.png)
-
-*Original Figure 1, PDF v2, p. 2. This is a protocol diagram, rather than a new model architecture.*
-
-**[EgoMonth](/notes/2026-chen-egomonth/)** complements APM at a different scale: 301 hours, 738 clips, 20 participants, and calendar periods of 20–120 days. Its 1 443 questions distinguish habits and stable information, retrieval of a specific episode, and reasoning over several pieces of evidence. Event counting, temporal order, and locating an object after several moves are particularly useful for Aligned. However, calendar coverage does not equal continuous recording of every day. [PDF v1, §§3–4](https://arxiv.org/pdf/2608.13113v1#page=3).
-
-In Table 3, Gemini 2.5 Pro averages 71.8% across tasks, compared with a human reference of 94.2%. Averaging across all questions instead gives different values: 72.6% and 95.1%. On event counting, the scores are 52.0% versus 94.4%. This is four-choice QA, rather than the completeness of retrieved episodes. Different models also receive different frame budgets. The paper presents a useful set of difficult tasks but does not establish the architectural superiority of a particular memory type. [PDF v1, Table 3, p. 8](https://arxiv.org/pdf/2608.13113v1#page=8).
-
-![Examples of EgoMonth questions](/media/assets/expansion-memory/egomonth-questions.png)
-
-*Original Figure 2, p. 3: examples of questions over one video and several recordings.*
-
-#### EgoMemReason — a week of video does not yet mean a week of reasoning
-
-**Wang et al., COLM 2026.** This paper forces a distinction between the length of the available recording and the temporal span of the evidence actually needed. A question may concern seven days of video yet be answerable from one frame in the last twenty seconds. EgoMemReason deliberately requires combining object states, event order, and recurring habits across long periods. [Paper](https://arxiv.org/abs/2605.09874v2), §3, Table 1, Appendix C.3.
-
-![EgoMemReason: three question types using evidence across several days](/media/assets/pdf-audit-egomemreason-fig1.png)
-
-*Original Fig. 1, PDF p. 2, arXiv:2605.09874v2. The upper panels ask about an event and an object’s history, while the lower panel concerns a recurring habit. Colored links indicate which separated observations are needed for the answer. This is a diagram of benchmark tasks, rather than a new memory architecture. [PDF](https://arxiv.org/abs/2605.09874v2).*
-
-Across 500 questions, the average requirement is **5.1 evidence segments** and **25.9 hours of backtracking**. Observations are restricted to the past relative to query time. Gemini-3-Flash achieves **39.6%** under the main protocol, which samples frames from the available past video (Table 1, PDF p. 8), and **67.2%** when given only oracle evidence clips (Appendix C.3, PDF p. 22). This compares evidence input conditions, rather than measuring the recall of a separate retriever. The conclusion has two parts: input evidence selection loses much of what is needed, but even perfect evidence delivery does not eliminate reasoning errors. Aligned should therefore evaluate “did we find all the necessary clips?” separately from “did we draw the right conclusion from what we found?”.
-
-This is a benchmark, rather than a new memory. It uses the same EgoLife week, so several high scores on EgoLife-derived datasets do not constitute several independent confirmations of domain transfer. The [GitHub repository](https://github.com/Ziyang412/EgoMemReason) contains annotations and evaluation of different models. Version v1.1 shuffles answer options: old predictions stored only as letters require remapping.
-
-#### AMB: the order of object interactions
-
-**Active Memories Benchmark (AMB)** contains approximately 20.5 thousand questions over 100 EPIC-KITCHENS videos. These are visual multiple-choice queries about object interactions, rather than an open-ended conversation with a manager. AMEGO, the method introduced with the benchmark, is discussed below. Its AMEGO-L variant achieves **36.3%**, versus **23.6%** for the strongest reported baseline and 20% for random choice, Table 3. The positive result indicates the value of representing interactions. It does not establish high identification accuracy for visually identical tools: some difficult cases involving different instances of the same class were filtered out during benchmark preparation, Appendix §8.1, PDF p. 21. [AMEGO, PDF, Table 3 and Appendix §8.1](https://arxiv.org/pdf/2409.10917).
+</div>
+
+The question “What happened to this panel yesterday?” requires more than a model that understands a supplied clip. The system must make recordings searchable, find the relevant episodes, recover enough context, and return to the source when descriptions omit a decisive detail. Repeating that process for many questions also requires memory that can be reused without reading the entire archive again.
+
+This chapter follows those decisions: construct reusable memory → retrieve an episode → inspect additional evidence → combine events across a long history → handle repetitions and compound queries → account for processing cost. The examples concern Aligned’s multi-day construction archive. Establishing that observations show the same physical object or work instance is the separate problem of [Chapter 3](/chapters/observations/#chapter-3), while claim-level support and abstention are developed in [Chapter 4](/chapters/evidence/#chapter-4).
+
+<div>
+<a id="benchmarks-and-evaluation-protocols-a-map-of-the-tasks"></a>
+<a id="table-1"></a>
+<a id="table-1-row-1"></a>
+<a id="table-1-row-2"></a>
+<a id="table-1-row-3"></a>
+<a id="table-1-row-4"></a>
+<a id="table-1-row-5"></a>
+<a id="table-1-row-6"></a>
+<a id="table-1-row-7"></a>
+<a id="table-1-row-8"></a>
+<a id="table-1-row-9"></a>
+<a id="table-1-row-10"></a>
+<a id="table-1-row-11"></a>
+<a id="table-1-row-12"></a>
+<a id="table-1-row-13"></a>
+<a id="table-1-row-14"></a>
+<a id="table-1-row-15"></a>
+<a id="table-1-row-16"></a>
+<a id="table-1-row-17"></a>
+</div>
+
+### 2.1. Build memory before the question arrives
+
+A useful starting system stores short episodes with timestamps, descriptions, speech where available, visual features, and links to the source. A question searches these records, after which a reader examines selected evidence. The central choice is how much information to extract once during ingestion and how much to reconstruct for each question.
 
 #### LLoVi: an early caption-first baseline
 
-**LLoVi — A Simple LLM Framework for Long-Range Video Question-Answering, Zhang et al., EMNLP 2024.** A video model describes short segments, and an LLM answers from descriptions and intermediate summaries. In the original 2023 preprint, the authors report 50.3% on EgoSchema and an advantage of 18.1 percentage points over the stated previous best method. This is a historical result. Captions make the loss of a fact inspectable, but remain interpretations of an image: “holding a drill near a panel” cannot be turned into “secured the panel” without justification. VideoTree next considers selective elaboration, while CapMem addresses description reuse. This is a development of a family of ideas, rather than a claim of direct code or architectural lineage. [Paper](https://aclanthology.org/2024.emnlp-main.1209/), [preprint](https://arxiv.org/abs/2312.17235v1), [code](https://github.com/CeeZh/LLoVi).
+**LLoVi, Zhang et al., EMNLP 2024**, converts short video segments into descriptions and lets an LLM answer through those descriptions and intermediate summaries. It is a useful historical baseline for understanding the separation between visual perception and language reasoning, but its selected-video QA setting leaves archive retrieval and repeated-query cost largely outside the experiment. For Aligned, the enduring lesson is the information bottleneck: a detail omitted by the captioner is unavailable to an answerer that sees only text. [Paper, §3](https://aclanthology.org/2024.emnlp-main.1209/).
 
-#### VideoTree: describing regions of interest
+<div>
+<a id="two-different-videoagents-active-reading-and-reusable-memory"></a>
+<a id="table-2"></a>
+<a id="table-2-row-1"></a>
+<a id="table-2-row-2"></a>
+</div>
 
-**VideoTree, Wang et al., CVPR 2025**, develops the idea of selective description. Rather than reading the whole video in equal detail, the system clusters visual features, describes representatives, evaluates their relevance to the query, and deepens the tree in relevant regions. This is a query-adaptive hierarchy: the question influences where computation is spent. An important difference from persistent memory is that the tree is built for the current question. For Aligned, it makes sense to use this mechanism within an already retrieved shift or episode, rather than reinspecting the entire archive for each message. The authors demonstrate performance on long-video QA, but that does not establish the ability to maintain a continuously updated multi-camera log. [PDF, Figure 1 and §3](https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_VideoTree_Adaptive_Tree-based_Video_Representation_for_LLM_Reasoning_on_Long_CVPR_2025_paper.pdf), [code](https://github.com/Ziyang412/VideoTree).
+#### VideoAgent (Fan): reusable temporal and object memory
 
-<a id="paper-2025-ye-mm-ego"></a>
+**Fan’s VideoAgent, ECCV 2024**, makes the memory-and-tools architecture explicit. Two-second segments receive captions and retrieval features. A separate object memory stores tracked appearances, visual features, identifiers, and occurrence intervals in SQL. Given a question, GPT-4 can read captions, locate a segment, ask a video model about a short interval, or query object appearances. The results guide subsequent tool calls. [PDF, §2, Figure 2](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf).
 
-#### MM-Ego, Ye et al., ICLR 2025: an overview first, detailed frames next
+![VideoAgent: reusable temporal and object memory with query-time tools](/media/assets/2024-fan-videoagent-figure2.png)
 
-**MM-Ego** first represents up to 300 frames using one compressed token per frame. Qwen2-7B with a trainable memory pointer selects 32 frames, and a second pass reads their detailed features. For Aligned, this is a local reader option after retrieval. On EgoMemoria, mean debiased accuracy is **47.32 → 55.97 → 61.27** for the original model, the same model with egocentric training data, and MM-Ego. MM-Ego exceeds the baseline trained on the same mixture by 5.30 percentage points. During training, the detailed pass receives ground-truth frame indices, while inference uses predicted indices. The comparison with GPT-4o on 32 uniformly sampled frames does not equalize access to an overview of 300 frames. The cost of full reading and persistent memory are not evaluated. [PDF, §2.2, Tables 3–5](https://arxiv.org/pdf/2410.07177v2#page=8).
+*Original Figure 2, PDF p. 4. Memory construction precedes the agent’s retrieval and visual-reading tools.*
 
-#### MovieChat: compressing visual context
+This remains useful despite the age of its backbones because it separates reusable indexing from question-dependent inspection. Removing object memory reduces accuracy from 71.3% to 62.7% in the 150-question NExT-QA ablation, Table 6. This is evidence for that component under the stated protocol. It does not establish that object identities remain reliable across workers or shifts. For Aligned, the temporal memory and tool interface are architectural references, while physical-object association belongs to the checks in Chapter 3.
 
-Another line of work saves context **inside the visual model**, rather than through an external retrieval index. **MovieChat, Song et al., CVPR 2024**, compresses visual tokens into short-term and long-term memory. The authors demonstrate processing more than 10 thousand frames on a GPU with 24 GB of memory in a visual-only test at 224 × 224 resolution, without skipping frames (Figure 1). This is a result about the resources needed to process a sequence. It does not mean that every detail of every frame is preserved, and it does not provide ready-made retrieval over 36 thousand camera-hours. For Aligned, these methods are interesting as local readers of selected video. [Paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Song_MovieChat_From_Dense_Token_to_Sparse_Memory_for_Long_Video_CVPR_2024_paper.pdf), [code](https://github.com/wenhaochai/MovieChat).
+<div>
+<a id="merit-versus-emmem-where-to-perform-semantic-integration"></a>
+</div>
 
-#### Two different VideoAgents: active reading and reusable memory
+#### MERIT: several keys per episode, context when needed
 
-Two papers with the same short title appeared in 2024. Their architectures must not be combined into one, nor their results transferred from one to the other.
+**MERIT, Choi et al., ECCV 2026**, is a strong starting point for Aligned because it keeps the initial memory simple. Each 30-second episode receives event, object, and summary keys, plus a dialogue key when speech is available. A question may match any key. After retrieval, neighboring captions supply the context needed to interpret the episode. The search loop operates on text, with selected frames entering the final answer call. [PDF, §3, Appendix A](https://arxiv.org/pdf/2608.07663v2).
 
-| Paper | Main idea | Verified result | What transfers to Aligned |
-|---|---|---|---|
-| **VideoAgent, Xiaohan Wang et al., ECCV 2024**, arXiv:2403.10517 | An LLM iteratively requests the most useful frames through tools | 54.1% on the full EgoSchema set, 60.2% on the 500-question subset. An average of 8.4 frames is used to answer | Active refinement instead of reading all frames |
-| **VideoAgent, Yue Fan et al., ECCV 2024**, arXiv:2403.11481 | Temporal memory and object memory are built first, then queried by an agent | 60.2% on the full EgoSchema set. Object memory ablation: 71.3% → 62.7% on 150 NExT-QA questions | Separate indexing and separate tools for retrieval and visual verification |
+![MERIT: multi-key episodes and question-dependent temporal expansion](/media/assets/2026-choi-merit-figure2.png)
 
-Sources: [Wang PDF, Tables 1–3](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10325.pdf), [Fan PDF, Tables 1 and 6](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf). Wang’s small frame count refers to the frames selected for understanding, rather than the full cost of decoding, feature extraction, and retrieval. Fan’s main NExT-QA comparison uses 600 questions, while the ablations use 150. These results do not form a single table under an identical protocol.
+*Original Figure 2, PDF p. 6. Multiple retrieval keys preserve different entry points into the same episode.*
 
-**Key paper: Fan’s VideoAgent.** It demonstrates an architectural principle directly needed by Aligned: expensive processing of a recording should produce memory usable for many future questions.
+Consider “Pedro picked up a spirit level, checked the panel, and called Alex.” An action key can match a question about checking alignment even when a generic summary emphasizes the call. Neighboring episodes may identify which panel was involved. This is our construction example of the mechanism. It makes the memory inspectable and postpones much contextual synthesis until the question is known.
 
-1. Video is divided into two-second segments. LaViLa generates captions, while ViCLIP and a text encoder provide retrieval features.
-2. Objects are detected and tracked. Visual similarity helps link separate appearances of the same instance.
-3. Temporal memory stores segment descriptions and features. Object memory stores identifiers and occurrence intervals in SQL, along with visual features.
-4. GPT-4 selects a tool: read captions within an interval, retrieve a segment semantically, ask a video model about a short clip, or query object memory.
-5. A tool result can lead to another query. The final answer is constructed after collecting context. [§2, Figure 2](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf).
-
-![VideoAgent — Temporal Memory, Object Memory and Tool-use](/media/assets/2024-fan-videoagent-figure2.png)
-
-*Figure: VideoAgent architecture. Source: Fan et al., ECCV 2024, Figure 2, PDF p. 4. On the left, video is transformed into temporal memory with captions and features, and object memory with identifiers, occurrences, and object features. On the right, the agent repeatedly calls four tools and receives their results. This is the original diagram, rather than a demonstration of re-identification accuracy.*
-
-In a construction example, the memory could return “this tool appeared with Pedro at 14:12 and with another worker at 14:26.” But **an object’s appearance is not its state**. An SQL table of occurrences does not yet justify concluding that a fastener was installed correctly. This is the boundary between memory/retrieval and quality assessment.
-
-A practical limitation is that captioning or re-identification errors enter memory and are reused. The improvement in localization when captions are replaced with ground-truth narrations shows how retrieval depends on perception quality. [Fan’s code](https://github.com/flowithin/VideoAgentECCV), [Wang’s project](https://wxh1996.github.io/VideoAgent-Website/). Fan’s README describes separate memory construction and inference stages and several model environments. This is a research implementation, rather than a ready-to-use site service.
-
-#### AMEGO: interaction memory
-
-**AMEGO — Active Memory from long EGOcentric videos, Goletto et al., ECCV 2024** is useful as an alternative memory concept. It remembers which objects the hands interacted with and the visually recognizable areas where work occurred. This is a more structured visual memory, rather than a general-purpose LLM chat system. [PDF](https://arxiv.org/pdf/2409.10917), [code](https://github.com/gabrielegoletto/AMEGO).
-
-A stable sequence of hand–object contact detections starts an interaction tracklet, after temporal filtering of isolated activations. A tracker continues the observation, DINOv2 features are aggregated over the track, and similar tracks are linked to object instances. In parallel, periods of activity in the same place are grouped into location memory. A query can then be answered through temporal order and interval overlap. For example, “which object was used before this?” becomes a search for neighboring interactions, rather than a new description of the entire video.
-
-For Aligned, AMEGO’s value is in selecting events through hand interactions with work objects. But an area’s appearance does not provide room coordinates, and the visual similarity of two power screwdrivers does not prove they are the same tool. Such associations should remain verifiable hypotheses.
-
-#### Video-RAG, Luo et al., NeurIPS 2025, arXiv:2411.13093
-
-This method adds **retrieved auxiliary text** to selected frames: ASR, OCR, and information about detected objects. The query determines which auxiliary information to retrieve. An existing LVLM then receives both frames and compact text. This is a training-free extension of a video model, rather than a standalone memory covering all cameras. [PDF, Figure 2](https://arxiv.org/pdf/2411.13093v4), [code](https://github.com/Leon1207/Video-RAG-master).
-
-In camera-ready Table 1, LongVA-7B with 128 frames achieves **52.6%** on Video-MME without subtitles, **56.0%** with subtitles, and **62.0%** with Video-RAG. The gain over the subtitle variant is therefore **6.0 percentage points**, rather than 9.4 percentage points. With LLaVA-Video-72B, the result is 77.4% versus 75.9% with subtitles. Conditions with different access to audio-derived text must not be conflated. The lesson for Aligned is specific: written text, speech, and visual features complement each other, but each textual piece of evidence must retain its provenance. The remark “I already secured everything” is a person’s statement, rather than visual verification of the fastening.
-
-#### EgoButler / EgoRAG: a multi-day memory baseline
-
-EgoGPT creates audiovisual captions for 30-second clips. These form a memory with timestamps and summaries at larger scales. EgoRAG retrieves relevant descriptions, reexamines selected segments, and passes the material to an answer model. It is important to distinguish the conceptual hierarchy in the figure from the experimental implementation described: the main pipeline retrieves three clips through text similarity and uses GPT-4o for the final answer, §4.2–5.
-
-![EgoButler: EgoGPT creates memory, EgoRAG selects evidence](/media/assets/pdf-audit-egolife-egobutler-figure7.png)
-
-*Original figure: Yang et al., arXiv:2503.03803v3, Figure 7, PDF p. 7. On the left (a), EgoGPT converts audio and video into timestamped captions. On the right (b), the query provides retrieval keys for multi-level memory, and selected evidence is returned to the model. The figure shows the conceptual system, while the main experiment in §5 uses textual top-3 retrieval and GPT-4o for the final answer.*
-
-EgoGPT personalized on the first day achieves **36.0%** average accuracy, compared with **33.1%** without personalization and **36.9%** with a Gemini captioner, Table 5. In the separate ablation in Table 7, human-verified audiovisual captions achieve **45.5%**, versus **36.0%** for personalized EgoGPT captions. The caption of that table explicitly identifies personalized EgoGPT as the common answer model, whereas §5 specifies GPT-4o for the main Table 5 comparison. This therefore supports a conclusion about memory quality within Table 7, rather than a fully controlled comparison between the two tables.
-
-<a id="paper-2026-rauf-hpp"></a>
-
-#### HPP, Rauf et al., EMNLP 2026: an agent programs its evidence search
-
-The question “how many times did the worker return to this assembly?” may require several searches, removal of repeated hits, and order verification. **HPP — Hierarchical Programmatic Probing** allows an LLM to express this sequence as a program in a stateful Python environment. Intermediate intervals and visual reading results remain in variables. The model can refine the query, merge what it found, and inspect an individual clip. This is a distinct agentic reader alongside VideoAgent and Ego-R1, rather than an established continuation of their architectures. [PDF, §3, Figure 1](https://aclanthology.org/2026.emnlp-main.2377.pdf#page=3).
-
-A hierarchy of shots, scenes, and semantic clusters is constructed as needed. Retrieval combines similarity of global representations with token–frame MaxSim. The agent calls functions for frame sampling, temporal zooming, subtitle search, and VLM queries. The hierarchy and embeddings are cached as they are used. The base configuration combines GPT-5-mini with Qwen3-VL-2B without dedicated controller training. “2B” therefore describes only the visual reader, rather than the whole system. The method processes prerecorded video, and does not evaluate maintaining durable memory for several workers.
-
-![Original HPP diagram](/media/assets/new-work-selection-2026-11-02/2026-rauf-hpp.png)
-
-*Original Figure 1, PDF p. 3. HPP: a coding LLM, a stateful environment, and video inspection tools. The diagram describes processing recorded video, rather than a continuous incoming stream. [Source](https://aclanthology.org/2026.emnlp-main.2377.pdf#page=3).*
-
-The authors report **66.4% accuracy** on LongVideoBench. More informative is the separate comparison on 150 LVB-3600 questions: code execution achieves **66.7% versus 56.7%** for ReAct-style tool calling with identical models, tools, subtitle access, and iteration budgets. This is evidence for the value of the programmatic interface in this experiment, but does not establish equal total computation. Average times of **99.1 and 110.4 seconds** per question on the LVB-600/3600 subsets include frame extraction, indexing, retrieval, and VLM inference invoked inside the REPL. [PDF, Tables 2, 4–5, pp. 7–9](https://aclanthology.org/2026.emnlp-main.2377.pdf#page=8).
-
-Reproducibility requires further clarification. In the PDF, MaxSim first maximizes similarity over query tokens and averages over frames, whereas the checked code at revision `558cc07` maximizes over frames and averages over text tokens. The default activity proxy uses compressed packet sizes, while the paper describes motion vectors and residuals. In the API cost estimate in Appendix C.2, the text assumes 70% cached input, but the formula assumes 80%. Token savings therefore cannot be turned into a promise about total processing cost. [PDF, §3, Appendix C.2](https://aclanthology.org/2026.emnlp-main.2377.pdf#page=20), [search.py](https://github.com/AwaisRauf/hpp/blob/558cc0767170f2dca9cec3c074bc466b037d618a/hpp/utils/search.py#L372), [hierarchy.py](https://github.com/AwaisRauf/hpp/blob/558cc0767170f2dca9cec3c074bc466b037d618a/hpp/utils/hierarchy.py#L277).
-
-For Aligned, the transferable operation is verifiable: several searches → merged intervals → rereading → answer. Programmatically removing identical timestamps does not yet establish that two cameras show the same event. The main evaluation is QA, so completeness of all rework events, reference correctness, and sensitivity to brief stationary defects need separate testing. The authors also note premature answers, repeated probing, and confirmation bias.
-
-#### Ego-R1: training a controller to seek additional evidence
-
-**Ego-R1, Tian et al., preprint 2025** proposes Chain-of-Tool-Thought. The authors subsequently report TPAMI 2026, but the results below refer to **arXiv v1**, rather than the unchecked journal version. [PDF](https://arxiv.org/pdf/2506.13654v1), [code](https://github.com/egolife-ai/Ego-R1).
-
-Instead of fixed top-k retrieval, a small Qwen2.5-3B chooses a sequence of actions: search hierarchical text memory, refine a time range, query a video model about a clip, or inspect a specific frame. Supervised fine-tuning uses 25 thousand synthetic tool-use traces. GRPO then trains it to choose actions that lead to a correct final answer. This is RL for information search, rather than training a model to direct physical work.
-
-![Ego-R1: hierarchical memory and sequential tool calls](/media/assets/pdf-audit-ego-r1-figure1.png)
-
-*Original figure: Tian et al., arXiv:2506.13654v1, Figure 1, PDF p. 1. The upper panel separates hierarchical text retrieval from the Video-LLM and frame-level VLM. Below, the controller first finds the day and event, then queries a specific frame and combines observations. This is an example tool-use trace from the paper, rather than an independent check of the correctness of all reasoning.*
-
-On the **300-question Ego-R1 Bench**, the SFT controller achieves **34.3%**, rising to **46.0%** after RL, Table 3. In a separate tool ablation, retrieval alone achieves **39.7%** (Appendix C, Table 4, PDF p. 19), supporting the value of returning to visual material. However, 3B is the controller size. The video model, frame analysis model, and a separate context processing model are all part of the full system and its cost.
-
-For Aligned, the idea is useful at a second stage: if the material initially retrieved is insufficient, the system should refine its search purposefully. But stable tools and annotations of successful searches are needed first. Otherwise, RL will learn to exploit benchmark-specific features. Training and testing in the paper use the same week of recordings, and the EgoLifeQA evaluation removes overlaps with training without a clear remaining denominator. This limits the interpretation of transfer to unseen sites.
-
-#### Graph memory: EGAgent and WorldMM
-
-**Key paper: EGAgent — Agentic Very Long Video Understanding, Rege et al., ACL 2026.** The question “who regularly helped Pedro with this tool?” is poorly served by retrieving a single similar caption. EGAgent makes relationships between people, objects, and places directly queryable. [PDF](https://arxiv.org/pdf/2601.18157v3), [code](https://github.com/facebookresearch/egagent).
-
-Entities and relations with their active intervals are extracted from scene descriptions and stored in SQLite. A planning agent breaks the question into subtasks and selects frame, transcript, or graph retrieval. An analyzer retains relevant information in working memory, and a final multimodal VQA agent generates an answer from the question and selected evidence. The architecture does not identify a separate verifier for each claim. This is a symbolic temporal entity graph, rather than a 3D site map. A separate earlier static inspection of `create_db_entity_graph.py` confirms fields for relation sources/targets and temporal indices, while `langgraph_agent.py` confirms routing among the three channels.
-
-![EGAgent: three sources and SQL queries over a temporal graph](/media/assets/pdf-audit-egagent-figure2.png)
-
-*Original figure: Rege et al., arXiv:2601.18157v3, Figure 2, PDF p. 4. Panel ① shows the planning agent, three sources, retriever, analyzer, and working memory before VQA. Panel ② links visual identification of a trip with the participant graph. Panel ③ details SQL retrieval of relations with temporal constraints. The final VQA agent formulates the answer, and the figure contains no separate module for checking each citation.*
-
-The **57.5%** result on EgoLifeQA uses Gemini 2.5 Pro. A more isolated comparison with GPT-4.1 yields **48.6% without the entity graph versus 50.7% with it**, Table 1. In Table 4, the GPT-4.1 configuration requires **169 seconds and 571K tokens per question**. Replacing LLM-based transcript retrieval with BM25 gives 125 seconds and 172K tokens, but accuracy drops to 43.9%. This illustrates a real tradeoff, rather than ready-made conversational latency. Manually diarized transcripts are also used on EgoLife. For Aligned, the transferable elements are the relationship representation and routing method, rather than an assumption that speed and quality transfer in full.
-
-**WorldMM, Yeo et al., CVPR 2026**, separates memory into three types: episodic, for what happened at a specific time, semantic, for stable relationships and habits, and visual, for features and frames used to check details. Episodic graphs are built at several temporal scales. An agent repeatedly selects the memory type and query, then passes the collected evidence to a solver. [PDF](https://arxiv.org/pdf/2512.02425v2), [code](https://github.com/wgcyeo/WorldMM).
-
-![WorldMM: episodic, semantic, and visual memory](/media/assets/pdf-audit-worldmm-figure2.png)
-
-*Original figure: Yeo et al., arXiv:2512.02425v2, Figure 2, PDF p. 3. On the left, three memories are built. In the center, the retrieval agent selects a memory and a query at each step. On the right, the response agent receives the search history and retrieved data. The diagram distinguishes long-term generalization from returning to frames, but does not demonstrate guaranteed entity resolution verification.*
-
-On EgoLifeQA with an 8B solver, replacing episodic graph retrieval with embedding retrieval lowers the result **from 56.4% to 52.0%**, Table 4. This is a useful internal ablation because it compares a memory component. The latency analysis measures processing of 100 random EgoLifeQA questions, §4.6. It does not provide a separate full accounting of source video reading and memory construction. The plot therefore cannot be interpreted as measuring the cost of “new video → ready memory → answer.”
-
-Our conclusion is that a graph is needed when typical questions actually require composition of relationships. For “show the moment the panel was installed,” a simpler index may suffice. A graph’s presence does not solve entity resolution. If two different panels are merged into one node, complex reasoning will only combine incompatible events more confidently.
-
-#### MERIT versus EM²Mem: where to perform semantic integration
-
-These two papers are particularly useful to read together. They place complex processing at different points: **before a future question** or **after it arrives**.
-
-**Key paper: MERIT — Keep It Simple, Choi et al., ECCV 2026.** Instead of a large graph, each 30-second episode is stored with several text keys: event, object, summary, and dialogue when speech is present. A question can match any key. After retrieval, the system reads neighboring captions and extracts context specifically for that question. The retrieval loop and the decision “keep searching?” operate on text. Visual frames are used in the final QA call. [PDF, §3 and Appendix A](https://arxiv.org/pdf/2608.07663v2), [code](https://github.com/choi-yeeun/MERIT).
-
-![MERIT — Multi-key Episodes and Temporal Expansion](/media/assets/2026-choi-merit-figure2.png)
-
-*Figure: MERIT pipeline. Source: Choi et al., arXiv:2608.07663v2, Figure 2, PDF p. 6. The original diagram shows key construction on the left and expansion to neighboring episodes on the right.*
-
-Imagine the episode “Pedro picked up a spirit level, checked the panel, and called Alex.” One generic embedding may match “who checked whether it was vertical?” poorly. A separate action key increases the chance of retrieving the episode. Neighboring records help establish which panel was involved. This illustrates the mechanism for Aligned, rather than providing a benchmark example.
-
-With GPT-5, MERIT reports **71.2% on 500 EgoLifeQA questions, 71.8% on LVBench, and 77.7% on Video-MME Long**, Tables 1–2. In retrieval settings reproduced by the MERIT authors, the hit rate is **0.56 versus 0.53 for WorldMM**, Table 5. However, the windows differ: MERIT returns 30-second clips, while WorldMM can return intervals up to an hour long. This is not a comparison at an equal temporal evidence budget. Even here, almost half the questions fail to hit the target timestamp under this metric. High QA accuracy does not imply equally reliable evidence localization.
-
-The claimed reduction in memory construction cost excludes the shared dense captioning stage, Table 6. It therefore cannot be translated into “all camera processing becomes cheaper by the same factor.” The main value for Aligned is a simple, strong baseline against which to evaluate adding graphs.
-
-**EM²Mem — Event-Centric Multimodal Memory, Chen et al., Findings of EMNLP 2026**, moves integration earlier: captions, transcript, keyframes, and provenance are linked to a shared 30-second event anchor. This is a fixed temporal address, rather than an automatically detected semantic event boundary (Appendix C.7). Additional contexts span 3 minutes, 10 minutes, and an hour. Semantic search is followed by graph expansion and selection of a compact evidence set. [PDF](https://arxiv.org/pdf/2609.00551v1), [research code](https://github.com/zjunlp/LightMem-Ego/tree/main/research/em2mem).
-
-![EM²Mem: a shared event address, graph links, and evidence selection](/media/assets/pdf-audit-em2mem-figure2.png)
-
-*Original figure: Chen et al., arXiv:2609.00551v1, Figure 2, PDF p. 3. The left panel links captions, speech, frames, and multi-level context under a fixed 30-second address. The central panel shows node and edge types, including support/provenance. On the right, retrieval and graph expansion produce candidates, and the selector chooses a compact set for the answer model. Provenance denotes a link to a source, rather than automatically established truth of an extracted fact.*
-
-On EgoLifeQA, the system achieves **66.0%** versus **64.0%** for the EM²Mem authors’ comparable reproduction of WorldMM, Table 1. In a controlled experiment with a 300-second evidence budget, retrieval coverage improves by **5.4 percentage points**, with a 95% interval of **[+2.6, +8.3]**. The QA improvement of **60.0% → 63.0%** has an interval of **[−0.8, +6.8]**, so this separate test does not establish a confident QA gain, Table 12.
-
-Average question latency is **459.00 → 98.21 seconds**, a 4.67× gain. A separate throughput result of 37.4× includes eight parallel workers and implementation differences. Memory construction consumes **89.23M tokens versus 60.55M**. With 500 questions, the total is **104.50M versus 102.58M**, Tables 9–10. A cheaper query does not yet mean lower total token cost here.
-
-A separate earlier static inspection of the README and `build_multimodal_event_record.py` confirms an offline research pipeline. A separate online backend in the parent LightMem-Ego project does not turn the EM²Mem benchmark result into an evaluation of a live system. For Aligned, the main value is a shared evidence address: every fact should be tied to a recording, camera, interval, and processing version.
-
-<a id="paper-2026-zhang-egocite"></a>
-
-#### EgoCITE, Zhang et al., 2026 preprint: finding the right fact at the right time
-
-A record such as “he picked it up again” can lose both the person and the tool. Even a clear description such as “Pedro checks the panel” does not say whether this was the first or last inspection. **EgoCITE** separates these two problems: it first makes a record understandable outside its original context, then accounts for the question’s temporal meaning during retrieval. For Aligned, this is particularly useful for repeated actions across shifts. The paper does not train a new model or assume that a more complex graph will remove ambiguity by itself. [PDF, §§3–4, Figure 3](https://arxiv.org/pdf/2608.12627v3#page=4).
-
-EgoScheme converts captions and speech into self-contained records by resolving pronouns and recovering omitted participants from context. EgoIndex stores four text representations: actions, activities, utterances, and conversations. Each record retains its timestamp and a link to the original caption. Fine-grained actions and utterances use the preceding five-minute context, while activities and conversations use complete 30-minute windows, with possible merging of neighboring records. If context cannot resolve a detail unambiguously, the specification requires preserving the original wording. This is a record construction rule, rather than an experimental guarantee of error-free output.
-
-![Original EgoCITE diagram](/media/assets/new-work-selection-2026-11-02/2026-zhang-egocite.png)
-
-*Original Figure 3, PDF p. 4. EgoCITE: context resolution, four record types, and temporal evidence selection. The first block includes perception and person ID, whose quality in the main experiment is supplied through prepared data. [Source](https://arxiv.org/pdf/2608.12627v3#page=4).*
-
-A drafting agent translates the question into semantic, temporal, and representation-dependent queries. Retrieval combines similarity with soft temporal relevance. A sampling agent then selects a consistent evidence set that accounts for “first,” “last,” or “usually,” after which a response agent formulates the answer. Unlike a hard restriction to one preselected day, temporal meaning participates in both ranking and subsequent selection. Misinterpreting that meaning can still exclude the required observation.
-
-In the component experiment on EgoR1-Bench, accuracy changes **61.3 → 69.7 → 71.3 → 75.3%** as atomic indices, context resolution, and temporal retrieval are added sequentially. On EgoLifeQA, the GPT configuration achieves **63.8%**, compared with **49.6%** for the authors’ reproduction of WorldMM. However, the main memory source consists of **human dense captions and transcripts**. Even the automatic captioning variant uses manually prepared descriptions of participants’ appearances. All three tests, including EgoMem, use EgoLife recordings. EgoMem here should not be confused with EgoMemReason from another paper. [PDF, Tables 2, 10, Appendices B.1 and C.1](https://arxiv.org/pdf/2608.12627v3#page=13).
-
-Five retrieval rounds take an average of **32.0 seconds** per question in the reported sample, excluding perception and index construction. The starting timestamp of a record extracted from a full 30-minute window also does not establish that it was available at that moment. For Aligned, event time and availability time, automatic identification errors, and the full cost of memory writing must therefore be tracked separately. Context resolution and temporal selection should be compared using identical source captions, rather than attributing the entire result to the retrieval architecture. [PDF, §4.1, Table 13](https://arxiv.org/pdf/2608.12627v3#page=20).
+With GPT-5, MERIT reports 71.2% on 500 EgoLifeQA questions, but its retrieval hit rate is 0.56, Table 5. WorldMM’s reproduced hit rate is 0.53 under a different temporal-window budget, so the two values are not an equal-budget retrieval ranking. The construction-cost comparison excludes shared dense captioning. For Aligned, MERIT is therefore a baseline to test with automatic captions and fixed evidence budgets before paying for more elaborate memory.
 
 #### CapMem: reusable caption memory
 
-**[CapMem](/notes/2026-liang-capmem/)** is an essential comparison point for EGAgent, MERIT, and graph memory: first obtain descriptions of 30- or 60-second windows, then repeatedly answer from the stored text. This separates the cost of initial viewing from the cost of each question. On 75 videos totaling 33.7 hours and 1 000 questions, the authors separately control frame coverage, the captioning model, and the answer model. After aligning frames, the average advantage on videos longer than 20 minutes is +3.22 percentage points for 30-second windows and +2.55 percentage points for 60-second windows across six Qwen models. For short videos, text can lose important details. [Publisher PDF, Tables 4–6, pp. 6–7](https://aclanthology.org/2026.emnlp-industry.233.pdf#page=6).
+**CapMem, Liang et al., EMNLP Industry 2026**, asks a useful prior question: how much can stored descriptions accomplish when the source frames and models are controlled? Its 75-video evaluation compares direct visual answering with descriptions of 30- or 60-second windows reused for subsequent questions. After aligning frame coverage, the mean gains on videos longer than 20 minutes are 3.22 and 2.55 percentage points across six Qwen models. This supports measuring a simple text-memory baseline before attributing improvements to graphs or agents. [PDF, Tables 4–6](https://aclanthology.org/2026.emnlp-industry.233.pdf#page=6).
 
-A separate retrieve–verify mechanism returns several neighboring windows and checks the answer against a limited number of frames. A substantial caveat is needed here: Appendix D explicitly states that the answer override policy, including the exception for questions about exact clock times, was chosen after analyzing errors on the same evaluation set. There is no separate development split. These improvements require independent validation and should not become the main evidence for the method’s reliability. The cleaner reason for inclusion is the experiment with fixed frames and reusable descriptions. [PDF, Appendix D, pp. 17–18](https://aclanthology.org/2026.emnlp-industry.233.pdf#page=17).
+The paper’s additional retrieve-and-verify policy was chosen after examining errors on the same evaluation set, Appendix D. Its gains need an independent test. The more useful contribution here is the controlled comparison and the distinction between viewing once and answering repeatedly. Aligned should test what captions preserve about object names, negations, brief errors, and outcomes, then measure the total cost of ingestion plus a realistic series of questions.
 
-The cost in Table 7 also cannot be translated directly into an API bill: direct video uses an analytical visual token proxy, rather than actual bills from all providers. For Aligned, the paper suggests a testable experiment: identical sources and frames, several questions per recording, and separate accounting of construction, updating, retrieval, and answering costs. It is useful to test whether descriptions of long windows preserve object names, negations, and brief errors.
+<div>
+<a id="21-find-the-relevant-recording-and-time-interval"></a>
+<a id="first-distinguish-tasks-often-grouped-under-the-term-video-qa"></a>
+<a id="сначала-разделим-задачи-которые-часто-называют-одним-словом-video-qa"></a>
+<a id="tvr-and-v-ragbench-two-different-retrieval-scales"></a>
+<a id="tvr-и-v-ragbench-два-разных-масштаба-поиска"></a>
+<a id="task-2-1"></a>
+</div>
 
-![CapMem memory](/media/assets/expansion-memory/capmem-memory.png)
+### 2.2. Find the recording and the evidence
 
-*Original Figure 2, PDF p. 3: construction and reuse of caption memory.*
+A memory index must answer two different questions: which recording contains the event, and which interval inside it is relevant? An experiment that receives the correct long video in advance tests only the latter part. Text and visual retrieval can supply complementary candidates, while reranking spends more computation on a smaller set.
 
-#### Caption-once, Frames-on-Demand: checking pixels only when necessary
+<div>
+<a id="xml-an-early-reference-for-corpus-localization"></a>
+</div>
 
-**CFD, Cai et al., EMNLP 2026** adds explicit **visual-need routing** to this picture. During indexing, the system stores an event storyline and more detailed clip captions. It first tries to answer from text. If information is insufficient, it selects an event, adds stored details, and decides whether source frames are needed. A bounded FIFO visual memory holds several currently relevant frames. [PDF](https://arxiv.org/pdf/2609.11899v1), [official publication](https://aclanthology.org/2026.emnlp-main.422/), [project](https://weitongcai.com/CFD/).
+#### TVR / XML: a historical corpus-localization reference
 
-![CFD: from storyline to local captions and frames on demand](/media/assets/pdf-audit-cfd-figure2.png)
+**TVR and its XML baseline, Lei et al., ECCV 2020**, separate video retrieval from temporal localization over 109 thousand queries and 21.8 thousand television clips. XML precomputes video/subtitle representations, retrieves candidate recordings, and predicts interval boundaries. This remains a useful task decomposition, although its original features and television setting are not a preferred Aligned implementation. Use it to understand corpus-level evaluation, with modern candidate retrieval tested separately from localization. [PDF v2, §§3–5](https://arxiv.org/pdf/2001.09099#page=5).
 
-*Original figure: Cai et al., arXiv:2609.11899v1, Figure 2, PDF p. 5. The upper part separates event memory, uniform clip captions, and visual working memory. The lower part shows an early textual answer, temporal localization, caption refinement, and visual-need routing to frames. Edge/cloud denotes separation of stages here. Physical wearable deployment was not evaluated, as the authors note in Limitations, PDF p. 10.*
+#### EventFormer: an event index before precise localization
 
-In the controlled ablation from always-on visual retrieval to the visual-need router, the number of online frames falls **6.63 → 5.76 per question**, by 13.1%, while Video-MME accuracy changes **67.2% → 67.5%**, Table 9. These frames exclude offline captioning. Appendix E reports **229.3 seconds of indexing per video and 68.2 seconds per question** in a configuration with eight workers on two H200s. Frame savings therefore do not establish low conversational latency. The authors also explicitly note the limitations of shot-boundary segmentation for continuous egocentric video. For Aligned, the transferable policy is “is text sufficient, or are pixels needed?”, while event segmentation and the budget for small defects require separate evaluation. Public code was not confirmed in the inspected sources.
+**EventFormer, Hou et al.**, groups temporal features into events, retrieves ten recordings through a compact index, then applies a query-dependent localizer. The inspected 2024 preprint reports 31 MB of retrieval representations and 43 ms retrieval in its TVR setup, excluding ingestion and adding a separate localization stage. Its event-level index is worth comparing with fixed-window embeddings, but supervised localization and the television benchmarks limit direct transfer, and the final ECIR 2026 tables were not rechecked. [Preprint, §3, Table 8](https://arxiv.org/pdf/2402.13566v1#page=9).
 
-<a id="paper-2026-leng-flora"></a>
+<div>
+<a id="carve-retrieving-and-selecting-different-forms-of-evidence"></a>
+</div>
 
-#### FLORA, Leng et al., 2026: training a memory writer to identify events
+#### CARVE and V-RAGBench: choose the useful representation of each chunk
 
-FLORA is useful for a video archive even before retrieval: the system first needs to determine where one action ends and another begins, then create a description suitable for indexing. The paper separates this into a segmenter and a captioner. A separate rewarder evaluates execution for robotics data. For Aligned, the main interest lies in the first chain: converting a long recording into intervals with meaningful descriptions. It complements memory methods that assume prepared events, but does not itself solve retrieval over a multi-day archive.
+**CARVE, Lee et al., 2026 preprint**, addresses a more immediate retrieval choice: the same episode can be represented by frames, clip features, frame descriptions, or a clip summary. It searches all four representations, preserves each candidate’s retrieval configuration, and reranks candidates with a multimodal model. The generator receives the top five chunks in their selected visual or textual forms. A visually distinctive fastening detail and a semantically specific conversation need not use the same representation. [PDF v2, §§3, 5](https://arxiv.org/pdf/2606.13141v2).
 
-The segmenter processes overlapping windows, marks actions continuing beyond a boundary, and merges results from neighboring windows. Additional window offsets help refine boundaries. The captioner receives the selected interval together with surrounding context to name the intended action. This distinction matters: a failed attempt can still receive a description of the action the person intended to perform. Such a description is convenient for retrieval, but a record of “screw on the part” does not establish that “the part is securely fastened.” Synchronized views, when available, are combined in the input, but this is not a mechanism for independently matching recordings from different workers.
+The accompanying **V-RAGBench** pairs questions with evidence chunks and answers, allowing retrieval to be evaluated separately from generation. On 300 test questions, CARVE achieves Recall@5 of 0.603 versus 0.510 for the strongest baseline on that metric, Table 2. This is useful evidence for mixed retrieval and reranking under a shared experimental setup, rather than a comparison of unrelated published QA scores.
 
-![Original FLORA diagram](/media/assets/new-work-selection-2026-11-02/2026-leng-flora.png)
+The source long video is already selected, and benchmark construction removes ambiguous recurring evidence. Those choices help isolate retrieval errors but omit two central Aligned difficulties: choosing among recordings and distinguishing repeated installations. CARVE is therefore a candidate retrieval component. Its evaluation design needs additional repeated-event and corpus-search tests before it becomes an archive baseline.
 
-*Original Figure 6, PDF p. 8. FLORA: event segmentation and descriptions separate from dense, outcome, and rubric reward labels. This is a video annotation diagram, rather than an architecture for long-term memory or a causal detector. [Source](https://arxiv.org/pdf/2610.31779v1#page=8).*
+<div>
+<a id="wikihowqa-and-longervideos-answers-over-a-collection"></a>
+<a id="videorag-jeong-et-al-findings-of-acl-2025-arxiv250105874"></a>
+</div>
 
-The models are based on Qwen3.5 and undergo supervised fine-tuning, with the segmenter and captioner additionally trained through GRPO. What’s Going On evaluates boundaries, captions with correct boundaries, and their joint result separately. This reveals the cost of writer errors: FLORA exceeds Astra on segmentation F1, 50.3 versus 46.0, but trails on captioning for correct segments, 64.7 versus 77.4, and joint F1, 34.5 versus 39.0. Successful segmentation therefore does not yet guarantee better event memory. Claimed cost advantages also depend on selected hardware, utilization, and the calculation model, rather than constituting a universal deployment measurement.
+#### VideoRAG (Jeong): retrieve an instructional video first
 
-The rewarder must not be confused with a real-time monitor. It evaluates an episode’s outcome or produces dense normal, suboptimal, and failure labels, but uses future context: in windowed processing, the last four seconds are not evaluated until the next window appears. On DenseRewardBench, macro-F1 is 46.2, and failure-class recall is 53.3%. At the same time, about 11% of normal steps are labeled as failure, so even within the robotics protocol this is incomplete diagnosis with appreciable false alarms. FLORA shows how to train boundaries, record content, and outcome evaluation separately. These fields should likewise remain separate in Aligned’s memory so that intention, observed action, and confirmed outcome do not collapse into one confident description. [PDF, §2–4, Tables 1, 3, 5](https://arxiv.org/pdf/2610.31779v1)
+**VideoRAG, Jeong et al., Findings of ACL 2025**, retrieves videos from HowTo100M for instructional questions and supplies selected frames, optionally with transcripts, to an answer generator. This demonstrates video-corpus RAG, but “how should I perform this action?” differs from reconstructing what a particular worker did yesterday. Keep it as a corpus-retrieval reference: its ROUGE-L evaluation of instructions does not measure event boundaries, object identity, or completeness of a worker’s history. [PDF, §§2–3](https://aclanthology.org/2025.findings-acl.1096.pdf).
 
-#### MemLife: the memory writer also needs optimization
+<div>
+<a id="video-rag-luo-et-al-neurips-2025-arxiv241113093"></a>
+</div>
 
-**Xiong et al., 2026 preprint.** MemLife separates independent clip writing from agentic memory reading. The writer combines video with speech, links mentioned names to entities, and formulates a description from the camera wearer’s perspective. The reader refines the question and time window, searches embeddings, reads records, and calls FetchVideo when source recordings are available. Writing each clip independently limits propagation of earlier errors, but does not itself solve cross-clip identification. [PDF, §§3–4](https://arxiv.org/pdf/2609.40195v1).
+#### Video-RAG (Luo): add speech, visible text, and object evidence
 
-![MemLife and MemOpt: writing, reading, and learning memory quality](/media/assets/expansion-existing/2026-xiong-memlife.png)
+**Video-RAG, Luo et al., NeurIPS 2025**, retrieves question-relevant ASR, OCR, and detected-object information to accompany frames from an already selected video. With LongVA-7B, accuracy rises from 56.0% with subtitles to 62.0% with Video-RAG, Table 1. This makes auxiliary modalities useful to test when reading retrieved footage, but the method does not select recordings from a site archive. Spoken claims such as “I secured everything” must retain their provenance as speech rather than becoming visual confirmation of the work. [PDF, §3, Table 1](https://arxiv.org/pdf/2411.13093v4).
 
-*Original Fig. 2, PDF p. 4. Access to source video is an additional mode. The base reader can operate on text memory alone.*
+### 2.3. Inspect more evidence when the first retrieval is insufficient
 
-A separate idea, MemOpt, trains the writer through GRPO on three record qualities: source faithfulness, preservation of needed facts, and retrievability. This is RL for memory writing, rather than for directing a worker. For Aligned, it is useful to compare ordinary captions with these records using the same reader and an identical frame budget. Text memory compactness and answer speed figures cannot be interpreted as the cost of the whole system: they exclude storage of originals and the full preprocessing pipeline. An answer without reinspection remains limited by what the writer preserved.
+A limited retrieval set can miss a small visual detail or the beginning of a longer operation. The reader can then refine the time interval, search again, or inspect source frames. This introduces a stopping decision: additional inspection should resolve an uncertainty rather than repeatedly retrieve similar material.
 
+#### VideoAgent (Wang): active frame selection
+
+**Wang’s VideoAgent, ECCV 2024**, uses an LLM to iteratively request useful frames and assemble evidence for a question. It is distinct from Fan’s VideoAgent: its main value here is active reading, while Fan explicitly builds reusable temporal and object memory. For Aligned, it is a historical reference for adaptive inspection of selected footage. The reported small number of frames used for answering excludes upstream feature extraction and retrieval costs. [PDF, §3, Tables 1–3](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10325.pdf).
+
+#### VideoTree: describing regions of interest
+
+**VideoTree, Wang et al., CVPR 2025**, clusters visual features, describes representatives, and deepens the hierarchy where the current question requires more detail. It is useful for selectively reading an already retrieved shift or episode, but its question-dependent tree is not persistent archive memory. Building such a reader for each question still requires source features, and its long-video QA results do not test cross-shift event retrieval. [PDF, §3](https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_VideoTree_Adaptive_Tree-based_Video_Representation_for_LLM_Reasoning_on_Long_CVPR_2025_paper.pdf).
+
+<div>
+<a id="mm-ego-ye-et-al-iclr-2025-an-overview-first-detailed-frames-next"></a>
+<a id="paper-2025-ye-mm-ego"></a>
+</div>
+
+#### MM-Ego: an overview before detailed frames
+
+**MM-Ego, Ye et al., ICLR 2025**, scans compressed representations of up to 300 frames and learns to select 32 for detailed reading. The mechanism is a possible local reader, although its gains combine specialized egocentric training with learned selection and its global scan remains part of the cost. Its selected-video results do not establish persistent archive retrieval or an equal-budget selection benefit over uniformly sampled frames. [PDF, §2.2, Tables 3–5](https://arxiv.org/pdf/2410.07177v2#page=8).
+
+#### MovieChat: compressing visual context
+
+**MovieChat, Song et al., CVPR 2024**, compresses visual tokens into short- and long-term memory inside the video model. It is a historical reference for fitting a selected sequence into limited GPU memory, with a different role from an external index that serves many future questions. For Aligned, preserving a long input in compressed form still needs separate tests of fine-detail retention and archive search. [Paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Song_MovieChat_From_Dense_Token_to_Sparse_Memory_for_Long_Video_CVPR_2024_paper.pdf).
+
+<div>
+<a id="caption-once-frames-on-demand-checking-pixels-only-when-necessary"></a>
+</div>
+
+#### CFD: checking pixels only when necessary
+
+**Caption-once, Frames-on-Demand, Cai et al., EMNLP 2026**, stores a storyline and clip captions, then routes questions to additional descriptions or source frames when visual information is needed. In its controlled routing ablation, online frames fall from 6.63 to 5.76 per question while Video-MME accuracy changes from 67.2% to 67.5%, Table 9. This is a useful selective-inspection policy, but it excludes offline captioning and does not establish low latency. The authors also identify shot-boundary segmentation as a limitation for continuous egocentric footage, making event preparation a prerequisite for transfer. [PDF, §2, Table 9, Appendix E](https://arxiv.org/pdf/2609.11899v1).
+
+<div>
+<a id="hpp-rauf-et-al-emnlp-2026-an-agent-programs-its-evidence-search"></a>
+<a id="paper-2026-rauf-hpp"></a>
+</div>
+
+#### HPP: programmatic evidence search
+
+**HPP, Rauf et al., EMNLP 2026**, lets an LLM write programs that search video, retain intermediate results, merge intervals, and inspect selected clips. On a controlled 150-question comparison, code execution improves accuracy from 56.7% to 66.7% over ordinary tool calling with the same models, tools, subtitle access, and iteration budget, Table 4. This is relevant if Aligned’s queries require repeated searches and explicit aggregation, but the evaluated system reads selected recordings and averages roughly 100 seconds per question. Treat it as an optional agent interface to compare after establishing basic retrieval, with the inspected paper/code differences recorded in the full paper note. [PDF, §3, Tables 4–5](https://aclanthology.org/2026.emnlp-main.2377.pdf#page=8).
+
+<div>
+<a id="ego-r1-bench-questions-for-agentic-search"></a>
+<a id="ego-r1-training-a-controller-to-seek-additional-evidence"></a>
+<a id="ego-r1-научить-контроллер-искать-дополнительные-доказательства"></a>
+</div>
+
+#### Ego-R1: learning when to search and look again
+
+**Ego-R1, Tian et al.**, trains a controller to choose among hierarchical text search, time-range refinement, video questions, and individual-frame inspection. Supervised tool-use traces provide the initial policy, followed by GRPO for final-answer correctness. The contribution for Aligned is a learned evidence-search strategy, with a useful distinction from simply prompting an agent to keep searching. [Inspected 2025 preprint v1, §§3–5](https://arxiv.org/pdf/2506.13654v1).
+
+![Ego-R1: memory search, video questions, and frame inspection](/media/assets/pdf-audit-ego-r1-figure1.png)
+
+*Original Figure 1, PDF p. 1. A controller selects tools rather than receiving the whole recording in one context.*
+
+On the 300-question Ego-R1 Bench, controller accuracy rises from 34.3% after SFT to 46.0% after RL, Table 3. Training and testing use the same EgoLife week, so this does not establish transfer to an unseen site. The controller’s 3B parameter count also excludes its visual and context-processing tools. It is a meaningful later-stage experiment once Aligned has reliable tools and successful search traces. Controller training should follow a measured retrieval bottleneck.
+
+#### Benchmarks for reading a selected video
+
+**EgoSchema** tests multiple-choice understanding of approximately three-minute egocentric clips and is used by several readers above. It is useful as a local-reading check, but the correct clip is supplied, so its accuracy should not decide which archive memory to adopt. [Original paper](https://arxiv.org/pdf/2308.09126v1).
+
+**LongVideoBench** evaluates referring reasoning over supplied videos with interleaved video and subtitle inputs. It can test the reader after retrieval, provided subtitle access and frame budgets are matched. It is a different benchmark from LVBench, which appears in MERIT and WorldMM. [Original paper, §§2–4](https://arxiv.org/pdf/2407.15754v1).
+
+**Video-MME** covers short, medium, and long supplied videos, with audio/subtitle conditions that matter when comparing readers. It provides a broad comprehension check, but neither a high total score nor the long split measures recall across a multi-camera archive. [Original paper](https://arxiv.org/abs/2405.21075v3).
+
+<div>
+<a id="23-answer-a-question-over-a-long-history"></a>
+<a id="task-2-3"></a>
+</div>
+
+### 2.4. Combine evidence across a long history
+
+“Why was the panel reworked?” may require the original installation, the discovery of a defect, and the subsequent correction. A longer context window does not ensure that all these episodes will be found. The relevant design choice is whether to reconstruct their relationships after retrieval or store some relationships in advance.
+
+<div>
+<a id="egolifeqa-from-a-clip-to-a-week-of-memory"></a>
+<a id="egobutler--egorag-a-multi-day-memory-baseline"></a>
+<a id="egobutler--egorag-baseline-многодневной-памяти"></a>
+</div>
+
+#### EgoLife / EgoButler: a multi-day reference setting
+
+**EgoLife, Yang et al., CVPR 2025**, provides a useful early setting for this problem: six participants recorded over a shared week, with 266 retained camera-hours. EgoLifeQA contains 3,000 questions, while the main published EgoButler evaluation uses Jake’s 500-question subset. EgoGPT creates audiovisual captions; EgoRAG retrieves descriptions, revisits selected clips, and supplies evidence to an answer model. The main experiment uses three retrieved clips, a concrete baseline for multi-day retrieval. [PDF, §§3–5](https://arxiv.org/pdf/2503.03803v3).
+
+MERIT, EGAgent, WorldMM, and EM²Mem reuse this environment, which helps compare designs but concentrates evidence on one domestic week. Different captions, readers, and retrieval budgets also prevent a simple leaderboard from identifying the best memory architecture. For Aligned, this is a reference protocol to adapt to repeated work across shifts, with automatic perception and unseen locations evaluated explicitly.
+
+<div>
+<a id="egomemreason--a-week-of-video-does-not-yet-mean-a-week-of-reasoning"></a>
+</div>
+
+#### EgoMemReason: test whether several episodes are actually needed
+
+**EgoMemReason, Wang et al., COLM 2026**, is particularly useful for deciding whether long-history reasoning is being tested at all. Its 500 questions require an average of 5.1 evidence segments and 25.9 hours of backtracking. Supplying oracle evidence raises Gemini-3-Flash accuracy from 39.6% to 67.2%, separating difficulty in finding the necessary material from difficulty reasoning over it. [PDF, §3.3, Table 1, Appendix C.3](https://arxiv.org/abs/2605.09874v2).
+
+This benchmark uses EgoLife again, and the full-video/oracle comparison changes evidence input rather than isolating one retriever. Its transferable contribution is the diagnostic: manually deliver all required clips, then compare the reader’s answer with the result under ordinary retrieval. The same test can reveal whether a failed repair-history answer needs a better index or better interpretation.
+
+<div>
+<a id="apm-bench-and-egomonth-cross-session-memory-and-long-histories"></a>
+</div>
+
+#### APM-Bench: memory across interrupted sessions
+
+**APM-Bench, Huang et al., 2026**, compares stored video, text summaries, and specialized memory over prerecorded activities with simulated streaming access across sessions. It is useful for testing shift breaks and missing historical evidence, but proposes an evaluation protocol rather than a new memory architecture. Its cross-session and proactive-response tests should supplement archive QA when interruption handling becomes a measured requirement. [PDF v2, §§3–4](https://arxiv.org/pdf/2609.37559v2).
+
+#### EgoMonth: a longer calendar span
+
+**EgoMonth, Chen et al., 2026**, extends evaluation to recordings spread across 20–120 calendar days, with questions about episodes, repetitions, and relationships. This supplies useful question types for across-shift testing, although the calendar span does not mean uninterrupted recording and multiple-choice counting does not measure event-list completeness. It should inform Aligned’s evaluator rather than select a memory architecture from models with unequal frame budgets. [PDF, §§3–4](https://arxiv.org/pdf/2608.13113v1).
+
+#### EGAgent: explicit temporal relationships
+
+**EGAgent, Rege et al., ACL 2026**, stores people, objects, and places with relationships such as interaction and conversation, each tied to time intervals. An agent can query this structure through SQL alongside frame and transcript search. “Who repeatedly helped Pedro with the tool?” then becomes a search over relationships as well as similar captions. [PDF, §3](https://arxiv.org/pdf/2601.18157v3).
+
+The controlled GPT-4.1 comparison improves EgoLifeQA accuracy from 48.6% without the entity graph to 50.7% with it, Table 1. Its 169-second average answering time and use of manually diarized EgoLife transcripts constrain immediate transfer. The practical idea is a queryable temporal relation store; Aligned should add it when relation-heavy questions expose a failure of simpler episode retrieval. Correctly identifying the people and physical objects remains a prerequisite, developed in Chapter 3.
+
+<div>
+<a id="graph-memory-egagent-and-worldmm"></a>
+</div>
+
+#### WorldMM: choose between event, semantic, and visual memory
+
+**WorldMM, Yeo et al., CVPR 2026**, separates episodic graphs at several timescales, semantic relationships and habits, and visual features with source frames. A retrieval agent chooses which memory to query and accumulates evidence for a separate answer model. This is useful when a question combines a precise episode with a recurring relationship or a detail omitted by text. [PDF, §3](https://arxiv.org/pdf/2512.02425v2).
+
+![WorldMM: complementary memories selected by a retrieval agent](/media/assets/pdf-audit-worldmm-figure2.png)
+
+*Original Figure 2, PDF p. 3. Episodic, semantic, and visual evidence remain separate retrieval options.*
+
+Replacing episodic graph retrieval with embedding retrieval lowers EgoLifeQA accuracy from 56.4% to 52.0% with the 8B solver, Table 4. This supports the graph component within that system. It does not show that every Aligned query needs three memory stores, and the latency analysis excludes a full accounting of video ingestion. Compare the added structure against MERIT under the same captions, reader, and evidence budget. A semantic node about “panels” cannot substitute for identifying a particular panel.
+
+<div>
+<a id="videorag-ren-et-al-arxiv250201549-2025-preprint"></a>
+</div>
+
+#### VideoRAG (Ren): graph and visual retrieval across videos
+
+**Ren et al.’s VideoRAG** combines a cross-video textual knowledge graph with visual segment retrieval and question-specific re-description of candidates. Its LongerVideos evaluation covers collections of lectures, documentaries, and entertainment, making it a useful multi-video reference with weaker domain alignment than the egocentric studies above. The inspected 2025 preprint’s answer-preference results do not measure complete event retrieval, and semantic links across videos do not establish physical-object identity. [Preprint, §§3–4, Tables 1–2](https://arxiv.org/pdf/2502.01549v1).
+
+#### EM²Mem: bind modalities before retrieval
+
+**EM²Mem, Chen et al., Findings of EMNLP 2026**, moves integration earlier than MERIT. Captions, transcripts, keyframes, and provenance share a 30-second event anchor, with additional context at larger timescales. Semantic retrieval, graph expansion, and evidence selection then operate over these aligned records. The anchor is a fixed temporal address, so it should not be confused with a detected semantic event boundary. [PDF, §3, Appendix C.7](https://arxiv.org/pdf/2609.00551v1).
+
+![EM²Mem: modalities linked to a shared event address](/media/assets/pdf-audit-em2mem-figure2.png)
+
+*Original Figure 2, PDF p. 3. Evidence is integrated during construction and selected at question time.*
+
+The useful comparison is where to perform contextual work. MERIT expands context around retrieved episodes after the question arrives; EM²Mem prepares linked multimodal records beforehand. In the controlled 300-second evidence-budget experiment, alignment improves coverage by 5.4 percentage points, Table 12. The accompanying QA increase from 60.0% to 63.0% has a confidence interval spanning zero, so the cleaner finding concerns evidence coverage.
+
+Mean query latency falls from 459.00 to 98.21 seconds against the reproduced baseline, but construction uses more tokens. Including 500 questions, total token use is 104.50M versus 102.58M, Tables 9–10. For Aligned, the shared source address is immediately useful to prototype, while the full graph design should be justified by coverage gains and the expected workload.
+
+<div>
+<a id="egocite-zhang-et-al-2026-preprint-finding-the-right-fact-at-the-right-time"></a>
+<a id="paper-2026-zhang-egocite"></a>
+</div>
+
+#### EgoCITE: temporal meaning and self-contained records
+
+**EgoCITE, Zhang et al., 2026**, resolves contextual fragments such as “he picked it up again,” indexes several textual views, and includes “first,” “last,” or “usually” in evidence selection. These mechanisms address repetitive work directly and are worth testing before assuming that richer graphs will solve ambiguous captions. Main results rely on human captions/transcripts, while the automatic variant retains manual person-identity information, so the reported gains do not establish an automatic site pipeline. Compare its record rewriting and temporal selection on the same automatic captions as the simpler baseline. [PDF v3, §§3–4, Appendix C.1](https://arxiv.org/pdf/2608.12627v3).
+
+<div>
+<a id="amb-the-order-of-object-interactions"></a>
+<a id="amb-порядок-взаимодействий-с-объектами"></a>
+</div>
+
+#### AMEGO: interaction memory
+
+**AMEGO, Goletto et al., ECCV 2024**, builds reusable memory from hand–object interactions and visually recognizable locations, then answers temporal queries over those records. Its Active Memories Benchmark tests interaction order and overlap, providing a useful specialized alternative when hand interactions define the relevant episodes. The narrower representation and filtering of some difficult same-class instance cases limit its role as a general construction archive memory. Physical-instance association is better examined alongside Chapter 3. [PDF, §§3–4, Appendix §8.1](https://arxiv.org/pdf/2409.10917).
+
+<div>
+<a id="22-find-all-matching-episodes"></a>
+<a id="24-count-events-and-evaluate-a-compound-condition"></a>
+<a id="24-посчитать-события-и-проверить-составное-условие"></a>
+<a id="protocols-cost-completeness-and-predicate-quality"></a>
+<a id="протоколы-стоимость-полнота-и-качество-предикатов"></a>
+<a id="task-2-2"></a>
 <a id="task-2-4"></a>
+</div>
 
-### 2.4. Count events and evaluate a compound condition
+### 2.5. Find repeated events and evaluate compound conditions
 
-Video memory must support several different query contracts. “Show an example of panel installation” allows early stopping. “Find all instances of rework on this panel” requires completeness and deduplication. “What fraction of time was spent waiting?” requires a definition of the measured quantity and acceptable error. “Notify me when a hazardous state appears after an operation” requires a temporal rule and timely execution. One QA score does not characterize all four modes.
+“Show an installation” permits a useful hit. “List all rework this week” requires a set of events whose size is unknown, while “how much time was spent waiting?” may permit an estimate with a stated error. Retrieval and query execution need different stopping rules for these outputs. Multiple cameras also require deduplication, which depends on the observation-linking problem in Chapter 3.
 
-The video database literature is useful here. It often uses simpler visual tasks than modern VLMs, but explicitly separates the costs of perception, indexing, and repeated query execution. For Aligned, this is a distinct architectural dimension that complements MERIT, EGAgent, and caption memory.
+<div>
+<a id="qv-m-a-multi-moment-protocol"></a>
+<a id="flashmmr-several-intervals-for-one-query"></a>
+<a id="flashmmr-несколько-интервалов-на-один-запрос"></a>
+</div>
 
-#### Protocols: cost, completeness, and predicate quality
+#### QV-M² / FlashMMR: several intervals for one query
 
-Focus, BlazeIt, TASTI, EQUI-VOCAL, and VOCAL-UDF do not form a single leaderboard. Retrieving a few examples allows early stopping, estimating an aggregate requires a defined quantity and acceptable error, and a compound query depends on the predicates and operators supported. Completeness of all individual events must be evaluated separately. CLEVRER, CityFlow-NL, and Charades are used to evaluate VOCAL-UDF, while an expensive detector supplies the reference in several systems experiments. Agreement with it does not correct its errors. [Focus](https://www.microsoft.com/en-us/research/uploads/prod/2018/07/Focus_OSDI18.pdf), [BlazeIt](https://www.vldb.org/pvldb/vol13/p533-kang.pdf), [TASTI](https://ddkang.github.io/papers/2022/tasti-paper.pdf), [EQUI-VOCAL](https://www.vldb.org/pvldb/vol16/p2714-zhang.pdf), [VOCAL-UDF](https://arxiv.org/pdf/2408.02243v2).
+**FlashMMR, Cao et al., NeurIPS 2025**, makes repeated moments an explicit retrieval target. QV-M² expands QVHighlights to 2,212 annotations covering 6,384 intervals, with metrics that account for multiple ground truths. The model combines frame features, query interaction, and a temporal pyramid to predict several relevant intervals. [PDF, §§3–5](https://proceedings.nips.cc/paper_files/paper/2025/file/faaa187af979e46dc54f4d43f8b815b2-Paper-Conference.pdf).
 
-#### Focus: dividing work between ingestion and querying
+On QV-M², G-mAP is 35.14 versus FlashVTG’s 32.14. For questions with three or more target intervals, the corresponding scores are 22.89 and 20.19, Table 3. This is a useful protocol for testing missed repetitions inside one video. The paper’s post-verification component concerns localization learning, not an independent factual check at every query.
 
-**Hsieh et al., OSDI 2018, a key systems reference.** Focus answers queries about frames containing objects of a specified class. As video arrives, an inexpensive specialized CNN builds an approximate index of several most likely classes. Similar object occurrences are grouped into clusters. When a query arrives, an expensive model refines the class of representatives from selected clusters and propagates the result to their members. The OTHER class preserves the ability to retrieve less frequent categories.
+For Aligned, the contribution is the shift from a successful hit to a set of annotated occurrences. Extending it to a week requires identifying the recordings inspected, accounting for uninspected intervals, and separating missed detections from missed retrieval. None of the evidence here establishes exhaustive coverage across a site archive. That remains a separate evaluation target.
 
-The key idea is to choose ingestion and answering costs jointly. A higher-quality index requires more work in advance but reduces subsequent checks. A stream tuner selects the configuration for target precision/recall and preferences between the two costs. This is closer to our task of planning a multi-week archive than comparing context length alone. [PDF, §§3–5, pp. 4–9](https://www.microsoft.com/en-us/research/uploads/prod/2018/07/Focus_OSDI18.pdf).
+<div>
+<a id="blazeit-and-tasti-statistics-and-index-reuse"></a>
+</div>
 
-![Focus: ingest-time index and query-time refinement](/media/assets/expansion-systems/2018-hsieh-focus.png)
+#### BlazeIt: distinguish statistics from example retrieval
 
-*Original Figure 4, PDF p. 5. Inexpensive indexing is performed on the left, and query-time refinement on the right. [Source](https://www.microsoft.com/en-us/research/uploads/prod/2018/07/Focus_OSDI18.pdf).*
+**BlazeIt, Kang et al., PVLDB 2019**, uses inexpensive predictors to accelerate aggregate estimates and LIMIT queries over a detector-defined video relation. Its lasting value is the difference in output contracts: estimate a quantity with an error bound, or stop after finding enough examples. For Aligned, these are useful systems baselines, but detector agreement does not validate physical events, and counting frame appearances does not count unique installations. [PDF, §§3, 6–7](https://www.vldb.org/pvldb/vol13/p533-kang.pdf).
 
-The limitation is fundamental: “ground truth” here is YOLOv2 output, rather than independent human annotation. Clustering can incorrectly merge different occurrences, and classes are limited by the model. Successful agreement with a teacher therefore does not establish small-defect detection quality. Our proposed transfer is to test a similar budgeting mechanism on our own questions and rare events while preserving source video.
+<div>
+<a id="equi-vocal-the-user-defines-an-event-through-examples"></a>
+</div>
 
-#### BlazeIt and TASTI: statistics and index reuse
+#### EQUI-VOCAL: define an event through examples
 
-**BlazeIt, Kang et al., PVLDB 2019**, introduces FrameQL and executes queries over a virtual object table. Instead of running an expensive detector over every frame, the system first obtains a small labeled sample. An inexpensive network helps estimate statistics or rank candidates. For aggregates, its predictions are used as a control variate: a correlated inexpensive signal reduces the number of expensive measurements needed. For a LIMIT query, the system checks likely matches and stops after obtaining the requested number of examples. [PDF, §§3, 6–7, pp. 3, 5–7](https://www.vldb.org/pvldb/vol13/p533-kang.pdf).
+**EQUI-VOCAL, Zhang et al., PVLDB 2023**, synthesizes a temporal/spatial query from positive and negative examples, using active learning to refine the specification. It is useful when an expert can demonstrate a recurring event, but assumes available visual predicates and supports a bounded language without negation or disjunction. Its output is matching segments, so an absence claim or a complete register of individual events requires capabilities beyond the reported method. [PDF, §§2–4](https://www.vldb.org/pvldb/vol16/p2714-zhang.pdf).
 
-![BlazeIt: declarative queries over a virtual video relation](/media/assets/expansion-systems/2019-kang-blazeit.png)
+<div>
+<a id="vocal-udf-teaching-the-system-a-new-observable-condition"></a>
+</div>
 
-*Original Figure 1, PDF p. 2. The virtual table is materialized as needed. [Source](https://www.vldb.org/pvldb/vol13/p533-kang.pdf).*
+#### VOCAL-UDF: add a missing observable condition
 
-The statistical bound applies to the detector output table defined by the authors and to the sampling assumptions. It does not correct recognition errors. Counting objects in frames also does not count unique installations. For Aligned, it is useful to distinguish approximate statistics, example retrieval, and a complete incident register explicitly. A LIMIT restriction must not be hidden behind the statement “all problems have been found.”
+**VOCAL-UDF, Zhang et al., SIGMOD 2025**, translates a question into an executable query and identifies missing predicates. It can generate a Python function over available features or train a small visual model from VLM labels. Execution checks and user-guided selection choose a candidate, which can then serve future queries. [PDF v2, §§4–5](https://arxiv.org/pdf/2408.02243v2).
 
-**TASTI, Kang et al., SIGMOD 2022**, removes the need to train a separate proxy model for every query. The user defines which outputs of an expensive labeler should be considered similar. A learned representation groups similar records. The system labels representatives, stores distances to them, and, for a new query, propagates the representatives’ exact scores to the remaining records. These proxy scores are then used by aggregation, selection, or limited retrieval algorithms. [PDF, §§2.3–4, pp. 3–5](https://ddkang.github.io/papers/2022/tasti-paper.pdf).
+![VOCAL-UDF: create predicates separately from executing queries](/media/assets/expansion-systems/2025-zhang-vocal-udf.png)
 
-![TASTI: reusable semantic index and query-specific score propagation](/media/assets/expansion-systems/2022-kang-tasti.png)
+*Original Figure 2, PDF p. 7. The system builds missing functions before applying the completed query.*
 
-*Original Figure 1, PDF p. 4. Embedding training, index construction, and query execution are separate stages. [Source](https://ddkang.github.io/papers/2022/tasti-paper.pdf).*
+This is useful for Aligned’s repeated, expert-defined checks because the condition and its validation can be inspected separately from the answer model. A critical boundary is the dummy UDF, which always returns True when other candidates are inadequate: it effectively removes a condition. A compliance check must expose that condition as unverified. Frame-level predicates also do not directly implement arbitrary state changes across time. Start with observable conditions that have labeled examples and a held-out validation set. Execution correctness alone does not establish that the condition means what the expert intended.
 
-This is a useful baseline for recurring workloads. It should be compared on the total cost of a query series, including index construction. Its limitations are also explicit: the labeler schema determines the available properties, and the theoretical results require conditions on the loss function and cluster density. In §5.3, the authors specifically note the discrepancy between analysis of one nearest representative and practical use of five. Such theory does not guarantee the truth of a conclusion about construction work.
+### 2.6. Improve memory quality and account for total cost
 
-#### EQUI-VOCAL: the user defines an event through examples
+All the designs above depend on what was recorded in memory. Better retrieval cannot recover a fact omitted by the writer unless source video remains accessible. At the same time, detailed preprocessing of every camera-hour can cost more than the later questions. These two costs should be measured together before adding training or a heavier index.
 
-**Zhang et al., PVLDB 2023, a key paper for configurable compound queries.** EQUI-VOCAL receives several positive and negative clips and synthesizes a query over objects, relations, and state sequences. Beam search explores a bounded query space, active learning requests additional discriminating examples, and an SQL executor runs the resulting rule. Temporal constraints allow sequences and minimum condition durations to be expressed. [PDF, §§2–4, pp. 3–7](https://www.vldb.org/pvldb/vol16/p2714-zhang.pdf).
+<div>
+<a id="flora-leng-et-al-2026-training-a-memory-writer-to-identify-events"></a>
+<a id="paper-2026-leng-flora"></a>
+</div>
 
-![EQUI-VOCAL: query synthesis from labeled examples](/media/assets/expansion-systems/2023-zhang-equi-vocal.png)
+#### FLORA: prepare event records before retrieval
 
-*Original Figure 1, PDF p. 1. Examples refine the user’s intent, and the resulting query is then applied to new segments. [Source](https://www.vldb.org/pvldb/vol16/p2714-zhang.pdf).*
+**FLORA, Leng et al., 2026**, trains a segmenter and captioner to convert recordings into action intervals and descriptions, with a separate rewarder for robotics annotation. Its boundary stitching and separation of intended action from execution outcome are useful upstream ideas, but it does not implement archive retrieval or long-term QA. The robotics reward results do not justify construction-quality conclusions, so only the event-record preparation component belongs in this chapter’s candidate pipeline. Validate its boundaries and captions on helmet footage before adopting it as a memory writer. [PDF, §§2, 4, Figure 6](https://arxiv.org/pdf/2610.31779v1).
 
-For Aligned, this suggests configuring recurring checks together with an expert. However, §2.3 explicitly excludes negation and disjunction. The method cannot be credited with a ready-made check for “the operation was not performed.” In addition, §4 allows stopping after the first match within a segment: the output is matching segments, rather than a complete list of all individual events. Object tracking and visual predicates are assumed to be input components, whose reliability must be measured separately.
+<div>
+<a id="memlife-the-memory-writer-also-needs-optimization"></a>
+</div>
 
-#### VOCAL-UDF: teaching the system a new observable condition
+#### MemLife: optimize what the writer preserves
 
-**Zhang et al., SIGMOD 2025, a key paper for an extensible vocabulary of checks.** VOCAL-UDF translates a question into a formal query and identifies missing predicates. A generator creates either a Python function over available features or a small visual model trained on labels from a strong VLM. Execution checking rejects invalid programs, while active learning with user labels helps select a semantically appropriate candidate. The resulting predicate is saved for future queries. [PDF v2, §§4–5, pp. 7–15](https://arxiv.org/pdf/2408.02243v2).
+**MemLife, Xiong et al., 2026 preprint**, separates a clip writer from a reader that searches records, refines time windows, and optionally returns to video. Its MemOpt procedure trains the writer through GRPO for source faithfulness, retention of useful facts, and retrievability. This addresses a different bottleneck from Ego-R1: the content of memory rather than the controller’s choice of tools. [PDF, §3](https://arxiv.org/pdf/2609.40195v1).
 
-![VOCAL-UDF: parser, generated predicates and query execution](/media/assets/expansion-systems/2025-zhang-vocal-udf.png)
+With the same Qwen3.5-9B writer/reader family, MemOpt improves EgoLifeQA accuracy from 52.80% to 56.60% on 500 questions, Table 1. This supports writer optimization within the experiment, while its compact-memory and reading-speed figures exclude ingestion. For Aligned, first collect failures where needed evidence was visibly present but poorly recorded. Those cases can justify a writer-training experiment against unchanged captions, reader, and video-access budgets.
 
-*Original Figure 2, PDF p. 7. Creation of a missing function is separated from query execution. [Source](https://arxiv.org/pdf/2408.02243v2).*
+<div>
+<a id="focus-dividing-work-between-ingestion-and-querying"></a>
+</div>
 
-This mechanism has a limit that matters for compliance. If candidates perform poorly, the selector can choose a dummy UDF that always returns True. This is equivalent to removing the condition from the query (§4.4.2). For a retrieval system, such a fallback can preserve useful candidates. For a conclusion that “the requirement is satisfied,” it is unacceptable without an explicit statement that the condition was not checked. UDFs that directly evaluate change across several times are also unsupported, although some transitions can be approximated by a sequence of frame-level predicates (§8).
+#### Focus: divide work between ingestion and questions
 
-The practical transfer is a versioned registry of observable conditions with examples, an independent validation set, and an explicit “check unavailable” state. Detector creation cost should be separated from repeated application. Evaluation on CLEVRER, CityFlow-NL, and Charades confirms specific query engine capabilities, rather than a complete system for checking construction codes.
+**Focus, Hsieh et al., OSDI 2018**, builds an inexpensive approximate object-class index, then applies an expensive detector to selected cluster representatives at query time. It remains useful for thinking about the ingestion/query tradeoff, despite a recognition setting narrower than Aligned’s. Its accuracy target is agreement with a reference detector, so the original speedups do not establish rare-defect recall or modern VLM operating cost. Use the budgeting principle as a baseline while preserving source footage. [PDF, §§3–5](https://www.microsoft.com/en-us/research/uploads/prod/2018/07/Focus_OSDI18.pdf).
 
-#### Reducto: saving input processing costs
+#### TASTI: reuse an index across structured questions
 
-**Reducto**, Li et al., SIGCOMM 2020, makes savings earlier, before frame transmission and expensive inference. The server profiles a query and selects an inexpensive inter-frame feature and a threshold table. The camera applies it to short segments. When new differences fall outside the learned range, it sends the segment without filtering and initiates a table update (§4.1, Fig. 4). [Paper card](/notes/2020-li-reducto/), [PDF](https://www.cs.princeton.edu/~ravian/publications/reducto_sigcomm20.pdf).
+**TASTI, Kang et al., SIGMOD 2022**, learns similarity between outputs of an expensive labeler, labels representatives, and propagates their scores for several query types. This is useful when Aligned has recurring questions over a stable output schema, because one index can replace repeated query-specific proxy training. Its benefits remain tied to that schema and labeler quality. A semantic question outside the stored properties still needs source inspection. [PDF, §§2–4](https://ddkang.github.io/papers/2022/tasti-paper.pdf).
 
-![Reducto: the camera filters frames, the server updates the threshold model](/media/assets/expansion-crosscut/reducto-fig4.png)
+<div>
+<a id="reducto-saving-input-processing-costs"></a>
+</div>
 
-*Original Fig. 4, PDF p. 5. Profiling, threshold selection, and main inference run in different locations.*
+#### Reducto: filter before expensive processing
 
-A key limitation is especially important for transfer: the current Reducto implementation explicitly **does not support activity detection with state across frames**. It is evaluated on tagging, counting, and bounding boxes of people and cars, with reference outputs mostly supplied by YOLO (§§4.1, 5.1). Agreement with a detector is not recall of physical defects. One-second buffering also contributes to latency. The authors already provide a useful detail for Aligned: frames that are not sent can remain in a local archive. Inference savings and the policy for preserving originals should therefore be evaluated separately.
+**Reducto, Li et al., SIGCOMM 2020**, uses inexpensive frame differences on the camera and server-selected thresholds to reduce transmission and inference. It is a peripheral ingestion reference here: the inspected implementation does not support activity detection with state across frames, and its people/car experiments do not establish sensitivity to small construction defects. Any transfer should measure event-level misses under helmet motion while keeping the original recordings available. [PDF, §§4–5](https://www.cs.princeton.edu/~ravian/publications/reducto_sigcomm20.pdf).
+
+<div>
+<a id="table-3"></a>
+<a id="table-3-row-1"></a>
+<a id="table-3-row-2"></a>
+<a id="table-3-row-3"></a>
+<a id="table-3-row-4"></a>
+</div>
 
 ### Comparing the approaches
 
-Text descriptions provide inspectable memory and inexpensive repeated questions. Visual retrieval helps find a detail that was never described, but similarity does not establish physical identity. A graph makes temporal and entity relationships available for compound questions, while also retaining the consequences of merging errors. An agentic reader can refine retrieval and return to frames, but adds latency and depends on tool quality.
+The most useful initial comparison for Aligned is a reusable episode index following MERIT, independent text and visual retrieval, and a bounded return to source clips. CapMem supplies a controlled caption-memory baseline; CARVE motivates testing mixed representations; EgoMemReason supplies the oracle-evidence diagnostic. These components describe testable choices rather than an already validated combined architecture.
 
-Query execution systems expose a different choice: how much work to perform as video arrives, what to check at query time, and whether an answer can be estimated from a sample. This applies to the same text and visual indices. Focus and CapMem should be compared on the total cost of a series of questions, rather than just the time for one answer. An inexpensive LIMIT query or approximate aggregate still does not become a complete event list.
+Add complexity for an observed failure. Relation-heavy questions can justify EGAgent/WorldMM-style structure or EM²Mem’s earlier evidence integration. Repeated failed searches can justify a more capable controller. Missing facts can justify writer optimization. Queries for every event need a separate coverage test. Approximate statistics and limited-example search need their own stated guarantees.
 
-| Contract | Relevant idea | What Aligned additionally requires |
-|---|---|---|
-| Find a few examples | Focus, BlazeIt LIMIT | State the sample’s limitations and preserve supporting frames |
-| Find all cases | Corpus/multi-moment retrieval and executable conditions | Complete coverage, event deduplication, unknown intervals |
-| Estimate statistics | BlazeIt, TASTI | A definition of the quantity, perception error separated from sampling error |
-| Repeat a compound check | EQUI-VOCAL, VOCAL-UDF | Validated predicates, support for the required operators, temporal causality |
-
-This is our project-level conclusion. None of these systems immediately provides a reliable multi-camera repair register. Their value is in making the computational and semantic obligations of a query explicit before choosing a large reader or graph memory.
+Compare these choices with the same recordings, automatic captions, answer model, and evidence budget. Measure required-evidence coverage, answer quality, ingestion cost, cost over a series of questions, and query latency separately. The next chapter examines the assumption that all of them depend on: whether observations from different times, cameras, and people can legitimately be combined into one work history.

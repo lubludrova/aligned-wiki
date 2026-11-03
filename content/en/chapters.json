@@ -20,7 +20,7 @@
     "slug": "archive",
     "number": "2",
     "title": "Retrieval and question answering over video archives",
-    "description": "Finding episodes, retrieving every relevant event, and answering questions across recordings and long-term memory.",
+    "description": "Reusable memory, episode retrieval, selective inspection, multi-event answers, and the limits of archive coverage and cost.",
     "group": "archive"
   },
   {

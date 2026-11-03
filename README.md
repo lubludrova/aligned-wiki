@@ -28,7 +28,7 @@ pnpm preview           # Preview the built site
 - The methods map expands from Aligned to task areas, small method groups, and papers. Groups contain at most 8 papers. Chapter and appendix nodes are absent. All 169 publications in Papers appear once. A task area with only one group opens directly to papers. Multiple branches can stay open. Pan the shared canvas and zoom with a wheel, touch gesture, or buttons. Nodes and edges move together. Expanded branches are saved in the URL. Reduced-motion preferences disable animation.
 - Paper previews appear on hover or keyboard focus, with a short description, publication year, venue, and contribution type. A tap opens the preview on touch screens. Gold stars identify the wiki’s 11 spotlight priorities, with their rationale and an optional spotlight-only filter. This is the recorded October 31 shortlist, not a conference award or a new ranking of all papers. Branches show navigation categories, not claims of scientific lineage.
 - The map opens as a graph on desktop and a readable list on narrow screens. Both views are available on the same page. The list also works without JavaScript.
-- An introductory Problem statement within Foundations and representations, 11 thematic chapters, two appendices, 169 publication pages, and 231 figures: 76 from the reviewed snapshot and 155 from wiki notes.
+- An introductory Problem statement within Foundations and representations, 11 thematic chapters, two appendices, 169 publication pages, 56 chapter figures, and 155 wiki-note illustrations.
 - Papers includes all 155 wiki notes plus 14 review-only publications (169 total). Full-text search covers complete notes and review excerpts. Filter by topic, year, chapter, review coverage, and wiki Spotlight. Queries and filters persist in the URL. `⌘K` / `Ctrl+K` searches the whole site.
 - Chapter outlines, section links, previous/next navigation, and links from discussions to publication pages.
 - Figure enlargement, horizontally scrolling tables, light and dark themes, and print styles.
@@ -43,6 +43,8 @@ a4f563815095741a13d7325dcb5fed219b553087a36523f45fa5e861c9360557
 ```
 
 Unfinished parallel additions about continuous monitoring were not imported. The original review Markdown was not modified. The wiki’s later illustration additions are imported separately from the reviewed chapter snapshot. The snapshot is in `content/review.original.md`, with its exact-import report in `content/import-report.json`.
+
+Chapter 2 was subsequently rewritten locally on November 3 at the author's request. Its 38 publications were assessed for usefulness to Aligned, with core methods explained in detail and secondary work reduced to one paragraph of 2–4 sentences without figures. The English revision is approximately 4,800 words with six figures. Relevance decisions, primary-source locations, preserved section anchors, and the revised structural baseline are recorded in `content/en/chapter-revisions/archive.json`. The original Russian chapter and imported review remain unchanged.
 
 The reviewed subset contains 123 records with discussions, three bibliographic data-source records, and one historical DTGL record. These are **127 publications, not 127 detailed method reviews**. The full catalog adds 42 wiki-only publications for 169 total. The method map covers all 169, while the reviewed chapters retain their original scope. Different VideoAgent and VideoRAG papers remain separate. Where several methods share a discussion, their pages show that shared passage with an explicit note and links to the related papers. TGML results are not attributed to DTGL.
 
@@ -102,7 +104,7 @@ The unnumbered `/chapters/problem-statement/` page reads `content/en/notes/probl
 
 **Stable links:** retain published paper and chapter slugs. Explicit `paper-*` and `chapter-*` anchors are preserved. Automatic section URLs depend on headings. Inserting new headings does not affect existing aliases. When renaming a heading, update its key in `content/en/heading-aliases.json` and keep its previously published English ID as an explicit anchor.
 
-The translation check compares the translated snapshot against its Russian source. Intentional content additions require an explicit update to that baseline or the check. Do not treat a structural check as a scientific revalidation of new claims.
+The translation check compares the translated snapshot against its Russian source, except for the explicitly rewritten Chapter 2, which is checked against its English editorial baseline. The chapter-revision tests additionally enforce publication coverage, short-entry length, the chapter length and figure budgets, and preserved published anchors. Intentional content additions require an explicit update to the relevant baseline or the check. Do not treat a structural check as a scientific revalidation of new claims.
 
 ## Publication metadata and table links
 

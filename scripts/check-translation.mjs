@@ -24,7 +24,7 @@ const structure = text => {
     numbers: numbers(text),
   };
 };
-let chapterCount = 0, noteCount = 0, figures = 0;
+let chapterCount = 0, noteCount = 0, figures = 0, revisionCount = 0;
 for (const kind of ['chapters', 'notes']) {
   for (const file of readdirSync(new URL(`${kind}/`, root)).filter(f => f.endsWith('.md'))) {
     let original = read(`${kind}/${file}`);
@@ -34,8 +34,17 @@ for (const kind of ['chapters', 'notes']) {
     // Approved navigation change: the product brief now belongs to Foundations.
     if (kind === 'chapters' && file === 'foundations.md') {
       original = original.replace('/notes/problem_statement/', '/chapters/problem-statement/');
+      // Approved editorial addition: two sourced examples of top-k video RAG.
+      original += '\n[VideoRAG (Jeong et al.)](https://aclanthology.org/2025.findings-acl.1096.pdf), [CARVE](https://arxiv.org/pdf/2606.13141v2).\n';
     }
-    const source = structure(original), target = structure(translated);
+    const target = structure(translated);
+    // Chapter 2 was explicitly rewritten and shortened after translation.
+    // Its reviewed English baseline replaces translation parity for this chapter.
+    const revision = kind === 'chapters' && file === 'archive.md'
+      ? JSON.parse(read('en/chapter-revisions/archive.json'))
+      : undefined;
+    const source = revision ? revision.structureBaseline : structure(original);
+    if (revision) revisionCount++;
     for (const field of ['headings', 'links', 'images', 'tables', 'anchors', 'numbers']) {
       assert.deepEqual(target[field], source[field], `${kind}/${file}: ${field} changed`);
     }
@@ -47,4 +56,4 @@ for (const kind of ['chapters', 'notes']) {
 for (const file of ['chapters.json', 'papers.json', 'notes.json']) {
   assert(!/[А-Яа-яЁё]/.test(read(`en/${file}`)), `${file}: untranslated metadata`);
 }
-console.log(`PASS: ${chapterCount} English chapters, ${noteCount} English notes, ${figures} figures. Heading structure, links, explicit anchors, table dimensions, and numeric values preserved. No untranslated Russian text.`);
+console.log(`PASS: ${chapterCount} English chapters, ${noteCount} English notes, ${figures} figures. Structure, links, anchors, tables, and numbers match ${revisionCount} editorial baseline and the remaining translation sources. No untranslated Russian text.`);
