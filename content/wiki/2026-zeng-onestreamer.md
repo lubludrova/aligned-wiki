@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["NJU", "PJLAB", "JD", "SJTU", "USTC", "CAS", "CUHK", "PKU", "THU", "FDU", "ZJU"]
 research_groups: [nju-mcg]
 reviewed: false
-tags: [video-memory, video-qa, efficient-processing]
+tags: [dataset, method, video-memory, video-qa, efficient-processing]
 ---
 
 # OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction
@@ -15,6 +15,7 @@ OneStreamer jointly learns to record factual video memories and respond when eno
 **Paper:** [PDF](../raw/2026-zeng-onestreamer.pdf) · [arXiv v1](https://arxiv.org/abs/2610.01762v1). Affiliations follow the PDF's abbreviations.
 **Website:** [Project website](https://mcg-nju.github.io/OneStreamer/)
 **Code:** [GitHub repository](https://github.com/MCG-NJU/OneStreamer) — model weights labeled “Public access pending” when checked on 2026-10-31.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7216450763), checked 2026-11-03).
 
 ![OneStreamer: Figure 3 from the paper](../assets/2026-zeng-onestreamer.png)
 

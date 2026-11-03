@@ -4,7 +4,7 @@ venue: "SIGMOD"
 affiliations: ["Stanford University"]
 research_groups: []
 reviewed: false
-tags: [video-representation, video-retrieval, efficient-processing]
+tags: [method, video-representation, video-retrieval, efficient-processing]
 ---
 
 # TASTI: Semantic Indexes for Machine Learning-based Queries over Unstructured Data
@@ -16,6 +16,7 @@ TASTI reuses an embedding index and a small set of expensive labels to generate 
 **Website:** Not found in checked sources beyond the official repository.
 **Code:** [Official repository](https://github.com/stanford-futuredata/tasti)
 **Source version:** Fourteen-page author manuscript. Its running header contains an unfinished Conference'17 template. SIGMOD 2022 identity is independently confirmed by the official repository and the author institution's publication record, not that header.
+**Citations:** 23 ([OpenAlex](https://openalex.org/W4281739679), checked 2026-11-03).
 
 ![TASTI training, index construction, and query processing](../assets/2022-kang-tasti.png)
 

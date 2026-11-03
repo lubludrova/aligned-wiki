@@ -4,7 +4,7 @@ venue: "Science Robotics"
 affiliations: ["UC Berkeley"]
 research_groups: [berkeley-rail]
 reviewed: false
-tags: [robot-learning, reward-learning, real-world-evaluation]
+tags: [method, robot-learning, reward-learning, real-world-evaluation]
 ---
 
 # Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning
@@ -16,6 +16,7 @@ HIL-SERL combines learned success detection, demonstrations and human correction
 **Source version:** arXiv 2410.21845v3, 20 March 2025. [Science Robotics publication confirmed by the first author](https://jianlanluo.github.io/).
 **Website:** [Project website](https://hil-serl.github.io/)
 **Code:** [GitHub repository](https://github.com/rail-berkeley/hil-serl)
+**Citations:** 77 ([OpenAlex](https://openalex.org/W4413362511), checked 2026-11-03).
 
 ![HIL-SERL actor, learner, and replay architecture](../assets/2025-luo-hil-serl.png)
 

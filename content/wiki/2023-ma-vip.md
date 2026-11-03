@@ -4,7 +4,7 @@ venue: "ICLR"
 affiliations: ["FAIR, Meta AI", "University of Pennsylvania"]
 research_groups: [meta-fair]
 reviewed: false
-tags: [reward-learning, video-representation, robot-learning, egocentric-video, real-world-evaluation]
+tags: [method, reward-learning, video-representation, robot-learning, egocentric-video, real-world-evaluation]
 ---
 
 # VIP: Towards Universal Visual Reward and Representation via Value-Implicit Pre-Training
@@ -16,6 +16,7 @@ VIP learns reusable visual representations and goal-image rewards from passive h
 **Website:** [Project website](https://sites.google.com/view/vip-rl)
 **Code:** [GitHub repository](https://github.com/facebookresearch/vip)
 **Source version:** arXiv:2210.00030v2, 7 March 2023. First released in 2022, published at ICLR 2023.
+**Citations:** 47 ([OpenAlex](https://openalex.org/W4302010007), checked 2026-11-03).
 
 ![VIP value-implicit pre-training and visuomotor use](../assets/2023-ma-vip.png)
 

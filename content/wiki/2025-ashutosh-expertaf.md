@@ -7,7 +7,7 @@ affiliations:
   - Carnegie Mellon University
 research_groups: [meta-fair]
 reviewed: false
-tags: [execution-quality, video-retrieval, egocentric-video]
+tags: [dataset, benchmark, method, execution-quality, video-retrieval, egocentric-video]
 ---
 
 # ExpertAF: Expert Actionable Feedback from Video
@@ -20,6 +20,7 @@ ExpertAF learns to turn a learner's video and body pose into corrective commenta
 **Website:** https://vision.cs.utexas.edu/projects/ExpertAF/
 **Code:** https://github.com/thechargedneutron/ExpertAF
 **Source version:** CVF open-access accepted CVPR 2025 paper, pp. 13582–13594. The first arXiv release was in 2024. The separate CVPR supplement was also consulted.
+**Citations:** 20 ([OpenAlex](https://openalex.org/W4413144637), checked 2026-11-03).
 
 ![ExpertAF multimodal expert feedback model](../assets/2025-ashutosh-expertaf.png)
 

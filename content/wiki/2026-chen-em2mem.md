@@ -4,7 +4,7 @@ venue: "Findings of EMNLP"
 affiliations: ["Zhejiang University", "South China University of Technology", "Lenovo Group Limited"]
 research_groups: []
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video]
 ---
 
 # EM²Mem: Event-Centric Multimodal Memory for Large Language Models
@@ -16,6 +16,7 @@ EM²Mem aligns captions, speech, visual evidence and provenance into shared even
 **Website:** Not found in checked sources.
 **Code:** [Official research implementation](https://github.com/zjunlp/LightMem-Ego/tree/main/research/em2mem)
 **Source version:** arXiv 2609.00551v1, 1 September 2026. Publication verified in [Findings of EMNLP 2026](https://aclanthology.org/2026.findings-emnlp.903/). Numerical claims follow the archived preprint.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7206213724), checked 2026-11-03).
 
 ![EM²Mem: Figure 2 from the paper](../assets/2026-chen-em2mem.png)
 

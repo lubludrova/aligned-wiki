@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Shanghai Jiao Tong University", "Nanjing University", "Nanjing University of Science and Technology"]
 research_groups: []
 reviewed: false
-tags: ["efficient-processing", "video-memory"]
+tags: [method, efficient-processing, video-memory]
 ---
 
 # PARSEE-VAD: Efficient Training-Free Online Video Anomaly Detection via Proposition-Aware Reasoning and Streaming Evidence Escalation
@@ -17,6 +17,7 @@ Frozen multimodal inference acquires selected propositions and carries compact s
 **Code:** Not found in checked sources.
 
 **Source version:** arXiv 2609.33236v1, 27 September 2026. The PDF says ICLR 2027, but that venue claim is not independently verified at this review cutoff.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7214777355), checked 2026-11-03).
 
 ![PARSEE-VAD: Figure 2 from the paper](../assets/2026-wang-parsee-vad.png)
 

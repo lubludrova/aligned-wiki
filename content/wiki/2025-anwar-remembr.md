@@ -4,7 +4,7 @@ venue: "ICRA"
 affiliations: ["NVIDIA", "University of Southern California", "University of Texas at Austin"]
 research_groups: []
 reviewed: false
-tags: [video-memory, video-qa, spatial-understanding, real-world-evaluation]
+tags: [dataset, benchmark, method, video-memory, video-qa, spatial-understanding, real-world-evaluation]
 ---
 
 # ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robot Navigation
@@ -16,6 +16,7 @@ ReMEmbR stores timestamped, localized video captions and retrieves them iterativ
 **Website:** [Project website](https://nvidia-ai-iot.github.io/remembr/)
 **Code:** [GitHub repository](https://github.com/NVIDIA-AI-IOT/remembr)
 **Source version:** arXiv:2409.13682v1, 20 September 2024. The [official project](https://nvidia-ai-iot.github.io/remembr/) identifies the publication as ICRA 2025.
+**Citations:** 20 ([OpenAlex](https://openalex.org/W4413944788), checked 2026-11-03).
 
 ![ReMEmbR long-horizon robot memory and querying](../assets/2025-anwar-remembr.png)
 

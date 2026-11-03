@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: ["Xiamen University", "Nanjing University", "University of Rochester"]
 research_groups: []
 reviewed: false
-tags: [video-retrieval, video-qa, efficient-processing]
+tags: [method, video-retrieval, video-qa, efficient-processing]
 ---
 
 # Video-RAG: Visually-aligned Retrieval-Augmented Long Video Comprehension
@@ -16,6 +16,7 @@ Video-RAG augments an existing video model with question-relevant speech, visibl
 **Website:** [Project website](https://video-rag.github.io/)
 **Code:** [Official repository](https://github.com/Leon1207/Video-RAG-master)
 **Source version:** arXiv:2411.13093v4, 23 November 2025, camera-ready NeurIPS version with supplementary material. First preprint appeared in 2024.
+**Citations:** 9 ([OpenAlex](https://openalex.org/W4404648887), checked 2026-11-03).
 
 ![Video-RAG retrieval augmentation compared with alternative approaches](../assets/2025-luo-video-rag.png)
 

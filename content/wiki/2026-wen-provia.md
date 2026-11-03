@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Karlsruhe Institute of Technology", "Hunan University"]
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, execution-quality, egocentric-video]
+tags: [method, procedure-understanding, execution-quality, egocentric-video]
 ---
 
 # PROVIA: Procedure State Tracking for Online Mistake Detection in Egocentric Videos
@@ -15,6 +15,7 @@ PROVIA separates observed actions from accepted procedure progress to detect mis
 **Paper:** [PDF](../raw/2026-wen-provia.pdf) · [arXiv v1](https://arxiv.org/abs/2609.20638v1)
 **Website:** Not found in checked sources.
 **Code:** [Kratos-Wen/PROVIA](https://github.com/Kratos-Wen/PROVIA)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7213593472), checked 2026-11-03).
 
 ![PROVIA: Figure 1 from the paper](../assets/2026-wen-provia.png)
 

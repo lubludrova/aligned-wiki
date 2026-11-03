@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Johns Hopkins University", "Johns Hopkins University Applied Physics Laboratory"]
 research_groups: [jhu-b3]
 reviewed: false
-tags: [video-memory, spatial-understanding, video-qa, egocentric-video]
+tags: [method, video-memory, spatial-understanding, video-qa, egocentric-video]
 ---
 
 # Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos
@@ -15,6 +15,7 @@ LEDGER stores object identities, 3D locations, histories, and descriptions so la
 **Paper:** [PDF](../raw/2026-chaudhari-ledger.pdf) · [arXiv v1](https://arxiv.org/abs/2610.10538v1)
 **Website:** [Project website](https://ledger-3d.github.io/)
 **Code:** [GitHub repository](https://github.com/LEDGER-3D/LEDGER)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7220998679), checked 2026-11-03).
 
 ![LEDGER — Never Look Back: Figure 2 from the paper](../assets/2026-chaudhari-ledger.png)
 

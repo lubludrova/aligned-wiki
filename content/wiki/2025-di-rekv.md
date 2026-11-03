@@ -4,7 +4,7 @@ venue: "ICLR 2025"
 affiliations: ["Shanghai Jiao Tong University", "Alibaba Group"]
 research_groups: []
 reviewed: false
-tags: ["video-memory", "video-qa", "efficient-processing"]
+tags: [method, video-memory, video-qa, efficient-processing]
 ---
 
 # Streaming Video Question-Answering with In-context Video KV-Cache Retrieval
@@ -16,6 +16,7 @@ Separates streaming video encoding from later questions by retaining and retriev
 **Website:** Not found in checked sources.
 **Code:** [Author repository](https://github.com/Becomebright/ReKV)
 **Source version:** arXiv:2503.00540v1, 1 March 2025, conference-labelled ICLR 2025 manuscript.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4415082307), checked 2026-11-03).
 
 ![ReKV streaming video memory and retrieval overview](../assets/2025-di-rekv.png)
 

@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: ["Nanjing University", "Shanghai AI Laboratory", "Zhejiang University", "Noah’s Ark Lab, Huawei", "Yinwang Intelligent Tech."]
 research_groups: ["nju-mcg"]
 reviewed: false
-tags: ["video-memory", "efficient-processing", "video-qa"]
+tags: [dataset, benchmark, method, video-memory, efficient-processing, video-qa]
 ---
 
 # StreamForest: Efficient Online Video Understanding with Persistent Event Memory
@@ -16,6 +16,7 @@ Combines a detailed recent window with event-tree compression to answer question
 **Website:** [Project website](https://github.com/MCG-NJU/StreamForest)
 **Code:** [GitHub repository](https://github.com/MCG-NJU/StreamForest)
 **Source version:** arXiv:2509.24871v1, 29 September 2025. NeurIPS 2025 status verified by the official author repository.
+**Citations:** 7 ([OpenAlex](https://openalex.org/W7197034076), checked 2026-11-03).
 
 ![StreamForest persistent event memory and spatiotemporal processing](../assets/2025-zeng-streamforest.png)
 

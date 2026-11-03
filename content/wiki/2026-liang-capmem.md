@@ -4,7 +4,7 @@ venue: "EMNLP 2026 Industry Track"
 affiliations: ["University College London", "Imperial College London", "Durham University", "Shanghai Jiao Tong University", "Queen Mary University of London", "Huawei Noah’s Ark Lab", "Independent Researcher"]
 research_groups: []
 reviewed: false
-tags: ["video-memory", "video-qa", "efficient-processing", "egocentric-video"]
+tags: [dataset, benchmark, video-memory, video-qa, efficient-processing, egocentric-video]
 ---
 
 # CapMem: A Benchmark for Caption-Based Episodic Memory in Egocentric Video
@@ -16,6 +16,7 @@ Tests reusable caption memory against direct video QA with matched-frame control
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
 **Source version:** Publisher PDF, EMNLP 2026 Industry Track, pp. 3888–3914, 27 pages.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7213527043), checked 2026-11-03).
 
 ![CapMem: Figure 2 from the paper](../assets/2026-liang-capmem.png)
 

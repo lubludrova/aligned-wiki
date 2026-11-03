@@ -4,7 +4,7 @@ venue: "AAAI"
 affiliations: [UC Berkeley, TranscEngram, NYU, University of Oxford, UC Davis, HKU]
 research_groups: []
 reviewed: false
-tags: [spatial-understanding, multi-person, egocentric-video]
+tags: [dataset, benchmark, spatial-understanding, multi-person, egocentric-video]
 ---
 
 # Seeing from Another Perspective: Evaluating Multi-View Understanding in MLLMs
@@ -16,6 +16,7 @@ All-Angles Bench diagnoses cross-view correspondence and spatial reasoning with 
 **Website:** [Project website](https://danielchyeh.github.io/All-Angles-Bench/)
 **Code:** [Official repository](https://github.com/Chenyu-Wang567/All-Angles-Bench)
 **Source version:** Archived arXiv 2504.15280v2, 27 April 2025, evaluating 27 models. Publication is verified at AAAI 2026, whose abstract reports 38 models. The final publication PDF was not obtained. Claims below follow the inspected v2.
+**Citations:** 2 ([OpenAlex](https://openalex.org/W7138285799), checked 2026-11-03).
 
 ![All-Angles Bench: Figure 3 from the paper](../assets/2026-yeh-all-angles-bench.png)
 

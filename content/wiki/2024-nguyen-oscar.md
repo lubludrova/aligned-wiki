@@ -4,7 +4,7 @@ venue: "Findings of NAACL"
 affiliations: ["University of Rochester", "University of Texas at Dallas", "Arizona State University"]
 research_groups: []
 reviewed: false
-tags: [state-changes, video-qa, egocentric-video]
+tags: [dataset, benchmark, method, state-changes, video-qa, egocentric-video]
 ---
 
 # OSCaR: Object State Captioning and State Change Representation
@@ -16,6 +16,7 @@ OSCaR creates language supervision and benchmarks for describing object states, 
 **Website:** [Project website](https://nguyennm1024.github.io/OSCaR/)
 **Code:** [GitHub repository](https://github.com/nguyennm1024/OSCaR)
 **Source version:** arXiv:2402.17128v4, 2 April 2024, including Appendix A. Published in Findings of NAACL 2024.
+**Citations:** 10 ([OpenAlex](https://openalex.org/W4401043560), checked 2026-11-03).
 
 ![OSCaR object state descriptions and state-change reasoning examples](../assets/2024-nguyen-oscar.png)
 

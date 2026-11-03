@@ -6,7 +6,7 @@ affiliations:
   - "ASML Research"
 research_groups: []
 reviewed: false
-tags: [state-changes, execution-quality, egocentric-video]
+tags: [method, state-changes, execution-quality, egocentric-video]
 ---
 
 # Find the Assembly Mistakes: Error Segmentation for Industrial Applications
@@ -19,6 +19,7 @@ StateDiffNet localizes visible assembly-state differences against an intended co
 **Website:** https://timschoonbeek.github.io/error_seg
 **Code:** https://github.com/Dan-Leh/find-my-assembly-mistakes
 **Source version:** arXiv:2408.12945v1, 23 August 2024, 23 pages. ECCV 2024 VISION workshop proceedings appeared in 2025, which determines this wiki filename/year.
+**Citations:** 3 ([OpenAlex](https://openalex.org/W4410589926), checked 2026-11-03).
 
 ![StateDiffNet paired-image change segmentation architecture](../assets/2025-lehman-statediffnet.png)
 

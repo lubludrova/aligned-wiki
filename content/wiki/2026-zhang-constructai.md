@@ -4,7 +4,7 @@ venue: "AAAI / IAAI, 40(47), 40167-40175"
 affiliations: ["Beijing University of Posts and Telecommunications", "Nanyang Technological University", "Nanjing Technological University", "Huafeng Technology (Nanjing)"]
 research_groups: []
 reviewed: false
-tags: [execution-quality, egocentric-video, construction, real-world-evaluation, production-use]
+tags: [dataset, benchmark, method, execution-quality, egocentric-video, construction, real-world-evaluation, production-use]
 ---
 
 # ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems
@@ -16,6 +16,7 @@ Describes a deployed construction-safety workflow linking camera observations, l
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources. Similarly named repositories found in search were not attributable to this paper.
 **Source version:** Nine-page AAAI-26 proceedings PDF, DOI 10.1609/aaai.v40i47.41452, published 14 March 2026 in the IAAI deployed-applications track. Downloaded unchanged from the publisher.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7138868116), checked 2026-11-03).
 
 ![ConstructAI: Figure 1 from the paper](../assets/2026-zhang-constructai.png)
 

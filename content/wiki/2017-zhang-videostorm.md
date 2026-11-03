@@ -4,7 +4,7 @@ venue: "NSDI"
 affiliations: ["Microsoft", "Princeton University"]
 research_groups: []
 reviewed: false
-tags: ["efficient-processing", "real-world-evaluation"]
+tags: [method, efficient-processing, real-world-evaluation]
 ---
 
 # Live Video Analytics at Scale with Approximation and Delay-Tolerance
@@ -17,6 +17,7 @@ VideoStorm jointly schedules live analytics by output quality, resource demand a
 **Code:** Not found in checked sources.
 
 **Source version:** USENIX NSDI 2017 proceedings, pp.377–392.
+**Citations:** 329 ([OpenAlex](https://openalex.org/W2599379624), checked 2026-11-03).
 
 ![VideoStorm distributed video analytics architecture](../assets/2017-zhang-videostorm.png)
 

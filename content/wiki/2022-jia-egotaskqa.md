@@ -4,7 +4,7 @@ venue: "NeurIPS Datasets and Benchmarks"
 affiliations: ["UCLA Center for Vision, Cognition, Learning, and Autonomy (VCLA)", "Beijing Institute for General Artificial Intelligence (BIGAI)", "Institute for Artificial Intelligence, Peking University", "Department of Automation, Tsinghua University"]
 research_groups: [ucla-vcla, bigai]
 reviewed: false
-tags: [video-qa, state-changes, procedure-understanding, egocentric-video, multi-person]
+tags: [dataset, benchmark, video-qa, state-changes, procedure-understanding, egocentric-video, multi-person]
 ---
 
 # EgoTaskQA: Understanding Human Tasks in Egocentric Videos
@@ -16,6 +16,7 @@ EgoTaskQA turns annotated object states, action dependencies and actor–helper 
 **Website:** [Project website](https://sites.google.com/view/egotaskqa/home)
 **Code:** [Official repository](https://github.com/Buzz-Beater/EgoTaskQA)
 **Source version:** arXiv 2210.03929v1, 8 October 2022. Publication verified in the NeurIPS 2022 Datasets and Benchmarks proceedings.
+**Citations:** 28 ([OpenAlex](https://openalex.org/W7133185840), checked 2026-11-03).
 
 ![EgoTaskQA collaborative task and question examples](../assets/2022-jia-egotaskqa.png)
 

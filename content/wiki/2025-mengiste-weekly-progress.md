@@ -4,7 +4,7 @@ venue: "ISARC 2025, 641–648"
 affiliations: ["New York University Abu Dhabi"]
 research_groups: []
 reviewed: false
-tags: [state-changes, construction, real-world-evaluation]
+tags: [method, state-changes, construction, real-world-evaluation]
 ---
 
 # Automating Weekly Construction Activity Progress Reporting: Leveraging AI-Driven Workflows
@@ -16,6 +16,7 @@ Connects inspection photos and an updated schedule to an automated reporting wor
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
 **Source version:** Original eight-page ISARC 2025 proceedings PDF, DOI 10.22260/ISARC2025/0084.
+**Citations:** 1 ([OpenAlex](https://openalex.org/W4412691130), checked 2026-11-03).
 
 ![Automated construction progress reporting process](../assets/2025-mengiste-weekly-progress.png)
 

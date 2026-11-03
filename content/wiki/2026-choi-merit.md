@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["Yonsei University", "Adobe Research"]
 research_groups: [yonsei-ciplab, adobe-research]
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video]
 ---
 
 # Keep It Simple: Multi-Key Episodic Memory Retrieval for Ultra-Long Video Understanding
@@ -15,6 +15,7 @@ MERIT indexes short video episodes with several textual keys and expands relevan
 **Paper:** [PDF](../raw/2026-choi-merit.pdf) · [arXiv v2](https://arxiv.org/abs/2608.07663v2), with [ECCV 2026 acceptance](https://eccv.ecva.net/virtual/2026/poster/5468) independently recorded by the conference.
 **Website:** [Project website](https://choi-yeeun.github.io/MERIT/)
 **Code:** [GitHub repository](https://github.com/choi-yeeun/MERIT)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7202209200), checked 2026-11-03).
 
 ![MERIT: Figure 2 from the paper](../assets/2026-choi-merit.png)
 

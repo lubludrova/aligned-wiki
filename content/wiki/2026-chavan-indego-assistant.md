@@ -4,7 +4,7 @@ venue: "CIRP Annals 75, 19–23"
 affiliations: ["Automation Technology Division, Fraunhofer IPK", "Department of Industrial Automation Technology, Technical University of Berlin"]
 research_groups: [fraunhofer-ipk-automation, tu-berlin-iat]
 reviewed: false
-tags: [procedure-understanding, egocentric-video]
+tags: [method, procedure-understanding, egocentric-video]
 ---
 
 # AI-based worker guidance in assembly and disassembly operations using multimodal ego/exo-centric data capture and structured task knowledge
@@ -15,6 +15,7 @@ IndEgo Assistant turns narrated expert demonstrations into human-validated proce
 **Paper:** [PDF](../raw/2026-chavan-indego-assistant.pdf) · [Publisher](https://doi.org/10.1016/j.cirp.2026.04.066)
 **Website:** [Project](https://indego-assistant.github.io/)
 **Code:** [Later reference implementation](https://github.com/IndEgo-Assistant/indego-procedure-assistant), including a gaze extension. Original experimental code is not included.
+**Citations:** 1 ([OpenAlex](https://openalex.org/W7161635631), checked 2026-11-03).
 
 ![IndEgo Assistant: Figure 2 from the paper](../assets/2026-chavan-indego-assistant.png)
 

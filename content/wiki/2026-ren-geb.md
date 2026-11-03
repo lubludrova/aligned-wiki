@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["University of Illinois Urbana-Champaign", "Amazon.com, Inc."]
 research_groups: []
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, egocentric-video]
 ---
 
 # Beyond the Timeline: Augmenting Long-Video Memory with Grounded Entity Biographies
@@ -16,6 +16,7 @@ Grounded Entity Biographies (GEB) connects visually associated encounters of the
 **Website:** [Author-linked project website](https://geb-video.github.io/)
 **Code:** [Official repository](https://github.com/rhfeiyang/GEB) — code and artifacts are announced as coming soon.
 **Source version:** arXiv 2609.38155v1, 29 September 2026. No accepted venue verified.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7214922490), checked 2026-11-03).
 
 ![GEB / Grounded Entity Biographies: Figure 2 from the paper](../assets/2026-ren-geb.png)
 

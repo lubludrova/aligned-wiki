@@ -9,7 +9,7 @@ affiliations:
   - "City University of Hong Kong (Dongguan)"
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, execution-quality, egocentric-video]
+tags: [dataset, benchmark, procedure-understanding, execution-quality, egocentric-video]
 ---
 
 # GuideMe: Multi-Domain Task Guidance and Intervention in Streaming Video
@@ -22,6 +22,7 @@ GuideMe benchmarks when and how a video assistant should instruct, acknowledge c
 **Website:** https://fawnliu.github.io/project/guideme/
 **Code:** https://github.com/fawnliu/GuideMe
 **Source version:** arXiv:2607.02991v1, 3 July 2026, 19 pages. ECCV 2026 status verified on the author project/repository. Author order/spelling follows the stored PDF, including “Yang Bo.”
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7167605199), checked 2026-11-03).
 
 ![GuideMe: Figure 2 from the paper](../assets/2026-liu-guideme.png)
 

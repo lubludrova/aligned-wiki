@@ -4,7 +4,7 @@ venue: "Expert Systems with Applications"
 affiliations: ["University of Connecticut", "University of California Irvine"]
 research_groups: []
 reviewed: false
-tags: [construction, execution-quality, efficient-processing]
+tags: [method, construction, execution-quality, efficient-processing]
 ---
 
 # Vision language model for interpretable and fine-grained detection of safety compliance in diverse workplaces
@@ -17,6 +17,7 @@ Clip2Safety combines scene recognition, object crops, and image–text matching 
 **Code:** [Official implementation](https://github.com/Ed1sonChen/Clip2Safety)
 
 **Source version:** Inspected arXiv:2408.07146v1, submitted 13 August 2024. The journal publication is volume 265, article 125769, March 2025. Results below refer to the inspected preprint.
+**Citations:** 53 ([OpenAlex](https://openalex.org/W4404734233), checked 2026-11-03).
 
 ![Clip2Safety safety item and feature verification](../assets/2025-chen-clip2safety.png)
 

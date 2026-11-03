@@ -1,0 +1,12 @@
+---
+import type { CitationSnapshot } from '../lib/content';
+interface Props { snapshot: CitationSnapshot; compact?: boolean; }
+const { snapshot, compact = false } = Astro.props;
+const label = snapshot.count === null ? 'Citations unavailable'
+  : `${snapshot.count.toLocaleString('en-US')} ${snapshot.count === 1 ? 'citation' : 'citations'}`;
+const source = `${snapshot.provider} · checked ${snapshot.checked}`;
+---
+<span title={[source, snapshot.reason].filter(Boolean).join(' · ')} data-citation-status={snapshot.status}>
+  {!compact && snapshot.url ? <a href={snapshot.url} target="_blank" rel="noreferrer">{label}</a> : label}
+  {!compact && <span> · {source}</span>}
+</span>

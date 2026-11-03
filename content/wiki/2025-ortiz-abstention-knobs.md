@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Department of Electrical and Computer Engineering, Rutgers University"]
 research_groups: []
 reviewed: false
-tags: ["video-qa"]
+tags: [empirical-study, video-qa]
 ---
 
 # Explicit Abstention Knobs for Predictable Reliability in Video Question Answering
@@ -16,6 +16,7 @@ Tests confidence-threshold risk–coverage trade-offs and their sensitivity to r
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
 **Source version:** arXiv:2601.00138v2, 15 January 2026. First public preprint: 31 December 2025.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7119026802), checked 2026-11-03).
 
 ![Abstention Knobs example video evidence packet](../assets/2025-ortiz-abstention-knobs.png)
 

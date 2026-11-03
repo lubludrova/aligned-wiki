@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["The University of Texas at Austin", "FAIR, Meta"]
 research_groups: [meta-fair, ut-austin-vision]
 reviewed: false
-tags: [state-changes, video-representation]
+tags: [dataset, benchmark, method, state-changes, video-representation]
 ---
 
 # Learning Object State Changes in Videos: An Open-World Perspective
@@ -16,6 +16,7 @@ VidOSC learns temporal stages of object transformations from language-derived ps
 **Website:** [Project website](https://vision.cs.utexas.edu/projects/VidOSC/)
 **Code:** [GitHub repository](https://github.com/facebookresearch/VidOSC)
 **Source version:** CVF accepted CVPR 2024 paper, pp. 18493–18503. The separate ten-page [supplement](https://openaccess.thecvf.com/content/CVPR2024/supplemental/Xue_Learning_Object_State_CVPR_2024_supplemental.pdf) informs the protocol qualifications below.
+**Citations:** 17 ([OpenAlex](https://openalex.org/W4402753682), checked 2026-11-03).
 
 ![VidOSC data mining, pseudo-labeling, training, and testing](../assets/2024-xue-vidosc.png)
 

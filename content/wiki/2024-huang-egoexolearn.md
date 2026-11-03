@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["OpenGVLab, Shanghai AI Laboratory", The University of Tokyo, Nanjing University, Fudan University, Zhejiang University, USTC, "SIAT, CAS"]
 research_groups: [shanghai-opengvlab]
 reviewed: false
-tags: [execution-quality, procedure-understanding, video-representation, preference-learning, egocentric-video]
+tags: [dataset, benchmark, execution-quality, procedure-understanding, video-representation, preference-learning, egocentric-video]
 ---
 
 # EgoExoLearn: A Dataset for Bridging Asynchronous Ego- and Exo-centric View of Procedural Activities in Real World
@@ -16,6 +16,7 @@ EgoExoLearn connects third-person demonstrations with first-person task executio
 **Website:** Not found in checked sources.
 **Code:** [Official OpenGVLab release](https://github.com/OpenGVLab/EgoExoLearn)
 **Source version:** arXiv 2403.16182v3, 6 March 2025, including supplementary material. The work was published at CVPR 2024.
+**Citations:** 43 ([OpenAlex](https://openalex.org/W4402727916), checked 2026-11-03).
 
 ![EgoExoLearn demonstration following and benchmark tasks](../assets/2024-huang-egoexolearn.png)
 

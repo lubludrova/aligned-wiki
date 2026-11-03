@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Meta Reality Labs", "University of Virginia", "University of Illinois Urbana-Champaign"]
 research_groups: [meta-wearables-ai-ml]
 reviewed: false
-tags: [video-memory, video-retrieval, efficient-processing, egocentric-video]
+tags: [method, video-memory, video-retrieval, efficient-processing, egocentric-video]
 ---
 
 # MemLife: Curating and Reasoning over Long-Term Egocentric Video Memories
@@ -15,6 +15,7 @@ MemLife writes entity-grounded episodic memories, while MemOpt trains the writer
 **Paper:** [PDF](../raw/2026-xiong-memlife.pdf) · [arXiv v1](https://arxiv.org/abs/2609.40195v1)
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7215043595), checked 2026-11-03).
 
 ![MemLife: Figure 2 from the paper](../assets/2026-xiong-memlife.png)
 

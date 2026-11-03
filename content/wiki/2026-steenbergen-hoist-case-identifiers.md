@@ -4,7 +4,7 @@ venue: "Procedia Computer Science 277, 1150–1160 / ISM 2025"
 affiliations: ["University of Twente"]
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, construction]
+tags: [empirical-study, procedure-understanding, construction]
 ---
 
 # Surrogate Case Identifier Rules for Construction Site Hoists
@@ -16,6 +16,7 @@ Tests how alternative event-grouping rules change estimated hoist utilization an
 **Website:** Not found in checked sources beyond the institutional record.
 **Code:** Not found in checked sources.
 **Source version:** Eleven-page published PDF supplied by the user. Volume/publication year is 2026, while the conference and PDF copyright are 2025. DOI 10.1016/j.procs.2026.02.155 is confirmed by the institutional record.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7140136778), checked 2026-11-03).
 
 ![Hoist surrogate case identifiers: Figure 1 from the paper](../assets/2026-steenbergen-hoist-case-identifiers.png)
 

@@ -1,4 +1,16 @@
 {
+  "2026-chalk-whareformer": {
+    "summary": "Whareformer learns to associate object observations with persistent tracks using appearance and relative 3D location, including when objects temporarily leave the camera view.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-chalk-whareformer.md"
+  },
+  "2026-ma-r4dsg": {
+    "summary": "R4DSG writes object histories as changes relative to stable scene anchors, then retrieves compact records for questions about past locations and transitions.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-ma-r4dsg.md"
+  },
   "2021-luo-clip4clip": {
     "summary": "CLIP4Clip adapts pretrained image–text features to video retrieval by aggregating frame representations and tuning the video–text training setup.",
     "kind": "Method",

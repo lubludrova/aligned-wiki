@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["University of Science and Technology Beijing", "Johns Hopkins University"]
 research_groups: []
 reviewed: false
-tags: ["efficient-processing", "execution-quality", "real-world-evaluation", "production-use"]
+tags: [method, efficient-processing, execution-quality, real-world-evaluation, production-use]
 ---
 
 # MonitorVLM-v2: A Deployed Vision-Language Framework for Real-Time Safety Violation Detection
@@ -17,6 +17,7 @@ A deployed mining monitor replaces free-form reasoning with bounded rule-ID deci
 **Code:** [Repository](https://github.com/JiangWu0826/ms-swift)
 
 **Source version:** arXiv 2608.00975v1, 2 August 2026.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7172445049), checked 2026-11-03).
 
 ![MonitorVLM-v2: Figure 2 from the paper](../assets/2026-wu-monitorvlm-v2.png)
 

@@ -7,7 +7,7 @@ affiliations:
   - "Auburn University"
 research_groups: []
 reviewed: false
-tags: [execution-quality, video-representation]
+tags: [method, execution-quality, video-representation]
 ---
 
 # VERA: Explainable Video Anomaly Detection via Verbalized Learning of Vision-Language Models
@@ -20,6 +20,7 @@ VERA learns verbal diagnostic questions from weak video labels while keeping the
 **Website:** https://vera-framework.github.io/
 **Code:** https://github.com/vera-framework/VERA
 **Source version:** CVPR 2025 open-access accepted paper, 10 pages.
+**Citations:** 49 ([OpenAlex](https://openalex.org/W4413155334), checked 2026-11-03).
 
 ![VERA iterative optimization of video anomaly guiding questions](../assets/2025-ye-vera.png)
 

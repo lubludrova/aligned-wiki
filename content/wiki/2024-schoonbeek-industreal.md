@@ -4,7 +4,7 @@ venue: "WACV"
 affiliations: ["Eindhoven University of Technology", "ASML Research"]
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, state-changes, execution-quality, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, state-changes, execution-quality, egocentric-video]
 ---
 
 # IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting
@@ -16,6 +16,7 @@ IndustReal distinguishes recognizing an action from recognizing the correct comp
 **Website:** [Author project](https://timschoonbeek.github.io/industreal.html)
 **Code:** [Official repository](https://github.com/TimSchoonbeek/IndustReal)
 **Source version:** Ten-page WACV 2024 proceedings article, first preprint 2023.
+**Citations:** 32 ([OpenAlex](https://openalex.org/W4394625525), checked 2026-11-03).
 
 ![IndustReal parts, assemblies, and maintenance tasks](../assets/2024-schoonbeek-industreal.png)
 

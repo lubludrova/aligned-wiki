@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: [Meta Reality Labs Research, National University of Singapore]
 research_groups: [meta-reality-labs]
 reviewed: false
-tags: [procedure-understanding, execution-quality, egocentric-video]
+tags: [dataset, benchmark, procedure-understanding, execution-quality, egocentric-video]
 ---
 
 # Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities
@@ -16,6 +16,7 @@ Assembly101 benchmarks action understanding and mistake detection using synchron
 **Website:** [Official project](https://assembly-101.github.io/)
 **Code:** [Official action-recognition baselines](https://github.com/assembly-101/assembly101-action-recognition)
 **Source version:** [arXiv:2203.14712v2](https://arxiv.org/abs/2203.14712v2), 1 May 2022, including the supplement. Published at CVPR 2022. Supplement page numbers restart after PDF p. 11.
+**Citations:** 216 ([OpenAlex](https://openalex.org/W4313071313), checked 2026-11-03).
 
 ![Assembly101 synchronized views and action annotations](../assets/2022-sener-assembly101.png)
 

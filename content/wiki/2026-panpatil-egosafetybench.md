@@ -6,7 +6,7 @@ affiliations:
   - "Seoul National University"
 research_groups: []
 reviewed: false
-tags: [egocentric-video, execution-quality]
+tags: [dataset, benchmark, egocentric-video, execution-quality]
 ---
 
 # EgoSafetyBench: A Diagnostic Egocentric Video Benchmark for Evaluating Embodied VLMs as Runtime Safety Guards
@@ -19,6 +19,7 @@ EgoSafetyBench separates missed hazards, unnecessary intervention, alarm timing,
 **Website:** https://huggingface.co/datasets/AIM-Intelligence/EgoSafetyBench
 **Code:** https://github.com/AIM-Intelligence/EgoSafetyBench
 **Source version:** arXiv:2607.00218v2, 4 October 2026, 17 pages. First preprint: 30 June 2026.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7167033496), checked 2026-11-03).
 
 ![EgoSafetyBench: Figure 2 from the paper](../assets/2026-panpatil-egosafetybench.png)
 

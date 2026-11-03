@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Stanford University", "UC Berkeley"]
 research_groups: [stanford-iris]
 reviewed: false
-tags: [reward-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation]
+tags: [dataset, benchmark, method, reward-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation]
 ---
 
 # RoboReward: General-Purpose Vision-Language Reward Models for Robotics
@@ -16,6 +16,7 @@ RoboReward turns a task instruction and robot rollout into a completion score, w
 **Source version:** arXiv 2601.00675v2, 8 January 2026.
 **Website:** [RoboRewardBench](https://crfm.stanford.edu/helm/robo-reward-bench/)
 **Code:** Not found in checked sources. [Official model weights and inference example](https://huggingface.co/teetone/RoboReward-8B) are available.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7118501563), checked 2026-11-03).
 
 ![RoboReward: Figure 4 from the paper](../assets/2026-lee-roboreward.png)
 

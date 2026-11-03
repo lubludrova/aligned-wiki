@@ -4,7 +4,7 @@ venue: "Journal of Computational Design and Engineering, 13(8), 90–108"
 affiliations: ["Korea Institute of Civil Engineering and Building Technology", "Incheon National University"]
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, construction, multi-person]
+tags: [method, procedure-understanding, construction, multi-person]
 ---
 
 # Neuro-symbolic vision framework for construction: Knowledge graph-augmented monitoring and productivity analysis of precast concrete assembly
@@ -16,6 +16,7 @@ Refines detected construction activities with spatial, temporal and prerequisite
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
 **Source version:** Original 19-page journal PDF, advance publication 16 July 2026, DOI 10.1093/jcde/qwag067.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7168518220), checked 2026-11-03).
 
 ![Neuro-symbolic PC monitoring: Figure 1 from the paper](../assets/2026-jang-neurosymbolic-pc.png)
 

@@ -7,7 +7,7 @@ affiliations:
   - "Xidian University"
 research_groups: []
 reviewed: false
-tags: [execution-quality, video-representation]
+tags: [method, execution-quality, video-representation]
 ---
 
 # Open-Vocabulary Video Anomaly Detection
@@ -20,6 +20,7 @@ OVVAD extends anomaly localization to naming anomaly classes absent from the tra
 **Website:** Not found in checked primary sources.
 **Code:** Not found in checked primary sources.
 **Source version:** CVPR 2024 open-access accepted paper, 11 pages. First preprint appeared in 2023.
+**Citations:** 103 ([OpenAlex](https://openalex.org/W4402775275), checked 2026-11-03).
 
 ![OVVAD open-vocabulary anomaly detection framework](../assets/2024-wu-ovvad.png)
 

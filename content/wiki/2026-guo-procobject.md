@@ -5,7 +5,7 @@ affiliations:
   - "Michigan State University, USA"
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, state-changes, video-qa, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, state-changes, video-qa, egocentric-video]
 ---
 
 # Benchmarking and Learning Object-Centric Procedural Understanding in Instructional Videos
@@ -18,6 +18,7 @@ ProcObject-10K evaluates object-centered procedural questions with temporal evid
 **Website:** https://wenliangguo.github.io/ProcObject-10K-Page/
 **Code:** https://github.com/WenliangGuo/ProcObject-10K
 **Source version:** arXiv:2512.03479v3, 29 October 2026, 28 pages. First preprint: December 2025. The stored version identifies NeurIPS 2026, Evaluations and Datasets Track.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4417029023), checked 2026-11-03).
 
 ![ProcObject-10K: Figure 2 from the paper](../assets/2026-guo-procobject.png)
 

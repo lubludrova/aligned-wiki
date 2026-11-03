@@ -5,7 +5,7 @@ affiliations:
   - "Hitachi, Ltd. Research and Development Group, Japan"
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, egocentric-video]
 ---
 
 # EgoIndAssembly: Diagnosing Fine-Grained Temporal Hand Reasoning in Vision–Language Models for Skilled Assembly
@@ -18,6 +18,7 @@ EgoIndAssembly stresses temporal localization of visually similar assembly steps
 **Website:** https://huggingface.co/datasets/sasakits/EgoIndAssembly
 **Code:** Not found in checked primary sources.
 **Source version:** CVPR Workshops 2026 accepted open-access paper, 9 pages, proceedings pp. 8894–8902.
+**Citations:** Unavailable (OpenAlex, checked 2026-11-03. No matching indexed record was verified).
 
 ![EgoIndAssembly: title and abstract excerpts](../assets/2026-sasaki-egoindassembly.png)
 

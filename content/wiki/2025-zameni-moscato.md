@@ -4,7 +4,7 @@ venue: "ICCV 2025"
 affiliations: ["Northeastern University"]
 research_groups: [northeastern-nova]
 reviewed: false
-tags: [state-changes, procedure-understanding, egocentric-video]
+tags: [dataset, benchmark, method, state-changes, procedure-understanding, egocentric-video]
 ---
 
 # MOSCATO: Predicting Multiple Object State Change through Actions
@@ -15,6 +15,7 @@ MOSCATO jointly models action segments and the evolving states of multiple objec
 **Paper:** [PDF](../raw/2025-zameni-moscato.pdf) · [CVF source](https://openaccess.thecvf.com/content/ICCV2025/papers/Zameni_MOSCATO_Predicting_Multiple_Object_State_Change_Through_Actions_ICCV_2025_paper.pdf)
 **Website:** Not found in checked sources.
 **Code:** Not released in checked repository. [Official dataset resources](https://github.com/eelhami/iccv25_moscato)
+**Citations:** 4 ([OpenAlex](https://openalex.org/W7160082739), checked 2026-11-03).
 
 ![MOSCATO action and object-state prediction framework](../assets/2025-zameni-moscato.png)
 

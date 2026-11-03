@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["National University of Singapore", "Reality Labs Research, Meta"]
 research_groups: []
 reviewed: false
-tags: ["video-representation", "efficient-processing", "egocentric-video", "video-qa"]
+tags: [dataset, method, video-representation, efficient-processing, egocentric-video, video-qa]
 ---
 
 # VideoLLM-online: Online Video Large Language Model for Streaming Video
@@ -17,6 +17,7 @@ VideoLLM-online trains a video language model to alternate between silent visual
 **Code:** [GitHub repository](https://github.com/showlab/videollm-online)
 
 **Source version:** arXiv:2406.11816v1, 17 June 2024, including supplementary material. CVPR 2024 publication confirmed by CVF and official repository.
+**Citations:** 78 ([OpenAlex](https://openalex.org/W4402727512), checked 2026-11-03).
 
 ![VideoLLM-online streaming inference with a continuous key-value cache](../assets/2024-chen-videollm-online.png)
 

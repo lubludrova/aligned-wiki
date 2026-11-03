@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: ["University of Illinois Urbana-Champaign"]
 research_groups: []
 reviewed: false
-tags: ["spatial-understanding", "video-representation"]
+tags: [method, spatial-understanding, video-representation]
 ---
 
 # VisualSync: Multi-Camera Synchronization via Cross-View Object Motion
@@ -16,6 +16,7 @@ Estimates globally consistent camera time offsets from cross-view tracks of movi
 **Website:** [Project website](https://stevenlsw.github.io/visualsync/)
 **Code:** [GitHub repository](https://github.com/stevenlsw/visualsync)
 **Source version:** arXiv:2512.02017v1, 1 December 2025, NeurIPS 2025 paper.
+**Citations:** 1 ([OpenAlex](https://openalex.org/W4416969208), checked 2026-11-03).
 
 ![VisualSync multi-camera synchronization using object motion](../assets/2025-liu-visualsync.png)
 

@@ -4,7 +4,7 @@ venue: "UIST"
 affiliations: ["The Hong Kong University of Science and Technology"]
 research_groups: []
 reviewed: false
-tags: ["procedure-understanding", "execution-quality", "egocentric-video", "real-world-evaluation"]
+tags: [method, procedure-understanding, execution-quality, egocentric-video, real-world-evaluation]
 ---
 
 # RegulAR: Graph-Grounded Error Recognition and Assistance for Procedural Tasks in Augmented Reality
@@ -17,6 +17,7 @@ RegulAR combines an instruction-derived dependency graph with periodic video obs
 **Code:** Not found in checked sources.
 
 **Source version:** arXiv:2608.26715v1, 27 August 2026. The title page identifies UIST 2026 and DOI 10.1145/3830398.3830593.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7204560009), checked 2026-11-03).
 
 ![RegulAR: Figure 3 from the paper](../assets/2026-ye-regular.png)
 

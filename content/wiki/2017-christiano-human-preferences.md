@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: [OpenAI, DeepMind]
 research_groups: []
 reviewed: false
-tags: [reward-learning, preference-learning, robot-learning]
+tags: [method, reward-learning, preference-learning, robot-learning]
 ---
 
 # Deep Reinforcement Learning from Human Preferences
@@ -16,6 +16,7 @@ A learned reward model turns human comparisons of short behavior clips into a tr
 **Website:** [Official research announcement](https://openai.com/index/learning-from-human-preferences/)
 **Code:** Not found in checked sources. A [third-party reproduction](https://github.com/mrahtz/learning-from-human-preferences) explicitly identifies itself as a reproduction.
 **Source version:** arXiv:1706.03741v4, 17 February 2023, a revision of the [2017 conference paper](https://proceedings.neurips.cc/paper/2017/hash/d5e2c0adad503c91f91df240d0cd4e49-Abstract.html). Affiliations follow the stored PDF, which gives Brown an email address without an institution.
+**Citations:** 1058 ([OpenAlex](https://openalex.org/W2626804490), checked 2026-11-03).
 
 ![Human preference learning and reward prediction loop](../assets/2017-christiano-human-preferences.png)
 

@@ -6,7 +6,7 @@ affiliations:
   - "Sony Interactive Entertainment"
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, execution-quality, egocentric-video]
+tags: [dataset, benchmark, procedure-understanding, execution-quality, egocentric-video]
 ---
 
 # EgoOops: A Dataset for Mistake Action Detection from Egocentric Videos referring to Procedural Texts
@@ -19,6 +19,7 @@ EgoOops tests whether procedural text enables localization and classification of
 **Website:** https://y-haneji.github.io/EgoOops-project-page/
 **Code:** https://github.com/Y-Haneji/EgoOops-annotations/
 **Source version:** ICCV Workshops 2025 accepted open-access version, 11 PDF pages, proceedings pp. 2690–2700. The title differs slightly from the project-page heading.
+**Citations:** 3 ([OpenAlex](https://openalex.org/W7131077887), checked 2026-11-03).
 
 ![EgoOops StepFormer++ action segmentation architecture](../assets/2025-haneji-egooops.png)
 

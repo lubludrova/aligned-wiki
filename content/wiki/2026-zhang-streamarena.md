@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["The Hong Kong University of Science and Technology", "Xiaohongshu Inc.", "The University of Hong Kong", "The Chinese University of Hong Kong"]
 research_groups: [jia-lab]
 reviewed: false
-tags: [video-memory, video-qa, efficient-processing]
+tags: [dataset, benchmark, method, video-memory, video-qa, efficient-processing]
 ---
 
 # StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding
@@ -15,6 +15,7 @@ StreamArena evaluates persistent streaming-video assistants, while StreamMind se
 **Paper:** [PDF](../raw/2026-zhang-streamarena.pdf) · [arXiv v1](https://arxiv.org/abs/2608.05703v1)
 **Website:** Not found in checked sources.
 **Code:** [GitHub repository](https://github.com/JIA-Lab-research/StreamArena) — repository revisions extend beyond the summarized paper version.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7201864904), checked 2026-11-03).
 
 ![StreamArena: Figure 1 from the paper](../assets/2026-zhang-streamarena.png)
 

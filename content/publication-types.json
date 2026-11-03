@@ -1,0 +1,656 @@
+{
+  "2009-golparvar-fard-d4ar": [
+    "method"
+  ],
+  "2017-christiano-human-preferences": [
+    "method"
+  ],
+  "2017-zhang-videostorm": [
+    "method"
+  ],
+  "2018-doughty-skill-ranking": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2018-hsieh-focus": [
+    "method"
+  ],
+  "2018-jiang-chameleon": [
+    "method"
+  ],
+  "2019-kang-blazeit": [
+    "method"
+  ],
+  "2020-lei-tvr": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2020-li-reducto": [
+    "method"
+  ],
+  "2021-bain-frozen-in-time": [
+    "dataset",
+    "method"
+  ],
+  "2021-luo-clip4clip": [
+    "method"
+  ],
+  "2022-elfeki-multi-ego": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2022-grauman-ego4d": [
+    "dataset",
+    "benchmark"
+  ],
+  "2022-jia-egotaskqa": [
+    "dataset",
+    "benchmark"
+  ],
+  "2022-kang-tasti": [
+    "method"
+  ],
+  "2022-sener-assembly101": [
+    "dataset",
+    "benchmark"
+  ],
+  "2022-soucek-look-for-change": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2023-ma-vip": [
+    "method"
+  ],
+  "2023-mangalam-egoschema": [
+    "dataset",
+    "benchmark"
+  ],
+  "2023-wang-holoassist": [
+    "dataset",
+    "benchmark"
+  ],
+  "2023-zhang-equi-vocal": [
+    "method"
+  ],
+  "2024-chen-videollm-online": [
+    "dataset",
+    "method"
+  ],
+  "2024-eyzaguirre-sdqes": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2024-fan-videoagent": [
+    "method"
+  ],
+  "2024-goletto-amego": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2024-grauman-ego-exo4d": [
+    "dataset",
+    "benchmark"
+  ],
+  "2024-huang-egoexolearn": [
+    "dataset",
+    "benchmark"
+  ],
+  "2024-lee-egoper": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2024-nguyen-oscar": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2024-peddi-captaincook4d": [
+    "dataset",
+    "benchmark"
+  ],
+  "2024-rodin-easg": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2024-schoonbeek-industreal": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2024-seminara-dtgl": [
+    "method"
+  ],
+  "2024-shen-protas": [
+    "dataset",
+    "method"
+  ],
+  "2024-song-moviechat": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2024-wang-internvideo2": [
+    "method"
+  ],
+  "2024-wang-videoagent": [
+    "method"
+  ],
+  "2024-wu-longvideobench": [
+    "dataset",
+    "benchmark"
+  ],
+  "2024-wu-ovvad": [
+    "method"
+  ],
+  "2024-xue-vidosc": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2024-zanella-lavad": [
+    "method"
+  ],
+  "2024-zhang-llovi": [
+    "method"
+  ],
+  "2024-zhong-onlinetas": [
+    "method"
+  ],
+  "2024-zhou-streaming-dvc": [
+    "method"
+  ],
+  "2025-ahmad-sh17": [
+    "dataset",
+    "benchmark"
+  ],
+  "2025-anwar-remembr": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-ashutosh-expertaf": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-ayalew-progressor": [
+    "method"
+  ],
+  "2025-bhattacharyya-livemamba": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-cao-flashmmr": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-chan-domain-vlm": [
+    "dataset",
+    "method"
+  ],
+  "2025-chavan-indego": [
+    "dataset",
+    "benchmark"
+  ],
+  "2025-chen-clip2safety": [
+    "method"
+  ],
+  "2025-chen-diffvsgg": [
+    "method"
+  ],
+  "2025-chen-gelm": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-di-rekv": [
+    "method"
+  ],
+  "2025-fu-video-mme": [
+    "dataset",
+    "benchmark"
+  ],
+  "2025-guo-egoconqs": [
+    "dataset",
+    "method"
+  ],
+  "2025-haneji-egooops": [
+    "dataset",
+    "benchmark"
+  ],
+  "2025-he-egoexobench": [
+    "dataset",
+    "benchmark"
+  ],
+  "2025-huang-amnar": [
+    "method"
+  ],
+  "2025-jeong-videorag": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-lehman-statediffnet": [
+    "method"
+  ],
+  "2025-li-anomize": [
+    "method"
+  ],
+  "2025-liu-egosafe": [
+    "dataset",
+    "method"
+  ],
+  "2025-liu-visualsync": [
+    "method"
+  ],
+  "2025-luo-hil-serl": [
+    "method"
+  ],
+  "2025-luo-video-rag": [
+    "method"
+  ],
+  "2025-mengiste-weekly-progress": [
+    "method"
+  ],
+  "2025-ortiz-abstention-knobs": [
+    "empirical-study"
+  ],
+  "2025-patsch-mistsense": [
+    "method"
+  ],
+  "2025-perrett-hd-epic": [
+    "dataset",
+    "benchmark"
+  ],
+  "2025-plizzari-osnom": [
+    "benchmark",
+    "method"
+  ],
+  "2025-qian-dispider": [
+    "method"
+  ],
+  "2025-schoonbeek-storm-psr": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-sun-tubeletgraph": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-wang-siteshield": [
+    "method"
+  ],
+  "2025-wang-videotree": [
+    "method"
+  ],
+  "2025-yang-egolife": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-ye-mm-ego": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-ye-vera": [
+    "method"
+  ],
+  "2025-yoon-uvqa": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-zameni-moscato": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-zeng-streamforest": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-zhang-holmes-vau": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2025-zhang-rewind": [
+    "method"
+  ],
+  "2025-zhang-vocal-udf": [
+    "method"
+  ],
+  "2026-alam-supermemory-vqa": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-bacharidis-mistake-survey": [
+    "survey"
+  ],
+  "2026-bhat-vantage-bench": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-braun-skillspotter": [
+    "method"
+  ],
+  "2026-cai-cfd": [
+    "method"
+  ],
+  "2026-chalk-whareformer": [
+    "method"
+  ],
+  "2026-chatterjee-spot-bench": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-chaudhari-ledger": [
+    "method"
+  ],
+  "2026-chavan-indego-assistant": [
+    "method"
+  ],
+  "2026-chen-egomonth": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-chen-em2mem": [
+    "method"
+  ],
+  "2026-chen-reactvau": [
+    "method"
+  ],
+  "2026-choi-merit": [
+    "method"
+  ],
+  "2026-forte-egostream": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-gao-svg2": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-guo-aem": [
+    "method"
+  ],
+  "2026-guo-multimodal-memory-survey": [
+    "survey"
+  ],
+  "2026-guo-procobject": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-gupta-vidparse": [
+    "method"
+  ],
+  "2026-hou-eventformer": [
+    "method"
+  ],
+  "2026-hsieh-ai-bim-progress": [
+    "method"
+  ],
+  "2026-huang-apm-bench": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-isaac-sensing-scheduling": [
+    "method"
+  ],
+  "2026-jang-neurosymbolic-pc": [
+    "method"
+  ],
+  "2026-kim-ma-egoqa": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-kriz-multivent-raw": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-lee-axg-reasoner": [
+    "method"
+  ],
+  "2026-lee-carve": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-lee-roboreward": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-leng-flora": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-li-egoerrorvqa": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-li-matt": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-li-streampro": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-liang-capmem": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-liang-robometer": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-liao-proactegomem": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-liu-egoexomem": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-liu-guideme": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-liu-svcbench": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-loginova-prism": [
+    "method"
+  ],
+  "2026-long-m3-agent": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-ma-r4dsg": [
+    "method"
+  ],
+  "2026-majumder-mistexit": [
+    "method"
+  ],
+  "2026-mandikal-spoc": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-mazzamuto-proskill": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-mur-labadia-v-jepa-2-1": [
+    "method"
+  ],
+  "2026-pang-egoprobe": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-panpatil-egosafetybench": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-qiu-graphrag-compliance": [
+    "method"
+  ],
+  "2026-ranasinghe-safety-reasoning": [
+    "method"
+  ],
+  "2026-rauf-hpp": [
+    "method"
+  ],
+  "2026-rege-egagent": [
+    "method"
+  ],
+  "2026-ren-geb": [
+    "method"
+  ],
+  "2026-ren-videorag": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-sasaki-egoindassembly": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-seminara-tgml": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-steenbergen-hoist-case-identifiers": [
+    "empirical-study"
+  ],
+  "2026-suen-icon-pose": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-tan-egovit": [
+    "method"
+  ],
+  "2026-tang-takusen": [
+    "method"
+  ],
+  "2026-tian-ego-r1": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-torne-freeform-preference": [
+    "method"
+  ],
+  "2026-wang-directme": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-wang-egomemreason": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-wang-parsee-vad": [
+    "method"
+  ],
+  "2026-wang-s-ember": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-wen-impact": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-wen-provia": [
+    "method"
+  ],
+  "2026-wu-monitorvlm-v2": [
+    "method"
+  ],
+  "2026-xia-streamo": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-xiao-myego": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-xiong-memlife": [
+    "method"
+  ],
+  "2026-yang-egotsr": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-yao-yolo-ilb": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-ye-regular": [
+    "method"
+  ],
+  "2026-yeh-all-angles-bench": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-yeo-worldmm": [
+    "method"
+  ],
+  "2026-zeng-onestreamer": [
+    "dataset",
+    "method"
+  ],
+  "2026-zhang-constructai": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-zhang-egocite": [
+    "method"
+  ],
+  "2026-zhang-streamarena": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-zhao-pasbench-video": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-zhou-temporal-abstention": [
+    "method"
+  ],
+  "2026-ziadia-collision-survey": [
+    "survey"
+  ]
+}

@@ -4,7 +4,7 @@ venue: "ICLR"
 affiliations: ["ByteDance Seed", "Zhejiang University", "Shanghai Jiao Tong University"]
 research_groups: [bytedance-seed]
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, egocentric-video, multi-person]
+tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa, egocentric-video, multi-person]
 ---
 
 # Seeing, Listening, Remembering, and Reasoning: A Multimodal Agent with Long-Term Memory
@@ -16,6 +16,7 @@ M3-Agent links audio-visual events and inferred knowledge to persistent person i
 **Website:** [Project website](https://m3-agent.github.io/)
 **Code:** [GitHub repository](https://github.com/bytedance-seed/m3-agent)
 **Source version:** arXiv:2508.09736v4, submitted 9 October 2025, with 10 October on the cover. First released August 2025. [ByteDance's publication record](https://seed.bytedance.com/en/public_papers/seeing-listening-remembering-and-reasoning-a-multimodal-agent-with-long-term-memory) identifies ICLR 2026.
+**Citations:** 2 ([OpenAlex](https://openalex.org/W6910636478), checked 2026-11-03).
 
 ![M3-Agent: Figure 1 from the paper](../assets/2026-long-m3-agent.png)
 

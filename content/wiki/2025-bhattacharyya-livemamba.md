@@ -6,7 +6,7 @@ affiliations:
   - "University of British Columbia"
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, execution-quality, egocentric-video, efficient-processing]
+tags: [dataset, benchmark, method, procedure-understanding, execution-quality, egocentric-video, efficient-processing]
 ---
 
 # Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?
@@ -19,6 +19,7 @@ LiveMamba combines a recurrent video-language assistant with a benchmark for tim
 **Website:** https://apratimbh.github.io/livecook/
 **Code:** https://github.com/Qualcomm-AI-research/qualcomm_interactive_cooking_eval
 **Source version:** arXiv:2511.21998v2, 12 April 2026, 34 pages, revision of the NeurIPS 2025 paper. Venue confirmed by the author project.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4416942862), checked 2026-11-03).
 
 ![LiveMamba task guidance and feedback scenario](../assets/2025-bhattacharyya-livemamba.png)
 

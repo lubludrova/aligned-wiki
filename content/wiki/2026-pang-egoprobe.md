@@ -9,6 +9,8 @@ affiliations:
 research_groups: []
 reviewed: false
 tags:
+- dataset
+- benchmark
 - video-memory
 - video-qa
 - egocentric-video
@@ -27,6 +29,7 @@ Tests whether streaming video memories bind a recalled detail to the correct eve
 **Code:** Not found in checked sources. The paper promises code and data, but a public implementation was not located as of 31 October 2026.
 
 **Source version:** arXiv 2610.17128v1, 12 October 2026. Fresh preprint, with no peer-reviewed venue established in checked sources.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7221797546), checked 2026-11-03).
 
 ![EgoProbe: Figure 1 from the paper](../assets/2026-pang-egoprobe.png)
 

@@ -4,7 +4,7 @@ venue: "CVPR 2025"
 affiliations: ["University of Bristol", "Leiden University", "Singapore Management University", "University of Bath"]
 research_groups: []
 reviewed: false
-tags: ["video-qa", "state-changes", "spatial-understanding", "egocentric-video"]
+tags: [dataset, benchmark, video-qa, state-changes, spatial-understanding, egocentric-video]
 ---
 
 # HD-EPIC: A Highly-Detailed Egocentric Video Dataset
@@ -16,6 +16,7 @@ Provides densely interconnected egocentric annotations linking recipes, actions,
 **Website:** [Project website](https://hd-epic.github.io/site/)
 **Code:** [Author annotations and evaluation resources](https://github.com/hd-epic/hd-epic-annotations)
 **Source version:** CVF open-access accepted CVPR 2025 paper, 13 pages, pp. 23901–23913. Both the archived PDF abstract and Table 2 say 37.6%, while the publisher HTML abstract previously showed 37.0%.
+**Citations:** 23 ([OpenAlex](https://openalex.org/W4413147595), checked 2026-11-03).
 
 ![HD-EPIC annotation types and spatial information](../assets/2025-perrett-hd-epic.png)
 

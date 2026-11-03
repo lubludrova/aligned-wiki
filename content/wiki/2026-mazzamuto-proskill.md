@@ -4,7 +4,7 @@ venue: "WACV 2026"
 affiliations: ["University of Catania", "Next Vision s.r.l.", "Toyota Motor Europe"]
 research_groups: [catania-coai]
 reviewed: false
-tags: [execution-quality, preference-learning, egocentric-video]
+tags: [dataset, benchmark, execution-quality, preference-learning, egocentric-video]
 ---
 
 # ProSkill: Segment-Level Skill Assessment in Procedural Videos
@@ -15,6 +15,7 @@ ProSkill converts human comparisons of procedural video clips into action-specif
 **Paper:** [PDF](../raw/2026-mazzamuto-proskill.pdf) · [arXiv v1](https://arxiv.org/abs/2601.20661v1)
 **Website:** [Project](https://fpv-iplab.github.io/ProSkill/)
 **Code:** [Annotations, ranking and clip-extraction tools](https://github.com/fpv-iplab/ProSKILL_WACV)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7126040381), checked 2026-11-03).
 
 ![ProSkill: Figure 1 from the paper](../assets/2026-mazzamuto-proskill.png)
 

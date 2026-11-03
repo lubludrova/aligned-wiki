@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Nanjing University", "Huawei Technologies Co., Ltd.", "Tianjin University"]
 research_groups: []
 reviewed: false
-tags: ["video-memory", "video-qa", "egocentric-video"]
+tags: [dataset, benchmark, video-memory, video-qa, egocentric-video]
 ---
 
 # EgoMonth: A Month-Level Egocentric Video Benchmark for Long-Term Spatiotemporal Memory
@@ -16,6 +16,7 @@ Tests exact episodic recall and cross-day reasoning using first-person recording
 **Website:** [Project website](https://sealical.github.io/egomonth/)
 **Code:** Not found in checked sources.
 **Source version:** arXiv:2608.13113v1, 13 August 2026, 21 pages. Author-name order follows the PDF, including Hu Jiaxin and Xie Tianyidan.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7203468428), checked 2026-11-03).
 
 ![EgoMonth: Figure 1 from the paper](../assets/2026-chen-egomonth.png)
 

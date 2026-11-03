@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: [University of Bristol]
 research_groups: []
 reviewed: false
-tags: [execution-quality, preference-learning]
+tags: [dataset, benchmark, method, execution-quality, preference-learning]
 ---
 
 # Who’s Better? Who’s Best? Pairwise Deep Ranking for Skill Determination
@@ -17,6 +17,7 @@ A Siamese video model learns relative skill scores from pairwise judgments and r
 **Code:** Not found in checked sources.
 **Data:** [Official EPIC-Skills 2018 annotations and video links](https://github.com/hazeld/EPIC-Skills2018)
 **Source version:** Author-hosted, 10-page accepted paper for [CVPR 2018, pp. 6057–6066](https://openaccess.thecvf.com/content_cvpr_2018/html/Doughty_Whos_Better_Whos_CVPR_2018_paper.html). This is the pairwise-ranking paper, not the later rank-aware temporal-attention model also featured on the project page.
+**Citations:** 162 ([OpenAlex](https://openalex.org/W2796214461), checked 2026-11-03).
 
 ![Pairwise skill comparison and demonstration ranking](../assets/2018-doughty-skill-ranking.png)
 

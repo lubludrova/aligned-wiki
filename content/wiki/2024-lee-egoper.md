@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Northeastern University", "Stony Brook University"]
 research_groups: [northeastern-nova]
 reviewed: false
-tags: [execution-quality, procedure-understanding, egocentric-video]
+tags: [dataset, benchmark, method, execution-quality, procedure-understanding, egocentric-video]
 ---
 
 # Error Detection in Egocentric Procedural Task Videos
@@ -16,6 +16,7 @@ The paper introduces the EgoPER cooking-error dataset and EgoPED, an offline det
 **Website:** [Project website](https://www.khoury.northeastern.edu/home/eelhami/egoper.htm)
 **Code:** [GitHub repository](https://github.com/robert80203/EgoPER_official)
 **Source version:** CVPR 2024 accepted proceedings PDF, pp. 18655–18666. The separate author-hosted supplement was also checked.
+**Citations:** 33 ([OpenAlex](https://openalex.org/W4402733587), checked 2026-11-03).
 
 ![EgoPER action, object-relation, and step-prototype learning](../assets/2024-lee-egoper.png)
 

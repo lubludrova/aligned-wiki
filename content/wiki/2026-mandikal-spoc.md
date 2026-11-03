@@ -4,7 +4,7 @@ venue: "WACV"
 affiliations: ["University of Texas at Austin"]
 research_groups: [ut-austin-vision]
 reviewed: false
-tags: [state-changes, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, state-changes, spatial-understanding, egocentric-video]
 ---
 
 # SPOC: Spatially-Progressing Object State Change Segmentation in Video
@@ -16,6 +16,7 @@ SPOC segments object regions that still need transformation versus regions alrea
 **Website:** [Project website](https://vision.cs.utexas.edu/projects/spoc-spatially-progressing-osc/)
 **Code:** [Dataset and visualization utilities](https://github.com/priyankamandikal/spoc)
 **Source version:** arXiv:2503.11953v2, 23 December 2025, including Appendices A–F. The publication venue and year are WACV 2026.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W6948353757), checked 2026-11-03).
 
 ![SPOC: Figure 3 from the paper](../assets/2026-mandikal-spoc.png)
 

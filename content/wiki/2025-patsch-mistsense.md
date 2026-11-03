@@ -6,7 +6,7 @@ affiliations:
   - Munich Institute of Robotics and Machine Intelligence (MIRMI)
 research_groups: [tum-lmt]
 reviewed: false
-tags: [procedure-understanding, execution-quality, egocentric-video]
+tags: [method, procedure-understanding, execution-quality, egocentric-video]
 ---
 
 # MistSense: Versatile Online Detection of Procedural and Execution Mistakes
@@ -19,6 +19,7 @@ MistSense combines RGB and hand-motion features to detect procedural and executi
 **Website:** [Official publication page](https://openaccess.thecvf.com/content/ICCV2025/html/Patsch_MistSense_Versatile_Online_Detection_of_Procedural_and_Execution_Mistakes_ICCV_2025_paper.html)
 **Code:** Not found in the checked paper, official publication pages, or author-group sources.
 **Source version:** CVF open-access accepted ICCV 2025 paper, pp. 14528–14537. The official CVF listing provides no separate supplement.
+**Citations:** 2 ([OpenAlex](https://openalex.org/W7160036959), checked 2026-11-03).
 
 ![MistSense mistake detection and explanation framework](../assets/2025-patsch-mistsense.png)
 

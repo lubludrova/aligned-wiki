@@ -16,6 +16,7 @@ This survey organizes procedural mistake analysis by error type, temporal task, 
 **Website:** [Publisher record](https://www.sciencedirect.com/science/article/pii/S1077314226002092)
 **Code:** No dedicated implementation linked in the stored survey.
 **Source version:** arXiv:2510.19292v2, 3 December 2025, first released 22 October 2025. This note covers that preprint. The later journal publication is CVIU 270, article 104842 (2026), verified by the publisher record and [author publication catalog](https://users.ics.forth.gr/argyros/publications.html).
+**Citations:** 1 ([OpenAlex](https://openalex.org/W4416246614), checked 2026-11-03).
 
 ![Vision-based mistake recognition, detection, and early recognition](../assets/2026-bacharidis-mistake-survey.png)
 

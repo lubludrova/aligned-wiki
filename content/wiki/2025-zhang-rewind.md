@@ -4,7 +4,7 @@ venue: "CoRL"
 affiliations: ["University of Southern California", "Amazon Robotics", "KAIST"]
 research_groups: [usc-lira]
 reviewed: false
-tags: [reward-learning, robot-learning, rl-fine-tuning, real-world-evaluation]
+tags: [method, reward-learning, robot-learning, rl-fine-tuning, real-world-evaluation]
 ---
 
 # ReWiND: Language-Guided Rewards Teach Robot Policies without New Demonstrations
@@ -16,6 +16,7 @@ ReWiND learns language-conditioned progress rewards from demonstrations and synt
 **Website:** [Project website](https://rewind-reward.github.io/)
 **Code:** [GitHub repository](https://github.com/rewind-reward/ReWiND)
 **Source version:** arXiv:2505.10911v2, 19 September 2025, first released 16 May 2025. [CoRL 2025 oral](https://openreview.net/forum?id=XjjXLxfPou), also listed by the project and USC LiraLab publication catalog.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4417093146), checked 2026-11-03).
 
 ![ReWiND reward pre-training and transfer to a new task](../assets/2025-zhang-rewind.png)
 

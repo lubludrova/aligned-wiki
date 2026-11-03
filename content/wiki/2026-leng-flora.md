@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["NVIDIA"]
 research_groups: [nvidia-gear]
 reviewed: false
-tags: [execution-quality, reward-learning, efficient-processing, egocentric-video, production-use]
+tags: [dataset, benchmark, method, execution-quality, reward-learning, efficient-processing, egocentric-video, production-use]
 ---
 
 # FLORA: An Open Model Suite for Scaling Robotics Data Engines
@@ -16,6 +16,7 @@ FLORA turns human or robot episode videos into timestamped action captions and s
 **Source version:** arXiv 2610.31779v1, submitted 22 October 2026. The PDF itself is dated 26 October.
 **Website:** [NVIDIA GEAR project](https://research.nvidia.com/labs/gear/flora/)
 **Code:** [Sample inference code](https://github.com/NVIDIA/Flora) · [Model collection](https://huggingface.co/collections/nvidia/flora)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7223688018), checked 2026-11-03).
 
 ![FLORA: Figure 1 from the paper](../assets/2026-leng-flora.png)
 

@@ -4,7 +4,7 @@ venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
 affiliations: ["S-Lab, Nanyang Technological University", "A*STAR, Singapore", "Simon Fraser University", "Shanghai AI Lab"]
 research_groups: [ntu-s-lab]
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, egocentric-video]
+tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa, egocentric-video]
 ---
 
 # Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning
@@ -16,6 +16,7 @@ Ego-R1 trains a small controller to search hierarchical video memories and call 
 **Website:** [Project website](https://egolife-ai.github.io/Ego-R1/)
 **Code:** [Official repository](https://github.com/egolife-ai/Ego-R1)
 **Source version:** arXiv 2506.13654v1, 16 June 2025. The authors report TPAMI 2026 publication under the expanded title “Ego-R1: Agentic Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning.” The journal article was not inspected. Results below follow the archived preprint.
+**Citations:** 6 ([OpenAlex](https://openalex.org/W7162553809), checked 2026-11-03).
 
 ![Ego-R1: Figure 1 from the paper](../assets/2026-tian-ego-r1.png)
 

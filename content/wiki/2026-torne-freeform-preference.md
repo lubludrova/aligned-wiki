@@ -4,7 +4,7 @@ venue: "CoRL 2026"
 affiliations: ["Stanford University"]
 research_groups: [stanford-iris]
 reviewed: false
-tags: [reward-learning, preference-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation]
+tags: [method, reward-learning, preference-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation]
 ---
 
 # Freeform Preference Learning for Robotic Manipulation
@@ -17,6 +17,7 @@ FPL learns rewards along human-defined preference axes and conditions a robot po
 **Code:** [Reward learning and simulation](https://github.com/freeform-pl/fpl) · [Real-robot experiments](https://github.com/freeform-pl/fpl_real)
 
 The stored August 2026 v3 predates the CoRL 2026 acceptance listed by [Stanford IRIS](https://irislab.stanford.edu/publications.html).
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7166890468), checked 2026-11-03).
 
 ![Freeform Preference Learning: Figure 1 from the paper](../assets/2026-torne-freeform-preference.png)
 

@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["LMU Munich", "Stanford University", "Google", "Technical University of Munich"]
 research_groups: []
 reviewed: false
-tags: [video-memory, state-changes, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, video-memory, state-changes, spatial-understanding, egocentric-video]
 ---
 
 # ProactEgoMem: Benchmarking Proactive Memory in Streaming Egocentric Video
@@ -15,6 +15,7 @@ ProactEgoMem tests whether an assistant acquires useful memory at the right time
 **Paper:** [PDF](../raw/2026-liao-proactegomem.pdf) · [arXiv v2](https://arxiv.org/abs/2610.30089v2), 26 October 2026.
 **Website:** [Project website](https://proactegomem.github.io/)
 **Code:** [GitHub repository](https://github.com/mayhugotong/ProactEgoMem)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7223225027), checked 2026-11-03).
 
 ![ProactEgoMem: Figure 2 from the paper](../assets/2026-liao-proactegomem.png)
 

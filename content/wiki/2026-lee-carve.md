@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["KAIST", "Qualcomm AI Research, Qualcomm Korea YH"]
 research_groups: []
 reviewed: false
-tags: [video-retrieval, video-qa, egocentric-video]
+tags: [dataset, benchmark, method, video-retrieval, video-qa, egocentric-video]
 ---
 
 # Rethinking RAG in Long Videos: What to Retrieve and How to Use It?
@@ -16,6 +16,7 @@ CARVE selects an evidence representation per video chunk, while V-RAGBench separ
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources; the inspected v2 promises benchmark, code and evaluation scripts upon acceptance.
 **Source version:** arXiv:2606.13141v2, 2 October 2026. No conference acceptance was established in this check.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7164529186), checked 2026-11-03).
 
 ![CARVE / V-RAGBench: Figure 1 from the paper](../assets/2026-lee-carve.png)
 

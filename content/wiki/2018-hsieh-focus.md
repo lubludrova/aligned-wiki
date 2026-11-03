@@ -4,7 +4,7 @@ venue: "OSDI"
 affiliations: ["Carnegie Mellon University", "Microsoft", "University of Wisconsin", "ETH Zürich"]
 research_groups: []
 reviewed: false
-tags: [video-retrieval, efficient-processing, video-representation]
+tags: [method, video-retrieval, efficient-processing, video-representation]
 ---
 
 # Focus: Querying Large Video Datasets with Low Latency and Low Cost
@@ -16,6 +16,7 @@ Focus divides object-class video search between inexpensive ingestion and select
 **Website:** Not found in checked sources beyond the proceedings page.
 **Code:** Not found in checked sources.
 **Source version:** OSDI 2018 author-hosted proceedings manuscript, 18 pages, downloaded unchanged from Microsoft Research. Earlier arXiv abstracts report different speedups and author lists.
+**Citations:** 127 ([OpenAlex](https://openalex.org/W2784041417), checked 2026-11-03).
 
 ![Focus video ingestion and query pipeline](../assets/2018-hsieh-focus.png)
 

@@ -4,7 +4,7 @@ venue: "arXiv"
 affiliations: ["University of New South Wales", "University of Southern Queensland"]
 research_groups: []
 reviewed: false
-tags: [video-memory, spatial-understanding, execution-quality, efficient-processing]
+tags: [method, video-memory, spatial-understanding, execution-quality, efficient-processing]
 ---
 
 # From 3D Perception to Safety Reasoning: A Graph-Based Framework for Real-Time Underground Mine Monitoring
@@ -17,6 +17,7 @@ The framework converts colored point-cloud streams into scene graphs, immediate 
 **Code:** Not found in checked sources.
 
 **Source version:** Inspected arXiv:2606.03460v1, 2 June 2026. arXiv lists ESWA (2026), 134601. Crossref for [the related journal DOI](https://doi.org/10.1016/j.eswa.2026.134601) instead records volume 334, February 2027, and the changed subtitle “an intelligent hybrid framework.” This note describes the 2026 preprint, not an independently checked journal version.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7163413338), checked 2026-11-03).
 
 ![Graph-based mine safety reasoning: Figure 1 from the paper](../assets/2026-ranasinghe-safety-reasoning.png)
 

@@ -4,7 +4,7 @@ venue: "NeurIPS (Datasets and Benchmarks Track)"
 affiliations: ["Stanford University"]
 research_groups: []
 reviewed: false
-tags: ["egocentric-video", "efficient-processing", "video-representation"]
+tags: [dataset, benchmark, method, egocentric-video, efficient-processing, video-representation]
 ---
 
 # Streaming Detection of Queried Event Start
@@ -17,6 +17,7 @@ SDQES turns a natural-language event description into a standing detector that m
 **Code:** [Repository](https://github.com/sdqesdataset/sdqes_baselines)
 
 **Source version:** Accepted NeurIPS 2024 proceedings version, with appendices.
+**Citations:** 2 ([OpenAlex](https://openalex.org/W4415796177), checked 2026-11-03).
 
 ![SDQES streaming detection task and query examples](../assets/2024-eyzaguirre-sdqes.png)
 

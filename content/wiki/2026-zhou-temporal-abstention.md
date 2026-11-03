@@ -4,7 +4,7 @@ venue: "ICLR"
 affiliations: ["The Hong Kong University of Science and Technology (Guangzhou)", "Tongji University", "University of Tübingen", "The Hong Kong University of Science and Technology"]
 research_groups: []
 reviewed: false
-tags: []
+tags: [method]
 ---
 
 # When Silence Is Golden: Can LLMs Learn to Abstain in Temporal QA and Beyond?
@@ -16,6 +16,7 @@ Studies learned abstention in temporal text QA through reasoning supervision and
 **Website:** Not found in checked sources.
 **Code:** [GitHub repository](https://github.com/Blackzxy/AbstentionTemporalQA)
 **Source version:** arXiv:2602.04755v2, 4 March 2026, ICLR 2026 paper. The experiments concern text QA, not video.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7128022193), checked 2026-11-03).
 
 ![When Silence Is Golden: Figure 2 from the paper](../assets/2026-zhou-temporal-abstention.png)
 

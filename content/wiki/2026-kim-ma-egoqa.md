@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["KAIST", "New York University", "Samsung Electronics", "ETRI", "DeepAuto.ai"]
 research_groups: [kaist-mlai, nyu-agentic-learning]
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, egocentric-video, multi-person]
+tags: [dataset, benchmark, video-memory, video-retrieval, video-qa, egocentric-video, multi-person]
 ---
 
 # MA-EgoQA: Question Answering over Egocentric Videos from Multiple Embodied Agents
@@ -15,6 +15,7 @@ MA-EgoQA tests reasoning across multiple camera wearers, with EgoMAS as a shared
 **Paper:** [PDF](../raw/2026-kim-ma-egoqa.pdf) · [arXiv v2](https://arxiv.org/abs/2603.09827v2)
 **Website:** [Project website](https://ma-egoqa.github.io/)
 **Code:** [GitHub repository](https://github.com/KangsanKim07/MA-EgoQA)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7134962445), checked 2026-11-03).
 
 ![MA-EgoQA: Figure 5 from the paper](../assets/2026-kim-ma-egoqa.png)
 

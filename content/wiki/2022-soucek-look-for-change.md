@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Czech Institute of Informatics, Robotics and Cybernetics, Czech Technical University in Prague", DeepMind, "Département d’informatique de l’ENS, École normale supérieure", Inria, CNRS, PSL Research University]
 research_groups: []
 reviewed: false
-tags: [state-changes, construction]
+tags: [dataset, benchmark, method, state-changes, construction]
 ---
 
 # Look for the Change: Learning Object States and State-Modifying Actions from Untrimmed Web Videos
@@ -16,6 +16,7 @@ Look for the Change jointly localizes initial states, modifying actions, and fin
 **Website:** [Official project](https://data.ciirc.cvut.cz/public/projects/2022LookForTheChange/)
 **Code:** [Official repository](https://github.com/soCzech/LookForTheChange)
 **Source version:** [arXiv:2203.11637v1](https://arxiv.org/abs/2203.11637v1), 22 March 2022, including appendices. The work was subsequently published at [CVPR 2022, pp. 13956–13966](https://openaccess.thecvf.com/content/CVPR2022/html/Soucek_Look_for_the_Change_Learning_Object_States_and_State-Modifying_Actions_CVPR_2022_paper.html).
+**Citations:** 25 ([OpenAlex](https://openalex.org/W4313174527), checked 2026-11-03).
 
 ![Learning actions and object states from state-changing videos](../assets/2022-soucek-look-for-change.png)
 

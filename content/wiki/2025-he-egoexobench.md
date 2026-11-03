@@ -4,7 +4,7 @@ venue: "NeurIPS Datasets and Benchmarks"
 affiliations: [Nanjing University, Shanghai AI Laboratory, The University of Tokyo, Zhejiang University, Fudan University]
 research_groups: []
 reviewed: false
-tags: [video-qa, execution-quality, procedure-understanding, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, video-qa, execution-quality, procedure-understanding, spatial-understanding, egocentric-video]
 ---
 
 # EgoExoBench: A Benchmark for First- and Third-person View Video Understanding in MLLMs
@@ -16,6 +16,7 @@ EgoExoBench tests cross-view video reasoning, including whether an additional de
 **Website:** Not found in checked sources.
 **Code:** [Official repository](https://github.com/ayiyayi/EgoExoBench)
 **Source version:** Archived arXiv 2507.18342v1, 24 July 2025. Publication is verified at NeurIPS 2025. The final proceedings were also checked, but source locations and numbers below refer to the archived v1.
+**Citations:** 5 ([OpenAlex](https://openalex.org/W4415234026), checked 2026-11-03).
 
 ![EgoExoBench video collection and question construction](../assets/2025-he-egoexobench.png)
 

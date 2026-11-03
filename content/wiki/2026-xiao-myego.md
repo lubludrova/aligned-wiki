@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: [University of Science and Technology of China, National University of Singapore]
 research_groups: []
 reviewed: false
-tags: [video-qa, egocentric-video, multi-person]
+tags: [dataset, benchmark, video-qa, egocentric-video, multi-person]
 ---
 
 # Ego-Grounding for Personalized Question-Answering in Egocentric Videos
@@ -16,6 +16,7 @@ MyEgo tests whether video models connect objects, actions and earlier observatio
 **Website:** Not found in checked sources.
 **Code:** [Official MyEgo repository](https://github.com/Ryougetsu3606/MyEgo)
 **Source version:** arXiv 2604.01966v1, 2 April 2026. Publication verified in the CVPR 2026 proceedings. Numbers below follow the archived PDF, rather than the repository's subset leaderboard.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7148767284), checked 2026-11-03).
 
 ![MyEgo / Ego-Grounding: Figure 1 from the paper](../assets/2026-xiao-myego.png)
 

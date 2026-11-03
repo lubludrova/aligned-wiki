@@ -8,7 +8,7 @@ affiliations:
   - "Hubei Key Laboratory of Transportation Internet of Things, Wuhan University of Technology"
 research_groups: []
 reviewed: false
-tags: [execution-quality, video-representation]
+tags: [method, execution-quality, video-representation]
 ---
 
 # Anomize: Better Open Vocabulary Video Anomaly Detection
@@ -21,6 +21,7 @@ Anomize combines static visual concepts and temporal label-aligned features to d
 **Website:** Not found in checked primary sources.
 **Code:** Not found in checked primary sources.
 **Source version:** CVPR 2025 open-access accepted paper, 10 pages.
+**Citations:** 19 ([OpenAlex](https://openalex.org/W4413155555), checked 2026-11-03).
 
 ![Anomize text encoding, concept library, and anomaly detection](../assets/2025-li-anomize.png)
 

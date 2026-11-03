@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["The Chinese University of Hong Kong, Shenzhen", "Tsinghua University"]
 research_groups: []
 reviewed: false
-tags: ["execution-quality", "video-representation"]
+tags: [dataset, benchmark, execution-quality, video-representation]
 ---
 
 # PaSBench-Video: A Streaming Video Benchmark for Proactive Safety Warning
@@ -17,6 +17,7 @@ PaSBench-Video distinguishes seeing an accident from issuing a correctly grounde
 **Code:** Not found in checked sources.
 
 **Source version:** arXiv 2606.02443v1.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7163188503), checked 2026-11-03).
 
 ![PaSBench-Video: Figure 2 from the paper](../assets/2026-zhao-pasbench-video.png)
 

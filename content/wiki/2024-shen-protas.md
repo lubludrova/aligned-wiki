@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Northeastern University"]
 research_groups: []
 reviewed: false
-tags: ["procedure-understanding", "video-representation", "egocentric-video"]
+tags: [dataset, method, procedure-understanding, video-representation, egocentric-video]
 ---
 
 # Progress-Aware Online Action Segmentation for Egocentric Procedural Task Videos
@@ -17,6 +17,7 @@ ProTAS uses estimated within-action progress and learned task dependencies to st
 **Code:** [GitHub repository](https://github.com/Yuhan-Shen/ProTAS)
 
 **Source version:** CVPR 2024 accepted proceedings PDF, pp.18186–18197.
+**Citations:** 27 ([OpenAlex](https://openalex.org/W4402702885), checked 2026-11-03).
 
 ![ProTAS progress-aware online action segmentation](../assets/2024-shen-protas.png)
 

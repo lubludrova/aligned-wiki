@@ -4,7 +4,7 @@ venue: "Automation in Construction 183, 106783"
 affiliations: ["Department of Civil and Construction Engineering, National Taiwan University of Science and Technology"]
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, spatial-understanding, construction, real-world-evaluation]
+tags: [method, procedure-understanding, spatial-understanding, construction, real-world-evaluation]
 ---
 
 # Automated construction progress monitoring and control through AI-based image recognition and BIM integration
@@ -16,6 +16,7 @@ Maps multi-camera construction-phase detections to named BIM components and visu
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
 **Source version:** Twenty-one-page publisher article supplied by the user, available online 19 January 2026.
+**Citations:** 7 ([OpenAlex](https://openalex.org/W7124830140), checked 2026-11-03).
 
 ![AI+BIM construction progress: Figure 2 from the paper](../assets/2026-hsieh-ai-bim-progress.png)
 

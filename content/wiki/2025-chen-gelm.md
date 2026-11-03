@@ -4,7 +4,7 @@ venue: "AAAI"
 affiliations: [Shanghai Jiao Tong University]
 research_groups: []
 reviewed: false
-tags: [video-qa, video-retrieval, egocentric-video]
+tags: [dataset, benchmark, method, video-qa, video-retrieval, egocentric-video]
 ---
 
 # Grounded Multi-Hop VideoQA in Long-Form Egocentric Videos
@@ -16,6 +16,7 @@ GeLM links answer phrases to multiple supporting video intervals, with MultiHop-
 **Website:** [Project website](https://qirui-chen.github.io/MultiHop-EgoQA)
 **Code:** [Official repository](https://github.com/qirui-chen/MultiHop-EgoQA)
 **Source version:** arXiv 2408.14469v1, 26 August 2024. Publication year follows the verified AAAI 2025 proceedings. Numerical claims below follow the archived preprint.
+**Citations:** 14 ([OpenAlex](https://openalex.org/W4409346443), checked 2026-11-03).
 
 ![GeLM grounded video question answering architecture](../assets/2025-chen-gelm.png)
 

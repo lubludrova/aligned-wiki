@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Hong Kong Baptist University", "Tencent Youtu Lab"]
 research_groups: []
 reviewed: false
-tags: ["video-representation", "video-qa", "state-changes"]
+tags: [dataset, benchmark, method, video-representation, video-qa, state-changes]
 ---
 
 # Streaming Video Instruction Tuning
@@ -17,6 +17,7 @@ Streamo trains one model to track streaming instructions, distinguish silence fr
 **Code:** [GitHub repository](https://github.com/maifoundations/Streamo)
 
 **Source version:** arXiv:2512.21334v2, 10 April 2026. First preprint appeared in 2025. CVPR 2026 acceptance confirmed by official repository.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7117324130), checked 2026-11-03).
 
 ![Streamo: Figure 2 from the paper](../assets/2026-xia-streamo.png)
 

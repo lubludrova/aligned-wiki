@@ -4,7 +4,7 @@ venue: "ECIR 2026"
 affiliations: ["CAS Key Laboratory of AI Security, Institute of Computing Technology, Chinese Academy of Sciences", "CAS Key Laboratory of Network Data Science and Technology, Institute of Computing Technology, Chinese Academy of Sciences", "University of Chinese Academy of Sciences"]
 research_groups: []
 reviewed: false
-tags: ["video-retrieval", "video-representation", "efficient-processing"]
+tags: [method, video-retrieval, video-representation, efficient-processing]
 ---
 
 # Event-Aware Video Corpus Moment Retrieval
@@ -16,6 +16,7 @@ Indexes event representations to retrieve candidate videos, then localizes query
 **Website:** Not found in checked sources.
 **Code:** [Author repository](https://github.com/hdy007007/eventformer)
 **Source version:** The year/venue and five-author list follow the ECIR 2026 publisher record. The archived and read source is arXiv:2402.13566v1 (21 February 2024), 11 pages, with four authors and the affiliations above. Final-paper methods/tables were not available for comparison. The unfinished ACM template in the preprint does not establish a 2018 publication.
+**Citations:** 1 ([OpenAlex](https://openalex.org/W7140104246), checked 2026-11-03).
 
 ![EventFormer: Figure 2 from the paper](../assets/2026-hou-eventformer.png)
 

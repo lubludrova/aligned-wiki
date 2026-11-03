@@ -4,7 +4,7 @@ venue: "SIGMOD"
 affiliations: ["University of Washington", "Microsoft Gray Systems Lab"]
 research_groups: []
 reviewed: false
-tags: [video-retrieval, efficient-processing, spatial-understanding]
+tags: [method, video-retrieval, efficient-processing, spatial-understanding]
 ---
 
 # Self-Enhancing Video Data Management System for Compositional Events with Large Language Models
@@ -16,6 +16,7 @@ VOCAL-UDF extends a video-query vocabulary by generating reusable programs or sm
 **Website:** Not found in checked sources beyond the official repository.
 **Code:** [Official repository](https://github.com/uwdb/VOCAL-UDF)
 **Source version:** arXiv 2408.02243v2, 19 February 2025, 36-page extended technical report for the SIGMOD 2025 paper. First preprint released in 2024.
+**Citations:** 5 ([OpenAlex](https://openalex.org/W4411403382), checked 2026-11-03).
 
 ![VOCAL-UDF query parsing, function generation, and execution](../assets/2025-zhang-vocal-udf.png)
 

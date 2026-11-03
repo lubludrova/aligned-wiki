@@ -8,6 +8,8 @@ research_groups:
 - osu-aiot-mlsys
 reviewed: false
 tags:
+- dataset
+- benchmark
 - video-memory
 - video-retrieval
 - video-qa
@@ -27,6 +29,7 @@ Evaluates practical wearable-memory questions with explicit unanswerability and 
 **Code:** [GitHub repository](https://github.com/AIoT-MLSys-Lab/supermemory-vqa) — annotation pipeline and review frontend. [Dataset](https://huggingface.co/datasets/OSU-AIoT-MLSys-Lab/SuperMemory-VQA).
 
 **Source version:** arXiv 2606.00825v1, 30 May 2026. The repository says under review at NeurIPS 2026 Datasets and Benchmarks. Acceptance has not been verified.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7163151823), checked 2026-11-03).
 
 ![SuperMemory-VQA benchmark task dimensions](../assets/2026-alam-supermemory-vqa.png)
 

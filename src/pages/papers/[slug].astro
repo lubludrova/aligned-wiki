@@ -1,7 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { papers, paperLocations, chapterContent, notes, renderMarkdown, wikiPapers, wikiNotes } from '../../lib/content';
+import CitationCount from '../../components/CitationCount.astro';
+import { papers, paperLocations, chapterContent, notes, renderMarkdown, wikiPapers, wikiNotes, citationCounts, paperTags } from '../../lib/content';
 export function getStaticPaths() { return papers.map(paper => ({ params: { slug: paper.slug }, props: { paper } })); }
 const { paper } = Astro.props;
 const locations = paperLocations(paper);
@@ -28,6 +29,7 @@ const hasDetails = metadata.authors || metadata.affiliations.length || metadata.
       </div>
       <h1>{paper.shortTitle}</h1>
       <p class="paper-full-title">{paper.title}</p>
+      <div class="paper-publication" data-paper-citations><CitationCount snapshot={citationCounts[paper.slug]} /></div>
       <nav class="paper-backlinks" aria-label="Paper resources">
         <a href={paper.sourceUrls[0]} target="_blank" rel="noreferrer">Original publication ↗</a>
         {readingUrl && <a href={readingUrl}>Read chapter <Icon name="arrow" size={15}/></a>}
@@ -46,7 +48,7 @@ const hasDetails = metadata.authors || metadata.affiliations.length || metadata.
         </dl>
         {wikiNote && <div class="prose source-details" set:html={renderMarkdown(wikiNote.sourceHeaderMarkdown, `/papers/${paper.slug}/`, 'source-').html}/>}
       </details>}
-      {wiki && <div class="paper-tags">{wiki.tags.map(tag => <a href={`/papers/?topic=${encodeURIComponent(tag)}`}>{tag.replaceAll('-', ' ')}</a>)}</div>}
+      <div class="paper-tags">{paperTags[paper.slug].map(tag => <a href={`/papers/?topic=${encodeURIComponent(tag)}`}>{tag.replaceAll('-', ' ')}</a>)}</div>
     </header>
     {wikiNote && <article class="prose wiki-note" set:html={renderMarkdown(wikiNote.markdown, `/papers/${paper.slug}/`, 'wiki-').html}/>}
     {wiki?.spotlight && <aside class="paper-spotlight"><span>★ Wiki spotlight</span><p>{wiki.spotlightReason}</p></aside>}

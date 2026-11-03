@@ -4,7 +4,7 @@ venue: "PVLDB 13(4), 533–546"
 affiliations: ["Stanford DAWN Project, Stanford University"]
 research_groups: []
 reviewed: false
-tags: [video-retrieval, efficient-processing]
+tags: [method, video-retrieval, efficient-processing]
 ---
 
 # BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics
@@ -16,6 +16,7 @@ BlazeIt executes declarative video queries with specialized models, sampling and
 **Website:** Not found in checked sources beyond the code repository.
 **Code:** [Official repository](https://github.com/stanford-futuredata/blazeit)
 **Source version:** Published PVLDB article dated 2019, presented at VLDB 2020. The filename follows the publication year printed on the PDF.
+**Citations:** 103 ([OpenAlex](https://openalex.org/W3000318171), checked 2026-11-03).
 
 ![BlazeIt video query processing compared with naive processing](../assets/2019-kang-blazeit.png)
 

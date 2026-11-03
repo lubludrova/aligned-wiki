@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["State Key Laboratory of General Artificial Intelligence, BIGAI", "School of Computer Science, Peking University", "School of Intelligence Science and Technology, Peking University"]
 research_groups: []
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, egocentric-video]
 ---
 
 # VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding
@@ -16,6 +16,7 @@ VideoAgent combines caption and object-occurrence memories with an LLM that retr
 **Website:** [Project website](https://videoagent.github.io/)
 **Code:** [GitHub repository](https://github.com/flowithin/VideoAgentECCV)
 **Source version:** ECCV 2024 proceedings PDF, 18 pages. This is Fan et al., associated with arXiv:2403.11481. The [official supplement](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241-supp.pdf), printed pp. 19–34, was also read.
+**Citations:** 60 ([OpenAlex](https://openalex.org/W4402961691), checked 2026-11-03).
 
 ![VideoAgent video representations and tool-based question answering](../assets/2024-fan-videoagent.png)
 

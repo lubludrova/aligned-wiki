@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["Allen Institute for AI", "University of Washington", "Woven by Toyota", "Microsoft"]
 research_groups: []
 reviewed: false
-tags: ["video-representation", "state-changes", "spatial-understanding"]
+tags: [dataset, benchmark, method, video-representation, state-changes, spatial-understanding]
 ---
 
 # Synthetic Visual Genome 2: Extracting Large-scale Spatio-Temporal Scene Graphs from Videos
@@ -17,6 +17,7 @@ SVG2 scales temporal object–attribute–relation annotations and trains TraSeR
 **Code:** [GitHub repository](https://github.com/uwGZQ/SVG2)
 
 **Source version:** arXiv:2602.23543v3, 6 March 2026. ECCV 2026 acceptance confirmed by the official repository announcement dated 23 July 2026.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7133186495), checked 2026-11-03).
 
 ![SVG2 / TraSeR: Figure 2 from the paper](../assets/2026-gao-svg2.png)
 

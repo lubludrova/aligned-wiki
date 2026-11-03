@@ -60,6 +60,7 @@ Organizes multimodal memory by representation and management policy, with guidan
 **Code:** [GitHub repository](https://github.com/Seeing-Maintaining-Learning/multimodal-agent-memory-evolution) — curated architecture and benchmark records, not an implemented memory assistant.
 
 **Source version:** arXiv 2610.19366v1, 14 October 2026. Survey preprint, with no acceptance verified. The archived PDF catalogs 297 architectures, while the current repository lists 299.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7222038340), checked 2026-11-03).
 
 ![Multimodal Agent Memory Survey: Figure 1 from the paper](../assets/2026-guo-multimodal-memory-survey.png)
 

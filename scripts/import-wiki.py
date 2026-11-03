@@ -20,6 +20,8 @@ SITE = Path(__file__).resolve().parents[1]
 WIKI = SITE.parent / 'aligned-wiki'
 OUTPUT = SITE / 'content/wiki'
 REGISTER = SITE / 'content/wiki-papers.json'
+CITATIONS = SITE / 'content/citation-counts.json'
+PUBLICATION_TYPES = SITE / 'content/publication-types.json'
 MEDIA = SITE / 'public/media/wiki'
 spec = importlib.util.spec_from_file_location('paper_metadata', SITE / 'scripts/import-paper-metadata.py')
 metadata_import = importlib.util.module_from_spec(spec)
@@ -53,6 +55,11 @@ def main():
     names = dict((slug, name) for name, slug in re.findall(r'\[([^\]]+)\]\(wiki/([^/)]+)\.md\)', index))
     assert set(names) == {path.stem for path in paths}, 'Wiki index and note inventory differ'
     manifest = json.loads((WIKI / 'raw/manifest.json').read_text())
+    type_register = WIKI / manifest['publication_types']['registry']
+    assert hashlib.sha256(type_register.read_bytes()).hexdigest() == manifest['publication_types']['registry_sha256'], 'Publication-type registry hash mismatch'
+    type_records = json.loads(type_register.read_text())['papers']
+    citation_records = manifest['citation_counts']['papers']
+    citation_snapshots = {}
     archived = {entry['file']: entry for entry in manifest['papers']}
     spotlight = {Path(entry['note']).stem: entry for entry in manifest['full_review']['spotlight']['works']}
     review = json.loads((SITE / 'content/en/papers.json').read_text())
@@ -107,6 +114,18 @@ def main():
         ]))
         reviewed = re.search(r'^reviewed:\s*(true|false)\s*$', front, re.M)
         assert reviewed, f'Missing human review status: {path.name}'
+        citation = citation_records[path.stem]
+        citation_line = re.findall(r'^\*\*Citations:\*\* (.+)$', text, re.M)
+        assert len(citation_line) == 1, f'Expected one citation line: {path.name}'
+        assert citation['provider'] in citation_line[0] and citation['checked'] in citation_line[0], f'Citation source/date mismatch: {path.name}'
+        if citation['status'] == 'verified':
+            assert citation_line[0].startswith(f"{citation['count']} ("), f'Citation count mismatch: {path.name}'
+            assert citation['url'] in citation_line[0], f'Citation record mismatch: {path.name}'
+        else:
+            assert citation['count'] is None and 'Unavailable' in citation_line[0], f'Unavailable citations must not become zero: {path.name}'
+        citation_snapshots[path.stem] = {
+            key: citation[key] for key in ('count', 'provider', 'checked', 'url', 'status', 'reason') if key in citation
+        }
         record = {
             'title': heading[1], 'shortTitle': names[path.stem], 'summary': summary,
             'year': metadata['year'], 'sourceUrls': source_urls, 'metadata': metadata,
@@ -115,6 +134,7 @@ def main():
             'sourceLinks': source_links, 'sourceHeaderMarkdown': header, 'images': images,
             'sourceSha256': hashlib.sha256(data).hexdigest(),
         }
+        assert record['tags'] == type_records[path.stem]['tags'], f'Wiki tags and contribution register differ: {path.name}'
         if path.stem in spotlight:
             record.update({
                 'spotlightReason': spotlight[path.stem]['reason'],
@@ -142,6 +162,15 @@ def main():
     title_duplicates = [sorted(slugs) for slugs in by_title.values() if len(slugs) > 1]
     REGISTER.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\n')
     review_slugs = {paper['slug'] for paper in review}
+    for slug in sorted(review_slugs - set(records)):
+        citation = citation_records[slug]
+        citation_snapshots[slug] = {
+            key: citation[key] for key in ('count', 'provider', 'checked', 'url', 'status', 'reason') if key in citation
+        }
+    assert set(citation_snapshots) == review_slugs | set(records), 'Citation snapshot and publication inventory differ'
+    CITATIONS.write_text(json.dumps(citation_snapshots, ensure_ascii=False, indent=2) + '\n')
+    assert set(type_records) == review_slugs | set(records), 'Contribution types and publication inventory differ'
+    PUBLICATION_TYPES.write_text(json.dumps({slug: record['types'] for slug, record in type_records.items()}, ensure_ascii=False, indent=2) + '\n')
     print(json.dumps({
         'wikiNotes': len(records), 'reviewPapers': len(review),
         'sameSlugOverlap': len(set(records) & review_slugs),

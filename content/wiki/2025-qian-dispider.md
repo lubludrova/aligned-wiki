@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["The Chinese University of Hong Kong", "Shanghai AI Laboratory"]
 research_groups: []
 reviewed: false
-tags: ["video-qa", "video-memory", "efficient-processing"]
+tags: [method, video-qa, video-memory, efficient-processing]
 ---
 
 # Dispider: Enabling Video LLMs with Active Real-Time Interaction via Disentangled Perception, Decision, and Reaction
@@ -17,6 +17,7 @@ Dispider separates streaming perception and response decisions from an asynchron
 **Code:** [GitHub repository](https://github.com/Mark12Ding/Dispider)
 
 **Source version:** arXiv:2501.03218v1, 6 January 2025. CVPR 2025 publication confirmed by the official repository.
+**Citations:** 23 ([OpenAlex](https://openalex.org/W4413157343), checked 2026-11-03).
 
 ![Dispider asynchronous perception, decision, and response](../assets/2025-qian-dispider.png)
 

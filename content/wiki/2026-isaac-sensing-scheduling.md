@@ -4,7 +4,7 @@ venue: "ISARC, pp. 824–831"
 affiliations: ["Department of Structural Engineering, Ben-Gurion University of the Negev", "Department of Civil and Environmental Engineering, Catholic University of America"]
 research_groups: []
 reviewed: false
-tags: ["procedure-understanding", "execution-quality", "construction"]
+tags: [method, procedure-understanding, execution-quality, construction]
 ---
 
 # From Sensing to Scheduling: Deviation-Based Framework for Sensor-Aware Progress Monitoring and Schedule Control
@@ -16,6 +16,7 @@ Separates sensed execution from formal acceptance and translates measured work i
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
 **Source version:** Eight-page ISARC 2026 publisher PDF downloaded 1 November 2026. Its title uses “Deviation-Based Framework”.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7165917260), checked 2026-11-03).
 
 ![From Sensing to Scheduling: Figure 1 from the paper](../assets/2026-isaac-sensing-scheduling.png)
 

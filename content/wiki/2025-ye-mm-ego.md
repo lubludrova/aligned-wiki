@@ -4,7 +4,7 @@ venue: "ICLR"
 affiliations: ["CSE, HKUST", Apple, UCLA]
 research_groups: [apple-machine-learning-research]
 reviewed: false
-tags: [video-qa, video-retrieval, video-representation, egocentric-video]
+tags: [dataset, benchmark, method, video-qa, video-retrieval, video-representation, egocentric-video]
 ---
 
 # MM-Ego: Towards Building Egocentric Multimodal LLMs for Video QA
@@ -16,6 +16,7 @@ MM-Ego learns a coarse-to-fine video reader that scans compressed frame represen
 **Website:** [Apple research page](https://machinelearning.apple.com/research/mm-ego)
 **Code:** Not found in checked sources.
 **Source version:** arXiv 2410.07177v2, 13 April 2025, published at ICLR 2025 following the 2024 preprint. The author list follows this PDF, including Yanghao Li, who is omitted from the checked Apple webpage.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4403345903), checked 2026-11-03).
 
 ![MM-Ego memory pointer prompting for frame selection](../assets/2025-ye-mm-ego.png)
 

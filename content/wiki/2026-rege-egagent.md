@@ -4,7 +4,7 @@ venue: "ACL"
 affiliations: ["Reality Labs Research at Meta", "University of Wisconsin-Madison"]
 research_groups: [meta-reality-labs, wisconsin-waiv]
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, egocentric-video]
 ---
 
 # Agentic Very Long Video Understanding
@@ -15,6 +15,7 @@ EGAgent combines temporal entity graphs, visual retrieval, and transcript search
 **Paper:** [PDF](../raw/2026-rege-egagent.pdf) · [arXiv v3](https://arxiv.org/abs/2601.18157v3) · [ACL publication](https://aclanthology.org/2026.acl-long.2161/)
 **Website:** [Official project](https://facebookresearch.github.io/egagent/)
 **Code:** [GitHub repository](https://github.com/facebookresearch/egagent)
+**Citations:** 1 ([OpenAlex](https://openalex.org/W7166889848), checked 2026-11-03).
 
 ![EGAgent: Figure 2 from the paper](../assets/2026-rege-egagent.png)
 

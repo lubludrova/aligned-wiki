@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["FAIR, Meta", "University of Texas at Austin", "Carnegie Mellon University", "University of California, Berkeley", "Project Aria, Meta", "University of Bristol", "IIIT, Hyderabad", "University of Illinois, Urbana Champaign", "University of Minnesota", "National University of Singapore", "Universidad de los Andes", "Simon Fraser University", "University of North Carolina, Chapel Hill", "University of Catania", "University of Pennsylvania", "University of Tokyo", "Meta", "Indiana University", "Johns Hopkins University", "King Abdullah University of Science and Technology", "Georgia Tech"]
 research_groups: [meta-fair, bristol-mavi, ut-austin-vision]
 reviewed: false
-tags: [execution-quality, procedure-understanding, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, execution-quality, procedure-understanding, spatial-understanding, egocentric-video]
 ---
 
 # Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives
@@ -16,6 +16,7 @@ Ego-Exo4D pairs first-person and third-person recordings with expert critiques, 
 **Website:** [Project website](https://ego-exo4d-data.org/)
 **Code:** [Dataset tools and downloader](https://github.com/facebookresearch/Ego4d)
 **Source version:** arXiv:2311.18259v4, 25 September 2024, 99 pages. The original paper appeared at CVPR 2024. This note follows the expanded stored manuscript, distinct from the [IJCV version published in 2025](https://link.springer.com/article/10.1007/s11263-025-02557-6).
+**Citations:** 120 ([OpenAlex](https://openalex.org/W4402727748), checked 2026-11-03).
 
 ![Ego-Exo4D synchronized views and multimodal annotations](../assets/2024-grauman-ego-exo4d.png)
 

@@ -4,7 +4,7 @@ venue: "IEEE TPAMI"
 affiliations: ["University of Catania"]
 research_groups: [catania-coai]
 reviewed: false
-tags: [procedure-understanding, execution-quality, video-representation, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, execution-quality, video-representation, egocentric-video]
 ---
 
 # Task Graph Maximum Likelihood Estimation for Procedural Activity Understanding in Egocentric Videos
@@ -16,6 +16,7 @@ TGML learns explicit task graphs from observed action sequences and reuses their
 **Website:** [DTGL predecessor project linked by TGML](https://fpv-iplab.github.io/Differentiable-Task-Graph-Learning/)
 **Code:** [Shared DTGL repository](https://github.com/fpv-iplab/Differentiable-Task-Graph-Learning). Release of the journal-specific additions was not verified.
 **Source version:** arXiv:2502.17753v2, 26 February 2025, first released 25 February 2025. This note covers that preprint. The later journal article appeared in IEEE TPAMI 48(9), 10518–10534, September 2026 ([publisher record](https://ieeexplore.ieee.org/abstract/document/11505801/)).
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4416042357), checked 2026-11-03).
 
 ![TGML: Figure 1 from the paper](../assets/2026-seminara-tgml.png)
 

@@ -6,7 +6,7 @@ affiliations:
   - "School of EEE, Nanyang Technological University"
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, execution-quality, video-qa, egocentric-video]
+tags: [dataset, benchmark, procedure-understanding, execution-quality, video-qa, egocentric-video]
 ---
 
 # EgoErrorVQA: Assess Egocentric Comprehension Capabilities through Procedural Errors for Ego-Agentic AI
@@ -19,6 +19,7 @@ EgoErrorVQA evaluates procedural error comprehension and separates procedural ma
 **Website:** Not found in checked primary sources.
 **Code:** https://github.com/z1oong/EgoErrorVQA
 **Source version:** arXiv:2608.24134v1, 25 August 2026, 20 pages. EMNLP 2026 status verified in the author repository.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7204237976), checked 2026-11-03).
 
 ![EgoErrorVQA: Figure 1 from the paper](../assets/2026-li-egoerrorvqa.png)
 

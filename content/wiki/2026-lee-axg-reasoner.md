@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Northeastern University"]
 research_groups: []
 reviewed: false
-tags: ["procedure-understanding", "execution-quality", "egocentric-video"]
+tags: [method, procedure-understanding, execution-quality, egocentric-video]
 ---
 
 # AXG-Reasoner: Error Detection and Explanation in Long Task Videos with Vision–Language Models
@@ -17,6 +17,7 @@ AXG-Reasoner aligns action segments with learned subaction graphs to expose spar
 **Code:** [GitHub repository](https://github.com/robert80203/AXG-Reasoner)
 
 **Source version:** CVPR 2026 accepted proceedings PDF, pp.3421–3431.
+**Citations:** Unavailable (OpenAlex, checked 2026-11-03. No identity-matched record found after title and acronym searches).
 
 ![AXG-Reasoner: Figure 2 from the paper](../assets/2026-lee-axg-reasoner.png)
 

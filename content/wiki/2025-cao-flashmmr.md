@@ -4,7 +4,7 @@ venue: "NeurIPS 2025"
 affiliations: ["The University of Queensland"]
 research_groups: []
 reviewed: false
-tags: ["video-retrieval", "video-representation"]
+tags: [dataset, benchmark, method, video-retrieval, video-representation]
 ---
 
 # When One Moment Isn’t Enough: Multi-Moment Retrieval with Cross-Moment Interactions
@@ -16,6 +16,7 @@ Introduces QV-M² and FlashMMR to retrieve several separate moments matching one
 **Website:** Not found in checked sources.
 **Code:** [Author repository](https://github.com/Zhuo-Cao/QV-M2)
 **Source version:** NeurIPS 2025 proceedings PDF, 19 pages.
+**Citations:** 1 ([OpenAlex](https://openalex.org/W4415962915), checked 2026-11-03).
 
 ![FlashMMR feature extraction, moment refinement, and prediction](../assets/2025-cao-flashmmr.png)
 

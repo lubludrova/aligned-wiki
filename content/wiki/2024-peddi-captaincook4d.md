@@ -4,7 +4,7 @@ venue: "NeurIPS, Datasets and Benchmarks Track"
 affiliations: ["The University of Texas at Dallas", "University of Florida"]
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, execution-quality, egocentric-video]
+tags: [dataset, benchmark, procedure-understanding, execution-quality, egocentric-video]
 ---
 
 # CaptainCook4D: A Dataset for Understanding Errors in Procedural Activities
@@ -16,6 +16,7 @@ CaptainCook4D supplies procedural videos with explicit execution and ordering er
 **Website:** [Official project](https://captaincook4d.github.io/captain-cook/)
 **Code:** [Official release organization](https://github.com/CaptainCook4D/) · [Annotations](https://github.com/CaptainCook4D/annotations) · [Downloader](https://github.com/CaptainCook4D/downloader). Links verified through the official project page. Implementations were not executed.
 **Source version:** Fifty-four-page NeurIPS 2024 proceedings PDF including appendices. First preprint appeared in 2023. Author order follows this PDF.
+**Citations:** 7 ([OpenAlex](https://openalex.org/W4415800474), checked 2026-11-03).
 
 ![CaptainCook4D recipe graphs, execution variations, and sensor recordings](../assets/2024-peddi-captaincook4d.png)
 

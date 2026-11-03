@@ -4,7 +4,7 @@ venue: "Advanced Engineering Informatics 74, 104642"
 affiliations: ["School of Civil Engineering, Chongqing University", "State Key Laboratory of Safety and Resilience of Civil Engineering in Mountain Area", "Institute of Smart City and Intelligent Transportation, Southwest Jiaotong University", "College of Civil Engineering, Hunan University", "Hong Kong Center for Construction Robotics, The Hong Kong University of Science and Technology", "Xinjiang University of Technology"]
 research_groups: []
 reviewed: false
-tags: [video-qa, procedure-understanding, execution-quality, egocentric-video, construction]
+tags: [method, video-qa, procedure-understanding, execution-quality, egocentric-video, construction]
 ---
 
 # A GraphRAG-driven multi-agent framework for worker-centric construction process compliance supervision via egocentric video
@@ -16,6 +16,7 @@ Aligns video-derived activities with regulatory rules in two knowledge graphs, t
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
 **Source version:** Published 22-page article, available online 11 April 2026, DOI 10.1016/j.aei.2026.104642. The user supplied the original publisher PDF. Referenced supplementary prompts were not available in this file.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7153469945), checked 2026-11-03).
 
 ![GraphRAG construction compliance: Figure 8 from the paper](../assets/2026-qiu-graphrag-compliance.png)
 

@@ -4,7 +4,7 @@ venue: "Artificial Intelligence for a Sustainable Built Environment, 1(1), 1–2
 affiliations: ["Columbia University", "Colorado School of Mines", "The University of British Columbia"]
 research_groups: []
 reviewed: false
-tags: [video-representation, egocentric-video, construction]
+tags: [dataset, benchmark, method, video-representation, egocentric-video, construction]
 ---
 
 # ICON-pose: an egocentric worker action recognition dataset for human–robot collaboration
@@ -16,6 +16,7 @@ Introduces construction-specific egocentric pose data and classifies action sequ
 **Website:** [Author dataset repository](https://github.com/ICON-Pose/ICON-Pose)
 **Code:** [Author repository](https://github.com/ICON-Pose/ICON-Pose). Its README says training code and checkpoints are coming soon. Dataset releases are linked separately.
 **Source version:** Original 27-page journal PDF, 2026, DOI 10.1108/AISBE-11-2025-0007.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7211957703), checked 2026-11-03).
 
 ![ICON-Pose: title and abstract excerpts](../assets/2026-suen-icon-pose.png)
 

@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["National Tsing Hua University", "NVIDIA"]
 research_groups: []
 reviewed: false
-tags: ["video-memory", "efficient-processing", "video-qa"]
+tags: [method, video-memory, efficient-processing, video-qa]
 ---
 
 # ReactVAU: A Slow-Fast Decoupled Framework for Streaming Video Anomaly Understanding
@@ -17,6 +17,7 @@ A small anomaly detector gates expensive verification while protecting suspiciou
 **Code:** [Repository](https://github.com/huiyuiui/ReactVAU-code)
 
 **Source version:** arXiv 2609.07941v2, with author-hosted supplementary material. ECCV 2026 status is stated on the project page.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7212020541), checked 2026-11-03).
 
 ![ReactVAU: Figure 2 from the paper](../assets/2026-chen-reactvau.png)
 

@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: [Karlsruhe Institute of Technology, ETH Zurich, University of Oxford, Hunan University, "INSAIT, Sofia University ‘St. Kliment Ohridski’"]
 research_groups: [kit-cvhci]
 reviewed: false
-tags: [video-qa, video-retrieval, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, video-qa, video-retrieval, spatial-understanding, egocentric-video]
 ---
 
 # EgoExoMem: Cross-View Memory Reasoning over Synchronized Egocentric and Exocentric Videos
@@ -16,6 +16,7 @@ EgoExoMem tests complementary ego/exo evidence, while E²-Select allocates a lim
 **Website:** Not found in checked sources.
 **Code:** [Official repository](https://github.com/RuipingL/EgoExoMem)
 **Source version:** arXiv 2605.18734v2, 8 July 2026. No conference or journal publication was verified.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7161682031), checked 2026-11-03).
 
 ![EgoExoMem / E²-Select: Figure 3 from the paper](../assets/2026-liu-egoexomem.png)
 

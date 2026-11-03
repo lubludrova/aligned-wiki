@@ -6,7 +6,7 @@ affiliations:
   - ASML
 research_groups: [tue-aria]
 reviewed: false
-tags: [procedure-understanding, execution-quality, state-changes, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, execution-quality, state-changes, egocentric-video]
 ---
 
 # Learning to Recognize Correctly Completed Procedure Steps in Egocentric Assembly Videos through Spatio-Temporal Modeling
@@ -19,6 +19,7 @@ STORM-PSR combines assembly-state detection with temporal completion recognition
 **Website:** https://timschoonbeek.github.io/stormpsr
 **Code:** https://github.com/shaohsuanhung/STORM-PSR
 **Source version:** arXiv:2510.12385v1, 14 October 2025, 26-page author accepted manuscript. The published article is CVIU 262, 104528, December 2025, [DOI](https://doi.org/10.1016/j.cviu.2025.104528). Page references below follow the stored manuscript.
+**Citations:** 2 ([OpenAlex](https://openalex.org/W4415315604), checked 2026-11-03).
 
 ![STORM-PSR spatiotemporal procedure recognition stream](../assets/2025-schoonbeek-storm-psr.png)
 

@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["KAIST", "Nanyang Technological University, Singapore", "DeepAuto.ai"]
 research_groups: [kaist-mlai, ntu-adaptive-machine-intelligence]
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, egocentric-video]
 ---
 
 # WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning
@@ -15,6 +15,7 @@ WorldMM answers long-video questions by iteratively retrieving complementary epi
 **Paper:** [PDF](../raw/2026-yeo-worldmm.pdf) · [arXiv v2](https://arxiv.org/abs/2512.02425v2), first submitted December 2025.
 **Website:** [Project website](https://worldmm.github.io/)
 **Code:** [GitHub repository](https://github.com/wgcyeo/WorldMM)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4417005444), checked 2026-11-03).
 
 ![WorldMM: Figure 2 from the paper](../assets/2026-yeo-worldmm.png)
 

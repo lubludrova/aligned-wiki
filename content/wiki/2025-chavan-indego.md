@@ -9,7 +9,7 @@ affiliations:
   - Leibniz University Hannover
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, execution-quality, video-qa, egocentric-video, multi-person]
+tags: [dataset, benchmark, procedure-understanding, execution-quality, video-qa, egocentric-video, multi-person]
 ---
 
 # IndEgo: A Dataset of Industrial Scenarios and Collaborative Work for Egocentric Assistants
@@ -23,6 +23,7 @@ IndEgo provides multimodal industrial-work recordings and benchmarks for mistake
 **Code:** https://github.com/Vivek9Chavan/IndEgo/
 **Dataset:** https://huggingface.co/datasets/FraunhoferIPK/IndEgo
 **Source version:** arXiv:2511.19684v1, 24 November 2025, 53 pages including appendices and checklist. NeurIPS 2025 Datasets and Benchmarks publication is independently confirmed by the proceedings. This note follows the stored arXiv version.
+**Citations:** 1 ([OpenAlex](https://openalex.org/W4417077289), checked 2026-11-03).
 
 ![IndEgo industrial activities and multimodal annotations](../assets/2025-chavan-indego.png)
 

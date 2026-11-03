@@ -1,7 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
-import { chapters, paperSearchEntries } from '../../lib/content';
+import CitationCount from '../../components/CitationCount.astro';
+import { chapters, paperSearchEntries, citationCounts } from '../../lib/content';
 const sorted = [...paperSearchEntries].sort((a,b) => b.year - a.year || a.title.localeCompare(b.title));
 const topics = [...new Set(sorted.flatMap(paper => paper.tags))].sort();
 const years = [...new Set(sorted.map(paper => paper.year))].sort((a,b) => b-a);
@@ -21,7 +22,7 @@ const years = [...new Set(sorted.map(paper => paper.year))].sort((a,b) => b-a);
     </div>
     <div class="paper-results-meta"><p class="paper-count library-count" aria-live="polite">{sorted.length} papers</p><button class="text-button" id="paper-reset" hidden>Clear filters</button></div>
     <div id="paper-results">{sorted.map(paper => <a class="library-result paper-result" href={paper.url} aria-label={`${paper.title}, ${paper.year}`} data-paper={paper.id}>
-      <span class="eyebrow">{paper.year} · {paper.venue}{paper.inReview && ' · In the review'}</span>
+      <span class="eyebrow">{paper.year} · {paper.venue}{paper.inReview && ' · In the review'} · <CitationCount snapshot={citationCounts[paper.id]} compact /></span>
       <h2>{paper.title}{paper.spotlight && <span class="paper-star" aria-label="Wiki spotlight">★</span>}<span aria-hidden="true">↗</span></h2>
       <p>{paper.summary.slice(0,240)}{paper.summary.length>240?'…':''}</p>
     </a>)}</div>

@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["Politecnico di Torino", "FAIR, Meta", "University of Bristol"]
 research_groups: [meta-fair, bristol-mavi]
 reviewed: false
-tags: [video-memory, video-retrieval, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, video-memory, video-retrieval, spatial-understanding, egocentric-video]
 ---
 
 # AMEGO: Active Memory from long EGOcentric videos
@@ -16,6 +16,7 @@ AMEGO builds a reusable visual memory of hand-object interactions and activity l
 **Website:** [Project website](https://gabrielegoletto.github.io/AMEGO/)
 **Code:** [GitHub repository](https://github.com/gabrielegoletto/AMEGO)
 **Source version:** arXiv:2409.10917v1, 17 September 2024, including the appendix. Published at ECCV 2024.
+**Citations:** 7 ([OpenAlex](https://openalex.org/W4403771516), checked 2026-11-03).
 
 ![AMEGO object interactions and location memory](../assets/2024-goletto-amego.png)
 

@@ -4,7 +4,7 @@ venue: "SIGCOMM"
 affiliations: ["University of Chicago", "Microsoft Research", "University of California, Berkeley", "Databricks Inc."]
 research_groups: []
 reviewed: false
-tags: ["efficient-processing", "real-world-evaluation"]
+tags: [method, efficient-processing, real-world-evaluation]
 ---
 
 # Chameleon: Scalable Adaptation of Video Analytics
@@ -17,6 +17,7 @@ Chameleon reduces configuration-search overhead by sharing useful settings over 
 **Code:** Not found in checked sources.
 
 **Source version:** ACM SIGCOMM 2018 author-hosted proceedings PDF. DOI:10.1145/3230543.3230574.
+**Citations:** 467 ([OpenAlex](https://openalex.org/W2887117815), checked 2026-11-03).
 
 ![Chameleon object detection pipelines and configuration knobs](../assets/2018-jiang-chameleon.png)
 

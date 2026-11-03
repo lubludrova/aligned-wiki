@@ -4,7 +4,7 @@ venue: "PVLDB 16(11), 2714–2727"
 affiliations: ["University of Washington", "Microsoft Gray Systems Lab"]
 research_groups: []
 reviewed: false
-tags: [video-retrieval, spatial-understanding, efficient-processing]
+tags: [method, video-retrieval, spatial-understanding, efficient-processing]
 ---
 
 # EQUI-VOCAL: Synthesizing Queries for Compositional Video Events from Limited User Interactions
@@ -16,6 +16,7 @@ EQUI-VOCAL learns executable spatiotemporal video queries from positive and nega
 **Website:** Not found in checked sources beyond the repository.
 **Code:** [Official repository](https://github.com/uwdb/EQUI-VOCAL)
 **Source version:** Published fourteen-page PVLDB 2023 article. The extended arXiv report is a separate version.
+**Citations:** 14 ([OpenAlex](https://openalex.org/W4386123413), checked 2026-11-03).
 
 ![EQUI-VOCAL query synthesis from user feedback](../assets/2023-zhang-equi-vocal.png)
 

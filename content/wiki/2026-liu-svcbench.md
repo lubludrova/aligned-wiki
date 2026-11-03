@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["Institute of Artificial Intelligence, Beihang University", "Meituan", "Hangzhou International Innovation Institute, Beihang University"]
 research_groups: []
 reviewed: false
-tags: ["state-changes", "video-memory", "video-representation"]
+tags: [dataset, benchmark, state-changes, video-memory, video-representation]
 ---
 
 # SVCBench: A Streaming Video Counting Benchmark for Spatial-Temporal State Maintenance
@@ -17,6 +17,7 @@ SVCBench evaluates how object and event counts evolve across a video, exposing s
 **Code:** [Repository](https://github.com/buaa-colalab/SVCBench)
 
 **Source version:** arXiv 2603.12703v3, 29 June 2026, ECCV 2026. Supersedes the earlier VCBench title.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7138824284), checked 2026-11-03).
 
 ![SVCBench: Figure 4 from the paper](../assets/2026-liu-svcbench.png)
 

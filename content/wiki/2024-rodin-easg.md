@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["University of Catania", "Intel Labs"]
 research_groups: []
 reviewed: false
-tags: ["video-representation", "state-changes", "egocentric-video"]
+tags: [dataset, benchmark, method, video-representation, state-changes, egocentric-video]
 ---
 
 # Action Scene Graphs for Long-Form Understanding of Egocentric Videos
@@ -17,6 +17,7 @@ Egocentric Action Scene Graphs represent actions, participating objects, relatio
 **Code:** [GitHub repository](https://github.com/fpv-iplab/EASG)
 
 **Source version:** arXiv:2312.03391v1, 6 December 2023, including supplementary material. CVPR 2024 publication confirmed by official repository.
+**Citations:** 18 ([OpenAlex](https://openalex.org/W4402703022), checked 2026-11-03).
 
 ![Ego4D-EASG scene-graph annotation pipeline](../assets/2024-rodin-easg.png)
 

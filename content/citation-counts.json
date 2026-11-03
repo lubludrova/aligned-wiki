@@ -1,0 +1,1202 @@
+{
+  "2017-christiano-human-preferences": {
+    "count": 1058,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W2626804490",
+    "status": "verified"
+  },
+  "2017-zhang-videostorm": {
+    "count": 329,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W2599379624",
+    "status": "verified"
+  },
+  "2018-doughty-skill-ranking": {
+    "count": 162,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W2796214461",
+    "status": "verified"
+  },
+  "2018-hsieh-focus": {
+    "count": 127,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W2784041417",
+    "status": "verified"
+  },
+  "2018-jiang-chameleon": {
+    "count": 467,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W2887117815",
+    "status": "verified"
+  },
+  "2019-kang-blazeit": {
+    "count": 103,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W3000318171",
+    "status": "verified"
+  },
+  "2020-lei-tvr": {
+    "count": 266,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W3104862079",
+    "status": "verified"
+  },
+  "2020-li-reducto": {
+    "count": 272,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W3046256272",
+    "status": "verified"
+  },
+  "2022-elfeki-multi-ego": {
+    "count": 17,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W2989695666",
+    "status": "verified"
+  },
+  "2022-grauman-ego4d": {
+    "count": 630,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W3205786327",
+    "status": "verified"
+  },
+  "2022-jia-egotaskqa": {
+    "count": 28,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7133185840",
+    "status": "verified"
+  },
+  "2022-kang-tasti": {
+    "count": 23,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4281739679",
+    "status": "verified"
+  },
+  "2022-sener-assembly101": {
+    "count": 216,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4313071313",
+    "status": "verified"
+  },
+  "2022-soucek-look-for-change": {
+    "count": 25,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4313174527",
+    "status": "verified"
+  },
+  "2023-ma-vip": {
+    "count": 47,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4302010007",
+    "status": "verified"
+  },
+  "2023-wang-holoassist": {
+    "count": 64,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4390871800",
+    "status": "verified"
+  },
+  "2023-zhang-equi-vocal": {
+    "count": 14,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4386123413",
+    "status": "verified"
+  },
+  "2024-chen-videollm-online": {
+    "count": 78,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402727512",
+    "status": "verified"
+  },
+  "2024-eyzaguirre-sdqes": {
+    "count": 2,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4415796177",
+    "status": "verified"
+  },
+  "2024-fan-videoagent": {
+    "count": 60,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402961691",
+    "status": "verified"
+  },
+  "2024-goletto-amego": {
+    "count": 7,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4403771516",
+    "status": "verified"
+  },
+  "2024-grauman-ego-exo4d": {
+    "count": 120,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402727748",
+    "status": "verified"
+  },
+  "2024-huang-egoexolearn": {
+    "count": 43,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402727916",
+    "status": "verified"
+  },
+  "2024-lee-egoper": {
+    "count": 33,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402733587",
+    "status": "verified"
+  },
+  "2024-nguyen-oscar": {
+    "count": 10,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4401043560",
+    "status": "verified"
+  },
+  "2024-peddi-captaincook4d": {
+    "count": 7,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4415800474",
+    "status": "verified"
+  },
+  "2024-rodin-easg": {
+    "count": 18,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402703022",
+    "status": "verified"
+  },
+  "2024-schoonbeek-industreal": {
+    "count": 32,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4394625525",
+    "status": "verified"
+  },
+  "2024-shen-protas": {
+    "count": 27,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402702885",
+    "status": "verified"
+  },
+  "2024-wu-ovvad": {
+    "count": 103,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402775275",
+    "status": "verified"
+  },
+  "2024-xue-vidosc": {
+    "count": 17,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402753682",
+    "status": "verified"
+  },
+  "2024-zanella-lavad": {
+    "count": 105,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402753378",
+    "status": "verified"
+  },
+  "2024-zhong-onlinetas": {
+    "count": 7,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4415797538",
+    "status": "verified"
+  },
+  "2024-zhou-streaming-dvc": {
+    "count": 54,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402726946",
+    "status": "verified"
+  },
+  "2025-ahmad-sh17": {
+    "count": 34,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4404896194",
+    "status": "verified"
+  },
+  "2025-anwar-remembr": {
+    "count": 20,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413944788",
+    "status": "verified"
+  },
+  "2025-ashutosh-expertaf": {
+    "count": 20,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413144637",
+    "status": "verified"
+  },
+  "2025-ayalew-progressor": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4404990077",
+    "status": "verified"
+  },
+  "2025-bhattacharyya-livemamba": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4416942862",
+    "status": "verified"
+  },
+  "2025-cao-flashmmr": {
+    "count": 1,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4415962915",
+    "status": "verified"
+  },
+  "2025-chan-domain-vlm": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413786482",
+    "status": "verified"
+  },
+  "2025-chavan-indego": {
+    "count": 1,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4417077289",
+    "status": "verified"
+  },
+  "2025-chen-clip2safety": {
+    "count": 53,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4404734233",
+    "status": "verified"
+  },
+  "2025-chen-diffvsgg": {
+    "count": 7,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413156276",
+    "status": "verified"
+  },
+  "2025-chen-gelm": {
+    "count": 14,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4409346443",
+    "status": "verified"
+  },
+  "2025-di-rekv": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4415082307",
+    "status": "verified"
+  },
+  "2025-haneji-egooops": {
+    "count": 3,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7131077887",
+    "status": "verified"
+  },
+  "2025-he-egoexobench": {
+    "count": 5,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4415234026",
+    "status": "verified"
+  },
+  "2025-huang-amnar": {
+    "count": 7,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413144699",
+    "status": "verified"
+  },
+  "2025-jeong-videorag": {
+    "count": 18,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4412887777",
+    "status": "verified"
+  },
+  "2025-lehman-statediffnet": {
+    "count": 3,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4410589926",
+    "status": "verified"
+  },
+  "2025-li-anomize": {
+    "count": 19,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413155555",
+    "status": "verified"
+  },
+  "2025-liu-visualsync": {
+    "count": 1,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4416969208",
+    "status": "verified"
+  },
+  "2025-luo-hil-serl": {
+    "count": 77,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413362511",
+    "status": "verified"
+  },
+  "2025-luo-video-rag": {
+    "count": 9,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4404648887",
+    "status": "verified"
+  },
+  "2025-mengiste-weekly-progress": {
+    "count": 1,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4412691130",
+    "status": "verified"
+  },
+  "2025-ortiz-abstention-knobs": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7119026802",
+    "status": "verified"
+  },
+  "2025-patsch-mistsense": {
+    "count": 2,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7160036959",
+    "status": "verified"
+  },
+  "2025-perrett-hd-epic": {
+    "count": 23,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413147595",
+    "status": "verified"
+  },
+  "2025-plizzari-osnom": {
+    "count": 5,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413556468",
+    "status": "verified"
+  },
+  "2025-qian-dispider": {
+    "count": 23,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413157343",
+    "status": "verified"
+  },
+  "2025-schoonbeek-storm-psr": {
+    "count": 2,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4415315604",
+    "status": "verified"
+  },
+  "2025-sun-tubeletgraph": {
+    "count": 2,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4416027219",
+    "status": "verified"
+  },
+  "2025-wang-siteshield": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4414971097",
+    "status": "verified"
+  },
+  "2025-wang-videotree": {
+    "count": 55,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413145669",
+    "status": "verified"
+  },
+  "2025-yang-egolife": {
+    "count": 27,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413145317",
+    "status": "verified"
+  },
+  "2025-ye-mm-ego": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4403345903",
+    "status": "verified"
+  },
+  "2025-ye-vera": {
+    "count": 49,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413155334",
+    "status": "verified"
+  },
+  "2025-yoon-uvqa": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4415348630",
+    "status": "verified"
+  },
+  "2025-zameni-moscato": {
+    "count": 4,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7160082739",
+    "status": "verified"
+  },
+  "2025-zeng-streamforest": {
+    "count": 7,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7197034076",
+    "status": "verified"
+  },
+  "2025-zhang-holmes-vau": {
+    "count": 38,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413157891",
+    "status": "verified"
+  },
+  "2025-zhang-rewind": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4417093146",
+    "status": "verified"
+  },
+  "2025-zhang-vocal-udf": {
+    "count": 5,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4411403382",
+    "status": "verified"
+  },
+  "2026-alam-supermemory-vqa": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7163151823",
+    "status": "verified"
+  },
+  "2026-bacharidis-mistake-survey": {
+    "count": 1,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4416246614",
+    "status": "verified"
+  },
+  "2026-bhat-vantage-bench": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7212144841",
+    "status": "verified"
+  },
+  "2026-braun-skillspotter": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7166828019",
+    "status": "verified"
+  },
+  "2026-cai-cfd": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7212252498",
+    "status": "verified"
+  },
+  "2026-chalk-whareformer": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7167904081",
+    "status": "verified"
+  },
+  "2026-chatterjee-spot-bench": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7157017701",
+    "status": "verified"
+  },
+  "2026-chaudhari-ledger": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7220998679",
+    "status": "verified"
+  },
+  "2026-chavan-indego-assistant": {
+    "count": 1,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7161635631",
+    "status": "verified"
+  },
+  "2026-chen-egomonth": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7203468428",
+    "status": "verified"
+  },
+  "2026-chen-em2mem": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7206213724",
+    "status": "verified"
+  },
+  "2026-chen-reactvau": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7212020541",
+    "status": "verified"
+  },
+  "2026-choi-merit": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7202209200",
+    "status": "verified"
+  },
+  "2026-forte-egostream": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7163072204",
+    "status": "verified"
+  },
+  "2026-gao-svg2": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7133186495",
+    "status": "verified"
+  },
+  "2026-guo-aem": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4417029021",
+    "status": "verified"
+  },
+  "2026-guo-multimodal-memory-survey": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7222038340",
+    "status": "verified"
+  },
+  "2026-guo-procobject": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4417029023",
+    "status": "verified"
+  },
+  "2026-gupta-vidparse": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7204814722",
+    "status": "verified"
+  },
+  "2026-hou-eventformer": {
+    "count": 1,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7140104246",
+    "status": "verified"
+  },
+  "2026-hsieh-ai-bim-progress": {
+    "count": 7,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7124830140",
+    "status": "verified"
+  },
+  "2026-huang-apm-bench": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7214979992",
+    "status": "verified"
+  },
+  "2026-isaac-sensing-scheduling": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7165917260",
+    "status": "verified"
+  },
+  "2026-jang-neurosymbolic-pc": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7168518220",
+    "status": "verified"
+  },
+  "2026-kim-ma-egoqa": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7134962445",
+    "status": "verified"
+  },
+  "2026-lee-axg-reasoner": {
+    "count": null,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": null,
+    "status": "unavailable",
+    "reason": "No matching indexed record was verified after bounded title and identifier checks."
+  },
+  "2026-lee-carve": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7164529186",
+    "status": "verified"
+  },
+  "2026-lee-roboreward": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7118501563",
+    "status": "verified"
+  },
+  "2026-leng-flora": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7223688018",
+    "status": "verified"
+  },
+  "2026-li-egoerrorvqa": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7204237976",
+    "status": "verified"
+  },
+  "2026-li-matt": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4417094662",
+    "status": "verified"
+  },
+  "2026-li-streampro": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7161704811",
+    "status": "verified"
+  },
+  "2026-liang-capmem": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7213527043",
+    "status": "verified"
+  },
+  "2026-liang-robometer": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7133361213",
+    "status": "verified"
+  },
+  "2026-liao-proactegomem": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7223225027",
+    "status": "verified"
+  },
+  "2026-liu-egoexomem": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7161682031",
+    "status": "verified"
+  },
+  "2026-liu-guideme": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7167605199",
+    "status": "verified"
+  },
+  "2026-liu-svcbench": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7138824284",
+    "status": "verified"
+  },
+  "2026-loginova-prism": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7223396623",
+    "status": "verified"
+  },
+  "2026-long-m3-agent": {
+    "count": 2,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W6910636478",
+    "status": "verified"
+  },
+  "2026-ma-r4dsg": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7202243079",
+    "status": "verified"
+  },
+  "2026-majumder-mistexit": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7137873183",
+    "status": "verified"
+  },
+  "2026-mandikal-spoc": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W6948353757",
+    "status": "verified"
+  },
+  "2026-mazzamuto-proskill": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7126040381",
+    "status": "verified"
+  },
+  "2026-mur-labadia-v-jepa-2-1": {
+    "count": 8,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7137837393",
+    "status": "verified"
+  },
+  "2026-pang-egoprobe": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7221797546",
+    "status": "verified"
+  },
+  "2026-panpatil-egosafetybench": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7167033496",
+    "status": "verified"
+  },
+  "2026-qiu-graphrag-compliance": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7153469945",
+    "status": "verified"
+  },
+  "2026-ranasinghe-safety-reasoning": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7163413338",
+    "status": "verified"
+  },
+  "2026-rauf-hpp": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7165646057",
+    "status": "verified"
+  },
+  "2026-rege-egagent": {
+    "count": 1,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7166889848",
+    "status": "verified"
+  },
+  "2026-ren-geb": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7214922490",
+    "status": "verified"
+  },
+  "2026-ren-videorag": {
+    "count": 7,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4407176006",
+    "status": "verified"
+  },
+  "2026-sasaki-egoindassembly": {
+    "count": null,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": null,
+    "status": "unavailable",
+    "reason": "No matching indexed record was verified after bounded title and identifier checks."
+  },
+  "2026-seminara-tgml": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4416042357",
+    "status": "verified"
+  },
+  "2026-steenbergen-hoist-case-identifiers": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7140136778",
+    "status": "verified"
+  },
+  "2026-suen-icon-pose": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7211957703",
+    "status": "verified"
+  },
+  "2026-tan-egovit": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7138152984",
+    "status": "verified"
+  },
+  "2026-tang-takusen": {
+    "count": null,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": null,
+    "status": "unavailable",
+    "reason": "No matching indexed record was verified after bounded title and identifier checks."
+  },
+  "2026-tian-ego-r1": {
+    "count": 6,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7162553809",
+    "status": "verified"
+  },
+  "2026-torne-freeform-preference": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7166890468",
+    "status": "verified"
+  },
+  "2026-wang-directme": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7164913088",
+    "status": "verified"
+  },
+  "2026-wang-egomemreason": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7160891384",
+    "status": "verified"
+  },
+  "2026-wang-parsee-vad": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7214777355",
+    "status": "verified"
+  },
+  "2026-wang-s-ember": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7167594145",
+    "status": "verified"
+  },
+  "2026-wen-impact": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7154333478",
+    "status": "verified"
+  },
+  "2026-wen-provia": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7213593472",
+    "status": "verified"
+  },
+  "2026-wu-monitorvlm-v2": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7172445049",
+    "status": "verified"
+  },
+  "2026-xia-streamo": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7117324130",
+    "status": "verified"
+  },
+  "2026-xiao-myego": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7148767284",
+    "status": "verified"
+  },
+  "2026-xiong-memlife": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7215043595",
+    "status": "verified"
+  },
+  "2026-yang-egotsr": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7214760213",
+    "status": "verified"
+  },
+  "2026-yao-yolo-ilb": {
+    "count": 1,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7166854352",
+    "status": "verified"
+  },
+  "2026-ye-regular": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7204560009",
+    "status": "verified"
+  },
+  "2026-yeh-all-angles-bench": {
+    "count": 2,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7138285799",
+    "status": "verified"
+  },
+  "2026-yeo-worldmm": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4417005444",
+    "status": "verified"
+  },
+  "2026-zeng-onestreamer": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7216450763",
+    "status": "verified"
+  },
+  "2026-zhang-constructai": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7138868116",
+    "status": "verified"
+  },
+  "2026-zhang-egocite": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7203476755",
+    "status": "verified"
+  },
+  "2026-zhang-streamarena": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7201864904",
+    "status": "verified"
+  },
+  "2026-zhao-pasbench-video": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7163188503",
+    "status": "verified"
+  },
+  "2026-zhou-temporal-abstention": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7128022193",
+    "status": "verified"
+  },
+  "2026-ziadia-collision-survey": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7223467313",
+    "status": "verified"
+  },
+  "2009-golparvar-fard-d4ar": {
+    "count": 275,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W153298446",
+    "status": "verified"
+  },
+  "2021-bain-frozen-in-time": {
+    "count": 77,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W3150558292",
+    "status": "verified"
+  },
+  "2021-luo-clip4clip": {
+    "count": 108,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W3152798676",
+    "status": "verified"
+  },
+  "2023-mangalam-egoschema": {
+    "count": 78,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7133198646",
+    "status": "verified"
+  },
+  "2024-seminara-dtgl": {
+    "count": 7,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4415797518",
+    "status": "verified"
+  },
+  "2024-song-moviechat": {
+    "count": 177,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4402702917",
+    "status": "verified"
+  },
+  "2024-wang-internvideo2": {
+    "count": 213,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4404724811",
+    "status": "verified"
+  },
+  "2024-wang-videoagent": {
+    "count": 87,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4403760933",
+    "status": "verified"
+  },
+  "2024-wu-longvideobench": {
+    "count": 70,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4415798209",
+    "status": "verified"
+  },
+  "2024-zhang-llovi": {
+    "count": 61,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4404781975",
+    "status": "verified"
+  },
+  "2025-fu-video-mme": {
+    "count": 196,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4413146669",
+    "status": "verified"
+  },
+  "2025-guo-egoconqs": {
+    "count": 8,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4405505932",
+    "status": "verified"
+  },
+  "2025-liu-egosafe": {
+    "count": 8,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W4407553673",
+    "status": "verified"
+  },
+  "2026-kriz-multivent-raw": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-03",
+    "url": "https://openalex.org/W7214187082",
+    "status": "verified"
+  }
+}

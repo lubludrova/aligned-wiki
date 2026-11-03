@@ -6,6 +6,8 @@ affiliations:
 research_groups: []
 reviewed: false
 tags:
+- dataset
+- benchmark
 - video-memory
 - video-qa
 - efficient-processing
@@ -25,6 +27,7 @@ Diagnoses which facts survive streaming memory compression and how answer validi
 **Code:** Not found in checked sources. The public project page says GitHub is coming soon, despite an anonymous-repository statement in the PDF.
 
 **Source version:** arXiv 2605.31557v2, 1 June 2026. Preprint, with no peer-reviewed venue established in checked sources.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7163072204), checked 2026-11-03).
 
 ![EGOSTREAM: Figure 4 from the paper](../assets/2026-forte-egostream.png)
 

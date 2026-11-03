@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: ["University of Adelaide", "National University of Singapore"]
 research_groups: []
 reviewed: false
-tags: ["procedure-understanding", "video-representation", "efficient-processing"]
+tags: [method, procedure-understanding, video-representation, efficient-processing]
 ---
 
 # OnlineTAS: An Online Baseline for Temporal Action Segmentation
@@ -17,6 +17,7 @@ OnlineTAS combines adaptive temporal memory, causal segmentation and duration-aw
 **Code:** [GitHub placeholder](https://github.com/QingZhong1996/OnlineTAS)
 
 **Source version:** NeurIPS 2024 proceedings PDF, including appendix and checklist, 22 pages.
+**Citations:** 7 ([OpenAlex](https://openalex.org/W4415797538), checked 2026-11-03).
 
 ![OnlineTAS context-aware feature augmentation and adaptive memory](../assets/2024-zhong-onlinetas.png)
 

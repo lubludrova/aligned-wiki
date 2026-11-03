@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["University of Rochester", "Sony Group Corporation"]
 research_groups: []
 reviewed: false
-tags: ["video-representation", "efficient-processing"]
+tags: [method, video-representation, efficient-processing]
 ---
 
 # Asynchronous Temporal Modeling with Two-Agent Framework for Streaming Dense Video Captioning
@@ -17,6 +17,7 @@ Takusen pairs a small boundary detector with a larger captioner to separate when
 **Code:** Not found in checked sources.
 
 **Source version:** CVPR 2026 accepted proceedings PDF, 12 pages.
+**Citations:** Unavailable (OpenAlex, checked 2026-11-03. No identity-matched record found after title and acronym searches).
 
 ![Takusen: Figure 1 from the paper](../assets/2026-tang-takusen.png)
 

@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: [Meta AI, University of Texas at Austin, University of Minnesota, University of Catania, Meta Reality Labs, Georgia Tech, Carnegie Mellon University, UC Berkeley, University of Bristol, King Abdullah University of Science and Technology, National University of Singapore, Carnegie Mellon University Africa, Meta, Universidad de los Andes, University of Tokyo, Indiana University, "International Institute of Information Technology, Hyderabad", MIT, University of Pennsylvania, Dartmouth]
 research_groups: [meta-reality-labs, ego4d-consortium]
 reviewed: false
-tags: [video-memory, video-retrieval, state-changes, egocentric-video, multi-person]
+tags: [dataset, benchmark, video-memory, video-retrieval, state-changes, egocentric-video, multi-person]
 ---
 
 # Ego4D: Around the World in 3,000 Hours of Egocentric Video
@@ -16,6 +16,7 @@ Ego4D provides diverse egocentric recordings and benchmarks for retrieving past 
 **Website:** [Official project](https://ego4d-data.org/)
 **Code:** [Episodic-memory baselines](https://github.com/EGO4D/episodic-memory) and [hands-and-objects baselines](https://github.com/EGO4D/hands-and-objects)
 **Source version:** Author-hosted 18-page [CVPR 2022 proceedings paper](https://openaccess.thecvf.com/content/CVPR2022/html/Grauman_Ego4D_Around_the_World_in_3000_Hours_of_Egocentric_Video_CVPR_2022_paper.html), pp. 18995–19012, following the 2021 preprint. Relevant sections of the separate [official supplement](https://openaccess.thecvf.com/content/CVPR2022/supplemental/Grauman_Ego4D_Around_the_CVPR_2022_supplemental.pdf) were also inspected. Counts below follow this paper, not later releases.
+**Citations:** 630 ([OpenAlex](https://openalex.org/W3205786327), checked 2026-11-03).
 
 ![Ego4D first-person video benchmark suite](../assets/2022-grauman-ego4d.png)
 

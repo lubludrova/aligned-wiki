@@ -4,7 +4,7 @@ venue: "3DV"
 affiliations: ["Politecnico di Torino", "Avataar Inc.", "University of California, Berkeley", "University of Bristol"]
 research_groups: [bristol-mavi]
 reviewed: false
-tags: [spatial-understanding, video-memory, egocentric-video]
+tags: [benchmark, method, spatial-understanding, video-memory, egocentric-video]
 ---
 
 # Spatial Cognition from Egocentric Video: Out of Sight, Not Out of Mind
@@ -16,6 +16,7 @@ OSNOM evaluates persistent 3D tracking of manipulated objects, and its Lift, Mat
 **Website:** [Project website](https://dimadamen.github.io/OSNOM/)
 **Code:** [GitHub repository](https://github.com/Chiaraplizz/OSNOM)
 **Source version:** arXiv:2404.05072v2, 21 January 2025. First released April 2024. The [official project](https://dimadamen.github.io/OSNOM/) identifies the camera-ready work as 3DV 2025.
+**Citations:** 5 ([OpenAlex](https://openalex.org/W4413556468), checked 2026-11-03).
 
 ![OSNOM spatial memory of objects outside the current view](../assets/2025-plizzari-osnom.png)
 

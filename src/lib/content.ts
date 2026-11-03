@@ -14,6 +14,10 @@ export interface PublicationMetadata {
   links: { label: string; url: string; note?: string }[];
   sourceNote: string; sourceVersion?: string; publicationNote?: string; metadataStatus: string;
 }
+export interface CitationSnapshot {
+  count: number | null; provider: string; checked: string; url: string | null;
+  status: 'verified' | 'unavailable'; reason?: string;
+}
 export interface Paper {
   slug: string; title: string; shortTitle: string; year: number; sourceUrls: string[];
   chapters: string[]; headingTitles: string[]; locations: { chapter: string; headingTitle: string }[];
@@ -34,12 +38,15 @@ export const groups = [
   { id: 'synthesis', title: 'Synthesis and further reading', description: 'Related ideas, architecture, and sources', color: '#7b758c' },
 ];
 const directory = join(process.cwd(), 'content', 'en');
+export const citationCounts: Record<string, CitationSnapshot> = JSON.parse(readFileSync(join(directory, '..', 'citation-counts.json'), 'utf8'));
 export const chapters: Chapter[] = JSON.parse(readFileSync(join(directory, 'chapters.json'), 'utf8'));
 export const notes: { slug: string; title: string }[] = JSON.parse(readFileSync(join(directory, 'notes.json'), 'utf8'));
 const imageDimensions: Record<string, { width: number; height: number }> = JSON.parse(readFileSync(join(directory, '..', 'media.json'), 'utf8'));
 const publicationMetadata: Record<string, PublicationMetadata> = JSON.parse(readFileSync(join(directory, '..', 'paper-metadata.json'), 'utf8'));
 const tableReferences: Record<string, string> = JSON.parse(readFileSync(join(directory, '..', 'table-references.json'), 'utf8'));
 export const wikiPapers: Record<string, WikiPaper> = JSON.parse(readFileSync(join(directory, '..', 'wiki-papers.json'), 'utf8'));
+export const publicationTypes: Record<string, string[]> = JSON.parse(readFileSync(join(directory, '..', 'publication-types.json'), 'utf8'));
+export const paperTags = Object.fromEntries(Object.entries(publicationTypes).map(([slug, types]) => [slug, wikiPapers[slug]?.tags || types]));
 export const reviewPapers: Paper[] = JSON.parse(readFileSync(join(directory, 'papers.json'), 'utf8')).map((paper: Paper) => ({ ...paper, year: publicationMetadata[paper.slug].year, metadata: publicationMetadata[paper.slug] }));
 export const papers: Paper[] = [
   ...reviewPapers.map(paper => {
@@ -144,9 +151,9 @@ export const paperSearchEntries = papers.map(paper => {
   const reviewText = locations.map(loc => loc.section.text).join(' ');
   return { id: paper.slug, title: paper.shortTitle, chapter: chapter?.title || 'Wiki library', chapterSlug: chapter?.slug || '', number: chapter?.number || '',
     group: chapter?.group || '', url: `/papers/${paper.slug}/`,
-    text: [paper.title, paper.metadata.authors, ...(wiki?.tags || []), plain(wikiNotes[paper.slug]?.markdown || ''), reviewText].join(' '),
+    text: [paper.title, paper.metadata.authors, ...paperTags[paper.slug], plain(wikiNotes[paper.slug]?.markdown || ''), reviewText].join(' '),
     summary: wiki?.summary || reviewText, year: paper.year, venue: paper.metadata.venue,
-    tags: wiki?.tags || [], spotlight: wiki?.spotlight || false, inReview: paper.chapters.length > 0,
+    tags: paperTags[paper.slug], spotlight: wiki?.spotlight || false, inReview: paper.chapters.length > 0,
     coverage: paper.coverage, chapters: paper.chapters };
 });
 export const searchEntries = [...paperSearchEntries, ...sectionSearchEntries];

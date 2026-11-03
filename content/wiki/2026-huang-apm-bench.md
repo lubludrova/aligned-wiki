@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Shanghai Jiao Tong University", "Eastern Institute of Technology, Ningbo", "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences", "Zhongguancun Academy, Beijing", "Dalian University of Technology", "Beihang University", "Hong Kong Polytechnic University"]
 research_groups: []
 reviewed: false
-tags: ["video-memory", "video-qa", "efficient-processing", "egocentric-video"]
+tags: [dataset, benchmark, video-memory, video-qa, efficient-processing, egocentric-video]
 ---
 
 # APM-Bench: Benchmarking cross-Session Persistent Memory for Real-World Egocentric Streaming Video Assistants
@@ -16,6 +16,7 @@ Evaluates persistent video memory across interrupted sessions, jointly testing r
 **Website:** [Project website](https://jianguo-huang11.github.io/APM-Bench/). Resolved in the final link check after an earlier access failure.
 **Code:** [Author repository](https://github.com/Jianguo-Huang11/APM-Bench)
 **Source version:** arXiv:2609.37559v2, 12 October 2026, 33 pages.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7214979992), checked 2026-11-03).
 
 ![APM-Bench: Figure 5 from the paper](../assets/2026-huang-apm-bench.png)
 

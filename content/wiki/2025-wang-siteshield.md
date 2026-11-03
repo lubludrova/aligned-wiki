@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["The University of Sydney", "University of Technology Sydney"]
 research_groups: []
 reviewed: false
-tags: [execution-quality, construction]
+tags: [method, execution-quality, construction]
 ---
 
 # Automating construction safety inspections using a multi-modal vision-language RAG framework
@@ -16,6 +16,7 @@ Pairs inspection images with spoken hazard descriptions and retrieves regulation
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
 **Source version:** Original 33-page arXiv:2510.04145v1 PDF, 2025. Model names and results refer to this inspected version.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4414971097), checked 2026-11-03).
 
 ![SiteShield multimodal construction monitoring flowchart](../assets/2025-wang-siteshield.png)
 

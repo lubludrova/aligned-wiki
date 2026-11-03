@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["NVIDIA", "Clemson University"]
 research_groups: []
 reviewed: false
-tags: ["spatial-understanding", "state-changes", "video-representation", "video-qa"]
+tags: [dataset, benchmark, spatial-understanding, state-changes, video-representation, video-qa]
 ---
 
 # VANTAGE-Bench: Evaluating the Infrastructure AI Gap in Vision-Language Models
@@ -17,6 +17,7 @@ VANTAGE-Bench evaluates semantic, spatial and temporal understanding in operatio
 **Code:** [Repository](https://github.com/Clemson-Capstone/VANTAGE-Bench)
 
 **Source version:** arXiv 2609.09396v1. Results refer to this archived version rather than the changing website leaderboard.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7212144841), checked 2026-11-03).
 
 ![VANTAGE-Bench operational domains and evaluation taxonomy](../assets/2026-bhat-vantage-bench.png)
 

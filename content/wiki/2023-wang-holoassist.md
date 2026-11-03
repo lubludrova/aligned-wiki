@@ -4,7 +4,7 @@ venue: "ICCV"
 affiliations: ["Microsoft", "ETH Zurich"]
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, execution-quality, egocentric-video, multi-person]
+tags: [dataset, benchmark, procedure-understanding, execution-quality, egocentric-video, multi-person]
 ---
 
 # HoloAssist: an Egocentric Human Interaction Dataset for Interactive AI Assistants in the Real World
@@ -16,6 +16,7 @@ HoloAssist records human instructors helping task performers and benchmarks mist
 **Website:** [Official project and release](https://holoassist.github.io/)
 **Code:** [Baseline release](https://github.com/Ember-HoloAssist/holoassist-release) · [Projection utilities](https://github.com/taeinkwon/PyHoloAssist). Links verified through the official project page. Implementations were not executed.
 **Source version:** Twelve-page ICCV 2023 article. The PDF reports 166 hours, while the current project page says 169 hours. Counts here follow the archived PDF.
+**Citations:** 64 ([OpenAlex](https://openalex.org/W4390871800), checked 2026-11-03).
 
 ![HoloAssist interactive task setting and recorded modalities](../assets/2023-wang-holoassist.png)
 

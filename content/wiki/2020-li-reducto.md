@@ -4,7 +4,7 @@ venue: "ACM SIGCOMM"
 affiliations: ["University of California, Los Angeles"]
 research_groups: []
 reviewed: false
-tags: ["efficient-processing", "video-representation"]
+tags: [method, efficient-processing, video-representation]
 ---
 
 # Reducto: On-Camera Filtering for Resource-Efficient Real-Time Video Analytics
@@ -16,6 +16,7 @@ Adapts inexpensive on-camera frame filtering to query-specific accuracy targets 
 **Website:** Not found in checked sources.
 **Code:** [GitHub repository](https://github.com/reducto-sigcomm-2020/reducto)
 **Source version:** Author-hosted 18-page SIGCOMM 2020 paper, DOI 10.1145/3387514.3405874.
+**Citations:** 272 ([OpenAlex](https://openalex.org/W3046256272), checked 2026-11-03).
 
 ![Reducto camera and server processing pipeline](../assets/2020-li-reducto.png)
 

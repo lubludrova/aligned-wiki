@@ -11,7 +11,7 @@ const note = slug => readFileSync(new URL(`wiki/${slug}.md`, content), 'utf8');
 test('the portable wiki snapshot contains every registered note with unchanged bytes', () => {
   const files = readdirSync(new URL('wiki/', content)).filter(file => file.endsWith('.md'));
   assert.deepEqual(files.map(file => file.slice(0, -3)).sort(), Object.keys(records).sort());
-  assert.equal(files.length, 155);
+  assert.equal(files.length, 157);
   for (const [slug, record] of Object.entries(records)) {
     const source = note(slug);
     assert.equal(createHash('sha256').update(source).digest('hex'), record.sourceSha256, slug);
@@ -54,9 +54,9 @@ test('wiki and review inventories merge without losing review-only publications'
   const existing = new Set(review.map(paper => paper.slug));
   const wiki = Object.keys(records);
   assert.equal(wiki.filter(slug => existing.has(slug)).length, 113);
-  assert.equal(wiki.filter(slug => !existing.has(slug)).length, 42);
+  assert.equal(wiki.filter(slug => !existing.has(slug)).length, 44);
   assert.equal([...existing].filter(slug => !records[slug]).length, 14);
-  assert.equal(new Set([...existing, ...wiki]).size, 169);
+  assert.equal(new Set([...existing, ...wiki]).size, 171);
   const spotlight = Object.values(records).filter(record => record.spotlight);
   assert.equal(spotlight.length, 11);
   assert(spotlight.every(record => record.spotlightReason && record.spotlightLimit && record.spotlightSource.endsWith('/full_review/spotlight')));

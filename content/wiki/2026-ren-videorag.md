@@ -4,7 +4,7 @@ venue: "KDD"
 affiliations: ["The University of Hong Kong", "Baidu Inc."]
 research_groups: []
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa]
+tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa]
 ---
 
 # VideoRAG: Retrieval-Augmented Generation with Extreme Long-Context Videos
@@ -16,6 +16,7 @@ VideoRAG combines a cross-video textual knowledge graph with visual segment retr
 **Website:** Not found in checked sources beyond the official repository.
 **Code:** [Official repository](https://github.com/HKUDS/VideoRAG)
 **Source version:** The archived/read source is the 18-page arXiv v1, 3 February 2025. KDD 2026 publication is independently confirmed by the conference's paper list. Results below belong to the preprint; the final proceedings text was not compared.
+**Citations:** 7 ([OpenAlex](https://openalex.org/W4407176006), checked 2026-11-03).
 
 ![VideoRAG (Ren et al.): Figure 1 from the paper](../assets/2026-ren-videorag.png)
 

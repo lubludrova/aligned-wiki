@@ -4,7 +4,7 @@ venue: "Applied Sciences"
 affiliations: ["Université du Québec à Trois-Rivières", "Institut de Recherche Robert-Sauvé en Santé et en Sécurité du Travail"]
 research_groups: []
 reviewed: false
-tags: [construction, survey, spatial-understanding, multi-person]
+tags: [survey, construction, spatial-understanding, multi-person]
 ---
 
 # Computer Vision-Based Collision Prevention in Construction: Bridging Academic Advances and Industrial Requirements
@@ -17,6 +17,7 @@ This review connects construction collision-monitoring research to commercial-sy
 **Code:** Not applicable to this review. No public analysis repository identified.
 
 **Source version:** Published Applied Sciences 16(21), article 10507, 23 October 2026. Original publisher PDF inspected. The academic search covers 2012–2024, while commercial documentation was collected in March–June 2026.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7223467313), checked 2026-11-03).
 
 ![Title and abstract of the construction collision monitoring review](../assets/2026-ziadia-collision-survey.png)
 

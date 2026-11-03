@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["S-Lab, Nanyang Technological University", "LMMs-Lab", "IMDEA Networks", "University of Brescia", "Politecnico di Milano"]
 research_groups: [ntu-s-lab, lmms-lab]
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, egocentric-video, multi-person]
+tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa, egocentric-video, multi-person]
 ---
 
 # EgoLife: Towards Egocentric Life Assistant
@@ -16,6 +16,7 @@ EgoLife provides synchronized, week-long recordings of six housemates, a long-ho
 **Website:** [Project website](https://egolife-ai.github.io/)
 **Code:** [GitHub repository](https://github.com/EvolvingLMMs-Lab/EgoLife)
 **Source version:** arXiv:2503.03803v3, 9 February 2026, an affiliation-corrected revision of the [CVPR 2025 publication](https://openaccess.thecvf.com/content/CVPR2025/html/Yang_EgoLife_Towards_Egocentric_Life_Assistant_CVPR_2025_paper.html). Affiliations follow its corrected title page.
+**Citations:** 27 ([OpenAlex](https://openalex.org/W4413145317), checked 2026-11-03).
 
 ![EgoLife multi-day egocentric recording project](../assets/2025-yang-egolife.png)
 

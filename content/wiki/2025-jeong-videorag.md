@@ -4,7 +4,7 @@ venue: "Findings of ACL"
 affiliations: ["KAIST", "DeepAuto.ai"]
 research_groups: [kaist-mlai]
 reviewed: false
-tags: [video-retrieval, video-qa, efficient-processing]
+tags: [dataset, benchmark, method, video-retrieval, video-qa, efficient-processing]
 ---
 
 # VideoRAG: Retrieval-Augmented Generation over Video Corpus
@@ -16,6 +16,7 @@ VideoRAG retrieves instructional videos from a corpus and supplies selected visu
 **Website:** Not found in checked sources beyond the publisher record and repository.
 **Code:** [Official repository](https://github.com/starsuzi/VideoRAG)
 **Source version:** Findings of ACL 2025 proceedings, pp. 21278–21298, including appendices; distinct from Luo's Video-RAG and Ren's VideoRAG.
+**Citations:** 18 ([OpenAlex](https://openalex.org/W4412887777), checked 2026-11-03).
 
 ![VideoRAG retrieval and response generation pipeline](../assets/2025-jeong-videorag.png)
 

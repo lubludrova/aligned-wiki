@@ -4,7 +4,7 @@ venue: "EMNLP"
 affiliations: ["Queen's University Belfast", "AMD", "Queen Mary University of London"]
 research_groups: []
 reviewed: false
-tags: [video-retrieval, video-qa, efficient-processing]
+tags: [method, video-retrieval, video-qa, efficient-processing]
 ---
 
 # HPP: Hierarchical Programmatic Probing for Long Video Understanding by Decoupling Perception and Reasoning
@@ -16,6 +16,7 @@ HPP lets a coding LLM compose video-search and perception operations in a persis
 **Website:** [Project website](https://awaisrauf.com/HPP)
 **Code:** [Official repository](https://github.com/AwaisRauf/hpp)
 **Source version:** Twenty-eight-page EMNLP 2026 publisher PDF, pp. 53993–54020. Code inspected at commit `558cc0767170f2dca9cec3c074bc466b037d618a`. Author spellings follow the PDF.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7165646057), checked 2026-11-03).
 
 ![HPP: Figure 1 from the paper](../assets/2026-rauf-hpp.png)
 

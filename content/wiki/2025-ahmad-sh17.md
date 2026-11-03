@@ -4,7 +4,7 @@ venue: "Journal of Safety Science and Resilience"
 affiliations: ["University of Windsor"]
 research_groups: []
 reviewed: false
-tags: [video-representation, execution-quality]
+tags: [dataset, benchmark, video-representation, execution-quality]
 ---
 
 # SH17: A dataset for human safety and personal protective equipment detection in manufacturing industry
@@ -17,6 +17,7 @@ SH17 provides annotated workplace images and detector baselines covering body pa
 **Code:** [Official data and training repository](https://github.com/ahmadmughees/SH17dataset)
 
 **Source version:** Inspected arXiv:2407.04590v1, 5 July 2024. The journal version appeared in volume 6(2), pages 175–185, June 2025. Repository citation metadata uses the earlier 2024 date. Results below refer to the preprint.
+**Citations:** 34 ([OpenAlex](https://openalex.org/W4404896194), checked 2026-11-03).
 
 ![SH17 industrial safety dataset examples](../assets/2025-ahmad-sh17.png)
 

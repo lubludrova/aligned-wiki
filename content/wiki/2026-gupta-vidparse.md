@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["University of Maryland, College Park"]
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, video-representation, efficient-processing, egocentric-video]
+tags: [method, procedure-understanding, video-representation, efficient-processing, egocentric-video]
 ---
 
 # VidParse: Online Parsing of Egocentric Procedures Like a Pro
@@ -16,6 +16,7 @@ VidParse combines frozen hand–object features, similarity-based boundaries, an
 **Website:** [Project website](https://learn2phoenix.github.io/VidParse/)
 **Code:** [GitHub repository](https://github.com/learn2phoenix/VidParse)
 **Source version:** arXiv:2608.27562v2, 27 October 2026, first released 27 August 2026. [ECCV 2026](https://eccv.ecva.net/virtual/2026/poster/4540), listed under the conference title *Egocentric Procedure Parsing*. Version 2 corrects GTEA evaluation to four splits.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7204814722), checked 2026-11-03).
 
 ![VidParse: Figure 2 from the paper](../assets/2026-gupta-vidparse.png)
 

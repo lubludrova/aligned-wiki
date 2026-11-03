@@ -4,7 +4,7 @@ venue: "ICLR 2026"
 affiliations: ["Michigan State University"]
 research_groups: [msu-action]
 reviewed: false
-tags: [execution-quality, state-changes, spatial-understanding, egocentric-video]
+tags: [method, execution-quality, state-changes, spatial-understanding, egocentric-video]
 ---
 
 # Procedural Mistake Detection via Action Effect Modeling
@@ -15,6 +15,7 @@ AEM learns action-effect representations to detect procedural mistakes from egoc
 **Paper:** [PDF](../raw/2026-guo-aem.pdf) · [arXiv v2](https://arxiv.org/abs/2512.03474v2)
 **Website:** [Project](https://wenliangguo.github.io/Mistake_Detection/)
 **Code:** [WenliangGuo/AEM](https://github.com/WenliangGuo/AEM)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4417029021), checked 2026-11-03).
 
 ![AEM: Figure 2 from the paper](../assets/2026-guo-aem.png)
 

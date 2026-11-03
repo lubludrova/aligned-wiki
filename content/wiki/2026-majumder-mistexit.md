@@ -6,7 +6,7 @@ affiliations:
   - "University of Utah"
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, execution-quality, efficient-processing]
+tags: [method, procedure-understanding, execution-quality, efficient-processing]
 ---
 
 # MistExit: Learning to Exit for Early Mistake Detection in Procedural Videos
@@ -19,6 +19,7 @@ MistExit learns when to stop observing a pre-segmented procedural step and issue
 **Website:** https://vision.cs.utexas.edu/projects/mist_exit/
 **Code:** Not found in checked primary sources.
 **Source version:** arXiv:2603.14252v1, 15 March 2026, 24 pages.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7137873183), checked 2026-11-03).
 
 ![MistExit: Figure 2 from the paper](../assets/2026-majumder-mistexit.png)
 

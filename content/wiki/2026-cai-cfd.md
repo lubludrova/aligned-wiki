@@ -4,7 +4,7 @@ venue: "EMNLP"
 affiliations: ["Queen Mary University of London", "Independent researcher", "Durham University", "Imperial College London", "Huawei"]
 research_groups: [huawei-multimodal-agents]
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, efficient-processing]
+tags: [method, video-memory, video-retrieval, video-qa, efficient-processing]
 ---
 
 # Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding
@@ -15,6 +15,7 @@ CFD caches video descriptions and retrieves bounded visual evidence only when a 
 **Paper:** [PDF](../raw/2026-cai-cfd.pdf) · [arXiv v1](https://arxiv.org/abs/2609.11899v1) · [EMNLP publication](https://aclanthology.org/2026.emnlp-main.422/)
 **Website:** [Official project](https://weitongcai.com/CFD/)
 **Code:** Not found in checked sources.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7212252498), checked 2026-11-03).
 
 ![CFD: Figure 2 from the paper](../assets/2026-cai-cfd.png)
 

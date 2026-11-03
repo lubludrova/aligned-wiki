@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Communication University of China", "State Key Laboratory of Media Convergence and Communication", "The Chinese University of Hong Kong, Shenzhen"]
 research_groups: [cuc-mcc]
 reviewed: false
-tags: [video-representation, spatial-understanding, egocentric-video]
+tags: [method, video-representation, spatial-understanding, egocentric-video]
 ---
 
 # Towards Stable Self-Supervised Object Representations in Unconstrained Egocentric Video
@@ -16,6 +16,7 @@ EgoViT learns object-focused visual features from unlabeled egocentric clips thr
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
 **Source version:** arXiv:2603.13912v1, 14 March 2026, including Appendices A–I. Published at CVPR 2026.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7138152984), checked 2026-11-03).
 
 ![EgoViT: Figure 2 from the paper](../assets/2026-tan-egovit.png)
 

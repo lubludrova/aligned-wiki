@@ -4,7 +4,7 @@ venue: "ECCV 2020"
 affiliations: ["University of North Carolina at Chapel Hill"]
 research_groups: []
 reviewed: false
-tags: ["video-retrieval", "video-representation", "efficient-processing"]
+tags: [dataset, benchmark, method, video-retrieval, video-representation, efficient-processing]
 ---
 
 # TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval
@@ -16,6 +16,7 @@ Provides a video-and-subtitle corpus retrieval benchmark and XML, a late-fusion 
 **Website:** [Author project](https://tvr.cs.unc.edu/) [?] Inaccessible during this check.
 **Code:** [Author repository](https://github.com/jayleicn/TVRetrieval)
 **Source version:** arXiv:2001.09099v2, 18 August 2020, ECCV 2020 paper with appendices, 35 pages.
+**Citations:** 266 ([OpenAlex](https://openalex.org/W3104862079), checked 2026-11-03).
 
 ![TVR cross-modal moment localization model](../assets/2020-lei-tvr.png)
 

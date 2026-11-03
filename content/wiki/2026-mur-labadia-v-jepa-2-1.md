@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["FAIR at Meta", "Universidad de Zaragoza"]
 research_groups: [meta-fair]
 reviewed: false
-tags: [video-representation, spatial-understanding, egocentric-video, real-world-evaluation]
+tags: [method, video-representation, spatial-understanding, egocentric-video, real-world-evaluation]
 ---
 
 # V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning
@@ -15,6 +15,7 @@ V-JEPA 2.1 learns reusable image and video features that preserve local geometry
 **Paper:** [PDF](../raw/2026-mur-labadia-v-jepa-2-1.pdf) · [arXiv v3](https://arxiv.org/abs/2603.14482v3)
 **Website:** Not found in checked sources.
 **Code:** [Official code and checkpoints](https://github.com/facebookresearch/vjepa2)
+**Citations:** 8 ([OpenAlex](https://openalex.org/W7137837393), checked 2026-11-03).
 
 ![V-JEPA 2.1: Figure 4 from the paper](../assets/2026-mur-labadia-v-jepa-2-1.png)
 

@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["ReLER, CCAI, Zhejiang University", "ReLER, AAII, University of Technology Sydney"]
 research_groups: []
 reviewed: false
-tags: ["video-representation", "spatial-understanding", "state-changes"]
+tags: [method, video-representation, spatial-understanding, state-changes]
 ---
 
 # DiffVsgg: Diffusion-Driven Online Video Scene Graph Generation
@@ -17,6 +17,7 @@ DiffVsgg updates object–relation scene graphs causally by conditioning a laten
 **Code:** [GitHub placeholder](https://github.com/kagawa588/DiffVsgg)
 
 **Source version:** arXiv:2503.13957v1, 18 March 2025, including supplementary material. CVPR 2025 acceptance confirmed by the official repository.
+**Citations:** 7 ([OpenAlex](https://openalex.org/W4413156276), checked 2026-11-03).
 
 ![DiffVSGG offline and diffusion-based online scene graph generation](../assets/2025-chen-diffvsgg.png)
 

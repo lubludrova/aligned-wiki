@@ -4,7 +4,7 @@ venue: "arXiv"
 affiliations: ["AIM3 Lab, Renmin University of China", "MiLM Plus, Xiaomi Inc.", "Peking University"]
 research_groups: []
 reviewed: false
-tags: ["video-representation", "video-qa"]
+tags: [dataset, benchmark, method, video-representation, video-qa]
 ---
 
 # StreamPro: From Reactive Perception to Proactive Decision-Making in Streaming Video
@@ -17,6 +17,7 @@ StreamPro combines class-balanced streaming supervision with multi-turn reinforc
 **Code:** Not found in checked sources.
 
 **Source version:** arXiv:2605.16381v1, 11 May 2026, including appendices.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7161704811), checked 2026-11-03).
 
 ![StreamPro: Figure 4 from the paper](../assets/2026-li-streampro.png)
 

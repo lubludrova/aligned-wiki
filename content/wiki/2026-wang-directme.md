@@ -4,7 +4,7 @@ venue: "ICML"
 affiliations: ["City University of Hong Kong", "University of Science and Technology of China", "National University of Singapore", "The Chinese University of Hong Kong, Shenzhen", "University of Electronic Science and Technology of China", "Beijing University of Posts and Telecommunications", "Zhejiang University"]
 research_groups: []
 reviewed: false
-tags: [video-memory, video-qa, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, video-memory, video-qa, spatial-understanding, egocentric-video]
 ---
 
 # Keep It in Mind: User-Centric Continual Spatial Intelligence Reasoning in Egocentric Video Streams
@@ -16,6 +16,7 @@ DirectMe retrieves a pose-aware spatial scene graph to answer questions about pr
 **Website:** [Proceedings page](https://proceedings.mlr.press/v306/wang26je.html)
 **Code:** [GitHub repository](https://github.com/cocowy1/UCS-Bench)
 **Source version:** arXiv:2606.15200v1, 13 June 2026. Published at ICML 2026, PMLR 306:131373–131417.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7164913088), checked 2026-11-03).
 
 ![DirectMe: Figure 5 from the paper](../assets/2026-wang-directme.png)
 

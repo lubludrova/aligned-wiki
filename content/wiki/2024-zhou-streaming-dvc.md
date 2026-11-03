@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Google"]
 research_groups: []
 reviewed: false
-tags: ["video-memory", "video-representation", "efficient-processing"]
+tags: [method, video-memory, video-representation, efficient-processing]
 ---
 
 # Streaming Dense Video Captioning
@@ -17,6 +17,7 @@ Streaming Dense Video Captioning compresses visual history into fixed-size memor
 **Code:** [GitHub repository](https://github.com/google-research/scenic/tree/main/scenic/projects/streaming_dvc)
 
 **Source version:** arXiv:2404.01297v1, 1 April 2024. CVPR 2024 identity confirmed by the official Scenic repository.
+**Citations:** 54 ([OpenAlex](https://openalex.org/W4402726946), checked 2026-11-03).
 
 ![Streaming dense video captioning with a memory module](../assets/2024-zhou-streaming-dvc.png)
 

@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["University of Michigan, Ann Arbor", "Samsung Research America"]
 research_groups: []
 reviewed: false
-tags: [video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video]
 ---
 
 # EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory
@@ -16,6 +16,7 @@ EgoCITE makes memory entries understandable outside their original context and r
 **Website:** [Author-linked project website](https://egocite.github.io/)
 **Code:** [Official repository](https://github.com/lezhangleonard/EgoCITE)
 **Source version:** arXiv 2608.12627v3, 18 August 2026. Preprint under review, with no accepted venue verified.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7203476755), checked 2026-11-03).
 
 ![EgoCITE: Figure 3 from the paper](../assets/2026-zhang-egocite.png)
 

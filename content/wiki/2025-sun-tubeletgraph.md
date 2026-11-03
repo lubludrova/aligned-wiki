@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: ["Cornell University"]
 research_groups: [cornell-hariharan]
 reviewed: false
-tags: [state-changes, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, state-changes, spatial-understanding, egocentric-video]
 ---
 
 # Tracking and Understanding Object Transformations
@@ -16,6 +16,7 @@ TubeletGraph recovers object fragments missed by tracking and connects their mas
 **Website:** [Project website](https://tubelet-graph.github.io/)
 **Code:** [GitHub repository](https://github.com/YihongSun/TubeletGraph)
 **Source version:** arXiv:2511.04678v2, 13 January 2026, including Appendix A. The publication venue and year are NeurIPS 2025.
+**Citations:** 2 ([OpenAlex](https://openalex.org/W4416027219), checked 2026-11-03).
 
 ![TubeletGraph object tracking and state graph construction](../assets/2025-sun-tubeletgraph.png)
 

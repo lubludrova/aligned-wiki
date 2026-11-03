@@ -8,6 +8,7 @@ affiliations:
 research_groups: []
 reviewed: false
 tags:
+- method
 - procedure-understanding
 - execution-quality
 - egocentric-video
@@ -26,6 +27,7 @@ Diagnoses completed-procedure mistakes through language-grounded step sequences,
 **Code:** Not found in checked sources. The paper promises implementation release upon acceptance, but no official release was located as of 31 October 2026.
 
 **Source version:** arXiv 2610.31117v1, 22 October 2026. Fresh preprint, with no acceptance verified.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7223396623), checked 2026-11-03).
 
 ![PRISM: Figure 2 from the paper](../assets/2026-loginova-prism.png)
 

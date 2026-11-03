@@ -9,6 +9,8 @@ research_groups:
 - meta-reality-labs
 reviewed: false
 tags:
+- dataset
+- benchmark
 - video-memory
 - video-retrieval
 - video-qa
@@ -28,6 +30,7 @@ Evaluates whether an answer about earlier wearable video is both correct and sup
 **Code:** [GitHub repository](https://github.com/facebookresearch/S-EMBER) — evaluation tasks, model wrappers, scripts and answer judge.
 
 **Source version:** arXiv 2607.02689v2, 26 August 2026. Preprint, with no peer-reviewed venue established in checked sources.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7167594145), checked 2026-11-03).
 
 ![S-EMBER: Figure 1 from the paper](../assets/2026-wang-s-ember.png)
 

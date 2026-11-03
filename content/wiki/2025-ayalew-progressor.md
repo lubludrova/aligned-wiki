@@ -4,7 +4,7 @@ venue: "ICCV"
 affiliations: ["University of Chicago", "Toyota Technological Institute at Chicago"]
 research_groups: [ttic-ripl]
 reviewed: false
-tags: [reward-learning, robot-learning, egocentric-video, real-world-evaluation]
+tags: [method, reward-learning, robot-learning, egocentric-video, real-world-evaluation]
 ---
 
 # PROGRESSOR: A Perceptually Guided Reward Estimator with Self-Supervised Online Refinement
@@ -16,6 +16,7 @@ PROGRESSOR learns visual progress rewards from demonstrations and tests their us
 **Source version:** Ten-page [accepted ICCV 2025 proceedings paper](https://openaccess.thecvf.com/content/ICCV2025/html/Ayalew_PROGRESSOR_A_Perceptually_Guided_Reward_Estimator_with_Self-Supervised_Online_Refinement_ICCV_2025_paper.html), not the earlier arXiv manuscript. Separate supplementary material was not reviewed.
 **Website:** [Project website](https://ripl.github.io/progressor/)
 **Code:** [GitHub repository](https://github.com/ripl/progressor)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4404990077), checked 2026-11-03).
 
 ![PROGRESSOR visual progress estimation and reinforcement learning](../assets/2025-ayalew-progressor.png)
 

@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["University of Michigan", "Voxel51"]
 research_groups: []
 reviewed: false
-tags: [execution-quality, egocentric-video]
+tags: [dataset, benchmark, method, execution-quality, egocentric-video]
 ---
 
 # Mistake Attribution: Fine-Grained Mistake Understanding in Egocentric Videos
@@ -16,6 +16,7 @@ MATT attributes instruction–video mismatches to semantic roles, a reference mo
 **Website:** [Project website](https://yayuanli.github.io/MATT/)
 **Code:** [GitHub repository](https://github.com/yayuanli/MATT)
 **Source version:** arXiv:2511.20525v2, 25 March 2026, first released 25 November 2025. [CVPR 2026 proceedings](https://openaccess.thecvf.com/content/CVPR2026/html/Li_Mistake_Attribution_Fine-Grained_Mistake_Understanding_in_Egocentric_Videos_CVPR_2026_paper.html) independently confirm publication.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4417094662), checked 2026-11-03).
 
 ![MATT: Figure 3 from the paper](../assets/2026-li-matt.png)
 

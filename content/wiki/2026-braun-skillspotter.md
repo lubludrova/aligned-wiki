@@ -4,7 +4,7 @@ venue: "ECCV 2026"
 affiliations: ["ETH Zürich"]
 research_groups: [eth-siplab]
 reviewed: false
-tags: [execution-quality, egocentric-video]
+tags: [method, execution-quality, egocentric-video]
 ---
 
 # SkillSpotter: Pose-Aware Multi-View Skilled Action Detection and Grading in Ego-Exo Videos
@@ -15,6 +15,7 @@ SkillSpotter combines video features and body pose to locate moments of skilled 
 **Paper:** [PDF](../raw/2026-braun-skillspotter.pdf) · [Accepted author PDF](https://static.siplab.org/papers/eccv2026-skillspotter.pdf)
 **Website:** [Project](https://siplab.org/projects/SkillSpotter)
 **Code:** [eth-siplab/SkillSpotter](https://github.com/eth-siplab/SkillSpotter)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7166828019), checked 2026-11-03).
 
 ![SkillSpotter action detection and quality grading architecture](../assets/2026-braun-skillspotter.png)
 

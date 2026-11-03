@@ -4,7 +4,7 @@ venue: "WACV"
 affiliations: [Microsoft, University of Central Florida]
 research_groups: []
 reviewed: false
-tags: [video-representation, egocentric-video, multi-person]
+tags: [dataset, benchmark, method, video-representation, egocentric-video, multi-person]
 ---
 
 # Multi-Stream Dynamic Video Summarization
@@ -16,6 +16,7 @@ Multi-DPP jointly selects important events and representative camera views from 
 **Website:** Not found in checked sources.
 **Code:** [Author repository](https://github.com/M-Elfeki/Multi-DPP) — annotations and evaluation resources are available, but the README still lists training-code cleanup and upload as unfinished.
 **Source version:** WACV 2022 proceedings PDF, pp. 339–348. This note follows the published paper, not the earlier 2018 preprint. Ali Borji has no institution assigned in its author block.
+**Citations:** 17 ([OpenAlex](https://openalex.org/W2989695666), checked 2026-11-03).
 
 ![Multi-Ego multi-view video summarization](../assets/2022-elfeki-multi-ego.png)
 

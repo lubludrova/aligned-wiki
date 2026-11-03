@@ -7,6 +7,8 @@ affiliations:
 research_groups: []
 reviewed: false
 tags:
+- dataset
+- benchmark
 - video-memory
 - video-qa
 - egocentric-video
@@ -25,6 +27,7 @@ Tests whether video memories can combine multiple observations across days to tr
 **Code:** [GitHub repository](https://github.com/Ziyang412/EgoMemReason) — evaluation scripts, annotations and dataset access instructions.
 
 **Source version:** arXiv 2605.09874v2, 18 August 2026. The archived PDF is marked COLM 2026, also confirmed by the conference proceedings.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7160891384), checked 2026-11-03).
 
 ![EgoMemReason: Figure 4 from the paper](../assets/2026-wang-egomemreason.png)
 

@@ -4,7 +4,7 @@ venue: "Sensors"
 affiliations: ["Chongqing University", "State Key Laboratory of Safety and Resilience of Civil Engineering in Mountain Area"]
 research_groups: []
 reviewed: false
-tags: [construction, execution-quality, spatial-understanding, efficient-processing]
+tags: [dataset, benchmark, method, construction, execution-quality, spatial-understanding, efficient-processing]
 ---
 
 # A Vision-Based Sensing Framework for PPE Detection and Safety Harness Compliance Recognition in High-Formwork Construction Environments Using YOLO-ILB
@@ -17,6 +17,7 @@ YOLO-ILB combines a compact PPE detector with image-geometry rules for classifyi
 **Code:** Not found in checked sources.
 
 **Source version:** Published Sensors 26(13), article 4147, 1 July 2026. Original publisher PDF inspected. The data-availability statement offers data from the corresponding author on request.
+**Citations:** 1 ([OpenAlex](https://openalex.org/W7166854352), checked 2026-11-03).
 
 ![YOLO-ILB: Figure 5 from the paper](../assets/2026-yao-yolo-ilb.png)
 

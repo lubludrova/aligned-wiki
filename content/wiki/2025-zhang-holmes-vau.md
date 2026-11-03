@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Huazhong University of Science and Technology", "University of Michigan, Ann Arbor", "Kanagawa University"]
 research_groups: []
 reviewed: false
-tags: ["video-qa", "efficient-processing", "video-representation"]
+tags: [dataset, benchmark, method, video-qa, efficient-processing, video-representation]
 ---
 
 # Holmes-VAU: Towards Long-term Video Anomaly Understanding at Any Granularity
@@ -17,6 +17,7 @@ Hierarchical anomaly instructions and anomaly-focused frame selection support ex
 **Code:** [Repository](https://github.com/pipixin321/HolmesVAU)
 
 **Source version:** CVF accepted proceedings version, pp.13843–13853. Initial arXiv preprint appeared in 2024. CVF supplemental PDF extracted unchanged from the official ZIP.
+**Citations:** 38 ([OpenAlex](https://openalex.org/W4413157891), checked 2026-11-03).
 
 ![Holmes-VAU anomaly-focused video understanding](../assets/2025-zhang-holmes-vau.png)
 

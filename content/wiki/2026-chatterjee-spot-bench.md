@@ -4,7 +4,7 @@ venue: "NeurIPS (Evaluations and Datasets Track)"
 affiliations: ["National University of Singapore", "Google Inc."]
 research_groups: []
 reviewed: false
-tags: ["video-memory", "state-changes", "procedure-understanding"]
+tags: [dataset, benchmark, video-memory, state-changes, procedure-understanding]
 ---
 
 # Don't Pause! Every prediction matters in a streaming video
@@ -17,6 +17,7 @@ SPOT-Bench evaluates every response across a continuous stream, including badly 
 **Code:** [Repository](https://github.com/dibschat/SPOT-Bench)
 
 **Source version:** arXiv 2604.24317v1. Project page states NeurIPS 2026 acceptance and renames AsynKV to Ctrl-SPOT. This note reports the archived v1 experiments.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7157017701), checked 2026-11-03).
 
 ![SPOT-Bench: Figure 2 from the paper](../assets/2026-chatterjee-spot-bench.png)
 

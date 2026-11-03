@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Zhejiang University", "Qingdao University", "Tianjin University", "National University of Singapore"]
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, state-changes, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, state-changes, spatial-understanding, egocentric-video]
 ---
 
 # EgoTSR++: Egocentric Spatiotemporal Reasoning for Task Progress Understanding
@@ -15,6 +15,7 @@ EgoTSR++ learns to compare two visual states against a task goal, testing whethe
 **Paper:** [PDF](../raw/2026-yang-egotsr.pdf) · [arXiv v1](https://arxiv.org/abs/2609.31751v1)
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources for this version.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7214760213), checked 2026-11-03).
 
 ![EgoTSR++: Figure 1 from the paper](../assets/2026-yang-egotsr.png)
 

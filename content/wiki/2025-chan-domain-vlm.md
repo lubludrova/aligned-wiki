@@ -4,7 +4,7 @@ venue: "ICCBEI 2025, Kalpa Publications in Computing 22, 894–908"
 affiliations: ["The Hong Kong University of Science and Technology", "Drainage Services Department, Government of the Hong Kong Special Administrative Region", "AutoSafe Ltd."]
 research_groups: []
 reviewed: false
-tags: [execution-quality, construction, real-world-evaluation]
+tags: [dataset, method, execution-quality, construction, real-world-evaluation]
 ---
 
 # A Domain Knowledge-Enhanced Large Vision-Language Model for Construction Site Safety Monitoring
@@ -16,6 +16,7 @@ Adapts a vision-language model to work-at-height rules and connects sampled came
 **Website:** Not found in checked sources.
 **Code:** Not found in checked sources.
 **Source version:** Original 15-page ICCBEI 2025 proceedings PDF, DOI 10.29007/1n8g. This note covers the conference paper, not the separate ontology-enhanced journal article.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W4413786482), checked 2026-11-03).
 
 ![Domain VLM semi-automatic construction safety data labeling](../assets/2025-chan-domain-vlm.png)
 

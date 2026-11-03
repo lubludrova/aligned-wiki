@@ -4,7 +4,7 @@ venue: "RSS"
 affiliations: ["University of Southern California", "UT Dallas", "MIT", "University of Washington", "Ai2", "NVIDIA"]
 research_groups: [usc-lira, uw-rse, utd-irvl, mit-clear]
 reviewed: false
-tags: [reward-learning, preference-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation]
+tags: [dataset, benchmark, method, reward-learning, preference-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation]
 ---
 
 # Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory Comparisons
@@ -16,6 +16,7 @@ Robometer combines progress prediction with trajectory comparisons to learn from
 **Source version:** arXiv 2603.02115v2, 13 May 2026. [RSS 2026 proceedings](https://www.roboticsproceedings.org/rss22/p140.html).
 **Website:** [Project website](https://robometer.github.io/)
 **Code:** [Reward model](https://github.com/robometer/robometer) · [Policy learning](https://github.com/robometer/robometer-policy-learning)
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7133361213), checked 2026-11-03).
 
 ![Robometer: Figure 1 from the paper](../assets/2026-liang-robometer.png)
 

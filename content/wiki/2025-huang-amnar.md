@@ -8,7 +8,7 @@ affiliations:
   - Guangdong Province Key Laboratory of Information Security Technology
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, execution-quality, egocentric-video]
+tags: [method, procedure-understanding, execution-quality, egocentric-video]
 ---
 
 # Modeling Multiple Normal Action Representations for Error Detection in Procedural Tasks
@@ -21,6 +21,7 @@ AMNAR detects execution errors by comparing the observed action with context-ada
 **Website:** [Official publication page](https://openaccess.thecvf.com/content/CVPR2025/html/Huang_Modeling_Multiple_Normal_Action_Representations_for_Error_Detection_in_Procedural_CVPR_2025_paper.html)
 **Code:** https://github.com/iSEE-Laboratory/AMNAR
 **Source version:** CVF open-access accepted CVPR 2025 paper, pp. 27794–27804, plus its separately published supplement. The repository also links the distinct arXiv manuscript 2503.22405.
+**Citations:** 7 ([OpenAlex](https://openalex.org/W4413144699), checked 2026-11-03).
 
 ![AMNAR adaptive representations of valid actions and error detection](../assets/2025-huang-amnar.png)
 

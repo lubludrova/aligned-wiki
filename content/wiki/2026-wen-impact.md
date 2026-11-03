@@ -8,7 +8,7 @@ affiliations:
   - "INSAIT, Sofia University"
 research_groups: []
 reviewed: false
-tags: [procedure-understanding, state-changes, execution-quality, egocentric-video]
+tags: [dataset, benchmark, procedure-understanding, state-changes, execution-quality, egocentric-video]
 ---
 
 # IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly
@@ -21,6 +21,7 @@ IMPACT jointly annotates component state, procedural steps, anomalies, and recov
 **Website:** Not found in checked primary sources.
 **Code:** https://github.com/Kratos-Wen/IMPACT
 **Source version:** arXiv:2604.10409v1, 12 April 2026, 9 pages. The author repository still describes an ACM Multimedia 2026 Dataset Track submission under review, so acceptance is not assumed.
+**Citations:** 0 ([OpenAlex](https://openalex.org/W7154333478), checked 2026-11-03).
 
 ![IMPACT: Figure 1 from the paper](../assets/2026-wen-impact.png)
 

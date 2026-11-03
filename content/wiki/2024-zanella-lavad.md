@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["University of Trento", "Fondazione Bruno Kessler"]
 research_groups: []
 reviewed: false
-tags: ["video-representation", "video-qa"]
+tags: [method, video-representation, video-qa]
 ---
 
 # Harnessing Large Language Models for Training-free Video Anomaly Detection
@@ -17,6 +17,7 @@ LAVAD turns pretrained captions and language-model judgments into anomaly scores
 **Code:** [Repository](https://github.com/lucazanella/lavad)
 
 **Source version:** CVF accepted proceedings version, pp.18527–18536, with supplementary material. Affiliations follow this PDF.
+**Citations:** 105 ([OpenAlex](https://openalex.org/W4402753378), checked 2026-11-03).
 
 ![LAVAD language-based video anomaly detection pipeline](../assets/2024-zanella-lavad.png)
 

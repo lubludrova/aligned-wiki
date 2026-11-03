@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["University of North Carolina at Chapel Hill"]
 research_groups: []
 reviewed: false
-tags: [video-retrieval, video-qa, efficient-processing]
+tags: [method, video-retrieval, video-qa, efficient-processing]
 ---
 
 # VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos
@@ -16,6 +16,7 @@ VideoTree selects question-relevant keyframes through adaptive visual clustering
 **Website:** [Project website](https://videotree2024.github.io/)
 **Code:** [Official repository](https://github.com/Ziyang412/VideoTree)
 **Source version:** arXiv:2405.19209v3, 14 March 2025, including supplementary material; main results cross-checked with the CVPR 2025 open-access proceedings PDF.
+**Citations:** 55 ([OpenAlex](https://openalex.org/W4413145669), checked 2026-11-03).
 
 ![VideoTree adaptive tree construction and relevance-guided retrieval](../assets/2025-wang-videotree.png)
 
