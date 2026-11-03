@@ -155,6 +155,8 @@ The install, build, and output settings are already recorded in `vercel.json`. N
 
 After connecting the repository, Vercel deploys pushes to `main` to production and creates previews for other branches. The GitHub push alone does not create a Vercel project. Connect a custom domain after the first deployment if desired. Vercel Hobby is for personal, non-commercial use. Select a suitable paid plan for company use, following [Vercel's plan terms](https://vercel.com/docs/plans/hobby).
 
-All files in `public/`, including the audit JSON downloads, are served publicly by an unprotected deployment. Source PDFs are represented by external links. The source wiki, research workspace, dependency directories, build output, screenshots, local verification artifacts, and environment files are excluded from this repository. When manually reimporting an audit register, replace machine-specific paths before committing the resulting public copy.
+On Vercel, the root `middleware.js` requires HTTP Basic authentication before serving pages and static resources, including JSON, Markdown downloads and images. Credentials are defined in that middleware. Rejected requests return `401` with a browser login challenge and `Cache-Control: no-store`. Verify the deployed site with missing, incorrect and correct credentials. Ordinary Astro development/preview servers do not execute this Vercel routing middleware.
 
-Any static host supporting directory `index.html` files and `404.html` can also serve the generated `dist/` folder.
+Source PDFs are represented by external links and retain their source host's access rules. The source wiki, research workspace, dependency directories, build output, screenshots, local verification artifacts, and environment files are excluded from this repository. When manually reimporting an audit register, replace machine-specific paths before committing the resulting public copy.
+
+Any static host supporting directory `index.html` files and `404.html` can also serve the generated `dist/` folder, but must provide its own authentication because the access check above runs on Vercel.
