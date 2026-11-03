@@ -152,7 +152,7 @@ export const paperSearchEntries = papers.map(paper => {
   return { id: paper.slug, title: paper.shortTitle, chapter: chapter?.title || 'Wiki library', chapterSlug: chapter?.slug || '', number: chapter?.number || '',
     group: chapter?.group || '', url: `/papers/${paper.slug}/`,
     text: [paper.title, paper.metadata.authors, ...paperTags[paper.slug], plain(wikiNotes[paper.slug]?.markdown || ''), reviewText].join(' '),
-    summary: wiki?.summary || reviewText, year: paper.year, venue: paper.metadata.venue,
+    summary: wiki?.summary || reviewText, year: paper.year, venue: paper.metadata.venue, citations: citationCounts[paper.slug].count,
     tags: paperTags[paper.slug], spotlight: wiki?.spotlight || false, inReview: paper.chapters.length > 0,
     coverage: paper.coverage, chapters: paper.chapters };
 });

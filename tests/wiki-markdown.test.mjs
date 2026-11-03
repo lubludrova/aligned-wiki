@@ -42,6 +42,12 @@ The reported 71.2% excludes ingestion cost.
   assert(result.sourceHeaderMarkdown.includes('[PDF](https://arxiv.org/pdf/2601.00001v2), the inspected preprint.'));
   assert(result.sourceHeaderMarkdown.includes('**Code:** Not found in checked sources.'));
   assert(result.sourceHeaderMarkdown.includes('**Data:** A restricted research release.'));
+  assert.deepEqual(result.sourceFields, [
+    { label: 'Authors', markdown: 'A. Author.' },
+    { label: 'Paper', markdown: '[PDF](https://arxiv.org/pdf/2601.00001v2), the inspected preprint.' },
+    { label: 'Code', markdown: 'Not found in checked sources.' },
+    { label: 'Data', markdown: 'A restricted research release.' },
+  ]);
 });
 
 test('nonempty human notes and external citations remain intact', () => {

@@ -31,8 +31,14 @@ export function prepareWikiNote(raw, sourceLinks = {}, paperTitles = {}) {
     });
   }
 
+  const sourceHeaderMarkdown = links(sourceHeader.trim().replace(/\n(?=\*\*[^\n]+:\*\*)/g, '\n\n'));
+  const sourceFields = sourceHeaderMarkdown ? sourceHeaderMarkdown.split(/\n+(?=\*\*[^*\n]+:\*\*)/).map(field => {
+    const match = field.match(/^\*\*([^*\n]+):\*\*\s*([\s\S]*)$/);
+    if (!match) throw new Error('Unrecognized wiki publication metadata');
+    return { label: match[1], markdown: match[2].trim() };
+  }) : [];
   return {
     markdown: links([summary.trim(), figure.trim(), content.trim()].filter(Boolean).join('\n\n')),
-    sourceHeaderMarkdown: links(sourceHeader.trim().replace(/\n(?=\*\*[^\n]+:\*\*)/g, '\n\n')),
+    sourceHeaderMarkdown, sourceFields,
   };
 }

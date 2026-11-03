@@ -16,8 +16,8 @@ const readingUrl = locations.length ? `/chapters/${locations[0].chapter.slug}/#$
 const metadata = paper.metadata;
 const venueLink = metadata.links.find(link => /conference|proceedings|acceptance|publication|publisher|doi/i.test(link.label) && !link.url.includes('github.com'));
 const resourceLinks = metadata.links.filter(link => link !== venueLink && link.url !== paper.sourceUrls[0]);
-const linkNotes = metadata.links.filter(link => link.note);
-const hasDetails = metadata.authors || metadata.affiliations.length || metadata.sourceVersion || metadata.publicationNote || linkNotes.length;
+const sourceFields = (wikiNote?.sourceFields || []).filter(field => !['Authors', 'Citations'].includes(field.label));
+const extraLinks = resourceLinks.filter(link => !wikiNote?.sourceHeaderMarkdown.includes(link.url));
 ---
 <Base title={paper.shortTitle} description={paper.title} active={chapter?.slug || 'papers'} reading>
   <div class="note-content paper-page">
@@ -29,25 +29,23 @@ const hasDetails = metadata.authors || metadata.affiliations.length || metadata.
       </div>
       <h1>{paper.shortTitle}</h1>
       <p class="paper-full-title">{paper.title}</p>
-      <div class="paper-publication" data-paper-citations><CitationCount snapshot={citationCounts[paper.slug]} /></div>
       <nav class="paper-backlinks" aria-label="Paper resources">
         <a href={paper.sourceUrls[0]} target="_blank" rel="noreferrer">Original publication ↗</a>
         {readingUrl && <a href={readingUrl}>Read chapter <Icon name="arrow" size={15}/></a>}
-        {resourceLinks.map(link => <a href={link.url} target="_blank" rel="noreferrer" title={link.note}>{link.label} ↗</a>)}
-        {wikiNote && <a href={`/papers/${paper.slug}.md`} download>Markdown ↓</a>}
       </nav>
-      {hasDetails && <details class="publication-details">
+      <details class="publication-details">
         <summary>Publication details</summary>
         <dl>
           {wiki && <div><dt>Human review</dt><dd>{wiki.reviewed ? 'Reviewed' : 'Pending'}</dd></div>}
-          {!wikiNote && metadata.authors && <div><dt>Authors</dt><dd>{metadata.authors}</dd></div>}
+          {metadata.authors && <div><dt>Authors</dt><dd>{metadata.authors}</dd></div>}
           {metadata.affiliations.length > 0 && <div><dt>Affiliations</dt><dd>{metadata.affiliations.join(' · ')}</dd></div>}
-          {!wikiNote && metadata.sourceVersion && <div><dt>Source version</dt><dd>{metadata.sourceVersion}</dd></div>}
+          {sourceFields.map(field => <div><dt>{field.label}</dt><dd class="publication-value" set:html={renderMarkdown(field.markdown, `/papers/${paper.slug}/`, 'source-').html}/></div>)}
+          {!sourceFields.some(field => field.label === 'Source version') && metadata.sourceVersion && <div><dt>Source version</dt><dd>{metadata.sourceVersion}</dd></div>}
           {metadata.publicationNote && <div><dt>Publication note</dt><dd>{metadata.publicationNote}</dd></div>}
-          {!wikiNote && linkNotes.map(link => <div><dt><a href={link.url} target="_blank" rel="noreferrer">{link.label}</a></dt><dd>{link.note}</dd></div>)}
+          {extraLinks.map(link => <div><dt>{link.label}</dt><dd><a href={link.url} target="_blank" rel="noreferrer">{link.label}</a>{link.note && <> · {link.note}</>}</dd></div>)}
+          <div><dt>Citations</dt><dd data-paper-citations><CitationCount snapshot={citationCounts[paper.slug]} /></dd></div>
         </dl>
-        {wikiNote && <div class="prose source-details" set:html={renderMarkdown(wikiNote.sourceHeaderMarkdown, `/papers/${paper.slug}/`, 'source-').html}/>}
-      </details>}
+      </details>
       <div class="paper-tags">{paperTags[paper.slug].map(tag => <a href={`/papers/?topic=${encodeURIComponent(tag)}`}>{tag.replaceAll('-', ' ')}</a>)}</div>
     </header>
     {wikiNote && <article class="prose wiki-note" set:html={renderMarkdown(wikiNote.markdown, `/papers/${paper.slug}/`, 'wiki-').html}/>}
