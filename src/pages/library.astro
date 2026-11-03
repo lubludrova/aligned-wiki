@@ -1,0 +1,6 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { chapters, searchEntries } from '../lib/content';
+---
+<Base title="Search the review" active="library"><div class="library-content"><h1>Search the review</h1><div class="library-filters"><label class="library-search"><Icon name="search"/><span class="sr-only">Search the review</span><input id="library-query" type="search" name="q" autocomplete="off" placeholder="Title or term…"/></label><label><span class="sr-only">Filter by chapter</span><select id="library-chapter"><option value="">All chapters</option>{chapters.map(ch=><option value={ch.slug}>{ch.number ? `${ch.number}. ` : ''}{ch.title}</option>)}</select></label></div><p class="library-count" aria-live="polite">{searchEntries.length} entries</p><div id="library-results">{searchEntries.map(entry=><a class="library-result" href={entry.url} aria-label={entry.title}><span class="eyebrow">{entry.number ? `${entry.number} / ` : ''}{entry.chapter}</span><h2>{entry.title}<span>↗</span></h2><p>{entry.text.slice(0,220)}{entry.text.length>220?'…':''}</p></a>)}</div><noscript>All content is available without JavaScript. Use your browser’s Find command to search.</noscript></div><script src="../scripts/library.ts"/></Base>

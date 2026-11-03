@@ -1,0 +1,4076 @@
+[
+  {
+    "slug": "2021-luo-clip4clip",
+    "title": "CLIP4Clip: An Empirical Study of CLIP for End to End Video Clip Retrieval",
+    "shortTitle": "CLIP4Clip",
+    "year": 2021,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2104.08860"
+    ],
+    "chapters": [
+      "foundations"
+    ],
+    "headingTitles": [
+      "CLIP4Clip: сильные признаки изображения уже полезны для поиска клипа"
+    ],
+    "locations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "CLIP4Clip: сильные признаки изображения уже полезны для поиска клипа"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Базовые данные и протоколы оценки представлений"
+      },
+      {
+        "chapter": "foundations",
+        "headingTitle": "CLIP4Clip: сильные признаки изображения уже полезны для поиска клипа"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2021-bain-frozen-in-time",
+    "title": "Frozen in Time: A Joint Video and Image Encoder for End-to-End Retrieval",
+    "shortTitle": "Frozen in Time",
+    "year": 2021,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/ICCV2021/papers/Bain_Frozen_in_Time_A_Joint_Video_and_Image_Encoder_for_ICCV_2021_paper.pdf"
+    ],
+    "chapters": [
+      "foundations"
+    ],
+    "headingTitles": [
+      "Frozen in Time: почему embeddings позволяют отделить индексацию от запроса"
+    ],
+    "locations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Frozen in Time: почему embeddings позволяют отделить индексацию от запроса"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Базовые данные и протоколы оценки представлений"
+      },
+      {
+        "chapter": "foundations",
+        "headingTitle": "Frozen in Time: почему embeddings позволяют отделить индексацию от запроса"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-wang-internvideo2",
+    "title": "InternVideo2: Scaling Foundation Models for Multimodal Video Understanding",
+    "shortTitle": "InternVideo2",
+    "year": 2024,
+    "sourceUrls": [
+      "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11491.pdf"
+    ],
+    "chapters": [
+      "foundations"
+    ],
+    "headingTitles": [
+      "InternVideo2: один backbone может поддерживать несколько уровней системы"
+    ],
+    "locations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "InternVideo2: один backbone может поддерживать несколько уровней системы"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Базовые данные и протоколы оценки представлений"
+      },
+      {
+        "chapter": "foundations",
+        "headingTitle": "InternVideo2: один backbone может поддерживать несколько уровней системы"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-tan-egovit",
+    "title": "Towards Stable Self-Supervised Object Representations in Unconstrained Egocentric Video",
+    "shortTitle": "EgoViT",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2603.13912v1"
+    ],
+    "chapters": [
+      "foundations"
+    ],
+    "headingTitles": [
+      "EgoViT, Tan et al., CVPR 2026: устойчивость признаков локальных областей"
+    ],
+    "locations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "EgoViT, Tan et al., CVPR 2026: устойчивость признаков локальных областей"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Базовые данные и протоколы оценки представлений"
+      },
+      {
+        "chapter": "foundations",
+        "headingTitle": "EgoViT, Tan et al., CVPR 2026: устойчивость признаков локальных областей"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-mur-labadia-v-jepa-2-1",
+    "title": "V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning",
+    "shortTitle": "V-JEPA 2.1",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2603.14482v3"
+    ],
+    "chapters": [
+      "foundations"
+    ],
+    "headingTitles": [
+      "V-JEPA 2.1, Mur-Labadia et al., 2026 preprint: сохранить локальную структуру видео"
+    ],
+    "locations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "V-JEPA 2.1, Mur-Labadia et al., 2026 preprint: сохранить локальную структуру видео"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Базовые данные и протоколы оценки представлений"
+      },
+      {
+        "chapter": "foundations",
+        "headingTitle": "V-JEPA 2.1, Mur-Labadia et al., 2026 preprint: сохранить локальную структуру видео"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2020-lei-tvr",
+    "title": "TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval",
+    "shortTitle": "TVR / XML",
+    "year": 2020,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2001.09099"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "TVR и V-RAGBench: два разных масштаба поиска",
+      "XML: ранний ориентир для корпусной локализации"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "TVR и V-RAGBench: два разных масштаба поиска"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "XML: ранний ориентир для корпусной локализации"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "TVR и V-RAGBench: два разных масштаба поиска"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "XML: ранний ориентир для корпусной локализации"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-hou-eventformer",
+    "title": "Event-Aware Video Corpus Moment Retrieval",
+    "shortTitle": "EventFormer",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2402.13566v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "EventFormer: индекс событий перед точной локализацией"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EventFormer: индекс событий перед точной локализацией"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EventFormer: индекс событий перед точной локализацией"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-lee-carve",
+    "title": "Rethinking RAG in Long Videos: What to Retrieve and How to Use It?",
+    "shortTitle": "CARVE / V-RAGBench",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2606.13141v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "TVR и V-RAGBench: два разных масштаба поиска",
+      "CARVE: искать и выбирать разные формы свидетельства"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "TVR и V-RAGBench: два разных масштаба поиска"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "CARVE: искать и выбирать разные формы свидетельства"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "TVR и V-RAGBench: два разных масштаба поиска"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "CARVE: искать и выбирать разные формы свидетельства"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-jeong-videorag",
+    "title": "VideoRAG: Retrieval-Augmented Generation over Video Corpus",
+    "shortTitle": "VideoRAG (Jeong et al.)",
+    "year": 2025,
+    "sourceUrls": [
+      "https://aclanthology.org/2025.findings-acl.1096.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "WikiHowQA и LongerVideos: ответы по коллекции",
+      "VideoRAG, Jeong et al., Findings of ACL 2025, arXiv:2501.05874"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "WikiHowQA и LongerVideos: ответы по коллекции"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoRAG, Jeong et al., Findings of ACL 2025, arXiv:2501.05874"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "WikiHowQA и LongerVideos: ответы по коллекции"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoRAG, Jeong et al., Findings of ACL 2025, arXiv:2501.05874"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-ren-videorag",
+    "title": "VideoRAG: Retrieval-Augmented Generation with Extreme Long-Context Videos",
+    "shortTitle": "VideoRAG (Ren et al.)",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2502.01549v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "WikiHowQA и LongerVideos: ответы по коллекции",
+      "VideoRAG, Ren et al., arXiv:2502.01549, 2025 preprint"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "WikiHowQA и LongerVideos: ответы по коллекции"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoRAG, Ren et al., arXiv:2502.01549, 2025 preprint"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "WikiHowQA и LongerVideos: ответы по коллекции"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoRAG, Ren et al., arXiv:2502.01549, 2025 preprint"
+      }
+    ],
+    "coverage": "discussion",
+    "sourceYear": 2025,
+    "publicationYear": 2026
+  },
+  {
+    "slug": "2025-cao-flashmmr",
+    "title": "When One Moment Isn’t Enough: Multi-Moment Retrieval with Cross-Moment Interactions",
+    "shortTitle": "QV-M² / FlashMMR",
+    "year": 2025,
+    "sourceUrls": [
+      "https://proceedings.nips.cc/paper_files/paper/2025/file/faaa187af979e46dc54f4d43f8b815b2-Paper-Conference.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "QV-M²: протокол нескольких моментов",
+      "FlashMMR: несколько интервалов на один запрос"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "QV-M²: протокол нескольких моментов"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "FlashMMR: несколько интервалов на один запрос"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "QV-M²: протокол нескольких моментов"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "FlashMMR: несколько интервалов на один запрос"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-wu-longvideobench",
+    "title": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+    "shortTitle": "LongVideoBench",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2407.15754v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Бенчмарки чтения выбранного видео"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки чтения выбранного видео"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки чтения выбранного видео"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-fu-video-mme",
+    "title": "Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis",
+    "shortTitle": "Video-MME",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Fu_Video-MME_The_First-Ever_Comprehensive_Evaluation_Benchmark_of_Multi-modal_LLMs_in_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Бенчмарки чтения выбранного видео"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки чтения выбранного видео"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки чтения выбранного видео"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-goletto-amego",
+    "title": "AMEGO: Active Memory from long EGOcentric videos",
+    "shortTitle": "AMEGO",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2409.10917v1",
+      "https://arxiv.org/pdf/2409.10917"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "AMB: порядок взаимодействий с объектами",
+      "AMEGO: память взаимодействий"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "AMB: порядок взаимодействий с объектами"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "AMEGO: память взаимодействий"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "AMB: порядок взаимодействий с объектами"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "AMEGO: память взаимодействий"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-liang-capmem",
+    "title": "CapMem: A Benchmark for Caption-Based Episodic Memory in Egocentric Video",
+    "shortTitle": "CapMem",
+    "year": 2026,
+    "sourceUrls": [
+      "https://aclanthology.org/2026.emnlp-industry.233.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "CapMem: переиспользуемая память описаний"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "CapMem: переиспользуемая память описаний"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "CapMem: переиспользуемая память описаний"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-zhang-vocal-udf",
+    "title": "Self-Enhancing Video Data Management System for Compositional Events with Large Language Models",
+    "shortTitle": "VOCAL-UDF",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2408.02243v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "VOCAL-UDF: научить систему новому наблюдаемому условию"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "VOCAL-UDF: научить систему новому наблюдаемому условию"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Протоколы: стоимость, полнота и качество предикатов"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "VOCAL-UDF: научить систему новому наблюдаемому условию"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-rauf-hpp",
+    "title": "HPP: Hierarchical Programmatic Probing for Long Video Understanding by Decoupling Perception and Reasoning",
+    "shortTitle": "HPP",
+    "year": 2026,
+    "sourceUrls": [
+      "https://aclanthology.org/2026.emnlp-main.2377.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "HPP, Rauf et al., EMNLP 2026: агент составляет программу поиска свидетельств"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "HPP, Rauf et al., EMNLP 2026: агент составляет программу поиска свидетельств"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "HPP, Rauf et al., EMNLP 2026: агент составляет программу поиска свидетельств"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-zhang-egocite",
+    "title": "EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory",
+    "shortTitle": "EgoCITE",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.12627v3"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "EgoCITE, Zhang et al., 2026 preprint: найти нужный факт в нужное время"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoCITE, Zhang et al., 2026 preprint: найти нужный факт в нужное время"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoCITE, Zhang et al., 2026 preprint: найти нужный факт в нужное время"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-ye-mm-ego",
+    "title": "MM-Ego: Towards Building Egocentric Multimodal LLMs for Video QA",
+    "shortTitle": "MM-Ego / EgoMemoria",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2410.07177v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "MM-Ego, Ye et al., ICLR 2025: сначала обзор, затем подробные кадры"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MM-Ego, Ye et al., ICLR 2025: сначала обзор, затем подробные кадры"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "MM-Ego, Ye et al., ICLR 2025: сначала обзор, затем подробные кадры"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-leng-flora",
+    "title": "FLORA: An Open Model Suite for Scaling Robotics Data Engines",
+    "shortTitle": "FLORA",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2610.31779v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "FLORA, Leng et al., 2026: научить автора памяти выделять события"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "FLORA, Leng et al., 2026: научить автора памяти выделять события"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки и протоколы оценки: карта задач"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "FLORA, Leng et al., 2026: научить автора памяти выделять события"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-fan-videoagent",
+    "title": "VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding",
+    "shortTitle": "VideoAgent (Fan et al.)",
+    "year": 2024,
+    "sourceUrls": [
+      "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Две разные VideoAgent: активное чтение и повторно используемая память"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Две разные VideoAgent: активное чтение и повторно используемая память"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки чтения выбранного видео"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Две разные VideoAgent: активное чтение и повторно используемая память"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-choi-merit",
+    "title": "Keep It Simple: Multi-Key Episodic Memory Retrieval for Ultra-Long Video Understanding",
+    "shortTitle": "MERIT",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.07663v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "MERIT против EM²Mem: где выполнять смысловое объединение"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MERIT против EM²Mem: где выполнять смысловое объединение"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки чтения выбранного видео"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: переход от ролика к памяти недели"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "MERIT против EM²Mem: где выполнять смысловое объединение"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-yeo-worldmm",
+    "title": "WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning",
+    "shortTitle": "WorldMM",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2512.02425v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Графовая память: EGAgent и WorldMM"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Графовая память: EGAgent и WorldMM"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки чтения выбранного видео"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: переход от ролика к памяти недели"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Графовая память: EGAgent и WorldMM"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-luo-video-rag",
+    "title": "Video-RAG: Visually-aligned Retrieval-Augmented Long Video Comprehension",
+    "shortTitle": "Video-RAG (Luo et al.)",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2411.13093v4"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Video-RAG, Luo et al., NeurIPS 2025, arXiv:2411.13093"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Video-RAG, Luo et al., NeurIPS 2025, arXiv:2411.13093"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки чтения выбранного видео"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Video-RAG, Luo et al., NeurIPS 2025, arXiv:2411.13093"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-yang-egolife",
+    "title": "EgoLife: Towards Egocentric Life Assistant",
+    "shortTitle": "EgoLife",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2503.03803v3"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "EgoLifeQA: переход от ролика к памяти недели",
+      "EgoButler / EgoRAG: baseline многодневной памяти"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: переход от ролика к памяти недели"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoButler / EgoRAG: baseline многодневной памяти"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: переход от ролика к памяти недели"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoButler / EgoRAG: baseline многодневной памяти"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-chen-em2mem",
+    "title": "EM^2Mem: Event-Centric Multimodal Memory for Large Language Models",
+    "shortTitle": "EM²Mem",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.00551v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "MERIT против EM²Mem: где выполнять смысловое объединение"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MERIT против EM²Mem: где выполнять смысловое объединение"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: переход от ролика к памяти недели"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "MERIT против EM²Mem: где выполнять смысловое объединение"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-rege-egagent",
+    "title": "Agentic Very Long Video Understanding",
+    "shortTitle": "EGAgent",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2601.18157v3"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Графовая память: EGAgent и WorldMM"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Графовая память: EGAgent и WorldMM"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: переход от ролика к памяти недели"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Графовая память: EGAgent и WorldMM"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-tian-ego-r1",
+    "title": "Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning",
+    "shortTitle": "Ego-R1",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2506.13654v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Ego-R1 Bench: вопросы для агентного поиска",
+      "Ego-R1: научить контроллер искать дополнительные доказательства"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Ego-R1 Bench: вопросы для агентного поиска"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Ego-R1: научить контроллер искать дополнительные доказательства"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Ego-R1 Bench: вопросы для агентного поиска"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Ego-R1: научить контроллер искать дополнительные доказательства"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-huang-apm-bench",
+    "title": "APM-Bench: Benchmarking cross-Session Persistent Memory for Real-World Egocentric Streaming Video Assistants",
+    "shortTitle": "APM-Bench",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.37559v2"
+    ],
+    "chapters": [
+      "archive",
+      "states",
+      "streaming"
+    ],
+    "headingTitles": [
+      "APM-Bench и EgoMonth: память между сеансами и длительная история"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "APM-Bench и EgoMonth: память между сеансами и длительная история"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "APM-Bench и EgoMonth: память между сеансами и длительная история"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-chen-egomonth",
+    "title": "EgoMonth: A Month-Level Egocentric Video Benchmark for Long-Term Spatiotemporal Memory",
+    "shortTitle": "EgoMonth",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.13113v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "APM-Bench и EgoMonth: память между сеансами и длительная история"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "APM-Bench и EgoMonth: память между сеансами и длительная история"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "APM-Bench и EgoMonth: память между сеансами и длительная история"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-wang-egomemreason",
+    "title": "EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding",
+    "shortTitle": "EgoMemReason",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2605.09874v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "EgoMemReason — недельное видео ещё не означает недельное рассуждение"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoMemReason — недельное видео ещё не означает недельное рассуждение"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoMemReason — недельное видео ещё не означает недельное рассуждение"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-zhang-llovi",
+    "title": "A Simple LLM Framework for Long-Range Video Question-Answering",
+    "shortTitle": "LLoVi",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2312.17235v1",
+      "https://aclanthology.org/2024.emnlp-main.1209/",
+      "https://arxiv.org/abs/2312.17235v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "LLoVi: ранний caption-first baseline"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "LLoVi: ранний caption-first baseline"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "LLoVi: ранний caption-first baseline"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-wang-videotree",
+    "title": "VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos",
+    "shortTitle": "VideoTree",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_VideoTree_Adaptive_Tree-based_Video_Representation_for_LLM_Reasoning_on_Long_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "VideoTree: описание интересных областей"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoTree: описание интересных областей"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoTree: описание интересных областей"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-song-moviechat",
+    "title": "MovieChat: From Dense Token to Sparse Memory for Long Video Understanding",
+    "shortTitle": "MovieChat",
+    "year": 2024,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Song_MovieChat_From_Dense_Token_to_Sparse_Memory_for_Long_Video_CVPR_2024_paper.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "MovieChat: сжатие визуального контекста"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MovieChat: сжатие визуального контекста"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MovieChat: сжатие визуального контекста"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-wang-videoagent",
+    "title": "VideoAgent: Long-form Video Understanding with Large Language Model as Agent",
+    "shortTitle": "VideoAgent (Wang et al.)",
+    "year": 2024,
+    "sourceUrls": [
+      "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10325.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Две разные VideoAgent: активное чтение и повторно используемая память"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Две разные VideoAgent: активное чтение и повторно используемая память"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Две разные VideoAgent: активное чтение и повторно используемая память"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-cai-cfd",
+    "title": "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding",
+    "shortTitle": "CFD",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.11899v1",
+      "https://aclanthology.org/2026.emnlp-main.422/"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Caption-once, Frames-on-Demand: проверять пиксели только при необходимости"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Caption-once, Frames-on-Demand: проверять пиксели только при необходимости"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Caption-once, Frames-on-Demand: проверять пиксели только при необходимости"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-xiong-memlife",
+    "title": "MemLife: Curating and Reasoning over Long-Term Egocentric Video Memories",
+    "shortTitle": "MemLife",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.40195v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "MemLife: оптимизировать нужно и автора памяти"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MemLife: оптимизировать нужно и автора памяти"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MemLife: оптимизировать нужно и автора памяти"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2018-hsieh-focus",
+    "title": "Focus: Querying Large Video Datasets with Low Latency and Low Cost",
+    "shortTitle": "Focus",
+    "year": 2018,
+    "sourceUrls": [
+      "https://www.microsoft.com/en-us/research/uploads/prod/2018/07/Focus_OSDI18.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Focus: распределить работу между загрузкой и запросом"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Focus: распределить работу между загрузкой и запросом"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Протоколы: стоимость, полнота и качество предикатов"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Focus: распределить работу между загрузкой и запросом"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2019-kang-blazeit",
+    "title": "BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics",
+    "shortTitle": "BlazeIt",
+    "year": 2019,
+    "sourceUrls": [
+      "https://www.vldb.org/pvldb/vol13/p533-kang.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "BlazeIt и TASTI: статистика и повторное использование индекса"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "BlazeIt и TASTI: статистика и повторное использование индекса"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Протоколы: стоимость, полнота и качество предикатов"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "BlazeIt и TASTI: статистика и повторное использование индекса"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2022-kang-tasti",
+    "title": "TASTI: Semantic Indexes for Machine Learning-based Queries over Unstructured Data",
+    "shortTitle": "TASTI",
+    "year": 2022,
+    "sourceUrls": [
+      "https://ddkang.github.io/papers/2022/tasti-paper.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "BlazeIt и TASTI: статистика и повторное использование индекса"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "BlazeIt и TASTI: статистика и повторное использование индекса"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Протоколы: стоимость, полнота и качество предикатов"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "BlazeIt и TASTI: статистика и повторное использование индекса"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2023-zhang-equi-vocal",
+    "title": "EQUI-VOCAL: Synthesizing Queries for Compositional Video Events from Limited User Interactions",
+    "shortTitle": "EQUI-VOCAL",
+    "year": 2023,
+    "sourceUrls": [
+      "https://www.vldb.org/pvldb/vol16/p2714-zhang.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "EQUI-VOCAL: пользователь задаёт событие примерами"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EQUI-VOCAL: пользователь задаёт событие примерами"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Протоколы: стоимость, полнота и качество предикатов"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EQUI-VOCAL: пользователь задаёт событие примерами"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2020-li-reducto",
+    "title": "Reducto: On-Camera Filtering for Resource-Efficient Real-Time Video Analytics",
+    "shortTitle": "Reducto",
+    "year": 2020,
+    "sourceUrls": [
+      "https://www.cs.princeton.edu/~ravian/publications/reducto_sigcomm20.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Reducto: экономия обработки входа"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Reducto: экономия обработки входа"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Reducto: экономия обработки входа"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-wang-directme",
+    "title": "Keep It in Mind: User-Centric Continual Spatial Intelligence Reasoning in Egocentric Video Streams",
+    "shortTitle": "DirectMe",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2606.15200v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "DirectMe, Wang et al., ICML 2026: где предмет относительно меня сейчас"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "DirectMe, Wang et al., ICML 2026: где предмет относительно меня сейчас"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "DirectMe, Wang et al., ICML 2026: где предмет относительно меня сейчас"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-anwar-remembr",
+    "title": "ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robot Navigation",
+    "shortTitle": "ReMEmbR",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2409.13682v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "ReMEmbR, Anwar et al., ICRA 2025: описание с временем и позицией камеры"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "ReMEmbR, Anwar et al., ICRA 2025: описание с временем и позицией камеры"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "ReMEmbR, Anwar et al., ICRA 2025: описание с временем и позицией камеры"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-yeh-all-angles-bench",
+    "title": "Seeing from Another Perspective: Evaluating Multi-View Understanding in MLLMs",
+    "shortTitle": "All-Angles Bench",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2504.15280v2"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "All-Angles Bench: прежде чем объединять ракурсы, проверьте соответствия"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "All-Angles Bench: прежде чем объединять ракурсы, проверьте соответствия"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "All-Angles Bench: прежде чем объединять ракурсы, проверьте соответствия"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-he-egoexobench",
+    "title": "EgoExoBench: A Benchmark for First- and Third-person View Video Understanding in MLLMs",
+    "shortTitle": "EgoExoBench",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2507.18342v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "EgoExoBench: второй ракурс и эталонное исполнение решают разные задачи"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoBench: второй ракурс и эталонное исполнение решают разные задачи"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoBench: второй ракурс и эталонное исполнение решают разные задачи"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoLearn: сопоставить демонстрацию и другое исполнение"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-huang-egoexolearn",
+    "title": "EgoExoLearn: A Dataset for Bridging Asynchronous Ego- and Exo-centric View of Procedural Activities in Real World",
+    "shortTitle": "EgoExoLearn",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2403.16182v3"
+    ],
+    "chapters": [
+      "observations",
+      "adjacent"
+    ],
+    "headingTitles": [
+      "EgoExoLearn: сопоставить демонстрацию и другое исполнение"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoLearn: сопоставить демонстрацию и другое исполнение"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoLearn: сопоставить демонстрацию и другое исполнение"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Who’s Better: раннее ранжирование исполнения по парам"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2022-elfeki-multi-ego",
+    "title": "Multi-Stream Dynamic Video Summarization",
+    "shortTitle": "Multi-Ego / Multi-DPP",
+    "year": 2022,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/WACV2022/papers/Elfeki_Multi-Stream_Dynamic_Video_Summarization_WACV_2022_paper.pdf"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "Multi-Ego / Multi-DPP: ранний выбор событий и ракурсов"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Multi-Ego / Multi-DPP: ранний выбор событий и ракурсов"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "Multi-Ego / Multi-DPP: ранний выбор событий и ракурсов"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2022-grauman-ego4d",
+    "title": "Ego4D: Around the World in 3,000 Hours of Egocentric Video",
+    "shortTitle": "Ego4D",
+    "year": 2022,
+    "sourceUrls": [
+      "https://www.cs.utexas.edu/~grauman/papers/ego4d-cvpr2022.pdf",
+      "https://openaccess.thecvf.com/content/CVPR2022/html/Grauman_Ego4D_Around_the_World_in_3000_Hours_of_Egocentric_Video_CVPR_2022_paper.html"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [],
+    "locations": [],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Базовые datasets: что именно дают большие коллекции"
+      }
+    ],
+    "coverage": "bibliography"
+  },
+  {
+    "slug": "2022-sener-assembly101",
+    "title": "Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities",
+    "shortTitle": "Assembly101",
+    "year": 2022,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2203.14712v2",
+      "https://arxiv.org/abs/2203.14712v2"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [],
+    "locations": [],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Базовые datasets: что именно дают большие коллекции"
+      }
+    ],
+    "coverage": "bibliography"
+  },
+  {
+    "slug": "2024-grauman-ego-exo4d",
+    "title": "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives",
+    "shortTitle": "Ego-Exo4D",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2311.18259v4",
+      "https://arxiv.org/abs/2311.18259v4"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [],
+    "locations": [],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Базовые datasets: что именно дают большие коллекции"
+      }
+    ],
+    "coverage": "bibliography"
+  },
+  {
+    "slug": "2026-kim-ma-egoqa",
+    "title": "MA-EgoQA: Question Answering over Egocentric Videos from Multiple Embodied Agents",
+    "shortTitle": "MA-EgoQA",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2603.09827v2",
+      "https://arxiv.org/abs/2603.09827v2"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "MA-EgoQA: вопрос к общей истории нескольких участников",
+      "EgoMAS: общая память нескольких работников"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "MA-EgoQA: вопрос к общей истории нескольких участников"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoMAS: общая память нескольких работников"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "MA-EgoQA: вопрос к общей истории нескольких участников"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoMAS: общая память нескольких работников"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-xiao-myego",
+    "title": "Ego-Grounding for Personalized Question-Answering in Egocentric Videos",
+    "shortTitle": "MyEgo / Ego-Grounding",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2604.01966v1",
+      "https://arxiv.org/abs/2604.01966v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "MyEgo — сначала установите, чьё это действие"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "MyEgo — сначала установите, чьё это действие"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "MyEgo — сначала установите, чьё это действие"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-liu-egoexomem",
+    "title": "EgoExoMem: Cross-View Memory Reasoning over Synchronized Egocentric and Exocentric Videos",
+    "shortTitle": "EgoExoMem / E²-Select",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2605.18734v2",
+      "https://arxiv.org/abs/2605.18734v2"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "EgoExoMem: свидетельства из дополняющих ракурсов",
+      "E²-Select: выбрать дополняющий ракурс"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoMem: свидетельства из дополняющих ракурсов"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "E²-Select: выбрать дополняющий ракурс"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoMem: свидетельства из дополняющих ракурсов"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "E²-Select: выбрать дополняющий ракурс"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-liu-visualsync",
+    "title": "VisualSync: Multi-Camera Synchronization via Cross-View Object Motion",
+    "shortTitle": "VisualSync",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2512.02017v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "VisualSync: общая временная ось до объединения событий"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "VisualSync: общая временная ось до объединения событий"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "VisualSync: общая временная ось до объединения событий"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-long-m3-agent",
+    "title": "Seeing, Listening, Remembering, and Reasoning: A Multimodal Agent with Long-Term Memory",
+    "shortTitle": "M3-Agent",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2508.09736v4",
+      "https://arxiv.org/abs/2508.09736v4"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "M3-Agent — ключевая работа для связи голоса, лица, событий и знаний"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "M3-Agent — ключевая работа для связи голоса, лица, событий и знаний"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "M3-Agent — ключевая работа для связи голоса, лица, событий и знаний"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-ren-geb",
+    "title": "Beyond the Timeline: Augmenting Long-Video Memory with Grounded Entity Biographies",
+    "shortTitle": "GEB / Grounded Entity Biographies",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.38155v1",
+      "https://arxiv.org/abs/2609.38155v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "GEB — ключевая идея: биография физического экземпляра"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "GEB — ключевая идея: биография физического экземпляра"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "GEB — ключевая идея: биография физического экземпляра"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-plizzari-osnom",
+    "title": "Spatial Cognition from Egocentric Video: Out of Sight, Not Out of Mind",
+    "shortTitle": "OSNOM",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2404.05072v2",
+      "https://arxiv.org/abs/2404.05072v2"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "OSNOM — объект существует и после поворота головы"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "OSNOM — объект существует и после поворота головы"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "OSNOM — объект существует и после поворота головы"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-chaudhari-ledger",
+    "title": "Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos",
+    "shortTitle": "LEDGER — Never Look Back",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2610.10538v1",
+      "https://arxiv.org/abs/2610.10538v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "LEDGER — ключевая работа для памяти координат и наблюдавшихся перемещений"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "LEDGER — ключевая работа для памяти координат и наблюдавшихся перемещений"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "LEDGER — ключевая работа для памяти координат и наблюдавшихся перемещений"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-steenbergen-hoist-case-identifiers",
+    "title": "Surrogate Case Identifier Rules for Construction Site Hoists",
+    "shortTitle": "Hoist surrogate case identifiers",
+    "year": 2026,
+    "sourceUrls": [
+      "https://research.utwente.nl/en/publications/surrogate-case-identifier-rules-for-construction-site-hoists/"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "Объединение наблюдений в экземпляры работ остаётся самостоятельной задачей"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Объединение наблюдений в экземпляры работ остаётся самостоятельной задачей"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Объединение наблюдений в экземпляры работ остаётся самостоятельной задачей"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-chen-gelm",
+    "title": "Grounded Multi-Hop VideoQA in Long-Form Egocentric Videos",
+    "shortTitle": "GeLM / MultiHop-EgoQA",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2408.14469v1"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "MultiHop-EgoQA, AAAI 2025: несколько утверждений и несколько интервалов",
+      "GeLM, Chen et al., AAAI 2025: связать части ответа с evidence intervals"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "MultiHop-EgoQA, AAAI 2025: несколько утверждений и несколько интервалов"
+      },
+      {
+        "chapter": "evidence",
+        "headingTitle": "GeLM, Chen et al., AAAI 2025: связать части ответа с evidence intervals"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "MultiHop-EgoQA, AAAI 2025: несколько утверждений и несколько интервалов"
+      },
+      {
+        "chapter": "evidence",
+        "headingTitle": "GeLM, Chen et al., AAAI 2025: связать части ответа с evidence intervals"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-wang-s-ember",
+    "title": "S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval",
+    "shortTitle": "S-EMBER",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2607.02689v2"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "S-EMBER, 2026: совместная оценка ответа и времени"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "S-EMBER, 2026: совместная оценка ответа и времени"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "S-EMBER, 2026: совместная оценка ответа и времени"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-kriz-multivent-raw",
+    "title": "MultiVENT-Raw: A Benchmark for Retrieval and Reasoning over Raw Videos",
+    "shortTitle": "MultiVENT-Raw",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/html/2609.28437v1"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "MultiVENT-Raw: retrieval и доказательность отчёта расходятся"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "MultiVENT-Raw: retrieval и доказательность отчёта расходятся"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "MultiVENT-Raw: retrieval и доказательность отчёта расходятся"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-yoon-uvqa",
+    "title": "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+    "shortTitle": "UVQA",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2507.04976v1"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "UVQA: ответимость при ложной предпосылке",
+      "UVQA: обучение отказу при ложной предпосылке"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "UVQA: ответимость при ложной предпосылке"
+      },
+      {
+        "chapter": "evidence",
+        "headingTitle": "UVQA: обучение отказу при ложной предпосылке"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "UVQA: ответимость при ложной предпосылке"
+      },
+      {
+        "chapter": "evidence",
+        "headingTitle": "UVQA: обучение отказу при ложной предпосылке"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-pang-egoprobe",
+    "title": "EgoProbe: Benchmarking Long-Range and Exact Memory in Streaming Egocentric Videos",
+    "shortTitle": "EgoProbe",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2610.17128"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "SuperMemoryVQA, EGOSTREAM и EgoProbe: не сводить надёжность к answer accuracy"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM и EgoProbe: не сводить надёжность к answer accuracy"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM и EgoProbe: не сводить надёжность к answer accuracy"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-forte-egostream",
+    "title": "EGOSTREAM: A Diagnostic Benchmark for Streaming Episodic Memory in Egocentric Vision",
+    "shortTitle": "EGOSTREAM",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2605.31557"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "SuperMemoryVQA, EGOSTREAM и EgoProbe: не сводить надёжность к answer accuracy"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM и EgoProbe: не сводить надёжность к answer accuracy"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM и EgoProbe: не сводить надёжность к answer accuracy"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-alam-supermemory-vqa",
+    "title": "SuperMemory-VQA: An Egocentric Visual Question-Answering Benchmark for Long-Horizon Memory",
+    "shortTitle": "SuperMemory-VQA",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2606.00825v1"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "SuperMemoryVQA, EGOSTREAM и EgoProbe: не сводить надёжность к answer accuracy"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM и EgoProbe: не сводить надёжность к answer accuracy"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM и EgoProbe: не сводить надёжность к answer accuracy"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-zhou-temporal-abstention",
+    "title": "When Silence Is Golden: Can LLMs Learn to Abstain in Temporal QA and Beyond?",
+    "shortTitle": "When Silence Is Golden",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2602.04755v2"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "Когда отвечать: обучение отказу и проверка самого основания ответа"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "Когда отвечать: обучение отказу и проверка самого основания ответа"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "Когда отвечать: обучение отказу и проверка самого основания ответа"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-ortiz-abstention-knobs",
+    "title": "Explicit Abstention Knobs for Predictable Reliability in Video Question Answering",
+    "shortTitle": "Explicit Abstention Knobs",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2601.00138v2"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "Когда отвечать: обучение отказу и проверка самого основания ответа"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "Когда отвечать: обучение отказу и проверка самого основания ответа"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "Когда отвечать: обучение отказу и проверка самого основания ответа"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2022-soucek-look-for-change",
+    "title": "Look for the Change: Learning Object States and State-Modifying Actions from Untrimmed Web Videos",
+    "shortTitle": "Look for the Change",
+    "year": 2022,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2203.11637v1"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "Look for the Change, Souček et al., CVPR 2022: начальное состояние → действие → конечное состояние"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Look for the Change, Souček et al., CVPR 2022: начальное состояние → действие → конечное состояние"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "Look for the Change, Souček et al., CVPR 2022: начальное состояние → действие → конечное состояние"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-xue-vidosc",
+    "title": "Learning Object State Changes in Videos: An Open-World Perspective",
+    "shortTitle": "VidOSC",
+    "year": 2024,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Xue_Learning_Object_State_Changes_in_Videos_An_Open-World_Perspective_CVPR_2024_paper.pdf"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "VidOSC, Xue et al., CVPR 2024: перенести переход состояния на новый объект"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "VidOSC, Xue et al., CVPR 2024: перенести переход состояния на новый объект"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "VidOSC, Xue et al., CVPR 2024: перенести переход состояния на новый объект"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-zameni-moscato",
+    "title": "MOSCATO: Predicting Multiple Object State Change through Actions",
+    "shortTitle": "MOSCATO",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/ICCV2025/papers/Zameni_MOSCATO_Predicting_Multiple_Object_State_Change_Through_Actions_ICCV_2025_paper.pdf"
+    ],
+    "chapters": [
+      "states",
+      "procedures"
+    ],
+    "headingTitles": [
+      "MOSCATO, Zameni et al., ICCV 2025: согласовать действия и состояния нескольких объектов"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "MOSCATO, Zameni et al., ICCV 2025: согласовать действия и состояния нескольких объектов"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "MOSCATO, Zameni et al., ICCV 2025: согласовать действия и состояния нескольких объектов"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-schoonbeek-storm-psr",
+    "title": "Learning to Recognize Correctly Completed Procedure Steps in Egocentric Assembly Videos through Spatio-Temporal Modeling",
+    "shortTitle": "STORM-PSR",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2510.12385"
+    ],
+    "chapters": [
+      "states",
+      "procedures"
+    ],
+    "headingTitles": [
+      "STORM-PSR, Schoonbeek et al., CVIU 2025: отдельно подтвердить завершённый шаг"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "STORM-PSR, Schoonbeek et al., CVIU 2025: отдельно подтвердить завершённый шаг"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "STORM-PSR, Schoonbeek et al., CVIU 2025: отдельно подтвердить завершённый шаг"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-wen-provia",
+    "title": "PROVIA: Procedure State Tracking for Online Mistake Detection in Egocentric Videos",
+    "shortTitle": "PROVIA",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.20638v1",
+      "https://arxiv.org/abs/2609.20638v1"
+    ],
+    "chapters": [
+      "states",
+      "procedures"
+    ],
+    "headingTitles": [
+      "PROVIA, 2026: ошибочный шаг не должен автоматически продвигать процедуру"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "PROVIA, 2026: ошибочный шаг не должен автоматически продвигать процедуру"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "PROVIA, 2026: ошибочный шаг не должен автоматически продвигать процедуру"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-mandikal-spoc",
+    "title": "SPOC: Spatially-Progressing Object State Change Segmentation in Video",
+    "shortTitle": "SPOC",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2503.11953v2"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "SPOC, Mandikal et al., WACV 2026: локализовать оставшуюся работу"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "SPOC, Mandikal et al., WACV 2026: локализовать оставшуюся работу"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "SPOC, Mandikal et al., WACV 2026: локализовать оставшуюся работу"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-perrett-hd-epic",
+    "title": "HD-EPIC: A Highly-Detailed Egocentric Video Dataset",
+    "shortTitle": "HD-EPIC",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Perrett_HD-EPIC_A_Highly-Detailed_Egocentric_Video_Dataset_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "HD-EPIC: подробная разметка состояния и пространственной истории"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "HD-EPIC: подробная разметка состояния и пространственной истории"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "HD-EPIC: подробная разметка состояния и пространственной истории"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-guo-procobject",
+    "title": "Benchmarking and Learning Object-Centric Procedural Understanding in Instructional Videos",
+    "shortTitle": "ProcObject-10K",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2512.03479v3"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "ProcObject-10K: состояние вместе с временным свидетельством",
+      "ProcObject-10K: объектная супервизия ответа и grounding"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "ProcObject-10K: состояние вместе с временным свидетельством"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "ProcObject-10K: объектная супервизия ответа и grounding"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "ProcObject-10K: состояние вместе с временным свидетельством"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "ProcObject-10K: объектная супервизия ответа и grounding"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-lehman-statediffnet",
+    "title": "Find the Assembly Mistakes: Error Segmentation for Industrial Applications",
+    "shortTitle": "StateDiffNet",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2408.12945v1"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "StateDiffNet: сравнить сборку с правильным эталоном"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "StateDiffNet: сравнить сборку с правильным эталоном"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "StateDiffNet: сравнить сборку с правильным эталоном"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-yang-egotsr",
+    "title": "EgoTSR++: Egocentric Spatiotemporal Reasoning for Task Progress Understanding",
+    "shortTitle": "EgoTSR++",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.31751v1"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "AEM и EgoTSR++: эффект действия и движение к цели"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "AEM и EgoTSR++: эффект действия и движение к цели"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "AEM и EgoTSR++: эффект действия и движение к цели"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-nguyen-oscar",
+    "title": "OSCaR: Object State Captioning and State Change Representation",
+    "shortTitle": "OSCaR",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2402.17128v4"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "OSCaR, Nguyen et al., Findings of NAACL 2024: описания изменения состояния как обучающие данные"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "OSCaR, Nguyen et al., Findings of NAACL 2024: описания изменения состояния как обучающие данные"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "OSCaR, Nguyen et al., Findings of NAACL 2024: описания изменения состояния как обучающие данные"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-sun-tubeletgraph",
+    "title": "Tracking and Understanding Object Transformations",
+    "shortTitle": "TubeletGraph",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2511.04678v2"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "TubeletGraph, Sun et al., NeurIPS 2025: один объект может превратиться в несколько"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "TubeletGraph, Sun et al., NeurIPS 2025: один объект может превратиться в несколько"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "TubeletGraph, Sun et al., NeurIPS 2025: один объект может превратиться в несколько"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-liang-robometer",
+    "title": "Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory Comparisons",
+    "shortTitle": "Robometer",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2603.02115v2"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "RoboMeter, Liang et al., 2026 preprint: прогресс и отдельная проверка успеха"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "RoboMeter, Liang et al., 2026 preprint: прогресс и отдельная проверка успеха"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "RoboMeter, Liang et al., 2026 preprint: прогресс и отдельная проверка успеха"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-guo-aem",
+    "title": "Procedural Mistake Detection via Action Effect Modeling",
+    "shortTitle": "AEM",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2512.03474v2"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "AEM и EgoTSR++: эффект действия и движение к цели"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "AEM и EgoTSR++: эффект действия и движение к цели"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "AEM и EgoTSR++: эффект действия и движение к цели"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-lee-egoper",
+    "title": "Error Detection in Egocentric Procedural Task Videos",
+    "shortTitle": "EgoPER / EgoPED",
+    "year": 2024,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_Error_Detection_in_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "EgoPED: как искать отклонения, имея правильные примеры"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "EgoPED: как искать отклонения, имея правильные примеры"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "EgoPED: как искать отклонения, имея правильные примеры"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-seminara-tgml",
+    "title": "Task Graph Maximum Likelihood Estimation for Procedural Activity Understanding in Egocentric Videos",
+    "shortTitle": "TGML",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2502.17753v2"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "DTGL / TGML: процедура как граф зависимостей"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "DTGL / TGML: процедура как граф зависимостей"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "DTGL / TGML: процедура как граф зависимостей"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-majumder-mistexit",
+    "title": "MistExit: Learning to Exit for Early Mistake Detection in Procedural Videos",
+    "shortTitle": "MistExit",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2603.14252v1"
+    ],
+    "chapters": [
+      "procedures",
+      "streaming"
+    ],
+    "headingTitles": [
+      "MistExit: наблюдать дальше или принять решение"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "MistExit: наблюдать дальше или принять решение"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "MistExit: наблюдать дальше или принять решение"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-patsch-mistsense",
+    "title": "MistSense: Versatile Online Detection of Procedural and Execution Mistakes",
+    "shortTitle": "MistSense",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/ICCV2025/papers/Patsch_MistSense_Versatile_Online_Detection_of_Procedural_and_Execution_Mistakes_ICCV_2025_paper.pdf",
+      "https://openaccess.thecvf.com/content/ICCV2025/html/Patsch_MistSense_Versatile_Online_Detection_of_Procedural_and_Execution_Mistakes_ICCV_2025_paper.html"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "MistSense, ICCV 2025: отдельно обнаружить ошибку и объяснить её"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "MistSense, ICCV 2025: отдельно обнаружить ошибку и объяснить её"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "MistSense, ICCV 2025: отдельно обнаружить ошибку и объяснить её"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-chavan-indego",
+    "title": "IndEgo: A Dataset of Industrial Scenarios and Collaborative Work for Egocentric Assistants",
+    "shortTitle": "IndEgo",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2511.19684v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndEgo, NeurIPS 2025: промежуточный тест между кухней и стройкой"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgo, NeurIPS 2025: промежуточный тест между кухней и стройкой"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgo, NeurIPS 2025: промежуточный тест между кухней и стройкой"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-wen-impact",
+    "title": "IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly",
+    "shortTitle": "IMPACT",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2604.10409v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IMPACT: ошибка, попытка исправления и восстановленное состояние"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IMPACT: ошибка, попытка исправления и восстановленное состояние"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "IMPACT: ошибка, попытка исправления и восстановленное состояние"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-haneji-egooops",
+    "title": "EgoOops: A Dataset for Mistake Action Detection from Egocentric Videos referring to Procedural Texts",
+    "shortTitle": "EgoOops",
+    "year": 2025,
+    "sourceUrls": [
+      "https://www.lsta.media.kyoto-u.ac.jp/mori/research/public/haneji-SAUAFG2025.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "StepFormer++: ошибка относительно текстовой инструкции"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "StepFormer++: ошибка относительно текстовой инструкции"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Диагностические тесты инструкции и мелких манипуляций"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "StepFormer++: ошибка относительно текстовой инструкции"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-li-egoerrorvqa",
+    "title": "EgoErrorVQA: Assess Egocentric Comprehension Capabilities through Procedural Errors for Ego-Agentic AI",
+    "shortTitle": "EgoErrorVQA",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.24134v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "Ego-ADR: процедура, наблюдение и диагностический вывод"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Ego-ADR: процедура, наблюдение и диагностический вывод"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Диагностические тесты инструкции и мелких манипуляций"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Ego-ADR: процедура, наблюдение и диагностический вывод"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-sasaki-egoindassembly",
+    "title": "EgoIndAssembly: Diagnosing Fine-Grained Temporal Hand Reasoning in Vision–Language Models for Skilled Assembly",
+    "shortTitle": "EgoIndAssembly",
+    "year": 2026,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/papers/Sasaki_EgoIndAssembly_Diagnosing_Fine-Grained_Temporal_Hand_Reasoning_in_Vision-Language_Models_for_CVPRW_2026_paper.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "Progressive Procedure Grounding: различение соседних манипуляций"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Progressive Procedure Grounding: различение соседних манипуляций"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Диагностические тесты инструкции и мелких манипуляций"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Progressive Procedure Grounding: различение соседних манипуляций"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-chavan-indego-assistant",
+    "title": "AI-based worker guidance in assembly and disassembly operations using multimodal ego/exo-centric data capture and structured task knowledge",
+    "shortTitle": "IndEgo Assistant",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.22617v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndEgoAssistant, PRISM и MATT: структура процедуры не равна её соблюдению"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM и MATT: структура процедуры не равна её соблюдению"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM и MATT: структура процедуры не равна её соблюдению"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-loginova-prism",
+    "title": "Through a PRISM, Clearly: Step-Sequence Reasoning for Mistake Recognition in Procedural Videos",
+    "shortTitle": "PRISM",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2610.31117v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndEgoAssistant, PRISM и MATT: структура процедуры не равна её соблюдению"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM и MATT: структура процедуры не равна её соблюдению"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM и MATT: структура процедуры не равна её соблюдению"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-li-matt",
+    "title": "Mistake Attribution: Fine-Grained Mistake Understanding in Egocentric Videos",
+    "shortTitle": "MATT",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2511.20525v2"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndEgoAssistant, PRISM и MATT: структура процедуры не равна её соблюдению"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM и MATT: структура процедуры не равна её соблюдению"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM и MATT: структура процедуры не равна её соблюдению"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-huang-amnar",
+    "title": "Modeling Multiple Normal Action Representations for Error Detection in Procedural Tasks",
+    "shortTitle": "AMNAR",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Huang_Modeling_Multiple_Normal_Action_Representations_for_Error_Detection_in_Procedural_CVPR_2025_paper.pdf",
+      "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Huang_Modeling_Multiple_Normal_CVPR_2025_supplemental.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "AMNAR, Huang et al., CVPR 2025: правильное продолжение не обязано быть единственным"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "AMNAR, Huang et al., CVPR 2025: правильное продолжение не обязано быть единственным"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "AMNAR, Huang et al., CVPR 2025: правильное продолжение не обязано быть единственным"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-gupta-vidparse",
+    "title": "VidParse: Online Parsing of Egocentric Procedures Like a Pro",
+    "shortTitle": "VidParse",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.27562v2"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "VidParse, Gupta et al., ECCV 2026: распознать исполнение до проверки ошибок"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "VidParse, Gupta et al., ECCV 2026: распознать исполнение до проверки ошибок"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "VidParse, Gupta et al., ECCV 2026: распознать исполнение до проверки ошибок"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2022-jia-egotaskqa",
+    "title": "EgoTaskQA: Understanding Human Tasks in Egocentric Videos",
+    "shortTitle": "EgoTaskQA",
+    "year": 2022,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2210.03929v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "EgoTaskQA, Jia et al., NeurIPS 2022: вопросы о зависимостях внутри процедуры"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "EgoTaskQA, Jia et al., NeurIPS 2022: вопросы о зависимостях внутри процедуры"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "EgoTaskQA, Jia et al., NeurIPS 2022: вопросы о зависимостях внутри процедуры"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-schoonbeek-industreal",
+    "title": "IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting",
+    "shortTitle": "IndustReal",
+    "year": 2024,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/WACV2024/papers/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndustReal, HoloAssist и CaptainCook4D"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist и CaptainCook4D"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist и CaptainCook4D"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2023-wang-holoassist",
+    "title": "HoloAssist: an Egocentric Human Interaction Dataset for Interactive AI Assistants in the Real World",
+    "shortTitle": "HoloAssist",
+    "year": 2023,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_HoloAssist_an_Egocentric_Human_Interaction_Dataset_for_Interactive_AI_Assistants_ICCV_2023_paper.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndustReal, HoloAssist и CaptainCook4D"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist и CaptainCook4D"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist и CaptainCook4D"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-peddi-captaincook4d",
+    "title": "CaptainCook4D: A Dataset for Understanding Errors in Procedural Activities",
+    "shortTitle": "CaptainCook4D",
+    "year": 2024,
+    "sourceUrls": [
+      "https://proceedings.neurips.cc/paper_files/paper/2024/file/f4a04396c2ed1342a5d8d05e94cb6101-Paper-Datasets_and_Benchmarks_Track.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndustReal, HoloAssist и CaptainCook4D"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist и CaptainCook4D"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist и CaptainCook4D"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-seminara-dtgl",
+    "title": "Differentiable Task Graph Learning",
+    "shortTitle": "DTGL",
+    "year": 2024,
+    "sourceUrls": [
+      "https://fpv-iplab.github.io/Differentiable-Task-Graph-Learning/"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "DTGL / TGML: процедура как граф зависимостей"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "DTGL / TGML: процедура как граф зависимостей"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "DTGL / TGML: процедура как граф зависимостей"
+      }
+    ],
+    "coverage": "historical-reference"
+  },
+  {
+    "slug": "2026-zeng-onestreamer",
+    "title": "OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction",
+    "shortTitle": "OneStreamer",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2610.01762v1",
+      "https://arxiv.org/abs/2610.01762v1"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "OneStreamer, 2026: свежие visual tokens плюс записанная история"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "OneStreamer, 2026: свежие visual tokens плюс записанная история"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "OneStreamer, 2026: свежие visual tokens плюс записанная история"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-di-rekv",
+    "title": "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+    "shortTitle": "ReKV",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2503.00540v1"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "ReKV: повторно использовать внутренние представления"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "ReKV: повторно использовать внутренние представления"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "ReKV: повторно использовать внутренние представления"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-liao-proactegomem",
+    "title": "ProactEgoMem: Benchmarking Proactive Memory in Streaming Egocentric Video",
+    "shortTitle": "ProactEgoMem",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2610.30089v2",
+      "https://arxiv.org/abs/2610.30089v2"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "ProactEgoMem, 2026: качество памяти начинается с момента её записи"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "ProactEgoMem, 2026: качество памяти начинается с момента её записи"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "ProactEgoMem, 2026: качество памяти начинается с момента её записи"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-zhang-streamarena",
+    "title": "StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding",
+    "shortTitle": "StreamArena",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.05703v1"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "StreamArena и Qualcomm Interactive Cooking: протокол взаимодействия",
+      "StreamMind: вынести тяжёлую память из быстрого ответа"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamArena и Qualcomm Interactive Cooking: протокол взаимодействия"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamMind: вынести тяжёлую память из быстрого ответа"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamArena и Qualcomm Interactive Cooking: протокол взаимодействия"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamMind: вынести тяжёлую память из быстрого ответа"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-bhattacharyya-livemamba",
+    "title": "Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?",
+    "shortTitle": "LiveMamba",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2511.21998v2"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "StreamArena и Qualcomm Interactive Cooking: протокол взаимодействия",
+      "LiveMamba: завершение шага, ошибка и следующий шаг"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamArena и Qualcomm Interactive Cooking: протокол взаимодействия"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "LiveMamba: завершение шага, ошибка и следующий шаг"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamArena и Qualcomm Interactive Cooking: протокол взаимодействия"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "LiveMamba: завершение шага, ошибка и следующий шаг"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-liu-guideme",
+    "title": "GuideMe: Multi-Domain Task Guidance and Intervention in Streaming Video",
+    "shortTitle": "GuideMe",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2607.02991v1"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "GuideMe: четыре разных вида помощи"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "GuideMe: четыре разных вида помощи"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "GuideMe: четыре разных вида помощи"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-panpatil-egosafetybench",
+    "title": "EgoSafetyBench: A Diagnostic Egocentric Video Benchmark for Evaluating Embodied VLMs as Runtime Safety Guards",
+    "shortTitle": "EgoSafetyBench",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2607.00218v2"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "EgoSafetyBench: тревога относительно появления свидетельства"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "EgoSafetyBench: тревога относительно появления свидетельства"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "EgoSafetyBench: тревога относительно появления свидетельства"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-zeng-streamforest",
+    "title": "StreamForest: Efficient Online Video Understanding with Persistent Event Memory",
+    "shortTitle": "StreamForest",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2509.24871v1"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "StreamForest: подробное окно и сжатая история"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamForest: подробное окно и сжатая история"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamForest: подробное окно и сжатая история"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2009-golparvar-fard-d4ar",
+    "title": "D4AR – A 4-Dimensional Augmented Reality Model for Automating Construction Progress Monitoring Data Collection, Processing and Communication",
+    "shortTitle": "D4AR",
+    "year": 2009,
+    "sourceUrls": [
+      "https://www.itcon.org/papers/2009_13.content.06965.pdf",
+      "https://www.itcon.org/paper/2009/13"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "D4AR, 2009: связать as-built и as-planned"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "D4AR, 2009: связать as-built и as-planned"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "D4AR, 2009: связать as-built и as-planned"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-hsieh-ai-bim-progress",
+    "title": "Automated construction progress monitoring and control through AI-based image recognition and BIM integration",
+    "shortTitle": "AI+BIM construction progress",
+    "year": 2026,
+    "sourceUrls": [
+      "https://doi.org/10.1016/j.autcon.2026.106783"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "AI + BIM: устойчивый идентификатор элемента и цена наблюдаемости"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "AI + BIM: устойчивый идентификатор элемента и цена наблюдаемости"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "AI + BIM: устойчивый идентификатор элемента и цена наблюдаемости"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-isaac-sensing-scheduling",
+    "title": "From Sensing to Scheduling: Deviation-Based Framework for Sensor-Aware Progress Monitoring and Schedule Control",
+    "shortTitle": "From Sensing to Scheduling",
+    "year": 2026,
+    "sourceUrls": [
+      "https://www.iaarc.org/publications/fulltext/ISARC2026_1105.pdf"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "From Sensing to Scheduling: видимая установка и принятая работа"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "From Sensing to Scheduling: видимая установка и принятая работа"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "From Sensing to Scheduling: видимая установка и принятая работа"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-qiu-graphrag-compliance",
+    "title": "A GraphRAG-driven multi-agent framework for worker-centric construction process compliance supervision via egocentric video",
+    "shortTitle": "GraphRAG construction compliance",
+    "year": 2026,
+    "sourceUrls": [
+      "https://www.sciencedirect.com/science/article/abs/pii/S1474034626003344"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "GraphRAG для construction compliance: требования отдельно от наблюдений"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "GraphRAG для construction compliance: требования отдельно от наблюдений"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "GraphRAG для construction compliance: требования отдельно от наблюдений"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-zhang-constructai",
+    "title": "ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems",
+    "shortTitle": "ConstructAI",
+    "year": 2026,
+    "sourceUrls": [
+      "https://ojs.aaai.org/index.php/AAAI/article/download/41452/45413"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "ConstructAI, AAAI 2026: issue lifecycle с существенными оговорками"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "ConstructAI, AAAI 2026: issue lifecycle с существенными оговорками"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "ConstructAI, AAAI 2026: issue lifecycle с существенными оговорками"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-guo-egoconqs",
+    "title": "Egocentric-video-based construction quality supervision (EgoConQS): Application of automatic key activity queries",
+    "shortTitle": "EgoConQS",
+    "year": 2025,
+    "sourceUrls": [
+      "https://doi.org/10.1016/j.autcon.2024.105933"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "EgoConQS, 2025: найти ключевую строительную операцию для проверки"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "EgoConQS, 2025: найти ключевую строительную операцию для проверки"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "EgoConQS, 2025: найти ключевую строительную операцию для проверки"
+      }
+    ],
+    "coverage": "discussion",
+    "sourceStatus": "full-text-unavailable"
+  },
+  {
+    "slug": "2025-liu-egosafe",
+    "title": "Egocentric camera-based method for detecting static hazardous objects on construction sites",
+    "shortTitle": "EgoSafe",
+    "year": 2025,
+    "sourceUrls": [
+      "https://doi.org/10.1016/j.autcon.2025.106048",
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4936193"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "EgoSafe, 2025: узкий детектор наблюдаемых опасных объектов"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "EgoSafe, 2025: узкий детектор наблюдаемых опасных объектов"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "EgoSafe, 2025: узкий детектор наблюдаемых опасных объектов"
+      }
+    ],
+    "coverage": "discussion",
+    "sourceStatus": "full-text-unavailable"
+  },
+  {
+    "slug": "2018-doughty-skill-ranking",
+    "title": "Who’s Better? Who’s Best? Pairwise Deep Ranking for Skill Determination",
+    "shortTitle": "Who’s Better? Who’s Best?",
+    "year": 2018,
+    "sourceUrls": [
+      "https://dimadamen.github.io/Skill/whos_better_whos_best.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "Who’s Better: раннее ранжирование исполнения по парам"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Who’s Better: раннее ранжирование исполнения по парам"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Who’s Better: раннее ранжирование исполнения по парам"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-braun-skillspotter",
+    "title": "SkillSpotter: Pose-Aware Multi-View Skilled Action Detection and Grading in Ego-Exo Videos",
+    "shortTitle": "SkillSpotter",
+    "year": 2026,
+    "sourceUrls": [
+      "https://static.siplab.org/papers/eccv2026-skillspotter.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "SkillSpotter: найти момент для оценки и отдельно оценить исполнение"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "SkillSpotter: найти момент для оценки и отдельно оценить исполнение"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "SkillSpotter: найти момент для оценки и отдельно оценить исполнение"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-ashutosh-expertaf",
+    "title": "ExpertAF: Expert Actionable Feedback from Video",
+    "shortTitle": "ExpertAF",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Ashutosh_ExpertAF_Expert_Actionable_Feedback_from_Video_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "ExpertAF: объяснение вместе с примером исправления"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "ExpertAF: объяснение вместе с примером исправления"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "ExpertAF: объяснение вместе с примером исправления"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-mazzamuto-proskill",
+    "title": "ProSkill: Segment-Level Skill Assessment in Procedural Videos",
+    "shortTitle": "ProSkill",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2601.20661v1"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "ProSkill: сравнительная разметка отдельных шагов"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "ProSkill: сравнительная разметка отдельных шагов"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "ProSkill: сравнительная разметка отдельных шагов"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-wu-ovvad",
+    "title": "Open-Vocabulary Video Anomaly Detection",
+    "shortTitle": "OVVAD",
+    "year": 2024,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Wu_Open-Vocabulary_Video_Anomaly_Detection_CVPR_2024_paper.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "OVVAD и Anomize: категории аномалий"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "OVVAD и Anomize: категории аномалий"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "OVVAD и Anomize: категории аномалий"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-li-anomize",
+    "title": "Anomize: Better Open Vocabulary Video Anomaly Detection",
+    "shortTitle": "Anomize",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Li_Anomize_Better_Open_Vocabulary_Video_Anomaly_Detection_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "OVVAD и Anomize: категории аномалий"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "OVVAD и Anomize: категории аномалий"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "OVVAD и Anomize: категории аномалий"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-ye-vera",
+    "title": "VERA: Explainable Video Anomaly Detection via Verbalized Learning of Vision-Language Models",
+    "shortTitle": "VERA",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Ye_VERA_Explainable_Video_Anomaly_Detection_via_Verbalized_Learning_of_Vision-Language_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "VERA: обучаемые диагностические вопросы"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "VERA: обучаемые диагностические вопросы"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Бенчмарки и протоколы оценки"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "VERA: обучаемые диагностические вопросы"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-guo-multimodal-memory-survey",
+    "title": "Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory",
+    "shortTitle": "Multimodal Agent Memory Survey",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2610.19366"
+    ],
+    "chapters": [
+      "reading"
+    ],
+    "headingTitles": [
+      "Обзор мультимодальной памяти: представление и политика управления"
+    ],
+    "locations": [
+      {
+        "chapter": "reading",
+        "headingTitle": "Обзор мультимодальной памяти: представление и политика управления"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "reading",
+        "headingTitle": "Обзор мультимодальной памяти: представление и политика управления"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-bacharidis-mistake-survey",
+    "title": "Vision-Based Mistake Analysis in Procedural Activities: A Review of Advances and Challenges",
+    "shortTitle": "Vision-Based Mistake Analysis (survey)",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2510.19292v2"
+    ],
+    "chapters": [
+      "reading"
+    ],
+    "headingTitles": [
+      "Обзор ошибок в процедурах: задача, разметка и момент решения"
+    ],
+    "locations": [
+      {
+        "chapter": "reading",
+        "headingTitle": "Обзор ошибок в процедурах: задача, разметка и момент решения"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "reading",
+        "headingTitle": "Обзор ошибок в процедурах: задача, разметка и момент решения"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2023-mangalam-egoschema",
+    "title": "EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding",
+    "shortTitle": "EgoSchema",
+    "year": 2023,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2308.09126v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Бенчмарки чтения выбранного видео"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки чтения выбранного видео"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Бенчмарки чтения выбранного видео"
+      }
+    ],
+    "coverage": "discussion"
+  }
+]

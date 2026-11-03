@@ -1,0 +1,7 @@
+---
+const { compact = false } = Astro.props;
+---
+<a href="/" class:list={['brand', { compact }]} aria-label="Aligned Research — home">
+  <svg class="brand-symbol" width="24" height="28" viewBox="0 0 24 28" fill="none" aria-hidden="true"><path d="M2 17h6L15 5l-3 11h9M9 23l6-11" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></svg>
+  <span class="brand-name">Aligned</span>
+</a>

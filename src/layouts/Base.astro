@@ -1,0 +1,60 @@
+---
+import '../styles/global.css';
+import '@fontsource-variable/geist';
+import '@fontsource-variable/geist-mono';
+import Brand from '../components/Brand.astro';
+import Icon from '../components/Icon.astro';
+import { chapters, groups } from '../lib/content';
+const { title = 'Research map', description = 'Research on video retrieval, long-term memory, and construction quality.', active = '', reading = false } = Astro.props;
+const section = active === 'map' ? 'map' : Astro.url.pathname.startsWith('/papers/') ? 'papers' : active === 'library' ? 'search' : reading ? 'reading' : 'home';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content={description}/><meta name="theme-color" content={active === 'home' ? '#242724' : '#f7f6f2'}/>
+    <meta property="og:title" content={`${title} · Aligned Research`}/><meta property="og:description" content={description}/><meta property="og:type" content="article"/>
+    <title>{title} · Aligned Research</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <script is:inline>try{const t=localStorage.getItem('aligned-theme');if(t==='dark'){document.documentElement.dataset.theme='dark';const m=document.querySelector('meta[name="theme-color"]');if(m.content!=='#242724')m.content='#1e2124'}}catch{}</script>
+  </head>
+  <body class:list={[{ reading, 'home-page': active === 'home', 'map-page': active === 'map', 'index-page': !reading && active !== 'home' }]}>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <aside class="sidebar" id="site-sidebar" aria-label="Review navigation">
+      <button class="icon-button sidebar-close" data-sidebar-close aria-label="Close navigation"><Icon name="close"/></button>
+      <Brand compact/>
+      <button class="search-trigger" data-search-open><Icon name="search" size={17}/><span>Search the review</span><kbd>⌘ K</kbd></button>
+      <nav class="chapter-nav" aria-label="Review chapters">
+        {groups.map(group => <details open={chapters.some(ch => ch.group === group.id && active === ch.slug) || !reading}>
+          <summary><span class="topic-dot" style={`--topic-color:${group.color}`}></span>{group.title}<span class="chevron">⌄</span></summary>
+          {chapters.filter(ch => ch.group === group.id).map(ch => <a href={`/chapters/${ch.slug}/`} class:list={[{ selected: active === ch.slug }]} aria-current={active === ch.slug ? 'page' : undefined}><span class="chapter-number">{ch.number}</span><span>{ch.title}</span></a>)}
+        </details>)}
+      </nav>
+    </aside>
+    <button class="sidebar-scrim" aria-label="Close navigation" tabindex="-1"></button>
+    <div class="workspace">
+      <header class="topbar">
+        <Brand/>
+        <nav class="top-links" aria-label="Main pages">
+          <a href="/" aria-current={section === 'home' ? 'true' : undefined}>Overview</a>
+          <a href="/chapters/problem-statement/" aria-current={section === 'reading' ? 'true' : undefined}>Reading</a>
+          <a href="/map/" aria-current={section === 'map' ? 'page' : undefined}>Map</a>
+          <a href="/papers/" aria-current={section === 'papers' ? 'true' : undefined}>Papers</a>
+        </nav>
+        <div class="topbar-actions">
+          <button class="header-search" data-search-open aria-label="Search the review"><Icon name="search" size={16}/><span>Search</span><kbd>⌘ K</kbd></button>
+          <button class="icon-button" data-theme-toggle aria-label="Toggle light and dark theme"><Icon name="sun"/></button>
+          <button class="icon-button mobile-menu" aria-label="Open navigation" aria-controls="site-sidebar" aria-expanded="false"><Icon name="menu"/></button>
+        </div>
+      </header>
+      <main id="main" tabindex="-1"><slot/></main>
+    </div>
+    <dialog id="search-dialog" aria-labelledby="search-title">
+      <div class="search-dialog-head"><Icon name="search"/><label class="sr-only" id="search-title" for="global-search">Search all content</label><input id="global-search" name="q" type="search" placeholder="Paper, task, or term…" autocomplete="off"/><button class="icon-button" data-search-close aria-label="Close search"><Icon name="close"/></button></div>
+      <div id="search-results" aria-live="polite"></div>
+      <div class="search-dialog-footer"><span><kbd>↑</kbd><kbd>↓</kbd> select</span><span><kbd>esc</kbd> close</span></div>
+    </dialog>
+    <dialog id="figure-dialog" aria-label="Full-size figure"><button class="icon-button" data-figure-close aria-label="Close image"><Icon name="close"/></button><img alt=""/><p></p></dialog>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script src="../scripts/site.ts"></script>
+  </body>
+</html>

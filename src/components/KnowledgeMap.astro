@@ -1,0 +1,51 @@
+---
+import { mapTopics, legacyMapTopics, legacyMapChapters } from '../lib/method-map';
+import '../styles/map.css';
+---
+<section class="network" id="map" aria-labelledby="atlas-title">
+  <header class="network-heading">
+    <h1 id="atlas-title">Methods map</h1>
+    <div class="network-toolbar">
+      <button class="spotlight-filter" data-map-spotlight aria-pressed="false" title="Show the wiki’s 11 spotlight priorities"><span aria-hidden="true">★</span> Spotlight</button>
+      <div class="network-views" aria-label="Map view"><button data-map-view="graph" aria-pressed="false">Graph</button><button data-map-view="list" aria-pressed="true">List</button></div>
+    </div>
+  </header>
+  <div class="network-graph" id="map-graph" hidden>
+    <div class="network-viewport" id="knowledge-map" tabindex="0" aria-label="Methods map. Expand task groups to explore papers. Zoom with the scroll wheel or plus and minus keys. Pan by dragging or using arrow keys. Press zero to fit all nodes.">
+      <div class="network-stage"><svg class="network-edges" aria-hidden="true"></svg><div class="network-nodes"></div></div>
+    </div>
+    <div class="network-controls" aria-label="Map controls">
+      <button data-map-zoom="out" aria-label="Zoom out" title="Zoom out (−)">−</button>
+      <span id="map-scale" aria-live="off">100%</span>
+      <button data-map-zoom="in" aria-label="Zoom in" title="Zoom in (+)">+</button>
+      <span class="network-control-divider" aria-hidden="true"></span>
+      <button data-map-fit aria-label="Fit all expanded nodes" title="Fit all (0)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button>
+      <button data-map-reset aria-label="Collapse all branches" title="Collapse all"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4v6h6M4.5 10a8 8 0 1 1 .5 6"/></svg></button>
+    </div>
+  </div>
+  <aside class="paper-preview" id="paper-preview" aria-label="Paper preview" hidden>
+    <button class="preview-close" aria-label="Close paper preview">×</button>
+    <div class="preview-meta"></div>
+    <h2></h2>
+    <p class="preview-summary" id="preview-description"></p>
+    <div class="preview-spotlight" hidden><span>★ Wiki spotlight</span><p></p></div>
+    <a class="preview-link" href="/papers/">Read paper →</a>
+  </aside>
+  <div class="network-list" id="map-list">
+    {mapTopics.map(topic => <details data-topic={topic.id}>
+      <summary>{topic.title}<span class="list-toggle" aria-hidden="true">+</span></summary>
+      {topic.groups.map(group => <details class:list={["network-list-group", { "single-group": topic.groups.length === 1 }]} data-group={group.id} open={topic.groups.length === 1}>
+        <summary>{group.title}<span class="list-toggle" aria-hidden="true">+</span></summary>
+        <p class="network-group-description">{group.description}</p>
+        <ul>{group.papers.map(paper => <li data-paper={paper.id} data-spotlight={String(paper.spotlight)}>
+          <a href={paper.href}><span>{paper.title}{paper.spotlight && <span class="network-star" aria-label="Wiki spotlight">★</span>}</span><span aria-hidden="true">↗</span></a>
+          <p class="network-list-meta">{paper.year} · {paper.venue} · {paper.kind}</p>
+          <p class="network-list-summary">{paper.summary}</p>
+          {paper.spotlight && <p class="network-list-spotlight">{paper.spotlightReason}</p>}
+        </li>)}</ul>
+      </details>)}
+    </details>)}
+  </div>
+  <script type="application/json" id="map-data" set:html={JSON.stringify({ topics: mapTopics, legacyTopics: legacyMapTopics, legacyChapters: legacyMapChapters }).replace(/</g, '\u003c')}/>
+</section>
+<script src="../scripts/map.ts"></script>

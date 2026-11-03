@@ -1,0 +1,66 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { papers, paperLocations, chapterContent, notes, renderMarkdown, wikiPapers, wikiNotes } from '../../lib/content';
+export function getStaticPaths() { return papers.map(paper => ({ params: { slug: paper.slug }, props: { paper } })); }
+const { paper } = Astro.props;
+const locations = paperLocations(paper);
+const chapter = chapterContent.find(ch => ch.slug === paper.chapters[0]);
+const wiki = wikiPapers[paper.slug];
+const wikiNote = wikiNotes[paper.slug];
+const ReviewContainer = wikiNote ? 'details' : 'div';
+const note = notes.find(note => note.slug === paper.slug);
+const coverage = paper.coverage === 'bibliography' ? 'Bibliographic entry' : paper.coverage === 'historical-reference' ? 'Historical foundation' : '';
+const readingUrl = locations.length ? `/chapters/${locations[0].chapter.slug}/#${encodeURIComponent(locations[0].section.id)}` : chapter ? `/chapters/${chapter.slug}/` : '';
+const metadata = paper.metadata;
+const venueLink = metadata.links.find(link => /conference|proceedings|acceptance|publication|publisher|doi/i.test(link.label) && !link.url.includes('github.com'));
+const resourceLinks = metadata.links.filter(link => link !== venueLink && link.url !== paper.sourceUrls[0]);
+const linkNotes = metadata.links.filter(link => link.note);
+const hasDetails = metadata.authors || metadata.affiliations.length || metadata.sourceVersion || metadata.publicationNote || linkNotes.length;
+---
+<Base title={paper.shortTitle} description={paper.title} active={chapter?.slug || 'papers'} reading>
+  <div class="note-content paper-page">
+    <a class="text-link" data-reading-back href="/papers/">← Back</a>
+    <header class="chapter-header">
+      <div class="paper-kicker">
+        <div class="paper-publication"><span>{paper.year}</span>{metadata.metadataStatus !== 'unavailable' && metadata.venue && <>{venueLink ? <a href={venueLink.url} target="_blank" rel="noreferrer">{metadata.venue} ↗</a> : <span>{metadata.venue}</span>}</>}{coverage && <span>{coverage}</span>}</div>
+        <button class="text-button" data-copy-link><Icon name="link" size={15}/> Share</button>
+      </div>
+      <h1>{paper.shortTitle}</h1>
+      <p class="paper-full-title">{paper.title}</p>
+      <nav class="paper-backlinks" aria-label="Paper resources">
+        <a href={paper.sourceUrls[0]} target="_blank" rel="noreferrer">Original publication ↗</a>
+        {readingUrl && <a href={readingUrl}>Read chapter <Icon name="arrow" size={15}/></a>}
+        {resourceLinks.map(link => <a href={link.url} target="_blank" rel="noreferrer" title={link.note}>{link.label} ↗</a>)}
+        {wikiNote && <a href={`/papers/${paper.slug}.md`} download>Markdown ↓</a>}
+      </nav>
+      {hasDetails && <details class="publication-details">
+        <summary>Publication details</summary>
+        <dl>
+          {wiki && <div><dt>Human review</dt><dd>{wiki.reviewed ? 'Reviewed' : 'Pending'}</dd></div>}
+          {!wikiNote && metadata.authors && <div><dt>Authors</dt><dd>{metadata.authors}</dd></div>}
+          {metadata.affiliations.length > 0 && <div><dt>Affiliations</dt><dd>{metadata.affiliations.join(' · ')}</dd></div>}
+          {!wikiNote && metadata.sourceVersion && <div><dt>Source version</dt><dd>{metadata.sourceVersion}</dd></div>}
+          {metadata.publicationNote && <div><dt>Publication note</dt><dd>{metadata.publicationNote}</dd></div>}
+          {!wikiNote && linkNotes.map(link => <div><dt><a href={link.url} target="_blank" rel="noreferrer">{link.label}</a></dt><dd>{link.note}</dd></div>)}
+        </dl>
+        {wikiNote && <div class="prose source-details" set:html={renderMarkdown(wikiNote.sourceHeaderMarkdown, `/papers/${paper.slug}/`, 'source-').html}/>}
+      </details>}
+      {wiki && <div class="paper-tags">{wiki.tags.map(tag => <a href={`/papers/?topic=${encodeURIComponent(tag)}`}>{tag.replaceAll('-', ' ')}</a>)}</div>}
+    </header>
+    {wikiNote && <article class="prose wiki-note" set:html={renderMarkdown(wikiNote.markdown, `/papers/${paper.slug}/`, 'wiki-').html}/>}
+    {wiki?.spotlight && <aside class="paper-spotlight"><span>★ Wiki spotlight</span><p>{wiki.spotlightReason}</p></aside>}
+    {paper.coverage === 'historical-reference' && <div class="paper-context">This is a historical predecessor of TGML. The results in the joint discussion below belong to TGML, not the earlier DTGL.</div>}
+    {paper.coverage === 'bibliography' && <div class="paper-context">This publication is included as a data source. The review discusses it in the context of benchmarks, without a separate detailed analysis of the method.{note && !wikiNote && <> See the <a href={`/notes/${note.slug}/`}>source note</a>.</>}</div>}
+    {paper.sourceStatus?.includes('unavailable') && <div class="paper-context">The full text of this paper was unavailable during the audit. This brief entry states the source limitations and omits unverified figures.</div>}
+    {locations.length > 0 && <ReviewContainer class:list={[{ 'paper-review': !!wikiNote }]}>{wikiNote && <><summary>In the literature review</summary><nav aria-label="Review discussions">{locations.map(({chapter, section}) => <a href={`/chapters/${chapter.slug}/#${encodeURIComponent(section.id)}`}>{chapter.number}. {chapter.title} <span aria-hidden="true">→</span></a>)}</nav></>}
+    {locations.map(({ section, siblings }, index) => <section class="paper-excerpt" aria-labelledby={`excerpt-${index}`}>
+      <div class="paper-excerpt-heading"><h2 id={`excerpt-${index}`}>{section.title}</h2></div>
+      {siblings.length > 0 && <div class="paper-context">Discussed together with {siblings.map((other, i) => <>{i > 0 ? ', ' : ''}<a href={`/papers/${other.slug}/`}>{other.shortTitle}</a></>)}.</div>}
+      <article class="prose" set:html={renderMarkdown(section.markdown.replace(/<a id="[^"]+"><\/a>/g,''), `/papers/${paper.slug}/`).html}/>
+    </section>)}
+    </ReviewContainer>}
+    <div class="chapter-end"><button class="text-link" data-copy-link><Icon name="link" size={17}/> Copy paper link</button></div>
+  </div>
+  <script src="../../scripts/paper.ts"/>
+</Base>

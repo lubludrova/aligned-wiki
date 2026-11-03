@@ -1,0 +1,14 @@
+---
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import Base from '../../layouts/Base.astro';
+import { notes, papers, renderMarkdown, wikiPapers } from '../../lib/content';
+export function getStaticPaths() { return notes.map(note => ({ params: { slug: note.slug }, props: { note } })); }
+const { note } = Astro.props;
+if (note.slug === 'problem_statement') return Astro.redirect('/chapters/problem-statement/', 301);
+if (wikiPapers[note.slug]) return Astro.redirect(`/papers/${note.slug}/`, 301);
+const paper = papers.find(paper => paper.slug === note.slug);
+const body = readFileSync(join(process.cwd(), 'content/en/notes', `${note.slug}.md`), 'utf8').replace(/^---\n[\s\S]*?\n---\n/, '').replace(/^# .+\n/m, '');
+const { html } = renderMarkdown(body.replace(/^(\*\*(?:Paper|Website|Code|Source version):\*\*)/gm, '\n$1'), `/notes/${note.slug}/`);
+---
+<Base title={note.title} reading><div class="note-content"><a class="text-link" href={paper ? `/papers/${paper.slug}/` : '/'}>← {paper ? paper.shortTitle : 'Overview'}</a><header class="chapter-header"><h1>{note.title}</h1></header><article class="prose" set:html={html}/></div></Base>

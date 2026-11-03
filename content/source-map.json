@@ -1,0 +1,810 @@
+{
+  "sources": [
+    {
+      "target": "../../aligned-wiki/raw/2018-doughty-skill-ranking.pdf",
+      "url": "https://dimadamen.github.io/Skill/whos_better_whos_best.pdf",
+      "title": "Who’s Better? Who’s Best? Pairwise Deep Ranking for Skill Determination",
+      "slug": "2018-doughty-skill-ranking",
+      "year": 2018
+    },
+    {
+      "target": "../../aligned-wiki/raw/2018-hsieh-focus.pdf",
+      "url": "https://www.microsoft.com/en-us/research/uploads/prod/2018/07/Focus_OSDI18.pdf",
+      "title": "Focus: Querying Large Video Datasets with Low Latency and Low Cost",
+      "slug": "2018-hsieh-focus",
+      "year": 2018
+    },
+    {
+      "target": "../../aligned-wiki/raw/2019-kang-blazeit.pdf",
+      "url": "https://www.vldb.org/pvldb/vol13/p533-kang.pdf",
+      "title": "BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics",
+      "slug": "2019-kang-blazeit",
+      "year": 2019
+    },
+    {
+      "target": "../../aligned-wiki/raw/2020-lei-tvr.pdf",
+      "url": "https://arxiv.org/pdf/2001.09099",
+      "title": "TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval",
+      "slug": "2020-lei-tvr",
+      "year": 2020
+    },
+    {
+      "target": "../../aligned-wiki/raw/2020-li-reducto.pdf",
+      "url": "https://www.cs.princeton.edu/~ravian/publications/reducto_sigcomm20.pdf",
+      "title": "Reducto: On-Camera Filtering for Resource-Efficient Real-Time Video Analytics",
+      "slug": "2020-li-reducto",
+      "year": 2020
+    },
+    {
+      "target": "../../aligned-wiki/raw/2022-elfeki-multi-ego.pdf",
+      "url": "https://openaccess.thecvf.com/content/WACV2022/papers/Elfeki_Multi-Stream_Dynamic_Video_Summarization_WACV_2022_paper.pdf",
+      "title": "Multi-Stream Dynamic Video Summarization",
+      "slug": "2022-elfeki-multi-ego",
+      "year": 2022
+    },
+    {
+      "target": "../../aligned-wiki/raw/2022-jia-egotaskqa.pdf",
+      "url": "https://arxiv.org/pdf/2210.03929v1",
+      "title": "EgoTaskQA: Understanding Human Tasks in Egocentric Videos",
+      "slug": "2022-jia-egotaskqa",
+      "year": 2022
+    },
+    {
+      "target": "../../aligned-wiki/raw/2022-kang-tasti.pdf",
+      "url": "https://ddkang.github.io/papers/2022/tasti-paper.pdf",
+      "title": "TASTI: Semantic Indexes for Machine Learning-based Queries over Unstructured Data",
+      "slug": "2022-kang-tasti",
+      "year": 2022
+    },
+    {
+      "target": "../../aligned-wiki/raw/2022-soucek-look-for-change.pdf",
+      "url": "https://arxiv.org/pdf/2203.11637v1",
+      "title": "Look for the Change: Learning Object States and State-Modifying Actions from Untrimmed Web Videos",
+      "slug": "2022-soucek-look-for-change",
+      "year": 2022
+    },
+    {
+      "target": "../../aligned-wiki/raw/2023-wang-holoassist.pdf",
+      "url": "https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_HoloAssist_an_Egocentric_Human_Interaction_Dataset_for_Interactive_AI_Assistants_ICCV_2023_paper.pdf",
+      "title": "HoloAssist: an Egocentric Human Interaction Dataset for Interactive AI Assistants in the Real World",
+      "slug": "2023-wang-holoassist",
+      "year": 2023
+    },
+    {
+      "target": "../../aligned-wiki/raw/2023-zhang-equi-vocal.pdf",
+      "url": "https://www.vldb.org/pvldb/vol16/p2714-zhang.pdf",
+      "title": "EQUI-VOCAL: Synthesizing Queries for Compositional Video Events from Limited User Interactions",
+      "slug": "2023-zhang-equi-vocal",
+      "year": 2023
+    },
+    {
+      "target": "../../aligned-wiki/raw/2024-huang-egoexolearn.pdf",
+      "url": "https://arxiv.org/pdf/2403.16182v3",
+      "title": "EgoExoLearn: A Dataset for Bridging Asynchronous Ego- and Exo-centric View of Procedural Activities in Real World",
+      "slug": "2024-huang-egoexolearn",
+      "year": 2024
+    },
+    {
+      "target": "../../aligned-wiki/raw/2024-lee-egoper.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_Error_Detection_in_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.pdf",
+      "title": "Error Detection in Egocentric Procedural Task Videos",
+      "slug": "2024-lee-egoper",
+      "year": 2024
+    },
+    {
+      "target": "../../aligned-wiki/raw/2024-nguyen-oscar.pdf",
+      "url": "https://arxiv.org/pdf/2402.17128v4",
+      "title": "OSCaR: Object State Captioning and State Change Representation",
+      "slug": "2024-nguyen-oscar",
+      "year": 2024
+    },
+    {
+      "target": "../../aligned-wiki/raw/2024-peddi-captaincook4d.pdf",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/f4a04396c2ed1342a5d8d05e94cb6101-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "title": "CaptainCook4D: A Dataset for Understanding Errors in Procedural Activities",
+      "slug": "2024-peddi-captaincook4d",
+      "year": 2024
+    },
+    {
+      "target": "../../aligned-wiki/raw/2024-schoonbeek-industreal.pdf",
+      "url": "https://openaccess.thecvf.com/content/WACV2024/papers/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.pdf",
+      "title": "IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting",
+      "slug": "2024-schoonbeek-industreal",
+      "year": 2024
+    },
+    {
+      "target": "../../aligned-wiki/raw/2024-wu-ovvad.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Wu_Open-Vocabulary_Video_Anomaly_Detection_CVPR_2024_paper.pdf",
+      "title": "Open-Vocabulary Video Anomaly Detection",
+      "slug": "2024-wu-ovvad",
+      "year": 2024
+    },
+    {
+      "target": "../../aligned-wiki/raw/2024-xue-vidosc.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Xue_Learning_Object_State_Changes_in_Videos_An_Open-World_Perspective_CVPR_2024_paper.pdf",
+      "title": "Learning Object State Changes in Videos: An Open-World Perspective",
+      "slug": "2024-xue-vidosc",
+      "year": 2024
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-anwar-remembr.pdf",
+      "url": "https://arxiv.org/pdf/2409.13682v1",
+      "title": "ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robot Navigation",
+      "slug": "2025-anwar-remembr",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-ashutosh-expertaf.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Ashutosh_ExpertAF_Expert_Actionable_Feedback_from_Video_CVPR_2025_paper.pdf",
+      "title": "ExpertAF: Expert Actionable Feedback from Video",
+      "slug": "2025-ashutosh-expertaf",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-bhattacharyya-livemamba.pdf",
+      "url": "https://arxiv.org/pdf/2511.21998v2",
+      "title": "Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?",
+      "slug": "2025-bhattacharyya-livemamba",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-cao-flashmmr.pdf",
+      "url": "https://proceedings.nips.cc/paper_files/paper/2025/file/faaa187af979e46dc54f4d43f8b815b2-Paper-Conference.pdf",
+      "title": "When One Moment Isn’t Enough: Multi-Moment Retrieval with Cross-Moment Interactions",
+      "slug": "2025-cao-flashmmr",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-chavan-indego.pdf",
+      "url": "https://arxiv.org/pdf/2511.19684v1",
+      "title": "IndEgo: A Dataset of Industrial Scenarios and Collaborative Work for Egocentric Assistants",
+      "slug": "2025-chavan-indego",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-chen-gelm.pdf",
+      "url": "https://arxiv.org/pdf/2408.14469v1",
+      "title": "Grounded Multi-Hop VideoQA in Long-Form Egocentric Videos",
+      "slug": "2025-chen-gelm",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-di-rekv.pdf",
+      "url": "https://arxiv.org/pdf/2503.00540v1",
+      "title": "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+      "slug": "2025-di-rekv",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-haneji-egooops.pdf",
+      "url": "https://www.lsta.media.kyoto-u.ac.jp/mori/research/public/haneji-SAUAFG2025.pdf",
+      "title": "EgoOops: A Dataset for Mistake Action Detection from Egocentric Videos referring to Procedural Texts",
+      "slug": "2025-haneji-egooops",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-he-egoexobench.pdf",
+      "url": "https://arxiv.org/pdf/2507.18342v1",
+      "title": "EgoExoBench: A Benchmark for First- and Third-person View Video Understanding in MLLMs",
+      "slug": "2025-he-egoexobench",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-huang-amnar.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Huang_Modeling_Multiple_Normal_Action_Representations_for_Error_Detection_in_Procedural_CVPR_2025_paper.pdf",
+      "title": "Modeling Multiple Normal Action Representations for Error Detection in Procedural Tasks",
+      "slug": "2025-huang-amnar",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-lehman-statediffnet.pdf",
+      "url": "https://arxiv.org/pdf/2408.12945v1",
+      "title": "Find the Assembly Mistakes: Error Segmentation for Industrial Applications",
+      "slug": "2025-lehman-statediffnet",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-li-anomize.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Li_Anomize_Better_Open_Vocabulary_Video_Anomaly_Detection_CVPR_2025_paper.pdf",
+      "title": "Anomize: Better Open Vocabulary Video Anomaly Detection",
+      "slug": "2025-li-anomize",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-liu-visualsync.pdf",
+      "url": "https://arxiv.org/pdf/2512.02017v1",
+      "title": "VisualSync: Multi-Camera Synchronization via Cross-View Object Motion",
+      "slug": "2025-liu-visualsync",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-luo-video-rag.pdf",
+      "url": "https://arxiv.org/pdf/2411.13093v4",
+      "title": "Video-RAG: Visually-aligned Retrieval-Augmented Long Video Comprehension",
+      "slug": "2025-luo-video-rag",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-ortiz-abstention-knobs.pdf",
+      "url": "https://arxiv.org/pdf/2601.00138v2",
+      "title": "Explicit Abstention Knobs for Predictable Reliability in Video Question Answering",
+      "slug": "2025-ortiz-abstention-knobs",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-patsch-mistsense.pdf",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Patsch_MistSense_Versatile_Online_Detection_of_Procedural_and_Execution_Mistakes_ICCV_2025_paper.pdf",
+      "title": "MistSense: Versatile Online Detection of Procedural and Execution Mistakes",
+      "slug": "2025-patsch-mistsense",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-perrett-hd-epic.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Perrett_HD-EPIC_A_Highly-Detailed_Egocentric_Video_Dataset_CVPR_2025_paper.pdf",
+      "title": "HD-EPIC: A Highly-Detailed Egocentric Video Dataset",
+      "slug": "2025-perrett-hd-epic",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-plizzari-osnom.pdf",
+      "url": "https://arxiv.org/pdf/2404.05072v2",
+      "title": "Spatial Cognition from Egocentric Video: Out of Sight, Not Out of Mind",
+      "slug": "2025-plizzari-osnom",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-schoonbeek-storm-psr.pdf",
+      "url": "https://arxiv.org/pdf/2510.12385",
+      "title": "Learning to Recognize Correctly Completed Procedure Steps in Egocentric Assembly Videos through Spatio-Temporal Modeling",
+      "slug": "2025-schoonbeek-storm-psr",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-sun-tubeletgraph.pdf",
+      "url": "https://arxiv.org/pdf/2511.04678v2",
+      "title": "Tracking and Understanding Object Transformations",
+      "slug": "2025-sun-tubeletgraph",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-ye-mm-ego.pdf",
+      "url": "https://arxiv.org/pdf/2410.07177v2",
+      "title": "MM-Ego: Towards Building Egocentric Multimodal LLMs for Video QA",
+      "slug": "2025-ye-mm-ego",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-ye-vera.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Ye_VERA_Explainable_Video_Anomaly_Detection_via_Verbalized_Learning_of_Vision-Language_CVPR_2025_paper.pdf",
+      "title": "VERA: Explainable Video Anomaly Detection via Verbalized Learning of Vision-Language Models",
+      "slug": "2025-ye-vera",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-yoon-uvqa.pdf",
+      "url": "https://arxiv.org/pdf/2507.04976v1",
+      "title": "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+      "slug": "2025-yoon-uvqa",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-zameni-moscato.pdf",
+      "url": "https://openaccess.thecvf.com/content/ICCV2025/papers/Zameni_MOSCATO_Predicting_Multiple_Object_State_Change_Through_Actions_ICCV_2025_paper.pdf",
+      "title": "MOSCATO: Predicting Multiple Object State Change through Actions",
+      "slug": "2025-zameni-moscato",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-zeng-streamforest.pdf",
+      "url": "https://arxiv.org/pdf/2509.24871v1",
+      "title": "StreamForest: Efficient Online Video Understanding with Persistent Event Memory",
+      "slug": "2025-zeng-streamforest",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2025-zhang-vocal-udf.pdf",
+      "url": "https://arxiv.org/pdf/2408.02243v2",
+      "title": "Self-Enhancing Video Data Management System for Compositional Events with Large Language Models",
+      "slug": "2025-zhang-vocal-udf",
+      "year": 2025
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-alam-supermemory-vqa.pdf",
+      "url": "https://arxiv.org/pdf/2606.00825v1",
+      "title": "SuperMemory-VQA: An Egocentric Visual Question-Answering Benchmark for Long-Horizon Memory",
+      "slug": "2026-alam-supermemory-vqa",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-bacharidis-mistake-survey.pdf",
+      "url": "https://arxiv.org/pdf/2510.19292v2",
+      "title": "Vision-Based Mistake Analysis in Procedural Activities: A Review of Advances and Challenges",
+      "slug": "2026-bacharidis-mistake-survey",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-braun-skillspotter.pdf",
+      "url": "https://static.siplab.org/papers/eccv2026-skillspotter.pdf",
+      "title": "SkillSpotter: Pose-Aware Multi-View Skilled Action Detection and Grading in Ego-Exo Videos",
+      "slug": "2026-braun-skillspotter",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-chavan-indego-assistant.pdf",
+      "url": "https://arxiv.org/pdf/2608.22617v1",
+      "title": "AI-based worker guidance in assembly and disassembly operations using multimodal ego/exo-centric data capture and structured task knowledge",
+      "slug": "2026-chavan-indego-assistant",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-chen-egomonth.pdf",
+      "url": "https://arxiv.org/pdf/2608.13113v1",
+      "title": "EgoMonth: A Month-Level Egocentric Video Benchmark for Long-Term Spatiotemporal Memory",
+      "slug": "2026-chen-egomonth",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-chen-em2mem.pdf",
+      "url": "https://arxiv.org/pdf/2609.00551v1",
+      "title": "EM^2Mem: Event-Centric Multimodal Memory for Large Language Models",
+      "slug": "2026-chen-em2mem",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-choi-merit.pdf",
+      "url": "https://arxiv.org/pdf/2608.07663v2",
+      "title": "Keep It Simple: Multi-Key Episodic Memory Retrieval for Ultra-Long Video Understanding",
+      "slug": "2026-choi-merit",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-forte-egostream.pdf",
+      "url": "https://arxiv.org/abs/2605.31557",
+      "title": "EGOSTREAM: A Diagnostic Benchmark for Streaming Episodic Memory in Egocentric Vision",
+      "slug": "2026-forte-egostream",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-guo-aem.pdf",
+      "url": "https://arxiv.org/pdf/2512.03474v2",
+      "title": "Procedural Mistake Detection via Action Effect Modeling",
+      "slug": "2026-guo-aem",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-guo-multimodal-memory-survey.pdf",
+      "url": "https://arxiv.org/abs/2610.19366",
+      "title": "Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory",
+      "slug": "2026-guo-multimodal-memory-survey",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-guo-procobject.pdf",
+      "url": "https://arxiv.org/pdf/2512.03479v3",
+      "title": "Benchmarking and Learning Object-Centric Procedural Understanding in Instructional Videos",
+      "slug": "2026-guo-procobject",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-gupta-vidparse.pdf",
+      "url": "https://arxiv.org/pdf/2608.27562v2",
+      "title": "VidParse: Online Parsing of Egocentric Procedures Like a Pro",
+      "slug": "2026-gupta-vidparse",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-hou-eventformer.pdf",
+      "url": "https://arxiv.org/pdf/2402.13566v1",
+      "title": "Event-Aware Video Corpus Moment Retrieval",
+      "slug": "2026-hou-eventformer",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-hsieh-ai-bim-progress.pdf",
+      "url": "https://doi.org/10.1016/j.autcon.2026.106783",
+      "title": "Automated construction progress monitoring and control through AI-based image recognition and BIM integration",
+      "slug": "2026-hsieh-ai-bim-progress",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-huang-apm-bench.pdf",
+      "url": "https://arxiv.org/pdf/2609.37559v2",
+      "title": "APM-Bench: Benchmarking cross-Session Persistent Memory for Real-World Egocentric Streaming Video Assistants",
+      "slug": "2026-huang-apm-bench",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-isaac-sensing-scheduling.pdf",
+      "url": "https://www.iaarc.org/publications/fulltext/ISARC2026_1105.pdf",
+      "title": "From Sensing to Scheduling: Deviation-Based Framework for Sensor-Aware Progress Monitoring and Schedule Control",
+      "slug": "2026-isaac-sensing-scheduling",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-leng-flora.pdf",
+      "url": "https://arxiv.org/pdf/2610.31779v1",
+      "title": "FLORA: An Open Model Suite for Scaling Robotics Data Engines",
+      "slug": "2026-leng-flora",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-li-egoerrorvqa.pdf",
+      "url": "https://arxiv.org/pdf/2608.24134v1",
+      "title": "EgoErrorVQA: Assess Egocentric Comprehension Capabilities through Procedural Errors for Ego-Agentic AI",
+      "slug": "2026-li-egoerrorvqa",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-li-matt.pdf",
+      "url": "https://arxiv.org/pdf/2511.20525v2",
+      "title": "Mistake Attribution: Fine-Grained Mistake Understanding in Egocentric Videos",
+      "slug": "2026-li-matt",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-liang-capmem.pdf",
+      "url": "https://aclanthology.org/2026.emnlp-industry.233.pdf",
+      "title": "CapMem: A Benchmark for Caption-Based Episodic Memory in Egocentric Video",
+      "slug": "2026-liang-capmem",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-liang-robometer.pdf",
+      "url": "https://arxiv.org/pdf/2603.02115v2",
+      "title": "Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory Comparisons",
+      "slug": "2026-liang-robometer",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-liao-proactegomem.pdf",
+      "url": "https://arxiv.org/pdf/2610.30089v2",
+      "title": "ProactEgoMem: Benchmarking Proactive Memory in Streaming Egocentric Video",
+      "slug": "2026-liao-proactegomem",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-liu-egoexomem.pdf",
+      "url": "https://arxiv.org/pdf/2605.18734v2",
+      "title": "EgoExoMem: Cross-View Memory Reasoning over Synchronized Egocentric and Exocentric Videos",
+      "slug": "2026-liu-egoexomem",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-liu-guideme.pdf",
+      "url": "https://arxiv.org/pdf/2607.02991v1",
+      "title": "GuideMe: Multi-Domain Task Guidance and Intervention in Streaming Video",
+      "slug": "2026-liu-guideme",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-loginova-prism.pdf",
+      "url": "https://arxiv.org/pdf/2610.31117v1",
+      "title": "Through a PRISM, Clearly: Step-Sequence Reasoning for Mistake Recognition in Procedural Videos",
+      "slug": "2026-loginova-prism",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-long-m3-agent.pdf",
+      "url": "https://arxiv.org/pdf/2508.09736v4",
+      "title": "Seeing, Listening, Remembering, and Reasoning: A Multimodal Agent with Long-Term Memory",
+      "slug": "2026-long-m3-agent",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-majumder-mistexit.pdf",
+      "url": "https://arxiv.org/pdf/2603.14252v1",
+      "title": "MistExit: Learning to Exit for Early Mistake Detection in Procedural Videos",
+      "slug": "2026-majumder-mistexit",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-mandikal-spoc.pdf",
+      "url": "https://arxiv.org/pdf/2503.11953v2",
+      "title": "SPOC: Spatially-Progressing Object State Change Segmentation in Video",
+      "slug": "2026-mandikal-spoc",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-mazzamuto-proskill.pdf",
+      "url": "https://arxiv.org/pdf/2601.20661v1",
+      "title": "ProSkill: Segment-Level Skill Assessment in Procedural Videos",
+      "slug": "2026-mazzamuto-proskill",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-mur-labadia-v-jepa-2-1.pdf",
+      "url": "https://arxiv.org/pdf/2603.14482v3",
+      "title": "V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning",
+      "slug": "2026-mur-labadia-v-jepa-2-1",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-pang-egoprobe.pdf",
+      "url": "https://arxiv.org/abs/2610.17128",
+      "title": "EgoProbe: Benchmarking Long-Range and Exact Memory in Streaming Egocentric Videos",
+      "slug": "2026-pang-egoprobe",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-panpatil-egosafetybench.pdf",
+      "url": "https://arxiv.org/pdf/2607.00218v2",
+      "title": "EgoSafetyBench: A Diagnostic Egocentric Video Benchmark for Evaluating Embodied VLMs as Runtime Safety Guards",
+      "slug": "2026-panpatil-egosafetybench",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-qiu-graphrag-compliance.pdf",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1474034626003344",
+      "title": "A GraphRAG-driven multi-agent framework for worker-centric construction process compliance supervision via egocentric video",
+      "slug": "2026-qiu-graphrag-compliance",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-rauf-hpp.pdf",
+      "url": "https://aclanthology.org/2026.emnlp-main.2377.pdf",
+      "title": "HPP: Hierarchical Programmatic Probing for Long Video Understanding by Decoupling Perception and Reasoning",
+      "slug": "2026-rauf-hpp",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-rege-egagent.pdf",
+      "url": "https://arxiv.org/pdf/2601.18157v3",
+      "title": "Agentic Very Long Video Understanding",
+      "slug": "2026-rege-egagent",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-ren-geb.pdf",
+      "url": "https://arxiv.org/pdf/2609.38155v1",
+      "title": "Beyond the Timeline: Augmenting Long-Video Memory with Grounded Entity Biographies",
+      "slug": "2026-ren-geb",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-sasaki-egoindassembly.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/papers/Sasaki_EgoIndAssembly_Diagnosing_Fine-Grained_Temporal_Hand_Reasoning_in_Vision-Language_Models_for_CVPRW_2026_paper.pdf",
+      "title": "EgoIndAssembly: Diagnosing Fine-Grained Temporal Hand Reasoning in Vision–Language Models for Skilled Assembly",
+      "slug": "2026-sasaki-egoindassembly",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-seminara-tgml.pdf",
+      "url": "https://arxiv.org/pdf/2502.17753v2",
+      "title": "Task Graph Maximum Likelihood Estimation for Procedural Activity Understanding in Egocentric Videos",
+      "slug": "2026-seminara-tgml",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-steenbergen-hoist-case-identifiers.pdf",
+      "url": "https://research.utwente.nl/en/publications/surrogate-case-identifier-rules-for-construction-site-hoists/",
+      "title": "Surrogate Case Identifier Rules for Construction Site Hoists",
+      "slug": "2026-steenbergen-hoist-case-identifiers",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-tan-egovit.pdf",
+      "url": "https://arxiv.org/pdf/2603.13912v1",
+      "title": "Towards Stable Self-Supervised Object Representations in Unconstrained Egocentric Video",
+      "slug": "2026-tan-egovit",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-wang-directme.pdf",
+      "url": "https://arxiv.org/pdf/2606.15200v1",
+      "title": "Keep It in Mind: User-Centric Continual Spatial Intelligence Reasoning in Egocentric Video Streams",
+      "slug": "2026-wang-directme",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-wang-egomemreason.pdf",
+      "url": "https://arxiv.org/abs/2605.09874v2",
+      "title": "EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding",
+      "slug": "2026-wang-egomemreason",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-wang-s-ember.pdf",
+      "url": "https://arxiv.org/abs/2607.02689v2",
+      "title": "S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval",
+      "slug": "2026-wang-s-ember",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-wen-impact.pdf",
+      "url": "https://arxiv.org/pdf/2604.10409v1",
+      "title": "IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly",
+      "slug": "2026-wen-impact",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-wen-provia.pdf",
+      "url": "https://arxiv.org/pdf/2609.20638v1",
+      "title": "PROVIA: Procedure State Tracking for Online Mistake Detection in Egocentric Videos",
+      "slug": "2026-wen-provia",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-xiao-myego.pdf",
+      "url": "https://arxiv.org/pdf/2604.01966v1",
+      "title": "Ego-Grounding for Personalized Question-Answering in Egocentric Videos",
+      "slug": "2026-xiao-myego",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-xiong-memlife.pdf",
+      "url": "https://arxiv.org/pdf/2609.40195v1",
+      "title": "MemLife: Curating and Reasoning over Long-Term Egocentric Video Memories",
+      "slug": "2026-xiong-memlife",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-yang-egotsr.pdf",
+      "url": "https://arxiv.org/pdf/2609.31751v1",
+      "title": "EgoTSR++: Egocentric Spatiotemporal Reasoning for Task Progress Understanding",
+      "slug": "2026-yang-egotsr",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-yeh-all-angles-bench.pdf",
+      "url": "https://arxiv.org/pdf/2504.15280v2",
+      "title": "Seeing from Another Perspective: Evaluating Multi-View Understanding in MLLMs",
+      "slug": "2026-yeh-all-angles-bench",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-yeo-worldmm.pdf",
+      "url": "https://arxiv.org/pdf/2512.02425v2",
+      "title": "WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning",
+      "slug": "2026-yeo-worldmm",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-zeng-onestreamer.pdf",
+      "url": "https://arxiv.org/pdf/2610.01762v1",
+      "title": "OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction",
+      "slug": "2026-zeng-onestreamer",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-zhang-egocite.pdf",
+      "url": "https://arxiv.org/pdf/2608.12627v3",
+      "title": "EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory",
+      "slug": "2026-zhang-egocite",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-zhang-streamarena.pdf",
+      "url": "https://arxiv.org/pdf/2608.05703v1",
+      "title": "StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding",
+      "slug": "2026-zhang-streamarena",
+      "year": 2026
+    },
+    {
+      "target": "../../aligned-wiki/raw/2026-zhou-temporal-abstention.pdf",
+      "url": "https://arxiv.org/pdf/2602.04755v2",
+      "title": "When Silence Is Golden: Can LLMs Learn to Abstain in Temporal QA and Beyond?",
+      "slug": "2026-zhou-temporal-abstention",
+      "year": 2026
+    },
+    {
+      "target": "evidence/proactive/2026-constructai.pdf",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41452/45413",
+      "title": "ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems",
+      "slug": "2026-zhang-constructai",
+      "year": 2026
+    },
+    {
+      "target": "pdf-audit/2009-d4ar.pdf",
+      "url": "https://www.itcon.org/papers/2009_13.content.06965.pdf",
+      "title": "D4AR – A 4-Dimensional Augmented Reality Model for Automating Construction Progress Monitoring Data Collection, Processing and Communication",
+      "slug": "2009-golparvar-fard-d4ar",
+      "year": 2009
+    },
+    {
+      "target": "pdf-audit/sources/clip4clip.pdf",
+      "url": "https://arxiv.org/abs/2104.08860",
+      "title": "CLIP4Clip: An Empirical Study of CLIP for End to End Video Clip Retrieval",
+      "slug": "2021-luo-clip4clip",
+      "year": 2021
+    },
+    {
+      "target": "pdf-audit/sources/frozen.pdf",
+      "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Bain_Frozen_in_Time_A_Joint_Video_and_Image_Encoder_for_ICCV_2021_paper.pdf",
+      "title": "Frozen in Time: A Joint Video and Image Encoder for End-to-End Retrieval",
+      "slug": "2021-bain-frozen-in-time",
+      "year": 2021
+    },
+    {
+      "target": "pdf-audit/sources/internvideo2-eccv.pdf",
+      "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11491.pdf",
+      "title": "InternVideo2: Scaling Foundation Models for Multimodal Video Understanding",
+      "slug": "2024-wang-internvideo2",
+      "year": 2024
+    },
+    {
+      "target": "pdf-audit/sources/multivent-raw.pdf",
+      "url": "https://arxiv.org/html/2609.28437v1",
+      "title": "MultiVENT-Raw: A Benchmark for Retrieval and Reasoning over Raw Videos",
+      "slug": "2026-kriz-multivent-raw",
+      "year": 2026
+    },
+    {
+      "target": "evidence/pdf-audit-llovi-v1.pdf",
+      "url": "https://arxiv.org/pdf/2312.17235v1",
+      "title": "A Simple LLM Framework for Long-Range Video Question-Answering",
+      "slug": "2024-zhang-llovi",
+      "year": 2024
+    },
+    {
+      "target": "evidence/pdf-audit-videotree.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_VideoTree_Adaptive_Tree-based_Video_Representation_for_LLM_Reasoning_on_Long_CVPR_2025_paper.pdf",
+      "title": "VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos",
+      "slug": "2025-wang-videotree",
+      "year": 2025
+    },
+    {
+      "target": "evidence/pdf-audit-moviechat.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Song_MovieChat_From_Dense_Token_to_Sparse_Memory_for_Long_Video_CVPR_2024_paper.pdf",
+      "title": "MovieChat: From Dense Token to Sparse Memory for Long Video Understanding",
+      "slug": "2024-song-moviechat",
+      "year": 2024
+    },
+    {
+      "target": "evidence/videoagent-wang.pdf",
+      "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10325.pdf",
+      "title": "VideoAgent: Long-form Video Understanding with Large Language Model as Agent",
+      "slug": "2024-wang-videoagent",
+      "year": 2024
+    },
+    {
+      "target": "evidence/video-rag-luo.pdf",
+      "url": "https://arxiv.org/pdf/2411.13093v4",
+      "title": "Video-RAG: Visually-aligned Retrieval-Augmented Long Video Comprehension",
+      "slug": "2025-luo-video-rag",
+      "year": 2025
+    },
+    {
+      "target": "evidence/videorag-jeong.pdf",
+      "url": "https://aclanthology.org/2025.findings-acl.1096.pdf",
+      "title": "VideoRAG: Retrieval-Augmented Generation over Video Corpus",
+      "slug": "2025-jeong-videorag",
+      "year": 2025
+    },
+    {
+      "target": "evidence/videorag-ren.pdf",
+      "url": "https://arxiv.org/pdf/2502.01549v1",
+      "title": "VideoRAG: Retrieval-Augmented Generation with Extreme Long-Context Videos",
+      "slug": "2026-ren-videorag",
+      "year": 2026
+    },
+    {
+      "target": "evidence/carve.pdf",
+      "url": "https://arxiv.org/pdf/2606.13141v2",
+      "title": "Rethinking RAG in Long Videos: What to Retrieve and How to Use It?",
+      "slug": "2026-lee-carve",
+      "year": 2026
+    },
+    {
+      "target": "evidence/pdf-audit-longvideobench.pdf",
+      "url": "https://arxiv.org/pdf/2407.15754v1",
+      "title": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "slug": "2024-wu-longvideobench",
+      "year": 2024
+    },
+    {
+      "target": "evidence/pdf-audit-videomme.pdf",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Fu_Video-MME_The_First-Ever_Comprehensive_Evaluation_Benchmark_of_Multi-modal_LLMs_in_CVPR_2025_paper.pdf",
+      "title": "Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis",
+      "slug": "2025-fu-video-mme",
+      "year": 2025
+    },
+    {
+      "target": "evidence/pdf-audit-egoschema.pdf",
+      "url": "https://arxiv.org/pdf/2308.09126v1",
+      "title": "EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding",
+      "slug": "2023-mangalam-egoschema",
+      "year": 2023
+    }
+  ],
+  "unresolved": []
+}

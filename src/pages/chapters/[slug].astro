@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { chapterContent, groups } from '../../lib/content';
+export function getStaticPaths() { return chapterContent.map((chapter, index) => ({ params: { slug: chapter.slug }, props: { chapter, index } })); }
+const { chapter, index } = Astro.props;
+const previous = chapterContent[index - 1];
+const next = chapterContent[index + 1];
+const group = groups.find(g => g.id === chapter.group)!;
+---
+<Base active={chapter.slug} title={chapter.title} description={chapter.description} reading>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <div class="reading-layout">
+    <div class="reading-main">
+      <header class="chapter-header"><a class="eyebrow chapter-category" href={`/map/#topic=${group.id}`}><span class="topic-dot" style={`--topic-color:${group.color}`}></span>{group.title}</a><div class="chapter-title-row">{chapter.number && <span class="chapter-large-number">{Number.isFinite(Number(chapter.number)) ? String(chapter.number).padStart(2,'0') : chapter.number}</span>}<h1>{chapter.title}</h1></div><div class="chapter-meta"><span>~{chapter.minutes} min read</span><button data-copy-link class="text-button"><Icon name="link" size={15}/> Share</button><button data-reading-mark={chapter.slug} class="text-button" aria-pressed="false">Mark as read</button></div></header>
+      {chapter.sections.length > 0 && <details class="mobile-toc"><summary>In this chapter <span>↓</span></summary><nav aria-label="Chapter contents">{chapter.sections.map(s => <a href={`#${encodeURIComponent(s.id)}`} class:list={[{ nested: s.depth > 3 }]}>{s.title}</a>)}</nav></details>}
+      <article class="prose" set:html={chapter.html}/>
+
+      <nav class="chapter-pagination" aria-label="Previous and next chapters">{previous ? <a href={`/chapters/${previous.slug}/`}><span>← Previous</span><strong>{previous.title}</strong></a> : <a href="/"><span>← Overview</span><strong>All chapters</strong></a>}{next && <a href={`/chapters/${next.slug}/`}><span>Next →</span><strong>{next.title}</strong></a>}</nav>
+    </div>
+    {chapter.sections.length > 0 && <aside class="reading-toc" aria-label="Chapter contents"><span>Contents</span><nav>{chapter.sections.map(s => <a href={`#${encodeURIComponent(s.id)}`} class:list={[{ nested: s.depth > 3, deepest: s.depth > 4 }]} data-toc-link={s.id}>{s.title}</a>)}</nav><a class="toc-top" href="#main">↑ Back to top</a></aside>}
+  </div>
+</Base>

@@ -1,0 +1,4076 @@
+[
+  {
+    "slug": "2021-luo-clip4clip",
+    "title": "CLIP4Clip: An Empirical Study of CLIP for End to End Video Clip Retrieval",
+    "shortTitle": "CLIP4Clip",
+    "year": 2021,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2104.08860"
+    ],
+    "chapters": [
+      "foundations"
+    ],
+    "headingTitles": [
+      "CLIP4Clip: strong image features are already useful for clip retrieval"
+    ],
+    "locations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "CLIP4Clip: strong image features are already useful for clip retrieval"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Basic datasets and representation evaluation protocols"
+      },
+      {
+        "chapter": "foundations",
+        "headingTitle": "CLIP4Clip: strong image features are already useful for clip retrieval"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2021-bain-frozen-in-time",
+    "title": "Frozen in Time: A Joint Video and Image Encoder for End-to-End Retrieval",
+    "shortTitle": "Frozen in Time",
+    "year": 2021,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/ICCV2021/papers/Bain_Frozen_in_Time_A_Joint_Video_and_Image_Encoder_for_ICCV_2021_paper.pdf"
+    ],
+    "chapters": [
+      "foundations"
+    ],
+    "headingTitles": [
+      "Frozen in Time: why embeddings allow indexing to be separated from querying"
+    ],
+    "locations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Frozen in Time: why embeddings allow indexing to be separated from querying"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Basic datasets and representation evaluation protocols"
+      },
+      {
+        "chapter": "foundations",
+        "headingTitle": "Frozen in Time: why embeddings allow indexing to be separated from querying"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-wang-internvideo2",
+    "title": "InternVideo2: Scaling Foundation Models for Multimodal Video Understanding",
+    "shortTitle": "InternVideo2",
+    "year": 2024,
+    "sourceUrls": [
+      "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11491.pdf"
+    ],
+    "chapters": [
+      "foundations"
+    ],
+    "headingTitles": [
+      "InternVideo2: one backbone can support several levels of the system"
+    ],
+    "locations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "InternVideo2: one backbone can support several levels of the system"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Basic datasets and representation evaluation protocols"
+      },
+      {
+        "chapter": "foundations",
+        "headingTitle": "InternVideo2: one backbone can support several levels of the system"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-tan-egovit",
+    "title": "Towards Stable Self-Supervised Object Representations in Unconstrained Egocentric Video",
+    "shortTitle": "EgoViT",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2603.13912v1"
+    ],
+    "chapters": [
+      "foundations"
+    ],
+    "headingTitles": [
+      "EgoViT, Tan et al., CVPR 2026: stable local region features"
+    ],
+    "locations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "EgoViT, Tan et al., CVPR 2026: stable local region features"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Basic datasets and representation evaluation protocols"
+      },
+      {
+        "chapter": "foundations",
+        "headingTitle": "EgoViT, Tan et al., CVPR 2026: stable local region features"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-mur-labadia-v-jepa-2-1",
+    "title": "V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning",
+    "shortTitle": "V-JEPA 2.1",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2603.14482v3"
+    ],
+    "chapters": [
+      "foundations"
+    ],
+    "headingTitles": [
+      "V-JEPA 2.1, Mur-Labadia et al., 2026 preprint: preserving local video structure"
+    ],
+    "locations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "V-JEPA 2.1, Mur-Labadia et al., 2026 preprint: preserving local video structure"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "foundations",
+        "headingTitle": "Basic datasets and representation evaluation protocols"
+      },
+      {
+        "chapter": "foundations",
+        "headingTitle": "V-JEPA 2.1, Mur-Labadia et al., 2026 preprint: preserving local video structure"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2020-lei-tvr",
+    "title": "TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval",
+    "shortTitle": "TVR / XML",
+    "year": 2020,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2001.09099"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "TVR and V-RAGBench: two different retrieval scales",
+      "XML: an early reference for corpus localization"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "TVR and V-RAGBench: two different retrieval scales"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "XML: an early reference for corpus localization"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "TVR and V-RAGBench: two different retrieval scales"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "XML: an early reference for corpus localization"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-hou-eventformer",
+    "title": "Event-Aware Video Corpus Moment Retrieval",
+    "shortTitle": "EventFormer",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2402.13566v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "EventFormer: an event index before precise localization"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EventFormer: an event index before precise localization"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EventFormer: an event index before precise localization"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-lee-carve",
+    "title": "Rethinking RAG in Long Videos: What to Retrieve and How to Use It?",
+    "shortTitle": "CARVE / V-RAGBench",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2606.13141v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "TVR and V-RAGBench: two different retrieval scales",
+      "CARVE: retrieving and selecting different forms of evidence"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "TVR and V-RAGBench: two different retrieval scales"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "CARVE: retrieving and selecting different forms of evidence"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "TVR and V-RAGBench: two different retrieval scales"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "CARVE: retrieving and selecting different forms of evidence"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-jeong-videorag",
+    "title": "VideoRAG: Retrieval-Augmented Generation over Video Corpus",
+    "shortTitle": "VideoRAG (Jeong et al.)",
+    "year": 2025,
+    "sourceUrls": [
+      "https://aclanthology.org/2025.findings-acl.1096.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "WikiHowQA and LongerVideos: answers over a collection",
+      "VideoRAG, Jeong et al., Findings of ACL 2025, arXiv:2501.05874"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "WikiHowQA and LongerVideos: answers over a collection"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoRAG, Jeong et al., Findings of ACL 2025, arXiv:2501.05874"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "WikiHowQA and LongerVideos: answers over a collection"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoRAG, Jeong et al., Findings of ACL 2025, arXiv:2501.05874"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-ren-videorag",
+    "title": "VideoRAG: Retrieval-Augmented Generation with Extreme Long-Context Videos",
+    "shortTitle": "VideoRAG (Ren et al.)",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2502.01549v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "WikiHowQA and LongerVideos: answers over a collection",
+      "VideoRAG, Ren et al., arXiv:2502.01549, 2025 preprint"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "WikiHowQA and LongerVideos: answers over a collection"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoRAG, Ren et al., arXiv:2502.01549, 2025 preprint"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "WikiHowQA and LongerVideos: answers over a collection"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoRAG, Ren et al., arXiv:2502.01549, 2025 preprint"
+      }
+    ],
+    "coverage": "discussion",
+    "sourceYear": 2025,
+    "publicationYear": 2026
+  },
+  {
+    "slug": "2025-cao-flashmmr",
+    "title": "When One Moment Isn’t Enough: Multi-Moment Retrieval with Cross-Moment Interactions",
+    "shortTitle": "QV-M² / FlashMMR",
+    "year": 2025,
+    "sourceUrls": [
+      "https://proceedings.nips.cc/paper_files/paper/2025/file/faaa187af979e46dc54f4d43f8b815b2-Paper-Conference.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "QV-M²: a multi-moment protocol",
+      "FlashMMR: several intervals for one query"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "QV-M²: a multi-moment protocol"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "FlashMMR: several intervals for one query"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "QV-M²: a multi-moment protocol"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "FlashMMR: several intervals for one query"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-wu-longvideobench",
+    "title": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+    "shortTitle": "LongVideoBench",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2407.15754v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Benchmarks for reading a selected video"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks for reading a selected video"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks for reading a selected video"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-fu-video-mme",
+    "title": "Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis",
+    "shortTitle": "Video-MME",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Fu_Video-MME_The_First-Ever_Comprehensive_Evaluation_Benchmark_of_Multi-modal_LLMs_in_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Benchmarks for reading a selected video"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks for reading a selected video"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks for reading a selected video"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-goletto-amego",
+    "title": "AMEGO: Active Memory from long EGOcentric videos",
+    "shortTitle": "AMEGO",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2409.10917v1",
+      "https://arxiv.org/pdf/2409.10917"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "AMB: the order of object interactions",
+      "AMEGO: interaction memory"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "AMB: the order of object interactions"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "AMEGO: interaction memory"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "AMB: the order of object interactions"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "AMEGO: interaction memory"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-liang-capmem",
+    "title": "CapMem: A Benchmark for Caption-Based Episodic Memory in Egocentric Video",
+    "shortTitle": "CapMem",
+    "year": 2026,
+    "sourceUrls": [
+      "https://aclanthology.org/2026.emnlp-industry.233.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "CapMem: reusable caption memory"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "CapMem: reusable caption memory"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "CapMem: reusable caption memory"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-zhang-vocal-udf",
+    "title": "Self-Enhancing Video Data Management System for Compositional Events with Large Language Models",
+    "shortTitle": "VOCAL-UDF",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2408.02243v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "VOCAL-UDF: teaching the system a new observable condition"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "VOCAL-UDF: teaching the system a new observable condition"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Protocols: cost, completeness, and predicate quality"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "VOCAL-UDF: teaching the system a new observable condition"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-rauf-hpp",
+    "title": "HPP: Hierarchical Programmatic Probing for Long Video Understanding by Decoupling Perception and Reasoning",
+    "shortTitle": "HPP",
+    "year": 2026,
+    "sourceUrls": [
+      "https://aclanthology.org/2026.emnlp-main.2377.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "HPP, Rauf et al., EMNLP 2026: an agent programs its evidence search"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "HPP, Rauf et al., EMNLP 2026: an agent programs its evidence search"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "HPP, Rauf et al., EMNLP 2026: an agent programs its evidence search"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-zhang-egocite",
+    "title": "EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory",
+    "shortTitle": "EgoCITE",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.12627v3"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "EgoCITE, Zhang et al., 2026 preprint: finding the right fact at the right time"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoCITE, Zhang et al., 2026 preprint: finding the right fact at the right time"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoCITE, Zhang et al., 2026 preprint: finding the right fact at the right time"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-ye-mm-ego",
+    "title": "MM-Ego: Towards Building Egocentric Multimodal LLMs for Video QA",
+    "shortTitle": "MM-Ego / EgoMemoria",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2410.07177v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "MM-Ego, Ye et al., ICLR 2025: an overview first, detailed frames next"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MM-Ego, Ye et al., ICLR 2025: an overview first, detailed frames next"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "MM-Ego, Ye et al., ICLR 2025: an overview first, detailed frames next"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-leng-flora",
+    "title": "FLORA: An Open Model Suite for Scaling Robotics Data Engines",
+    "shortTitle": "FLORA",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2610.31779v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "FLORA, Leng et al., 2026: training a memory writer to identify events"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "FLORA, Leng et al., 2026: training a memory writer to identify events"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks and evaluation protocols: a map of the tasks"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "FLORA, Leng et al., 2026: training a memory writer to identify events"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-fan-videoagent",
+    "title": "VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding",
+    "shortTitle": "VideoAgent (Fan et al.)",
+    "year": 2024,
+    "sourceUrls": [
+      "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Two different VideoAgents: active reading and reusable memory"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Two different VideoAgents: active reading and reusable memory"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks for reading a selected video"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Two different VideoAgents: active reading and reusable memory"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-choi-merit",
+    "title": "Keep It Simple: Multi-Key Episodic Memory Retrieval for Ultra-Long Video Understanding",
+    "shortTitle": "MERIT",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.07663v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "MERIT versus EM²Mem: where to perform semantic integration"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MERIT versus EM²Mem: where to perform semantic integration"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks for reading a selected video"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "MERIT versus EM²Mem: where to perform semantic integration"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-yeo-worldmm",
+    "title": "WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning",
+    "shortTitle": "WorldMM",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2512.02425v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Graph memory: EGAgent and WorldMM"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Graph memory: EGAgent and WorldMM"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks for reading a selected video"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Graph memory: EGAgent and WorldMM"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-luo-video-rag",
+    "title": "Video-RAG: Visually-aligned Retrieval-Augmented Long Video Comprehension",
+    "shortTitle": "Video-RAG (Luo et al.)",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2411.13093v4"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Video-RAG, Luo et al., NeurIPS 2025, arXiv:2411.13093"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Video-RAG, Luo et al., NeurIPS 2025, arXiv:2411.13093"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks for reading a selected video"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Video-RAG, Luo et al., NeurIPS 2025, arXiv:2411.13093"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-yang-egolife",
+    "title": "EgoLife: Towards Egocentric Life Assistant",
+    "shortTitle": "EgoLife",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2503.03803v3"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "EgoLifeQA: from a clip to a week of memory",
+      "EgoButler / EgoRAG: a multi-day memory baseline"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoButler / EgoRAG: a multi-day memory baseline"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoButler / EgoRAG: a multi-day memory baseline"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-chen-em2mem",
+    "title": "EM^2Mem: Event-Centric Multimodal Memory for Large Language Models",
+    "shortTitle": "EM²Mem",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.00551v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "MERIT versus EM²Mem: where to perform semantic integration"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MERIT versus EM²Mem: where to perform semantic integration"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "MERIT versus EM²Mem: where to perform semantic integration"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-rege-egagent",
+    "title": "Agentic Very Long Video Understanding",
+    "shortTitle": "EGAgent",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2601.18157v3"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Graph memory: EGAgent and WorldMM"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Graph memory: EGAgent and WorldMM"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoLifeQA: from a clip to a week of memory"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Graph memory: EGAgent and WorldMM"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-tian-ego-r1",
+    "title": "Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning",
+    "shortTitle": "Ego-R1",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2506.13654v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Ego-R1 Bench: questions for agentic search",
+      "Ego-R1: training a controller to seek additional evidence"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Ego-R1 Bench: questions for agentic search"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Ego-R1: training a controller to seek additional evidence"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Ego-R1 Bench: questions for agentic search"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Ego-R1: training a controller to seek additional evidence"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-huang-apm-bench",
+    "title": "APM-Bench: Benchmarking cross-Session Persistent Memory for Real-World Egocentric Streaming Video Assistants",
+    "shortTitle": "APM-Bench",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.37559v2"
+    ],
+    "chapters": [
+      "archive",
+      "states",
+      "streaming"
+    ],
+    "headingTitles": [
+      "APM-Bench and EgoMonth: cross-session memory and long histories"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "APM-Bench and EgoMonth: cross-session memory and long histories"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "APM-Bench and EgoMonth: cross-session memory and long histories"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-chen-egomonth",
+    "title": "EgoMonth: A Month-Level Egocentric Video Benchmark for Long-Term Spatiotemporal Memory",
+    "shortTitle": "EgoMonth",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.13113v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "APM-Bench and EgoMonth: cross-session memory and long histories"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "APM-Bench and EgoMonth: cross-session memory and long histories"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "APM-Bench and EgoMonth: cross-session memory and long histories"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-wang-egomemreason",
+    "title": "EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding",
+    "shortTitle": "EgoMemReason",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2605.09874v2"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "EgoMemReason — a week of video does not yet mean a week of reasoning"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoMemReason — a week of video does not yet mean a week of reasoning"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EgoMemReason — a week of video does not yet mean a week of reasoning"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-zhang-llovi",
+    "title": "A Simple LLM Framework for Long-Range Video Question-Answering",
+    "shortTitle": "LLoVi",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2312.17235v1",
+      "https://aclanthology.org/2024.emnlp-main.1209/",
+      "https://arxiv.org/abs/2312.17235v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "LLoVi: an early caption-first baseline"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "LLoVi: an early caption-first baseline"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "LLoVi: an early caption-first baseline"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-wang-videotree",
+    "title": "VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos",
+    "shortTitle": "VideoTree",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_VideoTree_Adaptive_Tree-based_Video_Representation_for_LLM_Reasoning_on_Long_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "VideoTree: describing regions of interest"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoTree: describing regions of interest"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "VideoTree: describing regions of interest"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-song-moviechat",
+    "title": "MovieChat: From Dense Token to Sparse Memory for Long Video Understanding",
+    "shortTitle": "MovieChat",
+    "year": 2024,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Song_MovieChat_From_Dense_Token_to_Sparse_Memory_for_Long_Video_CVPR_2024_paper.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "MovieChat: compressing visual context"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MovieChat: compressing visual context"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MovieChat: compressing visual context"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-wang-videoagent",
+    "title": "VideoAgent: Long-form Video Understanding with Large Language Model as Agent",
+    "shortTitle": "VideoAgent (Wang et al.)",
+    "year": 2024,
+    "sourceUrls": [
+      "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10325.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Two different VideoAgents: active reading and reusable memory"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Two different VideoAgents: active reading and reusable memory"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Two different VideoAgents: active reading and reusable memory"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-cai-cfd",
+    "title": "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding",
+    "shortTitle": "CFD",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.11899v1",
+      "https://aclanthology.org/2026.emnlp-main.422/"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Caption-once, Frames-on-Demand: checking pixels only when necessary"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Caption-once, Frames-on-Demand: checking pixels only when necessary"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Caption-once, Frames-on-Demand: checking pixels only when necessary"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-xiong-memlife",
+    "title": "MemLife: Curating and Reasoning over Long-Term Egocentric Video Memories",
+    "shortTitle": "MemLife",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.40195v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "MemLife: the memory writer also needs optimization"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MemLife: the memory writer also needs optimization"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "MemLife: the memory writer also needs optimization"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2018-hsieh-focus",
+    "title": "Focus: Querying Large Video Datasets with Low Latency and Low Cost",
+    "shortTitle": "Focus",
+    "year": 2018,
+    "sourceUrls": [
+      "https://www.microsoft.com/en-us/research/uploads/prod/2018/07/Focus_OSDI18.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Focus: dividing work between ingestion and querying"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Focus: dividing work between ingestion and querying"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Protocols: cost, completeness, and predicate quality"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "Focus: dividing work between ingestion and querying"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2019-kang-blazeit",
+    "title": "BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics",
+    "shortTitle": "BlazeIt",
+    "year": 2019,
+    "sourceUrls": [
+      "https://www.vldb.org/pvldb/vol13/p533-kang.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "BlazeIt and TASTI: statistics and index reuse"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "BlazeIt and TASTI: statistics and index reuse"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Protocols: cost, completeness, and predicate quality"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "BlazeIt and TASTI: statistics and index reuse"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2022-kang-tasti",
+    "title": "TASTI: Semantic Indexes for Machine Learning-based Queries over Unstructured Data",
+    "shortTitle": "TASTI",
+    "year": 2022,
+    "sourceUrls": [
+      "https://ddkang.github.io/papers/2022/tasti-paper.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "BlazeIt and TASTI: statistics and index reuse"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "BlazeIt and TASTI: statistics and index reuse"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Protocols: cost, completeness, and predicate quality"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "BlazeIt and TASTI: statistics and index reuse"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2023-zhang-equi-vocal",
+    "title": "EQUI-VOCAL: Synthesizing Queries for Compositional Video Events from Limited User Interactions",
+    "shortTitle": "EQUI-VOCAL",
+    "year": 2023,
+    "sourceUrls": [
+      "https://www.vldb.org/pvldb/vol16/p2714-zhang.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "EQUI-VOCAL: the user defines an event through examples"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "EQUI-VOCAL: the user defines an event through examples"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Protocols: cost, completeness, and predicate quality"
+      },
+      {
+        "chapter": "archive",
+        "headingTitle": "EQUI-VOCAL: the user defines an event through examples"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2020-li-reducto",
+    "title": "Reducto: On-Camera Filtering for Resource-Efficient Real-Time Video Analytics",
+    "shortTitle": "Reducto",
+    "year": 2020,
+    "sourceUrls": [
+      "https://www.cs.princeton.edu/~ravian/publications/reducto_sigcomm20.pdf"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Reducto: saving input processing costs"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Reducto: saving input processing costs"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Reducto: saving input processing costs"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-wang-directme",
+    "title": "Keep It in Mind: User-Centric Continual Spatial Intelligence Reasoning in Egocentric Video Streams",
+    "shortTitle": "DirectMe",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2606.15200v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "DirectMe, Wang et al., ICML 2026: where is the object relative to me now?"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "DirectMe, Wang et al., ICML 2026: where is the object relative to me now?"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "DirectMe, Wang et al., ICML 2026: where is the object relative to me now?"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-anwar-remembr",
+    "title": "ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robot Navigation",
+    "shortTitle": "ReMEmbR",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2409.13682v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "ReMEmbR, Anwar et al., ICRA 2025: a description with time and camera position"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "ReMEmbR, Anwar et al., ICRA 2025: a description with time and camera position"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "ReMEmbR, Anwar et al., ICRA 2025: a description with time and camera position"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-yeh-all-angles-bench",
+    "title": "Seeing from Another Perspective: Evaluating Multi-View Understanding in MLLMs",
+    "shortTitle": "All-Angles Bench",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2504.15280v2"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "All-Angles Bench: check correspondences before combining views"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "All-Angles Bench: check correspondences before combining views"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "All-Angles Bench: check correspondences before combining views"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-he-egoexobench",
+    "title": "EgoExoBench: A Benchmark for First- and Third-person View Video Understanding in MLLMs",
+    "shortTitle": "EgoExoBench",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2507.18342v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "EgoExoBench: a second view and a reference execution solve different problems"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoBench: a second view and a reference execution solve different problems"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoBench: a second view and a reference execution solve different problems"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoLearn: matching a demonstration to a different execution"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-huang-egoexolearn",
+    "title": "EgoExoLearn: A Dataset for Bridging Asynchronous Ego- and Exo-centric View of Procedural Activities in Real World",
+    "shortTitle": "EgoExoLearn",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2403.16182v3"
+    ],
+    "chapters": [
+      "observations",
+      "adjacent"
+    ],
+    "headingTitles": [
+      "EgoExoLearn: matching a demonstration to a different execution"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoLearn: matching a demonstration to a different execution"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoLearn: matching a demonstration to a different execution"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Who’s Better: early pairwise ranking of execution"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2022-elfeki-multi-ego",
+    "title": "Multi-Stream Dynamic Video Summarization",
+    "shortTitle": "Multi-Ego / Multi-DPP",
+    "year": 2022,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/WACV2022/papers/Elfeki_Multi-Stream_Dynamic_Video_Summarization_WACV_2022_paper.pdf"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "Multi-Ego / Multi-DPP: early selection of events and viewpoints"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Multi-Ego / Multi-DPP: early selection of events and viewpoints"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "Multi-Ego / Multi-DPP: early selection of events and viewpoints"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2022-grauman-ego4d",
+    "title": "Ego4D: Around the World in 3,000 Hours of Egocentric Video",
+    "shortTitle": "Ego4D",
+    "year": 2022,
+    "sourceUrls": [
+      "https://www.cs.utexas.edu/~grauman/papers/ego4d-cvpr2022.pdf",
+      "https://openaccess.thecvf.com/content/CVPR2022/html/Grauman_Ego4D_Around_the_World_in_3000_Hours_of_Egocentric_Video_CVPR_2022_paper.html"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [],
+    "locations": [],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Foundational datasets: what large collections actually provide"
+      }
+    ],
+    "coverage": "bibliography"
+  },
+  {
+    "slug": "2022-sener-assembly101",
+    "title": "Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities",
+    "shortTitle": "Assembly101",
+    "year": 2022,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2203.14712v2",
+      "https://arxiv.org/abs/2203.14712v2"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [],
+    "locations": [],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Foundational datasets: what large collections actually provide"
+      }
+    ],
+    "coverage": "bibliography"
+  },
+  {
+    "slug": "2024-grauman-ego-exo4d",
+    "title": "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives",
+    "shortTitle": "Ego-Exo4D",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2311.18259v4",
+      "https://arxiv.org/abs/2311.18259v4"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [],
+    "locations": [],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Foundational datasets: what large collections actually provide"
+      }
+    ],
+    "coverage": "bibliography"
+  },
+  {
+    "slug": "2026-kim-ma-egoqa",
+    "title": "MA-EgoQA: Question Answering over Egocentric Videos from Multiple Embodied Agents",
+    "shortTitle": "MA-EgoQA",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2603.09827v2",
+      "https://arxiv.org/abs/2603.09827v2"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "MA-EgoQA: questioning the shared history of multiple participants",
+      "EgoMAS: shared memory for multiple workers"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "MA-EgoQA: questioning the shared history of multiple participants"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoMAS: shared memory for multiple workers"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "MA-EgoQA: questioning the shared history of multiple participants"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoMAS: shared memory for multiple workers"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-xiao-myego",
+    "title": "Ego-Grounding for Personalized Question-Answering in Egocentric Videos",
+    "shortTitle": "MyEgo / Ego-Grounding",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2604.01966v1",
+      "https://arxiv.org/abs/2604.01966v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "MyEgo — first establish whose action it is"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "MyEgo — first establish whose action it is"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "MyEgo — first establish whose action it is"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-liu-egoexomem",
+    "title": "EgoExoMem: Cross-View Memory Reasoning over Synchronized Egocentric and Exocentric Videos",
+    "shortTitle": "EgoExoMem / E²-Select",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2605.18734v2",
+      "https://arxiv.org/abs/2605.18734v2"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "EgoExoMem: evidence from complementary viewpoints",
+      "E²-Select: selecting a complementary viewpoint"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoMem: evidence from complementary viewpoints"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "E²-Select: selecting a complementary viewpoint"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "EgoExoMem: evidence from complementary viewpoints"
+      },
+      {
+        "chapter": "observations",
+        "headingTitle": "E²-Select: selecting a complementary viewpoint"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-liu-visualsync",
+    "title": "VisualSync: Multi-Camera Synchronization via Cross-View Object Motion",
+    "shortTitle": "VisualSync",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2512.02017v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "VisualSync: a shared timeline before combining events"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "VisualSync: a shared timeline before combining events"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "VisualSync: a shared timeline before combining events"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-long-m3-agent",
+    "title": "Seeing, Listening, Remembering, and Reasoning: A Multimodal Agent with Long-Term Memory",
+    "shortTitle": "M3-Agent",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2508.09736v4",
+      "https://arxiv.org/abs/2508.09736v4"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "M3-Agent — a key work linking voices, faces, events, and knowledge"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "M3-Agent — a key work linking voices, faces, events, and knowledge"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "M3-Agent — a key work linking voices, faces, events, and knowledge"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-ren-geb",
+    "title": "Beyond the Timeline: Augmenting Long-Video Memory with Grounded Entity Biographies",
+    "shortTitle": "GEB / Grounded Entity Biographies",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.38155v1",
+      "https://arxiv.org/abs/2609.38155v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "GEB — the key idea: a physical instance's biography"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "GEB — the key idea: a physical instance's biography"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "GEB — the key idea: a physical instance's biography"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-plizzari-osnom",
+    "title": "Spatial Cognition from Egocentric Video: Out of Sight, Not Out of Mind",
+    "shortTitle": "OSNOM",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2404.05072v2",
+      "https://arxiv.org/abs/2404.05072v2"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "OSNOM — an object still exists after the wearer turns away"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "OSNOM — an object still exists after the wearer turns away"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "OSNOM — an object still exists after the wearer turns away"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-chaudhari-ledger",
+    "title": "Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos",
+    "shortTitle": "LEDGER — Never Look Back",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2610.10538v1",
+      "https://arxiv.org/abs/2610.10538v1"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "LEDGER — a key work on remembering coordinates and observed movements"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "LEDGER — a key work on remembering coordinates and observed movements"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "LEDGER — a key work on remembering coordinates and observed movements"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-steenbergen-hoist-case-identifiers",
+    "title": "Surrogate Case Identifier Rules for Construction Site Hoists",
+    "shortTitle": "Hoist surrogate case identifiers",
+    "year": 2026,
+    "sourceUrls": [
+      "https://research.utwente.nl/en/publications/surrogate-case-identifier-rules-for-construction-site-hoists/"
+    ],
+    "chapters": [
+      "observations"
+    ],
+    "headingTitles": [
+      "Combining observations into work instances remains a separate task"
+    ],
+    "locations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Combining observations into work instances remains a separate task"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "observations",
+        "headingTitle": "Combining observations into work instances remains a separate task"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-chen-gelm",
+    "title": "Grounded Multi-Hop VideoQA in Long-Form Egocentric Videos",
+    "shortTitle": "GeLM / MultiHop-EgoQA",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2408.14469v1"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "MultiHop-EgoQA, AAAI 2025: multiple claims and multiple intervals",
+      "GeLM, Chen et al., AAAI 2025: linking parts of the answer to evidence intervals"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "MultiHop-EgoQA, AAAI 2025: multiple claims and multiple intervals"
+      },
+      {
+        "chapter": "evidence",
+        "headingTitle": "GeLM, Chen et al., AAAI 2025: linking parts of the answer to evidence intervals"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "MultiHop-EgoQA, AAAI 2025: multiple claims and multiple intervals"
+      },
+      {
+        "chapter": "evidence",
+        "headingTitle": "GeLM, Chen et al., AAAI 2025: linking parts of the answer to evidence intervals"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-wang-s-ember",
+    "title": "S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval",
+    "shortTitle": "S-EMBER",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2607.02689v2"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "S-EMBER, 2026: joint evaluation of the answer and its timing"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "S-EMBER, 2026: joint evaluation of the answer and its timing"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "S-EMBER, 2026: joint evaluation of the answer and its timing"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-kriz-multivent-raw",
+    "title": "MultiVENT-Raw: A Benchmark for Retrieval and Reasoning over Raw Videos",
+    "shortTitle": "MultiVENT-Raw",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/html/2609.28437v1"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "MultiVENT-Raw: retrieval quality and report support diverge"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "MultiVENT-Raw: retrieval quality and report support diverge"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "MultiVENT-Raw: retrieval quality and report support diverge"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-yoon-uvqa",
+    "title": "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+    "shortTitle": "UVQA",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2507.04976v1"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "UVQA: answerability under a false premise",
+      "UVQA: learning to abstain when the premise is false"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "UVQA: answerability under a false premise"
+      },
+      {
+        "chapter": "evidence",
+        "headingTitle": "UVQA: learning to abstain when the premise is false"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "UVQA: answerability under a false premise"
+      },
+      {
+        "chapter": "evidence",
+        "headingTitle": "UVQA: learning to abstain when the premise is false"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-pang-egoprobe",
+    "title": "EgoProbe: Benchmarking Long-Range and Exact Memory in Streaming Egocentric Videos",
+    "shortTitle": "EgoProbe",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2610.17128"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "SuperMemoryVQA, EGOSTREAM, and EgoProbe: reliability is more than answer accuracy"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM, and EgoProbe: reliability is more than answer accuracy"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM, and EgoProbe: reliability is more than answer accuracy"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-forte-egostream",
+    "title": "EGOSTREAM: A Diagnostic Benchmark for Streaming Episodic Memory in Egocentric Vision",
+    "shortTitle": "EGOSTREAM",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2605.31557"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "SuperMemoryVQA, EGOSTREAM, and EgoProbe: reliability is more than answer accuracy"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM, and EgoProbe: reliability is more than answer accuracy"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM, and EgoProbe: reliability is more than answer accuracy"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-alam-supermemory-vqa",
+    "title": "SuperMemory-VQA: An Egocentric Visual Question-Answering Benchmark for Long-Horizon Memory",
+    "shortTitle": "SuperMemory-VQA",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2606.00825v1"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "SuperMemoryVQA, EGOSTREAM, and EgoProbe: reliability is more than answer accuracy"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM, and EgoProbe: reliability is more than answer accuracy"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "SuperMemoryVQA, EGOSTREAM, and EgoProbe: reliability is more than answer accuracy"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-zhou-temporal-abstention",
+    "title": "When Silence Is Golden: Can LLMs Learn to Abstain in Temporal QA and Beyond?",
+    "shortTitle": "When Silence Is Golden",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2602.04755v2"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "When to answer: learning abstention and checking the basis of the answer itself"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "When to answer: learning abstention and checking the basis of the answer itself"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "When to answer: learning abstention and checking the basis of the answer itself"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-ortiz-abstention-knobs",
+    "title": "Explicit Abstention Knobs for Predictable Reliability in Video Question Answering",
+    "shortTitle": "Explicit Abstention Knobs",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2601.00138v2"
+    ],
+    "chapters": [
+      "evidence"
+    ],
+    "headingTitles": [
+      "When to answer: learning abstention and checking the basis of the answer itself"
+    ],
+    "locations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "When to answer: learning abstention and checking the basis of the answer itself"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "evidence",
+        "headingTitle": "When to answer: learning abstention and checking the basis of the answer itself"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2022-soucek-look-for-change",
+    "title": "Look for the Change: Learning Object States and State-Modifying Actions from Untrimmed Web Videos",
+    "shortTitle": "Look for the Change",
+    "year": 2022,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2203.11637v1"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "Look for the Change, Souček et al., CVPR 2022: initial state → action → final state"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Look for the Change, Souček et al., CVPR 2022: initial state → action → final state"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "Look for the Change, Souček et al., CVPR 2022: initial state → action → final state"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-xue-vidosc",
+    "title": "Learning Object State Changes in Videos: An Open-World Perspective",
+    "shortTitle": "VidOSC",
+    "year": 2024,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Xue_Learning_Object_State_Changes_in_Videos_An_Open-World_Perspective_CVPR_2024_paper.pdf"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "VidOSC, Xue et al., CVPR 2024: transferring a state transition to a new object"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "VidOSC, Xue et al., CVPR 2024: transferring a state transition to a new object"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "VidOSC, Xue et al., CVPR 2024: transferring a state transition to a new object"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-zameni-moscato",
+    "title": "MOSCATO: Predicting Multiple Object State Change through Actions",
+    "shortTitle": "MOSCATO",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/ICCV2025/papers/Zameni_MOSCATO_Predicting_Multiple_Object_State_Change_Through_Actions_ICCV_2025_paper.pdf"
+    ],
+    "chapters": [
+      "states",
+      "procedures"
+    ],
+    "headingTitles": [
+      "MOSCATO, Zameni et al., ICCV 2025: reconciling actions and multiple object states"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "MOSCATO, Zameni et al., ICCV 2025: reconciling actions and multiple object states"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "MOSCATO, Zameni et al., ICCV 2025: reconciling actions and multiple object states"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-schoonbeek-storm-psr",
+    "title": "Learning to Recognize Correctly Completed Procedure Steps in Egocentric Assembly Videos through Spatio-Temporal Modeling",
+    "shortTitle": "STORM-PSR",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2510.12385"
+    ],
+    "chapters": [
+      "states",
+      "procedures"
+    ],
+    "headingTitles": [
+      "STORM-PSR, Schoonbeek et al., CVIU 2025: separately confirming a completed step"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "STORM-PSR, Schoonbeek et al., CVIU 2025: separately confirming a completed step"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "STORM-PSR, Schoonbeek et al., CVIU 2025: separately confirming a completed step"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-wen-provia",
+    "title": "PROVIA: Procedure State Tracking for Online Mistake Detection in Egocentric Videos",
+    "shortTitle": "PROVIA",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.20638v1",
+      "https://arxiv.org/abs/2609.20638v1"
+    ],
+    "chapters": [
+      "states",
+      "procedures"
+    ],
+    "headingTitles": [
+      "PROVIA, 2026: an erroneous step must not automatically advance the procedure"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "PROVIA, 2026: an erroneous step must not automatically advance the procedure"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "PROVIA, 2026: an erroneous step must not automatically advance the procedure"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-mandikal-spoc",
+    "title": "SPOC: Spatially-Progressing Object State Change Segmentation in Video",
+    "shortTitle": "SPOC",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2503.11953v2"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "SPOC, Mandikal et al., WACV 2026: localizing the remaining work"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "SPOC, Mandikal et al., WACV 2026: localizing the remaining work"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "SPOC, Mandikal et al., WACV 2026: localizing the remaining work"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-perrett-hd-epic",
+    "title": "HD-EPIC: A Highly-Detailed Egocentric Video Dataset",
+    "shortTitle": "HD-EPIC",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Perrett_HD-EPIC_A_Highly-Detailed_Egocentric_Video_Dataset_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "HD-EPIC: detailed annotations of state and spatial history"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "HD-EPIC: detailed annotations of state and spatial history"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "HD-EPIC: detailed annotations of state and spatial history"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-guo-procobject",
+    "title": "Benchmarking and Learning Object-Centric Procedural Understanding in Instructional Videos",
+    "shortTitle": "ProcObject-10K",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2512.03479v3"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "ProcObject-10K: state together with temporal evidence",
+      "ProcObject-10K: object supervision for answers and grounding"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "ProcObject-10K: state together with temporal evidence"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "ProcObject-10K: object supervision for answers and grounding"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "ProcObject-10K: state together with temporal evidence"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "ProcObject-10K: object supervision for answers and grounding"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-lehman-statediffnet",
+    "title": "Find the Assembly Mistakes: Error Segmentation for Industrial Applications",
+    "shortTitle": "StateDiffNet",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2408.12945v1"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "StateDiffNet: comparing an assembly with a correct reference"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "StateDiffNet: comparing an assembly with a correct reference"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "StateDiffNet: comparing an assembly with a correct reference"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-yang-egotsr",
+    "title": "EgoTSR++: Egocentric Spatiotemporal Reasoning for Task Progress Understanding",
+    "shortTitle": "EgoTSR++",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.31751v1"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "AEM and EgoTSR++: action effects and movement toward a goal"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "AEM and EgoTSR++: action effects and movement toward a goal"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "AEM and EgoTSR++: action effects and movement toward a goal"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-nguyen-oscar",
+    "title": "OSCaR: Object State Captioning and State Change Representation",
+    "shortTitle": "OSCaR",
+    "year": 2024,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2402.17128v4"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "OSCaR, Nguyen et al., Findings of NAACL 2024: state-change descriptions as training data"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "OSCaR, Nguyen et al., Findings of NAACL 2024: state-change descriptions as training data"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "OSCaR, Nguyen et al., Findings of NAACL 2024: state-change descriptions as training data"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-sun-tubeletgraph",
+    "title": "Tracking and Understanding Object Transformations",
+    "shortTitle": "TubeletGraph",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2511.04678v2"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "TubeletGraph, Sun et al., NeurIPS 2025: one object can become several"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "TubeletGraph, Sun et al., NeurIPS 2025: one object can become several"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "TubeletGraph, Sun et al., NeurIPS 2025: one object can become several"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-liang-robometer",
+    "title": "Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory Comparisons",
+    "shortTitle": "Robometer",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2603.02115v2"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "RoboMeter, Liang et al., 2026 preprint: progress and a separate success check"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "RoboMeter, Liang et al., 2026 preprint: progress and a separate success check"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "states",
+        "headingTitle": "RoboMeter, Liang et al., 2026 preprint: progress and a separate success check"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-guo-aem",
+    "title": "Procedural Mistake Detection via Action Effect Modeling",
+    "shortTitle": "AEM",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2512.03474v2"
+    ],
+    "chapters": [
+      "states"
+    ],
+    "headingTitles": [
+      "AEM and EgoTSR++: action effects and movement toward a goal"
+    ],
+    "locations": [
+      {
+        "chapter": "states",
+        "headingTitle": "AEM and EgoTSR++: action effects and movement toward a goal"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "states",
+        "headingTitle": "AEM and EgoTSR++: action effects and movement toward a goal"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-lee-egoper",
+    "title": "Error Detection in Egocentric Procedural Task Videos",
+    "shortTitle": "EgoPER / EgoPED",
+    "year": 2024,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_Error_Detection_in_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "EgoPED: finding deviations from correct examples"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "EgoPED: finding deviations from correct examples"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "EgoPED: finding deviations from correct examples"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-seminara-tgml",
+    "title": "Task Graph Maximum Likelihood Estimation for Procedural Activity Understanding in Egocentric Videos",
+    "shortTitle": "TGML",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2502.17753v2"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "DTGL / TGML: a procedure as a dependency graph"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "DTGL / TGML: a procedure as a dependency graph"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "DTGL / TGML: a procedure as a dependency graph"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-majumder-mistexit",
+    "title": "MistExit: Learning to Exit for Early Mistake Detection in Procedural Videos",
+    "shortTitle": "MistExit",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2603.14252v1"
+    ],
+    "chapters": [
+      "procedures",
+      "streaming"
+    ],
+    "headingTitles": [
+      "MistExit: observing further or making a decision"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "MistExit: observing further or making a decision"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "MistExit: observing further or making a decision"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-patsch-mistsense",
+    "title": "MistSense: Versatile Online Detection of Procedural and Execution Mistakes",
+    "shortTitle": "MistSense",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/ICCV2025/papers/Patsch_MistSense_Versatile_Online_Detection_of_Procedural_and_Execution_Mistakes_ICCV_2025_paper.pdf",
+      "https://openaccess.thecvf.com/content/ICCV2025/html/Patsch_MistSense_Versatile_Online_Detection_of_Procedural_and_Execution_Mistakes_ICCV_2025_paper.html"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "MistSense, ICCV 2025: detecting an error and explaining it separately"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "MistSense, ICCV 2025: detecting an error and explaining it separately"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "MistSense, ICCV 2025: detecting an error and explaining it separately"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-chavan-indego",
+    "title": "IndEgo: A Dataset of Industrial Scenarios and Collaborative Work for Egocentric Assistants",
+    "shortTitle": "IndEgo",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2511.19684v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndEgo, NeurIPS 2025: an intermediate test between kitchens and construction sites"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgo, NeurIPS 2025: an intermediate test between kitchens and construction sites"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgo, NeurIPS 2025: an intermediate test between kitchens and construction sites"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-wen-impact",
+    "title": "IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly",
+    "shortTitle": "IMPACT",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2604.10409v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IMPACT: an error, an attempted correction, and a restored state"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IMPACT: an error, an attempted correction, and a restored state"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "IMPACT: an error, an attempted correction, and a restored state"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-haneji-egooops",
+    "title": "EgoOops: A Dataset for Mistake Action Detection from Egocentric Videos referring to Procedural Texts",
+    "shortTitle": "EgoOops",
+    "year": 2025,
+    "sourceUrls": [
+      "https://www.lsta.media.kyoto-u.ac.jp/mori/research/public/haneji-SAUAFG2025.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "StepFormer++: an error relative to a textual instruction"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "StepFormer++: an error relative to a textual instruction"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Diagnostic tests of instructions and fine manipulations"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "StepFormer++: an error relative to a textual instruction"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-li-egoerrorvqa",
+    "title": "EgoErrorVQA: Assess Egocentric Comprehension Capabilities through Procedural Errors for Ego-Agentic AI",
+    "shortTitle": "EgoErrorVQA",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.24134v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "Ego-ADR: the procedure, observation, and diagnostic conclusion"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Ego-ADR: the procedure, observation, and diagnostic conclusion"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Diagnostic tests of instructions and fine manipulations"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Ego-ADR: the procedure, observation, and diagnostic conclusion"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-sasaki-egoindassembly",
+    "title": "EgoIndAssembly: Diagnosing Fine-Grained Temporal Hand Reasoning in Vision–Language Models for Skilled Assembly",
+    "shortTitle": "EgoIndAssembly",
+    "year": 2026,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/papers/Sasaki_EgoIndAssembly_Diagnosing_Fine-Grained_Temporal_Hand_Reasoning_in_Vision-Language_Models_for_CVPRW_2026_paper.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "Progressive Procedure Grounding: distinguishing adjacent manipulations"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Progressive Procedure Grounding: distinguishing adjacent manipulations"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Diagnostic tests of instructions and fine manipulations"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "Progressive Procedure Grounding: distinguishing adjacent manipulations"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-chavan-indego-assistant",
+    "title": "AI-based worker guidance in assembly and disassembly operations using multimodal ego/exo-centric data capture and structured task knowledge",
+    "shortTitle": "IndEgo Assistant",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.22617v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndEgoAssistant, PRISM, and MATT: procedure structure does not imply compliance"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM, and MATT: procedure structure does not imply compliance"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM, and MATT: procedure structure does not imply compliance"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-loginova-prism",
+    "title": "Through a PRISM, Clearly: Step-Sequence Reasoning for Mistake Recognition in Procedural Videos",
+    "shortTitle": "PRISM",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2610.31117v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndEgoAssistant, PRISM, and MATT: procedure structure does not imply compliance"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM, and MATT: procedure structure does not imply compliance"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM, and MATT: procedure structure does not imply compliance"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-li-matt",
+    "title": "Mistake Attribution: Fine-Grained Mistake Understanding in Egocentric Videos",
+    "shortTitle": "MATT",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2511.20525v2"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndEgoAssistant, PRISM, and MATT: procedure structure does not imply compliance"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM, and MATT: procedure structure does not imply compliance"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndEgoAssistant, PRISM, and MATT: procedure structure does not imply compliance"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-huang-amnar",
+    "title": "Modeling Multiple Normal Action Representations for Error Detection in Procedural Tasks",
+    "shortTitle": "AMNAR",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Huang_Modeling_Multiple_Normal_Action_Representations_for_Error_Detection_in_Procedural_CVPR_2025_paper.pdf",
+      "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Huang_Modeling_Multiple_Normal_CVPR_2025_supplemental.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "AMNAR, Huang et al., CVPR 2025: the correct continuation need not be unique"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "AMNAR, Huang et al., CVPR 2025: the correct continuation need not be unique"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "AMNAR, Huang et al., CVPR 2025: the correct continuation need not be unique"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-gupta-vidparse",
+    "title": "VidParse: Online Parsing of Egocentric Procedures Like a Pro",
+    "shortTitle": "VidParse",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.27562v2"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "VidParse, Gupta et al., ECCV 2026: recognizing execution before checking errors"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "VidParse, Gupta et al., ECCV 2026: recognizing execution before checking errors"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "VidParse, Gupta et al., ECCV 2026: recognizing execution before checking errors"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2022-jia-egotaskqa",
+    "title": "EgoTaskQA: Understanding Human Tasks in Egocentric Videos",
+    "shortTitle": "EgoTaskQA",
+    "year": 2022,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2210.03929v1"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "EgoTaskQA, Jia et al., NeurIPS 2022: questions about dependencies within a procedure"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "EgoTaskQA, Jia et al., NeurIPS 2022: questions about dependencies within a procedure"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "procedures",
+        "headingTitle": "EgoTaskQA, Jia et al., NeurIPS 2022: questions about dependencies within a procedure"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-schoonbeek-industreal",
+    "title": "IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting",
+    "shortTitle": "IndustReal",
+    "year": 2024,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/WACV2024/papers/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndustReal, HoloAssist, and CaptainCook4D"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist, and CaptainCook4D"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist, and CaptainCook4D"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2023-wang-holoassist",
+    "title": "HoloAssist: an Egocentric Human Interaction Dataset for Interactive AI Assistants in the Real World",
+    "shortTitle": "HoloAssist",
+    "year": 2023,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_HoloAssist_an_Egocentric_Human_Interaction_Dataset_for_Interactive_AI_Assistants_ICCV_2023_paper.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndustReal, HoloAssist, and CaptainCook4D"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist, and CaptainCook4D"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist, and CaptainCook4D"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-peddi-captaincook4d",
+    "title": "CaptainCook4D: A Dataset for Understanding Errors in Procedural Activities",
+    "shortTitle": "CaptainCook4D",
+    "year": 2024,
+    "sourceUrls": [
+      "https://proceedings.neurips.cc/paper_files/paper/2024/file/f4a04396c2ed1342a5d8d05e94cb6101-Paper-Datasets_and_Benchmarks_Track.pdf"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "IndustReal, HoloAssist, and CaptainCook4D"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist, and CaptainCook4D"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "IndustReal, HoloAssist, and CaptainCook4D"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-seminara-dtgl",
+    "title": "Differentiable Task Graph Learning",
+    "shortTitle": "DTGL",
+    "year": 2024,
+    "sourceUrls": [
+      "https://fpv-iplab.github.io/Differentiable-Task-Graph-Learning/"
+    ],
+    "chapters": [
+      "procedures"
+    ],
+    "headingTitles": [
+      "DTGL / TGML: a procedure as a dependency graph"
+    ],
+    "locations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "DTGL / TGML: a procedure as a dependency graph"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "procedures",
+        "headingTitle": "DTGL / TGML: a procedure as a dependency graph"
+      }
+    ],
+    "coverage": "historical-reference"
+  },
+  {
+    "slug": "2026-zeng-onestreamer",
+    "title": "OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction",
+    "shortTitle": "OneStreamer",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2610.01762v1",
+      "https://arxiv.org/abs/2610.01762v1"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "OneStreamer, 2026: fresh visual tokens alongside recorded history"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "OneStreamer, 2026: fresh visual tokens alongside recorded history"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "OneStreamer, 2026: fresh visual tokens alongside recorded history"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-di-rekv",
+    "title": "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+    "shortTitle": "ReKV",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2503.00540v1"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "ReKV: reusing internal representations"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "ReKV: reusing internal representations"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "ReKV: reusing internal representations"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-liao-proactegomem",
+    "title": "ProactEgoMem: Benchmarking Proactive Memory in Streaming Egocentric Video",
+    "shortTitle": "ProactEgoMem",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2610.30089v2",
+      "https://arxiv.org/abs/2610.30089v2"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "ProactEgoMem, 2026: memory quality begins when recording starts"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "ProactEgoMem, 2026: memory quality begins when recording starts"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "ProactEgoMem, 2026: memory quality begins when recording starts"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-zhang-streamarena",
+    "title": "StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding",
+    "shortTitle": "StreamArena",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2608.05703v1"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "StreamArena and Qualcomm Interactive Cooking: the interaction protocol",
+      "StreamMind: moving expensive memory work out of the fast response path"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamArena and Qualcomm Interactive Cooking: the interaction protocol"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamMind: moving expensive memory work out of the fast response path"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamArena and Qualcomm Interactive Cooking: the interaction protocol"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamMind: moving expensive memory work out of the fast response path"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-bhattacharyya-livemamba",
+    "title": "Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?",
+    "shortTitle": "LiveMamba",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2511.21998v2"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "StreamArena and Qualcomm Interactive Cooking: the interaction protocol",
+      "LiveMamba: step completion, errors, and the next step"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamArena and Qualcomm Interactive Cooking: the interaction protocol"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "LiveMamba: step completion, errors, and the next step"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamArena and Qualcomm Interactive Cooking: the interaction protocol"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "LiveMamba: step completion, errors, and the next step"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-liu-guideme",
+    "title": "GuideMe: Multi-Domain Task Guidance and Intervention in Streaming Video",
+    "shortTitle": "GuideMe",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2607.02991v1"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "GuideMe: four different kinds of assistance"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "GuideMe: four different kinds of assistance"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "GuideMe: four different kinds of assistance"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-panpatil-egosafetybench",
+    "title": "EgoSafetyBench: A Diagnostic Egocentric Video Benchmark for Evaluating Embodied VLMs as Runtime Safety Guards",
+    "shortTitle": "EgoSafetyBench",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2607.00218v2"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "EgoSafetyBench: alerts relative to the appearance of evidence"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "EgoSafetyBench: alerts relative to the appearance of evidence"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "EgoSafetyBench: alerts relative to the appearance of evidence"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-zeng-streamforest",
+    "title": "StreamForest: Efficient Online Video Understanding with Persistent Event Memory",
+    "shortTitle": "StreamForest",
+    "year": 2025,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2509.24871v1"
+    ],
+    "chapters": [
+      "streaming"
+    ],
+    "headingTitles": [
+      "StreamForest: a detailed window and compressed history"
+    ],
+    "locations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamForest: a detailed window and compressed history"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "streaming",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "streaming",
+        "headingTitle": "StreamForest: a detailed window and compressed history"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2009-golparvar-fard-d4ar",
+    "title": "D4AR – A 4-Dimensional Augmented Reality Model for Automating Construction Progress Monitoring Data Collection, Processing and Communication",
+    "shortTitle": "D4AR",
+    "year": 2009,
+    "sourceUrls": [
+      "https://www.itcon.org/papers/2009_13.content.06965.pdf",
+      "https://www.itcon.org/paper/2009/13"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "D4AR, 2009: connecting as-built and as-planned"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "D4AR, 2009: connecting as-built and as-planned"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "D4AR, 2009: connecting as-built and as-planned"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-hsieh-ai-bim-progress",
+    "title": "Automated construction progress monitoring and control through AI-based image recognition and BIM integration",
+    "shortTitle": "AI+BIM construction progress",
+    "year": 2026,
+    "sourceUrls": [
+      "https://doi.org/10.1016/j.autcon.2026.106783"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "AI + BIM: a stable element identifier and the cost of observability"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "AI + BIM: a stable element identifier and the cost of observability"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "AI + BIM: a stable element identifier and the cost of observability"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-isaac-sensing-scheduling",
+    "title": "From Sensing to Scheduling: Deviation-Based Framework for Sensor-Aware Progress Monitoring and Schedule Control",
+    "shortTitle": "From Sensing to Scheduling",
+    "year": 2026,
+    "sourceUrls": [
+      "https://www.iaarc.org/publications/fulltext/ISARC2026_1105.pdf"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "From Sensing to Scheduling: visible installation and accepted work"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "From Sensing to Scheduling: visible installation and accepted work"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "From Sensing to Scheduling: visible installation and accepted work"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-qiu-graphrag-compliance",
+    "title": "A GraphRAG-driven multi-agent framework for worker-centric construction process compliance supervision via egocentric video",
+    "shortTitle": "GraphRAG construction compliance",
+    "year": 2026,
+    "sourceUrls": [
+      "https://www.sciencedirect.com/science/article/abs/pii/S1474034626003344"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "GraphRAG for construction compliance: requirements separate from observations"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "GraphRAG for construction compliance: requirements separate from observations"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "GraphRAG for construction compliance: requirements separate from observations"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-zhang-constructai",
+    "title": "ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems",
+    "shortTitle": "ConstructAI",
+    "year": 2026,
+    "sourceUrls": [
+      "https://ojs.aaai.org/index.php/AAAI/article/download/41452/45413"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "ConstructAI, AAAI 2026: an issue lifecycle with substantial caveats"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "ConstructAI, AAAI 2026: an issue lifecycle with substantial caveats"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "ConstructAI, AAAI 2026: an issue lifecycle with substantial caveats"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-guo-egoconqs",
+    "title": "Egocentric-video-based construction quality supervision (EgoConQS): Application of automatic key activity queries",
+    "shortTitle": "EgoConQS",
+    "year": 2025,
+    "sourceUrls": [
+      "https://doi.org/10.1016/j.autcon.2024.105933"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "EgoConQS, 2025: finding a key construction operation for review"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "EgoConQS, 2025: finding a key construction operation for review"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "EgoConQS, 2025: finding a key construction operation for review"
+      }
+    ],
+    "coverage": "discussion",
+    "sourceStatus": "full-text-unavailable"
+  },
+  {
+    "slug": "2025-liu-egosafe",
+    "title": "Egocentric camera-based method for detecting static hazardous objects on construction sites",
+    "shortTitle": "EgoSafe",
+    "year": 2025,
+    "sourceUrls": [
+      "https://doi.org/10.1016/j.autcon.2025.106048",
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4936193"
+    ],
+    "chapters": [
+      "construction"
+    ],
+    "headingTitles": [
+      "EgoSafe, 2025: a narrow detector of observable hazardous objects"
+    ],
+    "locations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "EgoSafe, 2025: a narrow detector of observable hazardous objects"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "construction",
+        "headingTitle": "EgoSafe, 2025: a narrow detector of observable hazardous objects"
+      }
+    ],
+    "coverage": "discussion",
+    "sourceStatus": "full-text-unavailable"
+  },
+  {
+    "slug": "2018-doughty-skill-ranking",
+    "title": "Who’s Better? Who’s Best? Pairwise Deep Ranking for Skill Determination",
+    "shortTitle": "Who’s Better? Who’s Best?",
+    "year": 2018,
+    "sourceUrls": [
+      "https://dimadamen.github.io/Skill/whos_better_whos_best.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "Who’s Better: early pairwise ranking of execution"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Who’s Better: early pairwise ranking of execution"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Who’s Better: early pairwise ranking of execution"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-braun-skillspotter",
+    "title": "SkillSpotter: Pose-Aware Multi-View Skilled Action Detection and Grading in Ego-Exo Videos",
+    "shortTitle": "SkillSpotter",
+    "year": 2026,
+    "sourceUrls": [
+      "https://static.siplab.org/papers/eccv2026-skillspotter.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "SkillSpotter: finding a moment to assess and assessing execution separately"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "SkillSpotter: finding a moment to assess and assessing execution separately"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "SkillSpotter: finding a moment to assess and assessing execution separately"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-ashutosh-expertaf",
+    "title": "ExpertAF: Expert Actionable Feedback from Video",
+    "shortTitle": "ExpertAF",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Ashutosh_ExpertAF_Expert_Actionable_Feedback_from_Video_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "ExpertAF: an explanation together with a corrective example"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "ExpertAF: an explanation together with a corrective example"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "ExpertAF: an explanation together with a corrective example"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-mazzamuto-proskill",
+    "title": "ProSkill: Segment-Level Skill Assessment in Procedural Videos",
+    "shortTitle": "ProSkill",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2601.20661v1"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "ProSkill: comparative annotation of individual steps"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "ProSkill: comparative annotation of individual steps"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "ProSkill: comparative annotation of individual steps"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2024-wu-ovvad",
+    "title": "Open-Vocabulary Video Anomaly Detection",
+    "shortTitle": "OVVAD",
+    "year": 2024,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Wu_Open-Vocabulary_Video_Anomaly_Detection_CVPR_2024_paper.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "OVVAD and Anomize: anomaly categories"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "OVVAD and Anomize: anomaly categories"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "OVVAD and Anomize: anomaly categories"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-li-anomize",
+    "title": "Anomize: Better Open Vocabulary Video Anomaly Detection",
+    "shortTitle": "Anomize",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Li_Anomize_Better_Open_Vocabulary_Video_Anomaly_Detection_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "OVVAD and Anomize: anomaly categories"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "OVVAD and Anomize: anomaly categories"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "OVVAD and Anomize: anomaly categories"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2025-ye-vera",
+    "title": "VERA: Explainable Video Anomaly Detection via Verbalized Learning of Vision-Language Models",
+    "shortTitle": "VERA",
+    "year": 2025,
+    "sourceUrls": [
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Ye_VERA_Explainable_Video_Anomaly_Detection_via_Verbalized_Learning_of_Vision-Language_CVPR_2025_paper.pdf"
+    ],
+    "chapters": [
+      "adjacent"
+    ],
+    "headingTitles": [
+      "VERA: learnable diagnostic questions"
+    ],
+    "locations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "VERA: learnable diagnostic questions"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "adjacent",
+        "headingTitle": "Benchmarks and evaluation protocols"
+      },
+      {
+        "chapter": "adjacent",
+        "headingTitle": "VERA: learnable diagnostic questions"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-guo-multimodal-memory-survey",
+    "title": "Seeing, Maintaining, and Learning: The Evolution of Multimodal Agent Memory",
+    "shortTitle": "Multimodal Agent Memory Survey",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/abs/2610.19366"
+    ],
+    "chapters": [
+      "reading"
+    ],
+    "headingTitles": [
+      "A survey of multimodal memory: representation and management policy"
+    ],
+    "locations": [
+      {
+        "chapter": "reading",
+        "headingTitle": "A survey of multimodal memory: representation and management policy"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "reading",
+        "headingTitle": "A survey of multimodal memory: representation and management policy"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2026-bacharidis-mistake-survey",
+    "title": "Vision-Based Mistake Analysis in Procedural Activities: A Review of Advances and Challenges",
+    "shortTitle": "Vision-Based Mistake Analysis (survey)",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2510.19292v2"
+    ],
+    "chapters": [
+      "reading"
+    ],
+    "headingTitles": [
+      "A survey of procedural mistakes: task, annotation and decision time"
+    ],
+    "locations": [
+      {
+        "chapter": "reading",
+        "headingTitle": "A survey of procedural mistakes: task, annotation and decision time"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "reading",
+        "headingTitle": "A survey of procedural mistakes: task, annotation and decision time"
+      }
+    ],
+    "coverage": "discussion"
+  },
+  {
+    "slug": "2023-mangalam-egoschema",
+    "title": "EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding",
+    "shortTitle": "EgoSchema",
+    "year": 2023,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2308.09126v1"
+    ],
+    "chapters": [
+      "archive"
+    ],
+    "headingTitles": [
+      "Benchmarks for reading a selected video"
+    ],
+    "locations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks for reading a selected video"
+      }
+    ],
+    "citationLocations": [
+      {
+        "chapter": "archive",
+        "headingTitle": "Benchmarks for reading a selected video"
+      }
+    ],
+    "coverage": "discussion"
+  }
+]

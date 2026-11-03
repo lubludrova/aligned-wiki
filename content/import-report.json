@@ -1,0 +1,947 @@
+{
+  "source": "docs/research/LITERATURE_REVIEW_RU.md",
+  "snapshot_path": "content/review.original.md",
+  "source_sha256": "a4f563815095741a13d7325dcb5fed219b553087a36523f45fa5e861c9360557",
+  "chapters": [
+    {
+      "slug": "foundations",
+      "source_sha256": "09ad41c063f1da960f70a5ae7326a8bcd93676386dc850ef2a6d9274094ffa1b",
+      "output_sha256": "d9a0dce90c9cf4392c90dd43121d8d61bc642d607382370331d12ffd9385f312",
+      "text_preserved": true
+    },
+    {
+      "slug": "archive",
+      "source_sha256": "58955e8141f056bdc10effa145958f141d545ef0179cd8a79767c1b5b7e30247",
+      "output_sha256": "91f027a1c76107e4a95ec4cf8acdcc29c04636553f61f7b15f1bec1cfb9cbd98",
+      "text_preserved": true
+    },
+    {
+      "slug": "observations",
+      "source_sha256": "fe2b6dd3e2cc719b572929c2388bfbd25222f16dd0d5700863d843df5e76b9fb",
+      "output_sha256": "25ad8d72665faacdf68d16d5de687bd51353890d20657266fe91c8b688432d1b",
+      "text_preserved": true
+    },
+    {
+      "slug": "evidence",
+      "source_sha256": "eba02501384bde23fbc1342a8fe64a3a8a6a4663900afa7c677cfedc58ab914c",
+      "output_sha256": "39b87fc26d3867685bd16f2a64ea720c4deb321d1cbc00f866e339549ae087ce",
+      "text_preserved": true
+    },
+    {
+      "slug": "states",
+      "source_sha256": "75301952ec86bf3ebadb04493b582632c5381301a61fe3182a5c1fc893c9be76",
+      "output_sha256": "9b40fe515c19ada6547f28aafd85cdae8b29ff73d117df0c36b0c8f7ca5feba5",
+      "text_preserved": true
+    },
+    {
+      "slug": "procedures",
+      "source_sha256": "30cdd49029281b02bf35c838d4a190d8b45422f85a343aad6aac7f1158db552c",
+      "output_sha256": "2218efb3a48662634815c941469c085001b2887785b94665aaa6d2be99dc150a",
+      "text_preserved": true
+    },
+    {
+      "slug": "streaming",
+      "source_sha256": "9634a8b9fe2732b51d59f1ed3c0813d7b71bed91818a64bfb7a5fc2ec17dd3b6",
+      "output_sha256": "ecdbfd0863cc6f5aadde3ac3266385949e7abc7796513b6c9cfa6c81de1b695d",
+      "text_preserved": true
+    },
+    {
+      "slug": "construction",
+      "source_sha256": "cbb8dab101d55595fb35060bc99fd2947f16a6e577ec5b506f4138ddb0d44e55",
+      "output_sha256": "3c0993cc5bf7b2a839b9975704453c9332deaed0b88f95a6e4735fade8f4aca3",
+      "text_preserved": true
+    },
+    {
+      "slug": "business",
+      "source_sha256": "05686ce3eedb807175286b6da2e03b63d31bb74f74309cbcbd723f45e5fc8fc2",
+      "output_sha256": "83aaae6d5ca4e80296cdfd054d6cf78985ac7aaac8140d2c0ebbfce3a91a5a4e",
+      "text_preserved": true
+    },
+    {
+      "slug": "adjacent",
+      "source_sha256": "2a41478c41a39f65df94c9c78fcbee8addb54d3334936f97e14d136a36026ad2",
+      "output_sha256": "4247d65bcedea37c8ed3fc1d15a1823dae9d1e73d61b5d6b4407f018b20adbe7",
+      "text_preserved": true
+    },
+    {
+      "slug": "synthesis",
+      "source_sha256": "8cfe99b053a2f8bcc18eb0e3a11cb0a2ed2d2be0d3f7fc04cc678a2e445f8912",
+      "output_sha256": "5796148e8816e3f4e79f1036f8cb6a18ca3eadbace4d616762d3ae16e6ba5099",
+      "text_preserved": true
+    },
+    {
+      "slug": "reading",
+      "source_sha256": "0d08f566c0f21a142c5f9d616db28d7336c9209105ec44183221b19cd62f9615",
+      "output_sha256": "bbbdad8fb404fed58123090b9591c72e65f6d7087ac0fa93e58a6dce50bf29b4",
+      "text_preserved": true
+    },
+    {
+      "slug": "methodology",
+      "source_sha256": "5d76fa5e8e2217a0ea1af69d82bbfd643e4dae46be22d70b4970df6e2ba154b9",
+      "output_sha256": "346755cf90940df0f7ea93c99569ab33deabd2532870408a64286ecafda71ac4",
+      "text_preserved": true
+    }
+  ],
+  "chapter_count": 13,
+  "notes_count": 48,
+  "original_image_count": 76,
+  "original_local_pdf_count": 104,
+  "original_table_count": 19,
+  "imported_table_count": 19,
+  "images": [
+    {
+      "source": "docs/research/assets/expansion-memory/tvr-xml-architecture.png",
+      "target": "public/media/assets/expansion-memory/tvr-xml-architecture.png",
+      "sha256": "21d17c3cc3736b9a69cac3188a8d8d505fb30da53d1407fdbc92f074b3681e66",
+      "bytes": 125645
+    },
+    {
+      "source": "docs/research/assets/expansion-memory/eventformer-retriever.png",
+      "target": "public/media/assets/expansion-memory/eventformer-retriever.png",
+      "sha256": "ae75548b016168bb9934b8c871692f5f32061711c73ca22f1f7aa91d891063a8",
+      "bytes": 159990
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-videorag-ren-figure1.png",
+      "target": "public/media/assets/pdf-audit-videorag-ren-figure1.png",
+      "sha256": "1c1e70537636700152697b8bc87fa325b0781c880f5135eb4ab15ae248e41041",
+      "bytes": 390033
+    },
+    {
+      "source": "docs/research/assets/expansion-memory/flashmmr-architecture.png",
+      "target": "public/media/assets/expansion-memory/flashmmr-architecture.png",
+      "sha256": "f717fc6587a8f1a91fb42030ff12491aa16c109217311c43ec8de78f4780da63",
+      "bytes": 182857
+    },
+    {
+      "source": "docs/research/assets/expansion-memory/apm-bench-protocol.png",
+      "target": "public/media/assets/expansion-memory/apm-bench-protocol.png",
+      "sha256": "e123c8b043eed72fe86f8bd9571d32075a45d56ff15d1b41e13718add7486703",
+      "bytes": 596811
+    },
+    {
+      "source": "docs/research/assets/expansion-memory/egomonth-questions.png",
+      "target": "public/media/assets/expansion-memory/egomonth-questions.png",
+      "sha256": "b43a48403901d71f62e6443dc120fdd7af19f79dfd8a286b862c50f376d19b5a",
+      "bytes": 989463
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-egomemreason-fig1.png",
+      "target": "public/media/assets/pdf-audit-egomemreason-fig1.png",
+      "sha256": "1c765bf79cc7233a160479aaecb48c73fdbbe8b73f5d7e7a8f7278f02df867ec",
+      "bytes": 316105
+    },
+    {
+      "source": "docs/research/assets/2024-fan-videoagent-figure2.png",
+      "target": "public/media/assets/2024-fan-videoagent-figure2.png",
+      "sha256": "09238222996a70dc5e8811664e87cfe86ad66ad8835af5ce7065843d1728e8ed",
+      "bytes": 151104
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-egolife-egobutler-figure7.png",
+      "target": "public/media/assets/pdf-audit-egolife-egobutler-figure7.png",
+      "sha256": "65f8e2d0952e6ba1b23a560f551c5f886a5ad6200ae36428be6cf1af23adad11",
+      "bytes": 618927
+    },
+    {
+      "source": "docs/research/assets/new-work-selection-2026-11-02/2026-rauf-hpp.png",
+      "target": "public/media/assets/new-work-selection-2026-11-02/2026-rauf-hpp.png",
+      "sha256": "17f9bcd4baa63e27b327ac0ad4357f55f84bc4dc7c8feb3987da53a54cd7b1e9",
+      "bytes": 105240
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-ego-r1-figure1.png",
+      "target": "public/media/assets/pdf-audit-ego-r1-figure1.png",
+      "sha256": "6258f00a5315a00af1ae7538b0752b8e7863abe1da87fef9551f5e40cb5fced1",
+      "bytes": 536684
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-egagent-figure2.png",
+      "target": "public/media/assets/pdf-audit-egagent-figure2.png",
+      "sha256": "72bf0e9c34806de1930eaa2136910cee43dc1e375bb3749b487b0f2dee41c43f",
+      "bytes": 262424
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-worldmm-figure2.png",
+      "target": "public/media/assets/pdf-audit-worldmm-figure2.png",
+      "sha256": "3419ad08f2d5c1dc9ffc90aa3b36f98c6804227d5a9a832f1e946035d7b2bd61",
+      "bytes": 379106
+    },
+    {
+      "source": "docs/research/assets/2026-choi-merit-figure2.png",
+      "target": "public/media/assets/2026-choi-merit-figure2.png",
+      "sha256": "b33b7a5117a2632f40d249db2b4a8b50e36e3cbb446cf0ec0c034f977612ba11",
+      "bytes": 155796
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-em2mem-figure2.png",
+      "target": "public/media/assets/pdf-audit-em2mem-figure2.png",
+      "sha256": "d834bb6985345a3265635c3ced2a869bc5c351284039464072c8be555538e07d",
+      "bytes": 321137
+    },
+    {
+      "source": "docs/research/assets/new-work-selection-2026-11-02/2026-zhang-egocite.png",
+      "target": "public/media/assets/new-work-selection-2026-11-02/2026-zhang-egocite.png",
+      "sha256": "7667498a10aa9c676dc253cf9879108077b92e1944a7c1ea3a4d7eaf036ea313",
+      "bytes": 146429
+    },
+    {
+      "source": "docs/research/assets/expansion-memory/capmem-memory.png",
+      "target": "public/media/assets/expansion-memory/capmem-memory.png",
+      "sha256": "5d91da96cedb44a45cdbe1b7137c0e91857a8669e7235ca41628a524e0bfa98d",
+      "bytes": 124944
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-cfd-figure2.png",
+      "target": "public/media/assets/pdf-audit-cfd-figure2.png",
+      "sha256": "13c7b9924c7d42b6c7c3c647fc8f6db94d1acb8a747540a7682ebe156556341f",
+      "bytes": 282590
+    },
+    {
+      "source": "docs/research/assets/new-work-selection-2026-11-02/2026-leng-flora.png",
+      "target": "public/media/assets/new-work-selection-2026-11-02/2026-leng-flora.png",
+      "sha256": "1f8abaa440915421153b2e63bd322a9b03dc5d631f46dec35adbee0b30f342a2",
+      "bytes": 74338
+    },
+    {
+      "source": "docs/research/assets/expansion-existing/2026-xiong-memlife.png",
+      "target": "public/media/assets/expansion-existing/2026-xiong-memlife.png",
+      "sha256": "a1ff433313b4e94b6d49879be1aff0173cc3c081b25f085e6c6ef2862a25d421",
+      "bytes": 198080
+    },
+    {
+      "source": "docs/research/assets/expansion-systems/2018-hsieh-focus.png",
+      "target": "public/media/assets/expansion-systems/2018-hsieh-focus.png",
+      "sha256": "16be2cd85faf10b2b57def354a2a5702a624f536c0f888ebde7b22852ce796c9",
+      "bytes": 116974
+    },
+    {
+      "source": "docs/research/assets/expansion-systems/2019-kang-blazeit.png",
+      "target": "public/media/assets/expansion-systems/2019-kang-blazeit.png",
+      "sha256": "23f7cb476fff669e7d094b3536c1c4e39f09c310baad63e0780befba40e25e4e",
+      "bytes": 96332
+    },
+    {
+      "source": "docs/research/assets/expansion-systems/2022-kang-tasti.png",
+      "target": "public/media/assets/expansion-systems/2022-kang-tasti.png",
+      "sha256": "5df909d36853ff234ede3e79c70cbca0b993b24ab48b688fe6237bc8d3b6f8c9",
+      "bytes": 213324
+    },
+    {
+      "source": "docs/research/assets/expansion-systems/2023-zhang-equi-vocal.png",
+      "target": "public/media/assets/expansion-systems/2023-zhang-equi-vocal.png",
+      "sha256": "631b753ea7e5b731a6fe6281b7dfbafe47d6792dd5024b4c501a186e46ee3caa",
+      "bytes": 167110
+    },
+    {
+      "source": "docs/research/assets/expansion-systems/2025-zhang-vocal-udf.png",
+      "target": "public/media/assets/expansion-systems/2025-zhang-vocal-udf.png",
+      "sha256": "9ffb5555d09798d7c7c7b939c485049c6968baad1fb17bbeab0cf119d019b75c",
+      "bytes": 38978
+    },
+    {
+      "source": "docs/research/assets/expansion-crosscut/reducto-fig4.png",
+      "target": "public/media/assets/expansion-crosscut/reducto-fig4.png",
+      "sha256": "a28f6d5a81ce4f2994149c3fbce033f0b9e160230eaba001bd419ad5974c2816",
+      "bytes": 56359
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-myego-fig2.png",
+      "target": "public/media/assets/pdf-audit-myego-fig2.png",
+      "sha256": "d9f1f4e693ccd678429652e8f2108037d3fba4d9a9170d1478a526e3e368891f",
+      "bytes": 608968
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-egoexomem-fig1.png",
+      "target": "public/media/assets/pdf-audit-egoexomem-fig1.png",
+      "sha256": "ba8ca6e07f8fbb9f6c3e87a534ff3f636529f8c26e0d2ee8ae9fc3bfcb594c8b",
+      "bytes": 459941
+    },
+    {
+      "source": "docs/research/assets/new-work-selection-2026-11-02/2026-yeh-all-angles-bench.png",
+      "target": "public/media/assets/new-work-selection-2026-11-02/2026-yeh-all-angles-bench.png",
+      "sha256": "51a57abc5f2d9bc371d51b92fd3c683a0a993141356da5236ed234478df7783b",
+      "bytes": 566141
+    },
+    {
+      "source": "docs/research/assets/new-work-selection-2026-11-02/2025-he-egoexobench.png",
+      "target": "public/media/assets/new-work-selection-2026-11-02/2025-he-egoexobench.png",
+      "sha256": "77871a4c9f9a5eaec65f38d5717ce854dbef965c349042d2d57afcfaaa394bb1",
+      "bytes": 84757
+    },
+    {
+      "source": "docs/research/assets/expansion-crosscut/visualsync-fig3.png",
+      "target": "public/media/assets/expansion-crosscut/visualsync-fig3.png",
+      "sha256": "91c9cb14fd0b4745b7ba8246e5d170d01152401dac3ca90068bde7f72145a654",
+      "bytes": 993001
+    },
+    {
+      "source": "docs/research/assets/egomas-architecture.png",
+      "target": "public/media/assets/egomas-architecture.png",
+      "sha256": "fca5f706460baaae48051866a438fe4183e89f984ead867f4b88b014f6228d48",
+      "bytes": 137273
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-m3-agent-fig1.png",
+      "target": "public/media/assets/pdf-audit-m3-agent-fig1.png",
+      "sha256": "ce1c1d2835105d54b343f7261ba22a56e2a591281a30523b4d6d0c26ed2ab4bd",
+      "bytes": 131716
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-geb-fig2.png",
+      "target": "public/media/assets/pdf-audit-geb-fig2.png",
+      "sha256": "ff7d6ecb3c1bbe9d35083ab1b35c29e01ccefea4ef7446c817e671dc4bec2ed2",
+      "bytes": 378071
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-osnom-fig2.png",
+      "target": "public/media/assets/pdf-audit-osnom-fig2.png",
+      "sha256": "9b384e2b2ea288ed55ac6831ec711bf9c5e56ccade369864338ebcfcc8eadddc",
+      "bytes": 664356
+    },
+    {
+      "source": "docs/research/assets/ledger-architecture.png",
+      "target": "public/media/assets/ledger-architecture.png",
+      "sha256": "1b2b013066fbf6e1a18559bf41075a3ee2ecd8f1add2ec1d7822a1cad122ef1f",
+      "bytes": 1018776
+    },
+    {
+      "source": "docs/research/assets/new-work-selection-2026-11-02/2026-wang-directme.png",
+      "target": "public/media/assets/new-work-selection-2026-11-02/2026-wang-directme.png",
+      "sha256": "010bd91c1e2122b816aebe5d94c184fbfd1ba33789e3ca41be5e29867ba1f059",
+      "bytes": 531486
+    },
+    {
+      "source": "docs/research/assets/expansion-crosscut/hoist-case-identifiers-fig1.png",
+      "target": "public/media/assets/expansion-crosscut/hoist-case-identifiers-fig1.png",
+      "sha256": "973fa825d84aa0efa2c58394c954fe35e05cd3711e63ab4bafd60b50920ea5f1",
+      "bytes": 114627
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-s-ember.png",
+      "target": "public/media/assets/pdf-audit-s-ember.png",
+      "sha256": "dae29dbfe0b856a91d4bcbd6b3c333e874ae315c9377757ed1918069d653310e",
+      "bytes": 408724
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-multivent-task.png",
+      "target": "public/media/assets/pdf-audit-multivent-task.png",
+      "sha256": "04dd2e3814c89c53f94ef689a504d80978206aebfac22d2674023548cca96fae",
+      "bytes": 632754
+    },
+    {
+      "source": "docs/research/assets/expansion-memory/uvqa-data-pipeline.png",
+      "target": "public/media/assets/expansion-memory/uvqa-data-pipeline.png",
+      "sha256": "1d5fa6bad90f709a2c233d88b203fc95d0ed0596475b7cd0340e7b811e008cf0",
+      "bytes": 211855
+    },
+    {
+      "source": "docs/research/assets/expansion-crosscut/temporal-abstention-fig2.png",
+      "target": "public/media/assets/expansion-crosscut/temporal-abstention-fig2.png",
+      "sha256": "eefc822ed1015c3906f6df925b604302ad1647f3a75339cce6d2b67671b14625",
+      "bytes": 364482
+    },
+    {
+      "source": "docs/research/assets/expansion-memory/hd-epic-annotations.png",
+      "target": "public/media/assets/expansion-memory/hd-epic-annotations.png",
+      "sha256": "f36046cb83b6b997c74b51b8be8b1b9f68d7f4bbc16378d02611b2f2604a21ba",
+      "bytes": 825123
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-moscato-fig2.png",
+      "target": "public/media/assets/pdf-audit-moscato-fig2.png",
+      "sha256": "7b908be46e685cac5f6c79a63b78524baa1c143c3502cdb176c9d0cf85ec26d8",
+      "bytes": 409073
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-storm-psr-fig1.png",
+      "target": "public/media/assets/pdf-audit-storm-psr-fig1.png",
+      "sha256": "79058989c59ad9dc2ebf262eedf6ba55ca4299b5c70949877cd724ff2343dfe3",
+      "bytes": 141659
+    },
+    {
+      "source": "docs/research/assets/new-work-selection-2026-11-02/2025-sun-tubeletgraph.png",
+      "target": "public/media/assets/new-work-selection-2026-11-02/2025-sun-tubeletgraph.png",
+      "sha256": "654982b8a921ffc1d65480da1ce2bd14032d53ea28ba82db3e9038b38ffc2162",
+      "bytes": 862372
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-spoc-fig2.png",
+      "target": "public/media/assets/pdf-audit-spoc-fig2.png",
+      "sha256": "6d17123beabf943397fa89d16d5fcc7ba3287a6eff9fd274a9a78759344886ed",
+      "bytes": 799794
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/procobject.png",
+      "target": "public/media/assets/expansion-problems/procobject.png",
+      "sha256": "8927c3c241147e16cea9fb1d3174538e4307b90016caca02e8b2ce84d30e74b1",
+      "bytes": 128317
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/statediffnet.png",
+      "target": "public/media/assets/expansion-problems/statediffnet.png",
+      "sha256": "0d3a37853b034de771502886cc3f4129dbb168dad249d772fc596647e8050651",
+      "bytes": 69842
+    },
+    {
+      "source": "docs/research/assets/expansion-existing/2026-guo-aem.png",
+      "target": "public/media/assets/expansion-existing/2026-guo-aem.png",
+      "sha256": "28f0d7d2319cfb6019ce744825e570727585fc5506e28adfa6198152062ca3a2",
+      "bytes": 171883
+    },
+    {
+      "source": "docs/research/assets/expansion-existing/2026-yang-egotsr.png",
+      "target": "public/media/assets/expansion-existing/2026-yang-egotsr.png",
+      "sha256": "21a1e9847233bd3e39c3f9de7fabe7ae1fb42a354ce52f6fb34b40ce27d96d5b",
+      "bytes": 291283
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/impact.png",
+      "target": "public/media/assets/expansion-problems/impact.png",
+      "sha256": "7c23bd3cd737cb29cc72777f6b7c3238d35187de49d88e5913dd9abceaa54ea2",
+      "bytes": 216248
+    },
+    {
+      "source": "docs/research/assets/new-work-selection-2026-11-02/2025-huang-amnar.png",
+      "target": "public/media/assets/new-work-selection-2026-11-02/2025-huang-amnar.png",
+      "sha256": "49a23981c15cb27deaf74502c98f7055348de9b0410c7c6a357195fa9436987b",
+      "bytes": 185519
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-tgml.png",
+      "target": "public/media/assets/pdf-audit-tgml.png",
+      "sha256": "c005db0088b01271dc79caebad34626b0bcfa42b5272bb33a67bf466677859bd",
+      "bytes": 92739
+    },
+    {
+      "source": "docs/research/assets/2025-patsch-mistsense-architecture.png",
+      "target": "public/media/assets/2025-patsch-mistsense-architecture.png",
+      "sha256": "071b09ee3fa6235497aa54f5bf9f99354d50bb8d758fdec0143a765088793db0",
+      "bytes": 229146
+    },
+    {
+      "source": "docs/research/assets/new-work-selection-2026-11-02/2026-gupta-vidparse.png",
+      "target": "public/media/assets/new-work-selection-2026-11-02/2026-gupta-vidparse.png",
+      "sha256": "5e9675a6cd400776f6d358e919c32620d6698ba7b19e65e1dccb5fced9b797c5",
+      "bytes": 93933
+    },
+    {
+      "source": "docs/research/assets/2026-wen-provia-architecture.png",
+      "target": "public/media/assets/2026-wen-provia-architecture.png",
+      "sha256": "300ba2b2ac5443376a61f74bb275c674d7504cb5f697b56941c437e93cbdb11d",
+      "bytes": 283407
+    },
+    {
+      "source": "docs/research/assets/expansion-existing/2026-chavan-indego-assistant.png",
+      "target": "public/media/assets/expansion-existing/2026-chavan-indego-assistant.png",
+      "sha256": "d2d7d33d2f1700af19e2df08fa83edfba4c84cf148b0bcd8d40192e2b94c0eb5",
+      "bytes": 251489
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/egooops.png",
+      "target": "public/media/assets/expansion-problems/egooops.png",
+      "sha256": "8d6377f752905cdce5e1a439156e513f0229960b0fe341e9b0ef59132e42a85b",
+      "bytes": 53594
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/egoerrorvqa.png",
+      "target": "public/media/assets/expansion-problems/egoerrorvqa.png",
+      "sha256": "0187e179a96391aac3314c5e9b706fa4567301d9e4f4f5eb0af2788d208a5a9f",
+      "bytes": 58330
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-proactegomem.png",
+      "target": "public/media/assets/pdf-audit-proactegomem.png",
+      "sha256": "704b1b719cef8c8626fa2ef9805e3a6a5629efe70b9b512512d0029af45ed8f0",
+      "bytes": 238563
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/guideme.png",
+      "target": "public/media/assets/expansion-problems/guideme.png",
+      "sha256": "a8e07747fd0d505bbee5a75eaf1d5982150c0ddc1acf2716fdbb90a7f297f3cd",
+      "bytes": 74996
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/egosafetybench.png",
+      "target": "public/media/assets/expansion-problems/egosafetybench.png",
+      "sha256": "1739276c976ffac7d9f7b5a4ae4b1a3de94e9366c835e35a3c98cdacfed096c6",
+      "bytes": 288875
+    },
+    {
+      "source": "docs/research/assets/expansion-memory/rekv-architecture.png",
+      "target": "public/media/assets/expansion-memory/rekv-architecture.png",
+      "sha256": "4cccc5c1045bb1b1adea0e7e042281a76ee3747754b303bec7e0bf752cc955b2",
+      "bytes": 110011
+    },
+    {
+      "source": "docs/research/assets/expansion-crosscut/streamforest-fig2.png",
+      "target": "public/media/assets/expansion-crosscut/streamforest-fig2.png",
+      "sha256": "15c65994953b6dbe507db3427b4625bea83b04d8bcf08e9e70ef2f5036a1f0a7",
+      "bytes": 247895
+    },
+    {
+      "source": "docs/research/assets/expansion-existing/2026-zhang-streamarena.png",
+      "target": "public/media/assets/expansion-existing/2026-zhang-streamarena.png",
+      "sha256": "80d9e1865c075209341fd504423444d4daedabf2aefc00755fb2fb593264025f",
+      "bytes": 471222
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/livemamba.png",
+      "target": "public/media/assets/expansion-problems/livemamba.png",
+      "sha256": "c0cc8ee9bc3a9660b641c1fe650d23bb19656181ffa5e1025005f9fa72a72ea2",
+      "bytes": 143534
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/mistexit.png",
+      "target": "public/media/assets/expansion-problems/mistexit.png",
+      "sha256": "6229e034aecce70b964bb5f75d6036db4e7d34193e9e3fe3d86333cf64d4f8de",
+      "bytes": 107481
+    },
+    {
+      "source": "docs/research/assets/expansion-crosscut/ai-bim-progress-fig2.png",
+      "target": "public/media/assets/expansion-crosscut/ai-bim-progress-fig2.png",
+      "sha256": "044b5687c8c188e1ea07c21ccf788e57cbf593352bc03f3396e0e20412e67f46",
+      "bytes": 476778
+    },
+    {
+      "source": "docs/research/assets/expansion-crosscut/sensing-observability-fig2.png",
+      "target": "public/media/assets/expansion-crosscut/sensing-observability-fig2.png",
+      "sha256": "9593874d995df030080b47fc40daddd6324567b4006d380f1a827ecf286294ab",
+      "bytes": 388079
+    },
+    {
+      "source": "docs/research/assets/expansion-existing/2026-qiu-graphrag-compliance.png",
+      "target": "public/media/assets/expansion-existing/2026-qiu-graphrag-compliance.png",
+      "sha256": "56d9cad824e9f46b9396d0e6b3799c1d2b04fb41748424b3f305d2b012fa2491",
+      "bytes": 382576
+    },
+    {
+      "source": "docs/research/assets/pdf-audit-constructai.png",
+      "target": "public/media/assets/pdf-audit-constructai.png",
+      "sha256": "40ebc67327bacad4eae7acbd8e7d260da8dd830f0527de09ae40d51d2b04ef46",
+      "bytes": 406786
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/ovvad.png",
+      "target": "public/media/assets/expansion-problems/ovvad.png",
+      "sha256": "ddbab2a594777cfe65662d7f952695e05fc4ab0d13a7c6f35b672b6e9d256df2",
+      "bytes": 100164
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/anomize.png",
+      "target": "public/media/assets/expansion-problems/anomize.png",
+      "sha256": "5bd7f7a42c2ac89c1100c9b4640b927232be6855e6a2e96133f0feb9c31eccc7",
+      "bytes": 110937
+    },
+    {
+      "source": "docs/research/assets/expansion-problems/vera.png",
+      "target": "public/media/assets/expansion-problems/vera.png",
+      "sha256": "870a2b7fe1dfbf03e9d357b4c53bcbc74dd1996335121a887ce8205934d62833",
+      "bytes": 135242
+    },
+    {
+      "source": "docs/research/assets/new-work-selection-2026-11-02/2026-braun-skillspotter.png",
+      "target": "public/media/assets/new-work-selection-2026-11-02/2026-braun-skillspotter.png",
+      "sha256": "ec64c96971f2b996de1b241bde32eed88fcd0369edeb79b96426bf0cdde6ebf9",
+      "bytes": 113748
+    }
+  ],
+  "image_count": 76,
+  "downloads": [
+    {
+      "source": "aligned-wiki/raw/manifest.json",
+      "target": "public/downloads/aligned-wiki/raw/manifest.json",
+      "sha256": "fdf21a605f47706cbbbbeccc6538e4624f6325053d119e66d2f7b81dfedf7286",
+      "bytes": 4089531
+    },
+    {
+      "source": "docs/research/evidence/new-work-selection-2026-11-02/all-decisions.json",
+      "target": "public/downloads/docs/research/evidence/new-work-selection-2026-11-02/all-decisions.json",
+      "sha256": "f34023c30d996b2f286c97365345a12add06de629ea0bacbab501a66e32e7ba2",
+      "bytes": 113068
+    }
+  ],
+  "mapped_pdf_count": 124,
+  "mapped_pdfs": {
+    "docs/research/pdf-audit/sources/clip4clip.pdf": "https://arxiv.org/abs/2104.08860",
+    "docs/research/pdf-audit/sources/frozen.pdf": "https://openaccess.thecvf.com/content/ICCV2021/papers/Bain_Frozen_in_Time_A_Joint_Video_and_Image_Encoder_for_ICCV_2021_paper.pdf",
+    "docs/research/pdf-audit/sources/internvideo2-eccv.pdf": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/11491.pdf",
+    "aligned-wiki/raw/2026-tan-egovit.pdf": "https://arxiv.org/pdf/2603.13912v1",
+    "aligned-wiki/raw/2026-mur-labadia-v-jepa-2-1.pdf": "https://arxiv.org/pdf/2603.14482v3",
+    "aligned-wiki/raw/2020-lei-tvr.pdf": "https://arxiv.org/pdf/2001.09099",
+    "aligned-wiki/raw/2026-hou-eventformer.pdf": "https://arxiv.org/pdf/2402.13566v1",
+    "aligned-wiki/raw/2025-cao-flashmmr.pdf": "https://proceedings.nips.cc/paper_files/paper/2025/file/faaa187af979e46dc54f4d43f8b815b2-Paper-Conference.pdf",
+    "aligned-wiki/raw/2026-liang-capmem.pdf": "https://aclanthology.org/2026.emnlp-industry.233.pdf",
+    "aligned-wiki/raw/2025-zhang-vocal-udf.pdf": "https://arxiv.org/pdf/2408.02243v2",
+    "aligned-wiki/raw/2026-rauf-hpp.pdf": "https://aclanthology.org/2026.emnlp-main.2377.pdf",
+    "aligned-wiki/raw/2026-zhang-egocite.pdf": "https://arxiv.org/pdf/2608.12627v3",
+    "aligned-wiki/raw/2025-ye-mm-ego.pdf": "https://arxiv.org/pdf/2410.07177v2",
+    "aligned-wiki/raw/2026-leng-flora.pdf": "https://arxiv.org/pdf/2610.31779v1",
+    "aligned-wiki/raw/2026-choi-merit.pdf": "https://arxiv.org/pdf/2608.07663v2",
+    "aligned-wiki/raw/2026-yeo-worldmm.pdf": "https://arxiv.org/pdf/2512.02425v2",
+    "aligned-wiki/raw/2025-luo-video-rag.pdf": "https://arxiv.org/pdf/2411.13093v4",
+    "aligned-wiki/raw/2026-chen-em2mem.pdf": "https://arxiv.org/pdf/2609.00551v1",
+    "aligned-wiki/raw/2026-rege-egagent.pdf": "https://arxiv.org/pdf/2601.18157v3",
+    "aligned-wiki/raw/2026-huang-apm-bench.pdf": "https://arxiv.org/pdf/2609.37559v2",
+    "aligned-wiki/raw/2026-chen-egomonth.pdf": "https://arxiv.org/pdf/2608.13113v1",
+    "aligned-wiki/raw/2026-wang-egomemreason.pdf": "https://arxiv.org/abs/2605.09874v2",
+    "aligned-wiki/raw/2026-xiong-memlife.pdf": "https://arxiv.org/pdf/2609.40195v1",
+    "aligned-wiki/raw/2018-hsieh-focus.pdf": "https://www.microsoft.com/en-us/research/uploads/prod/2018/07/Focus_OSDI18.pdf",
+    "aligned-wiki/raw/2019-kang-blazeit.pdf": "https://www.vldb.org/pvldb/vol13/p533-kang.pdf",
+    "aligned-wiki/raw/2022-kang-tasti.pdf": "https://ddkang.github.io/papers/2022/tasti-paper.pdf",
+    "aligned-wiki/raw/2023-zhang-equi-vocal.pdf": "https://www.vldb.org/pvldb/vol16/p2714-zhang.pdf",
+    "aligned-wiki/raw/2020-li-reducto.pdf": "https://www.cs.princeton.edu/~ravian/publications/reducto_sigcomm20.pdf",
+    "aligned-wiki/raw/2026-wang-directme.pdf": "https://arxiv.org/pdf/2606.15200v1",
+    "aligned-wiki/raw/2025-anwar-remembr.pdf": "https://arxiv.org/pdf/2409.13682v1",
+    "aligned-wiki/raw/2026-yeh-all-angles-bench.pdf": "https://arxiv.org/pdf/2504.15280v2",
+    "aligned-wiki/raw/2025-he-egoexobench.pdf": "https://arxiv.org/pdf/2507.18342v1",
+    "aligned-wiki/raw/2024-huang-egoexolearn.pdf": "https://arxiv.org/pdf/2403.16182v3",
+    "aligned-wiki/raw/2022-elfeki-multi-ego.pdf": "https://openaccess.thecvf.com/content/WACV2022/papers/Elfeki_Multi-Stream_Dynamic_Video_Summarization_WACV_2022_paper.pdf",
+    "aligned-wiki/raw/2026-xiao-myego.pdf": "https://arxiv.org/pdf/2604.01966v1",
+    "aligned-wiki/raw/2026-liu-egoexomem.pdf": "https://arxiv.org/pdf/2605.18734v2",
+    "aligned-wiki/raw/2025-liu-visualsync.pdf": "https://arxiv.org/pdf/2512.02017v1",
+    "aligned-wiki/raw/2026-long-m3-agent.pdf": "https://arxiv.org/pdf/2508.09736v4",
+    "aligned-wiki/raw/2026-ren-geb.pdf": "https://arxiv.org/pdf/2609.38155v1",
+    "aligned-wiki/raw/2025-plizzari-osnom.pdf": "https://arxiv.org/pdf/2404.05072v2",
+    "aligned-wiki/raw/2026-steenbergen-hoist-case-identifiers.pdf": "https://research.utwente.nl/en/publications/surrogate-case-identifier-rules-for-construction-site-hoists/",
+    "aligned-wiki/raw/2025-chen-gelm.pdf": "https://arxiv.org/pdf/2408.14469v1",
+    "aligned-wiki/raw/2026-wang-s-ember.pdf": "https://arxiv.org/abs/2607.02689v2",
+    "docs/research/pdf-audit/sources/multivent-raw.pdf": "https://arxiv.org/html/2609.28437v1",
+    "aligned-wiki/raw/2025-yoon-uvqa.pdf": "https://arxiv.org/pdf/2507.04976v1",
+    "aligned-wiki/raw/2026-alam-supermemory-vqa.pdf": "https://arxiv.org/pdf/2606.00825v1",
+    "aligned-wiki/raw/2026-forte-egostream.pdf": "https://arxiv.org/abs/2605.31557",
+    "aligned-wiki/raw/2026-pang-egoprobe.pdf": "https://arxiv.org/abs/2610.17128",
+    "aligned-wiki/raw/2026-zhou-temporal-abstention.pdf": "https://arxiv.org/pdf/2602.04755v2",
+    "aligned-wiki/raw/2025-ortiz-abstention-knobs.pdf": "https://arxiv.org/pdf/2601.00138v2",
+    "aligned-wiki/raw/2022-soucek-look-for-change.pdf": "https://arxiv.org/pdf/2203.11637v1",
+    "aligned-wiki/raw/2024-xue-vidosc.pdf": "https://openaccess.thecvf.com/content/CVPR2024/papers/Xue_Learning_Object_State_Changes_in_Videos_An_Open-World_Perspective_CVPR_2024_paper.pdf",
+    "aligned-wiki/raw/2025-zameni-moscato.pdf": "https://openaccess.thecvf.com/content/ICCV2025/papers/Zameni_MOSCATO_Predicting_Multiple_Object_State_Change_Through_Actions_ICCV_2025_paper.pdf",
+    "aligned-wiki/raw/2025-schoonbeek-storm-psr.pdf": "https://arxiv.org/pdf/2510.12385",
+    "aligned-wiki/raw/2026-wen-provia.pdf": "https://arxiv.org/pdf/2609.20638v1",
+    "aligned-wiki/raw/2026-mandikal-spoc.pdf": "https://arxiv.org/pdf/2503.11953v2",
+    "aligned-wiki/raw/2025-perrett-hd-epic.pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Perrett_HD-EPIC_A_Highly-Detailed_Egocentric_Video_Dataset_CVPR_2025_paper.pdf",
+    "aligned-wiki/raw/2026-guo-procobject.pdf": "https://arxiv.org/pdf/2512.03479v3",
+    "aligned-wiki/raw/2025-lehman-statediffnet.pdf": "https://arxiv.org/pdf/2408.12945v1",
+    "aligned-wiki/raw/2026-yang-egotsr.pdf": "https://arxiv.org/pdf/2609.31751v1",
+    "aligned-wiki/raw/2024-nguyen-oscar.pdf": "https://arxiv.org/pdf/2402.17128v4",
+    "aligned-wiki/raw/2025-sun-tubeletgraph.pdf": "https://arxiv.org/pdf/2511.04678v2",
+    "aligned-wiki/raw/2026-liang-robometer.pdf": "https://arxiv.org/pdf/2603.02115v2",
+    "aligned-wiki/raw/2026-guo-aem.pdf": "https://arxiv.org/pdf/2512.03474v2",
+    "aligned-wiki/raw/2024-lee-egoper.pdf": "https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_Error_Detection_in_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.pdf",
+    "aligned-wiki/raw/2026-seminara-tgml.pdf": "https://arxiv.org/pdf/2502.17753v2",
+    "aligned-wiki/raw/2026-majumder-mistexit.pdf": "https://arxiv.org/pdf/2603.14252v1",
+    "aligned-wiki/raw/2025-patsch-mistsense.pdf": "https://openaccess.thecvf.com/content/ICCV2025/papers/Patsch_MistSense_Versatile_Online_Detection_of_Procedural_and_Execution_Mistakes_ICCV_2025_paper.pdf",
+    "aligned-wiki/raw/2025-chavan-indego.pdf": "https://arxiv.org/pdf/2511.19684v1",
+    "aligned-wiki/raw/2026-wen-impact.pdf": "https://arxiv.org/pdf/2604.10409v1",
+    "aligned-wiki/raw/2025-haneji-egooops.pdf": "https://www.lsta.media.kyoto-u.ac.jp/mori/research/public/haneji-SAUAFG2025.pdf",
+    "aligned-wiki/raw/2026-li-egoerrorvqa.pdf": "https://arxiv.org/pdf/2608.24134v1",
+    "aligned-wiki/raw/2026-sasaki-egoindassembly.pdf": "https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/papers/Sasaki_EgoIndAssembly_Diagnosing_Fine-Grained_Temporal_Hand_Reasoning_in_Vision-Language_Models_for_CVPRW_2026_paper.pdf",
+    "aligned-wiki/raw/2026-chavan-indego-assistant.pdf": "https://arxiv.org/pdf/2608.22617v1",
+    "aligned-wiki/raw/2026-loginova-prism.pdf": "https://arxiv.org/pdf/2610.31117v1",
+    "aligned-wiki/raw/2026-li-matt.pdf": "https://arxiv.org/pdf/2511.20525v2",
+    "aligned-wiki/raw/2025-huang-amnar.pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Huang_Modeling_Multiple_Normal_Action_Representations_for_Error_Detection_in_Procedural_CVPR_2025_paper.pdf",
+    "aligned-wiki/raw/2026-gupta-vidparse.pdf": "https://arxiv.org/pdf/2608.27562v2",
+    "aligned-wiki/raw/2022-jia-egotaskqa.pdf": "https://arxiv.org/pdf/2210.03929v1",
+    "aligned-wiki/raw/2024-schoonbeek-industreal.pdf": "https://openaccess.thecvf.com/content/WACV2024/papers/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.pdf",
+    "aligned-wiki/raw/2023-wang-holoassist.pdf": "https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_HoloAssist_an_Egocentric_Human_Interaction_Dataset_for_Interactive_AI_Assistants_ICCV_2023_paper.pdf",
+    "aligned-wiki/raw/2024-peddi-captaincook4d.pdf": "https://proceedings.neurips.cc/paper_files/paper/2024/file/f4a04396c2ed1342a5d8d05e94cb6101-Paper-Datasets_and_Benchmarks_Track.pdf",
+    "aligned-wiki/raw/2026-zeng-onestreamer.pdf": "https://arxiv.org/pdf/2610.01762v1",
+    "aligned-wiki/raw/2025-di-rekv.pdf": "https://arxiv.org/pdf/2503.00540v1",
+    "aligned-wiki/raw/2026-liao-proactegomem.pdf": "https://arxiv.org/pdf/2610.30089v2",
+    "aligned-wiki/raw/2026-zhang-streamarena.pdf": "https://arxiv.org/pdf/2608.05703v1",
+    "aligned-wiki/raw/2025-bhattacharyya-livemamba.pdf": "https://arxiv.org/pdf/2511.21998v2",
+    "aligned-wiki/raw/2026-liu-guideme.pdf": "https://arxiv.org/pdf/2607.02991v1",
+    "aligned-wiki/raw/2026-panpatil-egosafetybench.pdf": "https://arxiv.org/pdf/2607.00218v2",
+    "aligned-wiki/raw/2025-zeng-streamforest.pdf": "https://arxiv.org/pdf/2509.24871v1",
+    "docs/research/pdf-audit/2009-d4ar.pdf": "https://www.itcon.org/papers/2009_13.content.06965.pdf",
+    "aligned-wiki/raw/2026-hsieh-ai-bim-progress.pdf": "https://doi.org/10.1016/j.autcon.2026.106783",
+    "aligned-wiki/raw/2026-isaac-sensing-scheduling.pdf": "https://www.iaarc.org/publications/fulltext/ISARC2026_1105.pdf",
+    "aligned-wiki/raw/2026-qiu-graphrag-compliance.pdf": "https://www.sciencedirect.com/science/article/abs/pii/S1474034626003344",
+    "docs/research/evidence/proactive/2026-constructai.pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/41452/45413",
+    "aligned-wiki/raw/2018-doughty-skill-ranking.pdf": "https://dimadamen.github.io/Skill/whos_better_whos_best.pdf",
+    "aligned-wiki/raw/2026-braun-skillspotter.pdf": "https://static.siplab.org/papers/eccv2026-skillspotter.pdf",
+    "aligned-wiki/raw/2025-ashutosh-expertaf.pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Ashutosh_ExpertAF_Expert_Actionable_Feedback_from_Video_CVPR_2025_paper.pdf",
+    "aligned-wiki/raw/2026-mazzamuto-proskill.pdf": "https://arxiv.org/pdf/2601.20661v1",
+    "aligned-wiki/raw/2024-wu-ovvad.pdf": "https://openaccess.thecvf.com/content/CVPR2024/papers/Wu_Open-Vocabulary_Video_Anomaly_Detection_CVPR_2024_paper.pdf",
+    "aligned-wiki/raw/2025-li-anomize.pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Li_Anomize_Better_Open_Vocabulary_Video_Anomaly_Detection_CVPR_2025_paper.pdf",
+    "aligned-wiki/raw/2025-ye-vera.pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Ye_VERA_Explainable_Video_Anomaly_Detection_via_Verbalized_Learning_of_Vision-Language_CVPR_2025_paper.pdf",
+    "aligned-wiki/raw/2026-guo-multimodal-memory-survey.pdf": "https://arxiv.org/abs/2610.19366",
+    "aligned-wiki/raw/2026-bacharidis-mistake-survey.pdf": "https://arxiv.org/pdf/2510.19292v2",
+    "aligned-wiki/raw/2025-yang-egolife.pdf": "https://arxiv.org/pdf/2503.03803v3",
+    "aligned-wiki/raw/2022-grauman-ego4d.pdf": "https://www.cs.utexas.edu/~grauman/papers/ego4d-cvpr2022.pdf",
+    "aligned-wiki/raw/2024-grauman-ego-exo4d.pdf": "https://arxiv.org/pdf/2311.18259v4",
+    "aligned-wiki/raw/2022-sener-assembly101.pdf": "https://arxiv.org/pdf/2203.14712v2",
+    "aligned-wiki/raw/2026-zhang-constructai.pdf": "https://ojs.aaai.org/index.php/AAAI/article/download/41452/45413",
+    "docs/research/evidence/pdf-audit-llovi-v1.pdf": "https://arxiv.org/pdf/2312.17235v1",
+    "docs/research/evidence/pdf-audit-videotree.pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Wang_VideoTree_Adaptive_Tree-based_Video_Representation_for_LLM_Reasoning_on_Long_CVPR_2025_paper.pdf",
+    "docs/research/evidence/pdf-audit-moviechat.pdf": "https://openaccess.thecvf.com/content/CVPR2024/papers/Song_MovieChat_From_Dense_Token_to_Sparse_Memory_for_Long_Video_CVPR_2024_paper.pdf",
+    "docs/research/evidence/videoagent-wang.pdf": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/10325.pdf",
+    "aligned-wiki/raw/2024-fan-videoagent.pdf": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03241.pdf",
+    "aligned-wiki/raw/2024-goletto-amego.pdf": "https://arxiv.org/pdf/2409.10917v1",
+    "docs/research/evidence/video-rag-luo.pdf": "https://arxiv.org/pdf/2411.13093v4",
+    "docs/research/evidence/videorag-jeong.pdf": "https://aclanthology.org/2025.findings-acl.1096.pdf",
+    "docs/research/evidence/videorag-ren.pdf": "https://arxiv.org/pdf/2502.01549v1",
+    "aligned-wiki/raw/2026-tian-ego-r1.pdf": "https://arxiv.org/pdf/2506.13654v1",
+    "aligned-wiki/raw/2026-cai-cfd.pdf": "https://arxiv.org/pdf/2609.11899v1",
+    "docs/research/evidence/carve.pdf": "https://arxiv.org/pdf/2606.13141v2",
+    "docs/research/evidence/pdf-audit-longvideobench.pdf": "https://arxiv.org/pdf/2407.15754v1",
+    "docs/research/evidence/pdf-audit-videomme.pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Fu_Video-MME_The_First-Ever_Comprehensive_Evaluation_Benchmark_of_Multi-modal_LLMs_in_CVPR_2025_paper.pdf",
+    "docs/research/evidence/pdf-audit-egoschema.pdf": "https://arxiv.org/pdf/2308.09126v1"
+  },
+  "copied_pdf_count": 0,
+  "original_explicit_anchor_count": 42,
+  "imported_explicit_anchor_count": 42,
+  "unresolved_links": [],
+  "removed_service_navigation": [],
+  "dropped_non_pdf_fragments": [
+    {
+      "source": "docs/research/LITERATURE_REVIEW_RU.md",
+      "target": "../../aligned-wiki/raw/2026-guo-multimodal-memory-survey.pdf#page=58",
+      "external": "https://arxiv.org/abs/2610.19366"
+    }
+  ],
+  "note_sources": {
+    "problem_statement": "docs/PROBLEM_STATEMENT.md",
+    "2020-lei-tvr": "aligned-wiki/wiki/2020-lei-tvr.md",
+    "2026-hou-eventformer": "aligned-wiki/wiki/2026-hou-eventformer.md",
+    "2025-cao-flashmmr": "aligned-wiki/wiki/2025-cao-flashmmr.md",
+    "2026-huang-apm-bench": "aligned-wiki/wiki/2026-huang-apm-bench.md",
+    "2026-chen-egomonth": "aligned-wiki/wiki/2026-chen-egomonth.md",
+    "2026-liang-capmem": "aligned-wiki/wiki/2026-liang-capmem.md",
+    "2020-li-reducto": "aligned-wiki/wiki/2020-li-reducto.md",
+    "2025-liu-visualsync": "aligned-wiki/wiki/2025-liu-visualsync.md",
+    "2026-steenbergen-hoist-case-identifiers": "aligned-wiki/wiki/2026-steenbergen-hoist-case-identifiers.md",
+    "2025-yoon-uvqa": "aligned-wiki/wiki/2025-yoon-uvqa.md",
+    "2026-zhou-temporal-abstention": "aligned-wiki/wiki/2026-zhou-temporal-abstention.md",
+    "2025-ortiz-abstention-knobs": "aligned-wiki/wiki/2025-ortiz-abstention-knobs.md",
+    "2025-perrett-hd-epic": "aligned-wiki/wiki/2025-perrett-hd-epic.md",
+    "2026-guo-procobject": "aligned-wiki/wiki/2026-guo-procobject.md",
+    "2025-lehman-statediffnet": "aligned-wiki/wiki/2025-lehman-statediffnet.md",
+    "2026-wen-impact": "aligned-wiki/wiki/2026-wen-impact.md",
+    "2025-haneji-egooops": "aligned-wiki/wiki/2025-haneji-egooops.md",
+    "2026-li-egoerrorvqa": "aligned-wiki/wiki/2026-li-egoerrorvqa.md",
+    "2026-sasaki-egoindassembly": "aligned-wiki/wiki/2026-sasaki-egoindassembly.md",
+    "2026-liu-guideme": "aligned-wiki/wiki/2026-liu-guideme.md",
+    "2026-panpatil-egosafetybench": "aligned-wiki/wiki/2026-panpatil-egosafetybench.md",
+    "2025-di-rekv": "aligned-wiki/wiki/2025-di-rekv.md",
+    "2025-zeng-streamforest": "aligned-wiki/wiki/2025-zeng-streamforest.md",
+    "2025-bhattacharyya-livemamba": "aligned-wiki/wiki/2025-bhattacharyya-livemamba.md",
+    "2026-majumder-mistexit": "aligned-wiki/wiki/2026-majumder-mistexit.md",
+    "2026-hsieh-ai-bim-progress": "aligned-wiki/wiki/2026-hsieh-ai-bim-progress.md",
+    "2026-isaac-sensing-scheduling": "aligned-wiki/wiki/2026-isaac-sensing-scheduling.md",
+    "2026-qiu-graphrag-compliance": "aligned-wiki/wiki/2026-qiu-graphrag-compliance.md",
+    "proactive": "docs/research/pdf-audit/proactive.md",
+    "business-cases": "aligned-wiki/business-cases.md",
+    "2024-wu-ovvad": "aligned-wiki/wiki/2024-wu-ovvad.md",
+    "2025-li-anomize": "aligned-wiki/wiki/2025-li-anomize.md",
+    "2025-ye-vera": "aligned-wiki/wiki/2025-ye-vera.md",
+    "pdf_audit_ru": "docs/research/PDF_AUDIT_RU.md",
+    "2025-yang-egolife": "aligned-wiki/wiki/2025-yang-egolife.md",
+    "2022-grauman-ego4d": "aligned-wiki/wiki/2022-grauman-ego4d.md",
+    "2024-grauman-ego-exo4d": "aligned-wiki/wiki/2024-grauman-ego-exo4d.md",
+    "2025-chen-gelm": "aligned-wiki/wiki/2025-chen-gelm.md",
+    "2025-schoonbeek-storm-psr": "aligned-wiki/wiki/2025-schoonbeek-storm-psr.md",
+    "2024-huang-egoexolearn": "aligned-wiki/wiki/2024-huang-egoexolearn.md",
+    "2024-lee-egoper": "aligned-wiki/wiki/2024-lee-egoper.md",
+    "2022-sener-assembly101": "aligned-wiki/wiki/2022-sener-assembly101.md",
+    "2026-zhang-constructai": "aligned-wiki/wiki/2026-zhang-constructai.md",
+    "root": "docs/research/pdf-audit/root.md",
+    "retrieval": "docs/research/pdf-audit/retrieval.md",
+    "multisource": "docs/research/pdf-audit/multisource.md",
+    "2018-doughty-skill-ranking": "aligned-wiki/wiki/2018-doughty-skill-ranking.md"
+  },
+  "note_hashes": {
+    "problem_statement": {
+      "source_sha256": "0d69655775bab509195e027999687750cb31f24469015414ce8dfe3424db6bad",
+      "output_sha256": "0d69655775bab509195e027999687750cb31f24469015414ce8dfe3424db6bad"
+    },
+    "2020-lei-tvr": {
+      "source_sha256": "eee210a2cf1439622e84a43c0e51f9de4ed7131787a6b9db6d7d6b561b81417c",
+      "output_sha256": "ad48731a297bd77710f1d32d90fc62d393abc9949c79f825437e0153fc6a673e"
+    },
+    "2026-hou-eventformer": {
+      "source_sha256": "072e69cc5f0f46f6b50d27aadeaefdd9cab8c5bd376bffdb9162312ee2fd842a",
+      "output_sha256": "0f7ce72162d1c1af4a01b9851b55f88fff05501d278a120c48b71a5bcf9e22f9"
+    },
+    "2025-cao-flashmmr": {
+      "source_sha256": "785ad298535b3e6f76f5160d18a8f404ad83ef39db258e48b9d2b3eaaf018674",
+      "output_sha256": "6bb549d4cf286f5e5e08c2a60bea85615de5f9a89eaf2df22251967138c12ef4"
+    },
+    "2026-huang-apm-bench": {
+      "source_sha256": "0114ac5183c563d4d36e7c7b5ccfb41f0933c426da5d57299b8e540d1775861a",
+      "output_sha256": "e356905d2ef12693456cbacdb59e4eb8ef830d7ef6201144b1728e9c5f11cfea"
+    },
+    "2026-chen-egomonth": {
+      "source_sha256": "9a33728578a71826ee03aa58ac7927264af24a3f19363027d83948edd2e181fd",
+      "output_sha256": "959b14fba01466d0fa8b2d16c3348039658d5790e3874d2bb6b8e1692ad1c060"
+    },
+    "2026-liang-capmem": {
+      "source_sha256": "5b4c194b99a3b71a63de0dc27b9ff0067fa2e9d2033ac5e8862d5491940a67e4",
+      "output_sha256": "28aa5d7009c1b510de8d1e8ce20e9a570af9cab4fd8fad7178ab160954f6fd6f"
+    },
+    "2020-li-reducto": {
+      "source_sha256": "4ab8b79164b44b7e536e90988185a898ab1e88f2896d5c265f351a0e1d3348b5",
+      "output_sha256": "4ba8aa92118fbec073b097eced8a4433ebcc31f15e32daecad72916d4b1886b9"
+    },
+    "2025-liu-visualsync": {
+      "source_sha256": "32a27bf160c92ef64d4902ca17b69924141ec65541fa9b6eb9483e7260d0e9d0",
+      "output_sha256": "e5675d61bd997976348489e24473cdef1415a7914a844d98b3edafef678b9dd3"
+    },
+    "2026-steenbergen-hoist-case-identifiers": {
+      "source_sha256": "f2c3c0f2186ea979a9a042c1d21f6d0459327994f8e106edfaf15743d30a3eab",
+      "output_sha256": "509c12c12231eb7f0bc5eab84a4b918ea5a21106550c003bab8aab663893286f"
+    },
+    "2025-yoon-uvqa": {
+      "source_sha256": "2836b010cec79833b9e1c1593ff75ea580df58f10df13e6aab00ac986ed54bb6",
+      "output_sha256": "8e39878ad4c81a9a5f6bb9a0cb837a9e26c5ba75692ededb16cf42919bdb682e"
+    },
+    "2026-zhou-temporal-abstention": {
+      "source_sha256": "7d3c15d6657b5a02eac90b62c5253cb0d33b35bc0cb01203855fff8f0d7bede0",
+      "output_sha256": "b03912adc20d6fa4d55eb698eb43d171414547b2b76f99a004de50624257b168"
+    },
+    "2025-ortiz-abstention-knobs": {
+      "source_sha256": "a69115abe757a187588109ad8f6c61425a14b0a14d2593b81c9395af982f4c78",
+      "output_sha256": "47f0a43722512e0aace9507093970bcbb23c520defed9f09a2e7bb9f14913db5"
+    },
+    "2025-perrett-hd-epic": {
+      "source_sha256": "d0b5d74b8b22f94ce5306d73efc42ec61a655545bfb2f344c75a7d3416b63136",
+      "output_sha256": "88e29bb4086c9a424c284c3d68fb3c3c110f63fff4b928a58774a20d63e772fa"
+    },
+    "2026-guo-procobject": {
+      "source_sha256": "ddf07fc948a460321bca1d41c91a50b9f2b9ee076a0434f7dd973803ea2d841d",
+      "output_sha256": "d27c8e5938630767a0f47472569849050ac831d172ee422d88019c797b31c93f"
+    },
+    "2025-lehman-statediffnet": {
+      "source_sha256": "3a8de699f2be7438d2a90cb072b83a8c59146340b8d40ea4927fe3e9f7fdb87a",
+      "output_sha256": "e915fe419c72f96a90b1f668cbad26343d35496de812cacbb272141c730123a9"
+    },
+    "2026-wen-impact": {
+      "source_sha256": "20cad9d42b42349daf3258218ce94999cbebcd0e048573f96b0c62dc69f3b60e",
+      "output_sha256": "5231ea2d0020855642021472ad06f2136d5c6c8d5be4326cd7b5a7ded3750ae4"
+    },
+    "2025-haneji-egooops": {
+      "source_sha256": "960f87105c38f9b89448b213d15be821d90ac41c88a74c10717728e3f6d0bc99",
+      "output_sha256": "6466f975457c7c5cd88b674956065d604cba8e379ba79d61cc92a39ed2cfc9f6"
+    },
+    "2026-li-egoerrorvqa": {
+      "source_sha256": "c265a326da79ab3fbb5af900e08b120aacd5369fc0d6d7b0152563ab173e28c2",
+      "output_sha256": "b0b8121009955e48ae07c85151b15e1084fbdf2d2ef30bcb151adf5dcb5dac1d"
+    },
+    "2026-sasaki-egoindassembly": {
+      "source_sha256": "c4968307fe6241acf19c405db05846fb6694c1a96c9f6421a9301687d9a856c6",
+      "output_sha256": "76012fac953dd3d79314f72bc18af284774f3481137b70a327f484d55ad1479d"
+    },
+    "2026-liu-guideme": {
+      "source_sha256": "838bebf0e6d4d2bfb86bd504c48869cf6f77be7d5336075cfef9262772b493d4",
+      "output_sha256": "d39649e60a593497a96d1d0efceeb4f522d0f8fac09dce060ab370ba8dca3e2d"
+    },
+    "2026-panpatil-egosafetybench": {
+      "source_sha256": "c2a66ef1ca20fb0ecb254d955174bc57e1f229a6705ea32d7dbd4f43dc13b11e",
+      "output_sha256": "93900eb3eac6ee26bf1538edb2179315217f9a3e546e9f472d795d55b8a98e10"
+    },
+    "2025-di-rekv": {
+      "source_sha256": "2c49ec2a50c28d782cb190a0377c4803756d989a7ea4ab2febd6dd12db4cfaa9",
+      "output_sha256": "63a933f35dead9f0e83c31bef4a617986f97d26699e1a77aa289349501746148"
+    },
+    "2025-zeng-streamforest": {
+      "source_sha256": "7aa1f6d62d09ffcfe9b3418250a30f6d02f23bbc84e61138a8445f9246284667",
+      "output_sha256": "9076e1c9c32456b457de761632312a0155447002d4fe842f1fd9b092ab2e1372"
+    },
+    "2025-bhattacharyya-livemamba": {
+      "source_sha256": "36ebb16bc31437980590dfbad542b975ce0210088cee80c9531c4c8e78973f65",
+      "output_sha256": "c5313425e90f899bafd0bf3c4716efc3f13401d8f98205453617b41b2ca2521e"
+    },
+    "2026-majumder-mistexit": {
+      "source_sha256": "81167630b977f02f8885e1ccf54d38f5d6712f6df137ac1411542cc1f0897047",
+      "output_sha256": "938cbfe952aa8c49936104cb17188c4d550d636389580d7da19380ae658c9a6b"
+    },
+    "2026-hsieh-ai-bim-progress": {
+      "source_sha256": "1a0695e281f1e7d9841c010bfd4945d1bbf3f68c5ba26d84fd9a74ee0be7d23c",
+      "output_sha256": "1f129591869f1417ea8d4c05428c19313c8af92adb2aabb46bac8420923a21c0"
+    },
+    "2026-isaac-sensing-scheduling": {
+      "source_sha256": "59918e649071901700afae4f38030a71d08b1ddf2a398eef9fb77aa1cf53a528",
+      "output_sha256": "aa5bc2971b9b258e796dd11cb874d32ec55b3e550f2e43283f4a3abbcb1b2cd0"
+    },
+    "2026-qiu-graphrag-compliance": {
+      "source_sha256": "dd9c08cf0944edd53b600786156dd205003da31cc9263ff133044197601b4597",
+      "output_sha256": "9e741a574f5a5d0f33014ec8a4ab460b1d0f09634f87348fb6ccdddbf68a19d9"
+    },
+    "proactive": {
+      "source_sha256": "e8e12525889ce770b47d3f33dcbf436647c9c420284c4562992ca5ed6a49df0b",
+      "output_sha256": "e8e12525889ce770b47d3f33dcbf436647c9c420284c4562992ca5ed6a49df0b"
+    },
+    "business-cases": {
+      "source_sha256": "d15f1751d83c9c4815f35b6e842fe5c90f6cbb2298f20d16812772d2d51a3fd2",
+      "output_sha256": "a84dbd381b4b7dd4eb965b386069150df68eb9d9c56da36e458d894bfeae7bbc"
+    },
+    "2024-wu-ovvad": {
+      "source_sha256": "392d8fd5d6c1c5162bd2a23a27efede3385bd9db2d0358698e181bc7607e231e",
+      "output_sha256": "b86c7d9eb795ec0a0d69bf93e35de7d96d88743bfe2bbdd177420bddcfe108ac"
+    },
+    "2025-li-anomize": {
+      "source_sha256": "413e5f6b4d665199eda38c8cfd5244180e047b094ae349e5f6e2474e35555e28",
+      "output_sha256": "b488a773629a337e2ab9be38db50308b840532c3461a5f979f9c2f59f46ae59b"
+    },
+    "2025-ye-vera": {
+      "source_sha256": "dc8e59847bc9c8c7cf3f7b8eb22aeee287e8de9e4a710f2d2de53bd60c62b802",
+      "output_sha256": "f75609b919945dd058ea3449ec7929f5c131458b0263313a1d26327481399b5b"
+    },
+    "pdf_audit_ru": {
+      "source_sha256": "0607963d969a4a456b5b3dacad219cc25283811e6d404276c26ba94b6c61bc9b",
+      "output_sha256": "a8c7c931351da7e968855ce808c75fb814ee90a902837c586fe91c007d683de5"
+    },
+    "2025-yang-egolife": {
+      "source_sha256": "1be60b1f6ab45ed0e36ff1c83376efadf9b1d4b5bf322de0f8558f49c421f17b",
+      "output_sha256": "a8e3aebd104753ed7d9816d323048398cbb813a78d62597c442b1b922d1b91c8"
+    },
+    "2022-grauman-ego4d": {
+      "source_sha256": "430cbb2a4308fa4d7fb1f0a0e2640cde0349ce2f77e41479321c062242e93deb",
+      "output_sha256": "6ab893449c0d8fdd506efb0f58aa23fb8dc63243754c629e6b499c05a031fa85"
+    },
+    "2024-grauman-ego-exo4d": {
+      "source_sha256": "6a399d398251d385e9f5bac212fd4e413684c5c55d897962fef549760a3f0215",
+      "output_sha256": "7365d6c068a54a1a362de8625213542b2769885609864a305aca16d1baedb332"
+    },
+    "2025-chen-gelm": {
+      "source_sha256": "6286678342ca741f7eb96236efef3fc24217f2b504528f2e49b1eb5fae6493c9",
+      "output_sha256": "9ec82c80fc7c96f7df9f724ca61960dfae7f18624007e59cb8a871ad347ab0b3"
+    },
+    "2025-schoonbeek-storm-psr": {
+      "source_sha256": "a7acd54adca61c41ab709633cc5dd6d2d2ea1001204cd095dce44ea5c39be78e",
+      "output_sha256": "7db0d6d3b8578379d6159218dc8577bf90dca8d2ed278871722d0a918914b1ca"
+    },
+    "2024-huang-egoexolearn": {
+      "source_sha256": "8c30a85fa630592855e49dc6757976b00756ad6337034e88b12d506147d1b004",
+      "output_sha256": "d35354fc031574a12ea4a8f8a9c7fbe286c3038aba96faa80467266dfedde83c"
+    },
+    "2024-lee-egoper": {
+      "source_sha256": "001f084e2bd8636ed71b746201e05e51e64408ebc3edc056102a9c46de8acf6d",
+      "output_sha256": "c9d89a57d2832bf0055ee10513d2b00d67c07bbd6f44d80268c3f63f01e36851"
+    },
+    "2022-sener-assembly101": {
+      "source_sha256": "bd52a2ecdff7b252e87da431179d6ac601151963363911fdd6afa1ce8d2a3c98",
+      "output_sha256": "f48ae0bc3732e1e1122a67b0ee2f9673d876534f9592b4170f165b10cb0202fa"
+    },
+    "2026-zhang-constructai": {
+      "source_sha256": "ac5fb3558aa6257193b27222bad39f9b4eeeb824c528f8f69b9862ba185395da",
+      "output_sha256": "e7d4761e214a55340d30cac9da3320e4263016bd0a4efc2b9559b755e795aa87"
+    },
+    "root": {
+      "source_sha256": "2177855e473b528daee91aa15ee3ebdb36c489d3922a520d419965e9af860629",
+      "output_sha256": "2177855e473b528daee91aa15ee3ebdb36c489d3922a520d419965e9af860629"
+    },
+    "retrieval": {
+      "source_sha256": "fb612d1b524106442494f7bf59dc7b4e9bcc2b8958f49d0caab78f201e41d1fc",
+      "output_sha256": "ef1b2bd23a24e661045d7078330152e7262c050c5dd4cf9ad1d4b9e3649d84bf"
+    },
+    "multisource": {
+      "source_sha256": "b16cf1c2487e708f3d4b261111a5f19d0f4a188dd7daf984a6eba9966f5dbf21",
+      "output_sha256": "b16cf1c2487e708f3d4b261111a5f19d0f4a188dd7daf984a6eba9966f5dbf21"
+    },
+    "2018-doughty-skill-ranking": {
+      "source_sha256": "fcc90fb50f0dc242285c8a4f3bb204676234c14e9822c839e0640ca11c1dfd9a",
+      "output_sha256": "2e86023fa1bed92709f468d4bef0163a2cd0e099acdaa7ea0665344e2da59528"
+    }
+  }
+}

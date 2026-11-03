@@ -1,0 +1,33 @@
+{
+  "name": "aligned-literature-review",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1 --port 4321",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1 --port 4321",
+    "check": "astro check && node --test tests/*.test.mjs",
+    "test:links": "node scripts/check-build.mjs",
+    "prebuild": "node scripts/sync-media.mjs",
+    "test:translation": "node scripts/check-translation.mjs",
+    "sync:wiki": "python3 scripts/import-wiki.py",
+    "verify": "pnpm check && pnpm test:translation && pnpm build && pnpm test:links"
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "5.3.0",
+    "@fontsource-variable/geist-mono": "5.3.0",
+    "astro": "7.4.4",
+    "github-slugger": "2.0.0",
+    "marked": "18.1.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.6",
+    "@types/node": "^24.19.2",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": "24.x"
+  }
+}

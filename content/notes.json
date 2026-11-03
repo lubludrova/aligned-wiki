@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "2018-doughty-skill-ranking",
+    "title": "Who’s Better? Who’s Best? Pairwise Deep Ranking for Skill Determination"
+  },
+  {
+    "slug": "2020-lei-tvr",
+    "title": "TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval"
+  },
+  {
+    "slug": "2020-li-reducto",
+    "title": "Reducto: On-Camera Filtering for Resource-Efficient Real-Time Video Analytics"
+  },
+  {
+    "slug": "2022-grauman-ego4d",
+    "title": "Ego4D: Around the World in 3,000 Hours of Egocentric Video"
+  },
+  {
+    "slug": "2022-sener-assembly101",
+    "title": "Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities"
+  },
+  {
+    "slug": "2024-grauman-ego-exo4d",
+    "title": "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives"
+  },
+  {
+    "slug": "2024-huang-egoexolearn",
+    "title": "EgoExoLearn: A Dataset for Bridging Asynchronous Ego- and Exo-centric View of Procedural Activities in Real World"
+  },
+  {
+    "slug": "2024-lee-egoper",
+    "title": "Error Detection in Egocentric Procedural Task Videos"
+  },
+  {
+    "slug": "2024-wu-ovvad",
+    "title": "Open-Vocabulary Video Anomaly Detection"
+  },
+  {
+    "slug": "2025-bhattacharyya-livemamba",
+    "title": "Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?"
+  },
+  {
+    "slug": "2025-cao-flashmmr",
+    "title": "When One Moment Isn’t Enough: Multi-Moment Retrieval with Cross-Moment Interactions"
+  },
+  {
+    "slug": "2025-chen-gelm",
+    "title": "Grounded Multi-Hop VideoQA in Long-Form Egocentric Videos"
+  },
+  {
+    "slug": "2025-di-rekv",
+    "title": "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval"
+  },
+  {
+    "slug": "2025-haneji-egooops",
+    "title": "EgoOops: A Dataset for Mistake Action Detection from Egocentric Videos referring to Procedural Texts"
+  },
+  {
+    "slug": "2025-lehman-statediffnet",
+    "title": "Find the Assembly Mistakes: Error Segmentation for Industrial Applications"
+  },
+  {
+    "slug": "2025-li-anomize",
+    "title": "Anomize: Better Open Vocabulary Video Anomaly Detection"
+  },
+  {
+    "slug": "2025-liu-visualsync",
+    "title": "VisualSync: Multi-Camera Synchronization via Cross-View Object Motion"
+  },
+  {
+    "slug": "2025-ortiz-abstention-knobs",
+    "title": "Explicit Abstention Knobs for Predictable Reliability in Video Question Answering"
+  },
+  {
+    "slug": "2025-perrett-hd-epic",
+    "title": "HD-EPIC: A Highly-Detailed Egocentric Video Dataset"
+  },
+  {
+    "slug": "2025-schoonbeek-storm-psr",
+    "title": "Learning to Recognize Correctly Completed Procedure Steps in Egocentric Assembly Videos through Spatio-Temporal Modeling"
+  },
+  {
+    "slug": "2025-yang-egolife",
+    "title": "EgoLife: Towards Egocentric Life Assistant"
+  },
+  {
+    "slug": "2025-ye-vera",
+    "title": "VERA: Explainable Video Anomaly Detection via Verbalized Learning of Vision-Language Models"
+  },
+  {
+    "slug": "2025-yoon-uvqa",
+    "title": "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models"
+  },
+  {
+    "slug": "2025-zeng-streamforest",
+    "title": "StreamForest: Efficient Online Video Understanding with Persistent Event Memory"
+  },
+  {
+    "slug": "2026-chen-egomonth",
+    "title": "EgoMonth: A Month-Level Egocentric Video Benchmark for Long-Term Spatiotemporal Memory"
+  },
+  {
+    "slug": "2026-guo-procobject",
+    "title": "Benchmarking and Learning Object-Centric Procedural Understanding in Instructional Videos"
+  },
+  {
+    "slug": "2026-hou-eventformer",
+    "title": "Event-Aware Video Corpus Moment Retrieval"
+  },
+  {
+    "slug": "2026-hsieh-ai-bim-progress",
+    "title": "Automated construction progress monitoring and control through AI-based image recognition and BIM integration"
+  },
+  {
+    "slug": "2026-huang-apm-bench",
+    "title": "APM-Bench: Benchmarking cross-Session Persistent Memory for Real-World Egocentric Streaming Video Assistants"
+  },
+  {
+    "slug": "2026-isaac-sensing-scheduling",
+    "title": "From Sensing to Scheduling: Deviation-Based Framework for Sensor-Aware Progress Monitoring and Schedule Control"
+  },
+  {
+    "slug": "2026-li-egoerrorvqa",
+    "title": "EgoErrorVQA: Assess Egocentric Comprehension Capabilities through Procedural Errors for Ego-Agentic AI"
+  },
+  {
+    "slug": "2026-liang-capmem",
+    "title": "CapMem: A Benchmark for Caption-Based Episodic Memory in Egocentric Video"
+  },
+  {
+    "slug": "2026-liu-guideme",
+    "title": "GuideMe: Multi-Domain Task Guidance and Intervention in Streaming Video"
+  },
+  {
+    "slug": "2026-majumder-mistexit",
+    "title": "MistExit: Learning to Exit for Early Mistake Detection in Procedural Videos"
+  },
+  {
+    "slug": "2026-panpatil-egosafetybench",
+    "title": "EgoSafetyBench: A Diagnostic Egocentric Video Benchmark for Evaluating Embodied VLMs as Runtime Safety Guards"
+  },
+  {
+    "slug": "2026-qiu-graphrag-compliance",
+    "title": "A GraphRAG-driven multi-agent framework for worker-centric construction process compliance supervision via egocentric video"
+  },
+  {
+    "slug": "2026-sasaki-egoindassembly",
+    "title": "EgoIndAssembly: Diagnosing Fine-Grained Temporal Hand Reasoning in Vision–Language Models for Skilled Assembly"
+  },
+  {
+    "slug": "2026-steenbergen-hoist-case-identifiers",
+    "title": "Surrogate Case Identifier Rules for Construction Site Hoists"
+  },
+  {
+    "slug": "2026-wen-impact",
+    "title": "IMPACT: A Dataset for Multi-Granularity Human Procedural Action Understanding in Industrial Assembly"
+  },
+  {
+    "slug": "2026-zhang-constructai",
+    "title": "ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems"
+  },
+  {
+    "slug": "2026-zhou-temporal-abstention",
+    "title": "When Silence Is Golden: Can LLMs Learn to Abstain in Temporal QA and Beyond?"
+  },
+  {
+    "slug": "business-cases",
+    "title": "Business Cases"
+  },
+  {
+    "slug": "multisource",
+    "title": "Independent original-PDF audit: multi-source memory and object states"
+  },
+  {
+    "slug": "pdf_audit_ru",
+    "title": "Повторная проверка literature review по оригинальным PDF"
+  },
+  {
+    "slug": "proactive",
+    "title": "Independent original-PDF audit: proactive, streaming, grounded QA, construction"
+  },
+  {
+    "slug": "problem_statement",
+    "title": "Aligned"
+  },
+  {
+    "slug": "retrieval",
+    "title": "PDF-аудит раздела 4: retrieval и долговременная видеопамять"
+  },
+  {
+    "slug": "root",
+    "title": "PDF audit: foundations and additional sources"
+  }
+]

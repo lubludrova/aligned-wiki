@@ -1,0 +1,14 @@
+{
+  "count": 127,
+  "scope": "Chapters 1–11 and Appendix A. Appendix B is excluded.",
+  "unresolved_publication_urls": [],
+  "bibliography_only": [
+    "2022-grauman-ego4d",
+    "2022-sener-assembly101",
+    "2024-grauman-ego-exo4d"
+  ],
+  "historical_only": [
+    "2024-seminara-dtgl"
+  ],
+  "source_sha256": "a4f563815095741a13d7325dcb5fed219b553087a36523f45fa5e861c9360557"
+}

@@ -1,0 +1,2842 @@
+{
+  "2021-luo-clip4clip": {
+    "year": 2021,
+    "venue": "arXiv preprint (reviewed version)",
+    "authors": "Huaishao Luo, Lei Ji, Ming Zhong, Yang Chen, Wen Lei, Nan Duan, Tianrui Li",
+    "affiliations": [
+      "Southwest Jiaotong University",
+      "Microsoft Research Asia",
+      "Microsoft STCA"
+    ],
+    "links": [
+      {
+        "label": "Official code",
+        "url": "https://github.com/ArrowLuo/CLIP4Clip"
+      }
+    ],
+    "sourceNote": "docs/research/pdf-audit/sources/clip4clip.pdf",
+    "sourceVersion": "arXiv:2104.08860v2, 8 May 2021. Authors, affiliations and code are listed on p. 1.",
+    "metadataStatus": "fallback",
+    "publicationNote": "The year follows the 2021 preprint explicitly reviewed in the foundations chapter. No later publication identity is inferred."
+  },
+  "2021-bain-frozen-in-time": {
+    "year": 2021,
+    "venue": "ICCV",
+    "authors": "Max Bain, Arsha Nagrani, Gül Varol, Andrew Zisserman",
+    "affiliations": [
+      "Visual Geometry Group, University of Oxford",
+      "LIGM, École des Ponts, Univ Gustave Eiffel, CNRS"
+    ],
+    "links": [
+      {
+        "label": "Official code",
+        "url": "https://github.com/m-bain/frozen-in-time"
+      },
+      {
+        "label": "Project",
+        "url": "https://www.robots.ox.ac.uk/~vgg/research/frozen-in-time/",
+        "note": "Linked by the official repository. Direct fetch timed out during the metadata check."
+      }
+    ],
+    "sourceNote": "docs/research/pdf-audit/sources/frozen.pdf",
+    "sourceVersion": "ICCV 2021 proceedings PDF, p. 1. The official repository independently confirms authors and venue and links the project page.",
+    "metadataStatus": "fallback"
+  },
+  "2024-wang-internvideo2": {
+    "year": 2024,
+    "venue": "ECCV",
+    "authors": "Yi Wang, Kunchang Li, Xinhao Li, Jiashuo Yu, Yinan He, Guo Chen, Baoqi Pei, Rongkun Zheng, Zun Wang, Yansong Shi, Tianxiang Jiang, Songze Li, Jilan Xu, Hongjie Zhang, Yifei Huang, Yu Qiao, Yali Wang, Limin Wang",
+    "affiliations": [
+      "OpenGVLab, Shanghai AI Laboratory",
+      "Nanjing University",
+      "Shenzhen Institutes of Advanced Technology, CAS"
+    ],
+    "links": [
+      {
+        "label": "Official implementation",
+        "url": "https://github.com/OpenGVLab/InternVideo/tree/main/InternVideo2"
+      }
+    ],
+    "sourceNote": "docs/research/pdf-audit/sources/internvideo2-eccv.pdf",
+    "sourceVersion": "ECCV 2024 proceedings, paper 11491, p. 1. Authors, affiliations and implementation URL are taken from this version.",
+    "metadataStatus": "fallback"
+  },
+  "2026-tan-egovit": {
+    "year": 2026,
+    "venue": "CVPR",
+    "authors": "Yuting Tan, Xilong Cheng, Yunxiao Qin, Zhengnan Li, Jingjing Zhang.",
+    "affiliations": [
+      "Communication University of China",
+      "State Key Laboratory of Media Convergence and Communication",
+      "The Chinese University of Hong Kong, Shenzhen"
+    ],
+    "links": [],
+    "sourceNote": "aligned-wiki/wiki/2026-tan-egovit.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2603.13912v1, 14 March 2026, including Appendices A–I. Published at CVPR 2026."
+  },
+  "2026-mur-labadia-v-jepa-2-1": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Lorenzo Mur-Labadia, Matthew Muckley, Amir Bar, Mido Assran, Koustuv Sinha, Mike Rabbat, Yann LeCun, Nicolas Ballas, Adrien Bardes.",
+    "affiliations": [
+      "FAIR at Meta",
+      "Universidad de Zaragoza"
+    ],
+    "links": [
+      {
+        "label": "Official code and checkpoints",
+        "url": "https://github.com/facebookresearch/vjepa2"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-mur-labadia-v-jepa-2-1.md",
+    "metadataStatus": "wiki"
+  },
+  "2020-lei-tvr": {
+    "year": 2020,
+    "venue": "ECCV 2020",
+    "authors": "Jie Lei, Licheng Yu, Tamara L. Berg, Mohit Bansal.",
+    "affiliations": [
+      "University of North Carolina at Chapel Hill"
+    ],
+    "links": [
+      {
+        "label": "Author project",
+        "url": "https://tvr.cs.unc.edu/",
+        "note": "Author project [?] Inaccessible during this check."
+      },
+      {
+        "label": "Author repository",
+        "url": "https://github.com/jayleicn/TVRetrieval"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2020-lei-tvr.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2001.09099v2, 18 August 2020, ECCV 2020 paper with appendices, 35 pages."
+  },
+  "2026-hou-eventformer": {
+    "year": 2026,
+    "venue": "ECIR 2026",
+    "authors": "Danyang Hou, Liang Pang, Yanyan Lan, Huawei Shen, Xueqi Cheng (published 2026 version). The archived 2024 preprint lists Danyang Hou, Liang Pang, Huawei Shen and Xueqi Cheng.",
+    "affiliations": [
+      "CAS Key Laboratory of AI Security, Institute of Computing Technology, Chinese Academy of Sciences",
+      "CAS Key Laboratory of Network Data Science and Technology, Institute of Computing Technology, Chinese Academy of Sciences",
+      "University of Chinese Academy of Sciences"
+    ],
+    "links": [
+      {
+        "label": "Primary record",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-032-21289-4_1"
+      },
+      {
+        "label": "Author repository",
+        "url": "https://github.com/hdy007007/eventformer"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-hou-eventformer.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "The year/venue and five-author list follow the ECIR 2026 publisher record. The archived and read source is arXiv:2402.13566v1 (21 February 2024), 11 pages, with four authors and the affiliations above. Final-paper methods/tables were not available for comparison. The unfinished ACM template in the preprint does not establish a 2018 publication."
+  },
+  "2026-lee-carve": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Yuho Lee, Jisu Shin, Nicole Hee-Yeon Kim, Jihwan Bang, Juntae Lee, Kyuwoong Hwang, Fatih Porikli, Hwanjun Song.",
+    "affiliations": [
+      "KAIST",
+      "Qualcomm AI Research, Qualcomm Korea YH"
+    ],
+    "links": [],
+    "sourceNote": "aligned-wiki/wiki/2026-lee-carve.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2606.13141v2, 2 October 2026. No conference acceptance was established in this check."
+  },
+  "2025-jeong-videorag": {
+    "year": 2025,
+    "venue": "Findings of ACL",
+    "authors": "Soyeong Jeong, Kangsan Kim, Jinheon Baek, Sung Ju Hwang.",
+    "affiliations": [
+      "KAIST",
+      "DeepAuto.ai"
+    ],
+    "links": [
+      {
+        "label": "Publisher record",
+        "url": "https://aclanthology.org/2025.findings-acl.1096/"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/starsuzi/VideoRAG"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-jeong-videorag.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Findings of ACL 2025 proceedings, pp. 21278–21298, including appendices; distinct from Luo's Video-RAG and Ren's VideoRAG."
+  },
+  "2026-ren-videorag": {
+    "year": 2026,
+    "venue": "KDD",
+    "authors": "Xubin Ren, Lingrui Xu, Long Xia, Shuaiqiang Wang, Dawei Yin, Chao Huang.",
+    "affiliations": [
+      "The University of Hong Kong",
+      "Baidu Inc."
+    ],
+    "links": [
+      {
+        "label": "KDD proceedings DOI",
+        "url": "https://doi.org/10.1145/3770854.3783944"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/HKUDS/VideoRAG"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-ren-videorag.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "The archived/read source is the 18-page arXiv v1, 3 February 2025. KDD 2026 publication is independently confirmed by the conference's paper list. Results below belong to the preprint; the final proceedings text was not compared.",
+    "publicationNote": "Publication metadata gives 2026. The frozen review registry uses 2025 for its inspected source."
+  },
+  "2025-cao-flashmmr": {
+    "year": 2025,
+    "venue": "NeurIPS 2025",
+    "authors": "Zhuo Cao, Heming Du, Bingqing Zhang, Xin Yu, Xue Li, Sen Wang.",
+    "affiliations": [
+      "The University of Queensland"
+    ],
+    "links": [
+      {
+        "label": "Primary record",
+        "url": "https://proceedings.nips.cc/paper_files/paper/2025/hash/faaa187af979e46dc54f4d43f8b815b2-Abstract-Conference.html"
+      },
+      {
+        "label": "Author repository",
+        "url": "https://github.com/Zhuo-Cao/QV-M2"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-cao-flashmmr.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "NeurIPS 2025 proceedings PDF, 19 pages."
+  },
+  "2024-wu-longvideobench": {
+    "year": 2024,
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "authors": "Haoning Wu, Dongxu Li, Bei Chen, Junnan Li",
+    "affiliations": [],
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://longvideobench.github.io/index.html",
+        "note": "The official page identifies NeurIPS 2024 Datasets & Benchmarks."
+      },
+      {
+        "label": "Code and data tools",
+        "url": "https://github.com/longvideobench/LongVideoBench"
+      }
+    ],
+    "sourceNote": "docs/research/evidence/pdf-audit-longvideobench.pdf",
+    "sourceVersion": "Reviewed arXiv:2407.15754v1, 22 July 2024. Authors are on p. 1 and the repository is in the dataset documentation. Publication venue was checked separately on the official project page.",
+    "metadataStatus": "fallback",
+    "publicationNote": "Affiliations are not listed in the checked title-page metadata and are left unspecified."
+  },
+  "2025-fu-video-mme": {
+    "year": 2025,
+    "venue": "CVPR",
+    "authors": "Chaoyou Fu, Yuhan Dai, Yongdong Luo, Lei Li, Shuhuai Ren, Renrui Zhang, Zihan Wang, Chenyu Zhou, Yunhang Shen, Mengdan Zhang, Peixian Chen, Yanwei Li, Shaohui Lin, Sirui Zhao, Ke Li, Tong Xu, Xiawu Zheng, Enhong Chen, Caifeng Shan, Ran He, Xing Sun",
+    "affiliations": [
+      "State Key Laboratory for Novel Software Technology, Nanjing University",
+      "School of Intelligence Science and Technology, Nanjing University",
+      "State Key Laboratory of Cognitive Intelligence",
+      "XMU",
+      "HKU",
+      "PKU",
+      "CUHK",
+      "ECNU",
+      "CASIA"
+    ],
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://video-mme.github.io/"
+      },
+      {
+        "label": "Official code",
+        "url": "https://github.com/MME-Benchmarks/Video-MME"
+      }
+    ],
+    "sourceNote": "docs/research/evidence/pdf-audit-videomme.pdf",
+    "sourceVersion": "CVPR 2025 proceedings PDF, p. 1. Institutional abbreviations are preserved as printed. Code link is also recorded in content/chapters/archive.md.",
+    "metadataStatus": "fallback"
+  },
+  "2024-goletto-amego": {
+    "year": 2024,
+    "venue": "ECCV",
+    "authors": "Gabriele Goletto, Tushar Nagarajan, Giuseppe Averta, Dima Damen.",
+    "affiliations": [
+      "Politecnico di Torino",
+      "FAIR, Meta",
+      "University of Bristol"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://gabrielegoletto.github.io/AMEGO/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/gabrielegoletto/AMEGO"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2024-goletto-amego.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2409.10917v1, 17 September 2024, including the appendix. Published at ECCV 2024."
+  },
+  "2026-liang-capmem": {
+    "year": 2026,
+    "venue": "EMNLP 2026 Industry Track",
+    "authors": "Dingli Liang, Yiqiao Xie, Yukai Huang, Zhaokai Wang, Weitong Cai, Guangwen Feng, Jifei Song, Zhensong Zhang, Hang Zhang.",
+    "affiliations": [
+      "University College London",
+      "Imperial College London",
+      "Durham University",
+      "Shanghai Jiao Tong University",
+      "Queen Mary University of London",
+      "Huawei Noah’s Ark Lab",
+      "Independent Researcher"
+    ],
+    "links": [
+      {
+        "label": "Primary record",
+        "url": "https://aclanthology.org/2026.emnlp-industry.233/"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-liang-capmem.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Publisher PDF, EMNLP 2026 Industry Track, pp. 3888–3914, 27 pages."
+  },
+  "2025-zhang-vocal-udf": {
+    "year": 2025,
+    "venue": "SIGMOD",
+    "authors": "Enhao Zhang, Nicole Sullivan, Brandon Haynes, Ranjay Krishna, Magdalena Balazinska.",
+    "affiliations": [
+      "University of Washington",
+      "Microsoft Gray Systems Lab"
+    ],
+    "links": [
+      {
+        "label": "Official repository",
+        "url": "https://github.com/uwdb/VOCAL-UDF"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-zhang-vocal-udf.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2408.02243v2, 19 February 2025, 36-page extended technical report for the SIGMOD 2025 paper. First preprint released in 2024."
+  },
+  "2026-rauf-hpp": {
+    "year": 2026,
+    "venue": "EMNLP",
+    "authors": "Awais Rauf, Ahmed Hasssan, Gregory Slabaugh.",
+    "affiliations": [
+      "Queen's University Belfast",
+      "AMD",
+      "Queen Mary University of London"
+    ],
+    "links": [
+      {
+        "label": "Publication",
+        "url": "https://aclanthology.org/2026.emnlp-main.2377/"
+      },
+      {
+        "label": "Project website",
+        "url": "https://awaisrauf.com/HPP"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/AwaisRauf/hpp"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-rauf-hpp.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Twenty-eight-page EMNLP 2026 publisher PDF, pp. 53993–54020. Code inspected at commit 558cc0767170f2dca9cec3c074bc466b037d618a. Author spellings follow the PDF."
+  },
+  "2026-zhang-egocite": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Le Zhang, Hao Chen, Vlad Roznyatovskiy, Jianzhong Zhang, Ke Sun.",
+    "affiliations": [
+      "University of Michigan, Ann Arbor",
+      "Samsung Research America"
+    ],
+    "links": [
+      {
+        "label": "Author-linked project website",
+        "url": "https://egocite.github.io/"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/lezhangleonard/EgoCITE"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-zhang-egocite.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2608.12627v3, 18 August 2026. Preprint under review, with no accepted venue verified."
+  },
+  "2025-ye-mm-ego": {
+    "year": 2025,
+    "venue": "ICLR",
+    "authors": "Hanrong Ye, Haotian Zhang, Erik Daxberger, Lin Chen, Zongyu Lin, Yanghao Li, Bowen Zhang, Haoxuan You, Dan Xu, Zhe Gan, Jiasen Lu, Yinfei Yang.",
+    "affiliations": [
+      "CSE, HKUST",
+      "Apple",
+      "UCLA"
+    ],
+    "links": [
+      {
+        "label": "Apple research page",
+        "url": "https://machinelearning.apple.com/research/mm-ego"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-ye-mm-ego.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2410.07177v2, 13 April 2025, published at ICLR 2025 following the 2024 preprint. The author list follows this PDF, including Yanghao Li, who is omitted from the checked Apple webpage."
+  },
+  "2026-leng-flora": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Sicong Leng, Yunze Man, Zhiqi Li, Jing Wang, Yuhe Zhang, Ryan Punamiya, Siddharth Patki, Kaiyuan Zheng, Zi-ang Cao, Zhiding Yu, Sifei Liu, Danfei Xu, Ben Levin, Jan Kautz, Yuke Zhu, Johan Bjorck, Linxi Jim Fan.",
+    "affiliations": [
+      "NVIDIA"
+    ],
+    "links": [
+      {
+        "label": "NVIDIA GEAR project",
+        "url": "https://research.nvidia.com/labs/gear/flora/"
+      },
+      {
+        "label": "Sample inference code",
+        "url": "https://github.com/NVIDIA/Flora"
+      },
+      {
+        "label": "Model collection",
+        "url": "https://huggingface.co/collections/nvidia/flora"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-leng-flora.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2610.31779v1, submitted 22 October 2026. The PDF itself is dated 26 October."
+  },
+  "2024-fan-videoagent": {
+    "year": 2024,
+    "venue": "ECCV",
+    "authors": "Yue Fan, Xiaojian Ma, Rujie Wu, Yuntao Du, Jiaqi Li, Zhi Gao, Qing Li.",
+    "affiliations": [
+      "State Key Laboratory of General Artificial Intelligence, BIGAI",
+      "School of Computer Science, Peking University",
+      "School of Intelligence Science and Technology, Peking University"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://videoagent.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/flowithin/VideoAgentECCV"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2024-fan-videoagent.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "ECCV 2024 proceedings PDF, 18 pages. This is Fan et al., associated with arXiv:2403.11481. The official supplement, printed pp. 19–34, was also read."
+  },
+  "2026-choi-merit": {
+    "year": 2026,
+    "venue": "ECCV",
+    "authors": "Yeeun Choi, Youngbeom Yoo, Joon-Young Lee, Hyolim Kang, Seon Joo Kim.",
+    "affiliations": [
+      "Yonsei University",
+      "Adobe Research"
+    ],
+    "links": [
+      {
+        "label": "ECCV 2026 acceptance",
+        "url": "https://eccv.ecva.net/virtual/2026/poster/5468",
+        "note": "PDF · arXiv v2, with ECCV 2026 acceptance independently recorded by the conference."
+      },
+      {
+        "label": "Project website",
+        "url": "https://choi-yeeun.github.io/MERIT/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/choi-yeeun/MERIT"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-choi-merit.md",
+    "metadataStatus": "wiki"
+  },
+  "2026-yeo-worldmm": {
+    "year": 2026,
+    "venue": "CVPR",
+    "authors": "Woongyeong Yeo, Kangsan Kim, Jaehong Yoon, Sung Ju Hwang.",
+    "affiliations": [
+      "KAIST",
+      "Nanyang Technological University, Singapore",
+      "DeepAuto.ai"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://worldmm.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/wgcyeo/WorldMM"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-yeo-worldmm.md",
+    "metadataStatus": "wiki"
+  },
+  "2025-luo-video-rag": {
+    "year": 2025,
+    "venue": "NeurIPS",
+    "authors": "Yongdong Luo, Xiawu Zheng, Guilin Li, Shukang Yin, Haojia Lin, Chaoyou Fu, Jinfa Huang, Jiayi Ji, Fei Chao, Jiebo Luo, Rongrong Ji.",
+    "affiliations": [
+      "Xiamen University",
+      "Nanjing University",
+      "University of Rochester"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://video-rag.github.io/"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/Leon1207/Video-RAG-master"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-luo-video-rag.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2411.13093v4, 23 November 2025, camera-ready NeurIPS version with supplementary material. First preprint appeared in 2024."
+  },
+  "2025-yang-egolife": {
+    "year": 2025,
+    "venue": "CVPR",
+    "authors": "Jingkang Yang, Shuai Liu, Hongming Guo, Yuhao Dong, Xiamengwei Zhang, Sicheng Zhang, Pengyun Wang, Zitang Zhou, Binzhu Xie, Ziyue Wang, Bei Ouyang, Zhengyu Lin, Marco Cominelli, Zhongang Cai, Bo Li, Yuanhan Zhang, Peiyuan Zhang, Fangzhou Hong, Joerg Widmer, Francesco Gringoli, Lei Yang, Ziwei Liu.",
+    "affiliations": [
+      "S-Lab, Nanyang Technological University",
+      "LMMs-Lab",
+      "IMDEA Networks",
+      "University of Brescia",
+      "Politecnico di Milano"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://egolife-ai.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/EvolvingLMMs-Lab/EgoLife"
+      },
+      {
+        "label": "CVPR 2025 publication",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yang_EgoLife_Towards_Egocentric_Life_Assistant_CVPR_2025_paper.html"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-yang-egolife.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2503.03803v3, 9 February 2026, an affiliation-corrected revision of the CVPR 2025 publication. Affiliations follow its corrected title page."
+  },
+  "2026-chen-em2mem": {
+    "year": 2026,
+    "venue": "Findings of EMNLP",
+    "authors": "Yijun Chen, Yaqi Zheng, Yanya Li, Boyi Xiao, Buqiang Xu, Shuofei Qiao, Jizhan Fang, Xinle Deng, Yunzhi Yao, Xuehai Wang, Liuxin Zhang, Hui Li, Huajun Chen, Shumin Deng.",
+    "affiliations": [
+      "Zhejiang University",
+      "South China University of Technology",
+      "Lenovo Group Limited"
+    ],
+    "links": [
+      {
+        "label": "Official research implementation",
+        "url": "https://github.com/zjunlp/LightMem-Ego/tree/main/research/em2mem"
+      },
+      {
+        "label": "Findings of EMNLP 2026",
+        "url": "https://aclanthology.org/2026.findings-emnlp.903/"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-chen-em2mem.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2609.00551v1, 1 September 2026. Publication verified in Findings of EMNLP 2026. Numerical claims follow the archived preprint."
+  },
+  "2026-rege-egagent": {
+    "year": 2026,
+    "venue": "ACL",
+    "authors": "Aniket Rege, Arka Sadhu, Yuliang Li, Kejie Li, Ramya Korlakai Vinayak, Yuning Chai, Yong Jae Lee, Hyo Jin Kim.",
+    "affiliations": [
+      "Reality Labs Research at Meta",
+      "University of Wisconsin-Madison"
+    ],
+    "links": [
+      {
+        "label": "ACL publication",
+        "url": "https://aclanthology.org/2026.acl-long.2161/"
+      },
+      {
+        "label": "Official project",
+        "url": "https://facebookresearch.github.io/egagent/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/facebookresearch/egagent"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-rege-egagent.md",
+    "metadataStatus": "wiki"
+  },
+  "2026-tian-ego-r1": {
+    "year": 2026,
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "authors": "Shulin Tian, Ruiqi Wang, Hongming Guo, Penghao Wu, Yuhao Dong, Xiuying Wang, Jingkang Yang, Hao Zhang, Hongyuan Zhu, Ziwei Liu.",
+    "affiliations": [
+      "S-Lab, Nanyang Technological University",
+      "A*STAR, Singapore",
+      "Simon Fraser University",
+      "Shanghai AI Lab"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://egolife-ai.github.io/Ego-R1/"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/egolife-ai/Ego-R1"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-tian-ego-r1.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2506.13654v1, 16 June 2025. The authors report TPAMI 2026 publication under the expanded title “Ego-R1: Agentic Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning.” The journal article was not inspected. Results below follow the archived preprint."
+  },
+  "2026-huang-apm-bench": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Jianguo Huang, Jinming Liu, Qiyao Wang, Liang Xu, Jianhang Li, Zhimian Wen, Mingda Li, Shule Lu, Zhicheng Wang, Yuhan Guo, Xin Jin, Wenjun Zeng.",
+    "affiliations": [
+      "Shanghai Jiao Tong University",
+      "Eastern Institute of Technology, Ningbo",
+      "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences",
+      "Zhongguancun Academy, Beijing",
+      "Dalian University of Technology",
+      "Beihang University",
+      "Hong Kong Polytechnic University"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://jianguo-huang11.github.io/APM-Bench/",
+        "note": "Project website. Resolved in the final link check after an earlier access failure."
+      },
+      {
+        "label": "Author repository",
+        "url": "https://github.com/Jianguo-Huang11/APM-Bench"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-huang-apm-bench.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2609.37559v2, 12 October 2026, 33 pages."
+  },
+  "2026-chen-egomonth": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Weitao Chen, Hu Jiaxin, Xie Tianyidan, Yang Li, Yuyi Qian, Banghao Xu, Ziheng Tang, Shenyi Wang, Mingyue Yu, Duo Li, Jiacheng Shi, Gao Wang, Zhan Xu, Zhicheng Qiu, Xuanfu Li, Jian Yang, Lanjun Wang, Zili Yi.",
+    "affiliations": [
+      "Nanjing University",
+      "Huawei Technologies Co., Ltd.",
+      "Tianjin University"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://sealical.github.io/egomonth/"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-chen-egomonth.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2608.13113v1, 13 August 2026, 21 pages. Author-name order follows the PDF, including Hu Jiaxin and Xie Tianyidan."
+  },
+  "2026-wang-egomemreason": {
+    "year": 2026,
+    "venue": "COLM 2026",
+    "authors": "Ziyang Wang, Yue Zhang, Shoubin Yu, Ce Zhang, Zengqi Zhao, Jaehong Yoon, Hyunji Lee, Gedas Bertasius, Mohit Bansal.",
+    "affiliations": [
+      "University of North Carolina at Chapel Hill",
+      "Nanyang Technological University"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://egomemreason.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/Ziyang412/EgoMemReason",
+        "note": "GitHub repository — evaluation scripts, annotations and dataset access instructions."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-wang-egomemreason.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2605.09874v2, 18 August 2026. The archived PDF is marked COLM 2026, also confirmed by the conference proceedings."
+  },
+  "2024-zhang-llovi": {
+    "year": 2024,
+    "venue": "EMNLP",
+    "authors": "Ce Zhang, Taixi Lu, Md Mohaiminul Islam, Ziyang Wang, Shoubin Yu, Mohit Bansal, Gedas Bertasius",
+    "affiliations": [
+      "Department of Computer Science, UNC Chapel Hill"
+    ],
+    "links": [
+      {
+        "label": "Official code",
+        "url": "https://github.com/CeeZh/LLoVi"
+      },
+      {
+        "label": "Publisher record",
+        "url": "https://aclanthology.org/2024.emnlp-main.1209/"
+      }
+    ],
+    "sourceNote": "docs/research/evidence/pdf-audit-llovi-v1.pdf",
+    "sourceVersion": "The review evaluates arXiv:2312.17235v1, 28 December 2023. Authors and affiliation are on p. 1. The ACL Anthology publisher record separately confirms EMNLP 2024 and the author list.",
+    "metadataStatus": "fallback",
+    "publicationNote": "Publication year 2024 is distinct from the inspected preprint year 2023. Results from the later final paper are not substituted into the review."
+  },
+  "2025-wang-videotree": {
+    "year": 2025,
+    "venue": "CVPR",
+    "authors": "Ziyang Wang, Shoubin Yu, Elias Stengel-Eskin, Jaehong Yoon, Feng Cheng, Gedas Bertasius, Mohit Bansal.",
+    "affiliations": [
+      "University of North Carolina at Chapel Hill"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://videotree2024.github.io/"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/Ziyang412/VideoTree"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-wang-videotree.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2405.19209v3, 14 March 2025, including supplementary material; main results cross-checked with the CVPR 2025 open-access proceedings PDF."
+  },
+  "2024-song-moviechat": {
+    "year": 2024,
+    "venue": "CVPR",
+    "authors": "Enxin Song, Wenhao Chai, Guanhong Wang, Yucheng Zhang, Haoyang Zhou, Feiyang Wu, Haozhe Chi, Xun Guo, Tian Ye, Yanting Zhang, Yan Lu, Jenq-Neng Hwang, Gaoang Wang",
+    "affiliations": [
+      "Zhejiang University",
+      "University of Washington",
+      "Microsoft Research Asia",
+      "Hong Kong University of Science and Technology (GZ)",
+      "Donghua University",
+      "Shanghai Artificial Intelligence Laboratory"
+    ],
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://rese1f.github.io/MovieChat/"
+      },
+      {
+        "label": "Official code",
+        "url": "https://github.com/wenhaochai/MovieChat"
+      }
+    ],
+    "sourceNote": "docs/research/evidence/pdf-audit-moviechat.pdf",
+    "sourceVersion": "CVPR 2024 proceedings PDF, p. 1. Project URL is printed in the abstract. Code URL is recorded in content/chapters/archive.md.",
+    "metadataStatus": "fallback"
+  },
+  "2024-wang-videoagent": {
+    "year": 2024,
+    "venue": "ECCV",
+    "authors": "Xiaohan Wang, Yuhui Zhang, Orr Zohar, Serena Yeung-Levy",
+    "affiliations": [
+      "Stanford University"
+    ],
+    "links": [
+      {
+        "label": "Official code",
+        "url": "https://github.com/wxh1996/VideoAgent"
+      },
+      {
+        "label": "Original project page",
+        "url": "https://wxh1996.github.io/VideoAgent-Website/",
+        "note": "Listed in the PDF and official repository, but returned HTTP 404 during the metadata check on 3 November 2026."
+      }
+    ],
+    "sourceNote": "docs/research/evidence/videoagent-wang.pdf",
+    "sourceVersion": "ECCV 2024 proceedings, paper 10325, p. 1. Official repository confirms the matching title, four authors and venue.",
+    "metadataStatus": "fallback",
+    "publicationNote": "This is Wang et al.'s active video-reading agent, not Fan et al.'s VideoAgent with reusable memory."
+  },
+  "2026-cai-cfd": {
+    "year": 2026,
+    "venue": "EMNLP",
+    "authors": "Weitong Cai, Hang Zhang, Yukai Huang, Yiqiao Xie, Shan Gao, Jiankang Deng, Songcen Xu, Jifei Song, Zhensong Zhang.",
+    "affiliations": [
+      "Queen Mary University of London",
+      "Independent researcher",
+      "Durham University",
+      "Imperial College London",
+      "Huawei"
+    ],
+    "links": [
+      {
+        "label": "EMNLP publication",
+        "url": "https://aclanthology.org/2026.emnlp-main.422/"
+      },
+      {
+        "label": "Official project",
+        "url": "https://weitongcai.com/CFD/"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-cai-cfd.md",
+    "metadataStatus": "wiki"
+  },
+  "2026-xiong-memlife": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Guangzhi Xiong, Xinyuan Zhang, Xiao Yang, Hyokun Yun, Kai Zhang, Shiun-Zu Kuo, Hyeonjeong Ha, Xilun Chen, Kai Sun, Lucas Liang, Guangqiang Dong, Ejaz Ahmed, Ahmed A Aly, Anuj Kumar, Raffay Hamid, Aidong Zhang, Xin Luna Dong.",
+    "affiliations": [
+      "Meta Reality Labs",
+      "University of Virginia",
+      "University of Illinois Urbana-Champaign"
+    ],
+    "links": [],
+    "sourceNote": "aligned-wiki/wiki/2026-xiong-memlife.md",
+    "metadataStatus": "wiki"
+  },
+  "2018-hsieh-focus": {
+    "year": 2018,
+    "venue": "OSDI",
+    "authors": "Kevin Hsieh, Ganesh Ananthanarayanan, Peter Bodik, Shivaram Venkataraman, Paramvir Bahl, Matthai Philipose, Phillip B. Gibbons, Onur Mutlu.",
+    "affiliations": [
+      "Carnegie Mellon University",
+      "Microsoft",
+      "University of Wisconsin",
+      "ETH Zürich"
+    ],
+    "links": [
+      {
+        "label": "Proceedings",
+        "url": "https://www.usenix.org/conference/osdi18/presentation/hsieh"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2018-hsieh-focus.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "OSDI 2018 author-hosted proceedings manuscript, 18 pages, downloaded unchanged from Microsoft Research. Earlier arXiv abstracts report different speedups and author lists."
+  },
+  "2019-kang-blazeit": {
+    "year": 2019,
+    "venue": "PVLDB 13(4), 533–546",
+    "authors": "Daniel Kang, Peter Bailis, Matei Zaharia.",
+    "affiliations": [
+      "Stanford DAWN Project, Stanford University"
+    ],
+    "links": [
+      {
+        "label": "Official repository",
+        "url": "https://github.com/stanford-futuredata/blazeit"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2019-kang-blazeit.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Published PVLDB article dated 2019, presented at VLDB 2020. The filename follows the publication year printed on the PDF."
+  },
+  "2022-kang-tasti": {
+    "year": 2022,
+    "venue": "SIGMOD",
+    "authors": "Daniel Kang, John Guibas, Peter Bailis, Tatsunori Hashimoto, Matei Zaharia.",
+    "affiliations": [
+      "Stanford University"
+    ],
+    "links": [
+      {
+        "label": "Official repository",
+        "url": "https://github.com/stanford-futuredata/tasti"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2022-kang-tasti.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Fourteen-page author manuscript. Its running header contains an unfinished Conference'17 template. SIGMOD 2022 identity is independently confirmed by the official repository and the author institution's publication record, not that header."
+  },
+  "2023-zhang-equi-vocal": {
+    "year": 2023,
+    "venue": "PVLDB 16(11), 2714–2727",
+    "authors": "Enhao Zhang, Maureen Daum, Dong He, Brandon Haynes, Ranjay Krishna, Magdalena Balazinska.",
+    "affiliations": [
+      "University of Washington",
+      "Microsoft Gray Systems Lab"
+    ],
+    "links": [
+      {
+        "label": "Official repository",
+        "url": "https://github.com/uwdb/EQUI-VOCAL"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2023-zhang-equi-vocal.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Published fourteen-page PVLDB 2023 article. The extended arXiv report is a separate version."
+  },
+  "2020-li-reducto": {
+    "year": 2020,
+    "venue": "ACM SIGCOMM",
+    "authors": "Yuanqi Li, Arthi Padmanabhan, Pengzhan Zhao, Yufei Wang, Guoqing Harry Xu, Ravi Netravali.",
+    "affiliations": [
+      "University of California, Los Angeles"
+    ],
+    "links": [
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/reducto-sigcomm-2020/reducto"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1145/3387514.3405874"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2020-li-reducto.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Author-hosted 18-page SIGCOMM 2020 paper, DOI 10.1145/3387514.3405874."
+  },
+  "2026-wang-directme": {
+    "year": 2026,
+    "venue": "ICML",
+    "authors": "Yun Wang, Junbin Xiao, Han Lyu, Yifan Wang, Jing Zuo, Zhanjie Zhang, Hong Huang, Dapeng Wu, Angela Yao.",
+    "affiliations": [
+      "City University of Hong Kong",
+      "University of Science and Technology of China",
+      "National University of Singapore",
+      "The Chinese University of Hong Kong, Shenzhen",
+      "University of Electronic Science and Technology of China",
+      "Beijing University of Posts and Telecommunications",
+      "Zhejiang University"
+    ],
+    "links": [
+      {
+        "label": "Proceedings page",
+        "url": "https://proceedings.mlr.press/v306/wang26je.html"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/cocowy1/UCS-Bench"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-wang-directme.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2606.15200v1, 13 June 2026. Published at ICML 2026, PMLR 306:131373–131417."
+  },
+  "2025-anwar-remembr": {
+    "year": 2025,
+    "venue": "ICRA",
+    "authors": "Abrar Anwar, John Welsh, Joydeep Biswas, Soha Pouya, Yan Chang.",
+    "affiliations": [
+      "NVIDIA",
+      "University of Southern California",
+      "University of Texas at Austin"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://nvidia-ai-iot.github.io/remembr/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/NVIDIA-AI-IOT/remembr"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-anwar-remembr.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2409.13682v1, 20 September 2024. The official project identifies the publication as ICRA 2025."
+  },
+  "2026-yeh-all-angles-bench": {
+    "year": 2026,
+    "venue": "AAAI",
+    "authors": "Chun-Hsiao Yeh, Chenyu Wang, Shengbang Tong, Ta-Ying Cheng, Ruoyu Wang, Tianzhe Chu, Yuexiang Zhai, Yubei Chen, Shenghua Gao, Yi Ma.",
+    "affiliations": [
+      "UC Berkeley",
+      "TranscEngram",
+      "NYU",
+      "University of Oxford",
+      "UC Davis",
+      "HKU"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://danielchyeh.github.io/All-Angles-Bench/"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/Chenyu-Wang567/All-Angles-Bench"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-yeh-all-angles-bench.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Archived arXiv 2504.15280v2, 27 April 2025, evaluating 27 models. Publication is verified at AAAI 2026, whose abstract reports 38 models. The final publication PDF was not obtained. Claims below follow the inspected v2."
+  },
+  "2025-he-egoexobench": {
+    "year": 2025,
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "authors": "Yuping He, Yifei Huang, Guo Chen, Baoqi Pei, Jilan Xu, Tong Lu, Jiangmiao Pang.",
+    "affiliations": [
+      "Nanjing University",
+      "Shanghai AI Laboratory",
+      "The University of Tokyo",
+      "Zhejiang University",
+      "Fudan University"
+    ],
+    "links": [
+      {
+        "label": "Official repository",
+        "url": "https://github.com/ayiyayi/EgoExoBench"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-he-egoexobench.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Archived arXiv 2507.18342v1, 24 July 2025. Publication is verified at NeurIPS 2025. The final proceedings were also checked, but source locations and numbers below refer to the archived v1."
+  },
+  "2024-huang-egoexolearn": {
+    "year": 2024,
+    "venue": "CVPR",
+    "authors": "Yifei Huang, Guo Chen, Jilan Xu, Mingfang Zhang, Lijin Yang, Baoqi Pei, Hongjie Zhang, Lu Dong, Yali Wang, Limin Wang, Yu Qiao.",
+    "affiliations": [
+      "OpenGVLab, Shanghai AI Laboratory",
+      "The University of Tokyo",
+      "Nanjing University",
+      "Fudan University",
+      "Zhejiang University",
+      "USTC",
+      "SIAT, CAS"
+    ],
+    "links": [
+      {
+        "label": "Official OpenGVLab release",
+        "url": "https://github.com/OpenGVLab/EgoExoLearn"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2024-huang-egoexolearn.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2403.16182v3, 6 March 2025, including supplementary material. The work was published at CVPR 2024."
+  },
+  "2022-elfeki-multi-ego": {
+    "year": 2022,
+    "venue": "WACV",
+    "authors": "Mohamed Elfeki, Liqiang Wang, Ali Borji.",
+    "affiliations": [
+      "Microsoft",
+      "University of Central Florida"
+    ],
+    "links": [
+      {
+        "label": "Author repository",
+        "url": "https://github.com/M-Elfeki/Multi-DPP",
+        "note": "Author repository — annotations and evaluation resources are available, but the README still lists training-code cleanup and upload as unfinished."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2022-elfeki-multi-ego.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "WACV 2022 proceedings PDF, pp. 339–348. This note follows the published paper, not the earlier 2018 preprint. Ali Borji has no institution assigned in its author block."
+  },
+  "2022-grauman-ego4d": {
+    "year": 2022,
+    "venue": "CVPR",
+    "authors": "Kristen Grauman, Andrew Westbury, Eugene Byrne, Zachary Chavis, Antonino Furnari, Rohit Girdhar, Jackson Hamburger, Hao Jiang, Miao Liu, Xingyu Liu, Miguel Martin, Tushar Nagarajan, Ilija Radosavovic, Santhosh Kumar Ramakrishnan, Fiona Ryan, Jayant Sharma, Michael Wray, Mengmeng Xu, Eric Zhongcong Xu, Chen Zhao, Siddhant Bansal, Dhruv Batra, Vincent Cartillier, Sean Crane, Tien Do, Morrie Doulaty, Akshay Erapalli, Christoph Feichtenhofer, Adriano Fragomeni, Qichen Fu, Abrham Gebreselasie, Cristina González, James Hillis, Xuhua Huang, Yifei Huang, Wenqi Jia, Weslie Khoo, Jáchym Kolář, Satwik Kottur, Anurag Kumar, Federico Landini, Chao Li, Yanghao Li, Zhenqiang Li, Karttikeya Mangalam, Raghava Modhugu, Jonathan Munro, Tullie Murrell, Takumi Nishiyasu, Will Price, Paola Ruiz Puentes, Merey Ramazanova, Leda Sari, Kiran Somasundaram, Audrey Southerland, Yusuke Sugano, Ruijie Tao, Minh Vo, Yuchen Wang, Xindi Wu, Takuma Yagi, Ziwei Zhao, Yunyi Zhu, Pablo Arbeláez, David Crandall, Dima Damen, Giovanni Maria Farinella, Christian Fuegen, Bernard Ghanem, Vamsi Krishna Ithapu, C. V. Jawahar, Hanbyul Joo, Kris Kitani, Haizhou Li, Richard Newcombe, Aude Oliva, Hyun Soo Park, James M. Rehg, Yoichi Sato, Jianbo Shi, Mike Zheng Shou, Antonio Torralba, Lorenzo Torresani, Mingfei Yan, Jitendra Malik.",
+    "affiliations": [
+      "Meta AI",
+      "University of Texas at Austin",
+      "University of Minnesota",
+      "University of Catania",
+      "Meta Reality Labs",
+      "Georgia Tech",
+      "Carnegie Mellon University",
+      "UC Berkeley",
+      "University of Bristol",
+      "King Abdullah University of Science and Technology",
+      "National University of Singapore",
+      "Carnegie Mellon University Africa",
+      "Meta",
+      "Universidad de los Andes",
+      "University of Tokyo",
+      "Indiana University",
+      "International Institute of Information Technology, Hyderabad",
+      "MIT",
+      "University of Pennsylvania",
+      "Dartmouth"
+    ],
+    "links": [
+      {
+        "label": "Official project",
+        "url": "https://ego4d-data.org/"
+      },
+      {
+        "label": "Episodic-memory baselines",
+        "url": "https://github.com/EGO4D/episodic-memory"
+      },
+      {
+        "label": "hands-and-objects baselines",
+        "url": "https://github.com/EGO4D/hands-and-objects"
+      },
+      {
+        "label": "CVPR 2022 proceedings paper",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Grauman_Ego4D_Around_the_World_in_3000_Hours_of_Egocentric_Video_CVPR_2022_paper.html"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2022-grauman-ego4d.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Author-hosted 18-page CVPR 2022 proceedings paper, pp. 18995–19012, following the 2021 preprint. Relevant sections of the separate official supplement were also inspected. Counts below follow this paper, not later releases."
+  },
+  "2022-sener-assembly101": {
+    "year": 2022,
+    "venue": "CVPR",
+    "authors": "Fadime Sener, Dibyadip Chatterjee, Daniel Shelepov, Kun He, Dipika Singhania, Robert Wang, Angela Yao.",
+    "affiliations": [
+      "Meta Reality Labs Research",
+      "National University of Singapore"
+    ],
+    "links": [
+      {
+        "label": "Official project",
+        "url": "https://assembly-101.github.io/"
+      },
+      {
+        "label": "Official action-recognition baselines",
+        "url": "https://github.com/assembly-101/assembly101-action-recognition"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2022-sener-assembly101.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2203.14712v2, 1 May 2022, including the supplement. Published at CVPR 2022. Supplement page numbers restart after PDF p. 11."
+  },
+  "2024-grauman-ego-exo4d": {
+    "year": 2024,
+    "venue": "CVPR",
+    "authors": "Kristen Grauman, Andrew Westbury, Lorenzo Torresani, Kris Kitani, Jitendra Malik, Triantafyllos Afouras, Kumar Ashutosh, Vijay Baiyya, Siddhant Bansal, Bikram Boote, Eugene Byrne, Zach Chavis, Joya Chen, Feng Cheng, Fu-Jen Chu, Sean Crane, Avijit Dasgupta, Jing Dong, Maria Escobar, Cristhian Forigua, Abrham Gebreselasie, Sanjay Haresh, Jing Huang, Md Mohaiminul Islam, Suyog Jain, Rawal Khirodkar, Devansh Kukreja, Kevin J Liang, Jia-Wei Liu, Sagnik Majumder, Yongsen Mao, Miguel Martin, Effrosyni Mavroudi, Tushar Nagarajan, Francesco Ragusa, Santhosh Kumar Ramakrishnan, Luigi Seminara, Arjun Somayazulu, Yale Song, Shan Su, Zihui Xue, Edward Zhang, Jinxu Zhang, Angela Castillo, Changan Chen, Xinzhu Fu, Ryosuke Furuta, Cristina González, Prince Gupta, Jiabo Hu, Yifei Huang, Yiming Huang, Weslie Khoo, Anush Kumar, Robert Kuo, Sach Lakhavani, Miao Liu, Mi Luo, Zhengyi Luo, Brighid Meredith, Austin Miller, Oluwatumininu Oguntola, Xiaqing Pan, Penny Peng, Shraman Pramanick, Merey Ramazanova, Fiona Ryan, Wei Shan, Kiran Somasundaram, Chenan Song, Audrey Southerland, Masatoshi Tateno, Huiyu Wang, Yuchen Wang, Takuma Yagi, Mingfei Yan, Xitong Yang, Zecheng Yu, Shengxin Cindy Zha, Chen Zhao, Ziwei Zhao, Zhifan Zhu, Jeff Zhuo, Pablo Arbeláez, Gedas Bertasius, David Crandall, Dima Damen, Jakob Engel, Giovanni Maria Farinella, Antonino Furnari, Bernard Ghanem, Judy Hoffman, C. V. Jawahar, Richard Newcombe, Hyun Soo Park, James M. Rehg, Yoichi Sato, Manolis Savva, Jianbo Shi, Mike Zheng Shou, Michael Wray.",
+    "affiliations": [
+      "FAIR, Meta",
+      "University of Texas at Austin",
+      "Carnegie Mellon University",
+      "University of California, Berkeley",
+      "Project Aria, Meta",
+      "University of Bristol",
+      "IIIT, Hyderabad",
+      "University of Illinois, Urbana Champaign",
+      "University of Minnesota",
+      "National University of Singapore",
+      "Universidad de los Andes",
+      "Simon Fraser University",
+      "University of North Carolina, Chapel Hill",
+      "University of Catania",
+      "University of Pennsylvania",
+      "University of Tokyo",
+      "Meta",
+      "Indiana University",
+      "Johns Hopkins University",
+      "King Abdullah University of Science and Technology",
+      "Georgia Tech"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://ego-exo4d-data.org/"
+      },
+      {
+        "label": "Dataset tools and downloader",
+        "url": "https://github.com/facebookresearch/Ego4d"
+      },
+      {
+        "label": "IJCV version published in 2025",
+        "url": "https://link.springer.com/article/10.1007/s11263-025-02557-6"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2024-grauman-ego-exo4d.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2311.18259v4, 25 September 2024, 99 pages. The original paper appeared at CVPR 2024. This note follows the expanded stored manuscript, distinct from the IJCV version published in 2025."
+  },
+  "2026-kim-ma-egoqa": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Kangsan Kim, Yanlai Yang, Suji Kim, Woongyeong Yeo, Youngwan Lee, Mengye Ren, Sung Ju Hwang.",
+    "affiliations": [
+      "KAIST",
+      "New York University",
+      "Samsung Electronics",
+      "ETRI",
+      "DeepAuto.ai"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://ma-egoqa.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/KangsanKim07/MA-EgoQA"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-kim-ma-egoqa.md",
+    "metadataStatus": "wiki"
+  },
+  "2026-xiao-myego": {
+    "year": 2026,
+    "venue": "CVPR",
+    "authors": "Junbin Xiao, Shenglang Zhang, Pengxiang Zhu, Angela Yao.",
+    "affiliations": [
+      "University of Science and Technology of China",
+      "National University of Singapore"
+    ],
+    "links": [
+      {
+        "label": "Official MyEgo repository",
+        "url": "https://github.com/Ryougetsu3606/MyEgo"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-xiao-myego.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2604.01966v1, 2 April 2026. Publication verified in the CVPR 2026 proceedings. Numbers below follow the archived PDF, rather than the repository's subset leaderboard."
+  },
+  "2026-liu-egoexomem": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Ruiping Liu, Junwei Zheng, Yufan Chen, Di Wen, Shaofang Quan, Chengzhi Wu, Jiaming Zhang, Kailun Yang, Kunyu Peng, Rainer Stiefelhagen.",
+    "affiliations": [
+      "Karlsruhe Institute of Technology",
+      "ETH Zurich",
+      "University of Oxford",
+      "Hunan University",
+      "INSAIT, Sofia University ‘St. Kliment Ohridski’"
+    ],
+    "links": [
+      {
+        "label": "Official repository",
+        "url": "https://github.com/RuipingL/EgoExoMem"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-liu-egoexomem.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2605.18734v2, 8 July 2026. No conference or journal publication was verified."
+  },
+  "2025-liu-visualsync": {
+    "year": 2025,
+    "venue": "NeurIPS",
+    "authors": "Shaowei Liu, David Yifan Yao, Saurabh Gupta, Shenlong Wang.",
+    "affiliations": [
+      "University of Illinois Urbana-Champaign"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://stevenlsw.github.io/visualsync/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/stevenlsw/visualsync"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-liu-visualsync.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2512.02017v1, 1 December 2025, NeurIPS 2025 paper."
+  },
+  "2026-long-m3-agent": {
+    "year": 2026,
+    "venue": "ICLR",
+    "authors": "Lin Long, Yichen He, Wentao Ye, Yiyuan Pan, Yuan Lin, Hang Li, Junbo Zhao, Wei Li.",
+    "affiliations": [
+      "ByteDance Seed",
+      "Zhejiang University",
+      "Shanghai Jiao Tong University"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://m3-agent.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/bytedance-seed/m3-agent"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-long-m3-agent.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2508.09736v4, submitted 9 October 2025, with 10 October on the cover. First released August 2025. ByteDance's publication record identifies ICLR 2026."
+  },
+  "2026-ren-geb": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Hui Ren, Lei Fan, Henry Pao, Han Guo, Zeeshan Zia, Ying Chen, Alexander Schwing, Gang Hua.",
+    "affiliations": [
+      "University of Illinois Urbana-Champaign",
+      "Amazon.com, Inc."
+    ],
+    "links": [
+      {
+        "label": "Author-linked project website",
+        "url": "https://geb-video.github.io/"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/rhfeiyang/GEB",
+        "note": "Official repository — code and artifacts are announced as coming soon."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-ren-geb.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2609.38155v1, 29 September 2026. No accepted venue verified."
+  },
+  "2025-plizzari-osnom": {
+    "year": 2025,
+    "venue": "3DV",
+    "authors": "Chiara Plizzari, Shubham Goel, Toby Perrett, Jacob Chalk, Angjoo Kanazawa, Dima Damen.",
+    "affiliations": [
+      "Politecnico di Torino",
+      "Avataar Inc.",
+      "University of California, Berkeley",
+      "University of Bristol"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://dimadamen.github.io/OSNOM/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/Chiaraplizz/OSNOM"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-plizzari-osnom.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2404.05072v2, 21 January 2025. First released April 2024. The official project identifies the camera-ready work as 3DV 2025."
+  },
+  "2026-chaudhari-ledger": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Shravan S Chaudhari, William Paul, Suchi Saria, Rama Chellappa, Homanga Bharadhwaj.",
+    "affiliations": [
+      "Johns Hopkins University",
+      "Johns Hopkins University Applied Physics Laboratory"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://ledger-3d.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/LEDGER-3D/LEDGER"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-chaudhari-ledger.md",
+    "metadataStatus": "wiki"
+  },
+  "2026-steenbergen-hoist-case-identifiers": {
+    "year": 2026,
+    "venue": "Procedia Computer Science 277, 1150–1160 / ISM 2025",
+    "authors": "Erjan Steenbergen, Rob Bemthuis, Faiza Bukhsh.",
+    "affiliations": [
+      "University of Twente"
+    ],
+    "links": [
+      {
+        "label": "Institutional record",
+        "url": "https://research.utwente.nl/en/publications/surrogate-case-identifier-rules-for-construction-site-hoists/"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.procs.2026.02.155"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-steenbergen-hoist-case-identifiers.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Eleven-page published PDF supplied by the user. Volume/publication year is 2026, while the conference and PDF copyright are 2025. DOI 10.1016/j.procs.2026.02.155 is confirmed by the institutional record."
+  },
+  "2025-chen-gelm": {
+    "year": 2025,
+    "venue": "AAAI",
+    "authors": "Qirui Chen, Shangzhe Di, Weidi Xie.",
+    "affiliations": [
+      "Shanghai Jiao Tong University"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://qirui-chen.github.io/MultiHop-EgoQA"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/qirui-chen/MultiHop-EgoQA"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-chen-gelm.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2408.14469v1, 26 August 2024. Publication year follows the verified AAAI 2025 proceedings. Numerical claims below follow the archived preprint."
+  },
+  "2026-wang-s-ember": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Xiaodong Wang, Xuanyi Zhao, Pedro Rodriguez, Devendra Singh Sachan, Barlas Oguz, Seungwhan Moon, Shang-Wen Li, Gargi Ghosh, Xin Dong, Wen-Tau Yih.",
+    "affiliations": [
+      "FAIR, Meta",
+      "Reality Labs, Meta"
+    ],
+    "links": [
+      {
+        "label": "dataset page",
+        "url": "https://huggingface.co/datasets/facebook/S-EMBER",
+        "note": "Not found in checked sources. The official repository and dataset page provide project resources."
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/facebookresearch/S-EMBER",
+        "note": "GitHub repository — evaluation tasks, model wrappers, scripts and answer judge."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-wang-s-ember.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2607.02689v2, 26 August 2026. Preprint, with no peer-reviewed venue established in checked sources."
+  },
+  "2026-kriz-multivent-raw": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Reno Kriz, David Etter, Alexander Martin, Cameron Carpenter, Debashish Chakraborty, Hannah Recknor, Reihaneh Iranmanesh, Matthew Maciejewski, Kenton Murray, Eugene Yang, Benjamin Van Durme, Aaron Steven White, Andrew Yates, William Walden",
+    "affiliations": [
+      "Human Language Technology Center of Excellence",
+      "Johns Hopkins University",
+      "Georgetown University",
+      "University of Rochester",
+      "George Mason University"
+    ],
+    "links": [
+      {
+        "label": "Code and data",
+        "url": "https://github.com/hltcoe/multivent-raw",
+        "note": "The reviewed repository primarily provides access to data and derived resources, not a ready-made RAG pipeline."
+      }
+    ],
+    "sourceNote": "docs/research/pdf-audit/sources/multivent-raw.pdf",
+    "sourceVersion": "arXiv:2609.28437v1, 23 September 2026, p. 1. Author order was checked using the title-page layout.",
+    "metadataStatus": "fallback"
+  },
+  "2025-yoon-uvqa": {
+    "year": 2025,
+    "venue": "ICLR 2025",
+    "authors": "Eunseop Yoon, Hee Suk Yoon, Mark Hasegawa-Johnson, Chang D. Yoo.",
+    "affiliations": [
+      "Korea Advanced Institute of Science and Technology",
+      "University of Illinois at Urbana-Champaign"
+    ],
+    "links": [
+      {
+        "label": "Author repository",
+        "url": "https://github.com/EsYoon7/UVQA"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-yoon-uvqa.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2507.04976v1, 7 July 2025, conference-labelled ICLR 2025 manuscript, 26 pages. The PDF renders Mark Hasegawa-Johnson without the middle initial present in the arXiv metadata."
+  },
+  "2026-pang-egoprobe": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Haokai Pang, Yuqian Fu, Yifei Wang, Yujiao Shen, Tianwen Qian, Mohamed Elhoseiny, Hongbo Fu.",
+    "affiliations": [
+      "Hong Kong University of Science and Technology",
+      "King Abdullah University of Science and Technology",
+      "East China Normal University",
+      "Nanyang Technological University"
+    ],
+    "links": [],
+    "sourceNote": "aligned-wiki/wiki/2026-pang-egoprobe.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2610.17128v1, 12 October 2026. Fresh preprint, with no peer-reviewed venue established in checked sources."
+  },
+  "2026-forte-egostream": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Rosario Forte, Giuseppe Lando, Antonino Furnari.",
+    "affiliations": [
+      "University of Catania"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://saroo25.github.io/Egostream/"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-forte-egostream.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2605.31557v2, 1 June 2026. Preprint, with no peer-reviewed venue established in checked sources."
+  },
+  "2026-alam-supermemory-vqa": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Samiul Alam, Shakhrul Iman Siam, Michael J. Proulx, James Fort, Richard Newcombe, Hyo Jin Kim, Mi Zhang.",
+    "affiliations": [
+      "The Ohio State University",
+      "Meta"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://supermemory-vqa.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/AIoT-MLSys-Lab/supermemory-vqa",
+        "note": "GitHub repository — annotation pipeline and review frontend. Dataset."
+      },
+      {
+        "label": "Dataset",
+        "url": "https://huggingface.co/datasets/OSU-AIoT-MLSys-Lab/SuperMemory-VQA",
+        "note": "GitHub repository — annotation pipeline and review frontend. Dataset."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-alam-supermemory-vqa.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2606.00825v1, 30 May 2026. The repository says under review at NeurIPS 2026 Datasets and Benchmarks. Acceptance has not been verified."
+  },
+  "2026-zhou-temporal-abstention": {
+    "year": 2026,
+    "venue": "ICLR",
+    "authors": "Xinyu Zhou, Chang Jin, Carsten Eickhoff, Zhijiang Guo, Seyed Ali Bahrainian.",
+    "affiliations": [
+      "The Hong Kong University of Science and Technology (Guangzhou)",
+      "Tongji University",
+      "University of Tübingen",
+      "The Hong Kong University of Science and Technology"
+    ],
+    "links": [
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/Blackzxy/AbstentionTemporalQA"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-zhou-temporal-abstention.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2602.04755v2, 4 March 2026, ICLR 2026 paper. The experiments concern text QA, not video."
+  },
+  "2025-ortiz-abstention-knobs": {
+    "year": 2025,
+    "venue": "arXiv preprint",
+    "authors": "Jorge Ortiz.",
+    "affiliations": [
+      "Department of Electrical and Computer Engineering, Rutgers University"
+    ],
+    "links": [],
+    "sourceNote": "aligned-wiki/wiki/2025-ortiz-abstention-knobs.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2601.00138v2, 15 January 2026. First public preprint: 31 December 2025."
+  },
+  "2022-soucek-look-for-change": {
+    "year": 2022,
+    "venue": "CVPR",
+    "authors": "Tomáš Souček, Jean-Baptiste Alayrac, Antoine Miech, Ivan Laptev, Josef Sivic.",
+    "affiliations": [
+      "Czech Institute of Informatics, Robotics and Cybernetics, Czech Technical University in Prague",
+      "DeepMind",
+      "Département d’informatique de l’ENS, École normale supérieure",
+      "Inria",
+      "CNRS",
+      "PSL Research University"
+    ],
+    "links": [
+      {
+        "label": "Official project",
+        "url": "https://data.ciirc.cvut.cz/public/projects/2022LookForTheChange/"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/soCzech/LookForTheChange"
+      },
+      {
+        "label": "CVPR 2022, pp. 13956–13966",
+        "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Soucek_Look_for_the_Change_Learning_Object_States_and_State-Modifying_Actions_CVPR_2022_paper.html"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2022-soucek-look-for-change.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2203.11637v1, 22 March 2022, including appendices. The work was subsequently published at CVPR 2022, pp. 13956–13966."
+  },
+  "2024-xue-vidosc": {
+    "year": 2024,
+    "venue": "CVPR",
+    "authors": "Zihui Xue, Kumar Ashutosh, Kristen Grauman.",
+    "affiliations": [
+      "The University of Texas at Austin",
+      "FAIR, Meta"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://vision.cs.utexas.edu/projects/VidOSC/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/facebookresearch/VidOSC"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2024-xue-vidosc.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "CVF accepted CVPR 2024 paper, pp. 18493–18503. The separate ten-page supplement informs the protocol qualifications below."
+  },
+  "2025-zameni-moscato": {
+    "year": 2025,
+    "venue": "ICCV 2025",
+    "authors": "Parnian Zameni, Yuhan Shen, Ehsan Elhamifar.",
+    "affiliations": [
+      "Northeastern University"
+    ],
+    "links": [
+      {
+        "label": "Official dataset resources",
+        "url": "https://github.com/eelhami/iccv25_moscato",
+        "note": "Model code was not released in the checked repository. The repository provides official dataset resources."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-zameni-moscato.md",
+    "metadataStatus": "wiki"
+  },
+  "2025-schoonbeek-storm-psr": {
+    "year": 2025,
+    "venue": "Computer Vision and Image Understanding",
+    "authors": "Tim J. Schoonbeek, Shao-Hsuan Hung, Dan Lehman, Hans Onvlee, Jacek Kustra, Peter H.N. de With, Fons van der Sommen.",
+    "affiliations": [
+      "Department of Electrical Engineering, Eindhoven University of Technology",
+      "ASML"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://timschoonbeek.github.io/stormpsr"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/shaohsuanhung/STORM-PSR"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.cviu.2025.104528"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-schoonbeek-storm-psr.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2510.12385v1, 14 October 2025, 26-page author accepted manuscript. The published article is CVIU 262, 104528, December 2025, DOI. Page references below follow the stored manuscript."
+  },
+  "2026-wen-provia": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Di Wen, Kailun Yang, Jimmy Weissert, Luc Maria Scherrer, Cedric Zöllner, Ruiping Liu, Yufan Chen, Jiale Wei, Junwei Zheng, Kunyu Peng.",
+    "affiliations": [
+      "Karlsruhe Institute of Technology",
+      "Hunan University"
+    ],
+    "links": [
+      {
+        "label": "Kratos-Wen/PROVIA",
+        "url": "https://github.com/Kratos-Wen/PROVIA"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-wen-provia.md",
+    "metadataStatus": "wiki"
+  },
+  "2026-mandikal-spoc": {
+    "year": 2026,
+    "venue": "WACV",
+    "authors": "Priyanka Mandikal, Tushar Nagarajan, Alex Stoken, Zihui Xue, Kristen Grauman.",
+    "affiliations": [
+      "University of Texas at Austin"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://vision.cs.utexas.edu/projects/spoc-spatially-progressing-osc/"
+      },
+      {
+        "label": "Dataset and visualization utilities",
+        "url": "https://github.com/priyankamandikal/spoc"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-mandikal-spoc.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2503.11953v2, 23 December 2025, including Appendices A–F. The publication venue and year are WACV 2026."
+  },
+  "2025-perrett-hd-epic": {
+    "year": 2025,
+    "venue": "CVPR 2025",
+    "authors": "Toby Perrett, Ahmad Darkhalil, Saptarshi Sinha, Omar Emara, Sam Pollard, Kranti Kumar Parida, Kaiting Liu, Prajwal Gatti, Siddhant Bansal, Kevin Flanagan, Jacob Chalk, Zhifan Zhu, Rhodri Guerrier, Fahd Abdelazim, Bin Zhu, Davide Moltisanti, Michael Wray, Hazel Doughty, Dima Damen.",
+    "affiliations": [
+      "University of Bristol",
+      "Leiden University",
+      "Singapore Management University",
+      "University of Bath"
+    ],
+    "links": [
+      {
+        "label": "Primary record",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Perrett_HD-EPIC_A_Highly-Detailed_Egocentric_Video_Dataset_CVPR_2025_paper.html"
+      },
+      {
+        "label": "Project website",
+        "url": "https://hd-epic.github.io/site/"
+      },
+      {
+        "label": "Author annotations and evaluation resources",
+        "url": "https://github.com/hd-epic/hd-epic-annotations"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-perrett-hd-epic.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "CVF open-access accepted CVPR 2025 paper, 13 pages, pp. 23901–23913. Both the archived PDF abstract and Table 2 say 37.6%, while the publisher HTML abstract previously showed 37.0%."
+  },
+  "2026-guo-procobject": {
+    "year": 2026,
+    "venue": "NeurIPS, Evaluations and Datasets Track",
+    "authors": "Wenliang Guo, Yu Kong.",
+    "affiliations": [
+      "Michigan State University, USA"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://wenliangguo.github.io/ProcObject-10K-Page/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/WenliangGuo/ProcObject-10K"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-guo-procobject.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2512.03479v3, 29 October 2026, 28 pages. First preprint: December 2025. The stored version identifies NeurIPS 2026, Evaluations and Datasets Track."
+  },
+  "2025-lehman-statediffnet": {
+    "year": 2025,
+    "venue": "ECCV 2024 VISION Workshop, proceedings published 2025",
+    "authors": "Dan Lehman, Tim J. Schoonbeek, Shao-Hsuan Hung, Jacek Kustra, Peter H.N. de With, Fons van der Sommen.",
+    "affiliations": [
+      "Eindhoven University of Technology",
+      "ASML Research"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://timschoonbeek.github.io/error_seg"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Dan-Leh/find-my-assembly-mistakes"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-lehman-statediffnet.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2408.12945v1, 23 August 2024, 23 pages. ECCV 2024 VISION workshop proceedings appeared in 2025, which determines this wiki filename/year."
+  },
+  "2026-yang-egotsr": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Xiaoda Yang, Can Wang, Yuxiang Liu, Pengfei Zhou, Jianwen Lou, Shuicheng Yan.",
+    "affiliations": [
+      "Zhejiang University",
+      "Qingdao University",
+      "Tianjin University",
+      "National University of Singapore"
+    ],
+    "links": [],
+    "sourceNote": "aligned-wiki/wiki/2026-yang-egotsr.md",
+    "metadataStatus": "wiki"
+  },
+  "2024-nguyen-oscar": {
+    "year": 2024,
+    "venue": "Findings of NAACL",
+    "authors": "Nguyen Nguyen, Jing Bi, Ali Vosoughi, Yapeng Tian, Pooyan Fazli, Chenliang Xu.",
+    "affiliations": [
+      "University of Rochester",
+      "University of Texas at Dallas",
+      "Arizona State University"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://nguyennm1024.github.io/OSCaR/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/nguyennm1024/OSCaR"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2024-nguyen-oscar.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2402.17128v4, 2 April 2024, including Appendix A. Published in Findings of NAACL 2024."
+  },
+  "2025-sun-tubeletgraph": {
+    "year": 2025,
+    "venue": "NeurIPS",
+    "authors": "Yihong Sun, Xinyu Yang, Jennifer J. Sun, Bharath Hariharan.",
+    "affiliations": [
+      "Cornell University"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://tubelet-graph.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/YihongSun/TubeletGraph"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-sun-tubeletgraph.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2511.04678v2, 13 January 2026, including Appendix A. The publication venue and year are NeurIPS 2025."
+  },
+  "2026-liang-robometer": {
+    "year": 2026,
+    "venue": "RSS",
+    "authors": "Anthony Liang, Yigit Korkmaz, Jiahui Zhang, Minyoung Hwang, Abrar Anwar, Sidhant Kaushik, Aditya Shah, Alex S. Huang, Luke Zettlemoyer, Dieter Fox, Yu Xiang, Anqi Li, Andreea Bobu, Abhishek Gupta, Stephen Tu, Erdem Bıyık, Jesse Zhang. Sidhant Kaushik is listed as an independent researcher.",
+    "affiliations": [
+      "University of Southern California",
+      "UT Dallas",
+      "MIT",
+      "University of Washington",
+      "Ai2",
+      "NVIDIA"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://robometer.github.io/"
+      },
+      {
+        "label": "Reward model",
+        "url": "https://github.com/robometer/robometer"
+      },
+      {
+        "label": "Policy learning",
+        "url": "https://github.com/robometer/robometer-policy-learning"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-liang-robometer.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2603.02115v2, 13 May 2026. RSS 2026 proceedings."
+  },
+  "2026-guo-aem": {
+    "year": 2026,
+    "venue": "ICLR 2026",
+    "authors": "Wenliang Guo, Yujiang Pu, Yu Kong.",
+    "affiliations": [
+      "Michigan State University"
+    ],
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://wenliangguo.github.io/Mistake_Detection/"
+      },
+      {
+        "label": "WenliangGuo/AEM",
+        "url": "https://github.com/WenliangGuo/AEM"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-guo-aem.md",
+    "metadataStatus": "wiki"
+  },
+  "2024-lee-egoper": {
+    "year": 2024,
+    "venue": "CVPR",
+    "authors": "Shih-Po Lee, Zijia Lu, Zekun Zhang, Minh Hoai, Ehsan Elhamifar.",
+    "affiliations": [
+      "Northeastern University",
+      "Stony Brook University"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://www.khoury.northeastern.edu/home/eelhami/egoper.htm"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/robert80203/EgoPER_official"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2024-lee-egoper.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "CVPR 2024 accepted proceedings PDF, pp. 18655–18666. The separate author-hosted supplement was also checked."
+  },
+  "2026-seminara-tgml": {
+    "year": 2026,
+    "venue": "IEEE TPAMI",
+    "authors": "Luigi Seminara, Giovanni Maria Farinella, Antonino Furnari.",
+    "affiliations": [
+      "University of Catania"
+    ],
+    "links": [
+      {
+        "label": "DTGL predecessor project linked by TGML",
+        "url": "https://fpv-iplab.github.io/Differentiable-Task-Graph-Learning/"
+      },
+      {
+        "label": "Shared DTGL repository",
+        "url": "https://github.com/fpv-iplab/Differentiable-Task-Graph-Learning",
+        "note": "Shared DTGL repository. Release of the journal-specific additions was not verified."
+      },
+      {
+        "label": "publisher record",
+        "url": "https://ieeexplore.ieee.org/abstract/document/11505801/"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-seminara-tgml.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2502.17753v2, 26 February 2025, first released 25 February 2025. This note covers that preprint. The later journal article appeared in IEEE TPAMI 48(9), 10518–10534, September 2026 (publisher record)."
+  },
+  "2026-majumder-mistexit": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Sagnik Majumder, Anish Nethi, Ziad Al-Halah, Kristen Grauman.",
+    "affiliations": [
+      "The University of Texas at Austin",
+      "University of Utah"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://vision.cs.utexas.edu/projects/mist_exit/"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-majumder-mistexit.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2603.14252v1, 15 March 2026, 24 pages."
+  },
+  "2025-patsch-mistsense": {
+    "year": 2025,
+    "venue": "ICCV",
+    "authors": "Constantin Patsch, Yuankai Wu, Marsil Zakour, Driton Salihu, Eckehard Steinbach.",
+    "affiliations": [
+      "Technical University of Munich, School of Computation, Information, and Technology, Department of Computer Engineering, Chair of Media Technology",
+      "Munich Institute of Robotics and Machine Intelligence (MIRMI)"
+    ],
+    "links": [
+      {
+        "label": "Official publication page",
+        "url": "https://openaccess.thecvf.com/content/ICCV2025/html/Patsch_MistSense_Versatile_Online_Detection_of_Procedural_and_Execution_Mistakes_ICCV_2025_paper.html"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-patsch-mistsense.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "CVF open-access accepted ICCV 2025 paper, pp. 14528–14537. The official CVF listing provides no separate supplement."
+  },
+  "2025-chavan-indego": {
+    "year": 2025,
+    "venue": "NeurIPS, Datasets and Benchmarks Track",
+    "authors": "Vivek Chavan, Yasmina Imgrund, Tung Dao, Sanwantri Bai, Bosong Wang, Ze Lu, Oliver Heimann, Jörg Krüger.",
+    "affiliations": [
+      "Fraunhofer IPK, Berlin",
+      "Technical University of Berlin",
+      "University of Tübingen",
+      "RWTH Aachen University",
+      "Leibniz University Hannover"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://indego-dataset.github.io/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Vivek9Chavan/IndEgo/"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-chavan-indego.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2511.19684v1, 24 November 2025, 53 pages including appendices and checklist. NeurIPS 2025 Datasets and Benchmarks publication is independently confirmed by the proceedings. This note follows the stored arXiv version."
+  },
+  "2026-wen-impact": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Di Wen, Zeyun Zhong, David Schneider, Manuel Zaremski, Linus Kunzmann, Yitian Shi, Ruiping Liu, Yufan Chen, Junwei Zheng, Jiahang Li, Jonas Hemmerich, Qiyi Tong, Patric Grauberger, Arash Ajoudani, Danda Pani Paudel, Sven Matthiesen, Barbara Deml, Jürgen Beyerer, Luc Van Gool, Rainer Stiefelhagen, Kunyu Peng.",
+    "affiliations": [
+      "Karlsruhe Institute of Technology",
+      "ETH Zurich",
+      "Italian Institute of Technology",
+      "INSAIT, Sofia University"
+    ],
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/Kratos-Wen/IMPACT"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-wen-impact.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2604.10409v1, 12 April 2026, 9 pages. The author repository still describes an ACM Multimedia 2026 Dataset Track submission under review, so acceptance is not assumed."
+  },
+  "2025-haneji-egooops": {
+    "year": 2025,
+    "venue": "ICCV Workshops, SAUAFG",
+    "authors": "Yuto Haneji, Taichi Nishimura, Hirotaka Kameko, Keisuke Shirai, Tomoya Yoshida, Keiya Kajimura, Koki Yamamoto, Taiyu Cui, Tomohiro Nishimoto, Shinsuke Mori.",
+    "affiliations": [
+      "Kyoto University",
+      "Sony Interactive Entertainment"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://y-haneji.github.io/EgoOops-project-page/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Y-Haneji/EgoOops-annotations/"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-haneji-egooops.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "ICCV Workshops 2025 accepted open-access version, 11 PDF pages, proceedings pp. 2690–2700. The title differs slightly from the project-page heading."
+  },
+  "2026-li-egoerrorvqa": {
+    "year": 2026,
+    "venue": "EMNLP",
+    "authors": "Junlong Li, Junxi Li, Jianjun Gao, Chen Cai, Lap-Pui Chau, Yi Wang.",
+    "affiliations": [
+      "Department of EEE, The Hong Kong Polytechnic University",
+      "School of EEE, Nanyang Technological University"
+    ],
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/z1oong/EgoErrorVQA"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-li-egoerrorvqa.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2608.24134v1, 25 August 2026, 20 pages. EMNLP 2026 status verified in the author repository."
+  },
+  "2026-sasaki-egoindassembly": {
+    "year": 2026,
+    "venue": "CVPR Workshops, SAUAFG",
+    "authors": "Tatsuya Sasaki.",
+    "affiliations": [
+      "Hitachi, Ltd. Research and Development Group, Japan"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://huggingface.co/datasets/sasakits/EgoIndAssembly"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-sasaki-egoindassembly.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "CVPR Workshops 2026 accepted open-access paper, 9 pages, proceedings pp. 8894–8902."
+  },
+  "2026-chavan-indego-assistant": {
+    "year": 2026,
+    "venue": "CIRP Annals 75, 19–23",
+    "authors": "Vivek Chavan, Jörg Krüger.",
+    "affiliations": [
+      "Automation Technology Division, Fraunhofer IPK",
+      "Department of Industrial Automation Technology, Technical University of Berlin"
+    ],
+    "links": [
+      {
+        "label": "Publisher",
+        "url": "https://doi.org/10.1016/j.cirp.2026.04.066"
+      },
+      {
+        "label": "Project",
+        "url": "https://indego-assistant.github.io/"
+      },
+      {
+        "label": "Later reference implementation",
+        "url": "https://github.com/IndEgo-Assistant/indego-procedure-assistant",
+        "note": "Later reference implementation, including a gaze extension. Original experimental code is not included."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-chavan-indego-assistant.md",
+    "metadataStatus": "wiki"
+  },
+  "2026-loginova-prism": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Olga Loginova, Oleksandr Bezrukov, Frank Keller.",
+    "affiliations": [
+      "University of Trento",
+      "Gran Sasso Science Institute",
+      "University of Edinburgh"
+    ],
+    "links": [],
+    "sourceNote": "aligned-wiki/wiki/2026-loginova-prism.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2610.31117v1, 22 October 2026. Fresh preprint, with no acceptance verified."
+  },
+  "2026-li-matt": {
+    "year": 2026,
+    "venue": "CVPR",
+    "authors": "Yayuan Li, Aadit Jain, Filippos Bellos, Jason J. Corso.",
+    "affiliations": [
+      "University of Michigan",
+      "Voxel51"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://yayuanli.github.io/MATT/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/yayuanli/MATT"
+      },
+      {
+        "label": "CVPR 2026 proceedings",
+        "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_Mistake_Attribution_Fine-Grained_Mistake_Understanding_in_Egocentric_Videos_CVPR_2026_paper.html"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-li-matt.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2511.20525v2, 25 March 2026, first released 25 November 2025. CVPR 2026 proceedings independently confirm publication."
+  },
+  "2025-huang-amnar": {
+    "year": 2025,
+    "venue": "CVPR",
+    "authors": "Wei-Jin Huang, Yuan-Ming Li, Zhi-Wei Xia, Yu-Ming Tang, Kun-Yu Lin, Jian-Fang Hu, Wei-Shi Zheng.",
+    "affiliations": [
+      "School of Computer Science and Engineering, Sun Yat-sen University",
+      "Peng Cheng Laboratory",
+      "Key Laboratory of Machine Intelligence and Advanced Computing, Ministry of Education, China",
+      "Guangdong Province Key Laboratory of Information Security Technology"
+    ],
+    "links": [
+      {
+        "label": "Official publication page",
+        "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Huang_Modeling_Multiple_Normal_Action_Representations_for_Error_Detection_in_Procedural_CVPR_2025_paper.html"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/iSEE-Laboratory/AMNAR"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-huang-amnar.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "CVF open-access accepted CVPR 2025 paper, pp. 27794–27804, plus its separately published supplement. The repository also links the distinct arXiv manuscript 2503.22405."
+  },
+  "2026-gupta-vidparse": {
+    "year": 2026,
+    "venue": "ECCV",
+    "authors": "Anubhav Gupta, Archit Kambhamettu, Vatsal Agarwal, Pulkit Kumar, Abhinav Shrivastava.",
+    "affiliations": [
+      "University of Maryland, College Park"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://learn2phoenix.github.io/VidParse/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/learn2phoenix/VidParse"
+      },
+      {
+        "label": "ECCV 2026",
+        "url": "https://eccv.ecva.net/virtual/2026/poster/4540"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-gupta-vidparse.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2608.27562v2, 27 October 2026, first released 27 August 2026. ECCV 2026, listed under the conference title Egocentric Procedure Parsing. Version 2 corrects GTEA evaluation to four splits."
+  },
+  "2022-jia-egotaskqa": {
+    "year": 2022,
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "authors": "Baoxiong Jia, Ting Lei, Song-Chun Zhu, Siyuan Huang.",
+    "affiliations": [
+      "UCLA Center for Vision, Cognition, Learning, and Autonomy (VCLA)",
+      "Beijing Institute for General Artificial Intelligence (BIGAI)",
+      "Institute for Artificial Intelligence, Peking University",
+      "Department of Automation, Tsinghua University"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://sites.google.com/view/egotaskqa/home"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/Buzz-Beater/EgoTaskQA"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2022-jia-egotaskqa.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2210.03929v1, 8 October 2022. Publication verified in the NeurIPS 2022 Datasets and Benchmarks proceedings."
+  },
+  "2024-schoonbeek-industreal": {
+    "year": 2024,
+    "venue": "WACV",
+    "authors": "Tim J. Schoonbeek, Tim Houben, Hans Onvlee, Peter H.N. de With, Fons van der Sommen.",
+    "affiliations": [
+      "Eindhoven University of Technology",
+      "ASML Research"
+    ],
+    "links": [
+      {
+        "label": "Author project",
+        "url": "https://timschoonbeek.github.io/industreal.html"
+      },
+      {
+        "label": "Official repository",
+        "url": "https://github.com/TimSchoonbeek/IndustReal"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2024-schoonbeek-industreal.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Ten-page WACV 2024 proceedings article, first preprint 2023."
+  },
+  "2023-wang-holoassist": {
+    "year": 2023,
+    "venue": "ICCV",
+    "authors": "Xin Wang, Taein Kwon, Mahdi Rad, Bowen Pan, Ishani Chakraborty, Sean Andrist, Dan Bohus, Ashley Feniello, Bugra Tekin, Felipe Vieira Frujeri, Neel Joshi, Marc Pollefeys.",
+    "affiliations": [
+      "Microsoft",
+      "ETH Zurich"
+    ],
+    "links": [
+      {
+        "label": "Official project and release",
+        "url": "https://holoassist.github.io/"
+      },
+      {
+        "label": "Baseline release",
+        "url": "https://github.com/Ember-HoloAssist/holoassist-release",
+        "note": "Baseline release · Projection utilities. Links verified through the official project page. Implementations were not executed."
+      },
+      {
+        "label": "Projection utilities",
+        "url": "https://github.com/taeinkwon/PyHoloAssist",
+        "note": "Baseline release · Projection utilities. Links verified through the official project page. Implementations were not executed."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2023-wang-holoassist.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Twelve-page ICCV 2023 article. The PDF reports 166 hours, while the current project page says 169 hours. Counts here follow the archived PDF."
+  },
+  "2024-peddi-captaincook4d": {
+    "year": 2024,
+    "venue": "NeurIPS, Datasets and Benchmarks Track",
+    "authors": "Rohith Peddi, Shivvrat Arya, Bharath Challa, Likhitha Pallapothula, Akshay Vyas, Bhavya Gouripeddi, Qifan Zhang, Jikai Wang, Vasundhara Komaragiri, Eric Ragan, Nicholas Ruozzi, Yu Xiang, Vibhav Gogate.",
+    "affiliations": [
+      "The University of Texas at Dallas",
+      "University of Florida"
+    ],
+    "links": [
+      {
+        "label": "Official project",
+        "url": "https://captaincook4d.github.io/captain-cook/"
+      },
+      {
+        "label": "Official release organization",
+        "url": "https://github.com/CaptainCook4D/",
+        "note": "Official release organization · Annotations · Downloader. Links verified through the official project page. Implementations were not executed."
+      },
+      {
+        "label": "Annotations",
+        "url": "https://github.com/CaptainCook4D/annotations",
+        "note": "Official release organization · Annotations · Downloader. Links verified through the official project page. Implementations were not executed."
+      },
+      {
+        "label": "Downloader",
+        "url": "https://github.com/CaptainCook4D/downloader",
+        "note": "Official release organization · Annotations · Downloader. Links verified through the official project page. Implementations were not executed."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2024-peddi-captaincook4d.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Fifty-four-page NeurIPS 2024 proceedings PDF including appendices. First preprint appeared in 2023. Author order follows this PDF."
+  },
+  "2024-seminara-dtgl": {
+    "year": 2024,
+    "venue": "NeurIPS",
+    "authors": "Luigi Seminara, Giovanni Maria Farinella, Antonino Furnari",
+    "affiliations": [
+      "Department of Mathematics and Computer Science, University of Catania"
+    ],
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://fpv-iplab.github.io/Differentiable-Task-Graph-Learning/"
+      },
+      {
+        "label": "Official code",
+        "url": "https://github.com/fpv-iplab/Differentiable-Task-Graph-Learning"
+      }
+    ],
+    "sourceNote": "docs/research/pdf-audit/2024-dtgl.pdf",
+    "sourceVersion": "Official NeurIPS 2024 proceedings PDF, p. 1, with venue footer and code URL. Full title: Differentiable Task Graph Learning: Procedural Activity Representation and Online Mistake Detection from Egocentric Videos.",
+    "metadataStatus": "fallback",
+    "publicationNote": "Historical predecessor of TGML. The later TPAMI 2026 TGML publication and its results remain a separate registry record."
+  },
+  "2026-zeng-onestreamer": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Xiangyu Zeng, Yuandong Yang, Zhiqiu Zhang, Yuhan Zhu, Xinhao Li, Qingyi Si, Dingyu Yao, Changlian Ma, Haoran Chen, Xinyu Chen, Yansong Shi, Junhao Zhou, Yifei Li, Jun Zhang, Chuanyu Qin, Chenxu Yang, Xinlei Yu, Kun Ouyang, Yuchen Shao, Qianshan Wei, Changhai Zhou, Jun Gao, Jiaqi Wang, Limin Wang.",
+    "affiliations": [
+      "NJU",
+      "PJLAB",
+      "JD",
+      "SJTU",
+      "USTC",
+      "CAS",
+      "CUHK",
+      "PKU",
+      "THU",
+      "FDU",
+      "ZJU"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://mcg-nju.github.io/OneStreamer/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/MCG-NJU/OneStreamer",
+        "note": "GitHub repository — model weights labeled “Public access pending” when checked on 2026-10-31."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-zeng-onestreamer.md",
+    "metadataStatus": "wiki"
+  },
+  "2025-di-rekv": {
+    "year": 2025,
+    "venue": "ICLR 2025",
+    "authors": "Shangzhe Di, Zhelun Yu, Guanghao Zhang, Haoyuan Li, Tao Zhong, Hao Cheng, Bolin Li, Wanggui He, Fangxun Shu, Hao Jiang.",
+    "affiliations": [
+      "Shanghai Jiao Tong University",
+      "Alibaba Group"
+    ],
+    "links": [
+      {
+        "label": "Author repository",
+        "url": "https://github.com/Becomebright/ReKV"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-di-rekv.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2503.00540v1, 1 March 2025, conference-labelled ICLR 2025 manuscript."
+  },
+  "2026-liao-proactegomem": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Ruotong Liao, Meikel Kokowski, Xiaoxiao Sun, Yongqin Xian, Laura Bravo Sánchez, Shiye Su, Federico Tombari, Serena Yeung-Levy, Volker Tresp.",
+    "affiliations": [
+      "LMU Munich",
+      "Stanford University",
+      "Google",
+      "Technical University of Munich"
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://proactegomem.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/mayhugotong/ProactEgoMem"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-liao-proactegomem.md",
+    "metadataStatus": "wiki"
+  },
+  "2026-zhang-streamarena": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Xichen Zhang, Guankai Li, Yinghao Zhu, Shijian Wang, Sitong Wu, Shaozuo Yu, Meng Chu, Yuan Lu, Jiaya Jia.",
+    "affiliations": [
+      "The Hong Kong University of Science and Technology",
+      "Xiaohongshu Inc.",
+      "The University of Hong Kong",
+      "The Chinese University of Hong Kong"
+    ],
+    "links": [
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/JIA-Lab-research/StreamArena",
+        "note": "GitHub repository — repository revisions extend beyond the summarized paper version."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-zhang-streamarena.md",
+    "metadataStatus": "wiki"
+  },
+  "2025-bhattacharyya-livemamba": {
+    "year": 2025,
+    "venue": "NeurIPS",
+    "authors": "Apratim Bhattacharyya, Bicheng Xu, Sanjay Haresh, Reza Pourreza, Litian Liu, Sunny Panchal, Pulkit Madan, Leonid Sigal, Roland Memisevic.",
+    "affiliations": [
+      "Qualcomm AI Research",
+      "University of British Columbia"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://apratimbh.github.io/livecook/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Qualcomm-AI-research/qualcomm_interactive_cooking_eval"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-bhattacharyya-livemamba.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2511.21998v2, 12 April 2026, 34 pages, revision of the NeurIPS 2025 paper. Venue confirmed by the author project."
+  },
+  "2026-liu-guideme": {
+    "year": 2026,
+    "venue": "ECCV",
+    "authors": "Fang Liu, Jinpeng Chen, Ke Xu, Yuhao Liu, Huankang Guan, Xudong Lu, Yang Bo, Gerhard Hancke, Rui Liu, Rynson W.H. Lau.",
+    "affiliations": [
+      "City University of Hong Kong",
+      "Huawei Research",
+      "University of Science and Technology of China",
+      "Chinese University of Hong Kong",
+      "City University of Hong Kong (Dongguan)"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://fawnliu.github.io/project/guideme/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/fawnliu/GuideMe"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-liu-guideme.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2607.02991v1, 3 July 2026, 19 pages. ECCV 2026 status verified on the author project/repository. Author order/spelling follows the stored PDF, including “Yang Bo.”"
+  },
+  "2026-panpatil-egosafetybench": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Siddhant Panpatil, Arth Singh, Mijin Koo, Chaeyun Kim, Haon Park, Dasol Choi.",
+    "affiliations": [
+      "AIM Intelligence",
+      "Seoul National University"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://huggingface.co/datasets/AIM-Intelligence/EgoSafetyBench"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/AIM-Intelligence/EgoSafetyBench"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-panpatil-egosafetybench.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2607.00218v2, 4 October 2026, 17 pages. First preprint: 30 June 2026."
+  },
+  "2025-zeng-streamforest": {
+    "year": 2025,
+    "venue": "NeurIPS",
+    "authors": "Xiangyu Zeng, Kefan Qiu, Qingyu Zhang, Xinhao Li, Jing Wang, Jiaxin Li, Ziang Yan, Kun Tian, Meng Tian, Xinhai Zhao, Yi Wang, Limin Wang.",
+    "affiliations": [
+      "Nanjing University",
+      "Shanghai AI Laboratory",
+      "Zhejiang University",
+      "Noah’s Ark Lab, Huawei",
+      "Yinwang Intelligent Tech."
+    ],
+    "links": [
+      {
+        "label": "Project website",
+        "url": "https://github.com/MCG-NJU/StreamForest"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-zeng-streamforest.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2509.24871v1, 29 September 2025. NeurIPS 2025 status verified by the official author repository."
+  },
+  "2009-golparvar-fard-d4ar": {
+    "year": 2009,
+    "venue": "Journal of Information Technology in Construction (ITcon)",
+    "authors": "Mani Golparvar-Fard, Feniosky Peña-Mora, Silvio Savarese",
+    "affiliations": [
+      "Construction Management and Information Technology Group, Department of Civil & Environmental Engineering, University of Illinois, Urbana-Champaign",
+      "Department of Electrical and Computing Engineering, University of Michigan, Ann Arbor"
+    ],
+    "links": [
+      {
+        "label": "Publisher record",
+        "url": "https://www.itcon.org/paper/2009/13"
+      }
+    ],
+    "sourceNote": "docs/research/pdf-audit/2009-d4ar.pdf",
+    "sourceVersion": "Published June 2009, ITcon 14, pp. 129–153. Authors and affiliations are taken from the first page. No project or code repository was established in the checked sources.",
+    "metadataStatus": "fallback"
+  },
+  "2026-hsieh-ai-bim-progress": {
+    "year": 2026,
+    "venue": "Automation in Construction 183, 106783",
+    "authors": "Chang-Cheng Hsieh, Hung-Ming Chen, Wan-Yu Chen, Ting-Yu Wu.",
+    "affiliations": [
+      "Department of Civil and Construction Engineering, National Taiwan University of Science and Technology"
+    ],
+    "links": [
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.autcon.2026.106783"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-hsieh-ai-bim-progress.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Twenty-one-page publisher article supplied by the user, available online 19 January 2026."
+  },
+  "2026-isaac-sensing-scheduling": {
+    "year": 2026,
+    "venue": "ISARC, pp. 824–831",
+    "authors": "Shabtai Isaac, Gunnar Lucko.",
+    "affiliations": [
+      "Department of Structural Engineering, Ben-Gurion University of the Negev",
+      "Department of Civil and Environmental Engineering, Catholic University of America"
+    ],
+    "links": [],
+    "sourceNote": "aligned-wiki/wiki/2026-isaac-sensing-scheduling.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Eight-page ISARC 2026 publisher PDF downloaded 1 November 2026. Its title uses “Deviation-Based Framework”."
+  },
+  "2026-qiu-graphrag-compliance": {
+    "year": 2026,
+    "venue": "Advanced Engineering Informatics 74, 104642",
+    "authors": "Zijin Qiu, Jiepeng Liu, Yi Xia, Wenchen Shan, Jingjing Guo, Pengkun Liu, Hongtuo Qi.",
+    "affiliations": [
+      "School of Civil Engineering, Chongqing University",
+      "State Key Laboratory of Safety and Resilience of Civil Engineering in Mountain Area",
+      "Institute of Smart City and Intelligent Transportation, Southwest Jiaotong University",
+      "College of Civil Engineering, Hunan University",
+      "Hong Kong Center for Construction Robotics, The Hong Kong University of Science and Technology",
+      "Xinjiang University of Technology"
+    ],
+    "links": [
+      {
+        "label": "Publisher",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1474034626003344"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1016/j.aei.2026.104642"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-qiu-graphrag-compliance.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Published 22-page article, available online 11 April 2026, DOI 10.1016/j.aei.2026.104642. The user supplied the original publisher PDF. Referenced supplementary prompts were not available in this file."
+  },
+  "2026-zhang-constructai": {
+    "year": 2026,
+    "venue": "AAAI / IAAI, 40(47), 40167-40175",
+    "authors": "Gaowei Zhang, Wei Wang, Tiong Lee Kong, Kai Xing, Huan Li, Yi Wang.",
+    "affiliations": [
+      "Beijing University of Posts and Telecommunications",
+      "Nanyang Technological University",
+      "Nanjing Technological University",
+      "Huafeng Technology (Nanjing)"
+    ],
+    "links": [
+      {
+        "label": "Publisher",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/41452"
+      },
+      {
+        "label": "DOI",
+        "url": "https://doi.org/10.1609/aaai.v40i47.41452"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-zhang-constructai.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Nine-page AAAI-26 proceedings PDF, DOI 10.1609/aaai.v40i47.41452, published 14 March 2026 in the IAAI deployed-applications track. Downloaded unchanged from the publisher."
+  },
+  "2025-guo-egoconqs": {
+    "year": 2025,
+    "venue": "Automation in Construction",
+    "authors": "Jingjing Guo, Lu Deng, Pengkun Liu, Tao Sun",
+    "affiliations": [],
+    "links": [
+      {
+        "label": "Publisher record",
+        "url": "https://doi.org/10.1016/j.autcon.2024.105933"
+      }
+    ],
+    "sourceNote": "aligned-wiki/raw/manifest.json",
+    "sourceVersion": "candidate_review_2026_10_31.candidate_reviews[45].identity records the four authors and Automation in Construction 170, 105933, February 2025, online 18 December 2024.",
+    "metadataStatus": "fallback",
+    "publicationNote": "Bibliographic metadata only. The frozen review did not obtain the original full PDF. No verified project/code or affiliations are asserted."
+  },
+  "2025-liu-egosafe": {
+    "year": 2025,
+    "venue": "Automation in Construction",
+    "authors": "Ziming Liu, Jiuyi Xu, Christine Wun Ki Suen, Meida Chen, Zhengbo Zou, Yangming Shi",
+    "affiliations": [],
+    "links": [
+      {
+        "label": "Publisher record",
+        "url": "https://doi.org/10.1016/j.autcon.2025.106048"
+      },
+      {
+        "label": "Dataset and preprocessing",
+        "url": "https://github.com/jiuyixu25/EgoVision",
+        "note": "Author-linked repository with dataset documentation, camera calibration, preprocessing and augmentation. Not established as a complete implementation of the paper's detector."
+      }
+    ],
+    "sourceNote": "literature-review/content/en/notes/proactive.md",
+    "sourceVersion": "Local audit entry H establishes DOI and incomplete PDF access. Bibliographic author details were separately checked against publisher-deposited Crossref metadata on 3 November 2026: Automation in Construction 172, 106048, April 2025.",
+    "metadataStatus": "fallback",
+    "publicationNote": "This is the construction hazardous-object paper by Liu et al., not the distinct 2026 EgoSafe or EgoSafetyBench. The full-PDF limitation in the frozen review remains unchanged.",
+    "evidenceUrls": [
+      "https://api.crossref.org/works/10.1016/j.autcon.2025.106048",
+      "https://shiyangming.com/research/"
+    ]
+  },
+  "2018-doughty-skill-ranking": {
+    "year": 2018,
+    "venue": "CVPR",
+    "authors": "Hazel Doughty, Dima Damen, Walterio Mayol-Cuevas.",
+    "affiliations": [
+      "University of Bristol"
+    ],
+    "links": [
+      {
+        "label": "Author project page",
+        "url": "https://dimadamen.github.io/Skill/"
+      },
+      {
+        "label": "CVPR 2018, pp. 6057–6066",
+        "url": "https://openaccess.thecvf.com/content_cvpr_2018/html/Doughty_Whos_Better_Whos_CVPR_2018_paper.html"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2018-doughty-skill-ranking.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "Author-hosted, 10-page accepted paper for CVPR 2018, pp. 6057–6066. This is the pairwise-ranking paper, not the later rank-aware temporal-attention model also featured on the project page."
+  },
+  "2026-braun-skillspotter": {
+    "year": 2026,
+    "venue": "ECCV 2026",
+    "authors": "Björn Braun, Christian Holz.",
+    "affiliations": [
+      "ETH Zürich"
+    ],
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://siplab.org/projects/SkillSpotter"
+      },
+      {
+        "label": "eth-siplab/SkillSpotter",
+        "url": "https://github.com/eth-siplab/SkillSpotter"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-braun-skillspotter.md",
+    "metadataStatus": "wiki"
+  },
+  "2025-ashutosh-expertaf": {
+    "year": 2025,
+    "venue": "CVPR",
+    "authors": "Kumar Ashutosh, Tushar Nagarajan, Georgios Pavlakos, Kris Kitani, Kristen Grauman.",
+    "affiliations": [
+      "University of Texas at Austin",
+      "FAIR Meta",
+      "Carnegie Mellon University"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://vision.cs.utexas.edu/projects/ExpertAF/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/thechargedneutron/ExpertAF"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-ashutosh-expertaf.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "CVF open-access accepted CVPR 2025 paper, pp. 13582–13594. The first arXiv release was in 2024. The separate CVPR supplement was also consulted."
+  },
+  "2026-mazzamuto-proskill": {
+    "year": 2026,
+    "venue": "WACV 2026",
+    "authors": "Michele Mazzamuto, Daniele Di Mauro, Gianpiero Francesca, Giovanni Maria Farinella, Antonino Furnari.",
+    "affiliations": [
+      "University of Catania",
+      "Next Vision s.r.l.",
+      "Toyota Motor Europe"
+    ],
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://fpv-iplab.github.io/ProSkill/"
+      },
+      {
+        "label": "Annotations, ranking and clip-extraction tools",
+        "url": "https://github.com/fpv-iplab/ProSKILL_WACV"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-mazzamuto-proskill.md",
+    "metadataStatus": "wiki"
+  },
+  "2024-wu-ovvad": {
+    "year": 2024,
+    "venue": "CVPR",
+    "authors": "Peng Wu, Xuerong Zhou, Guansong Pang, Yujia Sun, Jing Liu, Peng Wang, Yanning Zhang.",
+    "affiliations": [
+      "Northwestern Polytechnical University",
+      "Singapore Management University",
+      "Xidian University"
+    ],
+    "links": [],
+    "sourceNote": "aligned-wiki/wiki/2024-wu-ovvad.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "CVPR 2024 open-access accepted paper, 11 pages. First preprint appeared in 2023."
+  },
+  "2025-li-anomize": {
+    "year": 2025,
+    "venue": "CVPR",
+    "authors": "Fei Li, Wenxuan Liu, Jingjing Chen, Ruixu Zhang, Yuran Wang, Xian Zhong, Zheng Wang.",
+    "affiliations": [
+      "National Engineering Research Center for Multimedia Software, School of Computer Science, Wuhan University",
+      "Shanghai Key Lab of Intelligent Information Processing, School of Computer Science, Fudan University",
+      "State Key Laboratory for Multimedia Information Processing, School of Computer Science, Peking University",
+      "Hubei Key Laboratory of Transportation Internet of Things, Wuhan University of Technology"
+    ],
+    "links": [],
+    "sourceNote": "aligned-wiki/wiki/2025-li-anomize.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "CVPR 2025 open-access accepted paper, 10 pages."
+  },
+  "2025-ye-vera": {
+    "year": 2025,
+    "venue": "CVPR",
+    "authors": "Muchao Ye, Weiyang Liu, Pan He.",
+    "affiliations": [
+      "The University of Iowa",
+      "Max Planck Institute for Intelligent Systems, Tübingen",
+      "Auburn University"
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://vera-framework.github.io/"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/vera-framework/VERA"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2025-ye-vera.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "CVPR 2025 open-access accepted paper, 10 pages."
+  },
+  "2026-guo-multimodal-memory-survey": {
+    "year": 2026,
+    "venue": "arXiv preprint",
+    "authors": "Minghao Guo, Qingyue Jiao, Xiujin Liu, Jianhong Pang, Ruimeng Yang, Naihao Xu, Liwei Che, Haochen Xue, Ziqi Wang, Xinying Cai, Jiaxuan Luo, Jiaxin Deng, Xuesong Ye, Jintao Qu, Wenyao Gao, Jingwen Gu, Chenyang Zhao, Shichun Liu, Guibin Zhang, Zefang Liu, Siyin Wang, Wujiang Xu, Danrui Li, Zeru Shi, Woongyeong Yeo, Shuang Liu, Wei-Chieh Huang, Weizhi Zhang, Tianyu Yang, Kangsan Kim, Yebowen Hu, Bowen Wen, Bowen Jiang, Haohao Su, Ming Yin, Sheldon Yu, Mian Zhang, Yuyan Chen, Hanrong Zhang, Kai Mei, Zihao Zhang, Mingyu Jin, Xi Zhu, Hengyi Wang, Tianxin Wei, Linyong Nan, Zhenwen Liang, Zhendong Chu, Ziqi Huang, Yongye Su, Sixun Dong, Shujian Liu, Kaiqu Liang, Jiaojiao Han, Zhaoye Fei, Kun Wang, Shihan Dou, Zhichun Guo, Xingjian Diao, Zeqi Gu, Heng Wang, Tao Feng, Cheng Qian, Hamid Palangi, Silei Xu, Xi Yun, Yi Zhu, Shilong Liu, Qingsong Wen, Sung Ju Hwang, Zuxuan Wu, Yu-Gang Jiang, Yiyu Shi, Dimitris N. Metaxas, Jiaxuan You, Julian McAuley, Mengdi Wang, Jiawei Han, Philip S. Yu, Ziyi Ye.",
+    "affiliations": [
+      "Rutgers",
+      "Notre Dame",
+      "Michigan",
+      "Fudan",
+      "MBZUAI",
+      "JHU",
+      "Peer AI",
+      "UC San Diego",
+      "Georgia Tech",
+      "SemiAnalysis",
+      "USC",
+      "LMSYS Org",
+      "NUS",
+      "Capital One",
+      "Independent Researcher",
+      "CMU",
+      "UIC",
+      "KAIST",
+      "Zoom",
+      "NVIDIA",
+      "Penn",
+      "MSU",
+      "Duke",
+      "UT Dallas",
+      "Cornell",
+      "ModelsLive",
+      "Princeton",
+      "UCF",
+      "Squirrel AI",
+      "NTU",
+      "Purdue",
+      "TikTok",
+      "Dartmouth",
+      "UIUC",
+      "Washington",
+      "Humani Labs",
+      "Meta"
+    ],
+    "links": [
+      {
+        "label": "Survey website",
+        "url": "https://seeing-maintaining-learning.github.io/"
+      },
+      {
+        "label": "GitHub repository",
+        "url": "https://github.com/Seeing-Maintaining-Learning/multimodal-agent-memory-evolution",
+        "note": "GitHub repository — curated architecture and benchmark records, not an implemented memory assistant."
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-guo-multimodal-memory-survey.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv 2610.19366v1, 14 October 2026. Survey preprint, with no acceptance verified. The archived PDF catalogs 297 architectures, while the current repository lists 299."
+  },
+  "2026-bacharidis-mistake-survey": {
+    "year": 2026,
+    "venue": "Computer Vision and Image Understanding",
+    "authors": "Konstantinos Bacharidis, Antonis A. Argyros.",
+    "affiliations": [
+      "Institute of Computer Science, Foundation for Research and Technology – Hellas",
+      "University of Crete"
+    ],
+    "links": [
+      {
+        "label": "Publisher record",
+        "url": "https://www.sciencedirect.com/science/article/pii/S1077314226002092"
+      }
+    ],
+    "sourceNote": "aligned-wiki/wiki/2026-bacharidis-mistake-survey.md",
+    "metadataStatus": "wiki",
+    "sourceVersion": "arXiv:2510.19292v2, 3 December 2025, first released 22 October 2025. This note covers that preprint. The later journal publication is CVIU 270, article 104842 (2026), verified by the publisher record and author publication catalog."
+  },
+  "2023-mangalam-egoschema": {
+    "year": 2023,
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "authors": "Karttikeya Mangalam, Raiymbek Akshulakov, Jitendra Malik",
+    "affiliations": [
+      "UC Berkeley"
+    ],
+    "links": [
+      {
+        "label": "Project",
+        "url": "https://egoschema.github.io/"
+      },
+      {
+        "label": "Code and data",
+        "url": "https://github.com/egoschema/EgoSchema"
+      },
+      {
+        "label": "Publisher record",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/90ce332aff156b910b002ce4e6880dec-Abstract-Datasets_and_Benchmarks.html"
+      }
+    ],
+    "sourceNote": "docs/research/evidence/pdf-audit-egoschema.pdf",
+    "sourceVersion": "Reviewed arXiv:2308.09126v1, 17 August 2023. The official NeurIPS 2023 proceedings record confirms the publication. Raiymbek Akshulakov follows the official project and publisher metadata spelling, rather than the title-page variant Akshkulakov.",
+    "metadataStatus": "fallback"
+  }
+}

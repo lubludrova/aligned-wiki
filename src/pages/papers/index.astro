@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import { chapters, paperSearchEntries } from '../../lib/content';
+const sorted = [...paperSearchEntries].sort((a,b) => b.year - a.year || a.title.localeCompare(b.title));
+const topics = [...new Set(sorted.flatMap(paper => paper.tags))].sort();
+const years = [...new Set(sorted.map(paper => paper.year))].sort((a,b) => b-a);
+---
+<Base title="Papers" active="papers">
+  <div class="library-content papers-catalog">
+    <h1>Papers</h1>
+    <div class="library-filters paper-search-row">
+      <label class="library-search"><Icon name="search"/><span class="sr-only">Search papers</span><input id="paper-query" type="search" name="q" autocomplete="off" placeholder="Search titles, methods, or full notes…"/></label>
+    </div>
+    <div class="paper-filters">
+      <label><span class="sr-only">Topic</span><select id="paper-topic"><option value="">All topics</option>{topics.map(topic => <option value={topic}>{topic.replaceAll('-', ' ')}</option>)}</select></label>
+      <label><span class="sr-only">Year</span><select id="paper-year"><option value="">All years</option>{years.map(year => <option value={year}>{year}</option>)}</select></label>
+      <label><span class="sr-only">Review coverage</span><select id="paper-coverage"><option value="">All papers</option><option value="review">In the review</option><option value="wiki">Beyond the review</option></select></label>
+      <label><span class="sr-only">Chapter</span><select id="paper-chapter"><option value="">All chapters</option>{chapters.filter(ch => sorted.some(p => p.chapters.includes(ch.slug))).map(ch => <option value={ch.slug}>{ch.number}. {ch.title}</option>)}</select></label>
+      <button id="paper-spotlight" aria-pressed="false"><span aria-hidden="true">★</span> Spotlight</button>
+    </div>
+    <div class="paper-results-meta"><p class="paper-count library-count" aria-live="polite">{sorted.length} papers</p><button class="text-button" id="paper-reset" hidden>Clear filters</button></div>
+    <div id="paper-results">{sorted.map(paper => <a class="library-result paper-result" href={paper.url} aria-label={`${paper.title}, ${paper.year}`} data-paper={paper.id}>
+      <span class="eyebrow">{paper.year} · {paper.venue}{paper.inReview && ' · In the review'}</span>
+      <h2>{paper.title}{paper.spotlight && <span class="paper-star" aria-label="Wiki spotlight">★</span>}<span aria-hidden="true">↗</span></h2>
+      <p>{paper.summary.slice(0,240)}{paper.summary.length>240?'…':''}</p>
+    </a>)}</div>
+    <noscript>All papers are available. Use your browser’s Find command to search.</noscript>
+  </div>
+  <script src="../../scripts/papers.ts"/>
+</Base>

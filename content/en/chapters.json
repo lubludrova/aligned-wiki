@@ -1,0 +1,114 @@
+[
+  {
+    "id": "problem-statement",
+    "slug": "problem-statement",
+    "number": "",
+    "title": "Problem statement",
+    "description": "The Aligned product brief: searchable site memory, grounded answers, and proactive issue detection.",
+    "group": "foundations"
+  },
+  {
+    "id": "chapter-1",
+    "slug": "foundations",
+    "number": "1",
+    "title": "The Aligned task and video foundations",
+    "description": "The scientific ideas behind Aligned, how they work, and the limits of their demonstrated capabilities.",
+    "group": "foundations"
+  },
+  {
+    "id": "chapter-2",
+    "slug": "archive",
+    "number": "2",
+    "title": "Retrieval and question answering over video archives",
+    "description": "Finding episodes, retrieving every relevant event, and answering questions across recordings and long-term memory.",
+    "group": "archive"
+  },
+  {
+    "id": "chapter-3",
+    "slug": "observations",
+    "number": "3",
+    "title": "Connecting observations across cameras, people, and objects",
+    "description": "Linking observations of the same scene, person, or object while preserving uncertainty about identity.",
+    "group": "observations"
+  },
+  {
+    "id": "chapter-4",
+    "slug": "evidence",
+    "number": "4",
+    "title": "Answers with evidence: localization, freshness, and abstention",
+    "description": "Finding the evidence for each claim, tracking how current it is, and recognizing when an answer is not supported.",
+    "group": "evidence"
+  },
+  {
+    "id": "chapter-5",
+    "slug": "states",
+    "number": "5",
+    "title": "Object states and verification of work outcomes",
+    "description": "Distinguishing observed actions from object states and determining what evidence confirms the result of work.",
+    "group": "evidence"
+  },
+  {
+    "id": "chapter-6",
+    "slug": "procedures",
+    "number": "6",
+    "title": "Recognizing procedures, errors, and corrections",
+    "description": "Recognizing steps, reasoning about valid alternatives, and distinguishing mistakes from successful corrections.",
+    "group": "procedures"
+  },
+  {
+    "id": "chapter-7",
+    "slug": "streaming",
+    "number": "7",
+    "title": "Streaming understanding and timely intervention",
+    "description": "Understanding incoming video and deciding when enough evidence is available to assist or alert.",
+    "group": "procedures"
+  },
+  {
+    "id": "chapter-8",
+    "slug": "construction",
+    "number": "8",
+    "title": "Research on construction",
+    "description": "Connecting observed work to building elements, plans, requirements, and construction-specific evidence.",
+    "group": "practice"
+  },
+  {
+    "id": "chapter-9",
+    "slug": "business",
+    "number": "9",
+    "title": "Related business cases",
+    "description": "Products that inform Aligned’s requirements and useful operational baselines, kept separate from scientific evidence.",
+    "group": "practice"
+  },
+  {
+    "id": "chapter-10",
+    "slug": "adjacent",
+    "number": "10",
+    "title": "Related directions and additional methods",
+    "description": "Anomaly detection, skill assessment, and feedback beyond predefined procedure graphs.",
+    "group": "synthesis"
+  },
+  {
+    "id": "chapter-11",
+    "slug": "synthesis",
+    "number": "11",
+    "title": "Design synthesis for Aligned",
+    "description": "A proposed architecture and evaluation plan derived from the review, rather than a single experimentally validated method.",
+    "group": "synthesis"
+  },
+  {
+    "id": "appendix-reading",
+    "slug": "reading",
+    "number": "A",
+    "title": "Reading plan and glossary",
+    "description": "A reading sequence for the key ideas, related surveys, and definitions of recurring terms.",
+    "group": "synthesis"
+  },
+  {
+    "id": "appendix-evidence",
+    "slug": "methodology",
+    "number": "B",
+    "title": "Review scope and reproducibility",
+    "description": "Source selection, audit history, evidence limitations, and the distinction between published findings and design synthesis.",
+    "group": "synthesis"
+  }
+]

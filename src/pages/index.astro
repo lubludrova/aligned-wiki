@@ -1,0 +1,31 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { chapters, groups, papers, chapterContent, wikiNotes } from '../lib/content';
+const mainChapters = chapters.filter(ch => ch.number !== '' && Number.isFinite(Number(ch.number)));
+const illustrations = [...chapterContent, ...Object.values(wikiNotes)].reduce((n, item) => n + (item.markdown.match(/!\[/g) || []).length, 0);
+---
+<Base active="home" title="Video memory and action understanding">
+  <section class="review-intro" aria-labelledby="research-title">
+    <div class="intro-inner">
+      <div class="intro-columns">
+        <h1 id="research-title">Video memory<br/>and action<br/><span>understanding</span></h1>
+        <div class="intro-description">
+          <p>Finding the right moment in recordings, tracing an object’s history, and understanding whether work was done correctly.</p>
+          <div class="intro-links"><a href="/chapters/foundations/">Start reading <Icon name="arrow" size={17}/></a><a href="/map/">Research map <Icon name="arrow" size={17}/></a></div>
+        </div>
+      </div>
+      <div class="intro-bottom"><p><span>{papers.length} papers</span><span>{mainChapters.length} chapters</span><span>{illustrations} figures</span></p></div>
+    </div>
+  </section>
+  <div class="home-content">
+    <section class="chapter-directory" id="chapters">
+      <div class="section-heading"><h2>Contents</h2></div>
+      <div class="directory-groups">{groups.map(group => <section class="directory-topic"><h3>{group.title}</h3><div>{chapters.filter(ch=>ch.group===group.id).map(ch=><a href={`/chapters/${ch.slug}/`}><span class="directory-number">{ch.number === '' ? '' : String(ch.number).padStart(Number.isFinite(Number(ch.number))?2:1,'0')}</span><span>{ch.title}</span><Icon name="arrow" size={16}/></a>)}</div></section>)}</div>
+    </section>
+  </div>
+  <script>
+    const legacy = new URLSearchParams(location.hash.slice(1));
+    if (legacy.has('topic') || legacy.has('chapter') || location.hash === '#map') location.replace(`/map/${location.hash}`);
+  </script>
+</Base>

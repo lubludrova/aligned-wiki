@@ -1,0 +1,926 @@
+{
+  "/media/assets/2024-fan-videoagent-figure2.png": {
+    "width": 730,
+    "height": 590
+  },
+  "/media/assets/2025-patsch-mistsense-architecture.png": {
+    "width": 1030,
+    "height": 540
+  },
+  "/media/assets/2026-choi-merit-figure2.png": {
+    "width": 730,
+    "height": 580
+  },
+  "/media/assets/2026-wen-provia-architecture.png": {
+    "width": 1030,
+    "height": 530
+  },
+  "/media/assets/egomas-architecture.png": {
+    "width": 1236,
+    "height": 315
+  },
+  "/media/assets/expansion-crosscut/ai-bim-progress-fig2.png": {
+    "width": 950,
+    "height": 694
+  },
+  "/media/assets/expansion-crosscut/hoist-case-identifiers-fig1.png": {
+    "width": 800,
+    "height": 920
+  },
+  "/media/assets/expansion-crosscut/reducto-fig4.png": {
+    "width": 654,
+    "height": 534
+  },
+  "/media/assets/expansion-crosscut/sensing-observability-fig2.png": {
+    "width": 588,
+    "height": 843
+  },
+  "/media/assets/expansion-crosscut/streamforest-fig2.png": {
+    "width": 1215,
+    "height": 660
+  },
+  "/media/assets/expansion-crosscut/temporal-abstention-fig2.png": {
+    "width": 1095,
+    "height": 309
+  },
+  "/media/assets/expansion-crosscut/visualsync-fig3.png": {
+    "width": 1215,
+    "height": 855
+  },
+  "/media/assets/expansion-existing/2026-chavan-indego-assistant.png": {
+    "width": 1311,
+    "height": 370
+  },
+  "/media/assets/expansion-existing/2026-guo-aem.png": {
+    "width": 1010,
+    "height": 495
+  },
+  "/media/assets/expansion-existing/2026-qiu-graphrag-compliance.png": {
+    "width": 1027,
+    "height": 676
+  },
+  "/media/assets/expansion-existing/2026-xiong-memlife.png": {
+    "width": 1187,
+    "height": 595
+  },
+  "/media/assets/expansion-existing/2026-yang-egotsr.png": {
+    "width": 1317,
+    "height": 605
+  },
+  "/media/assets/expansion-existing/2026-zhang-streamarena.png": {
+    "width": 1110,
+    "height": 704
+  },
+  "/media/assets/expansion-memory/apm-bench-protocol.png": {
+    "width": 1028,
+    "height": 675
+  },
+  "/media/assets/expansion-memory/capmem-memory.png": {
+    "width": 571,
+    "height": 553
+  },
+  "/media/assets/expansion-memory/egomonth-questions.png": {
+    "width": 1030,
+    "height": 1133
+  },
+  "/media/assets/expansion-memory/eventformer-retriever.png": {
+    "width": 1290,
+    "height": 603
+  },
+  "/media/assets/expansion-memory/flashmmr-architecture.png": {
+    "width": 1025,
+    "height": 758
+  },
+  "/media/assets/expansion-memory/hd-epic-annotations.png": {
+    "width": 1270,
+    "height": 696
+  },
+  "/media/assets/expansion-memory/rekv-architecture.png": {
+    "width": 1018,
+    "height": 648
+  },
+  "/media/assets/expansion-memory/tvr-xml-architecture.png": {
+    "width": 893,
+    "height": 466
+  },
+  "/media/assets/expansion-memory/uvqa-data-pipeline.png": {
+    "width": 1015,
+    "height": 538
+  },
+  "/media/assets/expansion-problems/anomize.png": {
+    "width": 762,
+    "height": 470
+  },
+  "/media/assets/expansion-problems/egoerrorvqa.png": {
+    "width": 699,
+    "height": 251
+  },
+  "/media/assets/expansion-problems/egooops.png": {
+    "width": 488,
+    "height": 276
+  },
+  "/media/assets/expansion-problems/egosafetybench.png": {
+    "width": 762,
+    "height": 456
+  },
+  "/media/assets/expansion-problems/guideme.png": {
+    "width": 704,
+    "height": 338
+  },
+  "/media/assets/expansion-problems/impact.png": {
+    "width": 774,
+    "height": 423
+  },
+  "/media/assets/expansion-problems/livemamba.png": {
+    "width": 618,
+    "height": 413
+  },
+  "/media/assets/expansion-problems/mistexit.png": {
+    "width": 704,
+    "height": 496
+  },
+  "/media/assets/expansion-problems/ovvad.png": {
+    "width": 762,
+    "height": 377
+  },
+  "/media/assets/expansion-problems/procobject.png": {
+    "width": 618,
+    "height": 342
+  },
+  "/media/assets/expansion-problems/statediffnet.png": {
+    "width": 704,
+    "height": 424
+  },
+  "/media/assets/expansion-problems/vera.png": {
+    "width": 762,
+    "height": 453
+  },
+  "/media/assets/expansion-systems/2018-hsieh-focus.png": {
+    "width": 1309,
+    "height": 397
+  },
+  "/media/assets/expansion-systems/2019-kang-blazeit.png": {
+    "width": 1309,
+    "height": 387
+  },
+  "/media/assets/expansion-systems/2022-kang-tasti.png": {
+    "width": 1309,
+    "height": 694
+  },
+  "/media/assets/expansion-systems/2023-zhang-equi-vocal.png": {
+    "width": 643,
+    "height": 486
+  },
+  "/media/assets/expansion-systems/2025-zhang-vocal-udf.png": {
+    "width": 645,
+    "height": 360
+  },
+  "/media/assets/ledger-architecture.png": {
+    "width": 1425,
+    "height": 780
+  },
+  "/media/assets/new-work-selection-2026-11-02/2025-he-egoexobench.png": {
+    "width": 993,
+    "height": 190
+  },
+  "/media/assets/new-work-selection-2026-11-02/2025-huang-amnar.png": {
+    "width": 1208,
+    "height": 480
+  },
+  "/media/assets/new-work-selection-2026-11-02/2025-sun-tubeletgraph.png": {
+    "width": 1001,
+    "height": 975
+  },
+  "/media/assets/new-work-selection-2026-11-02/2026-braun-skillspotter.png": {
+    "width": 870,
+    "height": 338
+  },
+  "/media/assets/new-work-selection-2026-11-02/2026-gupta-vidparse.png": {
+    "width": 870,
+    "height": 366
+  },
+  "/media/assets/new-work-selection-2026-11-02/2026-leng-flora.png": {
+    "width": 1186,
+    "height": 608
+  },
+  "/media/assets/new-work-selection-2026-11-02/2026-rauf-hpp.png": {
+    "width": 1038,
+    "height": 315
+  },
+  "/media/assets/new-work-selection-2026-11-02/2026-wang-directme.png": {
+    "width": 1260,
+    "height": 448
+  },
+  "/media/assets/new-work-selection-2026-11-02/2026-yeh-all-angles-bench.png": {
+    "width": 1248,
+    "height": 480
+  },
+  "/media/assets/new-work-selection-2026-11-02/2026-zhang-egocite.png": {
+    "width": 988,
+    "height": 438
+  },
+  "/media/assets/pdf-audit-cfd-figure2.png": {
+    "width": 1360,
+    "height": 760
+  },
+  "/media/assets/pdf-audit-constructai.png": {
+    "width": 1512,
+    "height": 459
+  },
+  "/media/assets/pdf-audit-egagent-figure2.png": {
+    "width": 1876,
+    "height": 920
+  },
+  "/media/assets/pdf-audit-ego-r1-figure1.png": {
+    "width": 1608,
+    "height": 892
+  },
+  "/media/assets/pdf-audit-egoexomem-fig1.png": {
+    "width": 1011,
+    "height": 489
+  },
+  "/media/assets/pdf-audit-egolife-egobutler-figure7.png": {
+    "width": 2000,
+    "height": 1068
+  },
+  "/media/assets/pdf-audit-egomemreason-fig1.png": {
+    "width": 1191,
+    "height": 459
+  },
+  "/media/assets/pdf-audit-em2mem-figure2.png": {
+    "width": 1840,
+    "height": 936
+  },
+  "/media/assets/pdf-audit-geb-fig2.png": {
+    "width": 1206,
+    "height": 498
+  },
+  "/media/assets/pdf-audit-m3-agent-fig1.png": {
+    "width": 1419,
+    "height": 615
+  },
+  "/media/assets/pdf-audit-moscato-fig2.png": {
+    "width": 1494,
+    "height": 723
+  },
+  "/media/assets/pdf-audit-multivent-task.png": {
+    "width": 1143,
+    "height": 736
+  },
+  "/media/assets/pdf-audit-myego-fig2.png": {
+    "width": 1491,
+    "height": 495
+  },
+  "/media/assets/pdf-audit-osnom-fig2.png": {
+    "width": 1494,
+    "height": 372
+  },
+  "/media/assets/pdf-audit-proactegomem.png": {
+    "width": 1188,
+    "height": 456
+  },
+  "/media/assets/pdf-audit-s-ember.png": {
+    "width": 1416,
+    "height": 909
+  },
+  "/media/assets/pdf-audit-spoc-fig2.png": {
+    "width": 1350,
+    "height": 750
+  },
+  "/media/assets/pdf-audit-storm-psr-fig1.png": {
+    "width": 903,
+    "height": 507
+  },
+  "/media/assets/pdf-audit-tgml.png": {
+    "width": 1542,
+    "height": 423
+  },
+  "/media/assets/pdf-audit-videorag-ren-figure1.png": {
+    "width": 1604,
+    "height": 552
+  },
+  "/media/assets/pdf-audit-worldmm-figure2.png": {
+    "width": 2000,
+    "height": 592
+  },
+  "/media/wiki/2017-christiano-human-preferences.png": {
+    "width": 858,
+    "height": 366
+  },
+  "/media/wiki/2017-zhang-videostorm.png": {
+    "width": 1005,
+    "height": 623
+  },
+  "/media/wiki/2018-doughty-skill-ranking.png": {
+    "width": 980,
+    "height": 1111
+  },
+  "/media/wiki/2018-hsieh-focus.png": {
+    "width": 1601,
+    "height": 446
+  },
+  "/media/wiki/2018-jiang-chameleon.png": {
+    "width": 1005,
+    "height": 761
+  },
+  "/media/wiki/2019-kang-blazeit.png": {
+    "width": 1601,
+    "height": 381
+  },
+  "/media/wiki/2020-lei-tvr.png": {
+    "width": 1421,
+    "height": 575
+  },
+  "/media/wiki/2020-li-reducto.png": {
+    "width": 858,
+    "height": 681
+  },
+  "/media/wiki/2022-elfeki-multi-ego.png": {
+    "width": 1029,
+    "height": 804
+  },
+  "/media/wiki/2022-grauman-ego4d.png": {
+    "width": 1601,
+    "height": 313
+  },
+  "/media/wiki/2022-jia-egotaskqa.png": {
+    "width": 1592,
+    "height": 708
+  },
+  "/media/wiki/2022-kang-tasti.png": {
+    "width": 1601,
+    "height": 785
+  },
+  "/media/wiki/2022-sener-assembly101.png": {
+    "width": 1601,
+    "height": 475
+  },
+  "/media/wiki/2022-soucek-look-for-change.png": {
+    "width": 1601,
+    "height": 552
+  },
+  "/media/wiki/2023-ma-vip.png": {
+    "width": 1601,
+    "height": 536
+  },
+  "/media/wiki/2023-wang-holoassist.png": {
+    "width": 980,
+    "height": 989
+  },
+  "/media/wiki/2023-zhang-equi-vocal.png": {
+    "width": 980,
+    "height": 442
+  },
+  "/media/wiki/2024-chen-videollm-online.png": {
+    "width": 1005,
+    "height": 382
+  },
+  "/media/wiki/2024-eyzaguirre-sdqes.png": {
+    "width": 1567,
+    "height": 588
+  },
+  "/media/wiki/2024-fan-videoagent.png": {
+    "width": 1396,
+    "height": 893
+  },
+  "/media/wiki/2024-goletto-amego.png": {
+    "width": 1421,
+    "height": 733
+  },
+  "/media/wiki/2024-grauman-ego-exo4d.png": {
+    "width": 1601,
+    "height": 934
+  },
+  "/media/wiki/2024-huang-egoexolearn.png": {
+    "width": 1601,
+    "height": 548
+  },
+  "/media/wiki/2024-lee-egoper.png": {
+    "width": 980,
+    "height": 985
+  },
+  "/media/wiki/2024-nguyen-oscar.png": {
+    "width": 1601,
+    "height": 605
+  },
+  "/media/wiki/2024-peddi-captaincook4d.png": {
+    "width": 1600,
+    "height": 739
+  },
+  "/media/wiki/2024-rodin-easg.png": {
+    "width": 1601,
+    "height": 527
+  },
+  "/media/wiki/2024-schoonbeek-industreal.png": {
+    "width": 1601,
+    "height": 370
+  },
+  "/media/wiki/2024-shen-protas.png": {
+    "width": 1601,
+    "height": 486
+  },
+  "/media/wiki/2024-wu-ovvad.png": {
+    "width": 1601,
+    "height": 847
+  },
+  "/media/wiki/2024-xue-vidosc.png": {
+    "width": 1601,
+    "height": 805
+  },
+  "/media/wiki/2024-zanella-lavad.png": {
+    "width": 1601,
+    "height": 788
+  },
+  "/media/wiki/2024-zhong-onlinetas.png": {
+    "width": 1601,
+    "height": 634
+  },
+  "/media/wiki/2024-zhou-streaming-dvc.png": {
+    "width": 1601,
+    "height": 486
+  },
+  "/media/wiki/2025-ahmad-sh17.png": {
+    "width": 1601,
+    "height": 1189
+  },
+  "/media/wiki/2025-anwar-remembr.png": {
+    "width": 1029,
+    "height": 817
+  },
+  "/media/wiki/2025-ashutosh-expertaf.png": {
+    "width": 1601,
+    "height": 547
+  },
+  "/media/wiki/2025-ayalew-progressor.png": {
+    "width": 1053,
+    "height": 621
+  },
+  "/media/wiki/2025-bhattacharyya-livemamba.png": {
+    "width": 1601,
+    "height": 881
+  },
+  "/media/wiki/2025-cao-flashmmr.png": {
+    "width": 1601,
+    "height": 751
+  },
+  "/media/wiki/2025-chan-domain-vlm.png": {
+    "width": 1029,
+    "height": 1217
+  },
+  "/media/wiki/2025-chavan-indego.png": {
+    "width": 1601,
+    "height": 290
+  },
+  "/media/wiki/2025-chen-clip2safety.png": {
+    "width": 1601,
+    "height": 1299
+  },
+  "/media/wiki/2025-chen-diffvsgg.png": {
+    "width": 1004,
+    "height": 925
+  },
+  "/media/wiki/2025-chen-gelm.png": {
+    "width": 1601,
+    "height": 658
+  },
+  "/media/wiki/2025-di-rekv.png": {
+    "width": 1601,
+    "height": 632
+  },
+  "/media/wiki/2025-haneji-egooops.png": {
+    "width": 981,
+    "height": 466
+  },
+  "/media/wiki/2025-he-egoexobench.png": {
+    "width": 1601,
+    "height": 319
+  },
+  "/media/wiki/2025-huang-amnar.png": {
+    "width": 1601,
+    "height": 607
+  },
+  "/media/wiki/2025-jeong-videorag.png": {
+    "width": 1601,
+    "height": 383
+  },
+  "/media/wiki/2025-lehman-statediffnet.png": {
+    "width": 1201,
+    "height": 650
+  },
+  "/media/wiki/2025-li-anomize.png": {
+    "width": 1601,
+    "height": 686
+  },
+  "/media/wiki/2025-liu-visualsync.png": {
+    "width": 1601,
+    "height": 1184
+  },
+  "/media/wiki/2025-luo-hil-serl.png": {
+    "width": 1601,
+    "height": 927
+  },
+  "/media/wiki/2025-luo-video-rag.png": {
+    "width": 1601,
+    "height": 738
+  },
+  "/media/wiki/2025-mengiste-weekly-progress.png": {
+    "width": 1600,
+    "height": 1060
+  },
+  "/media/wiki/2025-ortiz-abstention-knobs.png": {
+    "width": 1601,
+    "height": 980
+  },
+  "/media/wiki/2025-patsch-mistsense.png": {
+    "width": 980,
+    "height": 560
+  },
+  "/media/wiki/2025-perrett-hd-epic.png": {
+    "width": 1601,
+    "height": 653
+  },
+  "/media/wiki/2025-plizzari-osnom.png": {
+    "width": 1601,
+    "height": 857
+  },
+  "/media/wiki/2025-qian-dispider.png": {
+    "width": 1004,
+    "height": 600
+  },
+  "/media/wiki/2025-schoonbeek-storm-psr.png": {
+    "width": 1525,
+    "height": 698
+  },
+  "/media/wiki/2025-sun-tubeletgraph.png": {
+    "width": 1601,
+    "height": 1530
+  },
+  "/media/wiki/2025-wang-siteshield.png": {
+    "width": 1601,
+    "height": 1017
+  },
+  "/media/wiki/2025-wang-videotree.png": {
+    "width": 931,
+    "height": 558
+  },
+  "/media/wiki/2025-yang-egolife.png": {
+    "width": 1601,
+    "height": 772
+  },
+  "/media/wiki/2025-ye-mm-ego.png": {
+    "width": 1601,
+    "height": 766
+  },
+  "/media/wiki/2025-ye-vera.png": {
+    "width": 1601,
+    "height": 777
+  },
+  "/media/wiki/2025-yoon-uvqa.png": {
+    "width": 1601,
+    "height": 789
+  },
+  "/media/wiki/2025-zameni-moscato.png": {
+    "width": 1601,
+    "height": 764
+  },
+  "/media/wiki/2025-zeng-streamforest.png": {
+    "width": 1601,
+    "height": 667
+  },
+  "/media/wiki/2025-zhang-holmes-vau.png": {
+    "width": 1005,
+    "height": 887
+  },
+  "/media/wiki/2025-zhang-rewind.png": {
+    "width": 1601,
+    "height": 217
+  },
+  "/media/wiki/2025-zhang-vocal-udf.png": {
+    "width": 1070,
+    "height": 478
+  },
+  "/media/wiki/2026-alam-supermemory-vqa.png": {
+    "width": 1601,
+    "height": 392
+  },
+  "/media/wiki/2026-bacharidis-mistake-survey.png": {
+    "width": 1053,
+    "height": 793
+  },
+  "/media/wiki/2026-bhat-vantage-bench.png": {
+    "width": 1601,
+    "height": 1064
+  },
+  "/media/wiki/2026-braun-skillspotter.png": {
+    "width": 1421,
+    "height": 561
+  },
+  "/media/wiki/2026-cai-cfd.png": {
+    "width": 1144,
+    "height": 584
+  },
+  "/media/wiki/2026-chatterjee-spot-bench.png": {
+    "width": 1249,
+    "height": 1066
+  },
+  "/media/wiki/2026-chaudhari-ledger.png": {
+    "width": 1452,
+    "height": 809
+  },
+  "/media/wiki/2026-chavan-indego-assistant.png": {
+    "width": 1590,
+    "height": 389
+  },
+  "/media/wiki/2026-chen-egomonth.png": {
+    "width": 1231,
+    "height": 532
+  },
+  "/media/wiki/2026-chen-em2mem.png": {
+    "width": 1430,
+    "height": 714
+  },
+  "/media/wiki/2026-chen-reactvau.png": {
+    "width": 1084,
+    "height": 583
+  },
+  "/media/wiki/2026-choi-merit.png": {
+    "width": 1130,
+    "height": 615
+  },
+  "/media/wiki/2026-forte-egostream.png": {
+    "width": 1231,
+    "height": 305
+  },
+  "/media/wiki/2026-gao-svg2.png": {
+    "width": 1084,
+    "height": 481
+  },
+  "/media/wiki/2026-guo-aem.png": {
+    "width": 551,
+    "height": 540
+  },
+  "/media/wiki/2026-guo-multimodal-memory-survey.png": {
+    "width": 1451,
+    "height": 746
+  },
+  "/media/wiki/2026-guo-procobject.png": {
+    "width": 1249,
+    "height": 555
+  },
+  "/media/wiki/2026-gupta-vidparse.png": {
+    "width": 1121,
+    "height": 457
+  },
+  "/media/wiki/2026-hou-eventformer.png": {
+    "width": 1580,
+    "height": 607
+  },
+  "/media/wiki/2026-hsieh-ai-bim-progress.png": {
+    "width": 1590,
+    "height": 1000
+  },
+  "/media/wiki/2026-huang-apm-bench.png": {
+    "width": 1231,
+    "height": 465
+  },
+  "/media/wiki/2026-isaac-sensing-scheduling.png": {
+    "width": 689,
+    "height": 1253
+  },
+  "/media/wiki/2026-jang-neurosymbolic-pc.png": {
+    "width": 1483,
+    "height": 860
+  },
+  "/media/wiki/2026-kim-ma-egoqa.png": {
+    "width": 1112,
+    "height": 257
+  },
+  "/media/wiki/2026-lee-axg-reasoner.png": {
+    "width": 772,
+    "height": 661
+  },
+  "/media/wiki/2026-lee-carve.png": {
+    "width": 1286,
+    "height": 281
+  },
+  "/media/wiki/2026-lee-roboreward.png": {
+    "width": 1231,
+    "height": 401
+  },
+  "/media/wiki/2026-leng-flora.png": {
+    "width": 1430,
+    "height": 899
+  },
+  "/media/wiki/2026-li-egoerrorvqa.png": {
+    "width": 1412,
+    "height": 781
+  },
+  "/media/wiki/2026-li-matt.png": {
+    "width": 1544,
+    "height": 404
+  },
+  "/media/wiki/2026-li-streampro.png": {
+    "width": 1249,
+    "height": 562
+  },
+  "/media/wiki/2026-liang-capmem.png": {
+    "width": 680,
+    "height": 576
+  },
+  "/media/wiki/2026-liang-robometer.png": {
+    "width": 1599,
+    "height": 553
+  },
+  "/media/wiki/2026-liao-proactegomem.png": {
+    "width": 1249,
+    "height": 490
+  },
+  "/media/wiki/2026-liu-egoexomem.png": {
+    "width": 515,
+    "height": 736
+  },
+  "/media/wiki/2026-liu-guideme.png": {
+    "width": 1121,
+    "height": 350
+  },
+  "/media/wiki/2026-liu-svcbench.png": {
+    "width": 1006,
+    "height": 474
+  },
+  "/media/wiki/2026-loginova-prism.png": {
+    "width": 1412,
+    "height": 519
+  },
+  "/media/wiki/2026-long-m3-agent.png": {
+    "width": 1434,
+    "height": 619
+  },
+  "/media/wiki/2026-majumder-mistexit.png": {
+    "width": 1011,
+    "height": 485
+  },
+  "/media/wiki/2026-mandikal-spoc.png": {
+    "width": 680,
+    "height": 591
+  },
+  "/media/wiki/2026-mazzamuto-proskill.png": {
+    "width": 735,
+    "height": 547
+  },
+  "/media/wiki/2026-mur-labadia-v-jepa-2-1.png": {
+    "width": 1507,
+    "height": 660
+  },
+  "/media/wiki/2026-pang-egoprobe.png": {
+    "width": 1249,
+    "height": 656
+  },
+  "/media/wiki/2026-panpatil-egosafetybench.png": {
+    "width": 1506,
+    "height": 700
+  },
+  "/media/wiki/2026-qiu-graphrag-compliance.png": {
+    "width": 1144,
+    "height": 524
+  },
+  "/media/wiki/2026-ranasinghe-safety-reasoning.png": {
+    "width": 1378,
+    "height": 1716
+  },
+  "/media/wiki/2026-rauf-hpp.png": {
+    "width": 1268,
+    "height": 387
+  },
+  "/media/wiki/2026-rege-egagent.png": {
+    "width": 1452,
+    "height": 708
+  },
+  "/media/wiki/2026-ren-geb.png": {
+    "width": 1249,
+    "height": 513
+  },
+  "/media/wiki/2026-ren-videorag.png": {
+    "width": 1249,
+    "height": 436
+  },
+  "/media/wiki/2026-sasaki-egoindassembly.png": {
+    "width": 1016,
+    "height": 1011
+  },
+  "/media/wiki/2026-seminara-tgml.png": {
+    "width": 1598,
+    "height": 464
+  },
+  "/media/wiki/2026-steenbergen-hoist-case-identifiers.png": {
+    "width": 1275,
+    "height": 1344
+  },
+  "/media/wiki/2026-suen-icon-pose.png": {
+    "width": 734,
+    "height": 648
+  },
+  "/media/wiki/2026-tan-egovit.png": {
+    "width": 699,
+    "height": 439
+  },
+  "/media/wiki/2026-tang-takusen.png": {
+    "width": 772,
+    "height": 515
+  },
+  "/media/wiki/2026-tian-ego-r1.png": {
+    "width": 1249,
+    "height": 672
+  },
+  "/media/wiki/2026-torne-freeform-preference.png": {
+    "width": 1249,
+    "height": 268
+  },
+  "/media/wiki/2026-wang-directme.png": {
+    "width": 1507,
+    "height": 555
+  },
+  "/media/wiki/2026-wang-egomemreason.png": {
+    "width": 1231,
+    "height": 150
+  },
+  "/media/wiki/2026-wang-parsee-vad.png": {
+    "width": 1249,
+    "height": 808
+  },
+  "/media/wiki/2026-wang-s-ember.png": {
+    "width": 1434,
+    "height": 952
+  },
+  "/media/wiki/2026-wen-impact.png": {
+    "width": 1562,
+    "height": 586
+  },
+  "/media/wiki/2026-wen-provia.png": {
+    "width": 1488,
+    "height": 785
+  },
+  "/media/wiki/2026-wu-monitorvlm-v2.png": {
+    "width": 1030,
+    "height": 1372
+  },
+  "/media/wiki/2026-xia-streamo.png": {
+    "width": 772,
+    "height": 468
+  },
+  "/media/wiki/2026-xiao-myego.png": {
+    "width": 754,
+    "height": 425
+  },
+  "/media/wiki/2026-xiong-memlife.png": {
+    "width": 1434,
+    "height": 620
+  },
+  "/media/wiki/2026-yang-egotsr.png": {
+    "width": 1562,
+    "height": 890
+  },
+  "/media/wiki/2026-yao-yolo-ilb.png": {
+    "width": 1179,
+    "height": 1054
+  },
+  "/media/wiki/2026-ye-regular.png": {
+    "width": 1544,
+    "height": 422
+  },
+  "/media/wiki/2026-yeh-all-angles-bench.png": {
+    "width": 1580,
+    "height": 534
+  },
+  "/media/wiki/2026-yeo-worldmm.png": {
+    "width": 1525,
+    "height": 455
+  },
+  "/media/wiki/2026-zeng-onestreamer.png": {
+    "width": 1452,
+    "height": 514
+  },
+  "/media/wiki/2026-zhang-constructai.png": {
+    "width": 1580,
+    "height": 491
+  },
+  "/media/wiki/2026-zhang-egocite.png": {
+    "width": 1213,
+    "height": 545
+  },
+  "/media/wiki/2026-zhang-streamarena.png": {
+    "width": 1286,
+    "height": 786
+  },
+  "/media/wiki/2026-zhao-pasbench-video.png": {
+    "width": 1412,
+    "height": 445
+  },
+  "/media/wiki/2026-zhou-temporal-abstention.png": {
+    "width": 1102,
+    "height": 339
+  },
+  "/media/wiki/2026-ziadia-collision-survey.png": {
+    "width": 1601,
+    "height": 1456
+  }
+}

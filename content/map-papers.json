@@ -1,0 +1,1038 @@
+{
+  "2021-luo-clip4clip": {
+    "summary": "CLIP4Clip adapts pretrained image–text features to video retrieval by aggregating frame representations and tuning the video–text training setup.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/foundations.md — CLIP4Clip: strong image features are already useful for clip retrieval"
+  },
+  "2021-bain-frozen-in-time": {
+    "summary": "Frozen in Time trains text and video encoders in a shared space using image–text and video–text pairs. Videos can be indexed before a query arrives.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/foundations.md — Frozen in Time: why embeddings allow indexing to be separated from querying"
+  },
+  "2024-wang-internvideo2": {
+    "summary": "InternVideo2 combines video-feature distillation, multimodal contrastive learning and next-token prediction to build reusable representations for video understanding.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/foundations.md — InternVideo2: one backbone can support several levels of the system"
+  },
+  "2026-tan-egovit": {
+    "summary": "EgoViT learns object-focused visual features from unlabeled egocentric clips through self-distillation, depth regularization and filtered temporal correspondence.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-tan-egovit.md"
+  },
+  "2026-mur-labadia-v-jepa-2-1": {
+    "summary": "V-JEPA 2.1 learns reusable image and video features that preserve local geometry and temporal consistency while retaining global action information.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-mur-labadia-v-jepa-2-1.md"
+  },
+  "2020-lei-tvr": {
+    "summary": "Provides a video-and-subtitle corpus retrieval benchmark and XML, a late-fusion model for selecting videos and localizing relevant moments.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2020-lei-tvr.md"
+  },
+  "2026-hou-eventformer": {
+    "summary": "Indexes event representations to retrieve candidate videos, then localizes query-relevant intervals within those candidates.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-hou-eventformer.md"
+  },
+  "2026-lee-carve": {
+    "summary": "CARVE selects an evidence representation per video chunk, while V-RAGBench separates retrieval quality from answer generation.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-lee-carve.md"
+  },
+  "2025-jeong-videorag": {
+    "summary": "VideoRAG retrieves instructional videos from a corpus and supplies selected visual evidence to an answer generator.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-jeong-videorag.md"
+  },
+  "2026-ren-videorag": {
+    "summary": "VideoRAG combines a cross-video textual knowledge graph with visual segment retrieval and question-specific evidence descriptions.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-ren-videorag.md"
+  },
+  "2025-cao-flashmmr": {
+    "summary": "Introduces QV-M² and FlashMMR to retrieve several separate moments matching one natural-language query.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-cao-flashmmr.md"
+  },
+  "2024-wu-longvideobench": {
+    "summary": "LongVideoBench evaluates question answering about an already selected long video, with 6,678 questions covering 17 categories of referred reasoning.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/archive.md — Benchmarks for reading a selected video"
+  },
+  "2025-fu-video-mme": {
+    "summary": "Video-MME evaluates video question answering across short, medium and long recordings, with separate settings for the availability of subtitles.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/archive.md — Benchmarks for reading a selected video"
+  },
+  "2024-goletto-amego": {
+    "summary": "AMEGO builds a reusable visual memory of hand-object interactions and activity locations, then answers queries about their timing, order and overlap.",
+    "kind": "Method & benchmark",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2024-goletto-amego.md",
+    "spotlightReason": "Inspectable interaction memory: persistent object tracks, visual features, times and locations. Complements caption retrieval with a concrete visual record of manipulated objects.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2026-liang-capmem": {
+    "summary": "Tests reusable caption memory against direct video QA with matched-frame controls, repeated-query cost accounting and sparse visual verification.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-liang-capmem.md"
+  },
+  "2025-zhang-vocal-udf": {
+    "summary": "VOCAL-UDF extends a video-query vocabulary by generating reusable programs or small visual models for missing predicates.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-zhang-vocal-udf.md"
+  },
+  "2026-rauf-hpp": {
+    "summary": "HPP lets a coding LLM compose video-search and perception operations in a persistent Python environment to answer questions over a recorded video.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-rauf-hpp.md"
+  },
+  "2026-zhang-egocite": {
+    "summary": "EgoCITE makes memory entries understandable outside their original context and retrieves evidence according to the question's temporal intent.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-zhang-egocite.md"
+  },
+  "2025-ye-mm-ego": {
+    "summary": "MM-Ego learns a coarse-to-fine video reader that scans compressed frame representations, selects relevant details and answers egocentric questions.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-ye-mm-ego.md"
+  },
+  "2026-leng-flora": {
+    "summary": "FLORA turns human or robot episode videos into timestamped action captions and several forms of execution-reward labels.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-leng-flora.md"
+  },
+  "2024-fan-videoagent": {
+    "summary": "VideoAgent combines caption and object-occurrence memories with an LLM that retrieves video evidence through four tools to answer questions.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-fan-videoagent.md"
+  },
+  "2026-choi-merit": {
+    "summary": "MERIT indexes short video episodes with several textual keys and expands relevant context only when a question arrives.",
+    "kind": "Method",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-choi-merit.md",
+    "spotlightReason": "First practical retrieval baseline to evaluate: timestamped clips, several searchable keys, neighboring context and final answering from retrieved frames. Its simple episode design provides a useful control before adding WorldMM-style graphs.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2026-yeo-worldmm": {
+    "summary": "WorldMM answers long-video questions by iteratively retrieving complementary episodic, semantic, and visual memories.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-yeo-worldmm.md"
+  },
+  "2025-luo-video-rag": {
+    "summary": "Video-RAG augments an existing video model with question-relevant speech, visible text and object information extracted from the supplied video.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-luo-video-rag.md"
+  },
+  "2025-yang-egolife": {
+    "summary": "EgoLife provides synchronized, week-long recordings of six housemates, a long-horizon QA benchmark, and an audio-visual caption memory baseline for personal assistance.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-yang-egolife.md"
+  },
+  "2026-chen-em2mem": {
+    "summary": "EM²Mem aligns captions, speech, visual evidence and provenance into shared event records before retrieval, trading more ingestion work for cheaper repeated queries.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-chen-em2mem.md"
+  },
+  "2026-rege-egagent": {
+    "summary": "EGAgent combines temporal entity graphs, visual retrieval, and transcript search to answer questions about days of egocentric experience.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-rege-egagent.md"
+  },
+  "2026-tian-ego-r1": {
+    "summary": "Ego-R1 trains a small controller to search hierarchical video memories and call visual tools when a question needs finer evidence.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-tian-ego-r1.md"
+  },
+  "2026-huang-apm-bench": {
+    "summary": "Evaluates persistent video memory across interrupted sessions, jointly testing recall, current perception, proactive responses, missing evidence, storage and latency.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-huang-apm-bench.md"
+  },
+  "2026-chen-egomonth": {
+    "summary": "Tests exact episodic recall and cross-day reasoning using first-person recordings spanning 20–120 days per participant.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-chen-egomonth.md"
+  },
+  "2026-wang-egomemreason": {
+    "summary": "Tests whether video memories can combine multiple observations across days to track entities, order events and infer routines.",
+    "kind": "Benchmark",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-wang-egomemreason.md",
+    "spotlightReason": "Multi-day questions require several evidence segments. Oracle-evidence controls help distinguish retrieval failure from reasoning failure, complementing S-EMBER's localization test.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2024-zhang-llovi": {
+    "summary": "LLoVi describes short video segments and lets an LLM answer long-video questions from those captions and intermediate summaries.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/archive.md — LLoVi: an early caption-first baseline"
+  },
+  "2025-wang-videotree": {
+    "summary": "VideoTree selects question-relevant keyframes through adaptive visual clustering, then answers from their time-ordered captions.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-wang-videotree.md"
+  },
+  "2024-song-moviechat": {
+    "summary": "MovieChat compresses visual tokens into short-term and long-term memory to read long video sequences within a limited model context.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/archive.md — MovieChat: compressing visual context"
+  },
+  "2024-wang-videoagent": {
+    "summary": "Wang’s VideoAgent uses an LLM to iteratively request informative video frames through tools. It is distinct from Fan’s VideoAgent, which builds reusable caption and object memories.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/archive.md — Two different VideoAgents: active reading and reusable memory"
+  },
+  "2026-cai-cfd": {
+    "summary": "CFD caches video descriptions and retrieves bounded visual evidence only when a question needs details that text cannot supply.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-cai-cfd.md"
+  },
+  "2026-xiong-memlife": {
+    "summary": "MemLife writes entity-grounded episodic memories, while MemOpt trains the writer to preserve evidence that later questions can retrieve.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-xiong-memlife.md"
+  },
+  "2018-hsieh-focus": {
+    "summary": "Focus divides object-class video search between inexpensive ingestion and selective expensive verification at query time.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2018-hsieh-focus.md"
+  },
+  "2019-kang-blazeit": {
+    "summary": "BlazeIt executes declarative video queries with specialized models, sampling and selective verification instead of fully materializing expensive detector outputs.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2019-kang-blazeit.md"
+  },
+  "2022-kang-tasti": {
+    "summary": "TASTI reuses an embedding index and a small set of expensive labels to generate proxy scores for multiple downstream queries.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2022-kang-tasti.md"
+  },
+  "2023-zhang-equi-vocal": {
+    "summary": "EQUI-VOCAL learns executable spatiotemporal video queries from positive and negative examples plus active user feedback.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2023-zhang-equi-vocal.md"
+  },
+  "2020-li-reducto": {
+    "summary": "Adapts inexpensive on-camera frame filtering to query-specific accuracy targets and changing video content.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2020-li-reducto.md"
+  },
+  "2026-wang-directme": {
+    "summary": "DirectMe retrieves a pose-aware spatial scene graph to answer questions about previously observed objects relative to the user's current position.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-wang-directme.md"
+  },
+  "2025-anwar-remembr": {
+    "summary": "ReMEmbR stores timestamped, localized video captions and retrieves them iteratively to answer questions and generate robot navigation goals.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-anwar-remembr.md"
+  },
+  "2026-yeh-all-angles-bench": {
+    "summary": "All-Angles Bench diagnoses cross-view correspondence and spatial reasoning with human-checked questions, paired variants and controlled partial visibility.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-yeh-all-angles-bench.md"
+  },
+  "2025-he-egoexobench": {
+    "summary": "EgoExoBench tests cross-view video reasoning, including whether an additional demonstration improves action prediction or relative skill assessment.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-he-egoexobench.md"
+  },
+  "2024-huang-egoexolearn": {
+    "summary": "EgoExoLearn connects third-person demonstrations with first-person task execution through gaze, procedural annotations and human pairwise skill judgments.",
+    "kind": "Dataset",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2024-huang-egoexolearn.md",
+    "spotlightReason": "Makes relative skill assessment concrete through 34,239 retained comparisons and asynchronous demonstrations. Its controls show that an expert reference alone need not improve ranking.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2022-elfeki-multi-ego": {
+    "summary": "Multi-DPP jointly selects important events and representative camera views from recordings made by several moving wearers.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2022-elfeki-multi-ego.md"
+  },
+  "2022-grauman-ego4d": {
+    "summary": "Ego4D provides diverse egocentric recordings and benchmarks for retrieving past experiences, understanding interactions and object changes, and forecasting activity.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2022-grauman-ego4d.md"
+  },
+  "2022-sener-assembly101": {
+    "summary": "Assembly101 benchmarks action understanding and mistake detection using synchronized views of toy assembly, with flexible ordering, corrections, and hand poses.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2022-sener-assembly101.md"
+  },
+  "2024-grauman-ego-exo4d": {
+    "summary": "Ego-Exo4D pairs first-person and third-person recordings with expert critiques, procedural annotations and 3D pose to benchmark understanding of skilled human activity.",
+    "kind": "Dataset",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2024-grauman-ego-exo4d.md",
+    "spotlightReason": "Foundational skilled-activity recordings with synchronized viewpoints and expert feedback. Defines useful observations and annotation formats before choosing a model.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2026-kim-ma-egoqa": {
+    "summary": "MA-EgoQA tests reasoning across multiple camera wearers, with EgoMAS as a shared-memory retrieval baseline.",
+    "kind": "Method & benchmark",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-kim-ma-egoqa.md",
+    "spotlightReason": "Directly asks whether an answer requires evidence distributed across wearers. A useful design and evaluation reference for shared team memory, beyond independent personal archives.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2026-xiao-myego": {
+    "summary": "MyEgo tests whether video models connect objects, actions and earlier observations to the correct camera wearer instead of another person or a similar item.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-xiao-myego.md"
+  },
+  "2026-liu-egoexomem": {
+    "summary": "EgoExoMem tests complementary ego/exo evidence, while E²-Select allocates a limited frame budget across views according to the question.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-liu-egoexomem.md"
+  },
+  "2025-liu-visualsync": {
+    "summary": "Estimates globally consistent camera time offsets from cross-view tracks of moving points.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-liu-visualsync.md"
+  },
+  "2026-long-m3-agent": {
+    "summary": "M3-Agent links audio-visual events and inferred knowledge to persistent person identities, then learns iterative memory retrieval for long-video question answering.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-long-m3-agent.md"
+  },
+  "2026-ren-geb": {
+    "summary": "Grounded Entity Biographies (GEB) connects visually associated encounters of the same physical object or person to their surrounding events and source evidence.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-ren-geb.md"
+  },
+  "2025-plizzari-osnom": {
+    "summary": "OSNOM evaluates persistent 3D tracking of manipulated objects, and its Lift, Match and Keep baseline retains their locations when they leave the camera view.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-plizzari-osnom.md"
+  },
+  "2026-chaudhari-ledger": {
+    "summary": "LEDGER stores object identities, 3D locations, histories, and descriptions so later questions can use persistent memory without replaying video.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-chaudhari-ledger.md"
+  },
+  "2026-steenbergen-hoist-case-identifiers": {
+    "summary": "Tests how alternative event-grouping rules change estimated hoist utilization and discovered process structure when native ride identifiers are absent.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-steenbergen-hoist-case-identifiers.md"
+  },
+  "2025-chen-gelm": {
+    "summary": "GeLM links answer phrases to multiple supporting video intervals, with MultiHop-EgoQA measuring both answer quality and temporal evidence localization.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-chen-gelm.md"
+  },
+  "2026-wang-s-ember": {
+    "summary": "Evaluates whether an answer about earlier wearable video is both correct and supported by a localized evidence interval.",
+    "kind": "Benchmark",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-wang-s-ember.md",
+    "spotlightReason": "Makes the evidence interval part of success. Strong choice for testing whether a plausible answer can be traced back to the right video moment.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2026-kriz-multivent-raw": {
+    "summary": "MultiVENT-Raw evaluates event retrieval and report generation from multiple source videos, with separate checks for information coverage and supporting citations.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/evidence.md — MultiVENT-Raw: retrieval quality and report support diverge"
+  },
+  "2025-yoon-uvqa": {
+    "summary": "Studies whether Video-LLMs can recognize questions unsupported by a supplied video, and trains refusal behavior using synthetic negative questions.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-yoon-uvqa.md"
+  },
+  "2026-pang-egoprobe": {
+    "summary": "Tests whether streaming video memories bind a recalled detail to the correct event when similar events recur.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-pang-egoprobe.md"
+  },
+  "2026-forte-egostream": {
+    "summary": "Diagnoses which facts survive streaming memory compression and how answer validity changes the interpretation of recall.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-forte-egostream.md"
+  },
+  "2026-alam-supermemory-vqa": {
+    "summary": "Evaluates practical wearable-memory questions with explicit unanswerability and distinctions between precise and vague answers.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-alam-supermemory-vqa.md"
+  },
+  "2026-zhou-temporal-abstention": {
+    "summary": "Studies learned abstention in temporal text QA through reasoning supervision and abstention-aware reinforcement learning.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-zhou-temporal-abstention.md"
+  },
+  "2025-ortiz-abstention-knobs": {
+    "summary": "Tests confidence-threshold risk–coverage trade-offs and their sensitivity to reduced visual evidence.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-ortiz-abstention-knobs.md"
+  },
+  "2022-soucek-look-for-change": {
+    "summary": "Look for the Change jointly localizes initial states, modifying actions, and final states in untrimmed web videos using temporal ordering and a few exemplar images.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2022-soucek-look-for-change.md"
+  },
+  "2024-xue-vidosc": {
+    "summary": "VidOSC learns temporal stages of object transformations from language-derived pseudo-labels and transfers them to unfamiliar object–transformation combinations.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-xue-vidosc.md"
+  },
+  "2025-zameni-moscato": {
+    "summary": "MOSCATO jointly models action segments and the evolving states of multiple objects throughout an egocentric procedure.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-zameni-moscato.md"
+  },
+  "2025-schoonbeek-storm-psr": {
+    "summary": "STORM-PSR combines assembly-state detection with temporal completion recognition to identify correctly finished procedure steps despite partial occlusion.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-schoonbeek-storm-psr.md"
+  },
+  "2026-wen-provia": {
+    "summary": "PROVIA separates observed actions from accepted procedure progress to detect mistakes online and evaluates alarms across complete executions.",
+    "kind": "Method",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-wen-provia.md",
+    "spotlightReason": "Evaluates complete executions, recoveries and false alarms, with timing-only controls. A useful protocol for assessing whether quality alerts remain trustworthy throughout a task.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2026-mandikal-spoc": {
+    "summary": "SPOC segments object regions that still need transformation versus regions already transformed, enabling spatial estimates of activity progress.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-mandikal-spoc.md"
+  },
+  "2025-perrett-hd-epic": {
+    "summary": "Provides densely interconnected egocentric annotations linking recipes, actions, audio, object movement, gaze and 3D scene locations.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-perrett-hd-epic.md"
+  },
+  "2026-guo-procobject": {
+    "summary": "ProcObject-10K evaluates object-centered procedural questions with temporal evidence and adds object-supervised fine-tuning.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-guo-procobject.md"
+  },
+  "2025-lehman-statediffnet": {
+    "summary": "StateDiffNet localizes visible assembly-state differences against an intended correct reference instead of classifying a fixed list of errors.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-lehman-statediffnet.md"
+  },
+  "2026-yang-egotsr": {
+    "summary": "EgoTSR++ learns to compare two visual states against a task goal, testing whether its judgment survives swapped inputs, regressions and recovery.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-yang-egotsr.md"
+  },
+  "2024-nguyen-oscar": {
+    "summary": "OSCaR creates language supervision and benchmarks for describing object states, explaining their changes, and answering questions about egocentric interactions.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-nguyen-oscar.md"
+  },
+  "2025-sun-tubeletgraph": {
+    "summary": "TubeletGraph recovers object fragments missed by tracking and connects their masks, transformation timestamps and descriptions in a state graph.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-sun-tubeletgraph.md"
+  },
+  "2026-liang-robometer": {
+    "summary": "Robometer combines progress prediction with trajectory comparisons to learn from successful and failed behavior and support robot policy improvement.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-liang-robometer.md"
+  },
+  "2026-guo-aem": {
+    "summary": "AEM learns action-effect representations to detect procedural mistakes from egocentric video without running its external effect-labeling models at inference.",
+    "kind": "Method",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-guo-aem.md",
+    "spotlightReason": "Represents action effects as well as action identity. The most useful quality-model hypothesis here is to test what changed in the object, with task-specific correct executions as supervision.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2024-lee-egoper": {
+    "summary": "The paper introduces the EgoPER cooking-error dataset and EgoPED, an offline detector that learns normal step prototypes and flags deviations during task execution.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-lee-egoper.md"
+  },
+  "2026-seminara-tgml": {
+    "summary": "TGML learns explicit task graphs from observed action sequences and reuses their prerequisite structure for procedural reasoning and online mistake detection.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-seminara-tgml.md"
+  },
+  "2026-majumder-mistexit": {
+    "summary": "MistExit learns when to stop observing a pre-segmented procedural step and issue a correctness prediction.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-majumder-mistexit.md"
+  },
+  "2025-patsch-mistsense": {
+    "summary": "MistSense combines RGB and hand-motion features to detect procedural and execution errors online, then generates a textual explanation when a detector threshold is crossed.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-patsch-mistsense.md"
+  },
+  "2025-chavan-indego": {
+    "summary": "IndEgo provides multimodal industrial-work recordings and benchmarks for mistake detection, situated reasoning, and understanding two workers collaborating on a task.",
+    "kind": "Dataset",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2025-chavan-indego.md",
+    "spotlightReason": "Closest dataset to our work setting: mobile industrial tasks, collaborating wearers, task graphs and mistake annotations. A better starting point for industrial evaluation than household QA alone.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2026-wen-impact": {
+    "summary": "IMPACT jointly annotates component state, procedural steps, anomalies, and recovery across synchronized views of commercial-tool assembly.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-wen-impact.md"
+  },
+  "2025-haneji-egooops": {
+    "summary": "EgoOops tests whether procedural text enables localization and classification of execution mistakes in untrimmed egocentric recordings.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-haneji-egooops.md"
+  },
+  "2026-li-egoerrorvqa": {
+    "summary": "EgoErrorVQA evaluates procedural error comprehension and separates procedural matching, visual narration, and error classification in Ego-ADR.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-li-egoerrorvqa.md"
+  },
+  "2026-sasaki-egoindassembly": {
+    "summary": "EgoIndAssembly stresses temporal localization of visually similar assembly steps and introduces progressive procedure grounding as a baseline.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-sasaki-egoindassembly.md"
+  },
+  "2026-chavan-indego-assistant": {
+    "summary": "IndEgo Assistant turns narrated expert demonstrations into human-validated procedure graphs and video representations for recognizing steps and recommending what comes next.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-chavan-indego-assistant.md"
+  },
+  "2026-loginova-prism": {
+    "summary": "Diagnoses completed-procedure mistakes through language-grounded step sequences, with controls separating representation and decoding effects.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-loginova-prism.md"
+  },
+  "2026-li-matt": {
+    "summary": "MATT attributes instruction–video mismatches to semantic roles, a reference moment, and a spatial region using synthetic supervision from existing egocentric datasets.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-li-matt.md"
+  },
+  "2025-huang-amnar": {
+    "summary": "AMNAR detects execution errors by comparing the observed action with context-adapted representations of multiple valid next actions.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-huang-amnar.md"
+  },
+  "2026-gupta-vidparse": {
+    "summary": "VidParse combines frozen hand–object features, similarity-based boundaries, and task-graph constraints to parse egocentric procedures without gradient updates.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-gupta-vidparse.md"
+  },
+  "2022-jia-egotaskqa": {
+    "summary": "EgoTaskQA turns annotated object states, action dependencies and actor–helper interactions into diagnostic questions about goal-directed physical tasks.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2022-jia-egotaskqa.md"
+  },
+  "2024-schoonbeek-industreal": {
+    "summary": "IndustReal distinguishes recognizing an action from recognizing the correct completion of a procedure step through assembly-state evidence.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-schoonbeek-industreal.md"
+  },
+  "2023-wang-holoassist": {
+    "summary": "HoloAssist records human instructors helping task performers and benchmarks mistake recognition and intervention prediction from egocentric observations.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2023-wang-holoassist.md"
+  },
+  "2024-peddi-captaincook4d": {
+    "summary": "CaptainCook4D supplies procedural videos with explicit execution and ordering errors for step-level error recognition, localization and procedure learning.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-peddi-captaincook4d.md"
+  },
+  "2024-seminara-dtgl": {
+    "summary": "DTGL learns task dependencies for procedural reasoning and online mistake detection. It is the historical predecessor of TGML, whose later results are discussed separately in the review.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/procedures.md — DTGL / TGML: a procedure as a dependency graph"
+  },
+  "2026-zeng-onestreamer": {
+    "summary": "OneStreamer jointly learns to record factual video memories and respond when enough evidence has arrived.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-zeng-onestreamer.md"
+  },
+  "2025-di-rekv": {
+    "summary": "Separates streaming video encoding from later questions by retaining and retrieving model-specific video KV caches without additional training.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-di-rekv.md"
+  },
+  "2026-liao-proactegomem": {
+    "summary": "ProactEgoMem tests whether an assistant acquires useful memory at the right time and maintains it through an event's lifecycle.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-liao-proactegomem.md"
+  },
+  "2026-zhang-streamarena": {
+    "summary": "StreamArena evaluates persistent streaming-video assistants, while StreamMind separates immediate interaction from memory construction and retrieval.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-zhang-streamarena.md"
+  },
+  "2025-bhattacharyya-livemamba": {
+    "summary": "LiveMamba combines a recurrent video-language assistant with a benchmark for timed instructions, completion recognition, and mistake feedback.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-bhattacharyya-livemamba.md"
+  },
+  "2026-liu-guideme": {
+    "summary": "GuideMe benchmarks when and how a video assistant should instruct, acknowledge completion, detect mistakes, or offer corrective guidance.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-liu-guideme.md"
+  },
+  "2026-panpatil-egosafetybench": {
+    "summary": "EgoSafetyBench separates missed hazards, unnecessary intervention, alarm timing, and susceptibility to misleading visible text.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-panpatil-egosafetybench.md"
+  },
+  "2025-zeng-streamforest": {
+    "summary": "Combines a detailed recent window with event-tree compression to answer questions from bounded streaming visual memory.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-zeng-streamforest.md"
+  },
+  "2009-golparvar-fard-d4ar": {
+    "summary": "D4AR reconstructs camera poses and a sparse 3D scene from site photographs, then aligns the result with BIM and the construction schedule.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/construction.md — D4AR, 2009: connecting as-built and as-planned"
+  },
+  "2026-hsieh-ai-bim-progress": {
+    "summary": "Maps multi-camera construction-phase detections to named BIM components and visualizes their progress against a schedule.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-hsieh-ai-bim-progress.md"
+  },
+  "2026-isaac-sensing-scheduling": {
+    "summary": "Separates sensed execution from formal acceptance and translates measured work into schedule deviations and recovery targets.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-isaac-sensing-scheduling.md"
+  },
+  "2026-qiu-graphrag-compliance": {
+    "summary": "Aligns video-derived activities with regulatory rules in two knowledge graphs, then iteratively retrieves evidence to answer construction-compliance questions.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-qiu-graphrag-compliance.md"
+  },
+  "2026-zhang-constructai": {
+    "summary": "Describes a deployed construction-safety workflow linking camera observations, localized violations, corrective requirements and confirmation of rectification.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-zhang-constructai.md"
+  },
+  "2025-guo-egoconqs": {
+    "summary": "EgoConQS studies retrieval of key construction activities for quality supervision. The review only verified bibliographic metadata and the abstract because the original full PDF was unavailable.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/construction.md — EgoConQS, 2025: finding a key construction operation for review"
+  },
+  "2025-liu-egosafe": {
+    "summary": "Liu et al.’s EgoSafe studies static hazardous-object detection from egocentric construction-site footage. The review did not obtain the original full PDF and does not verify the architecture or results.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/construction.md — EgoSafe, 2025: a narrow detector of observable hazardous objects"
+  },
+  "2018-doughty-skill-ranking": {
+    "summary": "A Siamese video model learns relative skill scores from pairwise judgments and ranks complete demonstrations of the same task.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2018-doughty-skill-ranking.md"
+  },
+  "2026-braun-skillspotter": {
+    "summary": "SkillSpotter combines video features and body pose to locate moments of skilled activity and label them as good execution or needing improvement.",
+    "kind": "Method",
+    "spotlight": true,
+    "summarySource": "aligned-wiki/wiki/2026-braun-skillspotter.md",
+    "spotlightReason": "Separates finding a feedback-worthy moment from grading it. A concrete starting point for selecting clips for human review instead of producing an unexplained overall skill score.",
+    "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2025-ashutosh-expertaf": {
+    "summary": "ExpertAF learns to turn a learner's video and body pose into corrective commentary, a retrieved expert demonstration, and a generated expert pose sequence.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-ashutosh-expertaf.md"
+  },
+  "2026-mazzamuto-proskill": {
+    "summary": "ProSkill converts human comparisons of procedural video clips into action-specific skill rankings and benchmarks models that predict them.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-mazzamuto-proskill.md"
+  },
+  "2024-wu-ovvad": {
+    "summary": "OVVAD extends anomaly localization to naming anomaly classes absent from the training videos using visual-language alignment and generated examples.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-wu-ovvad.md"
+  },
+  "2025-li-anomize": {
+    "summary": "Anomize combines static visual concepts and temporal label-aligned features to detect and classify unfamiliar anomaly categories.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-li-anomize.md"
+  },
+  "2025-ye-vera": {
+    "summary": "VERA learns verbal diagnostic questions from weak video labels while keeping the vision-language model weights frozen.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-ye-vera.md"
+  },
+  "2026-guo-multimodal-memory-survey": {
+    "summary": "Organizes multimodal memory by representation and management policy, with guidance on provenance, temporal validity and lifecycle evaluation.",
+    "kind": "Survey",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-guo-multimodal-memory-survey.md"
+  },
+  "2026-bacharidis-mistake-survey": {
+    "summary": "This survey organizes procedural mistake analysis by error type, temporal task, procedural structure, supervision, and evaluation protocol.",
+    "kind": "Survey",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-bacharidis-mistake-survey.md"
+  },
+  "2023-mangalam-egoschema": {
+    "summary": "EgoSchema evaluates multiple-choice understanding of approximately three-minute egocentric videos. The relevant video is already supplied, so accuracy does not measure corpus retrieval.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "literature-review/content/en/chapters/archive.md — Benchmarks for reading a selected video"
+  },
+  "2017-christiano-human-preferences": {
+    "summary": "A learned reward model turns human comparisons of short behavior clips into a training signal for deep reinforcement learning.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2017-christiano-human-preferences.md"
+  },
+  "2017-zhang-videostorm": {
+    "summary": "VideoStorm jointly schedules live analytics by output quality, resource demand and tolerated processing lag.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2017-zhang-videostorm.md"
+  },
+  "2018-jiang-chameleon": {
+    "summary": "Chameleon reduces configuration-search overhead by sharing useful settings over time and across related camera streams.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2018-jiang-chameleon.md"
+  },
+  "2023-ma-vip": {
+    "summary": "VIP learns reusable visual representations and goal-image rewards from passive human video, then uses them for robot control without adapting the encoder.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2023-ma-vip.md"
+  },
+  "2024-chen-videollm-online": {
+    "summary": "VideoLLM-online trains a video language model to alternate between silent visual ingestion and temporally aligned language responses.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-chen-videollm-online.md"
+  },
+  "2024-eyzaguirre-sdqes": {
+    "summary": "SDQES turns a natural-language event description into a standing detector that must identify the event onset causally.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-eyzaguirre-sdqes.md"
+  },
+  "2024-rodin-easg": {
+    "summary": "Egocentric Action Scene Graphs represent actions, participating objects, relations and persistent object identity as a temporally evolving graph.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-rodin-easg.md"
+  },
+  "2024-shen-protas": {
+    "summary": "ProTAS uses estimated within-action progress and learned task dependencies to stabilize causal action segmentation.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-shen-protas.md"
+  },
+  "2024-zanella-lavad": {
+    "summary": "LAVAD turns pretrained captions and language-model judgments into anomaly scores without target-domain training.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-zanella-lavad.md"
+  },
+  "2024-zhong-onlinetas": {
+    "summary": "OnlineTAS combines adaptive temporal memory, causal segmentation and duration-aware post-processing to label procedural actions as video arrives.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-zhong-onlinetas.md"
+  },
+  "2024-zhou-streaming-dvc": {
+    "summary": "Streaming Dense Video Captioning compresses visual history into fixed-size memory and emits timestamped descriptions of completed events before the video ends.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2024-zhou-streaming-dvc.md"
+  },
+  "2025-ahmad-sh17": {
+    "summary": "SH17 provides annotated workplace images and detector baselines covering body parts and PPE, including hands and gloves.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-ahmad-sh17.md"
+  },
+  "2025-ayalew-progressor": {
+    "summary": "PROGRESSOR learns visual progress rewards from demonstrations and tests their use in simulated online RL and human-video-pretrained robot imitation.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-ayalew-progressor.md"
+  },
+  "2025-chan-domain-vlm": {
+    "summary": "Adapts a vision-language model to work-at-height rules and connects sampled camera frames to alerts and indexed incident records.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-chan-domain-vlm.md"
+  },
+  "2025-chen-clip2safety": {
+    "summary": "Clip2Safety combines scene recognition, object crops, and image–text matching to check PPE presence and attributes across workplace types.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-chen-clip2safety.md"
+  },
+  "2025-chen-diffvsgg": {
+    "summary": "DiffVsgg updates object–relation scene graphs causally by conditioning a latent diffusion model on earlier graph predictions.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-chen-diffvsgg.md"
+  },
+  "2025-luo-hil-serl": {
+    "summary": "HIL-SERL combines learned success detection, demonstrations and human corrections to improve physical robot skills through online reinforcement learning.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-luo-hil-serl.md"
+  },
+  "2025-mengiste-weekly-progress": {
+    "summary": "Connects inspection photos and an updated schedule to an automated reporting workflow, while exposing errors in visually estimated completion.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-mengiste-weekly-progress.md"
+  },
+  "2025-qian-dispider": {
+    "summary": "Dispider separates streaming perception and response decisions from an asynchronous answer generator so observation can continue during language output.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-qian-dispider.md"
+  },
+  "2025-wang-siteshield": {
+    "summary": "Pairs inspection images with spoken hazard descriptions and retrieves regulations to generate construction safety reports.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-wang-siteshield.md"
+  },
+  "2025-zhang-holmes-vau": {
+    "summary": "Hierarchical anomaly instructions and anomaly-focused frame selection support explanations from clips through full videos.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-zhang-holmes-vau.md"
+  },
+  "2025-zhang-rewind": {
+    "summary": "ReWiND learns language-conditioned progress rewards from demonstrations and synthetic reversals, then uses them for offline-to-online robot policy learning.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2025-zhang-rewind.md"
+  },
+  "2026-bhat-vantage-bench": {
+    "summary": "VANTAGE-Bench evaluates semantic, spatial and temporal understanding in operational camera views beyond ordinary video question answering.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-bhat-vantage-bench.md"
+  },
+  "2026-chatterjee-spot-bench": {
+    "summary": "SPOT-Bench evaluates every response across a continuous stream, including badly timed alerts and unnecessary speech.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-chatterjee-spot-bench.md"
+  },
+  "2026-chen-reactvau": {
+    "summary": "A small anomaly detector gates expensive verification while protecting suspicious visual evidence in streaming memory.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-chen-reactvau.md"
+  },
+  "2026-gao-svg2": {
+    "summary": "SVG2 scales temporal object–attribute–relation annotations and trains TraSeR to decode structured video graphs from object-aligned visual trajectories.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-gao-svg2.md"
+  },
+  "2026-jang-neurosymbolic-pc": {
+    "summary": "Refines detected construction activities with spatial, temporal and prerequisite rules, then exports activity durations and productivity records.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-jang-neurosymbolic-pc.md"
+  },
+  "2026-lee-axg-reasoner": {
+    "summary": "AXG-Reasoner aligns action segments with learned subaction graphs to expose sparse mistakes and generate localized explanations with frozen vision–language models.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-lee-axg-reasoner.md"
+  },
+  "2026-lee-roboreward": {
+    "summary": "RoboReward turns a task instruction and robot rollout into a completion score, with benchmarks and physical policy-learning tests.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-lee-roboreward.md"
+  },
+  "2026-li-streampro": {
+    "summary": "StreamPro combines class-balanced streaming supervision with multi-turn reinforcement learning to optimize response content, timing and trajectory coherence.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-li-streampro.md"
+  },
+  "2026-liu-svcbench": {
+    "summary": "SVCBench evaluates how object and event counts evolve across a video, exposing state drift hidden by final-answer accuracy.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-liu-svcbench.md"
+  },
+  "2026-ranasinghe-safety-reasoning": {
+    "summary": "The framework converts colored point-cloud streams into scene graphs, immediate rule alerts, contextual language-model assessments, and retrieved historical evidence.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-ranasinghe-safety-reasoning.md"
+  },
+  "2026-suen-icon-pose": {
+    "summary": "Introduces construction-specific egocentric pose data and classifies action sequences using predicted skeletons.",
+    "kind": "Dataset",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-suen-icon-pose.md"
+  },
+  "2026-tang-takusen": {
+    "summary": "Takusen pairs a small boundary detector with a larger captioner to separate when an event should be described from what its description should say.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-tang-takusen.md"
+  },
+  "2026-torne-freeform-preference": {
+    "summary": "FPL learns rewards along human-defined preference axes and conditions a robot policy on the desired trade-off between them.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-torne-freeform-preference.md"
+  },
+  "2026-wang-parsee-vad": {
+    "summary": "Frozen multimodal inference acquires selected propositions and carries compact score state across causal windows.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-wang-parsee-vad.md"
+  },
+  "2026-wu-monitorvlm-v2": {
+    "summary": "A deployed mining monitor replaces free-form reasoning with bounded rule-ID decisions and mandatory human confirmation.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-wu-monitorvlm-v2.md"
+  },
+  "2026-xia-streamo": {
+    "summary": "Streamo trains one model to track streaming instructions, distinguish silence from incomplete evidence and emit task-appropriate responses.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-xia-streamo.md"
+  },
+  "2026-yao-yolo-ilb": {
+    "summary": "YOLO-ILB combines a compact PPE detector with image-geometry rules for classifying safety-harness anchoring states.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-yao-yolo-ilb.md"
+  },
+  "2026-ye-regular": {
+    "summary": "RegulAR combines an instruction-derived dependency graph with periodic video observations to track procedural progress and deliver error-specific AR assistance.",
+    "kind": "Method",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-ye-regular.md"
+  },
+  "2026-zhao-pasbench-video": {
+    "summary": "PaSBench-Video distinguishes seeing an accident from issuing a correctly grounded warning during its actionable precursor.",
+    "kind": "Benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-zhao-pasbench-video.md"
+  },
+  "2026-ziadia-collision-survey": {
+    "summary": "This review connects construction collision-monitoring research to commercial-system capabilities and the evidence needed for reliable warnings.",
+    "kind": "Survey",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-ziadia-collision-survey.md"
+  }
+}
