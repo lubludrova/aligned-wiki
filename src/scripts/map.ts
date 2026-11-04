@@ -1,4 +1,4 @@
-import type { MapTopic, MapGroup, MapPaper } from '../lib/method-map';
+import type { MapNode, MapPaper } from '../lib/method-map';
 type Point = {
   key: string; kind: 'root' | 'topic' | 'group' | 'paper'; label: string; accessibleLabel?: string;
   x: number; y: number; span: number; children: Point[]; parent?: string;
@@ -11,13 +11,17 @@ type NodeView = {
 };
 type Camera = { x: number; y: number; z: number };
 type Pointer = { x: number; y: number };
+type DatasetMode = 'task' | 'video' | 'evaluation';
+type Branch = { node: MapNode; path: string; parent?: string; depth: number };
 
 function initializeNetwork() {
   const viewport = document.querySelector<HTMLElement>('#knowledge-map');
   const source = document.querySelector('#map-data');
   if (!viewport || !source) return;
-  const { topics, legacyTopics, legacyChapters } = JSON.parse(source.textContent || '{}') as { topics: MapTopic[]; legacyTopics: Record<string, string[]>; legacyChapters: Record<string, string[]> };
-  const groups = topics.flatMap(topic => topic.groups);
+  const { topics, datasetViews, legacyTopics, legacyChapters } = JSON.parse(source.textContent || '{}') as { topics: MapNode[]; datasetViews: Record<DatasetMode, MapNode[]>; legacyTopics: Record<string, string[]>; legacyChapters: Record<string, string[]> };
+  let datasetMode: DatasetMode = 'task';
+  const datasetSelect = document.querySelector<HTMLSelectElement>('[data-map-datasets]')!;
+  const branches = new Map<string, Branch>();
   let spotlightOnly = false;
   const graph = document.querySelector<HTMLElement>('#map-graph')!;
   const list = document.querySelector<HTMLElement>('#map-list')!;
@@ -26,8 +30,7 @@ function initializeNetwork() {
   const edges = viewport.querySelector<SVGSVGElement>('.network-edges')!;
   const scaleLabel = document.querySelector('#map-scale');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const openTopics = new Set<string>();
-  const openGroups = new Set<string>();
+  const openBranches = new Set<string>();
   const nodeViews = new Map<string, NodeView>();
   const edgeViews = new Map<string, SVGPathElement>();
   const camera: Camera = { x: 0, y: 0, z: 1 };
@@ -67,6 +70,7 @@ function initializeNetwork() {
     const rect = (previewTarget.querySelector('.network-label') ?? previewTarget).getBoundingClientRect();
     const area = viewport!.getBoundingClientRect();
     if (document.activeElement !== previewTarget && (rect.bottom < area.top || rect.top > area.bottom || rect.right < 0 || rect.left > innerWidth)) { hidePreview(); return; }
+    preview.style.maxHeight = `${Math.max(100, innerHeight - area.top - 24)}px`;
     const width = preview.offsetWidth, height = preview.offsetHeight;
     const left = rect.right + 18 + width < innerWidth ? rect.right + 18 : rect.left - width - 18;
     preview.style.left = `${Math.max(16, Math.min(innerWidth - width - 16, left))}px`;
@@ -78,13 +82,33 @@ function initializeNetwork() {
     previewTarget?.removeAttribute('aria-describedby');
     previewTarget = target;
     preview.querySelector('h2')!.textContent = paper.title;
-    preview.querySelector('.preview-meta')!.textContent = `${paper.year} · ${paper.venue} · ${paper.kind}`;
+    preview.querySelector('.preview-meta')!.textContent = [paper.year, paper.venue, paper.kind].filter(Boolean).join(' · ');
     preview.querySelector('.preview-summary')!.textContent = paper.summary;
     const spotlight = preview.querySelector<HTMLElement>('.preview-spotlight')!;
     spotlight.hidden = !paper.spotlight;
     const reason = paper.spotlightReason ?? '';
     spotlight.querySelector('p')!.textContent = reason.match(/^.*?[.!?](?:\s|$)/)?.[0].trim() ?? reason;
-    preview.querySelector<HTMLAnchorElement>('.preview-link')!.href = paper.href;
+    const link = preview.querySelector<HTMLAnchorElement>('.preview-link')!;
+    link.href = paper.href;
+    link.textContent = `${paper.linkLabel ?? 'Read publication'} →`;
+    const facets = preview.querySelector<HTMLDListElement>('.preview-facets')!;
+    facets.replaceChildren();
+    for (const [label, values] of [['Task', paper.tasks], ['Video', paper.videoTypes], ['Evaluation', paper.evaluationFormats], ['Access', paper.accessProtocols]] as const) {
+      if (!values?.length) continue;
+      const term = document.createElement('dt'); term.textContent = label;
+      const value = document.createElement('dd'); value.textContent = values.join(' · ');
+      facets.append(term, value);
+    }
+    const limits = preview.querySelector<HTMLElement>('.preview-limitations')!;
+    limits.textContent = paper.limitations ?? '';
+    limits.hidden = !paper.limitations;
+    const sources = preview.querySelector<HTMLElement>('.preview-sources')!;
+    sources.replaceChildren();
+    for (const [index, url] of (paper.sourceUrls ?? []).entries()) {
+      const sourceLink = document.createElement('a'); sourceLink.href = url;
+      sourceLink.textContent = `Source ${index + 1}`;
+      sources.append(sourceLink);
+    }
     preview.hidden = false;
     target.setAttribute('aria-describedby', 'preview-description');
     positionPreview();
@@ -102,74 +126,89 @@ function initializeNetwork() {
   preview.querySelector('button')!.addEventListener('click', hidePreview);
   document.addEventListener('keydown', event => { if (event.key === 'Escape') hidePreview(); });
 
-  const visiblePapers = (group: MapGroup) => group.papers.filter(paper => !spotlightOnly || paper.spotlight);
-  const visibleGroups = (topic: MapTopic) => topic.groups.filter(group => visiblePapers(group).length > 0);
+  const visibleItems = (node: MapNode) => node.items.filter(item => !spotlightOnly || item.spotlight);
+  const activeTopics = () => topics.map(node => node.id === 'datasets' ? { ...node, children: datasetViews[datasetMode] } : node);
+  function itemIds(node: MapNode): Set<string> {
+    return new Set([...visibleItems(node).map(item => item.id), ...node.children.flatMap(child => [...itemIds(child)])]);
+  }
+  function indexBranches() {
+    branches.clear();
+    function visit(node: MapNode, parent?: string, depth = 1) {
+      const path = parent ? `${parent}/${node.id}` : node.id;
+      branches.set(path, { node, path, parent, depth });
+      node.children.forEach(child => visit(child, path, depth + 1));
+    }
+    activeTopics().forEach(node => visit(node));
+  }
+  function openPath(path: string) {
+    const branch = branches.get(path);
+    if (!branch) return;
+    if (branch.parent) openPath(branch.parent);
+    openBranches.add(path);
+  }
   function restore() {
     const path = new URLSearchParams(window.location.hash.slice(1));
     spotlightOnly = path.get('spotlight') === '1';
-    openTopics.clear(); openGroups.clear();
-    for (const id of [path.get('topic'), ...(path.get('topics') ?? '').split(',')]) {
-      if (!id) continue;
-      for (const target of topics.some(topic => topic.id === id) ? [id] : legacyTopics[id] ?? []) openTopics.add(target);
+    const mode = path.get('datasets');
+    datasetMode = mode === 'video' || mode === 'evaluation' ? mode : 'task';
+    datasetSelect.value = datasetMode;
+    indexBranches(); openBranches.clear();
+    const requested = (path.get('branches') ?? '').split(',');
+    for (const key of ['topic', 'topics', 'group', 'groups']) {
+      for (const id of (path.get(key) ?? '').split(',')) {
+        if (!id) continue;
+        requested.push(...(legacyTopics[id] ?? [id]));
+      }
     }
-    for (const slug of [path.get('chapter'), ...(path.get('chapters') ?? '').split(',')]) {
-      for (const id of legacyChapters[slug ?? ''] ?? []) openTopics.add(id);
+    for (const key of ['chapter', 'chapters']) {
+      for (const slug of (path.get(key) ?? '').split(',')) requested.push(...(legacyChapters[slug] ?? []));
     }
-    for (const id of [path.get('group'), ...(path.get('groups') ?? '').split(',')]) {
-      const topic = topics.find(topic => topic.groups.some(group => group.id === id));
-      if (topic && id) { openTopics.add(topic.id); openGroups.add(id); }
+    for (const id of requested) {
+      if (branches.has(id)) openPath(id);
+      else for (const [branchPath, branch] of branches) if (branch.node.id === id) openPath(branchPath);
     }
     document.querySelector('[data-map-spotlight]')?.setAttribute('aria-pressed', String(spotlightOnly));
     dirty = true;
   }
   function save() {
     const path = new URLSearchParams();
-    if (openTopics.size) path.set(openTopics.size === 1 ? 'topic' : 'topics', [...openTopics].join(','));
-    if (openGroups.size) path.set(openGroups.size === 1 ? 'group' : 'groups', [...openGroups].join(','));
+    if (openBranches.size) path.set('branches', [...openBranches].join(','));
+    if (datasetMode !== 'task') path.set('datasets', datasetMode);
     if (spotlightOnly) path.set('spotlight', '1');
     history.replaceState(history.state, '', `${window.location.pathname}${window.location.search}${path.size ? `#${path}` : '#map'}`);
   }
-  function toggleTopic(id: string, key?: string) {
-    if (openTopics.has(id)) {
-      openTopics.delete(id);
-      for (const group of topics.find(topic => topic.id === id)!.groups) openGroups.delete(group.id);
-    } else openTopics.add(id);
-    save(); dirty = true;
-    if (view === 'graph') rebuild(key); else syncList();
-  }
-  function toggleGroup(group: MapGroup, key?: string) {
-    openTopics.add(topics.find(topic => topic.groups.includes(group))!.id);
-    if (openGroups.has(group.id)) openGroups.delete(group.id); else openGroups.add(group.id);
+  function toggleBranch(path: string, key?: string) {
+    if (openBranches.has(path)) {
+      for (const open of openBranches) if (open === path || open.startsWith(`${path}/`)) openBranches.delete(open);
+    } else openPath(path);
     save(); dirty = true;
     if (view === 'graph') rebuild(key); else syncList();
   }
   function makePoint(kind: Point['kind'], key: string, label: string, x: number, extra: Partial<Point> = {}): Point {
-    return { kind, key, label, x, y: 0, span: kind === 'paper' ? 64 : 80, children: [], ...extra };
+    return { kind, key, label, x, y: 0, span: kind === 'paper' ? Math.max(72, Math.ceil(label.length / 32) * 20 + 20) : 84, children: [], ...extra };
   }
   function tree() {
     const root = makePoint('root', 'root', 'Aligned', 0, { action: () => fit() });
-    const paperPoints = (group: MapGroup, parent: string, x: number) => visiblePapers(group).map(paper => makePoint('paper', `paper:${paper.id}`, paper.title, x, {
-      parent, href: paper.href, paper, accessibleLabel: `${paper.title}, ${paper.year}, ${paper.kind}${paper.spotlight ? ', Wiki spotlight' : ''}`,
-    }));
-    root.children = topics.filter(topic => visibleGroups(topic).length).map(topic => {
-      const children = visibleGroups(topic);
-      const point = makePoint('topic', `topic:${topic.id}`, topic.title, 290, {
-        parent: root.key, expanded: openTopics.has(topic.id), count: children.reduce((n, group) => n + visiblePapers(group).length, 0),
-        action: () => toggleTopic(topic.id, `topic:${topic.id}`),
+    function branchPoint(branch: Branch, parent: string): Point {
+      const { node, path, depth } = branch;
+      const key = `branch:${path}`;
+      const x = 300 + (depth - 1) * 350;
+      const point = makePoint(depth === 1 ? 'topic' : 'group', key, node.title, x, {
+        parent, expanded: openBranches.has(path), count: itemIds(node).size,
+        action: () => toggleBranch(path, key),
       });
-      if (openTopics.has(topic.id)) {
-        if (topic.groups.length === 1) point.children = paperPoints(children[0], point.key, 650);
-        else point.children = children.map(group => {
-          const key = `group:${group.id}`;
-          return makePoint('group', key, group.title, 620, { parent: point.key,
-            expanded: openGroups.has(group.id), count: visiblePapers(group).length,
-            action: () => toggleGroup(group, key),
-            children: openGroups.has(group.id) ? paperPoints(group, key, 960) : [],
-          });
-        });
+      if (openBranches.has(path)) {
+        point.children = [
+          ...node.children.filter(child => itemIds(child).size).map(child => branchPoint(branches.get(`${path}/${child.id}`)!, key)),
+          ...visibleItems(node).map(item => makePoint('paper', `item:${path}/${item.id}`, item.title, x + 350, {
+            parent: key, href: item.href, paper: item,
+            accessibleLabel: [item.title, item.year, item.kind, item.spotlight ? 'Wiki spotlight' : ''].filter(Boolean).join(', '),
+          })),
+        ];
       }
       return point;
-    });
+    }
+    root.children = activeTopics().filter(node => itemIds(node).size).map(node => branchPoint(branches.get(node.id)!, root.key));
     function measure(point: Point): number {
       point.span = Math.max(point.span, point.children.reduce((sum, child) => sum + measure(child), 0));
       return point.span;
@@ -343,9 +382,7 @@ function initializeNetwork() {
     startFrame();
   }
   function showRestoredPath(immediate: boolean) {
-    const group = [...openGroups].reverse().map(id => nodeViews.get(`group:${id}`)).find(node => node && !node.exiting);
-    const topic = [...openTopics].reverse().map(id => nodeViews.get(`topic:${id}`)).find(node => node && !node.exiting);
-    const branch = group ?? topic;
+    const branch = [...openBranches].reverse().map(path => nodeViews.get(`branch:${path}`)).find(node => node && !node.exiting && node.point.children.length);
     if (!branch?.point.children.length) { fit(immediate); return; }
     anchor = null;
     const left = branch.point.x - 140;
@@ -377,16 +414,14 @@ function initializeNetwork() {
     releaseAnchor(); destination = { x: camera.x + dx, y: camera.y + dy, z: camera.z }; startFrame();
   }
   function syncList() {
-    list.querySelectorAll<HTMLDetailsElement>('[data-topic]').forEach(details => {
-      const topic = topics.find(topic => topic.id === details.dataset.topic)!;
-      details.hidden = !visibleGroups(topic).length;
-      details.open = openTopics.has(topic.id);
-    });
-    list.querySelectorAll<HTMLDetailsElement>('[data-group]').forEach(details => {
-      const group = groups.find(group => group.id === details.dataset.group)!;
-      const topic = topics.find(topic => topic.groups.includes(group))!;
-      details.hidden = !visiblePapers(group).length;
-      details.open = topic.groups.length === 1 || openGroups.has(group.id);
+    list.querySelectorAll<HTMLDetailsElement>('[data-branch]').forEach(details => {
+      const datasetRoot = details.closest<HTMLElement>('[data-dataset-view]');
+      const active = !datasetRoot || datasetRoot.dataset.datasetView === datasetMode;
+      const branch = branches.get(details.dataset.branch!);
+      details.hidden = !active || !branch || itemIds(branch.node).size === 0;
+      details.open = openBranches.has(details.dataset.branch!);
+      const count = details.querySelector<HTMLElement>(':scope > summary .network-count');
+      if (count && branch) count.textContent = String(itemIds(branch.node).size);
     });
     list.querySelectorAll<HTMLElement>('[data-paper]').forEach(row => { row.hidden = spotlightOnly && row.dataset.spotlight !== 'true'; });
   }
@@ -400,15 +435,20 @@ function initializeNetwork() {
   }
   list.addEventListener('click', event => {
     const details = (event.target as Element).closest('summary')?.parentElement;
-    if (!(details instanceof HTMLDetailsElement)) return;
-    const group = groups.find(item => item.id === details.dataset.group);
-    const topic = topics.find(item => item.id === details.dataset.topic);
-    if (!group && !topic) return;
+    if (!(details instanceof HTMLDetailsElement) || !details.dataset.branch) return;
     event.preventDefault();
-    if (group) {
-      if (topics.find(topic => topic.groups.includes(group))!.groups.length > 1) toggleGroup(group);
-    } else toggleTopic(topic!.id);
+    toggleBranch(details.dataset.branch);
   });
+  datasetSelect.addEventListener('change', () => {
+    const mode = datasetSelect.value;
+    datasetMode = mode === 'video' || mode === 'evaluation' ? mode : 'task';
+    indexBranches();
+    for (const path of openBranches) if (path.startsWith('datasets/')) openBranches.delete(path);
+    openPath('datasets');
+    save(); dirty = true;
+    if (view === 'graph') rebuild('branch:datasets', true); else syncList();
+  });
+  document.querySelector<HTMLElement>('.network-filters')!.hidden = false;
   document.querySelectorAll<HTMLButtonElement>('[data-map-view]').forEach(button => button.addEventListener('click', () => setView(button.dataset.mapView === 'list' ? 'list' : 'graph')));
   document.querySelector('[data-map-spotlight]')?.addEventListener('click', event => {
     spotlightOnly = !spotlightOnly;
@@ -417,7 +457,7 @@ function initializeNetwork() {
     if (view === 'graph') rebuild(undefined, true); else syncList();
   });
   document.querySelector('[data-map-fit]')?.addEventListener('click', () => fit());
-  document.querySelector('[data-map-reset]')?.addEventListener('click', () => { openTopics.clear(); openGroups.clear(); save(); rebuild(undefined, true); });
+  document.querySelector('[data-map-reset]')?.addEventListener('click', () => { openBranches.clear(); save(); rebuild(undefined, true); });
   document.querySelectorAll<HTMLButtonElement>('[data-map-zoom]').forEach(button => button.addEventListener('click', () => zoomAt(viewport!.clientWidth / 2, viewport!.clientHeight / 2, destination.z * (button.dataset.mapZoom === 'in' ? 1.2 : 1 / 1.2))));
   viewport.addEventListener('wheel', event => {
     event.preventDefault();

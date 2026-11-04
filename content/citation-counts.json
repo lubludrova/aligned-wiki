@@ -552,6 +552,13 @@
     "url": "https://openalex.org/W7212252498",
     "status": "verified"
   },
+  "2026-carion-sam3": {
+    "count": 28,
+    "provider": "OpenAlex",
+    "checked": "2026-11-04",
+    "url": "https://openalex.org/W4417095222",
+    "status": "verified"
+  },
   "2026-chalk-whareformer": {
     "count": 0,
     "provider": "OpenAlex",
@@ -606,6 +613,13 @@
     "provider": "OpenAlex",
     "checked": "2026-11-03",
     "url": "https://openalex.org/W7202209200",
+    "status": "verified"
+  },
+  "2026-deng-agentic-video-survey": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-04",
+    "url": "https://openalex.org/W7214779667",
     "status": "verified"
   },
   "2026-forte-egostream": {
@@ -805,6 +819,13 @@
     "url": "https://openalex.org/W7202243079",
     "status": "verified"
   },
+  "2026-ma-robot-video-survey": {
+    "count": 0,
+    "provider": "OpenAlex",
+    "checked": "2026-11-04",
+    "url": "https://openalex.org/W7159680369",
+    "status": "verified"
+  },
   "2026-majumder-mistexit": {
     "count": 0,
     "provider": "OpenAlex",
@@ -994,6 +1015,13 @@
     "provider": "OpenAlex",
     "checked": "2026-11-03",
     "url": "https://openalex.org/W7172445049",
+    "status": "verified"
+  },
+  "2026-wu-temporal-grounding-survey": {
+    "count": 17,
+    "provider": "OpenAlex",
+    "checked": "2026-11-04",
+    "url": "https://openalex.org/W4414604029",
     "status": "verified"
   },
   "2026-xia-streamo": {

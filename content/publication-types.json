@@ -652,5 +652,19 @@
   ],
   "2026-ziadia-collision-survey": [
     "survey"
+  ],
+  "2026-carion-sam3": [
+    "dataset",
+    "benchmark",
+    "method"
+  ],
+  "2026-deng-agentic-video-survey": [
+    "survey"
+  ],
+  "2026-wu-temporal-grounding-survey": [
+    "survey"
+  ],
+  "2026-ma-robot-video-survey": [
+    "survey"
   ]
 }

@@ -1046,5 +1046,29 @@
     "kind": "Survey",
     "spotlight": false,
     "summarySource": "aligned-wiki/wiki/2026-ziadia-collision-survey.md"
+  },
+  "2026-carion-sam3": {
+    "summary": "SAM 3 detects, segments and tracks instances from text or visual prompts, providing object masks and local tracks before persistent association or memory construction.",
+    "kind": "Method & benchmark",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-carion-sam3.md"
+  },
+  "2026-deng-agentic-video-survey": {
+    "summary": "Organizes video agents by the problems motivating adaptive evidence control, their state representations, learning mechanisms and evaluation requirements.",
+    "kind": "Survey",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-deng-agentic-video-survey.md"
+  },
+  "2026-wu-temporal-grounding-survey": {
+    "summary": "Separates temporal grounding tasks from model roles, training paradigms and feature processing, with task-specific datasets and evaluation metrics.",
+    "kind": "Survey",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-wu-temporal-grounding-survey.md"
+  },
+  "2026-ma-robot-video-survey": {
+    "summary": "Organizes human-video-to-robot transfer by task, observation and action interfaces, relating each pathway to supervision, data requirements and physical grounding.",
+    "kind": "Survey",
+    "spotlight": false,
+    "summarySource": "aligned-wiki/wiki/2026-ma-robot-video-survey.md"
   }
 }

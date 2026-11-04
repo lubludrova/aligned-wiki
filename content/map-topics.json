@@ -1,508 +1,366 @@
 [
   {
-    "id": "features",
-    "title": "Video features",
-    "description": "Encode appearance, motion, and local detail for downstream video tasks.",
-    "groups": [
+    "id": "methods",
+    "title": "Methods",
+    "description": "Research methods grouped by their main problem, with shared papers linked where contributions overlap.",
+    "papers": [],
+    "children": [
       {
-        "id": "video-encoders",
-        "title": "Video encoders",
-        "description": "Shared text–video embeddings and visual features for retrieval, tracking, and understanding.",
+        "id": "perception",
+        "title": "Visual Perception & Representations",
+        "description": "Embeddings, objects, tracks, states, relations and event descriptions extracted from visual observations.",
         "papers": [
           "2021-bain-frozen-in-time",
           "2021-luo-clip4clip",
           "2024-wang-internvideo2",
           "2026-tan-egovit",
-          "2026-mur-labadia-v-jepa-2-1"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "retrieval",
-    "title": "Retrieval and memory",
-    "description": "Find recordings and events, retain their history, and answer questions over video.",
-    "groups": [
+          "2026-mur-labadia-v-jepa-2-1",
+          "2026-carion-sam3",
+          "2022-elfeki-multi-ego",
+          "2025-liu-visualsync",
+          "2024-rodin-easg",
+          "2025-chen-diffvsgg",
+          "2026-gao-svg2",
+          "2022-soucek-look-for-change",
+          "2024-xue-vidosc",
+          "2024-nguyen-oscar",
+          "2025-zameni-moscato",
+          "2026-mandikal-spoc",
+          "2025-sun-tubeletgraph",
+          "2026-suen-icon-pose",
+          "2024-zhou-streaming-dvc",
+          "2026-tang-takusen"
+        ],
+        "children": []
+      },
       {
-        "id": "videos-and-moments",
-        "title": "Find videos and moments",
-        "description": "Retrieve source videos, localize matching intervals, or find repeated events.",
+        "id": "memory-construction",
+        "title": "Memory Construction",
+        "description": "What is retained across observations, and how that retained evidence is maintained.",
+        "papers": [],
+        "children": [
+          {
+            "id": "semantic-memory",
+            "title": "Semantic memory",
+            "description": "Consolidated facts and recurring relationships. These are shared references to semantic components of mixed-memory systems.",
+            "papers": [],
+            "children": [],
+            "relatedPapers": [
+              "2026-yeo-worldmm",
+              "2026-chen-em2mem",
+              "2026-long-m3-agent"
+            ]
+          },
+          {
+            "id": "entity-memory",
+            "title": "Entity-centric memory",
+            "description": "Persistent identities, object locations and histories, and relationships between entities.",
+            "papers": [
+              "2024-goletto-amego",
+              "2026-rege-egagent",
+              "2026-ren-geb",
+              "2025-plizzari-osnom",
+              "2026-chaudhari-ledger",
+              "2026-wang-directme",
+              "2026-chalk-whareformer",
+              "2026-ma-r4dsg"
+            ],
+            "children": []
+          },
+          {
+            "id": "episodic-memory",
+            "title": "Episodic & event memory",
+            "description": "Timestamped experiences, events and contextual records retained for later use.",
+            "papers": [
+              "2026-xiong-memlife",
+              "2025-yang-egolife",
+              "2026-zhang-egocite",
+              "2026-zeng-onestreamer"
+            ],
+            "children": []
+          },
+          {
+            "id": "mixed-memory",
+            "title": "Mixed memory",
+            "description": "Systems that combine episodic, entity-centric or semantic memory. Multiple input modalities alone do not imply mixed memory.",
+            "papers": [
+              "2026-yeo-worldmm",
+              "2026-chen-em2mem",
+              "2024-fan-videoagent",
+              "2026-long-m3-agent"
+            ],
+            "children": []
+          },
+          {
+            "id": "memory-maintenance",
+            "title": "Memory maintenance",
+            "description": "Retaining and compressing visual context and caches. Bounded GPU context does not imply bounded total storage.",
+            "papers": [
+              "2024-song-moviechat",
+              "2025-di-rekv",
+              "2025-zeng-streamforest"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": "retrieval",
+        "title": "Video Retrieval & RAG",
+        "description": "Find videos, moments or memory records, select evidence, and execute video queries. Retrieval does not necessarily generate an answer.",
         "papers": [
           "2020-lei-tvr",
           "2026-hou-eventformer",
           "2025-cao-flashmmr",
           "2026-lee-carve",
           "2025-jeong-videorag",
-          "2026-ren-videorag"
-        ]
-      },
-      {
-        "id": "selected-video-qa",
-        "title": "Read a selected video",
-        "description": "Readers and benchmarks that start with the relevant recording already selected.",
-        "papers": [
-          "2023-mangalam-egoschema",
-          "2024-wu-longvideobench",
-          "2025-fu-video-mme",
-          "2024-zhang-llovi",
-          "2025-wang-videotree",
-          "2024-song-moviechat",
-          "2025-ye-mm-ego",
-          "2025-luo-video-rag"
-        ]
-      },
-      {
-        "id": "memory-writing",
-        "title": "Write and reuse memory",
-        "description": "Segment and describe events, retain useful records, and revisit frames when needed.",
-        "papers": [
-          "2026-leng-flora",
-          "2026-xiong-memlife",
-          "2026-liang-capmem",
-          "2026-cai-cfd",
-          "2026-choi-merit"
-        ]
-      },
-      {
-        "id": "long-term-recall",
-        "title": "Recall across sessions",
-        "description": "Multi-day and cross-session evaluation, with a survey of multimodal memory designs.",
-        "papers": [
-          "2025-yang-egolife",
-          "2026-huang-apm-bench",
-          "2026-chen-egomonth",
-          "2026-wang-egomemreason",
-          "2026-guo-multimodal-memory-survey"
-        ]
-      },
-      {
-        "id": "structured-event-memory",
-        "title": "Events, entities, and time",
-        "description": "Interaction records, contextual indices, and relational memory for connected events.",
-        "papers": [
-          "2024-goletto-amego",
-          "2026-rege-egagent",
-          "2026-yeo-worldmm",
-          "2026-chen-em2mem",
-          "2026-zhang-egocite"
-        ]
-      },
-      {
-        "id": "agentic-search",
-        "title": "Search with tools",
-        "description": "Controllers that refine retrieval and inspect additional visual evidence.",
-        "papers": [
+          "2026-ren-videorag",
+          "2025-luo-video-rag",
+          "2026-choi-merit",
           "2024-wang-videoagent",
-          "2024-fan-videoagent",
           "2026-rauf-hpp",
-          "2026-tian-ego-r1"
-        ]
-      },
-      {
-        "id": "video-query-systems",
-        "title": "Execute video queries",
-        "description": "Indexing, predicates, input filtering, configuration, and resource scheduling for repeated video workloads.",
-        "papers": [
+          "2026-tian-ego-r1",
           "2018-hsieh-focus",
           "2019-kang-blazeit",
           "2022-kang-tasti",
           "2023-zhang-equi-vocal",
           "2025-zhang-vocal-udf",
-          "2020-li-reducto",
-          "2017-zhang-videostorm",
-          "2018-jiang-chameleon"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "observations",
-    "title": "Linking observations",
-    "description": "Connect viewpoints, people, objects, and places across separate observations.",
-    "groups": [
-      {
-        "id": "shared-histories",
-        "title": "People and shared histories",
-        "description": "Identify whose experience is being described and combine observations from several people.",
-        "papers": [
-          "2026-kim-ma-egoqa",
-          "2026-xiao-myego",
-          "2026-long-m3-agent",
-          "2026-ren-geb",
-          "2022-elfeki-multi-ego"
-        ]
-      },
-      {
-        "id": "viewpoint-alignment",
-        "title": "Compare viewpoints",
-        "description": "Synchronize views, select complementary evidence, and relate demonstrations to execution.",
-        "papers": [
-          "2025-liu-visualsync",
           "2026-liu-egoexomem",
-          "2026-yeh-all-angles-bench",
-          "2025-he-egoexobench",
-          "2024-huang-egoexolearn",
-          "2024-grauman-ego-exo4d"
-        ]
-      },
-      {
-        "id": "spatial-object-memory",
-        "title": "Locate objects over time",
-        "description": "Object-query benchmarks and memory of instances, locations, and user-relative space.",
-        "papers": [
-          "2022-grauman-ego4d",
-          "2025-plizzari-osnom",
-          "2026-chaudhari-ledger",
-          "2026-wang-directme",
-          "2025-anwar-remembr",
-          "2026-chalk-whareformer",
-          "2026-ma-r4dsg"
-        ]
-      },
-      {
-        "id": "scene-relations",
-        "title": "Objects and scene relations",
-        "description": "Represent object identities, actions, attributes, and spatial relations, with benchmarks for localized scene understanding.",
-        "papers": [
-          "2024-rodin-easg",
-          "2025-chen-diffvsgg",
-          "2026-gao-svg2",
-          "2026-bhat-vantage-bench"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "grounding",
-    "title": "Grounded answers",
-    "description": "Check which observations support an answer and when the system should abstain.",
-    "groups": [
-      {
-        "id": "answer-evidence",
-        "title": "Answers with evidence",
-        "description": "Temporal evidence for answers and source citations for reports over a video corpus.",
-        "papers": [
-          "2025-chen-gelm",
-          "2026-wang-s-ember",
-          "2026-kriz-multivent-raw"
-        ]
-      },
-      {
-        "id": "event-attribution",
-        "title": "Bind facts to events",
-        "description": "Distinguish similar episodes and account for the time over which an observation remains valid.",
-        "papers": [
-          "2026-pang-egoprobe",
-          "2026-forte-egostream"
-        ]
-      },
-      {
-        "id": "answerability",
-        "title": "Answerability and abstention",
-        "description": "Recognize missing evidence, false premises, and the tradeoff between coverage and unsupported answers.",
-        "papers": [
-          "2025-yoon-uvqa",
-          "2026-alam-supermemory-vqa",
-          "2026-zhou-temporal-abstention",
-          "2025-ortiz-abstention-knobs"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "states",
-    "title": "Object states",
-    "description": "Track what changed in an object and distinguish observed state from progress toward a goal.",
-    "groups": [
-      {
-        "id": "object-transformations",
-        "title": "Object transformations",
-        "description": "Localize, describe, segment, and track changes in objects during manipulation.",
-        "papers": [
-          "2022-soucek-look-for-change",
-          "2024-xue-vidosc",
-          "2024-nguyen-oscar",
-          "2025-zameni-moscato",
-          "2026-mandikal-spoc",
-          "2025-sun-tubeletgraph"
-        ]
-      },
-      {
-        "id": "state-evidence",
-        "title": "State evidence",
-        "description": "Detailed observations, evolving object and event counts, temporal state questions, and comparison with a correct assembly reference.",
-        "papers": [
-          "2025-perrett-hd-epic",
-          "2026-guo-procobject",
-          "2025-lehman-statediffnet",
-          "2026-liu-svcbench"
-        ]
-      },
-      {
-        "id": "goal-progress",
-        "title": "Progress toward a goal",
-        "description": "Relative progress, regression, and outcome scores, distinct from verified physical completion.",
-        "papers": [
-          "2026-yang-egotsr",
-          "2026-liang-robometer"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "procedures",
-    "title": "Procedures and errors",
-    "description": "Recognize procedure steps, identify deviations, and reason about errors and recovery.",
-    "groups": [
-      {
-        "id": "steps-and-dependencies",
-        "title": "Steps and dependencies",
-        "description": "Task graphs, step parsing, completion recognition, and questions about procedural structure.",
-        "papers": [
-          "2024-seminara-dtgl",
-          "2026-seminara-tgml",
-          "2026-gupta-vidparse",
-          "2025-schoonbeek-storm-psr",
-          "2026-chavan-indego-assistant",
-          "2026-sasaki-egoindassembly",
-          "2022-jia-egotaskqa"
-        ]
-      },
-      {
-        "id": "execution-benchmarks",
-        "title": "Execution benchmarks",
-        "description": "Recorded assembly, cooking, instruction, and collaborative tasks with procedure annotations.",
-        "papers": [
-          "2022-sener-assembly101",
-          "2024-schoonbeek-industreal",
-          "2023-wang-holoassist",
-          "2024-peddi-captaincook4d",
-          "2025-chavan-indego"
-        ]
-      },
-      {
-        "id": "execution-error-detection",
-        "title": "Detect execution errors",
-        "description": "Detect deviations from valid actions, expected effects, and procedural constraints.",
-        "papers": [
-          "2024-lee-egoper",
-          "2025-huang-amnar",
-          "2026-guo-aem",
-          "2026-wen-provia",
-          "2025-patsch-mistsense",
-          "2026-bacharidis-mistake-survey"
-        ]
-      },
-      {
-        "id": "error-explanations",
-        "title": "Explain errors and recovery",
-        "description": "Localize or explain mistakes using instructions, state observations, and completed step sequences.",
-        "papers": [
-          "2026-wen-impact",
-          "2025-haneji-egooops",
-          "2026-li-egoerrorvqa",
-          "2026-loginova-prism",
-          "2026-li-matt",
-          "2026-lee-axg-reasoner"
-        ]
-      },
-      {
-        "id": "action-recognition",
-        "title": "Recognize actions over time",
-        "description": "Pose-based action recognition and causal segmentation of procedural actions, distinct from judging execution correctness.",
-        "papers": [
-          "2026-suen-icon-pose",
-          "2024-zhong-onlinetas",
-          "2024-shen-protas"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "streaming",
-    "title": "Streaming assistance",
-    "description": "Maintain useful context and decide when to respond as observations arrive.",
-    "groups": [
-      {
-        "id": "streaming-context",
-        "title": "Maintain streaming context",
-        "description": "Bounded memory and efficient reading of recent and accumulated video.",
-        "papers": [
-          "2026-zeng-onestreamer",
-          "2025-di-rekv",
-          "2025-zeng-streamforest"
-        ]
-      },
-      {
-        "id": "response-timing",
-        "title": "Choose when to respond",
-        "description": "Protocols and methods for proactive notifications, event monitoring, and timely safety alerts.",
-        "papers": [
-          "2026-liao-proactegomem",
-          "2026-zhang-streamarena",
-          "2026-panpatil-egosafetybench",
           "2024-eyzaguirre-sdqes",
-          "2026-chatterjee-spot-bench"
-        ]
+          "2025-guo-egoconqs"
+        ],
+        "children": []
       },
       {
-        "id": "step-feedback",
-        "title": "Feedback during execution",
-        "description": "Step-aware guidance and early error decisions under each paper’s observation protocol.",
+        "id": "qa",
+        "title": "VideoQA & Reasoning",
+        "description": "Answer and reason over video evidence, including grounded answers, abstention and streaming responses.",
         "papers": [
-          "2025-bhattacharyya-livemamba",
-          "2026-liu-guideme",
-          "2026-majumder-mistexit",
-          "2026-ye-regular"
-        ]
-      },
-      {
-        "id": "streaming-dialogue",
-        "title": "Dialogue as video arrives",
-        "description": "Models that alternate observation, silence, and language responses while optimizing content and response timing.",
-        "papers": [
+          "2024-zhang-llovi",
+          "2025-wang-videotree",
+          "2025-ye-mm-ego",
+          "2026-cai-cfd",
+          "2025-chen-gelm",
+          "2025-yoon-uvqa",
+          "2026-zhou-temporal-abstention",
+          "2026-guo-procobject",
           "2024-chen-videollm-online",
           "2025-qian-dispider",
           "2026-xia-streamo",
           "2026-li-streampro"
-        ]
+        ],
+        "children": []
       },
       {
-        "id": "event-captioning",
-        "title": "Describe events as they unfold",
-        "description": "Emit timestamped event descriptions using compressed history or a separate event-boundary detector.",
-        "papers": [
-          "2024-zhou-streaming-dvc",
-          "2026-tang-takusen"
+        "id": "assessment",
+        "title": "Assessment & Monitoring",
+        "description": "Understand execution and assess it against procedural, quality, progress or safety criteria.",
+        "papers": [],
+        "children": [
+          {
+            "id": "procedures",
+            "title": "Procedural understanding & errors",
+            "description": "Recognize steps and dependencies, track completion, and identify or explain execution mistakes.",
+            "papers": [
+              "2025-lehman-statediffnet",
+              "2024-seminara-dtgl",
+              "2026-seminara-tgml",
+              "2026-gupta-vidparse",
+              "2025-schoonbeek-storm-psr",
+              "2026-sasaki-egoindassembly",
+              "2024-schoonbeek-industreal",
+              "2024-lee-egoper",
+              "2025-huang-amnar",
+              "2026-guo-aem",
+              "2026-wen-provia",
+              "2025-patsch-mistsense",
+              "2026-loginova-prism",
+              "2026-li-matt",
+              "2026-lee-axg-reasoner",
+              "2024-zhong-onlinetas",
+              "2024-shen-protas",
+              "2026-majumder-mistexit"
+            ],
+            "children": []
+          },
+          {
+            "id": "quality-progress",
+            "title": "Quality & progress assessment",
+            "description": "Estimate progress and completion or compare execution quality against goals and human judgments.",
+            "papers": [
+              "2026-yang-egotsr",
+              "2026-isaac-sensing-scheduling",
+              "2018-doughty-skill-ranking",
+              "2026-braun-skillspotter",
+              "2025-ashutosh-expertaf"
+            ],
+            "children": []
+          },
+          {
+            "id": "anomalies-safety",
+            "title": "Anomalies, safety & compliance",
+            "description": "Detect unusual events or assess visible evidence against safety requirements. Anomaly, mistake and hazard labels are not interchangeable.",
+            "papers": [
+              "2025-liu-egosafe",
+              "2025-chen-clip2safety",
+              "2026-yao-yolo-ilb",
+              "2024-wu-ovvad",
+              "2025-li-anomize",
+              "2025-ye-vera",
+              "2024-zanella-lavad",
+              "2025-zhang-holmes-vau",
+              "2026-chen-reactvau",
+              "2026-wang-parsee-vad"
+            ],
+            "children": []
+          }
         ]
       }
     ]
   },
   {
-    "id": "construction",
-    "title": "Construction monitoring",
-    "description": "Apply visual evidence and event records to site progress, requirements, and corrective work.",
-    "groups": [
+    "id": "robotics",
+    "title": "Robotics",
+    "description": "Robot-centered learning, memory, evaluation and surveys. RL for a video-QA controller remains in Methods.",
+    "papers": [],
+    "children": [
       {
-        "id": "site-progress",
-        "title": "Progress and acceptance",
-        "description": "Link observations to construction models, work quantities, accepted work, and event logs.",
+        "id": "robot-learning",
+        "title": "Learning, rewards & feedback",
+        "description": "Visual rewards, preferences, policy learning and annotation for robot training. Includes explicitly adjacent foundations.",
         "papers": [
+          "2026-leng-flora",
+          "2026-liang-robometer",
+          "2023-ma-vip",
+          "2025-ayalew-progressor",
+          "2025-zhang-rewind",
+          "2026-lee-roboreward",
+          "2017-christiano-human-preferences",
+          "2026-torne-freeform-preference",
+          "2025-luo-hil-serl"
+        ],
+        "children": []
+      },
+      {
+        "id": "robot-memory",
+        "title": "Robot memory & understanding",
+        "description": "Memory and reasoning over a robot’s observed experience.",
+        "papers": [
+          "2025-anwar-remembr"
+        ],
+        "children": []
+      },
+      {
+        "id": "robot-datasets",
+        "title": "Datasets & benchmarks",
+        "description": "Robot-focused resources, separated from general video-understanding datasets.",
+        "papers": [],
+        "children": []
+      },
+      {
+        "id": "robot-surveys",
+        "title": "Surveys",
+        "description": "Overviews of transferring video experience into robot learning.",
+        "papers": [
+          "2026-ma-robot-video-survey"
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "datasets",
+    "title": "Datasets & Benchmarks",
+    "description": "Resources grouped by task, camera/video type or evaluation format. A benchmark measures a task, not a required memory architecture.",
+    "papers": [],
+    "children": []
+  },
+  {
+    "id": "research-surveys",
+    "title": "Surveys & Studies",
+    "description": "Literature syntheses and diagnostic studies, kept separate from proposed methods.",
+    "papers": [],
+    "children": [
+      {
+        "id": "surveys",
+        "title": "Surveys",
+        "description": "Research taxonomies and literature reviews.",
+        "papers": [
+          "2026-wu-temporal-grounding-survey",
+          "2026-guo-multimodal-memory-survey",
+          "2026-deng-agentic-video-survey",
+          "2026-bacharidis-mistake-survey",
+          "2026-ziadia-collision-survey"
+        ],
+        "children": []
+      },
+      {
+        "id": "studies",
+        "title": "Empirical & diagnostic studies",
+        "description": "Diagnostic findings without a proposed new method.",
+        "papers": [
+          "2025-ortiz-abstention-knobs",
+          "2026-steenbergen-hoist-case-identifiers"
+        ],
+        "children": []
+      }
+    ]
+  },
+  {
+    "id": "systems",
+    "title": "Systems & Business Solutions",
+    "description": "Complete research workflows, commercial products, reference platforms and video-processing infrastructure.",
+    "papers": [],
+    "children": [
+      {
+        "id": "research-systems",
+        "title": "End-to-end research systems",
+        "description": "Integrated research workflows. Offline prototypes, field evaluations and author-reported deployments are not equivalent.",
+        "papers": [
+          "2026-chavan-indego-assistant",
+          "2026-zhang-streamarena",
+          "2025-bhattacharyya-livemamba",
+          "2026-ye-regular",
           "2009-golparvar-fard-d4ar",
           "2026-hsieh-ai-bim-progress",
-          "2026-isaac-sensing-scheduling",
-          "2026-steenbergen-hoist-case-identifiers",
           "2025-mengiste-weekly-progress",
-          "2026-jang-neurosymbolic-pc"
-        ]
-      },
-      {
-        "id": "site-checks",
-        "title": "Evidence and site checks",
-        "description": "Retrieve construction operations and inspect requirements, hazards, and corrective actions.",
-        "papers": [
-          "2025-guo-egoconqs",
-          "2025-liu-egosafe",
+          "2026-jang-neurosymbolic-pc",
           "2026-qiu-graphrag-compliance",
-          "2026-zhang-constructai"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "workplace-safety",
-    "title": "Workplace safety",
-    "description": "Inspect protective equipment, identify rule violations, and evaluate actionable hazard warnings.",
-    "groups": [
-      {
-        "id": "protective-equipment",
-        "title": "Protective equipment checks",
-        "description": "Workplace image data and methods for PPE presence, equipment attributes, and harness anchoring states.",
-        "papers": [
-          "2025-ahmad-sh17",
-          "2025-chen-clip2safety",
-          "2026-yao-yolo-ilb"
-        ]
-      },
-      {
-        "id": "hazard-monitoring",
-        "title": "Rules and hazard monitoring",
-        "description": "Construction and mining systems that combine observations with safety rules, reports, incident records, or human confirmation.",
-        "papers": [
+          "2026-zhang-constructai",
           "2025-chan-domain-vlm",
           "2025-wang-siteshield",
           "2026-ranasinghe-safety-reasoning",
           "2026-wu-monitorvlm-v2"
+        ],
+        "children": []
+      },
+      {
+        "id": "products",
+        "title": "Products & platforms",
+        "description": "Solutions documented in the wiki business catalog. Vendor descriptions are not independent evaluations.",
+        "papers": [],
+        "children": [],
+        "solutions": [
+          "buildots",
+          "openspace",
+          "dronedeploy",
+          "retrocausal",
+          "viact",
+          "kiber",
+          "verkada",
+          "nvidia-vss"
         ]
       },
       {
-        "id": "warning-evaluation",
-        "title": "Evaluate hazard warnings",
-        "description": "Actionable accident precursors and evidence for collision-monitoring capabilities, including timing and grounding.",
+        "id": "analytics-infrastructure",
+        "title": "Video analytics infrastructure",
+        "description": "Frame filtering, configuration and resource scheduling for video workloads.",
         "papers": [
-          "2026-zhao-pasbench-video",
-          "2026-ziadia-collision-survey"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "assessment",
-    "title": "Skill and anomaly assessment",
-    "description": "Assess execution quality and unusual events under task-specific evaluation assumptions.",
-    "groups": [
-      {
-        "id": "skill-feedback",
-        "title": "Skill and feedback",
-        "description": "Relative proficiency, informative moments, and expert feedback from demonstrations.",
-        "papers": [
-          "2018-doughty-skill-ranking",
-          "2026-mazzamuto-proskill",
-          "2026-braun-skillspotter",
-          "2025-ashutosh-expertaf"
-        ]
-      },
-      {
-        "id": "video-anomalies",
-        "title": "Video anomaly detection",
-        "description": "Surveillance anomaly detection and explanation, separate from procedure-specific correctness.",
-        "papers": [
-          "2024-wu-ovvad",
-          "2025-li-anomize",
-          "2025-ye-vera",
-          "2024-zanella-lavad",
-          "2025-zhang-holmes-vau",
-          "2026-chen-reactvau",
-          "2026-wang-parsee-vad"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "robot-learning",
-    "title": "Reward and policy learning",
-    "description": "Learn rewards from video, demonstrations, preferences, or corrections and use them to train behavior.",
-    "groups": [
-      {
-        "id": "visual-rewards",
-        "title": "Visual rewards for policies",
-        "description": "Goal-image and language-conditioned rewards, progress estimates, and rollout scores evaluated for policy learning.",
-        "papers": [
-          "2023-ma-vip",
-          "2025-ayalew-progressor",
-          "2025-zhang-rewind",
-          "2026-lee-roboreward"
-        ]
-      },
-      {
-        "id": "preferences-and-corrections",
-        "title": "Preferences and corrections",
-        "description": "Human comparisons, criterion-specific preferences, and corrective interventions as supervision for behavior learning.",
-        "papers": [
-          "2017-christiano-human-preferences",
-          "2026-torne-freeform-preference",
-          "2025-luo-hil-serl"
-        ]
+          "2020-li-reducto",
+          "2017-zhang-videostorm",
+          "2018-jiang-chameleon"
+        ],
+        "children": []
       }
     ]
   }

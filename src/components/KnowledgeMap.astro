@@ -1,17 +1,30 @@
 ---
-import { mapTopics, legacyMapTopics, legacyMapChapters } from '../lib/method-map';
+import { mapTopics, datasetViews, mapStats, mapTaxonomySources, legacyMapTopics, legacyMapChapters } from '../lib/method-map';
+import MapBranch from './MapBranch.astro';
 import '../styles/map.css';
 ---
 <section class="network" id="map" aria-labelledby="atlas-title">
   <header class="network-heading">
-    <h1 id="atlas-title">Methods map</h1>
+    <div><h1 id="atlas-title">Research map</h1><p class="network-inventory">{mapStats.publications} publications · {mapStats.resources} resources · {mapStats.solutions} products &amp; platforms</p></div>
     <div class="network-toolbar">
-      <button class="spotlight-filter" data-map-spotlight aria-pressed="false" title="Show the wiki’s 11 spotlight priorities"><span aria-hidden="true">★</span> Spotlight</button>
+      <button class="spotlight-filter" data-map-spotlight aria-pressed="false" title="Show the wiki’s 11 spotlight publications and their resources"><span aria-hidden="true">★</span> Spotlight</button>
       <div class="network-views" aria-label="Map view"><button data-map-view="graph" aria-pressed="false">Graph</button><button data-map-view="list" aria-pressed="true">List</button></div>
     </div>
   </header>
+  <div class="network-filters" hidden>
+    <label>Datasets by <select data-map-datasets aria-label="Group datasets by"><option value="task">Task</option><option value="video">Video type</option><option value="evaluation">Evaluation format</option></select></label>
+    <details class="map-taxonomy">
+      <summary>How datasets are grouped</summary>
+      <div class="map-taxonomy-content">
+        <p>Task groups describe what a resource trains or evaluates, not a required model architecture. Video type describes its observations. Evaluation format describes the expected output. Access protocols, such as full-video or streaming access, are listed separately.</p>
+        <p>The selector groups 98 general resources. Nine robot resources are grouped by task under Robotics, with the same metadata in their cards.</p>
+        <p>A resource may belong to several groups. Counts show unique items within each branch. Publications, resources and products count as separate items, so branch totals do not sum to the publication inventory.</p>
+        {mapTaxonomySources.map(source => <p><a href={source.url}>{source.title}</a>{source.note && <> — {source.note}</>}</p>)}
+      </div>
+    </details>
+  </div>
   <div class="network-graph" id="map-graph" hidden>
-    <div class="network-viewport" id="knowledge-map" tabindex="0" aria-label="Methods map. Expand task groups to explore papers. Zoom with the scroll wheel or plus and minus keys. Pan by dragging or using arrow keys. Press zero to fit all nodes.">
+    <div class="network-viewport" id="knowledge-map" tabindex="0" aria-label="Research map. Expand branches to explore methods, resources and systems. Zoom with the scroll wheel or plus and minus keys. Pan by dragging or using arrow keys. Press zero to fit all nodes.">
       <div class="network-stage"><svg class="network-edges" aria-hidden="true"></svg><div class="network-nodes"></div></div>
     </div>
     <div class="network-controls" aria-label="Map controls">
@@ -23,29 +36,22 @@ import '../styles/map.css';
       <button data-map-reset aria-label="Collapse all branches" title="Collapse all"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4v6h6M4.5 10a8 8 0 1 1 .5 6"/></svg></button>
     </div>
   </div>
-  <aside class="paper-preview" id="paper-preview" aria-label="Paper preview" hidden>
+  <aside class="paper-preview" id="paper-preview" aria-label="Research item preview" hidden>
     <button class="preview-close" aria-label="Close paper preview">×</button>
     <div class="preview-meta"></div>
     <h2></h2>
     <p class="preview-summary" id="preview-description"></p>
+    <dl class="map-facets preview-facets"></dl>
+    <p class="preview-limitations" hidden></p>
+    <div class="map-source-links preview-sources"></div>
     <div class="preview-spotlight" hidden><span>★ Wiki spotlight</span><p></p></div>
-    <a class="preview-link" href="/papers/">Read paper →</a>
+    <a class="preview-link" href="/papers/">Read publication →</a>
   </aside>
   <div class="network-list" id="map-list">
-    {mapTopics.map(topic => <details data-topic={topic.id}>
-      <summary>{topic.title}<span class="list-toggle" aria-hidden="true">+</span></summary>
-      {topic.groups.map(group => <details class:list={["network-list-group", { "single-group": topic.groups.length === 1 }]} data-group={group.id} open={topic.groups.length === 1}>
-        <summary>{group.title}<span class="list-toggle" aria-hidden="true">+</span></summary>
-        <p class="network-group-description">{group.description}</p>
-        <ul>{group.papers.map(paper => <li data-paper={paper.id} data-spotlight={String(paper.spotlight)}>
-          <a href={paper.href}><span>{paper.title}{paper.spotlight && <span class="network-star" aria-label="Wiki spotlight">★</span>}</span><span aria-hidden="true">↗</span></a>
-          <p class="network-list-meta">{paper.year} · {paper.venue} · {paper.kind}</p>
-          <p class="network-list-summary">{paper.summary}</p>
-          {paper.spotlight && <p class="network-list-spotlight">{paper.spotlightReason}</p>}
-        </li>)}</ul>
-      </details>)}
-    </details>)}
+    {mapTopics.map(topic => topic.id === 'datasets'
+      ? Object.entries(datasetViews).map(([mode, children]) => <MapBranch node={{ ...topic, children }} datasetView={mode} />)
+      : <MapBranch node={topic} />)}
   </div>
-  <script type="application/json" id="map-data" set:html={JSON.stringify({ topics: mapTopics, legacyTopics: legacyMapTopics, legacyChapters: legacyMapChapters }).replace(/</g, '\u003c')}/>
+  <script type="application/json" id="map-data" set:html={JSON.stringify({ topics: mapTopics, datasetViews, legacyTopics: legacyMapTopics, legacyChapters: legacyMapChapters }).replace(/</g, '\u003c')}/>
 </section>
 <script src="../scripts/map.ts"></script>

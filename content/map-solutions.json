@@ -1,0 +1,70 @@
+{
+  "checked": "2026-11-01",
+  "source": "business-cases.md",
+  "solutions": [
+    {
+      "id": "buildots",
+      "title": "Buildots + Dot",
+      "kind": "Commercial product",
+      "summary": "Construction progress from site captures, BIM and schedules, with conversational access to structured progress records.",
+      "url": "https://buildots.com/PRODUCT/",
+      "limitations": "Vendor-described workflow. Processing latency is distinct from question-answering latency."
+    },
+    {
+      "id": "openspace",
+      "title": "OpenSpace",
+      "kind": "Commercial product",
+      "summary": "Construction visual documentation and progress tracking organized by site location, trade and schedule activity.",
+      "url": "https://www.openspace.ai/products/progress-tracking/",
+      "limitations": "Official materials describe AI combined with construction-expert review."
+    },
+    {
+      "id": "dronedeploy",
+      "title": "DroneDeploy Progress AI",
+      "kind": "Commercial product",
+      "summary": "Progress reports and work-in-place comparisons from 360-degree walks and drone capture.",
+      "url": "https://dronedeploy.com/product/progress-ai",
+      "limitations": "The catalog records early-access language and unmatched timing claims. Availability was not re-audited."
+    },
+    {
+      "id": "retrocausal",
+      "title": "Retrocausal Assembly / Kaizen Copilot",
+      "kind": "Commercial product",
+      "summary": "Camera-based assembly guidance, step traceability, mistake alerts and process analysis.",
+      "url": "https://retrocausal.ai/assembly-copilot/",
+      "limitations": "Vendor-described workstation/SOP onboarding differs from mobile construction work."
+    },
+    {
+      "id": "viact",
+      "title": "viAct Smart Helmet / viGENT / viHUB",
+      "kind": "Commercial product",
+      "summary": "Helmet and site-safety signals linked to incident notifications, records and supervisor workflows.",
+      "url": "https://www.viact.ai/iot/smart-helmet?trk=products_details_guest_secondary_call_to_action",
+      "limitations": "The checked page does not establish continuous egocentric video capture. Helmet telemetry and separate camera analytics must be distinguished."
+    },
+    {
+      "id": "kiber",
+      "title": "Kiber Assistant / Repogen",
+      "kind": "Commercial product",
+      "summary": "User-directed wearable capture, remote collaboration and reports assembled from voice, images and video.",
+      "url": "https://kiber.tech/kiber-assistant/",
+      "limitations": "Autonomous defect detection and automatic correction verification were not established."
+    },
+    {
+      "id": "verkada",
+      "title": "Verkada Natural-Language Video Search",
+      "kind": "Commercial product",
+      "summary": "Natural-language archive search over indexed person and vehicle observations with camera and time filters.",
+      "url": "https://www.verkada.com/blog/scaling-natural-language-video-search-inside-verkadas-breakthrough/",
+      "limitations": "Vendor engineering account. Retrieval does not establish procedural correctness or repair tracking."
+    },
+    {
+      "id": "nvidia-vss",
+      "title": "NVIDIA Video Search and Summarization",
+      "kind": "Reference platform",
+      "summary": "Reusable video ingestion, search, question answering and incident-verification components for integrators.",
+      "url": "https://docs.nvidia.com/vss",
+      "limitations": "Reference architecture documented at version 3.3.0 in the source catalog, not a validated construction-specific product."
+    }
+  ]
+}

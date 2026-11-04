@@ -22,6 +22,8 @@ OUTPUT = SITE / 'content/wiki'
 REGISTER = SITE / 'content/wiki-papers.json'
 CITATIONS = SITE / 'content/citation-counts.json'
 PUBLICATION_TYPES = SITE / 'content/publication-types.json'
+MAP_RESOURCES = SITE / 'content/map-resources.json'
+MAP_SOLUTIONS = SITE / 'content/map-solutions.json'
 MAP_DESCRIPTIONS = SITE / 'content/map-papers.json'
 MEDIA = SITE / 'public/media/wiki'
 spec = importlib.util.spec_from_file_location('paper_metadata', SITE / 'scripts/import-paper-metadata.py')
@@ -175,6 +177,15 @@ def main():
     CITATIONS.write_text(json.dumps(citation_snapshots, ensure_ascii=False, indent=2) + '\n')
     assert set(type_records) == review_slugs | set(records), 'Contribution types and publication inventory differ'
     PUBLICATION_TYPES.write_text(json.dumps({slug: record['types'] for slug, record in type_records.items()}, ensure_ascii=False, indent=2) + '\n')
+    # Research classifications originate in the wiki, just like paper metadata.
+    resource_bytes = (WIKI / 'raw/map-resources.json').read_bytes()
+    resource_register = json.loads(resource_bytes)
+    expected_resources = {(slug, name) for slug, record in type_records.items() for name in record['resources']}
+    actual_resources = {(entry['publication'], entry['title']) for entry in resource_register['resources']}
+    assert actual_resources == expected_resources, 'Map resource inventory differs from the introducing-publication register'
+    assert len({entry['id'] for entry in resource_register['resources']}) == len(actual_resources), 'Duplicate map resource IDs'
+    MAP_RESOURCES.write_bytes(resource_bytes)
+    MAP_SOLUTIONS.write_bytes((WIKI / 'raw/map-solutions.json').read_bytes())
     map_descriptions = json.loads(MAP_DESCRIPTIONS.read_text())
     for slug, description in map_descriptions.items():
         description['spotlight'] = slug in spotlight

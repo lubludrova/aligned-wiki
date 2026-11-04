@@ -1,0 +1,262 @@
+{
+  "video-encoders": [
+    "perception"
+  ],
+  "object-segmentation": [
+    "perception"
+  ],
+  "features": [
+    "perception"
+  ],
+  "videos-and-moments": [
+    "retrieval",
+    "surveys"
+  ],
+  "selected-video-qa": [
+    "datasets",
+    "qa",
+    "memory-maintenance",
+    "retrieval"
+  ],
+  "memory-writing": [
+    "robot-learning",
+    "episodic-memory",
+    "datasets",
+    "qa",
+    "retrieval"
+  ],
+  "long-term-recall": [
+    "episodic-memory",
+    "datasets",
+    "surveys"
+  ],
+  "structured-event-memory": [
+    "entity-memory",
+    "mixed-memory",
+    "episodic-memory"
+  ],
+  "agentic-search": [
+    "retrieval",
+    "mixed-memory",
+    "surveys"
+  ],
+  "video-query-systems": [
+    "retrieval",
+    "analytics-infrastructure"
+  ],
+  "retrieval": [
+    "retrieval",
+    "surveys",
+    "datasets",
+    "qa",
+    "memory-maintenance",
+    "robot-learning",
+    "episodic-memory",
+    "entity-memory",
+    "mixed-memory",
+    "analytics-infrastructure"
+  ],
+  "shared-histories": [
+    "datasets",
+    "mixed-memory",
+    "entity-memory",
+    "perception"
+  ],
+  "viewpoint-alignment": [
+    "perception",
+    "retrieval",
+    "datasets"
+  ],
+  "spatial-object-memory": [
+    "datasets",
+    "entity-memory",
+    "robot-memory"
+  ],
+  "scene-relations": [
+    "perception",
+    "datasets"
+  ],
+  "observations": [
+    "datasets",
+    "mixed-memory",
+    "entity-memory",
+    "perception",
+    "retrieval",
+    "robot-memory"
+  ],
+  "answer-evidence": [
+    "qa",
+    "datasets"
+  ],
+  "event-attribution": [
+    "datasets"
+  ],
+  "answerability": [
+    "qa",
+    "datasets",
+    "studies"
+  ],
+  "grounding": [
+    "qa",
+    "datasets",
+    "studies"
+  ],
+  "object-transformations": [
+    "perception"
+  ],
+  "state-evidence": [
+    "datasets",
+    "qa",
+    "procedures"
+  ],
+  "goal-progress": [
+    "quality-progress",
+    "robot-learning"
+  ],
+  "states": [
+    "perception",
+    "datasets",
+    "qa",
+    "procedures",
+    "quality-progress",
+    "robot-learning"
+  ],
+  "steps-and-dependencies": [
+    "procedures",
+    "research-systems",
+    "datasets"
+  ],
+  "execution-benchmarks": [
+    "datasets",
+    "procedures"
+  ],
+  "execution-error-detection": [
+    "procedures",
+    "surveys"
+  ],
+  "error-explanations": [
+    "datasets",
+    "procedures"
+  ],
+  "action-recognition": [
+    "perception",
+    "procedures"
+  ],
+  "procedures": [
+    "procedures",
+    "research-systems",
+    "datasets",
+    "surveys",
+    "perception"
+  ],
+  "streaming-context": [
+    "episodic-memory",
+    "memory-maintenance"
+  ],
+  "response-timing": [
+    "datasets",
+    "research-systems",
+    "robot-datasets",
+    "retrieval"
+  ],
+  "step-feedback": [
+    "research-systems",
+    "datasets",
+    "procedures"
+  ],
+  "streaming-dialogue": [
+    "qa"
+  ],
+  "event-captioning": [
+    "perception"
+  ],
+  "streaming": [
+    "episodic-memory",
+    "memory-maintenance",
+    "datasets",
+    "research-systems",
+    "robot-datasets",
+    "retrieval",
+    "procedures",
+    "qa",
+    "perception"
+  ],
+  "site-progress": [
+    "research-systems",
+    "quality-progress",
+    "studies"
+  ],
+  "site-checks": [
+    "retrieval",
+    "anomalies-safety",
+    "research-systems"
+  ],
+  "construction": [
+    "research-systems",
+    "quality-progress",
+    "studies",
+    "retrieval",
+    "anomalies-safety"
+  ],
+  "protective-equipment": [
+    "datasets",
+    "anomalies-safety"
+  ],
+  "hazard-monitoring": [
+    "research-systems"
+  ],
+  "warning-evaluation": [
+    "datasets",
+    "surveys"
+  ],
+  "workplace-safety": [
+    "datasets",
+    "anomalies-safety",
+    "research-systems",
+    "surveys"
+  ],
+  "skill-feedback": [
+    "quality-progress",
+    "datasets"
+  ],
+  "video-anomalies": [
+    "anomalies-safety"
+  ],
+  "assessment": [
+    "quality-progress",
+    "datasets",
+    "anomalies-safety"
+  ],
+  "visual-rewards": [
+    "robot-learning"
+  ],
+  "preferences-and-corrections": [
+    "robot-learning"
+  ],
+  "human-video-transfer": [
+    "robot-surveys"
+  ],
+  "robot-learning": [
+    "robot-learning",
+    "robot-surveys"
+  ],
+  "foundations": [
+    "perception"
+  ],
+  "archive": [
+    "retrieval",
+    "memory-construction"
+  ],
+  "evidence": [
+    "qa"
+  ],
+  "practice": [
+    "systems"
+  ],
+  "synthesis": [
+    "assessment"
+  ],
+  "adjacent": [
+    "assessment"
+  ]
+}

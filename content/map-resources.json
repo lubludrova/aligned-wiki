@@ -1,0 +1,3177 @@
+{
+  "version": 1,
+  "taxonomySources": [
+    {
+      "title": "Agentic Video Understanding: A Survey (requested v1)",
+      "url": "https://arxiv.org/html/2609.31713v1",
+      "note": "Sections II-A, VI and VII distinguish task/capability, supervision, evidence-access regime and evaluation format. Table III explicitly defines Video Mode as access to evidence, not camera viewpoint. The local task families and viewpoint facet are our navigation synthesis, not a copied method taxonomy. Dataset use does not establish which agent architecture is required."
+    }
+  ],
+  "classificationNotes": [
+    "Resources preserve the existing 107-entry inventory. Grouped families and editions remain grouped rather than being silently split or double-counted.",
+    "Tasks identify capabilities evaluated or supervised. Memory QA does not necessarily evaluate memory construction or maintenance independently.",
+    "Video types describe source observations. Access protocols describe what evidence a system may use. Neither implies real-time throughput, bounded storage, physical deployment or public availability.",
+    "Evaluation formats describe outputs, not a shared metric or directly comparable performance. Training-only resources have no evaluation format.",
+    "Classification relies on the wiki notes and archived evidence register. Not specified marks missing evidence rather than inferred protocol.",
+    "A resource may appear in multiple task/view/format groups, but retains one stable identity and introducing publication.",
+    "Resources with a substantive robot-learning, robot-memory or robot-safety purpose are routed to Robotics. M3-Bench-robot is actor-recorded general memory QA and remains outside that route."
+  ],
+  "resources": [
+    {
+      "id": "resource-epic-skills",
+      "title": "EPIC-Skills",
+      "publication": "2018-doughty-skill-ranking",
+      "summary": "Pairwise skill ranking across surgery, dough rolling, drawing and chopstick use.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Scores & pairwise comparisons"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://dimadamen.github.io/Skill/whos_better_whos_best.pdf"
+      ],
+      "evidence": "wiki/2018-doughty-skill-ranking.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[0], archived PDF p. 5.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-tvr",
+      "title": "TVR",
+      "publication": "2020-lei-tvr",
+      "summary": "Corpus-level temporal moment retrieval from television video and subtitles.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Retrieval & localization"
+      ],
+      "videoTypes": [
+        "Exocentric video"
+      ],
+      "evaluationFormats": [
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2001.09099"
+      ],
+      "evidence": "wiki/2020-lei-tvr.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[1], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-tvc",
+      "title": "TVC",
+      "publication": "2020-lei-tvr",
+      "summary": "Captioning temporally localized television moments.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Captioning & summarization"
+      ],
+      "videoTypes": [
+        "Exocentric video"
+      ],
+      "evaluationFormats": [
+        "Captioning & summarization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2001.09099"
+      ],
+      "evidence": "wiki/2020-lei-tvr.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[2], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-multi-ego",
+      "title": "Multi-Ego",
+      "publication": "2022-elfeki-multi-ego",
+      "summary": "Joint summarization of several people's synchronized egocentric videos.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Captioning & summarization"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Captioning & summarization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/WACV2022/papers/Elfeki_Multi-Stream_Dynamic_Video_Summarization_WACV_2022_paper.pdf"
+      ],
+      "evidence": "wiki/2022-elfeki-multi-ego.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[3], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-ego4d",
+      "title": "Ego4D",
+      "publication": "2022-grauman-ego4d",
+      "summary": "Egocentric corpus with episodic memory, forecasting, hand/object interaction, audio and social benchmarks.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "Perception & representations",
+        "Retrieval & localization"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Temporal localization",
+        "Spatial localization & tracking",
+        "Classification & segmentation"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://www.cs.utexas.edu/~grauman/papers/ego4d-cvpr2022.pdf"
+      ],
+      "evidence": "wiki/2022-grauman-ego4d.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[4], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. This is a collection and benchmark suite. NLQ returns evidence intervals, not generated answers. Access and outputs vary by task."
+    },
+    {
+      "id": "resource-egotaskqa",
+      "title": "EgoTaskQA",
+      "publication": "2022-jia-egotaskqa",
+      "summary": "State, dependency, explanatory, predictive and counterfactual QA over LEMMA activities.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA",
+        "Classification & segmentation"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2210.03929v1"
+      ],
+      "evidence": "wiki/2022-jia-egotaskqa.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[5], archived PDF p. 1. Original paper §Answer Generation and Table 1 distinguish open-answer queries from multiple-choice protocols.",
+      "limitations": "Access and licensing must be checked before experimental use. The original protocol uses open-answer queries and binary verification, with supervised answer-vocabulary classification. Later MCQ conversions are not the original benchmark format."
+    },
+    {
+      "id": "resource-assembly101",
+      "title": "Assembly101",
+      "publication": "2022-sener-assembly101",
+      "summary": "Multiview assembly/disassembly, fine actions, procedure recognition and mistake/correction analysis.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality",
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Exocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2203.14712v2"
+      ],
+      "evidence": "wiki/2022-sener-assembly101.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[6], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Camera-hours and individual camera videos are not independent task trials. Offline segmentation and early recognition use different protocols."
+    },
+    {
+      "id": "resource-changeit",
+      "title": "ChangeIt",
+      "publication": "2022-soucek-look-for-change",
+      "summary": "Discovering action-related object-state changes in untrimmed instructional videos.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2203.11637v1"
+      ],
+      "evidence": "wiki/2022-soucek-look-for-change.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[7], archived PDF p. 2.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-holoassist",
+      "title": "HoloAssist",
+      "publication": "2023-wang-holoassist",
+      "summary": "Multimodal interactive task performance, errors, instructor interventions and hand-motion forecasting.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality",
+        "Interaction & timing"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_HoloAssist_an_Egocentric_Human_Interaction_Dataset_for_Interactive_AI_Assistants_ICCV_2023_paper.pdf"
+      ],
+      "evidence": "wiki/2023-wang-holoassist.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[8], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Mistake recognition uses supplied action clips. Intervention prediction uses windows before known interventions, not a fully autonomous full-stream timing test."
+    },
+    {
+      "id": "resource-live-streaming-dialogue-data",
+      "title": "LIVE streaming-dialogue data",
+      "publication": "2024-chen-videollm-online",
+      "summary": "Ego4D narration and COIN annotations converted to causal, temporally aligned streaming dialogue.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Interaction & timing",
+        "Captioning & summarization"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2406.11816v1"
+      ],
+      "evidence": "wiki/2024-chen-videollm-online.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[9], archived PDF p. 7.",
+      "limitations": "Descriptive catalog label. Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-egosdqes-sdqes-protocol",
+      "title": "EgoSDQES / SDQES protocol",
+      "publication": "2024-eyzaguirre-sdqes",
+      "summary": "Language-conditioned detection of event onset under timing and prediction-budget constraints.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Retrieval & localization",
+        "Interaction & timing"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Temporal localization",
+        "Timed responses & tool actions"
+      ],
+      "accessProtocols": [
+        "Causal observation window"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2024/file/b689b90ddf2b47d3103decabe6d47446-Paper-Datasets_and_Benchmarks_Track.pdf"
+      ],
+      "evidence": "wiki/2024-eyzaguirre-sdqes.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[10], archived PDF p. 2.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-active-memories-benchmark-amb",
+      "title": "Active Memories Benchmark (AMB)",
+      "publication": "2024-goletto-amego",
+      "summary": "Visual questions about interaction ordering, concurrency and temporal grounding.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "Retrieval & localization"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2409.10917v1"
+      ],
+      "evidence": "wiki/2024-goletto-amego.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[11], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Memory is evaluated through visual queries after processing the video. QA results do not separately establish online memory formation quality."
+    },
+    {
+      "id": "resource-ego-exo4d",
+      "title": "Ego-Exo4D",
+      "publication": "2024-grauman-ego-exo4d",
+      "summary": "Synchronized first/third-person skilled activities, cross-view understanding, proficiency and pose.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality",
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Exocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Scores & pairwise comparisons",
+        "Spatial localization & tracking",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2311.18259v4"
+      ],
+      "evidence": "wiki/2024-grauman-ego-exo4d.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[12], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Task-specific protocols differ. Synchronized ego/exo recording does not imply every benchmark consumes both views."
+    },
+    {
+      "id": "resource-egoexolearn",
+      "title": "EgoExoLearn",
+      "publication": "2024-huang-egoexolearn",
+      "summary": "Asynchronous ego/exo demonstration alignment, action understanding and comparative skill.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality",
+        "Perception & representations",
+        "Retrieval & localization"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Exocentric video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Scores & pairwise comparisons",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2403.16182v3"
+      ],
+      "evidence": "wiki/2024-huang-egoexolearn.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[13], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Asynchronous demonstration alignment is distinct from synchronized same-event camera views."
+    },
+    {
+      "id": "resource-egoper",
+      "title": "EgoPER",
+      "publication": "2024-lee-egoper",
+      "summary": "Cooking procedures with step boundaries, normal executions and several mistake/correction types.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/CVPR2024/papers/Lee_Error_Detection_in_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.pdf"
+      ],
+      "evidence": "wiki/2024-lee-egoper.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[14], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-oscar",
+      "title": "OSCaR",
+      "publication": "2024-nguyen-oscar",
+      "summary": "Natural-language object-state descriptions, state changes, QA and dialogue.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA",
+        "Captioning & summarization",
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2402.17128v4"
+      ],
+      "evidence": "wiki/2024-nguyen-oscar.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[15], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-captaincook4d",
+      "title": "CaptainCook4D",
+      "publication": "2024-peddi-captaincook4d",
+      "summary": "Correct and erroneous cooking executions, fine-grained procedural errors and temporal annotations.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2024/file/f4a04396c2ed1342a5d8d05e94cb6101-Paper-Datasets_and_Benchmarks_Track.pdf"
+      ],
+      "evidence": "wiki/2024-peddi-captaincook4d.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[16], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-easg",
+      "title": "EASG",
+      "publication": "2024-rodin-easg",
+      "summary": "Egocentric action scene-graph annotations on Ego4D, graph generation and downstream evaluation.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Structured graph prediction"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2312.03391"
+      ],
+      "evidence": "wiki/2024-rodin-easg.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[17], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-industreal-psr",
+      "title": "IndustReal / PSR",
+      "publication": "2024-schoonbeek-industreal",
+      "summary": "Industrial-style assembly/maintenance, component states and procedure-step completion.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Causal observation window"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/WACV2024/papers/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.pdf"
+      ],
+      "evidence": "wiki/2024-schoonbeek-industreal.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[18], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-protas-cooking-collection",
+      "title": "ProTAS cooking collection",
+      "publication": "2024-shen-protas",
+      "summary": "Author-described 207-video cooking collection with task graphs and framewise step labels.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/CVPR2024/papers/Shen_Progress-Aware_Online_Action_Segmentation_for_Egocentric_Procedural_Task_Videos_CVPR_2024_paper.pdf"
+      ],
+      "evidence": "wiki/2024-shen-protas.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[19], archived PDF p. 2.",
+      "limitations": "Descriptive catalog label. The introduction describes 207 collected videos, while the reported experiments use GTEA, EgoProceL and EgoPER. No named release or separate evaluation protocol was verified, so this paper receives dataset but no benchmark tag for this collection. A distinct collection is author-described, but no named release or separate reusable benchmark protocol was verified."
+    },
+    {
+      "id": "resource-howtochange",
+      "title": "HowToChange",
+      "publication": "2024-xue-vidosc",
+      "summary": "Object-state changes with held-out object/transformation combinations.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/CVPR2024/papers/Xue_Learning_Object_State_Changes_in_Videos_An_Open-World_Perspective_CVPR_2024_paper.pdf"
+      ],
+      "evidence": "wiki/2024-xue-vidosc.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[20], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-sh17",
+      "title": "SH17",
+      "publication": "2025-ahmad-sh17",
+      "summary": "Industrial/manufacturing PPE and body-region detection in images.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Safety & anomalies"
+      ],
+      "videoTypes": [
+        "Images"
+      ],
+      "evaluationFormats": [
+        "Spatial localization & tracking"
+      ],
+      "accessProtocols": [
+        "Static-image input"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2407.04590v1"
+      ],
+      "evidence": "wiki/2025-ahmad-sh17.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[21], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-navqa",
+      "title": "NaVQA",
+      "publication": "2025-anwar-remembr",
+      "summary": "Spatial, temporal and descriptive questions about robot navigation history.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Robot-view video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": true,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2409.13682v1"
+      ],
+      "evidence": "wiki/2025-anwar-remembr.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[22], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Memory contains robot positions, not reconstructed object poses. Sequential ingestion and historical retrieval are separate stages."
+    },
+    {
+      "id": "resource-expertaf-feedback-tuples",
+      "title": "ExpertAF feedback tuples",
+      "publication": "2025-ashutosh-expertaf",
+      "summary": "Actionable feedback, expert-clip retrieval and corrected body-pose prediction from Ego-Exo4D.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality",
+        "Interaction & timing",
+        "Retrieval & localization"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Exocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Captioning & summarization",
+        "Spatial localization & tracking",
+        "Retrieval ranking"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/CVPR2025/papers/Ashutosh_ExpertAF_Expert_Actionable_Feedback_from_Video_CVPR_2025_paper.pdf"
+      ],
+      "evidence": "wiki/2025-ashutosh-expertaf.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[23], archived PDF p. 6.",
+      "limitations": "Descriptive catalog label. Access and licensing must be checked before experimental use. Outputs include corrected poses, not generated expert RGB video. Standard inference excludes the paired expert example available during training."
+    },
+    {
+      "id": "resource-qualcomm-interactive-cooking",
+      "title": "Qualcomm Interactive Cooking",
+      "publication": "2025-bhattacharyya-livemamba",
+      "summary": "Timed cooking instructions, completion feedback, mistake advice and replanning.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality",
+        "Interaction & timing"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Timed responses & tool actions"
+      ],
+      "accessProtocols": [
+        "Causal observation window"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2511.21998v2"
+      ],
+      "evidence": "wiki/2025-bhattacharyya-livemamba.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[24], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Main evaluation follows recorded action order. Advanced planning/replanning is a separate setting."
+    },
+    {
+      "id": "resource-qv-m2",
+      "title": "QV-M²",
+      "publication": "2025-cao-flashmmr",
+      "summary": "Retrieval of multiple relevant intervals for one query, extending QVHighlights.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Retrieval & localization"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://proceedings.nips.cc/paper_files/paper/2025/file/faaa187af979e46dc54f4d43f8b815b2-Paper-Conference.pdf"
+      ],
+      "evidence": "wiki/2025-cao-flashmmr.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[25], archived PDF p. 4.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-domain-vlm-construction-instruction-data",
+      "title": "Domain-VLM construction instruction data",
+      "publication": "2025-chan-domain-vlm",
+      "summary": "Image/instruction/response supervision for work-at-height safety compliance.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Safety & anomalies"
+      ],
+      "videoTypes": [
+        "Images"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://easychair.org/publications/paper/7fbx/download"
+      ],
+      "evidence": "wiki/2025-chan-domain-vlm.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[26], archived PDF p. 3.",
+      "limitations": "Descriptive catalog label. Derived construction images and generated/polished responses. Public download not verified. This is training supervision, not a claimed new benchmark."
+    },
+    {
+      "id": "resource-indego",
+      "title": "IndEgo",
+      "publication": "2025-chavan-indego",
+      "summary": "Multiworker industrial activity, collaboration and ego/exo observations.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality",
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Exocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization",
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2511.19684v1"
+      ],
+      "evidence": "wiki/2025-chavan-indego.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[27], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Early mistake evaluation exposes the first half of a supplied segment. This is not autonomous discovery of step boundaries."
+    },
+    {
+      "id": "resource-multihop-egoqa",
+      "title": "MultiHop-EgoQA",
+      "publication": "2025-chen-gelm",
+      "summary": "Multi-hop video QA with separate temporal evidence for answer phrases.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "QA & reasoning",
+        "Retrieval & localization"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2408.14469v1"
+      ],
+      "evidence": "wiki/2025-chen-gelm.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[28], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Grounded multi-hop QA evaluates answers and phrase-linked temporal intervals jointly. It is not only moment retrieval."
+    },
+    {
+      "id": "resource-videorag-instructional-qa-collection",
+      "title": "VideoRAG instructional QA collection",
+      "publication": "2025-jeong-videorag",
+      "summary": "WikiHowQA questions associated with HowTo100M instructional videos for retrieval-augmented answering.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Retrieval & localization",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://aclanthology.org/2025.findings-acl.1096.pdf"
+      ],
+      "evidence": "wiki/2025-jeong-videorag.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[29], archived PDF p. 2.",
+      "limitations": "Descriptive catalog label. A newly associated collection/protocol built from existing WikiHowQA and HowTo100M. This does not make VideoRAG the origin of either source dataset."
+    },
+    {
+      "id": "resource-egooops",
+      "title": "EgoOops",
+      "publication": "2025-haneji-egooops",
+      "summary": "Instruction-conditioned execution mistakes and explanations across five tasks.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Captioning & summarization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://www.lsta.media.kyoto-u.ac.jp/mori/research/public/haneji-SAUAFG2025.pdf"
+      ],
+      "evidence": "wiki/2025-haneji-egooops.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[30], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Execution mistakes are covered, while ordering errors and omissions are outside the stated dataset scope."
+    },
+    {
+      "id": "resource-egoexobench",
+      "title": "EgoExoBench",
+      "publication": "2025-he-egoexobench",
+      "summary": "Cross-view semantic, temporal, viewpoint and comparative-skill QA.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "QA & reasoning",
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Exocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2507.18342v1"
+      ],
+      "evidence": "wiki/2025-he-egoexobench.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[31], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-hd-epic",
+      "title": "HD-EPIC",
+      "publication": "2025-perrett-hd-epic",
+      "summary": "Connected kitchen activity, recipe, gaze, audio, object and spatial annotations.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations",
+        "Memory",
+        "Procedures & quality",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA",
+        "Spatial localization & tracking",
+        "Temporal localization",
+        "Classification & segmentation"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/CVPR2025/papers/Perrett_HD-EPIC_A_Highly-Detailed_Egocentric_Video_Dataset_CVPR_2025_paper.pdf"
+      ],
+      "evidence": "wiki/2025-perrett-hd-epic.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[32], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. The collection supports multiple tasks. QA, tracking and geometry should not be treated as one evaluation format."
+    },
+    {
+      "id": "resource-osnom-benchmark",
+      "title": "OSNOM benchmark",
+      "publication": "2025-plizzari-osnom",
+      "summary": "Persistent 3D tracking of active objects after they leave the camera view, using EPIC-KITCHENS annotations.",
+      "roles": [
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Spatial localization & tracking"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2404.05072v2"
+      ],
+      "evidence": "wiki/2025-plizzari-osnom.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[33], archived PDF p. 5.",
+      "limitations": "Descriptive catalog label. New evaluation task over existing EPIC-KITCHENS, VISOR and EPIC Fields annotations. No separate new annotation dataset contribution established. This is a protocol over existing EPIC-KITCHENS annotations, not a newly introduced raw-video dataset. Precomputed geometry and retrospective initialization prevent treating the complete baseline as causal."
+    },
+    {
+      "id": "resource-meccano-psr-annotation-extension",
+      "title": "MECCANO PSR annotation extension",
+      "publication": "2025-schoonbeek-storm-psr",
+      "summary": "Assembly-state and step-completion annotations extending MECCANO.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Causal observation window"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2510.12385"
+      ],
+      "evidence": "wiki/2025-schoonbeek-storm-psr.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[34], archived PDF p. 1.",
+      "limitations": "Descriptive catalog label. Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-vost-tas-trackanystate",
+      "title": "VOST-TAS / TrackAnyState",
+      "publication": "2025-sun-tubeletgraph",
+      "summary": "Joint object tracking and action-driven state-transition recognition.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Spatial localization & tracking",
+        "Structured graph prediction"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2511.04678v2"
+      ],
+      "evidence": "wiki/2025-sun-tubeletgraph.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[35], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-egolife-egolifeqa",
+      "title": "EgoLife / EgoLifeQA",
+      "publication": "2025-yang-egolife",
+      "summary": "Week-scale daily-life recordings and long-context episodic QA.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2503.03803v3"
+      ],
+      "evidence": "wiki/2025-yang-egolife.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[36], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Timestamp-restricted questions do not establish that offline memory construction is causal or that storage is bounded."
+    },
+    {
+      "id": "resource-egoit-99k",
+      "title": "EgoIT-99K",
+      "publication": "2025-yang-egolife",
+      "summary": "Egocentric instruction/QA training examples curated from nine source datasets.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2503.03803v3"
+      ],
+      "evidence": "wiki/2025-yang-egolife.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[37], archived PDF p. 6.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-egomemoria",
+      "title": "EgoMemoria",
+      "publication": "2025-ye-mm-ego",
+      "summary": "Episodic detail questions across long egocentric video.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2410.07177v2"
+      ],
+      "evidence": "wiki/2025-ye-mm-ego.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[38], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. The paper uses debiased accuracy over filtered subsets. A complete-video frame scan precedes detailed frame selection."
+    },
+    {
+      "id": "resource-mm-ego-7m-qa-training-corpus",
+      "title": "MM-Ego 7M QA training corpus",
+      "publication": "2025-ye-mm-ego",
+      "summary": "Seven million synthetic egocentric QA examples derived from Ego4D annotations.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2410.07177v2"
+      ],
+      "evidence": "wiki/2025-ye-mm-ego.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[39], archived PDF p. 1.",
+      "limitations": "Descriptive catalog label. Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-uvqa",
+      "title": "UVQA",
+      "publication": "2025-yoon-uvqa",
+      "summary": "Answerable/unanswerable video questions with rejection explanations, training and evaluation data.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2507.04976v1"
+      ],
+      "evidence": "wiki/2025-yoon-uvqa.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[40], archived PDF p. 1.",
+      "limitations": "Derived QA/answerability annotations over existing videos. The main text presents UVQA as a new dataset, while the ethics section says no new datasets. The tag refers to the new annotation resource, not new raw recordings. Answerability examples and answerable controls draw on different source distributions. Classification is not a guarantee that evidence is absent from a whole archive."
+    },
+    {
+      "id": "resource-moscato-benchmark",
+      "title": "MOSCATO benchmark",
+      "publication": "2025-zameni-moscato",
+      "summary": "Multiple manipulated objects and their states in procedural video, derived from EgoPER.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations",
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/ICCV2025/papers/Zameni_MOSCATO_Predicting_Multiple_Object_State_Change_Through_Actions_ICCV_2025_paper.pdf"
+      ],
+      "evidence": "wiki/2025-zameni-moscato.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[41], archived PDF p. 7.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-odv-bench",
+      "title": "ODV-Bench",
+      "publication": "2025-zeng-streamforest",
+      "summary": "Online driving perception, traffic context and future-risk prediction.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "QA & reasoning",
+        "Interaction & timing",
+        "Safety & anomalies"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Not specified"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2509.24871v1"
+      ],
+      "evidence": "wiki/2025-zeng-streamforest.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[42], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Online evaluation restricts video access to before query time. The exact answer encoding is not established in the wiki note, so it is not assigned an unsupported MCQ/open-ended label."
+    },
+    {
+      "id": "resource-onlineit-general-onlineit-drive",
+      "title": "OnlineIT-general / OnlineIT-drive",
+      "publication": "2025-zeng-streamforest",
+      "summary": "General streaming QA and driving-oriented streaming instruction data.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "QA & reasoning",
+        "Interaction & timing"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2509.24871v1"
+      ],
+      "evidence": "wiki/2025-zeng-streamforest.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[43], archived PDF p. 5.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-hivau-70k",
+      "title": "HIVAU-70k",
+      "publication": "2025-zhang-holmes-vau",
+      "summary": "Hierarchical surveillance-anomaly understanding at video, event and clip scales.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Safety & anomalies",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Exocentric video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA",
+        "Captioning & summarization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Holmes-VAU_Towards_Long-term_Video_Anomaly_Understanding_at_Any_Granularity_CVPR_2025_paper.pdf"
+      ],
+      "evidence": "wiki/2025-zhang-holmes-vau.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[44], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-supermemory-vqa",
+      "title": "SuperMemory-VQA",
+      "publication": "2026-alam-supermemory-vqa",
+      "summary": "Questions over extended recordings, including vague, incorrect and unanswerable queries.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2606.00825v1"
+      ],
+      "evidence": "wiki/2026-alam-supermemory-vqa.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[45], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-vantagebench",
+      "title": "VANTAGEBench",
+      "publication": "2026-bhat-vantage-bench",
+      "summary": "Elevated/exocentric scene QA, object and temporal localization, tracking, captioning and event verification across eight tasks.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations",
+        "QA & reasoning",
+        "Retrieval & localization"
+      ],
+      "videoTypes": [
+        "Exocentric video",
+        "Images"
+      ],
+      "evaluationFormats": [
+        "Spatial localization & tracking",
+        "Open-ended QA",
+        "Temporal localization",
+        "Classification & segmentation",
+        "Captioning & summarization"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2609.09396v1"
+      ],
+      "evidence": "wiki/2026-bhat-vantage-bench.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[46], archived PDF p. 1.",
+      "limitations": "Descriptive catalog label. Access and licensing must be checked before experimental use. The older inventory summary says egocentric. The detailed paper note identifies elevated/exocentric, aerial and vehicle-mounted media, so that note governs this classification. Tracking scenes are synthetic and use the complete sampled sequence."
+    },
+    {
+      "id": "resource-spot-bench",
+      "title": "SPOT-Bench",
+      "publication": "2026-chatterjee-spot-bench",
+      "summary": "Continuous proactive perception/assistance with timing, repeated alerts and silence evaluated.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Interaction & timing",
+        "QA & reasoning",
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Timed responses & tool actions",
+        "Temporal localization",
+        "Open-ended QA",
+        "Classification & segmentation"
+      ],
+      "accessProtocols": [
+        "Causal observation window"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2604.24317v1"
+      ],
+      "evidence": "wiki/2026-chatterjee-spot-bench.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[47], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Timing is scored against video timestamps and acceptable response windows. Oracle response-window experiments are separate from continuous-stream evaluation."
+    },
+    {
+      "id": "resource-egomonth",
+      "title": "EgoMonth",
+      "publication": "2026-chen-egomonth",
+      "summary": "Long-horizon personal memory, habits, counting, temporal reasoning and routes.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2608.13113v1"
+      ],
+      "evidence": "wiki/2026-chen-egomonth.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[48], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. A long collection and recurring-event questions do not prescribe a bounded streaming memory architecture."
+    },
+    {
+      "id": "resource-egostream",
+      "title": "EGOSTREAM",
+      "publication": "2026-forte-egostream",
+      "summary": "Streaming egocentric QA with explicit validity windows and changing facts.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Retained streaming state"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/abs/2605.31557"
+      ],
+      "evidence": "wiki/2026-forte-egostream.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[49], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Raw-frame replay is disallowed in the retained-state protocol, but offloaded token storage may grow. This is not a claim of bounded total storage."
+    },
+    {
+      "id": "resource-svg2-svg2-test",
+      "title": "SVG2 / SVG2-test",
+      "publication": "2026-gao-svg2",
+      "summary": "Synthetic panoptic video scene graphs and a human-annotated test set for objects, attributes and relations.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Structured graph prediction"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2602.23543"
+      ],
+      "evidence": "wiki/2026-gao-svg2.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[50], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-procobject-10k",
+      "title": "ProcObject-10K",
+      "publication": "2026-guo-procobject",
+      "summary": "Object states, prerequisites, mistakes and recovery in procedural QA.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "QA & reasoning",
+        "Procedures & quality",
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2512.03479v3"
+      ],
+      "evidence": "wiki/2026-guo-procobject.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[51], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. The benchmark requires retrospective procedural QA plus temporal evidence. It does not evaluate autonomous alerts during execution."
+    },
+    {
+      "id": "resource-apm-bench",
+      "title": "APM-Bench",
+      "publication": "2026-huang-apm-bench",
+      "summary": "Persistent cross-session memory, causal perception and proactive assistance.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning",
+        "Interaction & timing"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA",
+        "Timed responses & tool actions"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2609.37559v2"
+      ],
+      "evidence": "wiki/2026-huang-apm-bench.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[52], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Historical-session representations are combined with a causal current prefix. Adaptive-response probes are independent runtime instances, and the restricted-history evidence test is a separate condition."
+    },
+    {
+      "id": "resource-ma-egoqa",
+      "title": "MA-EgoQA",
+      "publication": "2026-kim-ma-egoqa",
+      "summary": "Multi-person episodic memory, coordination, social and temporal reasoning.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2603.09827v2"
+      ],
+      "evidence": "wiki/2026-kim-ma-egoqa.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[53], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-v-ragbench",
+      "title": "V-RAGBench",
+      "publication": "2026-lee-carve",
+      "summary": "Video RAG questions with localized answer evidence and shortcut filtering.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Retrieval & localization",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2606.13141v2"
+      ],
+      "evidence": "wiki/2026-lee-carve.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[54], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Retrieval is within one supplied source video per question. A correct answer and successful evidence retrieval are evaluated separately."
+    },
+    {
+      "id": "resource-roboreward-training-data",
+      "title": "RoboReward training data",
+      "publication": "2026-lee-roboreward",
+      "summary": "Robot successes and synthetic/real failures labeled by task-completion quality.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Robot learning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": true,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2601.00675v2"
+      ],
+      "evidence": "wiki/2026-lee-roboreward.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[55], archived PDF p. 3.",
+      "limitations": "Access and licensing must be checked before experimental use. Robot trajectories do not establish a robot-mounted viewpoint. The exact camera-view mixture is not specified here."
+    },
+    {
+      "id": "resource-roborewardbench",
+      "title": "RoboRewardBench",
+      "publication": "2026-lee-roboreward",
+      "summary": "Human-verified five-level robot task-completion reward evaluation.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Robot learning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Scores & pairwise comparisons"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": true,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2601.00675v2"
+      ],
+      "evidence": "wiki/2026-lee-roboreward.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[56], archived PDF p. 3.",
+      "limitations": "Access and licensing must be checked before experimental use. Robot trajectories do not establish a robot-mounted viewpoint. The exact camera-view mixture is not specified here."
+    },
+    {
+      "id": "resource-densecaptionbench",
+      "title": "DenseCaptionBench",
+      "publication": "2026-leng-flora",
+      "summary": "Dense temporal segmentation and action captioning for humans and different robot embodiments.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Robot learning",
+        "Captioning & summarization"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Temporal localization",
+        "Captioning & summarization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": true,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2610.31779v1"
+      ],
+      "evidence": "wiki/2026-leng-flora.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[57], archived PDF p. 3.",
+      "limitations": "Authors' evaluation collection. Public release was not established in the checked sources. Human and robot embodiments share this annotation benchmark family. The robotics placement reflects the paper’s robot-data pipeline, not exclusively robot-view footage. Robot trajectories do not establish a robot-mounted viewpoint. The exact camera-view mixture is not specified here."
+    },
+    {
+      "id": "resource-denserewardbench",
+      "title": "DenseRewardBench",
+      "publication": "2026-leng-flora",
+      "summary": "Time-localized robot action-quality and failure labeling.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Robot learning",
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": true,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2610.31779v1"
+      ],
+      "evidence": "wiki/2026-leng-flora.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[58], archived PDF p. 3.",
+      "limitations": "Only 40 held-out episodes. Public release was not established in the checked sources. Only 40 held-out episodes are described. Do not infer continuous online failure detection from retrospective dense labels. Robot trajectories do not establish a robot-mounted viewpoint. The exact camera-view mixture is not specified here."
+    },
+    {
+      "id": "resource-rubricbench",
+      "title": "RubricBench",
+      "publication": "2026-leng-flora",
+      "summary": "Robot episode grading against human-authored rubrics.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Robot learning",
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Scores & pairwise comparisons"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": true,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2610.31779v1"
+      ],
+      "evidence": "wiki/2026-leng-flora.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[59], archived PDF p. 3.",
+      "limitations": "Explicitly an in-house benchmark, 40 episodes across ten tasks. This is an in-house 40-episode rubric benchmark. A public release was not established. Robot trajectories do not establish a robot-mounted viewpoint. The exact camera-view mixture is not specified here."
+    },
+    {
+      "id": "resource-egoerrorvqa",
+      "title": "EgoErrorVQA",
+      "publication": "2026-li-egoerrorvqa",
+      "summary": "Question answering about procedural mistakes, explanations and correctness.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA",
+        "Open-ended QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2608.24134v1"
+      ],
+      "evidence": "wiki/2026-li-egoerrorvqa.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[60], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-ego4d-m-epic-kitchens-m",
+      "title": "Ego4D-M / EPIC-KITCHENS-M",
+      "publication": "2026-li-matt",
+      "summary": "Synthetic mistake attribution: instruction role, point of no return and image region.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization",
+        "Spatial localization & tracking"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2511.20525v2"
+      ],
+      "evidence": "wiki/2026-li-matt.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[61], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Mistakes are synthesized by instruction/clip mismatching. Inherited point-of-no-return labels are proxies, not newly observed irreversible errors. EPIC-KITCHENS-M has semantic supervision only."
+    },
+    {
+      "id": "resource-streampro-bench",
+      "title": "StreamPro-Bench",
+      "publication": "2026-li-streampro",
+      "summary": "Reactive perception, temporal reasoning and proactive early intervention.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Interaction & timing",
+        "QA & reasoning",
+        "Safety & anomalies"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Timed responses & tool actions",
+        "Open-ended QA",
+        "Temporal localization",
+        "Captioning & summarization"
+      ],
+      "accessProtocols": [
+        "Causal observation window"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2605.16381v1"
+      ],
+      "evidence": "wiki/2026-li-streampro.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[62], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Content and timing use task-specific scoring. Training and evaluation rewards differ. Risk forecasting concerns first-person pedestrian hazards."
+    },
+    {
+      "id": "resource-streampro-sft-63k-streampro-rl-3k",
+      "title": "StreamPro-SFT-63K / StreamPro-RL-3K",
+      "publication": "2026-li-streampro",
+      "summary": "Synthetic streaming-response examples for supervised and reinforcement training.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Interaction & timing",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2605.16381v1"
+      ],
+      "evidence": "wiki/2026-li-streampro.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[63], archived PDF p. 3.",
+      "limitations": "Synthetic training collections, not human-verified test sets."
+    },
+    {
+      "id": "resource-capmem",
+      "title": "CapMem",
+      "publication": "2026-liang-capmem",
+      "summary": "Human-authored video questions that test information retained in caption memory.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Not specified"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://aclanthology.org/2026.emnlp-industry.233.pdf"
+      ],
+      "evidence": "wiki/2026-liang-capmem.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[64], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Caption-memory QA, direct-video QA and retrieve-and-verify controls use different evidence. The exact answer encoding is not established by the note, so it remains unspecified."
+    },
+    {
+      "id": "resource-rbm-1m",
+      "title": "RBM-1M",
+      "publication": "2026-liang-robometer",
+      "summary": "Heterogeneous robot trajectories for progress/reward and relative-preference training.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Robot learning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": true,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2603.02115v2"
+      ],
+      "evidence": "wiki/2026-liang-robometer.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[65], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Robot trajectories do not establish a robot-mounted viewpoint. The exact camera-view mixture is not specified here."
+    },
+    {
+      "id": "resource-rbm-eval-id-rbm-eval-ood-robometer-evaluations",
+      "title": "RBM-EVAL-ID / RBM-EVAL-OOD (Robometer evaluations)",
+      "publication": "2026-liang-robometer",
+      "summary": "In/out-of-distribution progress, trajectory ranking and robot failure evaluation.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Robot learning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Scores & pairwise comparisons"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": true,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2603.02115v2"
+      ],
+      "evidence": "wiki/2026-liang-robometer.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[66], archived PDF p. 3.",
+      "limitations": "Use the original paper's RBM-EVAL names. RobometerBench is an evaluation label used by later work, not a third independently counted dataset. Offline reward/ranking tests and downstream physical policy experiments are separate protocols. Mixed human, robot and simulated data are included. Robot trajectories do not establish a robot-mounted viewpoint. The exact camera-view mixture is not specified here."
+    },
+    {
+      "id": "resource-proactegomem",
+      "title": "ProactEgoMem",
+      "publication": "2026-liao-proactegomem",
+      "summary": "When memory should capture transient facts, object states and object locations.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "Interaction & timing"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Timed responses & tool actions",
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2610.30089v2"
+      ],
+      "evidence": "wiki/2026-liao-proactegomem.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[67], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Causal notification and memory-tool decisions are followed by later QA. The no-memory QA control samples the full clip, so the combined benchmark is not uniformly a no-replay streaming protocol."
+    },
+    {
+      "id": "resource-egoexomem",
+      "title": "EgoExoMem",
+      "publication": "2026-liu-egoexomem",
+      "summary": "Complementary ego/exo evidence retrieval and long-video QA.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Retrieval & localization",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Exocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2605.18734v2"
+      ],
+      "evidence": "wiki/2026-liu-egoexomem.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[68], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. One synchronized ego/exo pair supplies query-dependent evidence. This is not a multi-day memory-construction benchmark."
+    },
+    {
+      "id": "resource-guideme",
+      "title": "GuideMe",
+      "publication": "2026-liu-guideme",
+      "summary": "Timed procedure instruction, error observation and corrective feedback.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Interaction & timing",
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Timed responses & tool actions",
+        "Captioning & summarization"
+      ],
+      "accessProtocols": [
+        "Causal observation window"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2607.02991v1"
+      ],
+      "evidence": "wiki/2026-liu-guideme.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[69], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Default queries are anchored to annotated intervention times and use ground-truth dialogue history. Dense queries and model-generated history are separate ablations."
+    },
+    {
+      "id": "resource-svcbench",
+      "title": "SVCBench",
+      "publication": "2026-liu-svcbench",
+      "summary": "Streaming people, object, event and work-cycle counts with state updates.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations",
+        "Memory"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Numeric counts & state estimates"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2603.12703v3"
+      ],
+      "evidence": "wiki/2026-liu-svcbench.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[70], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Offline prefix replay and native streaming-state baselines coexist. Numeric state/count outputs do not themselves validate identity association."
+    },
+    {
+      "id": "resource-m3-bench-robot-m3-bench-web",
+      "title": "M3-Bench-robot / M3-Bench-web",
+      "publication": "2026-long-m3-agent",
+      "summary": "Identity-grounded multimodal memory and open-ended reasoning over recorded experience.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2508.09736v4"
+      ],
+      "evidence": "wiki/2026-long-m3-agent.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[71], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. M3-Bench-robot uses camera-wearing actors simulating robots, not physical robots. The paired web subset has different source characteristics. This is memory QA, not robot-policy evaluation."
+    },
+    {
+      "id": "resource-wheretochange",
+      "title": "WhereToChange",
+      "publication": "2026-mandikal-spoc",
+      "summary": "Pixel localization of still-actionable versus already-transformed object regions.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Spatial localization & tracking"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2503.11953v2"
+      ],
+      "evidence": "wiki/2026-mandikal-spoc.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[72], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-proskill",
+      "title": "ProSkill",
+      "publication": "2026-mazzamuto-proskill",
+      "summary": "Step-level pairwise human skill judgments and continuous skill scores.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Exocentric video"
+      ],
+      "evaluationFormats": [
+        "Scores & pairwise comparisons"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2601.20661v1"
+      ],
+      "evidence": "wiki/2026-mazzamuto-proskill.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[73], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Human pairwise comparisons produce action-specific ELO/percentile labels. Equal percentiles across different actions do not establish equal competence."
+    },
+    {
+      "id": "resource-egoprobe",
+      "title": "EgoProbe",
+      "publication": "2026-pang-egoprobe",
+      "summary": "Long-range event/detail binding with distractors from other real experiences.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)",
+        "Retained streaming state"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/abs/2610.17128"
+      ],
+      "evidence": "wiki/2026-pang-egoprobe.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[74], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Strict retained-state streaming and prefix-reference replay have different evidence budgets and must be compared separately."
+    },
+    {
+      "id": "resource-egosafetybench",
+      "title": "EgoSafetyBench",
+      "publication": "2026-panpatil-egosafetybench",
+      "summary": "Synthetic robot-view situational hazards and misleading in-scene safety text.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Safety & anomalies"
+      ],
+      "videoTypes": [
+        "Robot-view video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Timed responses & tool actions"
+      ],
+      "accessProtocols": [
+        "Causal observation window"
+      ],
+      "robotics": true,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2607.00218v2"
+      ],
+      "evidence": "wiki/2026-panpatil-egosafetybench.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[75], archived PDF p. 1.",
+      "limitations": "Synthetic short robot-view scenarios, not a construction field-trial dataset. Short synthetic robot-view scenarios are not recorded construction incidents. Timing is relative to visible hazard onset, and overly early warnings are scored separately."
+    },
+    {
+      "id": "resource-longervideos",
+      "title": "LongerVideos",
+      "publication": "2026-ren-videorag",
+      "summary": "Multi-video collection QA over lectures, documentaries and entertainment.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2502.01549v1"
+      ],
+      "evidence": "wiki/2026-ren-videorag.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[76], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-egoindassembly",
+      "title": "EgoIndAssembly",
+      "publication": "2026-sasaki-egoindassembly",
+      "summary": "Fine-grained egocentric assembly steps, hand motion and procedure grounding.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/CVPR2026W/SAUAFG/papers/Sasaki_EgoIndAssembly_Diagnosing_Fine-Grained_Temporal_Hand_Reasoning_in_Vision-Language_Models_for_CVPRW_2026_paper.pdf"
+      ],
+      "evidence": "wiki/2026-sasaki-egoindassembly.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[77], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-egoprocel-task-graph-extension",
+      "title": "EgoProceL task-graph extension",
+      "publication": "2026-seminara-tgml",
+      "summary": "Independently annotated prerequisite graphs and procedural reasoning.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Structured graph prediction"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2502.17753v2"
+      ],
+      "evidence": "wiki/2026-seminara-tgml.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[78], archived PDF p. 2.",
+      "limitations": "Descriptive catalog label. Access and licensing must be checked before experimental use. The new resource is a task-graph annotation extension over EgoProceL, not a new collection of raw videos."
+    },
+    {
+      "id": "resource-icon-pose",
+      "title": "ICON-Pose",
+      "publication": "2026-suen-icon-pose",
+      "summary": "Construction-worker egocentric body keypoints and action recognition.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Images"
+      ],
+      "evaluationFormats": [
+        "Spatial localization & tracking",
+        "Classification & segmentation"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://www.emerald.com/aisbe/article-pdf/1/1/1/11827593/aisbe-11-2025-0007en.pdf"
+      ],
+      "evidence": "wiki/2026-suen-icon-pose.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[79], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. The camera uses a long hardhat-mounted fisheye arm and the image set includes controlled/green-screen scenes. It is not a typical forward-facing helmet recording setup."
+    },
+    {
+      "id": "resource-ego-r1-bench",
+      "title": "Ego-R1 Bench",
+      "publication": "2026-tian-ego-r1",
+      "summary": "Human-verified week-scale QA requiring iterative evidence search.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2506.13654v1"
+      ],
+      "evidence": "wiki/2026-tian-ego-r1.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[80], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Evidence is restricted to before the query timestamp, but memory construction is offline. RL trains the QA retrieval controller, not a robot policy."
+    },
+    {
+      "id": "resource-ego-r1-data-ego-cott-25k-ego-qa-4-4k",
+      "title": "Ego-R1 Data (Ego-CoTT-25K / Ego-QA-4.4K)",
+      "publication": "2026-tian-ego-r1",
+      "summary": "Tool-calling reasoning traces for SFT and egocentric QA examples for RL.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Memory",
+        "Retrieval & localization",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2506.13654v1"
+      ],
+      "evidence": "wiki/2026-tian-ego-r1.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[81], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-ucs-bench",
+      "title": "UCS-Bench",
+      "publication": "2026-wang-directme",
+      "summary": "User-relative spatial positions, object trajectories, reachability and quantities.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2606.15200v1"
+      ],
+      "evidence": "wiki/2026-wang-directme.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[82], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. The note flags conflicting causal-construction descriptions. Timestamp-filtered retrieval does not prove construction excludes future observations."
+    },
+    {
+      "id": "resource-egomemreason",
+      "title": "EgoMemReason",
+      "publication": "2026-wang-egomemreason",
+      "summary": "Evidence aggregation across entities, events and recurring behavior.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/abs/2605.09874v2"
+      ],
+      "evidence": "wiki/2026-wang-egomemreason.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[83], archived PDF p. 2.",
+      "limitations": "Access and licensing must be checked before experimental use. Causal video prefixes constrain evidence availability. The benchmark does not prescribe bounded-state streaming ingestion."
+    },
+    {
+      "id": "resource-s-ember",
+      "title": "S-EMBER",
+      "publication": "2026-wang-s-ember",
+      "summary": "Joint episodic answer correctness and supporting temporal-interval grounding.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning",
+        "Retrieval & localization"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Open-ended QA",
+        "Temporal localization"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/abs/2607.02689v2"
+      ],
+      "evidence": "wiki/2026-wang-s-ember.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[84], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Joint answer/interval success tests observable evidence alignment, not whether the answer causally depended on that evidence. Prefix replay is allowed."
+    },
+    {
+      "id": "resource-impact",
+      "title": "IMPACT",
+      "publication": "2026-wen-impact",
+      "summary": "Industrial-tool assembly/disassembly, states, anomalies and recovery with synchronized views.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality",
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Exocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Classification & segmentation",
+        "Temporal localization",
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2604.10409v1"
+      ],
+      "evidence": "wiki/2026-wen-impact.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[85], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Reported State & Reasoning results use the front exocentric view under the IID split. They must not be attributed to the ego camera."
+    },
+    {
+      "id": "resource-streamo-bench",
+      "title": "Streamo-Bench",
+      "publication": "2026-xia-streamo",
+      "summary": "Instruction following, forward/backward grounding, narration and state-sensitive online QA.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Interaction & timing",
+        "QA & reasoning",
+        "Retrieval & localization"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Timed responses & tool actions",
+        "Open-ended QA",
+        "Temporal localization",
+        "Captioning & summarization"
+      ],
+      "accessProtocols": [
+        "Causal observation window"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2512.21334v2"
+      ],
+      "evidence": "wiki/2026-xia-streamo.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[86], archived PDF p. 2.",
+      "limitations": "Access and licensing must be checked before experimental use. Forward/backward grounding, narration and time-sensitive QA have different metrics. A combined average is not event-detection accuracy."
+    },
+    {
+      "id": "resource-streamo-instruct-465k",
+      "title": "Streamo-Instruct-465K",
+      "publication": "2026-xia-streamo",
+      "summary": "Streaming interactive instruction/dialogue supervision.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Interaction & timing",
+        "QA & reasoning",
+        "Captioning & summarization"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2512.21334v2"
+      ],
+      "evidence": "wiki/2026-xia-streamo.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[87], archived PDF p. 2.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-myego",
+      "title": "MyEgo",
+      "publication": "2026-xiao-myego",
+      "summary": "Personal belongings, actor attribution and personalized episodic grounding.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA",
+        "Open-ended QA"
+      ],
+      "accessProtocols": [
+        "Causal prefix (replay allowed)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2604.01966v1"
+      ],
+      "evidence": "wiki/2026-xiao-myego.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[88], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Prefix sampling is causal, but resampling history per question is not efficient streaming memory maintenance."
+    },
+    {
+      "id": "resource-spatiallogic-bench-egotsr",
+      "title": "SpatialLogic-Bench (EgoTSR++)",
+      "publication": "2026-yang-egotsr",
+      "summary": "Goal-conditioned progress comparisons with swapped input order, failure and recovery cases.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Images"
+      ],
+      "evaluationFormats": [
+        "Scores & pairwise comparisons"
+      ],
+      "accessProtocols": [
+        "Static-image input"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2609.31751v1"
+      ],
+      "evidence": "wiki/2026-yang-egotsr.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[89], archived PDF p. 1.",
+      "limitations": "The benchmark name is SpatialLogic-Bench in the archived EgoTSR++ paper. Supplementary details and public release remain unverified. The evaluated input is two images and an instruction. It is a relative progress comparison, not continuous video monitoring or an absolute completion percentage."
+    },
+    {
+      "id": "resource-hfss-ppe-image-collection",
+      "title": "HFSS PPE image collection",
+      "publication": "2026-yao-yolo-ilb",
+      "summary": "Scaffold-worker helmet/harness/hook detection with train/validation/test annotations.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Safety & anomalies"
+      ],
+      "videoTypes": [
+        "Images"
+      ],
+      "evaluationFormats": [
+        "Spatial localization & tracking"
+      ],
+      "accessProtocols": [
+        "Static-image input"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://mdpi-res.com/d_attachment/sensors/sensors-26-04147/article_deploy/sensors-26-04147.pdf"
+      ],
+      "evidence": "wiki/2026-yao-yolo-ilb.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[90], archived PDF p. 1.",
+      "limitations": "Descriptive catalog label. 2,700 UAV images collected across 17 sites. Data available from the authors on request, not an open-download claim."
+    },
+    {
+      "id": "resource-all-angles-bench",
+      "title": "All-Angles Bench",
+      "publication": "2026-yeh-all-angles-bench",
+      "summary": "Cross-view identity, relative pose, spatial relations and counting in multiview images.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Images"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Static-image input"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2504.15280v2"
+      ],
+      "evidence": "wiki/2026-yeh-all-angles-bench.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[91], archived PDF p. 1.",
+      "limitations": "Multi-view images, not a continuous-video memory benchmark. These are synchronized multi-view static images, not continuous video or a temporal-memory benchmark."
+    },
+    {
+      "id": "resource-onestreamer-1m",
+      "title": "OneStreamer-1M",
+      "publication": "2026-zeng-onestreamer",
+      "summary": "Evidence-aligned streaming captions, QA and response-state supervision.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Memory",
+        "Interaction & timing",
+        "QA & reasoning",
+        "Captioning & summarization"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2610.01762v1"
+      ],
+      "evidence": "wiki/2026-zeng-onestreamer.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[92], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-ref-construct",
+      "title": "Ref-Construct",
+      "publication": "2026-zhang-constructai",
+      "summary": "Language-referred video segmentation of construction safety events.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Safety & anomalies",
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Exocentric video",
+        "Multi-view video"
+      ],
+      "evaluationFormats": [
+        "Spatial localization & tracking"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://ojs.aaai.org/index.php/AAAI/article/download/41452/45413"
+      ],
+      "evidence": "wiki/2026-zhang-constructai.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[93], archived PDF p. 2.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-streamarena",
+      "title": "StreamArena",
+      "publication": "2026-zhang-streamarena",
+      "summary": "Long-running assistants combining current QA, memory, tool use and standing event monitoring.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Memory",
+        "Interaction & timing",
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Timed responses & tool actions",
+        "Open-ended QA"
+      ],
+      "accessProtocols": [
+        "Task-dependent protocols"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2608.05703v1"
+      ],
+      "evidence": "wiki/2026-zhang-streamarena.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[94], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Reactive answering pauses the video clock in evaluation. This does not validate uninterrupted live ingestion while answering."
+    },
+    {
+      "id": "resource-pasbench-video",
+      "title": "PaSBench-Video",
+      "publication": "2026-zhao-pasbench-video",
+      "summary": "Proactive safety advice scored against visible-risk onset, accident time and intervention windows.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Safety & anomalies",
+        "Interaction & timing"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Timed responses & tool actions",
+        "Open-ended QA"
+      ],
+      "accessProtocols": [
+        "Causal observation window"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2606.02443v1"
+      ],
+      "evidence": "wiki/2026-zhao-pasbench-video.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[95], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Warnings must fall after visible risk onset and before the intervention deadline. Safe clips separately assess repeated false warnings."
+    },
+    {
+      "id": "resource-webvid-2m",
+      "title": "WebVid-2M",
+      "publication": "2021-bain-frozen-in-time",
+      "summary": "Web video/caption pairs for video-language representation pretraining.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/ICCV2021/papers/Bain_Frozen_in_Time_A_Joint_Video_and_Image_Encoder_for_ICCV_2021_paper.pdf"
+      ],
+      "evidence": "Review-only publication evidence. raw/publication-types-2026-11-03.json resources[96], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-egoschema",
+      "title": "EgoSchema",
+      "publication": "2023-mangalam-egoschema",
+      "summary": "Long-video multiple-choice QA requiring extended temporal understanding.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2308.09126v1"
+      ],
+      "evidence": "Review-only publication evidence. raw/publication-types-2026-11-03.json resources[97], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-longvideobench",
+      "title": "LongVideoBench",
+      "publication": "2024-wu-longvideobench",
+      "summary": "Long-video referring reasoning with interleaved visual/subtitle evidence.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2407.15754v1"
+      ],
+      "evidence": "Review-only publication evidence. raw/publication-types-2026-11-03.json resources[98], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-video-mme",
+      "title": "Video-MME",
+      "publication": "2025-fu-video-mme",
+      "summary": "Broad multimodal video QA across lengths and domains.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Multiple-choice QA"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/CVPR2025/papers/Fu_Video-MME_The_First-Ever_Comprehensive_Evaluation_Benchmark_of_Multi-modal_LLMs_in_CVPR_2025_paper.pdf"
+      ],
+      "evidence": "Review-only publication evidence. raw/publication-types-2026-11-03.json resources[99], archived PDF p. not specified.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-moviechat-1k",
+      "title": "MovieChat-1K",
+      "publication": "2024-song-moviechat",
+      "summary": "Long-movie global and timestamp-specific question answering.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "QA & reasoning"
+      ],
+      "videoTypes": [
+        "Exocentric video"
+      ],
+      "evaluationFormats": [
+        "Not specified"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://openaccess.thecvf.com/content/CVPR2024/papers/Song_MovieChat_From_Dense_Token_to_Sparse_Memory_for_Long_Video_CVPR_2024_paper.pdf"
+      ],
+      "evidence": "Review-only publication evidence. raw/publication-types-2026-11-03.json resources[100], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use. Global and timestamp-specific QA are reported, but the exact answer encoding is not established by the retained review summary."
+    },
+    {
+      "id": "resource-multivent-raw-microvent",
+      "title": "MultiVENT-Raw / MicroVENT",
+      "publication": "2026-kriz-multivent-raw",
+      "summary": "Event-centric multilingual raw-video retrieval and evidence-based report generation.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Retrieval & localization",
+        "Captioning & summarization"
+      ],
+      "videoTypes": [
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Temporal localization",
+        "Captioning & summarization"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/html/2609.28437v1"
+      ],
+      "evidence": "Review-only publication evidence. raw/publication-types-2026-11-03.json resources[101], archived PDF p. 1.",
+      "limitations": "Access and licensing must be checked before experimental use."
+    },
+    {
+      "id": "resource-egoconqs-masonry-activity-annotations",
+      "title": "EgoConQS masonry activity annotations",
+      "publication": "2025-guo-egoconqs",
+      "summary": "Key activity queries and frame localization for masonry quality supervision.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Retrieval & localization",
+        "Procedures & quality"
+      ],
+      "videoTypes": [
+        "Egocentric video"
+      ],
+      "evaluationFormats": [
+        "Not specified"
+      ],
+      "accessProtocols": [
+        "Not specified"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://doi.org/10.1016/j.autcon.2024.105933"
+      ],
+      "evidence": "Review-only publication evidence. raw/publication-types-2026-11-03.json resources[102], archived PDF p. not specified.",
+      "limitations": "Dataset/taxonomy contribution, data available on request. No separate reusable public benchmark release verified. Only publisher/abstract evidence was available. Full architecture and reusable public evaluation protocol were not verified."
+    },
+    {
+      "id": "resource-egosafe-construction-hazard-images",
+      "title": "EgoSafe construction hazard images",
+      "publication": "2025-liu-egosafe",
+      "summary": "Egocentric construction-site static hazardous-object detection/classification.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Safety & anomalies"
+      ],
+      "videoTypes": [
+        "Images"
+      ],
+      "evaluationFormats": [
+        "Not specified"
+      ],
+      "accessProtocols": [
+        "Static-image input"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://doi.org/10.1016/j.autcon.2025.106048"
+      ],
+      "evidence": "Review-only publication evidence. raw/publication-types-2026-11-03.json resources[103], archived PDF p. not specified.",
+      "limitations": "New egocentric construction-image dataset is stated in the publisher highlights. Public availability not established. This is static egocentric hazard-image detection. Full source PDF and public release were not verified."
+    },
+    {
+      "id": "resource-sa-co-training-family-hq-syn-ext-video-and-video-ext",
+      "title": "SA-Co training family (HQ, SYN, EXT, VIDEO and VIDEO-EXT)",
+      "publication": "2026-carion-sam3",
+      "summary": "Training concept-conditioned image/video detection, instance masks and masklets, with positive and negative noun phrases.",
+      "roles": [
+        "dataset"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Images",
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Not applicable (training resource)"
+      ],
+      "accessProtocols": [
+        "Not applicable (training resource)"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2511.16719v2"
+      ],
+      "evidence": "wiki/2026-carion-sam3.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[104], archived PDF p. 7.",
+      "limitations": "New/derived annotations and synthetic corpora, not all new footage. Existing source datasets retain original authorship. Complete training corpus public availability not established. Training subsets mix image and video data and should not be counted as evaluation benchmarks."
+    },
+    {
+      "id": "resource-sa-co-image-benchmark-gold-silver-bronze-and-bio",
+      "title": "SA-Co image benchmark (Gold, Silver, Bronze and Bio)",
+      "publication": "2026-carion-sam3",
+      "summary": "Exhaustive open-vocabulary concept masks, hard-negative presence recognition and calibrated segmentation evaluation (cgF1).",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Images"
+      ],
+      "evaluationFormats": [
+        "Spatial localization & tracking",
+        "Classification & segmentation"
+      ],
+      "accessProtocols": [
+        "Static-image input"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2511.16719v2"
+      ],
+      "evidence": "wiki/2026-carion-sam3.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[105], archived PDF p. 7.",
+      "limitations": "Annotation/evaluation extensions include existing media and prior datasets. Official repository explicitly releases Gold/Silver annotations. Media and source licenses vary, and benchmark counts differ across paper/repository versions. Image evaluation is separate from the SA-Co video benchmark. Concept presence and mask quality are jointly evaluated."
+    },
+    {
+      "id": "resource-sa-co-veval",
+      "title": "SA-Co/VEval",
+      "publication": "2026-carion-sam3",
+      "summary": "Text-prompted video instance segmentation, concept presence and temporal association (cgF1 and pHOTA) over SA-V, YT-Temporal-1B and SmartGlasses.",
+      "roles": [
+        "dataset",
+        "benchmark"
+      ],
+      "tasks": [
+        "Perception & representations"
+      ],
+      "videoTypes": [
+        "Egocentric video",
+        "Mixed-source video"
+      ],
+      "evaluationFormats": [
+        "Spatial localization & tracking",
+        "Classification & segmentation"
+      ],
+      "accessProtocols": [
+        "Full-video / fixed access"
+      ],
+      "robotics": false,
+      "sourceUrls": [
+        "https://arxiv.org/pdf/2511.16719v2"
+      ],
+      "evidence": "wiki/2026-carion-sam3.md §§Problem and contribution, Approach, Evidence and limits. raw/publication-types-2026-11-03.json resources[106], archived PDF p. 9.",
+      "limitations": "Derived phrase/mask/identity annotations, including egocentric SmartGlasses, not a long-term 3D memory or procedural-QA benchmark. Official repository publishes VEval annotations, subject to source-media terms. This grouped evaluation family includes varied source videos, including smart-glasses footage. It is not one exclusively egocentric corpus."
+    }
+  ]
+}

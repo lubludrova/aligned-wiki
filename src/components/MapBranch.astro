@@ -1,0 +1,30 @@
+---
+import type { MapNode } from '../lib/method-map';
+interface Props { node: MapNode; parent?: string; depth?: number; datasetView?: string; }
+const { node, parent, depth = 0, datasetView } = Astro.props;
+const path = parent ? `${parent}/${node.id}` : node.id;
+const itemIds = (branch: MapNode): string[] => [...branch.items.map(item => item.id), ...branch.children.flatMap(itemIds)];
+const count = new Set(itemIds(node)).size;
+---
+<details class:list={['network-list-branch', { 'network-list-root': depth === 0 }]} data-branch={path} data-dataset-view={datasetView} hidden={!!datasetView && datasetView !== 'task'}>
+  <summary><span class="branch-title">{node.title}</span><span class="network-count" title="Unique items in this branch">{count}</span><span class="list-toggle" aria-hidden="true">+</span></summary>
+  {node.description && <p class="network-group-description">{node.description}</p>}
+  {node.children.map(child => <Astro.self node={child} parent={path} depth={depth + 1} />)}
+  {node.items.length > 0 && <ul>{node.items.map(item => <li data-paper={item.id} data-publication={item.publication} data-spotlight={String(item.spotlight)}>
+    <a href={item.href}><span>{item.title}{item.spotlight && <span class="network-star" aria-label="Wiki spotlight">★</span>}</span><span aria-hidden="true">↗</span></a>
+    <p class="network-list-meta">{[item.year, item.venue, item.kind].filter(Boolean).join(' · ')}</p>
+    <p class="network-list-summary">{item.summary}</p>
+    {(item.tasks?.length || item.videoTypes?.length || item.evaluationFormats?.length || item.accessProtocols?.length) && <dl class="map-facets">
+      {item.tasks?.length && <><dt>Task</dt><dd>{item.tasks.join(' · ')}</dd></>}
+      {item.videoTypes?.length && <><dt>Video</dt><dd>{item.videoTypes.join(' · ')}</dd></>}
+      {item.evaluationFormats?.length && <><dt>Evaluation</dt><dd>{item.evaluationFormats.join(' · ')}</dd></>}
+      {item.accessProtocols?.length && <><dt>Access</dt><dd>{item.accessProtocols.join(' · ')}</dd></>}
+    </dl>}
+    {(item.limitations || item.sourceUrls?.length) && <details class="map-item-evidence">
+      <summary>Evidence &amp; limits</summary>
+      {item.limitations && <p>{item.limitations}</p>}
+      {item.sourceUrls?.length && <div class="map-source-links">{item.sourceUrls.map((url, index) => <a href={url}>Source {index + 1}</a>)}</div>}
+    </details>}
+    {item.spotlight && <p class="network-list-spotlight">{item.spotlightReason}</p>}
+  </li>)}</ul>}
+</details>

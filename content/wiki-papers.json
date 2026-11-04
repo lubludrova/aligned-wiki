@@ -4420,6 +4420,65 @@
     ],
     "sourceSha256": "5e3b994142379772d11ed215210abd441a02b6a28bddd85b6c3f5d22353be258"
   },
+  "2026-carion-sam3": {
+    "title": "SAM 3: Segment Anything with Concepts",
+    "shortTitle": "SAM 3",
+    "summary": "SAM 3 detects, segments and tracks all instances of a prompted concept, combining a shared detector–tracker backbone with new SA-Co training and evaluation resources.",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2511.16719v2",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/hash/e0982cbc81401df3430ee1ff780dc7a2-Abstract-Conference.html"
+    ],
+    "metadata": {
+      "year": 2026,
+      "venue": "ICLR",
+      "authors": "Nicolas Carion, Laura Gustafson, Yuan-Ting Hu, Shoubhik Debnath, Ronghang Hu, Didac Suris, Chaitanya Ryali, Kalyan Vasudev Alwala, Haitham Khedr, Andrew Huang, Jie Lei, Tengyu Ma, Baishan Guo, Arpit Kalla, Markus Marks, Joseph Greer, Meng Wang, Peize Sun, Roman Rädle, Triantafyllos Afouras, Effrosyni Mavroudi, Katherine Xu, Tsung-Han Wu, Yu Zhou, Liliane Momeni, Rishi Hazra, Shuangrui Ding, Sagar Vaze, Francois Porcher, Feng Li, Siyuan Li, Aishwarya Kamath, Ho Kei Cheng, Piotr Dollár, Nikhila Ravi, Kate Saenko, Pengchuan Zhang, Christoph Feichtenhofer.",
+      "affiliations": [
+        "Meta Superintelligence Labs"
+      ],
+      "links": [
+        {
+          "label": "ICLR publication",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/e0982cbc81401df3430ee1ff780dc7a2-Abstract-Conference.html"
+        },
+        {
+          "label": "Project website",
+          "url": "https://ai.meta.com/sam3"
+        },
+        {
+          "label": "Official repository",
+          "url": "https://github.com/facebookresearch/sam3"
+        }
+      ],
+      "sourceNote": "aligned-wiki/wiki/2026-carion-sam3.md",
+      "metadataStatus": "wiki",
+      "sourceVersion": "arXiv:2511.16719v2, 28 March 2026, 78 pages including appendices. First preprint: 20 November 2025. ICLR 2026 publication is verified, but the publisher PDF was not compared."
+    },
+    "tags": [
+      "dataset",
+      "benchmark",
+      "method",
+      "video-representation",
+      "efficient-processing"
+    ],
+    "researchGroups": [],
+    "reviewed": false,
+    "spotlight": false,
+    "sourceLinks": {
+      "../raw/2026-carion-sam3.pdf": "https://arxiv.org/pdf/2511.16719v2",
+      "../assets/2026-carion-sam3.png": "/media/wiki/2026-carion-sam3.png",
+      "../raw/2026-carion-sam3.pdf#page=4": "https://arxiv.org/pdf/2511.16719v2#page=4"
+    },
+    "sourceHeaderMarkdown": "**Authors:** Nicolas Carion, Laura Gustafson, Yuan-Ting Hu, Shoubhik Debnath, Ronghang Hu, Didac Suris, Chaitanya Ryali, Kalyan Vasudev Alwala, Haitham Khedr, Andrew Huang, Jie Lei, Tengyu Ma, Baishan Guo, Arpit Kalla, Markus Marks, Joseph Greer, Meng Wang, Peize Sun, Roman Rädle, Triantafyllos Afouras, Effrosyni Mavroudi, Katherine Xu, Tsung-Han Wu, Yu Zhou, Liliane Momeni, Rishi Hazra, Shuangrui Ding, Sagar Vaze, Francois Porcher, Feng Li, Siyuan Li, Aishwarya Kamath, Ho Kei Cheng, Piotr Dollár, Nikhila Ravi, Kate Saenko, Pengchuan Zhang, Christoph Feichtenhofer.\n**Paper:** [PDF](../raw/2026-carion-sam3.pdf) · [ICLR publication](https://proceedings.iclr.cc/paper_files/paper/2026/hash/e0982cbc81401df3430ee1ff780dc7a2-Abstract-Conference.html)\n**Website:** [Project website](https://ai.meta.com/sam3)\n**Code:** [Official repository](https://github.com/facebookresearch/sam3)\n**Source version:** arXiv:2511.16719v2, 28 March 2026, 78 pages including appendices. First preprint: 20 November 2025. ICLR 2026 publication is verified, but the publisher PDF was not compared.\n**Citations:** 28 ([OpenAlex](https://openalex.org/W4417095222), checked 2026-11-04).\n\n![SAM 3 shares image features between a concept detector and a mask-propagation tracker with video memory](../assets/2026-carion-sam3.png)\n\n*Figure 4. Shared encoder, concept-conditioned detector, and video tracker with mask memory. Source: [archived PDF, p. 4](../raw/2026-carion-sam3.pdf#page=4).*",
+    "images": [
+      {
+        "sourcePath": "../assets/2026-carion-sam3.png",
+        "publicPath": "/media/wiki/2026-carion-sam3.png",
+        "sha256": "8ecbd04a7b02f4260b950045469afe3cd668e263e32f6f366ba962fdf798b4f2"
+      }
+    ],
+    "sourceSha256": "86d759e1603eed6bd6b49fe47dfb8bd51838136bc81bfba573f510ef34cea129"
+  },
   "2026-chalk-whareformer": {
     "title": "Whareformer: Learning to Track What is Where in Long Egocentric Videos",
     "shortTitle": "Whareformer",
@@ -4891,6 +4950,56 @@
     "spotlightReason": "First practical retrieval baseline to evaluate: timestamped clips, several searchable keys, neighboring context and final answering from retrieved frames. Its simple episode design provides a useful control before adding WorldMM-style graphs.",
     "spotlightLimit": "Large solver dependency, 0.56 reported retrieval hit rate, a 500-question EgoLifeQA test and initial captioning excluded from construction accounting.",
     "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
+  },
+  "2026-deng-agentic-video-survey": {
+    "title": "Agentic Video Understanding: A Survey",
+    "shortTitle": "Agentic Video Understanding (survey)",
+    "summary": "Organizes video agents by the problems motivating adaptive evidence control, their state representations, learning mechanisms and evaluation requirements.",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2609.31713v2",
+      "https://arxiv.org/abs/2609.31713v2"
+    ],
+    "metadata": {
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "authors": "Xinyu Deng, Siwen Luo, Daochang Liu.",
+      "affiliations": [
+        "The University of Western Australia"
+      ],
+      "links": [
+        {
+          "label": "Survey repository",
+          "url": "https://github.com/DXY0711/Awesome-Agentic-Video-Understanding"
+        }
+      ],
+      "sourceNote": "aligned-wiki/wiki/2026-deng-agentic-video-survey.md",
+      "metadataStatus": "wiki",
+      "sourceVersion": "arXiv:2609.31713v2, 21 October 2026, first released 21 September 2026. Authors report DICTA 2026 acceptance on arXiv and in the repository, but a published proceedings record was not verified. This note covers the archived preprint."
+    },
+    "tags": [
+      "survey",
+      "video-memory",
+      "video-retrieval",
+      "video-qa"
+    ],
+    "researchGroups": [],
+    "reviewed": false,
+    "spotlight": false,
+    "sourceLinks": {
+      "../raw/2026-deng-agentic-video-survey.pdf": "https://arxiv.org/pdf/2609.31713v2",
+      "../assets/2026-deng-agentic-video-survey.png": "/media/wiki/2026-deng-agentic-video-survey.png",
+      "../raw/2026-deng-agentic-video-survey.pdf#page=5": "https://arxiv.org/pdf/2609.31713v2#page=5"
+    },
+    "sourceHeaderMarkdown": "**Authors:** Xinyu Deng, Siwen Luo, Daochang Liu.\n**Paper:** [PDF](../raw/2026-deng-agentic-video-survey.pdf) · [arXiv v2](https://arxiv.org/abs/2609.31713v2)\n**Website:** [Survey repository](https://github.com/DXY0711/Awesome-Agentic-Video-Understanding)\n**Code:** The linked repository is a curated bibliography, not an implemented video agent.\n**Source version:** arXiv:2609.31713v2, 21 October 2026, first released 21 September 2026. Authors report DICTA 2026 acceptance on arXiv and in the repository, but a published proceedings record was not verified. This note covers the archived preprint.\n**Citations:** 0 ([OpenAlex](https://openalex.org/W7214779667), checked 2026-11-04).\n\n![Four video-agent state representations, from selected observations to a revisable world state](../assets/2026-deng-agentic-video-survey.png)\n\n*Figure 3. Four video-agent state-space paradigms. Source: [archived PDF, p. 5](../raw/2026-deng-agentic-video-survey.pdf#page=5).*",
+    "images": [
+      {
+        "sourcePath": "../assets/2026-deng-agentic-video-survey.png",
+        "publicPath": "/media/wiki/2026-deng-agentic-video-survey.png",
+        "sha256": "98519b4c846a82e1c7349c3e3e19589a330b65ed718b9903a201ee6c6d408766"
+      }
+    ],
+    "sourceSha256": "78ca3be75c125171d046d3a7b17661214317c5486673ad1ae5d1440dcbcf0eee"
   },
   "2026-forte-egostream": {
     "title": "EGOSTREAM: A Diagnostic Benchmark for Streaming Episodic Memory in Egocentric Vision",
@@ -6507,6 +6616,60 @@
     ],
     "sourceSha256": "745a60d31faaf405cdbd3533e5cc94ac52a5fc034f5c1065a268f56e0340557f"
   },
+  "2026-ma-robot-video-survey": {
+    "title": "Robot Learning from Human Videos: A Survey",
+    "shortTitle": "Robot Learning from Human Videos (survey)",
+    "summary": "Organizes human-video-to-robot transfer by task, observation and action interfaces, relating each pathway to supervision, data requirements and physical grounding.",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2604.27621v1",
+      "https://arxiv.org/abs/2604.27621v1"
+    ],
+    "metadata": {
+      "year": 2026,
+      "venue": "arXiv preprint",
+      "authors": "Junyi Ma, Erhang Zhang, Haoran Yang, Ditao Li, Chenyang Xu, Guangming Wang, Hesheng Wang.",
+      "affiliations": [
+        "Shanghai Jiao Tong University",
+        "University of Cambridge",
+        "Key Laboratory of System Control and Information Processing, Ministry of Education of China"
+      ],
+      "links": [
+        {
+          "label": "Companion repository",
+          "url": "https://github.com/IRMVLab/awesome-robot-learning-from-human-videos",
+          "note": "Companion repository — curated literature list and update tooling, not a robot-policy implementation."
+        }
+      ],
+      "sourceNote": "aligned-wiki/wiki/2026-ma-robot-video-survey.md",
+      "metadataStatus": "wiki",
+      "sourceVersion": "arXiv:2604.27621v1, 30 April 2026. No journal acceptance verified. The archived PDF uses a SAGE template with an unassigned journal title and DOI."
+    },
+    "tags": [
+      "survey",
+      "robot-learning",
+      "video-representation",
+      "reward-learning",
+      "egocentric-video"
+    ],
+    "researchGroups": [],
+    "reviewed": false,
+    "spotlight": false,
+    "sourceLinks": {
+      "../raw/2026-ma-robot-video-survey.pdf": "https://arxiv.org/pdf/2604.27621v1",
+      "../assets/2026-ma-robot-video-survey.png": "/media/wiki/2026-ma-robot-video-survey.png",
+      "../raw/2026-ma-robot-video-survey.pdf#page=2": "https://arxiv.org/pdf/2604.27621v1#page=2"
+    },
+    "sourceHeaderMarkdown": "**Authors:** Junyi Ma, Erhang Zhang, Haoran Yang, Ditao Li, Chenyang Xu, Guangming Wang, Hesheng Wang.\n**Paper:** [PDF](../raw/2026-ma-robot-video-survey.pdf) · [arXiv v1](https://arxiv.org/abs/2604.27621v1)\n**Website:** Not found in checked sources.\n**Code:** [Companion repository](https://github.com/IRMVLab/awesome-robot-learning-from-human-videos) — curated literature list and update tooling, not a robot-policy implementation.\n**Source version:** arXiv:2604.27621v1, 30 April 2026. No journal acceptance verified. The archived PDF uses a SAGE template with an unassigned journal title and DOI.\n**Citations:** 0 ([OpenAlex](https://openalex.org/W7159680369), checked 2026-11-04).\n\n![Taxonomy separating task, observation and action transfer from human-video data foundations](../assets/2026-ma-robot-video-survey.png)\n\n*Figure 2. Human-robot transfer pathways and data foundations. Source: [archived PDF, p. 2](../raw/2026-ma-robot-video-survey.pdf#page=2).*",
+    "images": [
+      {
+        "sourcePath": "../assets/2026-ma-robot-video-survey.png",
+        "publicPath": "/media/wiki/2026-ma-robot-video-survey.png",
+        "sha256": "1212164ff47601fa6b05ef48af4408105c5aedf3d6333e0111ea0a48f6c233d6"
+      }
+    ],
+    "sourceSha256": "db700f5af9c190af665ef8c4c42289aeed225254879b7643376f348ee0dbedd3"
+  },
   "2026-majumder-mistexit": {
     "title": "MistExit: Learning to Exit for Early Mistake Detection in Procedural Videos",
     "shortTitle": "MistExit",
@@ -7999,6 +8162,64 @@
       }
     ],
     "sourceSha256": "e16e421ae4ba5a77fbf71b86c2d7f1524c0951a2a83aceb15968cbc123fa624f"
+  },
+  "2026-wu-temporal-grounding-survey": {
+    "title": "A Survey on Video Temporal Grounding with Multimodal Large Language Model",
+    "shortTitle": "Video Temporal Grounding Survey",
+    "summary": "Separates temporal grounding tasks from model roles, training paradigms and feature processing, with task-specific datasets and evaluation metrics.",
+    "year": 2026,
+    "sourceUrls": [
+      "https://arxiv.org/pdf/2508.10922v1",
+      "https://arxiv.org/abs/2508.10922v1",
+      "https://doi.org/10.1109/TPAMI.2025.3615586"
+    ],
+    "metadata": {
+      "year": 2026,
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "authors": "Jianlong Wu, Wei Liu, Ye Liu, Meng Liu, Liqiang Nie, Zhouchen Lin, Chang Wen Chen.",
+      "affiliations": [
+        "Harbin Institute of Technology, Shenzhen",
+        "Shandong Jianzhu University",
+        "Peking University",
+        "The Hong Kong Polytechnic University"
+      ],
+      "links": [
+        {
+          "label": "Published record",
+          "url": "https://doi.org/10.1109/TPAMI.2025.3615586"
+        },
+        {
+          "label": "Author repository",
+          "url": "https://github.com/iLearn-Lab/TPAMI26-Awesome-MLLMs-for-Video-Temporal-Grounding"
+        }
+      ],
+      "sourceNote": "aligned-wiki/wiki/2026-wu-temporal-grounding-survey.md",
+      "metadataStatus": "wiki",
+      "sourceVersion": "arXiv:2508.10922v1, 7 August 2025, 20 pages, covering literature through May 2025. The later journal issue is TPAMI 48(2), 1521–1541, February 2026, verified through publisher-deposited Crossref metadata and the PubMed record. The publisher PDF was not compared."
+    },
+    "tags": [
+      "survey",
+      "video-retrieval",
+      "video-qa",
+      "video-representation"
+    ],
+    "researchGroups": [],
+    "reviewed": false,
+    "spotlight": false,
+    "sourceLinks": {
+      "../raw/2026-wu-temporal-grounding-survey.pdf": "https://arxiv.org/pdf/2508.10922v1",
+      "../assets/2026-wu-temporal-grounding-survey.png": "/media/wiki/2026-wu-temporal-grounding-survey.png",
+      "../raw/2026-wu-temporal-grounding-survey.pdf#page=5": "https://arxiv.org/pdf/2508.10922v1#page=5"
+    },
+    "sourceHeaderMarkdown": "**Authors:** Jianlong Wu, Wei Liu, Ye Liu, Meng Liu, Liqiang Nie, Zhouchen Lin, Chang Wen Chen.\n**Paper:** [PDF](../raw/2026-wu-temporal-grounding-survey.pdf) · [arXiv v1](https://arxiv.org/abs/2508.10922v1) · [Published record](https://doi.org/10.1109/TPAMI.2025.3615586)\n**Website:** [Author repository](https://github.com/iLearn-Lab/TPAMI26-Awesome-MLLMs-for-Video-Temporal-Grounding)\n**Code:** The repository curates papers and implementation links, rather than implementing one survey model.\n**Source version:** arXiv:2508.10922v1, 7 August 2025, 20 pages, covering literature through May 2025. The later journal issue is TPAMI 48(2), 1521–1541, February 2026, verified through publisher-deposited Crossref metadata and the [PubMed record](https://pubmed.ncbi.nlm.nih.gov/41021939/). The publisher PDF was not compared.\n**Citations:** 17 ([OpenAlex](https://openalex.org/W4414604029), checked 2026-11-04).\n\n![Temporal grounding taxonomy separating model roles, training paradigms and visual or temporal feature processing](../assets/2026-wu-temporal-grounding-survey.png)\n\n*Figure 3. Three dimensions for organizing temporal grounding methods. Source: [archived PDF, p. 5](../raw/2026-wu-temporal-grounding-survey.pdf#page=5).*",
+    "images": [
+      {
+        "sourcePath": "../assets/2026-wu-temporal-grounding-survey.png",
+        "publicPath": "/media/wiki/2026-wu-temporal-grounding-survey.png",
+        "sha256": "bcc47f615ee74f87edc353b070a87735ebed14c3a2cad0428da556991b776c2e"
+      }
+    ],
+    "sourceSha256": "7abb63b68ad758fb47236fdf8e82bf264b6f71f52acc07f760f81af745537cb1"
   },
   "2026-xia-streamo": {
     "title": "Streaming Video Instruction Tuning",
