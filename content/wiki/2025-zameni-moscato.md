@@ -4,7 +4,7 @@ venue: "ICCV 2025"
 affiliations: ["Northeastern University"]
 research_groups: [northeastern-nova]
 reviewed: false
-tags: [dataset, benchmark, method, state-changes, procedure-understanding, egocentric-video]
+tags: [dataset, benchmark, method, state-changes, procedure-understanding, egocentric-video, supervised-training]
 ---
 
 # MOSCATO: Predicting Multiple Object State Change through Actions

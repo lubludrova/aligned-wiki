@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Google"]
 research_groups: []
 reviewed: false
-tags: [method, video-memory, video-representation, efficient-processing]
+tags: [method, video-memory, video-representation, efficient-processing, sft]
 ---
 
 # Streaming Dense Video Captioning

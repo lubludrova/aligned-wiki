@@ -5,6 +5,7 @@ import { readFileSync } from 'node:fs';
 const read = file => JSON.parse(readFileSync(new URL(`../content/${file}`, import.meta.url), 'utf8'));
 const wiki = read('wiki-papers.json');
 const types = read('publication-types.json');
+const paperTags = read('paper-tags.json');
 const order = ['dataset', 'benchmark', 'method', 'survey', 'empirical-study'];
 const slugs = [...new Set([...read('en/papers.json').map(paper => paper.slug), ...Object.keys(wiki)])].sort();
 
@@ -30,4 +31,22 @@ test('resource authorship, training-only data and diagnostic studies remain dist
   assert.deepEqual(types['2025-ortiz-abstention-knobs'], ['empirical-study']);
   assert.deepEqual(types['2026-guo-multimodal-memory-survey'], ['survey']);
   assert.deepEqual(types['2024-wu-longvideobench'], ['dataset', 'benchmark']);
+});
+
+test('learning paradigms cover methods in both wiki notes and review-only publications', () => {
+  const paradigms = ['training-free', 'sft', 'rl', 'supervised-training', 'self-supervised-learning', 'unsupervised-learning', 'preference-optimization'];
+  assert.deepEqual(Object.keys(paperTags).sort(), slugs);
+  for (const [slug, contribution] of Object.entries(types)) {
+    const tags = paperTags[slug];
+    assert.deepEqual(tags.slice(0, contribution.length), contribution, slug);
+    assert.equal(tags.length, new Set(tags).size, slug);
+    if (wiki[slug]) assert.deepEqual(tags, wiki[slug].tags, slug);
+    assert.equal(tags.some(tag => paradigms.includes(tag)), contribution.includes('method'), slug);
+  }
+  assert.equal(slugs.filter(slug => !wiki[slug] && types[slug].includes('method')).length, 10);
+  const expected = [45, 46, 13, 42, 11, 1, 1];
+  paradigms.forEach((tag, index) => assert.equal(slugs.filter(slug => paperTags[slug].includes(tag)).length, expected[index], tag));
+  assert(paperTags['2021-luo-clip4clip'].includes('sft'));
+  assert(paperTags['2025-liu-egosafe'].includes('training-free'));
+  assert(paperTags['2025-yoon-uvqa'].includes('preference-optimization'));
 });

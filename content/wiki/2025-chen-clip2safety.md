@@ -4,7 +4,7 @@ venue: "Expert Systems with Applications"
 affiliations: ["University of Connecticut", "University of California Irvine"]
 research_groups: []
 reviewed: false
-tags: [method, construction, execution-quality, efficient-processing]
+tags: [method, construction, execution-quality, efficient-processing, sft]
 ---
 
 # Vision language model for interpretable and fine-grained detection of safety compliance in diverse workplaces

@@ -4,7 +4,7 @@ venue: "SIGMOD"
 affiliations: ["Stanford University"]
 research_groups: []
 reviewed: false
-tags: [method, video-representation, video-retrieval, efficient-processing]
+tags: [method, video-representation, video-retrieval, efficient-processing, training-free, sft]
 ---
 
 # TASTI: Semantic Indexes for Machine Learning-based Queries over Unstructured Data

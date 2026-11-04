@@ -4,7 +4,7 @@ venue: "EMNLP"
 affiliations: ["Queen's University Belfast", "AMD", "Queen Mary University of London"]
 research_groups: []
 reviewed: false
-tags: [method, video-retrieval, video-qa, efficient-processing]
+tags: [method, video-retrieval, video-qa, efficient-processing, training-free]
 ---
 
 # HPP: Hierarchical Programmatic Probing for Long Video Understanding by Decoupling Perception and Reasoning

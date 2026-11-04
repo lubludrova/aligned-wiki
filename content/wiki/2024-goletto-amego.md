@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["Politecnico di Torino", "FAIR, Meta", "University of Bristol"]
 research_groups: [meta-fair, bristol-mavi]
 reviewed: false
-tags: [dataset, benchmark, method, video-memory, video-retrieval, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, video-memory, video-retrieval, spatial-understanding, egocentric-video, training-free]
 ---
 
 # AMEGO: Active Memory from long EGOcentric videos

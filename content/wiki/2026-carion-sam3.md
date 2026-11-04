@@ -4,7 +4,7 @@ venue: "ICLR"
 affiliations: ["Meta Superintelligence Labs"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-representation, efficient-processing]
+tags: [dataset, benchmark, method, video-representation, efficient-processing, sft, supervised-training, self-supervised-learning]
 ---
 
 # SAM 3: Segment Anything with Concepts

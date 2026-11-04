@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["The University of Sydney", "University of Technology Sydney"]
 research_groups: []
 reviewed: false
-tags: [method, execution-quality, construction]
+tags: [method, execution-quality, construction, training-free]
 ---
 
 # Automating construction safety inspections using a multi-modal vision-language RAG framework

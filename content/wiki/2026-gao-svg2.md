@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["Allen Institute for AI", "University of Washington", "Woven by Toyota", "Microsoft"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-representation, state-changes, spatial-understanding]
+tags: [dataset, benchmark, method, video-representation, state-changes, spatial-understanding, sft]
 ---
 
 # Synthetic Visual Genome 2: Extracting Large-scale Spatio-Temporal Scene Graphs from Videos

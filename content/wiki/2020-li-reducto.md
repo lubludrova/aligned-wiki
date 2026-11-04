@@ -4,7 +4,7 @@ venue: "ACM SIGCOMM"
 affiliations: ["University of California, Los Angeles"]
 research_groups: []
 reviewed: false
-tags: [method, efficient-processing, video-representation]
+tags: [method, efficient-processing, video-representation, supervised-training]
 ---
 
 # Reducto: On-Camera Filtering for Resource-Efficient Real-Time Video Analytics

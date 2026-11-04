@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import CitationCount from '../../components/CitationCount.astro';
-import { papers, paperLocations, chapterContent, notes, renderMarkdown, wikiPapers, wikiNotes, citationCounts, paperTags } from '../../lib/content';
+import { papers, paperLocations, chapterContent, notes, renderMarkdown, wikiPapers, wikiNotes, citationCounts, paperTags, paperTagLabel } from '../../lib/content';
 export function getStaticPaths() { return papers.map(paper => ({ params: { slug: paper.slug }, props: { paper } })); }
 const { paper } = Astro.props;
 const locations = paperLocations(paper);
@@ -46,7 +46,7 @@ const extraLinks = resourceLinks.filter(link => !wikiNote?.sourceHeaderMarkdown.
           <div><dt>Citations</dt><dd data-paper-citations><CitationCount snapshot={citationCounts[paper.slug]} /></dd></div>
         </dl>
       </details>
-      <div class="paper-tags">{paperTags[paper.slug].map(tag => <a href={`/papers/?topic=${encodeURIComponent(tag)}`}>{tag.replaceAll('-', ' ')}</a>)}</div>
+      <div class="paper-tags">{paperTags[paper.slug].map(tag => <a href={`/papers/?topic=${encodeURIComponent(tag)}`}>{paperTagLabel(tag)}</a>)}</div>
     </header>
     {wikiNote && <article class="prose wiki-note" set:html={renderMarkdown(wikiNote.markdown, `/papers/${paper.slug}/`, 'wiki-').html}/>}
     {wiki?.spotlight && <aside class="paper-spotlight"><span>★ Wiki spotlight</span><p>{wiki.spotlightReason}</p></aside>}

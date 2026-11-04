@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["University of Maryland, College Park"]
 research_groups: []
 reviewed: false
-tags: [method, procedure-understanding, video-representation, efficient-processing, egocentric-video]
+tags: [method, procedure-understanding, video-representation, efficient-processing, egocentric-video, training-free]
 ---
 
 # VidParse: Online Parsing of Egocentric Procedures Like a Pro

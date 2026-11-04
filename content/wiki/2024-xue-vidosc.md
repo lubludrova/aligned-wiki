@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["The University of Texas at Austin", "FAIR, Meta"]
 research_groups: [meta-fair, ut-austin-vision]
 reviewed: false
-tags: [dataset, benchmark, method, state-changes, video-representation]
+tags: [dataset, benchmark, method, state-changes, video-representation, supervised-training]
 ---
 
 # Learning Object State Changes in Videos: An Open-World Perspective

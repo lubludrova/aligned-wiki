@@ -4,7 +4,7 @@ venue: "KDD"
 affiliations: ["The University of Hong Kong", "Baidu Inc."]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa]
+tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa, training-free]
 ---
 
 # VideoRAG: Retrieval-Augmented Generation with Extreme Long-Context Videos

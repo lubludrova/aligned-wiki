@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["KAIST", "Qualcomm AI Research, Qualcomm Korea YH"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-retrieval, video-qa, egocentric-video]
+tags: [dataset, benchmark, method, video-retrieval, video-qa, egocentric-video, training-free]
 ---
 
 # Rethinking RAG in Long Videos: What to Retrieve and How to Use It?

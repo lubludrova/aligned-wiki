@@ -4,7 +4,7 @@ venue: "Artificial Intelligence for a Sustainable Built Environment, 1(1), 1–2
 affiliations: ["Columbia University", "Colorado School of Mines", "The University of British Columbia"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-representation, egocentric-video, construction]
+tags: [dataset, benchmark, method, video-representation, egocentric-video, construction, sft, supervised-training]
 ---
 
 # ICON-pose: an egocentric worker action recognition dataset for human–robot collaboration

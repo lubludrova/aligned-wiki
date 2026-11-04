@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["University of Rochester", "Sony Group Corporation"]
 research_groups: []
 reviewed: false
-tags: [method, video-representation, efficient-processing]
+tags: [method, video-representation, efficient-processing, sft]
 ---
 
 # Asynchronous Temporal Modeling with Two-Agent Framework for Streaming Dense Video Captioning

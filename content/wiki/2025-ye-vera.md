@@ -7,7 +7,7 @@ affiliations:
   - "Auburn University"
 research_groups: []
 reviewed: false
-tags: [method, execution-quality, video-representation]
+tags: [method, execution-quality, video-representation, supervised-training]
 ---
 
 # VERA: Explainable Video Anomaly Detection via Verbalized Learning of Vision-Language Models

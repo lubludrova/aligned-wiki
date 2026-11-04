@@ -4,7 +4,7 @@ venue: "NSDI"
 affiliations: ["Microsoft", "Princeton University"]
 research_groups: []
 reviewed: false
-tags: [method, efficient-processing, real-world-evaluation]
+tags: [method, efficient-processing, real-world-evaluation, training-free]
 ---
 
 # Live Video Analytics at Scale with Approximation and Delay-Tolerance

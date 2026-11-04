@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Northeastern University", "Stony Brook University"]
 research_groups: [northeastern-nova]
 reviewed: false
-tags: [dataset, benchmark, method, execution-quality, procedure-understanding, egocentric-video]
+tags: [dataset, benchmark, method, execution-quality, procedure-understanding, egocentric-video, supervised-training]
 ---
 
 # Error Detection in Egocentric Procedural Task Videos

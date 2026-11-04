@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["National Tsing Hua University", "NVIDIA"]
 research_groups: []
 reviewed: false
-tags: [method, video-memory, efficient-processing, video-qa]
+tags: [method, video-memory, efficient-processing, video-qa, sft]
 ---
 
 # ReactVAU: A Slow-Fast Decoupled Framework for Streaming Video Anomaly Understanding

@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Karlsruhe Institute of Technology", "Hunan University"]
 research_groups: []
 reviewed: false
-tags: [method, procedure-understanding, execution-quality, egocentric-video]
+tags: [method, procedure-understanding, execution-quality, egocentric-video, supervised-training]
 ---
 
 # PROVIA: Procedure State Tracking for Online Mistake Detection in Egocentric Videos

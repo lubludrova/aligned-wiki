@@ -4,7 +4,7 @@ venue: "ICLR"
 affiliations: ["The Hong Kong University of Science and Technology (Guangzhou)", "Tongji University", "University of Tübingen", "The Hong Kong University of Science and Technology"]
 research_groups: []
 reviewed: false
-tags: [method]
+tags: [method, training-free, sft, rl]
 ---
 
 # When Silence Is Golden: Can LLMs Learn to Abstain in Temporal QA and Beyond?

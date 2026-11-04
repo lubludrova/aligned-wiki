@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["University of North Carolina at Chapel Hill"]
 research_groups: []
 reviewed: false
-tags: [method, video-retrieval, video-qa, efficient-processing]
+tags: [method, video-retrieval, video-qa, efficient-processing, training-free]
 ---
 
 # VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos

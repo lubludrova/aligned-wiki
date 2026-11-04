@@ -4,7 +4,7 @@ venue: "Findings of EMNLP"
 affiliations: ["Zhejiang University", "South China University of Technology", "Lenovo Group Limited"]
 research_groups: []
 reviewed: false
-tags: [method, video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video, training-free]
 ---
 
 # EM²Mem: Event-Centric Multimodal Memory for Large Language Models

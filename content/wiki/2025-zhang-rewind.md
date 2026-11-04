@@ -4,7 +4,7 @@ venue: "CoRL"
 affiliations: ["University of Southern California", "Amazon Robotics", "KAIST"]
 research_groups: [usc-lira]
 reviewed: false
-tags: [method, reward-learning, robot-learning, rl-fine-tuning, real-world-evaluation]
+tags: [method, reward-learning, robot-learning, rl-fine-tuning, real-world-evaluation, rl, supervised-training]
 ---
 
 # ReWiND: Language-Guided Rewards Teach Robot Policies without New Demonstrations

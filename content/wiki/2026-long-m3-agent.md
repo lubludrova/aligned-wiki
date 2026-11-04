@@ -4,7 +4,7 @@ venue: "ICLR"
 affiliations: ["ByteDance Seed", "Zhejiang University", "Shanghai Jiao Tong University"]
 research_groups: [bytedance-seed]
 reviewed: false
-tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa, egocentric-video, multi-person]
+tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa, egocentric-video, multi-person, sft, rl]
 ---
 
 # Seeing, Listening, Remembering, and Reasoning: A Multimodal Agent with Long-Term Memory

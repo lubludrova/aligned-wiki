@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: [University of Bristol]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, execution-quality, preference-learning]
+tags: [dataset, benchmark, method, execution-quality, preference-learning, sft]
 ---
 
 # Who’s Better? Who’s Best? Pairwise Deep Ranking for Skill Determination

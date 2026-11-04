@@ -22,6 +22,7 @@ OUTPUT = SITE / 'content/wiki'
 REGISTER = SITE / 'content/wiki-papers.json'
 CITATIONS = SITE / 'content/citation-counts.json'
 PUBLICATION_TYPES = SITE / 'content/publication-types.json'
+PAPER_TAGS = SITE / 'content/paper-tags.json'
 MAP_RESOURCES = SITE / 'content/map-resources.json'
 MAP_SOLUTIONS = SITE / 'content/map-solutions.json'
 MAP_DESCRIPTIONS = SITE / 'content/map-papers.json'
@@ -177,6 +178,7 @@ def main():
     CITATIONS.write_text(json.dumps(citation_snapshots, ensure_ascii=False, indent=2) + '\n')
     assert set(type_records) == review_slugs | set(records), 'Contribution types and publication inventory differ'
     PUBLICATION_TYPES.write_text(json.dumps({slug: record['types'] for slug, record in type_records.items()}, ensure_ascii=False, indent=2) + '\n')
+    PAPER_TAGS.write_text(json.dumps({slug: record['tags'] for slug, record in type_records.items()}, ensure_ascii=False, indent=2) + '\n')
     # Research classifications originate in the wiki, just like paper metadata.
     resource_bytes = (WIKI / 'raw/map-resources.json').read_bytes()
     resource_register = json.loads(resource_bytes)

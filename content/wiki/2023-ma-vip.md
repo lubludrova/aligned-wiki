@@ -4,7 +4,7 @@ venue: "ICLR"
 affiliations: ["FAIR, Meta AI", "University of Pennsylvania"]
 research_groups: [meta-fair]
 reviewed: false
-tags: [method, reward-learning, video-representation, robot-learning, egocentric-video, real-world-evaluation]
+tags: [method, reward-learning, video-representation, robot-learning, egocentric-video, real-world-evaluation, self-supervised-learning]
 ---
 
 # VIP: Towards Universal Visual Reward and Representation via Value-Implicit Pre-Training

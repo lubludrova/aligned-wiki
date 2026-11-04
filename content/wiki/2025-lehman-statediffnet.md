@@ -6,7 +6,7 @@ affiliations:
   - "ASML Research"
 research_groups: []
 reviewed: false
-tags: [method, state-changes, execution-quality, egocentric-video]
+tags: [method, state-changes, execution-quality, egocentric-video, sft]
 ---
 
 # Find the Assembly Mistakes: Error Segmentation for Industrial Applications

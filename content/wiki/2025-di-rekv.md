@@ -4,7 +4,7 @@ venue: "ICLR 2025"
 affiliations: ["Shanghai Jiao Tong University", "Alibaba Group"]
 research_groups: []
 reviewed: false
-tags: [method, video-memory, video-qa, efficient-processing]
+tags: [method, video-memory, video-qa, efficient-processing, training-free]
 ---
 
 # Streaming Video Question-Answering with In-context Video KV-Cache Retrieval

@@ -4,7 +4,7 @@ venue: "IEEE TPAMI"
 affiliations: ["University of Catania"]
 research_groups: [catania-coai]
 reviewed: false
-tags: [dataset, benchmark, method, procedure-understanding, execution-quality, video-representation, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, execution-quality, video-representation, egocentric-video, supervised-training]
 ---
 
 # Task Graph Maximum Likelihood Estimation for Procedural Activity Understanding in Egocentric Videos

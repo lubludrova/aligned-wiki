@@ -5,7 +5,7 @@ affiliations:
   - "Michigan State University, USA"
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, procedure-understanding, state-changes, video-qa, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, state-changes, video-qa, egocentric-video, sft]
 ---
 
 # Benchmarking and Learning Object-Centric Procedural Understanding in Instructional Videos

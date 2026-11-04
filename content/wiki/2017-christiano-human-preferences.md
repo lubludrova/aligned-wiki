@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: [OpenAI, DeepMind]
 research_groups: []
 reviewed: false
-tags: [method, reward-learning, preference-learning, robot-learning]
+tags: [method, reward-learning, preference-learning, robot-learning, rl, supervised-training]
 ---
 
 # Deep Reinforcement Learning from Human Preferences

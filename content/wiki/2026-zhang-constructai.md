@@ -4,7 +4,7 @@ venue: "AAAI / IAAI, 40(47), 40167-40175"
 affiliations: ["Beijing University of Posts and Telecommunications", "Nanyang Technological University", "Nanjing Technological University", "Huafeng Technology (Nanjing)"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, execution-quality, egocentric-video, construction, real-world-evaluation, production-use]
+tags: [dataset, benchmark, method, execution-quality, egocentric-video, construction, real-world-evaluation, production-use, sft]
 ---
 
 # ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems

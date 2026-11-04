@@ -4,7 +4,7 @@ venue: "ICLR 2025"
 affiliations: ["Korea Advanced Institute of Science and Technology", "University of Illinois at Urbana-Champaign"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-qa, preference-learning]
+tags: [dataset, benchmark, method, video-qa, preference-learning, sft, preference-optimization]
 ---
 
 # Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models

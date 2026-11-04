@@ -4,7 +4,7 @@ venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
 affiliations: ["S-Lab, Nanyang Technological University", "A*STAR, Singapore", "Simon Fraser University", "Shanghai AI Lab"]
 research_groups: [ntu-s-lab]
 reviewed: false
-tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa, egocentric-video]
+tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa, egocentric-video, sft, rl]
 ---
 
 # Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning

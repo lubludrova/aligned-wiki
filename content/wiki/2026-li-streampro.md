@@ -4,7 +4,7 @@ venue: "arXiv"
 affiliations: ["AIM3 Lab, Renmin University of China", "MiLM Plus, Xiaomi Inc.", "Peking University"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-representation, video-qa]
+tags: [dataset, benchmark, method, video-representation, video-qa, sft, rl]
 ---
 
 # StreamPro: From Reactive Perception to Proactive Decision-Making in Streaming Video

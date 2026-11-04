@@ -4,7 +4,7 @@ venue: "EMNLP"
 affiliations: ["Queen Mary University of London", "Independent researcher", "Durham University", "Imperial College London", "Huawei"]
 research_groups: [huawei-multimodal-agents]
 reviewed: false
-tags: [method, video-memory, video-retrieval, video-qa, efficient-processing]
+tags: [method, video-memory, video-retrieval, video-qa, efficient-processing, training-free]
 ---
 
 # Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding

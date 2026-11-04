@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: [Karlsruhe Institute of Technology, ETH Zurich, University of Oxford, Hunan University, "INSAIT, Sofia University ‘St. Kliment Ohridski’"]
 research_groups: [kit-cvhci]
 reviewed: false
-tags: [dataset, benchmark, method, video-qa, video-retrieval, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, video-qa, video-retrieval, spatial-understanding, egocentric-video, training-free]
 ---
 
 # EgoExoMem: Cross-View Memory Reasoning over Synchronized Egocentric and Exocentric Videos

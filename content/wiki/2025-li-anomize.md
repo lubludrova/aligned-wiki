@@ -8,7 +8,7 @@ affiliations:
   - "Hubei Key Laboratory of Transportation Internet of Things, Wuhan University of Technology"
 research_groups: []
 reviewed: false
-tags: [method, execution-quality, video-representation]
+tags: [method, execution-quality, video-representation, supervised-training]
 ---
 
 # Anomize: Better Open Vocabulary Video Anomaly Detection

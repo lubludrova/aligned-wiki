@@ -4,7 +4,7 @@ venue: "ISARC, pp. 824–831"
 affiliations: ["Department of Structural Engineering, Ben-Gurion University of the Negev", "Department of Civil and Environmental Engineering, Catholic University of America"]
 research_groups: []
 reviewed: false
-tags: [method, procedure-understanding, execution-quality, construction]
+tags: [method, procedure-understanding, execution-quality, construction, training-free]
 ---
 
 # From Sensing to Scheduling: Deviation-Based Framework for Sensor-Aware Progress Monitoring and Schedule Control

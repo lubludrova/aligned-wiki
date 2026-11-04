@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["University of Michigan", "Voxel51"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, execution-quality, egocentric-video]
+tags: [dataset, benchmark, method, execution-quality, egocentric-video, supervised-training]
 ---
 
 # Mistake Attribution: Fine-Grained Mistake Understanding in Egocentric Videos

@@ -4,7 +4,7 @@ venue: "ICLR"
 affiliations: ["CSE, HKUST", Apple, UCLA]
 research_groups: [apple-machine-learning-research]
 reviewed: false
-tags: [dataset, benchmark, method, video-qa, video-retrieval, video-representation, egocentric-video]
+tags: [dataset, benchmark, method, video-qa, video-retrieval, video-representation, egocentric-video, sft]
 ---
 
 # MM-Ego: Towards Building Egocentric Multimodal LLMs for Video QA

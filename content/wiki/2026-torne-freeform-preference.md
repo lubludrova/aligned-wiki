@@ -4,7 +4,7 @@ venue: "CoRL 2026"
 affiliations: ["Stanford University"]
 research_groups: [stanford-iris]
 reviewed: false
-tags: [method, reward-learning, preference-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation]
+tags: [method, reward-learning, preference-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation, sft, rl]
 ---
 
 # Freeform Preference Learning for Robotic Manipulation

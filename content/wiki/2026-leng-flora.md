@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["NVIDIA"]
 research_groups: [nvidia-gear]
 reviewed: false
-tags: [dataset, benchmark, method, execution-quality, reward-learning, efficient-processing, egocentric-video, production-use]
+tags: [dataset, benchmark, method, execution-quality, reward-learning, efficient-processing, egocentric-video, production-use, sft, rl]
 ---
 
 # FLORA: An Open Model Suite for Scaling Robotics Data Engines

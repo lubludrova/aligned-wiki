@@ -4,7 +4,7 @@ venue: "ICRA"
 affiliations: ["NVIDIA", "University of Southern California", "University of Texas at Austin"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-memory, video-qa, spatial-understanding, real-world-evaluation]
+tags: [dataset, benchmark, method, video-memory, video-qa, spatial-understanding, real-world-evaluation, training-free]
 ---
 
 # ReMEmbR: Building and Reasoning Over Long-Horizon Spatio-Temporal Memory for Robot Navigation

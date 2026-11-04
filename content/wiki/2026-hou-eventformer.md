@@ -4,7 +4,7 @@ venue: "ECIR 2026"
 affiliations: ["CAS Key Laboratory of AI Security, Institute of Computing Technology, Chinese Academy of Sciences", "CAS Key Laboratory of Network Data Science and Technology, Institute of Computing Technology, Chinese Academy of Sciences", "University of Chinese Academy of Sciences"]
 research_groups: []
 reviewed: false
-tags: [method, video-retrieval, video-representation, efficient-processing]
+tags: [method, video-retrieval, video-representation, efficient-processing, supervised-training]
 ---
 
 # Event-Aware Video Corpus Moment Retrieval

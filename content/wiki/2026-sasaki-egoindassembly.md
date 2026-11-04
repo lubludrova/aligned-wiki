@@ -5,7 +5,7 @@ affiliations:
   - "Hitachi, Ltd. Research and Development Group, Japan"
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, procedure-understanding, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, egocentric-video, training-free]
 ---
 
 # EgoIndAssembly: Diagnosing Fine-Grained Temporal Hand Reasoning in Vision–Language Models for Skilled Assembly

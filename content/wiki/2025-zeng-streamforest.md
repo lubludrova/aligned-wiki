@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: ["Nanjing University", "Shanghai AI Laboratory", "Zhejiang University", "Noah’s Ark Lab, Huawei", "Yinwang Intelligent Tech."]
 research_groups: ["nju-mcg"]
 reviewed: false
-tags: [dataset, benchmark, method, video-memory, efficient-processing, video-qa]
+tags: [dataset, benchmark, method, video-memory, efficient-processing, video-qa, sft]
 ---
 
 # StreamForest: Efficient Online Video Understanding with Persistent Event Memory

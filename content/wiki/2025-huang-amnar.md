@@ -8,7 +8,7 @@ affiliations:
   - Guangdong Province Key Laboratory of Information Security Technology
 research_groups: []
 reviewed: false
-tags: [method, procedure-understanding, execution-quality, egocentric-video]
+tags: [method, procedure-understanding, execution-quality, egocentric-video, supervised-training]
 ---
 
 # Modeling Multiple Normal Action Representations for Error Detection in Procedural Tasks

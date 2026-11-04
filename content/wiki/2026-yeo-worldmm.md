@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["KAIST", "Nanyang Technological University, Singapore", "DeepAuto.ai"]
 research_groups: [kaist-mlai, ntu-adaptive-machine-intelligence]
 reviewed: false
-tags: [method, video-memory, video-retrieval, video-qa, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, egocentric-video, training-free]
 ---
 
 # WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning

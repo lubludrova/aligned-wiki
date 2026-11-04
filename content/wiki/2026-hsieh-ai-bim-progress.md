@@ -4,7 +4,7 @@ venue: "Automation in Construction 183, 106783"
 affiliations: ["Department of Civil and Construction Engineering, National Taiwan University of Science and Technology"]
 research_groups: []
 reviewed: false
-tags: [method, procedure-understanding, spatial-understanding, construction, real-world-evaluation]
+tags: [method, procedure-understanding, spatial-understanding, construction, real-world-evaluation, sft]
 ---
 
 # Automated construction progress monitoring and control through AI-based image recognition and BIM integration

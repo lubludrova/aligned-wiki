@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Zhejiang University", "Qingdao University", "Tianjin University", "National University of Singapore"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, procedure-understanding, state-changes, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, state-changes, spatial-understanding, egocentric-video, sft]
 ---
 
 # EgoTSR++: Egocentric Spatiotemporal Reasoning for Task Progress Understanding

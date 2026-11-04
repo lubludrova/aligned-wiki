@@ -7,7 +7,7 @@ affiliations:
   - "Xidian University"
 research_groups: []
 reviewed: false
-tags: [method, execution-quality, video-representation]
+tags: [method, execution-quality, video-representation, supervised-training]
 ---
 
 # Open-Vocabulary Video Anomaly Detection

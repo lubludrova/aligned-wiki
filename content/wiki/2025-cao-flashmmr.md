@@ -4,7 +4,7 @@ venue: "NeurIPS 2025"
 affiliations: ["The University of Queensland"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-retrieval, video-representation]
+tags: [dataset, benchmark, method, video-retrieval, video-representation, supervised-training]
 ---
 
 # When One Moment Isn’t Enough: Multi-Moment Retrieval with Cross-Moment Interactions

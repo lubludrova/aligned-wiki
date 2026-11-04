@@ -6,7 +6,7 @@ affiliations:
   - ASML
 research_groups: [tue-aria]
 reviewed: false
-tags: [dataset, benchmark, method, procedure-understanding, execution-quality, state-changes, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, execution-quality, state-changes, egocentric-video, sft, supervised-training]
 ---
 
 # Learning to Recognize Correctly Completed Procedure Steps in Egocentric Assembly Videos through Spatio-Temporal Modeling

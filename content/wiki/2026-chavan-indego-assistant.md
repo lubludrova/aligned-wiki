@@ -4,7 +4,7 @@ venue: "CIRP Annals 75, 19–23"
 affiliations: ["Automation Technology Division, Fraunhofer IPK", "Department of Industrial Automation Technology, Technical University of Berlin"]
 research_groups: [fraunhofer-ipk-automation, tu-berlin-iat]
 reviewed: false
-tags: [method, procedure-understanding, egocentric-video]
+tags: [method, procedure-understanding, egocentric-video, training-free, supervised-training]
 ---
 
 # AI-based worker guidance in assembly and disassembly operations using multimodal ego/exo-centric data capture and structured task knowledge

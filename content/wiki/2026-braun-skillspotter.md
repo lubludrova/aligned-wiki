@@ -4,7 +4,7 @@ venue: "ECCV 2026"
 affiliations: ["ETH Zürich"]
 research_groups: [eth-siplab]
 reviewed: false
-tags: [method, execution-quality, egocentric-video]
+tags: [method, execution-quality, egocentric-video, supervised-training]
 ---
 
 # SkillSpotter: Pose-Aware Multi-View Skilled Action Detection and Grading in Ego-Exo Videos

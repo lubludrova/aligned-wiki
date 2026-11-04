@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["University of Trento", "Fondazione Bruno Kessler"]
 research_groups: []
 reviewed: false
-tags: [method, video-representation, video-qa]
+tags: [method, video-representation, video-qa, training-free]
 ---
 
 # Harnessing Large Language Models for Training-free Video Anomaly Detection

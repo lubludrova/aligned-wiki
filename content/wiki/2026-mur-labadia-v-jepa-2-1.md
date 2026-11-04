@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["FAIR at Meta", "Universidad de Zaragoza"]
 research_groups: [meta-fair]
 reviewed: false
-tags: [method, video-representation, spatial-understanding, egocentric-video, real-world-evaluation]
+tags: [method, video-representation, spatial-understanding, egocentric-video, real-world-evaluation, self-supervised-learning]
 ---
 
 # V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning

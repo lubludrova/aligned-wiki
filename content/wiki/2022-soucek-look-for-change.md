@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Czech Institute of Informatics, Robotics and Cybernetics, Czech Technical University in Prague", DeepMind, "Département d’informatique de l’ENS, École normale supérieure", Inria, CNRS, PSL Research University]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, state-changes, construction]
+tags: [dataset, benchmark, method, state-changes, construction, self-supervised-learning]
 ---
 
 # Look for the Change: Learning Object States and State-Modifying Actions from Untrimmed Web Videos

@@ -4,7 +4,7 @@ venue: "WACV"
 affiliations: ["Eindhoven University of Technology", "ASML Research"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, procedure-understanding, state-changes, execution-quality, egocentric-video]
+tags: [dataset, benchmark, method, procedure-understanding, state-changes, execution-quality, egocentric-video, sft]
 ---
 
 # IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting

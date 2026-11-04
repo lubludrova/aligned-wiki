@@ -4,7 +4,7 @@ venue: "PVLDB 13(4), 533–546"
 affiliations: ["Stanford DAWN Project, Stanford University"]
 research_groups: []
 reviewed: false
-tags: [method, video-retrieval, efficient-processing]
+tags: [method, video-retrieval, efficient-processing, supervised-training]
 ---
 
 # BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics

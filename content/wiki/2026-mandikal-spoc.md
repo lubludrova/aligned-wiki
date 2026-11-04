@@ -4,7 +4,7 @@ venue: "WACV"
 affiliations: ["University of Texas at Austin"]
 research_groups: [ut-austin-vision]
 reviewed: false
-tags: [dataset, benchmark, method, state-changes, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, state-changes, spatial-understanding, egocentric-video, supervised-training]
 ---
 
 # SPOC: Spatially-Progressing Object State Change Segmentation in Video

@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Shanghai Jiao Tong University", "Nanjing University", "Nanjing University of Science and Technology"]
 research_groups: []
 reviewed: false
-tags: [method, efficient-processing, video-memory]
+tags: [method, efficient-processing, video-memory, training-free]
 ---
 
 # PARSEE-VAD: Efficient Training-Free Online Video Anomaly Detection via Proposition-Aware Reasoning and Streaming Evidence Escalation

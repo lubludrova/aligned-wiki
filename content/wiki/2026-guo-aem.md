@@ -4,7 +4,7 @@ venue: "ICLR 2026"
 affiliations: ["Michigan State University"]
 research_groups: [msu-action]
 reviewed: false
-tags: [method, execution-quality, state-changes, spatial-understanding, egocentric-video]
+tags: [method, execution-quality, state-changes, spatial-understanding, egocentric-video, supervised-training]
 ---
 
 # Procedural Mistake Detection via Action Effect Modeling

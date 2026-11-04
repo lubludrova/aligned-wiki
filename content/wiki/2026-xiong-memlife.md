@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Meta Reality Labs", "University of Virginia", "University of Illinois Urbana-Champaign"]
 research_groups: [meta-wearables-ai-ml]
 reviewed: false
-tags: [method, video-memory, video-retrieval, efficient-processing, egocentric-video]
+tags: [method, video-memory, video-retrieval, efficient-processing, egocentric-video, training-free, rl]
 ---
 
 # MemLife: Curating and Reasoning over Long-Term Egocentric Video Memories

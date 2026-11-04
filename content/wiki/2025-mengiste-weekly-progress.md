@@ -4,7 +4,7 @@ venue: "ISARC 2025, 641–648"
 affiliations: ["New York University Abu Dhabi"]
 research_groups: []
 reviewed: false
-tags: [method, state-changes, construction, real-world-evaluation]
+tags: [method, state-changes, construction, real-world-evaluation, training-free]
 ---
 
 # Automating Weekly Construction Activity Progress Reporting: Leveraging AI-Driven Workflows

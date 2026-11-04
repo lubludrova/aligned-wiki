@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["University of Bristol", "NAVER LABS Europe"]
 research_groups: [bristol-mavi]
 reviewed: false
-tags: [method, spatial-understanding, video-memory, egocentric-video]
+tags: [method, spatial-understanding, video-memory, egocentric-video, supervised-training]
 ---
 
 # Whareformer: Learning to Track What is Where in Long Egocentric Videos

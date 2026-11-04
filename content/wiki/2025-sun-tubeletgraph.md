@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: ["Cornell University"]
 research_groups: [cornell-hariharan]
 reviewed: false
-tags: [dataset, benchmark, method, state-changes, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, state-changes, spatial-understanding, egocentric-video, training-free]
 ---
 
 # Tracking and Understanding Object Transformations

@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["NJU", "PJLAB", "JD", "SJTU", "USTC", "CAS", "CUHK", "PKU", "THU", "FDU", "ZJU"]
 research_groups: [nju-mcg]
 reviewed: false
-tags: [dataset, method, video-memory, video-qa, efficient-processing]
+tags: [dataset, method, video-memory, video-qa, efficient-processing, sft]
 ---
 
 # OneStreamer: Unifying Perception, Memory, and Proactive Response in Streaming Video Interaction

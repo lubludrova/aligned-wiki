@@ -4,7 +4,7 @@ venue: "NeurIPS (Datasets and Benchmarks Track)"
 affiliations: ["Stanford University"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, egocentric-video, efficient-processing, video-representation]
+tags: [dataset, benchmark, method, egocentric-video, efficient-processing, video-representation, sft]
 ---
 
 # Streaming Detection of Queried Event Start

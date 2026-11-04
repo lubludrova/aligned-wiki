@@ -6,7 +6,7 @@ affiliations:
   - "University of Utah"
 research_groups: []
 reviewed: false
-tags: [method, procedure-understanding, execution-quality, efficient-processing]
+tags: [method, procedure-understanding, execution-quality, efficient-processing, rl, supervised-training]
 ---
 
 # MistExit: Learning to Exit for Early Mistake Detection in Procedural Videos

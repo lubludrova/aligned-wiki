@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: ["University of Adelaide", "National University of Singapore"]
 research_groups: []
 reviewed: false
-tags: [method, procedure-understanding, video-representation, efficient-processing]
+tags: [method, procedure-understanding, video-representation, efficient-processing, supervised-training]
 ---
 
 # OnlineTAS: An Online Baseline for Temporal Action Segmentation

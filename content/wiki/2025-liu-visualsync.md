@@ -4,7 +4,7 @@ venue: "NeurIPS"
 affiliations: ["University of Illinois Urbana-Champaign"]
 research_groups: []
 reviewed: false
-tags: [method, spatial-understanding, video-representation]
+tags: [method, spatial-understanding, video-representation, training-free]
 ---
 
 # VisualSync: Multi-Camera Synchronization via Cross-View Object Motion

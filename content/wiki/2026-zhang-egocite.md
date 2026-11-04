@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["University of Michigan, Ann Arbor", "Samsung Research America"]
 research_groups: []
 reviewed: false
-tags: [method, video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video, training-free]
 ---
 
 # EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory

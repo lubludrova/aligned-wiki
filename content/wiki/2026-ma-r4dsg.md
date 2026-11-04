@@ -4,7 +4,7 @@ venue: "ACM Multimedia (author-reported acceptance)"
 affiliations: ["College of Design and Innovation, Tongji University", "Samsung R&D Institute China - Beijing", "Shanghai Jiao Tong University", "Samsung Networks, Samsung Research America", "Shanghai Research Institute for Intelligent Autonomous Systems, Tongji University"]
 research_groups: []
 reviewed: false
-tags: [method, video-memory, spatial-understanding, video-qa, egocentric-video]
+tags: [method, video-memory, spatial-understanding, video-qa, egocentric-video, training-free]
 ---
 
 # R4DSG: Relative 4D Scene Graph Memory for Object-Centric Question Answering in Long Egocentric Video

@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Stanford University", "UC Berkeley"]
 research_groups: [stanford-iris]
 reviewed: false
-tags: [dataset, benchmark, method, reward-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation]
+tags: [dataset, benchmark, method, reward-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation, sft]
 ---
 
 # RoboReward: General-Purpose Vision-Language Reward Models for Robotics

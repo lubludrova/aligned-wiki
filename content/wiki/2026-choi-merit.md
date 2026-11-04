@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["Yonsei University", "Adobe Research"]
 research_groups: [yonsei-ciplab, adobe-research]
 reviewed: false
-tags: [method, video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, efficient-processing, egocentric-video, training-free]
 ---
 
 # Keep It Simple: Multi-Key Episodic Memory Retrieval for Ultra-Long Video Understanding

@@ -4,7 +4,7 @@ venue: "ICCBEI 2025, Kalpa Publications in Computing 22, 894–908"
 affiliations: ["The Hong Kong University of Science and Technology", "Drainage Services Department, Government of the Hong Kong Special Administrative Region", "AutoSafe Ltd."]
 research_groups: []
 reviewed: false
-tags: [dataset, method, execution-quality, construction, real-world-evaluation]
+tags: [dataset, method, execution-quality, construction, real-world-evaluation, sft]
 ---
 
 # A Domain Knowledge-Enhanced Large Vision-Language Model for Construction Site Safety Monitoring

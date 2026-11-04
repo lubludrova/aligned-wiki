@@ -38,7 +38,9 @@
       "method",
       "reward-learning",
       "preference-learning",
-      "robot-learning"
+      "robot-learning",
+      "rl",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -56,7 +58,7 @@
         "sha256": "dc14713dd821ba302bdbc0528a321713d1881f9a39d3c14f1a32f378c523cd7d"
       }
     ],
-    "sourceSha256": "6b74c738659d3846f124f6b65d38c32e3f2a790243917d649df0563474a1160f"
+    "sourceSha256": "f9b722d1f4cff761e27c32546c94cfd843258745a96418d5fd729ae2653ea01d"
   },
   "2017-zhang-videostorm": {
     "title": "Live Video Analytics at Scale with Approximation and Delay-Tolerance",
@@ -87,7 +89,8 @@
     "tags": [
       "method",
       "efficient-processing",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -105,7 +108,7 @@
         "sha256": "de91e3a75b67d8583b8b66f31344c7323ca2a12b08159620bfd43bd78cdb9f89"
       }
     ],
-    "sourceSha256": "8c41b45fe42af2ed7f1551cd075a16d97c8efe2939eac97f59aeedab1641a329"
+    "sourceSha256": "c6ee1b15d0c075ed770965bc75223790221f092f585045d5f8e25fb7f9d11b35"
   },
   "2018-doughty-skill-ranking": {
     "title": "Who’s Better? Who’s Best? Pairwise Deep Ranking for Skill Determination",
@@ -145,7 +148,8 @@
       "benchmark",
       "method",
       "execution-quality",
-      "preference-learning"
+      "preference-learning",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -163,7 +167,7 @@
         "sha256": "c44e58d3ad30cf256d6ce9cb8a4e5f6f09367b49ccece0f60facd2d819ea6ffd"
       }
     ],
-    "sourceSha256": "83f619670f93ad37e176039b979569749af914fd3d4ba2974d34066a762126b2"
+    "sourceSha256": "316a6d4936bde2eddfdb85c481a705369ac544c9f4dc06dae18193efbfab4f93"
   },
   "2018-hsieh-focus": {
     "title": "Focus: Querying Large Video Datasets with Low Latency and Low Cost",
@@ -198,7 +202,8 @@
       "method",
       "video-retrieval",
       "efficient-processing",
-      "video-representation"
+      "video-representation",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -216,7 +221,7 @@
         "sha256": "77771916b8e95462541e89c5b7aaeab4846756a09d247efda303484ef52dddc1"
       }
     ],
-    "sourceSha256": "5a20b44c89acd31cc0ec475773649fe21792bdc47f87f18d06ee6fb8370ebb86"
+    "sourceSha256": "6e27ed454630e31a5b321ff850f2a79184e1d08c20f189ef672a69a48accedf4"
   },
   "2018-jiang-chameleon": {
     "title": "Chameleon: Scalable Adaptation of Video Analytics",
@@ -244,7 +249,8 @@
     "tags": [
       "method",
       "efficient-processing",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -262,7 +268,7 @@
         "sha256": "37f8bbeede659928dee1195cd82cdcca0441200ea1759ce14f4e1a3c1b4b7c43"
       }
     ],
-    "sourceSha256": "a01134abcf49042e451ac31908b6b0b1e213c9e7bb95a00e91c573f9369da4ef"
+    "sourceSha256": "b054916b79b6e654d2b39ace806bcd072c88244e49929dea02afee19f673f0d5"
   },
   "2019-kang-blazeit": {
     "title": "BlazeIt: Optimizing Declarative Aggregation and Limit Queries for Neural Network-Based Video Analytics",
@@ -292,7 +298,8 @@
     "tags": [
       "method",
       "video-retrieval",
-      "efficient-processing"
+      "efficient-processing",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -310,7 +317,7 @@
         "sha256": "bf828f9b12f91dba5c8ad9e8ef74fdd36ce55c61bceaee5133c96b91f295858a"
       }
     ],
-    "sourceSha256": "85fec5886d4db8d6c451e6599bbc4e47721ed244904f3d74bc83180b9d10e54a"
+    "sourceSha256": "c195ac6ba75c969f1739760d943a749679f23b8fa532b4ebd3687475c62f659f"
   },
   "2020-lei-tvr": {
     "title": "TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval",
@@ -349,7 +356,9 @@
       "method",
       "video-retrieval",
       "video-representation",
-      "efficient-processing"
+      "efficient-processing",
+      "supervised-training",
+      "self-supervised-learning"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -367,7 +376,7 @@
         "sha256": "acadb46ccee9d70d8c3b9d530db8be2d20cd09adead3f621a648570a21f70249"
       }
     ],
-    "sourceSha256": "074158453f73d7afcf356f1099e9af87e2ece287acbfa9ccaa9420cd0a8618e8"
+    "sourceSha256": "53434a16facf8493cfbd31690ad63b155df0d6007d1d0e4aba1b1932d0d89fb1"
   },
   "2020-li-reducto": {
     "title": "Reducto: On-Camera Filtering for Resource-Efficient Real-Time Video Analytics",
@@ -401,7 +410,8 @@
     "tags": [
       "method",
       "efficient-processing",
-      "video-representation"
+      "video-representation",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -419,7 +429,7 @@
         "sha256": "f325b1869ca51d5b1f21b1cbba9bfb1fd6bc508ff67857af62e23ceb76d4ae8b"
       }
     ],
-    "sourceSha256": "f728c25bef10a29b844ba848f3f0164a04ab031355a1f230b2ee0c35da9b8119"
+    "sourceSha256": "88f3dca3a8b1e97c6ea0932497306577d59aba63e0a22b8207dc6b23c168a242"
   },
   "2022-elfeki-multi-ego": {
     "title": "Multi-Stream Dynamic Video Summarization",
@@ -454,7 +464,9 @@
       "method",
       "video-representation",
       "egocentric-video",
-      "multi-person"
+      "multi-person",
+      "supervised-training",
+      "unsupervised-learning"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -472,7 +484,7 @@
         "sha256": "5c22f18027f3016fff1c1a90b888bb6974548883194d93b4808b32906e5dade4"
       }
     ],
-    "sourceSha256": "c42b1e81169eb55c8ec50476ac0fb78305e236ef8076cf698ba5bb424095fba1"
+    "sourceSha256": "8df7c670d67799b1ad375a6608e2861a0e10d44b3c7edeaf1dfb3618df404d59"
   },
   "2022-grauman-ego4d": {
     "title": "Ego4D: Around the World in 3,000 Hours of Egocentric Video",
@@ -651,7 +663,9 @@
       "method",
       "video-representation",
       "video-retrieval",
-      "efficient-processing"
+      "efficient-processing",
+      "training-free",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -669,7 +683,7 @@
         "sha256": "5233f80322deef9eba5fd652154fade70e9d12ae05c92caf506efddce3870331"
       }
     ],
-    "sourceSha256": "56862b02871bd883bbf76ddffadba86defc6a25baec819120551c9f9fd4be646"
+    "sourceSha256": "14ef6c56952ba8841f0d7672e9ca8fd7f032efc780886f7aa6a3adbacd860e30"
   },
   "2022-sener-assembly101": {
     "title": "Assembly101: A Large-Scale Multi-View Video Dataset for Understanding Procedural Activities",
@@ -771,7 +785,8 @@
       "benchmark",
       "method",
       "state-changes",
-      "construction"
+      "construction",
+      "self-supervised-learning"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -789,7 +804,7 @@
         "sha256": "3b1ed62083938395c839b0b0b87c66b7723a9e34ddd81cd820e68dc29af64f82"
       }
     ],
-    "sourceSha256": "469a2a7c127f30d1a7c7d0f48884c8fedd488a82bbf7c32e82c71d5da5200f98"
+    "sourceSha256": "60fdc8007a394f461c7b82e4a0a7f6989f69f68dcdd08dbae4a87f37021460f9"
   },
   "2023-ma-vip": {
     "title": "VIP: Towards Universal Visual Reward and Representation via Value-Implicit Pre-Training",
@@ -827,7 +842,8 @@
       "video-representation",
       "robot-learning",
       "egocentric-video",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "self-supervised-learning"
     ],
     "researchGroups": [
       "meta-fair"
@@ -847,7 +863,7 @@
         "sha256": "b66e9cb739b775f6a0b74bbaca69a755c89dfa2c6f113b53df2463a1269aefd5"
       }
     ],
-    "sourceSha256": "f254438562c3ddd69399109b41784d90c21ddae00fbac7fd804b926b30502c25"
+    "sourceSha256": "23454103963092f76bfc3bf02eddf02e5684d6bfc0b790f3c67f76de16434cbb"
   },
   "2023-wang-holoassist": {
     "title": "HoloAssist: an Egocentric Human Interaction Dataset for Interactive AI Assistants in the Real World",
@@ -941,7 +957,8 @@
       "method",
       "video-retrieval",
       "spatial-understanding",
-      "efficient-processing"
+      "efficient-processing",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -959,7 +976,7 @@
         "sha256": "fff4b309bcd1def28f77e68b848321fea3c041d4940d20dda689522b2eeabdd7"
       }
     ],
-    "sourceSha256": "cef09f8da249b4a503b506887bd9620ffe9b43d7d991e4833bcf63ebec036cf8"
+    "sourceSha256": "c6b7091ba28601e02729892cf8874ea18091ebd12ec441f812f65993fc0f48be"
   },
   "2024-chen-videollm-online": {
     "title": "VideoLLM-online: Online Video Large Language Model for Streaming Video",
@@ -997,7 +1014,8 @@
       "video-representation",
       "efficient-processing",
       "egocentric-video",
-      "video-qa"
+      "video-qa",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1015,7 +1033,7 @@
         "sha256": "160b68a6713fbe4d252a0a3c2707a2856099388f3588ee7f5d3d652185fa3dcf"
       }
     ],
-    "sourceSha256": "5131695d1f4c819d974a2c7920b790bf1e478dc63fc5e863271be29887202205"
+    "sourceSha256": "0249ba3134f99e17f9c0bbad2ced53cd41e0e433813c220bd152f41bff45bd02"
   },
   "2024-eyzaguirre-sdqes": {
     "title": "Streaming Detection of Queried Event Start",
@@ -1052,7 +1070,8 @@
       "method",
       "egocentric-video",
       "efficient-processing",
-      "video-representation"
+      "video-representation",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1070,7 +1089,7 @@
         "sha256": "1c204d072adfcc2785469fc3b9898a56923001a6ddfb36797cfcb975e0ac0f40"
       }
     ],
-    "sourceSha256": "b6e1f9ceb1949a7d6133b800a4dda1f031a1897950f40c1596024380b383081c"
+    "sourceSha256": "07a2425f0291d9264f1145d135ddc95d8f2a64bbf103ade332ea2b40235cea22"
   },
   "2024-fan-videoagent": {
     "title": "VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding",
@@ -1108,7 +1127,8 @@
       "video-memory",
       "video-retrieval",
       "video-qa",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1126,7 +1146,7 @@
         "sha256": "838ad0909b961f0b1b861e6b29254d424d6412ae0ac4f4af990806eba4ed6af5"
       }
     ],
-    "sourceSha256": "aff9ca0a388b2866979f903c71c076618f6d9a841bdb5fad07b2e71519ef59e4"
+    "sourceSha256": "efcd5dbd5a1af0665e4d2077e1e8bf351379dd1fd60b8568b233e0c513b23c6b"
   },
   "2024-goletto-amego": {
     "title": "AMEGO: Active Memory from long EGOcentric videos",
@@ -1166,7 +1186,8 @@
       "video-memory",
       "video-retrieval",
       "spatial-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [
       "meta-fair",
@@ -1187,7 +1208,7 @@
         "sha256": "ec34cd3fbb7f7586deabf3f39761a20e980820bc608727bf0c14aff275e39a17"
       }
     ],
-    "sourceSha256": "0a347103c6ec0cb4ea5af4354edfebc18538c68292d7f07c55b9abb5b133ba05"
+    "sourceSha256": "7cdac62f9e534df24c5d38db3311de125d3a758bfb2db9d02aa6fac40e6a600a"
   },
   "2024-grauman-ego-exo4d": {
     "title": "Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives",
@@ -1369,7 +1390,8 @@
       "method",
       "execution-quality",
       "procedure-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [
       "northeastern-nova"
@@ -1389,7 +1411,7 @@
         "sha256": "b7fe0dce2686db2e0cec72d1900f93f2c85347c3bbbead99d8dbed2ab871d1cb"
       }
     ],
-    "sourceSha256": "7e3120a796016faa0d10bfff125aeb870d93a05f67960c8b0db43ece8aab4ef1"
+    "sourceSha256": "24bf2cf584a67037ab764a1a141c97f962a7ae2ad6e2a738bd6fdb0c50e5a7ba"
   },
   "2024-nguyen-oscar": {
     "title": "OSCaR: Object State Captioning and State Change Representation",
@@ -1428,7 +1450,8 @@
       "method",
       "state-changes",
       "video-qa",
-      "egocentric-video"
+      "egocentric-video",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1446,7 +1469,7 @@
         "sha256": "b738bf617c00f9f2e8afa4a387ecf5ec434842b91d379ba01f1d8ab8b92075a2"
       }
     ],
-    "sourceSha256": "4dff5efa5f739eba75ff9e3cd34b26edf4c382c7f60e894a32989b6d636324ee"
+    "sourceSha256": "b187ec3500173007e5ae710defecbfe0dba0e7835c71c5dffe2c136388d1cd6a"
   },
   "2024-peddi-captaincook4d": {
     "title": "CaptainCook4D: A Dataset for Understanding Errors in Procedural Activities",
@@ -1546,7 +1569,8 @@
       "method",
       "video-representation",
       "state-changes",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1564,7 +1588,7 @@
         "sha256": "c42e48500aaa126f7857c174a8d456bdeac207e2e55b573a422aaabed537b91e"
       }
     ],
-    "sourceSha256": "0723ad028fb7e52db5a2eaef859461a0c6dc0220724700cbfb48b21761f4a2f9"
+    "sourceSha256": "9835d75a0abec0096300b7390fad956b54942f353078be67fe616845e16b1bf7"
   },
   "2024-schoonbeek-industreal": {
     "title": "IndustReal: A Dataset for Procedure Step Recognition Handling Execution Errors in Egocentric Videos in an Industrial-Like Setting",
@@ -1603,7 +1627,8 @@
       "procedure-understanding",
       "state-changes",
       "execution-quality",
-      "egocentric-video"
+      "egocentric-video",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1621,7 +1646,7 @@
         "sha256": "ac4551ad16826641205babc997bb11ae47e341e068beb46b8a78dae6621888dd"
       }
     ],
-    "sourceSha256": "4d5007b5564e1ce2b2380760eba04e1a27394d869a5ae35ce86bad3abb013b81"
+    "sourceSha256": "634b80242998fadec856610311199cffe7d1de3c303586fcadd71d90fd25708d"
   },
   "2024-shen-protas": {
     "title": "Progress-Aware Online Action Segmentation for Egocentric Procedural Task Videos",
@@ -1653,7 +1678,8 @@
       "method",
       "procedure-understanding",
       "video-representation",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1671,7 +1697,7 @@
         "sha256": "c49c4112f05bc3a7705cbaf7bac2381dfa7c97736349410fe899c901ac1f8311"
       }
     ],
-    "sourceSha256": "258541b79b368155ea69610d7322b0144a1deac74f18170c7d59b1a32709b06b"
+    "sourceSha256": "d9613b33db593ec5e30a0cf8981b095891568906e2c836540c9edd317b97c3a2"
   },
   "2024-wu-ovvad": {
     "title": "Open-Vocabulary Video Anomaly Detection",
@@ -1698,7 +1724,8 @@
     "tags": [
       "method",
       "execution-quality",
-      "video-representation"
+      "video-representation",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1716,7 +1743,7 @@
         "sha256": "03f165b739dcc456c3894cc96a8e2641f0e5f3bacacae0008f06adb5d09d5bf7"
       }
     ],
-    "sourceSha256": "dfafad89a77190fa93a84d30ca2a47b59f1a8d6ee498c1fc8611f7fbd3fe233b"
+    "sourceSha256": "23111210fede2c27b314da9097a8e80525f5a3ba8366c0a4b62ee0b804c79d8b"
   },
   "2024-xue-vidosc": {
     "title": "Learning Object State Changes in Videos: An Open-World Perspective",
@@ -1753,7 +1780,8 @@
       "benchmark",
       "method",
       "state-changes",
-      "video-representation"
+      "video-representation",
+      "supervised-training"
     ],
     "researchGroups": [
       "meta-fair",
@@ -1774,7 +1802,7 @@
         "sha256": "64d98ea183f4ec3743c2d585f9c88d9c02d9a66f196ca476c6c1a2485d011918"
       }
     ],
-    "sourceSha256": "18d1c14d4eadc8aa84a49709df25e705e36c6c19333bd3ed81a8f251d037ab85"
+    "sourceSha256": "ddd3f4b2742ec3ece96e90d92f4e68bcc40babbcdca9366e78fc36e6ca9383d0"
   },
   "2024-zanella-lavad": {
     "title": "Harnessing Large Language Models for Training-free Video Anomaly Detection",
@@ -1809,7 +1837,8 @@
     "tags": [
       "method",
       "video-representation",
-      "video-qa"
+      "video-qa",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1827,7 +1856,7 @@
         "sha256": "afef26cf7a6ea1e072d141c28e53571db0dfa4c7fcfa54f4192c2b2b7fa2e30b"
       }
     ],
-    "sourceSha256": "a705ec7255240f6f7cc9059d7a087449e7de2a050a0712bd7382505c7137a634"
+    "sourceSha256": "d8a2e78f8b706b5af4fca4d62cef513a64a533524f05d728ed094be58ff9ec7f"
   },
   "2024-zhong-onlinetas": {
     "title": "OnlineTAS: An Online Baseline for Temporal Action Segmentation",
@@ -1859,7 +1888,8 @@
       "method",
       "procedure-understanding",
       "video-representation",
-      "efficient-processing"
+      "efficient-processing",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1877,7 +1907,7 @@
         "sha256": "f5b276eebc1732c680b5bc53c5113f895eb8dd80880c3afc25c559d65d00424a"
       }
     ],
-    "sourceSha256": "944a39894e9e2678c0168ef8ffc9c4774e44ff6598cbb00091645e56f6a385e9"
+    "sourceSha256": "d8338ded60c6b9dc346a468e995aa69bffb970fbb9c4bec850f4e6f36687630f"
   },
   "2024-zhou-streaming-dvc": {
     "title": "Streaming Dense Video Captioning",
@@ -1908,7 +1938,8 @@
       "method",
       "video-memory",
       "video-representation",
-      "efficient-processing"
+      "efficient-processing",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -1926,7 +1957,7 @@
         "sha256": "5a5d1b7c49dd9aa93511660d142dbe01c371695297f6301d88dc9c745770f4c6"
       }
     ],
-    "sourceSha256": "bbc2a23061450319763e183357d1accb97f99f7dcbe2944ac29e941512a3fcb7"
+    "sourceSha256": "fa327882cf13cc67341e989d3e17156f741ffa97dc0f735acbc67af239be196f"
   },
   "2025-ahmad-sh17": {
     "title": "SH17: A dataset for human safety and personal protective equipment detection in manufacturing industry",
@@ -2020,7 +2051,8 @@
       "video-memory",
       "video-qa",
       "spatial-understanding",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2038,7 +2070,7 @@
         "sha256": "8f2f2e1eda7784d64998b440d248951e0aa930cd27eac4cef90151cf31d40162"
       }
     ],
-    "sourceSha256": "289c6af26e462d29a456befc2b135fa91f46fa0f8f46f4b43a7ddb53203ac330"
+    "sourceSha256": "fc4f64f0bd9652e4679ffcfa70215eddaa2239e36debad279dc7daac9435a955"
   },
   "2025-ashutosh-expertaf": {
     "title": "ExpertAF: Expert Actionable Feedback from Video",
@@ -2077,7 +2109,8 @@
       "method",
       "execution-quality",
       "video-retrieval",
-      "egocentric-video"
+      "egocentric-video",
+      "sft"
     ],
     "researchGroups": [
       "meta-fair"
@@ -2097,7 +2130,7 @@
         "sha256": "8b28c5d370c9bc2950b7eab20b6eca0e47a2d33dd89eec790dc179336199860d"
       }
     ],
-    "sourceSha256": "09b5456669c322abaf8d39c911c8f9d4500bf43b64ca3c95b1a30b70c5341c85"
+    "sourceSha256": "01ca549fda1c7159b6cc6cd3052f4e3152364cbd6e637adcbe71ee55b6efbd3b"
   },
   "2025-ayalew-progressor": {
     "title": "PROGRESSOR: A Perceptually Guided Reward Estimator with Self-Supervised Online Refinement",
@@ -2138,7 +2171,9 @@
       "reward-learning",
       "robot-learning",
       "egocentric-video",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "rl",
+      "self-supervised-learning"
     ],
     "researchGroups": [
       "ttic-ripl"
@@ -2158,7 +2193,7 @@
         "sha256": "95186ae67805f730c652be1ec7e14855097e9c924952790c408ab01ae7056cfd"
       }
     ],
-    "sourceSha256": "f98a0aebfeb790f78e6bfac59ce0f466f2cf788e352ba36270dd0f32aed37e57"
+    "sourceSha256": "5153b74dc8c6e3a2aee377f000c9b9e2454d41c0fe19459d0959158e8019b881"
   },
   "2025-bhattacharyya-livemamba": {
     "title": "Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?",
@@ -2197,7 +2232,8 @@
       "procedure-understanding",
       "execution-quality",
       "egocentric-video",
-      "efficient-processing"
+      "efficient-processing",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2215,7 +2251,7 @@
         "sha256": "bb9f8133b8b1a01409180183e60d1f031638441391062957b82dbad24645a84a"
       }
     ],
-    "sourceSha256": "aa9701f67d99c086cb3dfb2d0840cacbe510bdb1c7d3b1639d0d23da8ca23f8f"
+    "sourceSha256": "e6c552cb4e50695d748c977e63ed84a153b00a4a6c9498bfc55b63f14d5bdb6b"
   },
   "2025-cao-flashmmr": {
     "title": "When One Moment Isn’t Enough: Multi-Moment Retrieval with Cross-Moment Interactions",
@@ -2252,7 +2288,8 @@
       "benchmark",
       "method",
       "video-retrieval",
-      "video-representation"
+      "video-representation",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2270,7 +2307,7 @@
         "sha256": "6867e5c45e3d0da395bf55d6a7526d2adffb66325d9d1fde9221dd612c0d91fd"
       }
     ],
-    "sourceSha256": "27078430598e2bba3bbc17a38facb052dfe5399041981e84fe44cd433d1950b2"
+    "sourceSha256": "d8f58a543dcb5d032f9b9781f1d7a28dc1c755470986140d1c25b796aafc19c5"
   },
   "2025-chan-domain-vlm": {
     "title": "A Domain Knowledge-Enhanced Large Vision-Language Model for Construction Site Safety Monitoring",
@@ -2309,7 +2346,8 @@
       "method",
       "execution-quality",
       "construction",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2327,7 +2365,7 @@
         "sha256": "c7d81a271af0b4a408ed1588988ed3644bb6e259c742f65ecf3f0994f5c6964f"
       }
     ],
-    "sourceSha256": "b9f3897f8b626c03ab46c35bdb26b09b4a463a3745e45f237387c0405dd28f87"
+    "sourceSha256": "6611c01280bc8ba24f8bbad72763872a191cfb6d5d0a5089cab3ca8415a93f86"
   },
   "2025-chavan-indego": {
     "title": "IndEgo: A Dataset of Industrial Scenarios and Collaborative Work for Egocentric Assistants",
@@ -2431,7 +2469,8 @@
       "method",
       "construction",
       "execution-quality",
-      "efficient-processing"
+      "efficient-processing",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2449,7 +2488,7 @@
         "sha256": "7c7899f2e44b1db26c981c8689c88a216abccff2485fbf01e8f6b0b47adc6916"
       }
     ],
-    "sourceSha256": "02080963302dd588c39cbbff9eade6c92233900f4079ea7b047f41acd134a6f2"
+    "sourceSha256": "923eb94600ae5bd0d5067eddc632d71a8b309a2db96b1b72032cea261b58cf25"
   },
   "2025-chen-diffvsgg": {
     "title": "DiffVsgg: Diffusion-Driven Online Video Scene Graph Generation",
@@ -2481,7 +2520,8 @@
       "method",
       "video-representation",
       "spatial-understanding",
-      "state-changes"
+      "state-changes",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2499,7 +2539,7 @@
         "sha256": "35cef008b929bc689134d0a04058163c11af1308e6b54f4f4fb68ad9c3fd89e5"
       }
     ],
-    "sourceSha256": "92468dcdcd411621fcadedd500a2fe6cb539dc8900d9417adce1f4f4c83b8324"
+    "sourceSha256": "68bd1dc81a507613a0915a518ce9ae2135c6c6f8e3fde484fc1c5f6746270b14"
   },
   "2025-chen-gelm": {
     "title": "Grounded Multi-Hop VideoQA in Long-Form Egocentric Videos",
@@ -2536,7 +2576,8 @@
       "method",
       "video-qa",
       "video-retrieval",
-      "egocentric-video"
+      "egocentric-video",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2554,7 +2595,7 @@
         "sha256": "e36524ad866f05c15ae0613ceafb55587258c7338293197eea085a680dfa56e3"
       }
     ],
-    "sourceSha256": "5f4962c9fc521728908f1148f29a1e4bd3d26814f4de7b163ebcf76c56c10dc8"
+    "sourceSha256": "d63583db6e4cc09ab6fe8571fc5cf591a083a14317eeea05fb71ad0f504dc9bf"
   },
   "2025-di-rekv": {
     "title": "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
@@ -2587,7 +2628,8 @@
       "method",
       "video-memory",
       "video-qa",
-      "efficient-processing"
+      "efficient-processing",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2605,7 +2647,7 @@
         "sha256": "165eeee6643d22996fa156d77ba496fcf756cec4139ab8e1200f61f69d78c7a7"
       }
     ],
-    "sourceSha256": "a058e3e664a08ac4bf8ad50ce217281fa10eb426a561d4b122f59aba2853dc25"
+    "sourceSha256": "ceabbd8105fb6162e227cbd21d4e7fa4d0fb9c2f15607bdcb3043c5544ddd77e"
   },
   "2025-haneji-egooops": {
     "title": "EgoOops: A Dataset for Mistake Action Detection from Egocentric Videos referring to Procedural Texts",
@@ -2754,7 +2796,8 @@
       "method",
       "procedure-understanding",
       "execution-quality",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2772,7 +2815,7 @@
         "sha256": "a69c6be3e2603ea5864b5b05544983950395bdbc650d57d12bf071ed656c45ea"
       }
     ],
-    "sourceSha256": "2ca53a3a18d1f8988f73f1fa3928ebb78c1af05748d7ae3ecaa126921385fd4f"
+    "sourceSha256": "4534d0439e729fb30d1b4299a453450e98680f75a2abb1ece2b1ddf885e6c877"
   },
   "2025-jeong-videorag": {
     "title": "VideoRAG: Retrieval-Augmented Generation over Video Corpus",
@@ -2811,7 +2854,8 @@
       "method",
       "video-retrieval",
       "video-qa",
-      "efficient-processing"
+      "efficient-processing",
+      "supervised-training"
     ],
     "researchGroups": [
       "kaist-mlai"
@@ -2831,7 +2875,7 @@
         "sha256": "a599db45497f337aa441881f15fd2d26daa200bcaa28fdef7dac8c74d5a4dbdd"
       }
     ],
-    "sourceSha256": "74be3899f76639984a77b4257bbffc09f4e044ea6f39dbd8413558697f6f4737"
+    "sourceSha256": "d771ee61729025911fc4e730099324a81c00c32fe3aeb641d04e68887283eec1"
   },
   "2025-lehman-statediffnet": {
     "title": "Find the Assembly Mistakes: Error Segmentation for Industrial Applications",
@@ -2867,7 +2911,8 @@
       "method",
       "state-changes",
       "execution-quality",
-      "egocentric-video"
+      "egocentric-video",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2885,7 +2930,7 @@
         "sha256": "f02e7565dda270af3abaa0950aa7a5fc1c7c0756f34ade9b23eb4f203e6a1fac"
       }
     ],
-    "sourceSha256": "8bcba42fc15b902005b59bdf96a1229237a5f153cae47df5ae5fe39f700d1c57"
+    "sourceSha256": "75c2658c08a2892ff81fe2adf758c48995187dbc0f4117cb8cb6a81b45ad8f4d"
   },
   "2025-li-anomize": {
     "title": "Anomize: Better Open Vocabulary Video Anomaly Detection",
@@ -2913,7 +2958,8 @@
     "tags": [
       "method",
       "execution-quality",
-      "video-representation"
+      "video-representation",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2931,7 +2977,7 @@
         "sha256": "4a2a129d305468055453eabb1fc6af840ad6bc4ed8cc332894a4ec0d90483978"
       }
     ],
-    "sourceSha256": "46e2b6fd24c63508294204888497c64c7620d0dcc392fcda4fdf68259beb4ab0"
+    "sourceSha256": "8c6d63cc7508e79c26dfed5f2e94bf7d6f092dba5efea8a01cc3552641f5b7ad"
   },
   "2025-liu-visualsync": {
     "title": "VisualSync: Multi-Camera Synchronization via Cross-View Object Motion",
@@ -2965,7 +3011,8 @@
     "tags": [
       "method",
       "spatial-understanding",
-      "video-representation"
+      "video-representation",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -2983,7 +3030,7 @@
         "sha256": "dd1947976eb9fe31c5f3fdf7f13b962c71ad37fbc2a57b65672caaab0714436f"
       }
     ],
-    "sourceSha256": "2bab67ab5442807c27a14e2e63e1c9413cd386caacd8e728941c622a2f58f4cd"
+    "sourceSha256": "194c4236edd38958978b28df21957f071e67ef7c57f3bae0e256ccd251ca2d04"
   },
   "2025-luo-hil-serl": {
     "title": "Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning",
@@ -3018,7 +3065,9 @@
       "method",
       "robot-learning",
       "reward-learning",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "rl",
+      "supervised-training"
     ],
     "researchGroups": [
       "berkeley-rail"
@@ -3038,7 +3087,7 @@
         "sha256": "62d9b9be699863039f75ff023987d883c306980e1941b49d713527e0c2065df7"
       }
     ],
-    "sourceSha256": "c6db92d0137354a4fb346ae3403b28cfb64414cca26195b202baad02f56a6e35"
+    "sourceSha256": "0a82d36252449273fe3d3af836ecf519dbeef83b00cc886e008e21276e937fa7"
   },
   "2025-luo-video-rag": {
     "title": "Video-RAG: Visually-aligned Retrieval-Augmented Long Video Comprehension",
@@ -3076,7 +3125,8 @@
       "method",
       "video-retrieval",
       "video-qa",
-      "efficient-processing"
+      "efficient-processing",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -3094,7 +3144,7 @@
         "sha256": "81784679e9eedad763fd86543792f882654b38510b18cb2bda02449ff8d27906"
       }
     ],
-    "sourceSha256": "981f4ccd92b9f8938d649a96404953f419a29f8ef8bbbdc5a5ada8ff9549c08e"
+    "sourceSha256": "02c350c652c26a676b9115a399eedae3a359c6152db489e1a546df90dd16c692"
   },
   "2025-mengiste-weekly-progress": {
     "title": "Automating Weekly Construction Activity Progress Reporting: Leveraging AI-Driven Workflows",
@@ -3126,7 +3176,8 @@
       "method",
       "state-changes",
       "construction",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -3144,7 +3195,7 @@
         "sha256": "d60eb2542b60d25429d0009a717d026fb6458d58a3a96a6a9bbe1f8434bf8ac7"
       }
     ],
-    "sourceSha256": "cbd48496ff45ff972df7fe287701694ac188a73d56742e5fa209a073748d1b2d"
+    "sourceSha256": "a91f7c8e8938ee89704c4f5bc24776d6b54d683ab91186a82444e766f9e28f62"
   },
   "2025-ortiz-abstention-knobs": {
     "title": "Explicit Abstention Knobs for Predictable Reliability in Video Question Answering",
@@ -3218,7 +3269,9 @@
       "method",
       "procedure-understanding",
       "execution-quality",
-      "egocentric-video"
+      "egocentric-video",
+      "sft",
+      "supervised-training"
     ],
     "researchGroups": [
       "tum-lmt"
@@ -3238,7 +3291,7 @@
         "sha256": "158721d6352adebce1bd2abba59bc5da6d3155c8d285d275da1b387891ab5509"
       }
     ],
-    "sourceSha256": "a547d6b70f2c739864d3186e743e5c8bb1f20c4e53613d2303dc8d9d981ef553"
+    "sourceSha256": "f8facd0c5cd8c96344a714b86739dffe61eb4d0f9b9bda048e4af47975f1b105"
   },
   "2025-perrett-hd-epic": {
     "title": "HD-EPIC: A Highly-Detailed Egocentric Video Dataset",
@@ -3340,7 +3393,8 @@
       "method",
       "spatial-understanding",
       "video-memory",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [
       "bristol-mavi"
@@ -3360,7 +3414,7 @@
         "sha256": "98427eb9b2b436d22832c3567ae684976990776651d1c8d413d8ae7bb3a0485a"
       }
     ],
-    "sourceSha256": "21b49a5eb217e0aaef613576cbb855d17c6d4c66989d045cadbe89f5c18598db"
+    "sourceSha256": "5ac04bfe49906b423827c75c89c0a91d5ab915791864236a0653f1a99a3ad495"
   },
   "2025-qian-dispider": {
     "title": "Dispider: Enabling Video LLMs with Active Real-Time Interaction via Disentangled Perception, Decision, and Reaction",
@@ -3392,7 +3446,8 @@
       "method",
       "video-qa",
       "video-memory",
-      "efficient-processing"
+      "efficient-processing",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -3410,7 +3465,7 @@
         "sha256": "10c00bf4930fc29085b95de9f692af37d1f6e61e0e8a0a7962c344e9330dd8bc"
       }
     ],
-    "sourceSha256": "3e1c6f044eee028a6ea784a3d8fdc32089737f8c0598454f6d9899123565d774"
+    "sourceSha256": "32e6fcfbd3a82ad548aabca0312e571c9ad92ee662fbd928a70487823aa3475c"
   },
   "2025-schoonbeek-storm-psr": {
     "title": "Learning to Recognize Correctly Completed Procedure Steps in Egocentric Assembly Videos through Spatio-Temporal Modeling",
@@ -3453,7 +3508,9 @@
       "procedure-understanding",
       "execution-quality",
       "state-changes",
-      "egocentric-video"
+      "egocentric-video",
+      "sft",
+      "supervised-training"
     ],
     "researchGroups": [
       "tue-aria"
@@ -3473,7 +3530,7 @@
         "sha256": "cd85b5fa66752c5cc70e8572641e7e7d4cdda8341ff15cfa90b69201514449eb"
       }
     ],
-    "sourceSha256": "6c69604fd1a809a6b16841c70faece66aac898a71f1a932ca06dd362105cd246"
+    "sourceSha256": "04c721cd928156f195689a1e0b8f96dab60e3832cf77cd99a829cabf069edf63"
   },
   "2025-sun-tubeletgraph": {
     "title": "Tracking and Understanding Object Transformations",
@@ -3510,7 +3567,8 @@
       "method",
       "state-changes",
       "spatial-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [
       "cornell-hariharan"
@@ -3530,7 +3588,7 @@
         "sha256": "05840160822587b0a205e9b0cf38b5782cfe078912e7906774ba9b3fba3dc45c"
       }
     ],
-    "sourceSha256": "798e06c425f80e7294889f798b6bcc0ef6bbdd9248c6da0fa484930fad520e7e"
+    "sourceSha256": "7630cb211b4c99282de2391dc295a5c0bf2eb4d081f90479d033845a0203cb43"
   },
   "2025-wang-siteshield": {
     "title": "Automating construction safety inspections using a multi-modal vision-language RAG framework",
@@ -3557,7 +3615,8 @@
     "tags": [
       "method",
       "execution-quality",
-      "construction"
+      "construction",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -3575,7 +3634,7 @@
         "sha256": "6b13084f2f88a0fdf8ee001edb98245a9b9c76ad667dd5ccb20877eabf8886b2"
       }
     ],
-    "sourceSha256": "5212fe4d852b9d647830cd2d7043ddd25e967aa0a879c0232930c33717d9b685"
+    "sourceSha256": "8bec3ef345a6c74b7128b12720ea32241ac88ea92faaafeef097b98bd3c37859"
   },
   "2025-wang-videotree": {
     "title": "VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos",
@@ -3611,7 +3670,8 @@
       "method",
       "video-retrieval",
       "video-qa",
-      "efficient-processing"
+      "efficient-processing",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -3629,7 +3689,7 @@
         "sha256": "69f860eadc421569c4ad93dc14317099a8d746f17f22626bbe1071b974394663"
       }
     ],
-    "sourceSha256": "369f06c657705ce9d0cddd98313d15141c432cad2e5ad8d14511b9407d095539"
+    "sourceSha256": "4e7ce21d59d82927db30de81b494edab3e58ff6084e286a7e2cc7b68cdf62e11"
   },
   "2025-yang-egolife": {
     "title": "EgoLife: Towards Egocentric Life Assistant",
@@ -3676,7 +3736,8 @@
       "video-retrieval",
       "video-qa",
       "egocentric-video",
-      "multi-person"
+      "multi-person",
+      "sft"
     ],
     "researchGroups": [
       "ntu-s-lab",
@@ -3697,7 +3758,7 @@
         "sha256": "b41731bcaa088a4eec53dd6b18093421ae2cf7b899d9e0cb4b415f515d1f99a7"
       }
     ],
-    "sourceSha256": "90a28df989c52e16191b96c14636b752f0c32341f12ce76bf1ffe44e3f5e4d8b"
+    "sourceSha256": "364a010afbb0f3ed2f01f331143322c1911facd7ff3b55dfd71f12514fd97e6b"
   },
   "2025-ye-mm-ego": {
     "title": "MM-Ego: Towards Building Egocentric Multimodal LLMs for Video QA",
@@ -3733,7 +3794,8 @@
       "video-qa",
       "video-retrieval",
       "video-representation",
-      "egocentric-video"
+      "egocentric-video",
+      "sft"
     ],
     "researchGroups": [
       "apple-machine-learning-research"
@@ -3753,7 +3815,7 @@
         "sha256": "a5c6ffeecc228e934a1f16e27d0b332403cb8f90532b2eaac1d099213cd3ab4f"
       }
     ],
-    "sourceSha256": "87bae7709cfdc973ad072d89a57c62b0ba56b1a80fdbc5cd9bb8d7927397a18b"
+    "sourceSha256": "8c3dde8181f466c826409954440808041afe0056d968be1aaf82412999b95ef9"
   },
   "2025-ye-vera": {
     "title": "VERA: Explainable Video Anomaly Detection via Verbalized Learning of Vision-Language Models",
@@ -3789,7 +3851,8 @@
     "tags": [
       "method",
       "execution-quality",
-      "video-representation"
+      "video-representation",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -3807,7 +3870,7 @@
         "sha256": "fc9e74f4f8ce196f007d28010513bfb83bd0c903e2c6b4b790713a2eda404ec9"
       }
     ],
-    "sourceSha256": "de907af5a3017620545ae84832395ad73a63e45b44d15f16ee7f630cccbeca0a"
+    "sourceSha256": "42d35ac26c492db4d96cee9cc3605faaea05090cbdf8479d8e243c4f9bd851d4"
   },
   "2025-yoon-uvqa": {
     "title": "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
@@ -3841,7 +3904,9 @@
       "benchmark",
       "method",
       "video-qa",
-      "preference-learning"
+      "preference-learning",
+      "sft",
+      "preference-optimization"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -3859,7 +3924,7 @@
         "sha256": "4841ae82456d4524630f1e146ed89295e618a5ded4b4b0cd7ef526620457b1b6"
       }
     ],
-    "sourceSha256": "a683dea7bd366392a74044e866b78d9b5380bb8b27d2597ab41c985d61b1cd84"
+    "sourceSha256": "276d2031539e599007f3b05dea758c78040301934563e8c73f5b5c0c5324430c"
   },
   "2025-zameni-moscato": {
     "title": "MOSCATO: Predicting Multiple Object State Change through Actions",
@@ -3892,7 +3957,8 @@
       "method",
       "state-changes",
       "procedure-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [
       "northeastern-nova"
@@ -3912,7 +3978,7 @@
         "sha256": "00e416dd5a1c6480cebf98ca359d942ecd4d43cee1b0f6eeb6ef6002ac99ee33"
       }
     ],
-    "sourceSha256": "e32c9f9c7892a97a4e44510b3f6d08ffea2af647af67264bf7107c0426999521"
+    "sourceSha256": "359111cb2f786f619c0b62b4976d124c38441953d3d5bab41c7ecce520f64e79"
   },
   "2025-zeng-streamforest": {
     "title": "StreamForest: Efficient Online Video Understanding with Persistent Event Memory",
@@ -3949,7 +4015,8 @@
       "method",
       "video-memory",
       "efficient-processing",
-      "video-qa"
+      "video-qa",
+      "sft"
     ],
     "researchGroups": [
       "nju-mcg"
@@ -3969,7 +4036,7 @@
         "sha256": "a5d7941905bdfab061fa9fa35004f18a1e10e2abff66bc22e2971f11f8945b39"
       }
     ],
-    "sourceSha256": "212442e3d386cbc6e12c3c2bf8b89a4321ac4a61acd2569c4e7ea900fb0a330e"
+    "sourceSha256": "9c191872dbbab532ace31b3cc11d9538a79304ae451d1d652376dc014bfebb0b"
   },
   "2025-zhang-holmes-vau": {
     "title": "Holmes-VAU: Towards Long-term Video Anomaly Understanding at Any Granularity",
@@ -4004,7 +4071,9 @@
       "method",
       "video-qa",
       "efficient-processing",
-      "video-representation"
+      "video-representation",
+      "sft",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -4022,7 +4091,7 @@
         "sha256": "b48f093b8b16f083b5388dc9205a610ff119c94d5e1c36183ab0f7eadd9e12f7"
       }
     ],
-    "sourceSha256": "af5395683dc1bdd4f718d861b9e17eebe2ad42209626aff5f23f6f9f27779cd5"
+    "sourceSha256": "e71ae68ca00d855a33172a7b987d168fcc1749b9fddea024e0d759241ca96ec9"
   },
   "2025-zhang-rewind": {
     "title": "ReWiND: Language-Guided Rewards Teach Robot Policies without New Demonstrations",
@@ -4060,7 +4129,9 @@
       "reward-learning",
       "robot-learning",
       "rl-fine-tuning",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "rl",
+      "supervised-training"
     ],
     "researchGroups": [
       "usc-lira"
@@ -4080,7 +4151,7 @@
         "sha256": "2077aeb74ca4d2c6e603773507bcbaa8faaeaacedb6b0e0c4adf1fe9d47f786b"
       }
     ],
-    "sourceSha256": "86031337a7c58ebb8b58553d765f20327d6146c22e3b7dafee52a64f93f153e4"
+    "sourceSha256": "e1af3ee2b91f6f2ab64eda7c0f1dcd09aec9d64b7dd2f7109076356f6bae8e37"
   },
   "2025-zhang-vocal-udf": {
     "title": "Self-Enhancing Video Data Management System for Compositional Events with Large Language Models",
@@ -4113,7 +4184,8 @@
       "method",
       "video-retrieval",
       "efficient-processing",
-      "spatial-understanding"
+      "spatial-understanding",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -4131,7 +4203,7 @@
         "sha256": "8653e04a200e3883205264cfd5c89fdbc8675f35a5711107e112ef11760f9dd6"
       }
     ],
-    "sourceSha256": "8d4d2bbffc98ba419dc4669eaa550a3e82e3877744e8f6ced1e93c8fdbf9c963"
+    "sourceSha256": "6f80e5be10679e8c2540d33e75e2458b2004964cbc43871f08630cfe4e66cb1b"
   },
   "2026-alam-supermemory-vqa": {
     "title": "SuperMemory-VQA: An Egocentric Visual Question-Answering Benchmark for Long-Horizon Memory",
@@ -4337,7 +4409,8 @@
     "tags": [
       "method",
       "execution-quality",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [
       "eth-siplab"
@@ -4357,7 +4430,7 @@
         "sha256": "39c74f399215b63820889a32d245b7fc77cd5518b82197bdff74db760fb2601d"
       }
     ],
-    "sourceSha256": "a26449a61e04a3618f8462cdc14e00170170fc93d1c2731697050602f5ec7b30"
+    "sourceSha256": "7e0fbf23250226835401ea5ab9968a60af9c83b9f8c6dfb2d0ba5f7f1abbc3d7"
   },
   "2026-cai-cfd": {
     "title": "Caption-once, Frames-on-Demand: Visual-Need Routing for Budget-Aware Agentic Long Video Understanding",
@@ -4398,7 +4471,8 @@
       "video-memory",
       "video-retrieval",
       "video-qa",
-      "efficient-processing"
+      "efficient-processing",
+      "training-free"
     ],
     "researchGroups": [
       "huawei-multimodal-agents"
@@ -4418,7 +4492,7 @@
         "sha256": "ff2e88114842b2982a2f9028bccf4cfc2e8cf402a08ec72a934b587f659d4856"
       }
     ],
-    "sourceSha256": "5e3b994142379772d11ed215210abd441a02b6a28bddd85b6c3f5d22353be258"
+    "sourceSha256": "aa0d793503f26616c6ba2d4839c8d342c41affcafc8dc41f144eac442a6b5cbb"
   },
   "2026-carion-sam3": {
     "title": "SAM 3: Segment Anything with Concepts",
@@ -4459,7 +4533,10 @@
       "benchmark",
       "method",
       "video-representation",
-      "efficient-processing"
+      "efficient-processing",
+      "sft",
+      "supervised-training",
+      "self-supervised-learning"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -4477,7 +4554,7 @@
         "sha256": "8ecbd04a7b02f4260b950045469afe3cd668e263e32f6f366ba962fdf798b4f2"
       }
     ],
-    "sourceSha256": "86d759e1603eed6bd6b49fe47dfb8bd51838136bc81bfba573f510ef34cea129"
+    "sourceSha256": "5ece1cd7aaa68a42186e6c4c7dc37de9e28355af53e4b70a63742e2c8f8001ca"
   },
   "2026-chalk-whareformer": {
     "title": "Whareformer: Learning to Track What is Where in Long Egocentric Videos",
@@ -4518,7 +4595,8 @@
       "method",
       "spatial-understanding",
       "video-memory",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [
       "bristol-mavi"
@@ -4538,7 +4616,7 @@
         "sha256": "ec4e6fa4a785c1c3b2aed2b809ef3eafa31c025911a3ad5c85b59495774f6013"
       }
     ],
-    "sourceSha256": "d98dc55fbf58e3547219b165329a0d42df753ae40d03ae10408e5e0ff15b3ee4",
+    "sourceSha256": "f525a835ca01874780efcfd806d82e3cfb392040bdcc97f2277f7d04bc029845",
     "spotlightReason": "Learns persistent object association through appearance and relative 3D location, including after camera turns and occlusion. A concrete candidate for preserving tool and component identity.",
     "spotlightLimit": "Main results use ground-truth masks and prepared geometry. Predicted masks reduce performance, and minute-scale single-wearer tests do not establish shared memory across shifts or unseen object movements.",
     "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
@@ -4633,7 +4711,8 @@
       "video-memory",
       "spatial-understanding",
       "video-qa",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [
       "jhu-b3"
@@ -4653,7 +4732,7 @@
         "sha256": "b1fb8730924c47b77ac81d558f82eee91c492cd7e2a344e9f84298301beb6fc3"
       }
     ],
-    "sourceSha256": "6a2197dafe59b6008f4d4a08deb0b6627785b699648418fad30a47c1c371b49a",
+    "sourceSha256": "0d9f29aba33f6cd56e102bd8c4ade5a448eff9f1039a2aff6990526e11092442",
     "spotlightReason": "Persistent object identities, geometry and observation histories support questions about where tools and materials were last seen, including objects the wearer never touched.",
     "spotlightLimit": "Tracking is expensive, scene transitions and identity errors remain difficult, geometry is not uniformly metric, and last-observed locations do not establish current unseen states.",
     "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
@@ -4696,7 +4775,9 @@
     "tags": [
       "method",
       "procedure-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free",
+      "supervised-training"
     ],
     "researchGroups": [
       "fraunhofer-ipk-automation",
@@ -4717,7 +4798,7 @@
         "sha256": "167c8e236f8373d421e36063d7febf8d6f39d5002e5038e9e9cf74e31aa30fec"
       }
     ],
-    "sourceSha256": "d70e1f04b23091e62dfef89431ff66989f37879b07a81c6c317a948af4660a51"
+    "sourceSha256": "d5c8016c61fbbabced4bb3147aad47b3c263fd3c10ae29c6eb8bdcb8a199fbb3"
   },
   "2026-chen-egomonth": {
     "title": "EgoMonth: A Month-Level Egocentric Video Benchmark for Long-Term Spatiotemporal Memory",
@@ -4809,7 +4890,8 @@
       "video-retrieval",
       "video-qa",
       "efficient-processing",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -4827,7 +4909,7 @@
         "sha256": "14ad19d46f68e220a38e83efb85288680fb3c2c7de909f3f722d3d46232a47b9"
       }
     ],
-    "sourceSha256": "55936330d7c14caeb358554d0764a892d1f655c90ec54addcd195fe41899f4ae"
+    "sourceSha256": "2a42cb4fa4326fffa0caaf5aa8b65e50e409e1d247a087dfc4cf6ac64e1cbab5"
   },
   "2026-chen-reactvau": {
     "title": "ReactVAU: A Slow-Fast Decoupled Framework for Streaming Video Anomaly Understanding",
@@ -4863,7 +4945,8 @@
       "method",
       "video-memory",
       "efficient-processing",
-      "video-qa"
+      "video-qa",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -4881,7 +4964,7 @@
         "sha256": "ef5c71c5719218f58a8f00f1a450b6892d5bf13f83a21a4b804e4d823b1c8ee5"
       }
     ],
-    "sourceSha256": "ca129260132e5f075adf60462a88112305c5c496ce13132393a46087d8840c3f"
+    "sourceSha256": "6aa0e1653a72d197dfaf67b6ce9215f6fe98ce6ffd5bfaafe628f8bb384f81ca"
   },
   "2026-choi-merit": {
     "title": "Keep It Simple: Multi-Key Episodic Memory Retrieval for Ultra-Long Video Understanding",
@@ -4925,7 +5008,8 @@
       "video-retrieval",
       "video-qa",
       "efficient-processing",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [
       "yonsei-ciplab",
@@ -4946,7 +5030,7 @@
         "sha256": "b777556a0edf0d86c59e0a4e7707e449ce886551ded4204d5c9d9fd317bdf288"
       }
     ],
-    "sourceSha256": "0a8533270f8671dd29933a520d20850b0505c4a5ee0e0372dc45c623ef41104a",
+    "sourceSha256": "d1a014e1a45b69ae115ec4ba629ed675aefbb2ad710ef4b7150edf232f0b1128",
     "spotlightReason": "First practical retrieval baseline to evaluate: timestamped clips, several searchable keys, neighboring context and final answering from retrieved frames. Its simple episode design provides a useful control before adding WorldMM-style graphs.",
     "spotlightLimit": "Large solver dependency, 0.56 reported retrieval hit rate, a 500-question EgoLifeQA test and initial captioning excluded from construction accounting.",
     "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
@@ -5090,7 +5174,8 @@
       "method",
       "video-representation",
       "state-changes",
-      "spatial-understanding"
+      "spatial-understanding",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -5108,7 +5193,7 @@
         "sha256": "c4885ddd6c851a7e5a2084aef7ec5111bdad67d55256e87faaad329d68c54ff0"
       }
     ],
-    "sourceSha256": "4a488679ab913047e4aabe8939f656f3f4518cd209aad0ff89414d343dbecb67"
+    "sourceSha256": "f6072245948ba82e5d5c9f6ed9848cceb890ee0440de6735cca8a578277e4b5f"
   },
   "2026-guo-aem": {
     "title": "Procedural Mistake Detection via Action Effect Modeling",
@@ -5144,7 +5229,8 @@
       "execution-quality",
       "state-changes",
       "spatial-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [
       "msu-action"
@@ -5164,7 +5250,7 @@
         "sha256": "bd23a1894cb54c0df7db3e33059f031ac740d8937b922cd2ef2a7711383fd9cd"
       }
     ],
-    "sourceSha256": "1194296c5c8c2f9097950a8b80ae2cc786ae9d4fee00f912502071090612f27f",
+    "sourceSha256": "cb6d54398c04c6e4108809ebfb09a1821e0a7a72a3d51a6b7244a464e54d2423",
     "spotlightReason": "Represents action effects as well as action identity. The most useful quality-model hypothesis here is to test what changed in the object, with task-specific correct executions as supervision.",
     "spotlightLimit": "Offline cooking evaluation and supervised segmentation. EgoPER AUC changes from 73.8 to 86.7 with oracle segments. It does not uniformly outperform AMNAR.",
     "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
@@ -5294,7 +5380,8 @@
       "procedure-understanding",
       "state-changes",
       "video-qa",
-      "egocentric-video"
+      "egocentric-video",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -5312,7 +5399,7 @@
         "sha256": "db9e1d32289c0a7f248ee9a1d605e579877699b7a7d7fe4a5a9e2feda41e81a4"
       }
     ],
-    "sourceSha256": "4f6d14cd26d028a10ddd702e050203192b93e94001b226470a51c48fa5bbfe9e"
+    "sourceSha256": "a66189738c81648108ce497df94f6f9cbdbd297aacf350041d3e7627f56b4be9"
   },
   "2026-gupta-vidparse": {
     "title": "VidParse: Online Parsing of Egocentric Procedures Like a Pro",
@@ -5352,7 +5439,8 @@
       "procedure-understanding",
       "video-representation",
       "efficient-processing",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -5370,7 +5458,7 @@
         "sha256": "ee1ec427ac09e23bb22c3f92c1344f4cce9ab798225dcfdbdc5fcedcef7860da"
       }
     ],
-    "sourceSha256": "bed153354f4ba8e86daecf4353e3551468eec82980bfb656908a4cc3729e6174"
+    "sourceSha256": "96eef7dc52546616b927c2c4cd8bf40d57e57ee683e544627f3ef19b336fdef2"
   },
   "2026-hou-eventformer": {
     "title": "Event-Aware Video Corpus Moment Retrieval",
@@ -5408,7 +5496,8 @@
       "method",
       "video-retrieval",
       "video-representation",
-      "efficient-processing"
+      "efficient-processing",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -5426,7 +5515,7 @@
         "sha256": "4db2ecb239d482c19839e3a9ef7b76410f912967abaed3d8b386ee6a8542c9e7"
       }
     ],
-    "sourceSha256": "0066a27c9690be34fc763e36100d101aee73f7673094b86b6470ff7afc2d88a8"
+    "sourceSha256": "5978fce55af3a6f0a10edf9bd0cdf3135f0ba71db9bed6c5f56bf9675356d094"
   },
   "2026-hsieh-ai-bim-progress": {
     "title": "Automated construction progress monitoring and control through AI-based image recognition and BIM integration",
@@ -5458,7 +5547,8 @@
       "procedure-understanding",
       "spatial-understanding",
       "construction",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -5476,7 +5566,7 @@
         "sha256": "1218f062d8e337f20c51f5035289d72a8606825d7ae06196ed5c159477ccf458"
       }
     ],
-    "sourceSha256": "a0eed9e5bd5fa563f105a9f1aebbe7a6ba2749b8d09eb7d8cce37dc921c7e9ee"
+    "sourceSha256": "2c85bc0d44e26ad7040e3ef3bc840a6720eb3f2b2f23654c8e4e16d4d5135a3f"
   },
   "2026-huang-apm-bench": {
     "title": "APM-Bench: Benchmarking cross-Session Persistent Memory for Real-World Egocentric Streaming Video Assistants",
@@ -5569,7 +5659,8 @@
       "method",
       "procedure-understanding",
       "execution-quality",
-      "construction"
+      "construction",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -5587,7 +5678,7 @@
         "sha256": "ce8b233e184a7cd905ebc61920f15a383b62700f8c8569a178ffbdb0d733f3df"
       }
     ],
-    "sourceSha256": "7ab1cedd305984d044ceecd19ea2f2b481a1fee44601eba3e683cb13153653d3"
+    "sourceSha256": "6c22d28a476ddafe71ab70e01550222fa4e8515f3a4ff9c42cecb4d931a00c01"
   },
   "2026-jang-neurosymbolic-pc": {
     "title": "Neuro-symbolic vision framework for construction: Knowledge graph-augmented monitoring and productivity analysis of precast concrete assembly",
@@ -5620,7 +5711,8 @@
       "method",
       "procedure-understanding",
       "construction",
-      "multi-person"
+      "multi-person",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -5638,7 +5730,7 @@
         "sha256": "8ded1f956d79b8058f8a6ef58eaa8f9ab08cef692dce3eab4639b9248c4c06af"
       }
     ],
-    "sourceSha256": "7ec3a8564fc8ed3ea94a9f5e95e5304587f25ef38accfe837fe8185538249be2"
+    "sourceSha256": "72ec31a788c031a7393614f7120fc75365233db93208e2074b712fc711fb6410"
   },
   "2026-kim-ma-egoqa": {
     "title": "MA-EgoQA: Question Answering over Egocentric Videos from Multiple Embodied Agents",
@@ -5735,7 +5827,8 @@
       "method",
       "procedure-understanding",
       "execution-quality",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -5753,7 +5846,7 @@
         "sha256": "af7a242798130dde958b88b28e21c3bb61ef04119d70a6bcf9d8789ddc54741a"
       }
     ],
-    "sourceSha256": "fc2e6c44c4c5e6f4960606154a7906912c31a8ddfb2e12821966956949f01803"
+    "sourceSha256": "6dfb8a469651aa0422786b5d272b3fadafe65c17922e7bcbb07f1c3e93597552"
   },
   "2026-lee-carve": {
     "title": "Rethinking RAG in Long Videos: What to Retrieve and How to Use It?",
@@ -5783,7 +5876,8 @@
       "method",
       "video-retrieval",
       "video-qa",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -5801,7 +5895,7 @@
         "sha256": "644e960ce902dbcced6f9952362228e0aeba93ef287ceba8eca74100f511572c"
       }
     ],
-    "sourceSha256": "a2786b41b5b16cac05fd705f10b0daec0e40ca731adf182d2a4eca8f2e1f4991",
+    "sourceSha256": "9f0331be0f168f5344177dd4e696e089b2ef3c94008ae6d9a07b167fda63056e",
     "spotlightReason": "Separates retrieval quality from answer quality and selects visual or textual evidence at chunk-specific granularities. A direct design and evaluation reference for video archive RAG.",
     "spotlightLimit": "The inspected version promises release upon acceptance. Benchmark filtering removes recurring answer-bearing events, limiting transfer to repetitive work, and comparisons use adapted baseline configurations.",
     "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
@@ -5845,7 +5939,8 @@
       "execution-quality",
       "robot-learning",
       "rl-fine-tuning",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "sft"
     ],
     "researchGroups": [
       "stanford-iris"
@@ -5865,7 +5960,7 @@
         "sha256": "2237c0da5c5964efa449ee6a00c06f625c335739216bf921113526d20387fb2e"
       }
     ],
-    "sourceSha256": "eed654cb65ce6ca832d646b29a4df736e1c2719958b067c78e8bea8244d64596"
+    "sourceSha256": "fbf10fcf92198d26353715982e0f730cc2492d9d5f716eb6a14efacf49f25ebc"
   },
   "2026-leng-flora": {
     "title": "FLORA: An Open Model Suite for Scaling Robotics Data Engines",
@@ -5908,7 +6003,9 @@
       "reward-learning",
       "efficient-processing",
       "egocentric-video",
-      "production-use"
+      "production-use",
+      "sft",
+      "rl"
     ],
     "researchGroups": [
       "nvidia-gear"
@@ -5928,7 +6025,7 @@
         "sha256": "6e9d2a2e8cc7e167aeeebd40c37c1c56f0b1bdd2b12b0942fc4eabb90cc16774"
       }
     ],
-    "sourceSha256": "93b9fbeb41f2c104acfc2de4d0101da63c2801a28b96adf141dea70e29741d24"
+    "sourceSha256": "65949240878fb877b42110a334610d36a198c9ceb1c8def9140ab2448ab39f57"
   },
   "2026-li-egoerrorvqa": {
     "title": "EgoErrorVQA: Assess Egocentric Comprehension Capabilities through Procedural Errors for Ego-Agentic AI",
@@ -6021,7 +6118,8 @@
       "benchmark",
       "method",
       "execution-quality",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -6039,7 +6137,7 @@
         "sha256": "0cc3b1d3193de60fa71653e88dd6cd67e7d05f5ccfe8f7bc3b982b5161fec1d9"
       }
     ],
-    "sourceSha256": "7fa19b38967a8d62f23e3a670f198387d9109dce730cdd9538a5c45b83d2e4a5"
+    "sourceSha256": "9c76f32b486d689a7bae35ac57acf7887116a660aac86644bd83135381b03456"
   },
   "2026-li-streampro": {
     "title": "StreamPro: From Reactive Perception to Proactive Decision-Making in Streaming Video",
@@ -6068,7 +6166,9 @@
       "benchmark",
       "method",
       "video-representation",
-      "video-qa"
+      "video-qa",
+      "sft",
+      "rl"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -6086,7 +6186,7 @@
         "sha256": "2324940c8a36d2a22abfe70631fa94ab91ec986c6def8a43a5222130a1d167c3"
       }
     ],
-    "sourceSha256": "aa5c4002da4838b782024226c0c5b75895e52370661a8575f3bfbbaaa61cd0ae"
+    "sourceSha256": "3ff73630d59d4a28eac9c07932214488b3a426efc5586c4c3903287a0bf3c939"
   },
   "2026-liang-capmem": {
     "title": "CapMem: A Benchmark for Caption-Based Episodic Memory in Egocentric Video",
@@ -6193,7 +6293,8 @@
       "execution-quality",
       "robot-learning",
       "rl-fine-tuning",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "sft"
     ],
     "researchGroups": [
       "usc-lira",
@@ -6216,7 +6317,7 @@
         "sha256": "d523cffdc5da772299d8141d4df6e12fd4d1bfe5bd339e610effe13d4be2bdfb"
       }
     ],
-    "sourceSha256": "03d632b472956af64d76ea482b3a65a6dd54bd9cb575af046231aadb20166bd8"
+    "sourceSha256": "780dba80f49ea70fbe3b1c91a6f3bf0d276397130a7f7903e09b1a0685e0159b"
   },
   "2026-liao-proactegomem": {
     "title": "ProactEgoMem: Benchmarking Proactive Memory in Streaming Egocentric Video",
@@ -6312,7 +6413,8 @@
       "video-qa",
       "video-retrieval",
       "spatial-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [
       "kit-cvhci"
@@ -6332,7 +6434,7 @@
         "sha256": "14d7d10744f4e1c96b215963a68306097b2e102e88964ff3090e94503064a60c"
       }
     ],
-    "sourceSha256": "74640a446304bb20a353856797f307da4c8c65f533ba2d8319d68a259fd02d3e"
+    "sourceSha256": "02aa25861b89525242bfee56c370baf62859b721de8f867e6ac32e0bde4a5c6a"
   },
   "2026-liu-guideme": {
     "title": "GuideMe: Multi-Domain Task Guidance and Intervention in Streaming Video",
@@ -6475,7 +6577,8 @@
       "method",
       "procedure-understanding",
       "execution-quality",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -6493,7 +6596,7 @@
         "sha256": "b284d0bdb54ccb6909571d4ed66a85814a81e67590bfff93bc16db16c038f4ee"
       }
     ],
-    "sourceSha256": "f925efd9b37c924b2b0fd4c88543d3dfb85bd1e1df0510bdaf0d2241e50c712a"
+    "sourceSha256": "00a02bf5b1bcef1ea45483f9396ef8377ac0b5eae72cf4e95f11a0756c03922c"
   },
   "2026-long-m3-agent": {
     "title": "Seeing, Listening, Remembering, and Reasoning: A Multimodal Agent with Long-Term Memory",
@@ -6534,7 +6637,9 @@
       "video-retrieval",
       "video-qa",
       "egocentric-video",
-      "multi-person"
+      "multi-person",
+      "sft",
+      "rl"
     ],
     "researchGroups": [
       "bytedance-seed"
@@ -6554,7 +6659,7 @@
         "sha256": "3f5feed4e6997b7a6c9bb749d8c43601d8ca05be48a9b5808c675abab0b69c47"
       }
     ],
-    "sourceSha256": "037cc88b5858b83a064dea85936aa725b1d34863e1d84363eb3cc67ce2ed36a4"
+    "sourceSha256": "c7bce81dd6aad93cc1ca18f91a983f0478204878d73683f50d2ca5462ca8faa8"
   },
   "2026-ma-r4dsg": {
     "title": "R4DSG: Relative 4D Scene Graph Memory for Object-Centric Question Answering in Long Egocentric Video",
@@ -6596,7 +6701,8 @@
       "video-memory",
       "spatial-understanding",
       "video-qa",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -6614,7 +6720,7 @@
         "sha256": "58f58b6bc8640d4e06d3ff4a8e59939135605322c8950615ab88865a2b248f29"
       }
     ],
-    "sourceSha256": "745a60d31faaf405cdbd3533e5cc94ac52a5fc034f5c1065a268f56e0340557f"
+    "sourceSha256": "d6e8763ac6a5687a5e8f41aeb454e6135846b2e12fac1afab45de0029121d6ac"
   },
   "2026-ma-robot-video-survey": {
     "title": "Robot Learning from Human Videos: A Survey",
@@ -6700,7 +6806,9 @@
       "method",
       "procedure-understanding",
       "execution-quality",
-      "efficient-processing"
+      "efficient-processing",
+      "rl",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -6718,7 +6826,7 @@
         "sha256": "df7dffbd3a02bfef5251c8599c635c9866c32689ed6e76060c2c87c566108da9"
       }
     ],
-    "sourceSha256": "dae907fedb2254f1af3310b668cbdf77d3e455aa846cf3890a5635ae8353df54"
+    "sourceSha256": "cb925adb5a022a5f6f8f1a8cb623c307c4e70f0ac1b80949e44b34b3e529f7df"
   },
   "2026-mandikal-spoc": {
     "title": "SPOC: Spatially-Progressing Object State Change Segmentation in Video",
@@ -6755,7 +6863,8 @@
       "method",
       "state-changes",
       "spatial-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [
       "ut-austin-vision"
@@ -6775,7 +6884,7 @@
         "sha256": "8fc5497ac340b1478818aa3a4c8182f2169842d4e9d0551300b899967da4f991"
       }
     ],
-    "sourceSha256": "efd2be70128d1129dac6e6bfa2de86ce8c587ae253ba83780a41a9dd70166e60"
+    "sourceSha256": "0f9bf7a0283ea96179b267b35a9c0cea21afe6ed388aba85f435a4c2d2de4130"
   },
   "2026-mazzamuto-proskill": {
     "title": "ProSkill: Segment-Level Skill Assessment in Procedural Videos",
@@ -6866,7 +6975,8 @@
       "video-representation",
       "spatial-understanding",
       "egocentric-video",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "self-supervised-learning"
     ],
     "researchGroups": [
       "meta-fair"
@@ -6886,7 +6996,7 @@
         "sha256": "5880e613b38c3b7c4d43325cc49d6a50f31ea5c12a9898ebb9233355770eb206"
       }
     ],
-    "sourceSha256": "1c18bc6b800161a7fadb1b57480e43e7ac825aa9f4d65633047d15702442e681"
+    "sourceSha256": "3c32e58cc9e3e0aabfaddc38c50e274e2ca2ec2daeada6040bd73c84be3e1228"
   },
   "2026-pang-egoprobe": {
     "title": "EgoProbe: Benchmarking Long-Range and Exact Memory in Streaming Egocentric Videos",
@@ -7030,7 +7140,8 @@
       "procedure-understanding",
       "execution-quality",
       "egocentric-video",
-      "construction"
+      "construction",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -7048,7 +7159,7 @@
         "sha256": "3aaaf878be4ac2e4e5fff3159834cbae6fd1f6baaebdb452a421c544c29dba86"
       }
     ],
-    "sourceSha256": "9d3d013af55fec86fecf388dded87e8a1fa0f8ef8ec654aac651cb33a328e684"
+    "sourceSha256": "101ce4e551e38a6417a7ca78229d69461dbde3d3e01b7369334df5d92c6f8d03"
   },
   "2026-ranasinghe-safety-reasoning": {
     "title": "From 3D Perception to Safety Reasoning: A Graph-Based Framework for Real-Time Underground Mine Monitoring",
@@ -7082,7 +7193,9 @@
       "video-memory",
       "spatial-understanding",
       "execution-quality",
-      "efficient-processing"
+      "efficient-processing",
+      "sft",
+      "self-supervised-learning"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -7100,7 +7213,7 @@
         "sha256": "3f5d647ffac5a3179fbe7adc99615eb430a1d8322e2f940c48d6fdfef87533ca"
       }
     ],
-    "sourceSha256": "b4a23c232c098805531926af79a3bbbaf0bc70e2bd4cccd4706ce5cf72af9c12"
+    "sourceSha256": "dc0158ecc417a49ec7b1d92dbbe2ff0fe992f3c40d390f017fe5c09194f54ff4"
   },
   "2026-rauf-hpp": {
     "title": "HPP: Hierarchical Programmatic Probing for Long Video Understanding by Decoupling Perception and Reasoning",
@@ -7142,7 +7255,8 @@
       "method",
       "video-retrieval",
       "video-qa",
-      "efficient-processing"
+      "efficient-processing",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -7160,7 +7274,7 @@
         "sha256": "dea6c9dde4fde94311966ce7cb1f2520753206059a86f59e3a421119d9d9c612"
       }
     ],
-    "sourceSha256": "d240c8485fd745cbbf1eaea12765e834543f42e8fdf717d72a0edbd69523edaa"
+    "sourceSha256": "b8ecb11799fae0b41f2c0b50eb8bad6c856b53fc013c75272af53e572860dbb6"
   },
   "2026-rege-egagent": {
     "title": "Agentic Very Long Video Understanding",
@@ -7202,7 +7316,8 @@
       "video-memory",
       "video-retrieval",
       "video-qa",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [
       "meta-reality-labs",
@@ -7223,7 +7338,7 @@
         "sha256": "04c5c8fc1331e45b997681a174bfa42fffe182790a3dc48ec87f9b7099bd1565"
       }
     ],
-    "sourceSha256": "14764bc8c106d6102e1f4c927999541f9303a601499e076e0ed8ce5662ef5c9c"
+    "sourceSha256": "fd34bff858d7f2fc793e5dc1d25ec9150bb2beef77a9623840926fb15777b4ad"
   },
   "2026-ren-geb": {
     "title": "Beyond the Timeline: Augmenting Long-Video Memory with Grounded Entity Biographies",
@@ -7261,7 +7376,8 @@
       "video-memory",
       "video-retrieval",
       "video-qa",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -7279,7 +7395,7 @@
         "sha256": "4cf0cafab81f29ddb81b56b18f7bcf5ecc08ccc50279de79ccc27fcbad52e8dc"
       }
     ],
-    "sourceSha256": "aa0755df8cf58ff42d99cc6795f637c00f981445f373d5bbbb473e10a37caaa9"
+    "sourceSha256": "dc106a48477356584bea8163820472cdb4089a4229bf33c51a84af85d359d8ae"
   },
   "2026-ren-videorag": {
     "title": "VideoRAG: Retrieval-Augmented Generation with Extreme Long-Context Videos",
@@ -7320,7 +7436,8 @@
       "method",
       "video-memory",
       "video-retrieval",
-      "video-qa"
+      "video-qa",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -7338,7 +7455,7 @@
         "sha256": "175a1ef24d7906f842ebb6ca142aa81493728b92cbd8d80099539bfd5a7208f8"
       }
     ],
-    "sourceSha256": "0055d73303ccba4aaac14e7e42977e3114536af314f236c713e8277802cd02de"
+    "sourceSha256": "2757d8d8978051e217b60f7a49a0973a46622a695bec247d226155973a7f401c"
   },
   "2026-sasaki-egoindassembly": {
     "title": "EgoIndAssembly: Diagnosing Fine-Grained Temporal Hand Reasoning in Vision–Language Models for Skilled Assembly",
@@ -7370,7 +7487,8 @@
       "benchmark",
       "method",
       "procedure-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -7388,7 +7506,7 @@
         "sha256": "3d96622cff427b7bdac3bb4c73ac40dcac3becfb628501198f2f53ed4fbe00fd"
       }
     ],
-    "sourceSha256": "188b454a604841cf78b68e2a64396375a5545a8878589b42e260f4dda585ccca"
+    "sourceSha256": "693bb88d647b7a3ef01c09398d50737f93a1af908d22fee5411cf25f3de85be0"
   },
   "2026-seminara-tgml": {
     "title": "Task Graph Maximum Likelihood Estimation for Procedural Activity Understanding in Egocentric Videos",
@@ -7431,7 +7549,8 @@
       "procedure-understanding",
       "execution-quality",
       "video-representation",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [
       "catania-coai"
@@ -7451,7 +7570,7 @@
         "sha256": "f480daf4c821e8aec292d2cfcfc7593c7f647d3388808053f66ff56f2a897148"
       }
     ],
-    "sourceSha256": "6b7d5d64c3dee437bc95bcca7dee2c0f6ee8fe8c1c2cf285a8a9782a96c04292"
+    "sourceSha256": "c6339842ed7bd56e29836ff2ec5191c87df41c7cc5c4e2d61abaa58c5a85610e"
   },
   "2026-steenbergen-hoist-case-identifiers": {
     "title": "Surrogate Case Identifier Rules for Construction Site Hoists",
@@ -7543,7 +7662,9 @@
       "method",
       "video-representation",
       "egocentric-video",
-      "construction"
+      "construction",
+      "sft",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -7561,7 +7682,7 @@
         "sha256": "03cd72fa2ba3a4c97f4a4d6b2f0da37f351d57c22b72b37c9aa5db0c4710ca57"
       }
     ],
-    "sourceSha256": "d4a8b5b662571c9e5cb7ddc5dc3e76d9a7ed2bd5052f77405b95f3fe7983a9db"
+    "sourceSha256": "3359b20c0328c200d789ccc4d871b7e8ea3f8f6b6ff9437fff6f61140e22d496"
   },
   "2026-tan-egovit": {
     "title": "Towards Stable Self-Supervised Object Representations in Unconstrained Egocentric Video",
@@ -7589,7 +7710,8 @@
       "method",
       "video-representation",
       "spatial-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "self-supervised-learning"
     ],
     "researchGroups": [
       "cuc-mcc"
@@ -7609,7 +7731,7 @@
         "sha256": "fd4e6fbe7d0fb1b29a3b72370e6f8c67897a48f2179af63162f9da370e0b7dc5"
       }
     ],
-    "sourceSha256": "743bce9d93d53e5b731b5ec132c5b29572e8b08a08428b4d34d2aeaec8e9f26d"
+    "sourceSha256": "832e2bbe9fdc51c4efbcbd54350cb617f24874b6219344f6d20a0426377f954f"
   },
   "2026-tang-takusen": {
     "title": "Asynchronous Temporal Modeling with Two-Agent Framework for Streaming Dense Video Captioning",
@@ -7635,7 +7757,8 @@
     "tags": [
       "method",
       "video-representation",
-      "efficient-processing"
+      "efficient-processing",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -7653,7 +7776,7 @@
         "sha256": "dc08d6ca69f22ced9ce41a7a2eda53ff70074d9e41795ac38ecfb986fc93a424"
       }
     ],
-    "sourceSha256": "04cf43e30e78cc443ab070665f69c25b7f7bdef073c15c049f6342f42554d39a"
+    "sourceSha256": "3174ff67705d9803a7458bb23eaa5d27dadfa2a606119fe80aa677db356e32b5"
   },
   "2026-tian-ego-r1": {
     "title": "Ego-R1: Chain-of-Tool-Thought for Ultra-Long Egocentric Video Reasoning",
@@ -7694,7 +7817,9 @@
       "video-memory",
       "video-retrieval",
       "video-qa",
-      "egocentric-video"
+      "egocentric-video",
+      "sft",
+      "rl"
     ],
     "researchGroups": [
       "ntu-s-lab"
@@ -7714,7 +7839,7 @@
         "sha256": "6550dfafa1d5e3f0b08308d692a3bbe0e1da911e00a257872f6c75d1898a5a59"
       }
     ],
-    "sourceSha256": "e80a0117e49ea23eb138ed682c284528000f49b6e08963ea9d8f7c6572f802ae"
+    "sourceSha256": "3d0856a322e1cf134976bf198de47a22fd288b2c92741adb892123fafa508e47"
   },
   "2026-torne-freeform-preference": {
     "title": "Freeform Preference Learning for Robotic Manipulation",
@@ -7756,7 +7881,9 @@
       "execution-quality",
       "robot-learning",
       "rl-fine-tuning",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "sft",
+      "rl"
     ],
     "researchGroups": [
       "stanford-iris"
@@ -7776,7 +7903,7 @@
         "sha256": "9c1a7d68098c14d09a34399d1a7b3f17dc59ba5af0d7cf5a7a3a2229b96ebe35"
       }
     ],
-    "sourceSha256": "666ffea7309a063c307d8603007ffd107aa307b8fbeb17484d69dec69e361221"
+    "sourceSha256": "a9091c927cddf0fd090dcb5bfc071f993a8a63eb9c1d08ca9429e4f3992f928a"
   },
   "2026-wang-directme": {
     "title": "Keep It in Mind: User-Centric Continual Spatial Intelligence Reasoning in Egocentric Video Streams",
@@ -7820,7 +7947,8 @@
       "video-memory",
       "video-qa",
       "spatial-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -7838,7 +7966,7 @@
         "sha256": "b5ea25e2750e728df279be405017d1b5d535b6c8d63bc7edc3e3069a7e2963a8"
       }
     ],
-    "sourceSha256": "0e6a18cbd4ac6bed5b326dd841f86cf29509259f478fab2a5e3c600e4a9852c9"
+    "sourceSha256": "d3b3e7078ea7061c7fb7399796955cf61cbf1b5fd1dc0e3dffac8eab70938c1e"
   },
   "2026-wang-egomemreason": {
     "title": "EgoMemReason: A Memory-Driven Reasoning Benchmark for Long-Horizon Egocentric Video Understanding",
@@ -7921,7 +8049,8 @@
     "tags": [
       "method",
       "efficient-processing",
-      "video-memory"
+      "video-memory",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -7939,7 +8068,7 @@
         "sha256": "f598787393945781eddc82a41a6d84da436bb3c72eb8a500bc10ab6134b81c73"
       }
     ],
-    "sourceSha256": "bc0b587da9a2a159b5db793c801e8a054bc282c1c68668e487630de07fa21592"
+    "sourceSha256": "93957676902cfb3ff9736d0bb8a424b46d2c40fde810d4657ec4abedf813e59d"
   },
   "2026-wang-s-ember": {
     "title": "S-EMBER: A Large-Scale Benchmark for Streaming Egocentric Memory Retrieval",
@@ -8089,7 +8218,8 @@
       "method",
       "procedure-understanding",
       "execution-quality",
-      "egocentric-video"
+      "egocentric-video",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -8107,7 +8237,7 @@
         "sha256": "5686243a6281ebe48c65dff8e15eedb8d10f57ccc47599f0cfa3ba75cc86d161"
       }
     ],
-    "sourceSha256": "63677a3a85d9f5e5e12055f298f6c9d1b40328bdf9466bdff0e7bf04095cdcfa",
+    "sourceSha256": "a877a072b77e91c320a7e0eaab7b236a5c7f23f112f63851f18314b04a60a66f",
     "spotlightReason": "Evaluates complete executions, recoveries and false alarms, with timing-only controls. A useful protocol for assessing whether quality alerts remain trustworthy throughout a task.",
     "spotlightLimit": "Supervised segmentation/status training and simplified baselines. At a validation budget of 0.1 false alarms/minute, recall is 0.154 on CaptainCook4D and 0.034 on HoloAssist. No construction field trial.",
     "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
@@ -8143,7 +8273,9 @@
       "efficient-processing",
       "execution-quality",
       "real-world-evaluation",
-      "production-use"
+      "production-use",
+      "sft",
+      "rl"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -8161,7 +8293,7 @@
         "sha256": "7cdb8f790662a15194306d3670ea2e8336cf79f93794672724663cf6c0be30de"
       }
     ],
-    "sourceSha256": "e16e421ae4ba5a77fbf71b86c2d7f1524c0951a2a83aceb15968cbc123fa624f"
+    "sourceSha256": "0e9c14368fa626afccbf859e0e88dd970f4851e67f2ad181942de84a314b82f5"
   },
   "2026-wu-temporal-grounding-survey": {
     "title": "A Survey on Video Temporal Grounding with Multimodal Large Language Model",
@@ -8257,7 +8389,8 @@
       "method",
       "video-representation",
       "video-qa",
-      "state-changes"
+      "state-changes",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -8275,7 +8408,7 @@
         "sha256": "a3b77864310adb8971584260f99763aa3078cc4d03a16975b814db819b05ed55"
       }
     ],
-    "sourceSha256": "8b196df449c711466c47417a0c35ffdacb74e73cd9e7b7bbe154090266067a74"
+    "sourceSha256": "1ffef89ff16018abde73484f1f3aeccfa62adf53ca5b4bcde9e5771af4ea7dc0"
   },
   "2026-xiao-myego": {
     "title": "Ego-Grounding for Personalized Question-Answering in Egocentric Videos",
@@ -8355,7 +8488,9 @@
       "video-memory",
       "video-retrieval",
       "efficient-processing",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free",
+      "rl"
     ],
     "researchGroups": [
       "meta-wearables-ai-ml"
@@ -8375,7 +8510,7 @@
         "sha256": "ac306e57b7c1a285ccc42916dbdb6824a6690daa58f3c33ba6cd1f09ddd9f60a"
       }
     ],
-    "sourceSha256": "094ec8e5a1272a253ccfa0f78bc090af872bd87f6a2fb0886f5be7deee524f58"
+    "sourceSha256": "ba6122718e284d334f9494364b687038d0ed25575b35dd7621a3f1d20b74a8d3"
   },
   "2026-yang-egotsr": {
     "title": "EgoTSR++: Egocentric Spatiotemporal Reasoning for Task Progress Understanding",
@@ -8407,7 +8542,8 @@
       "procedure-understanding",
       "state-changes",
       "spatial-understanding",
-      "egocentric-video"
+      "egocentric-video",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -8425,7 +8561,7 @@
         "sha256": "9d9a609fc96c04b660ed03a97e24cbdb5f2dc44102117695a90f0e6e09928ccb"
       }
     ],
-    "sourceSha256": "37c84036ba86f0560f2caceb184b2d73e28248630eae8ed0d0b5515fd03804d3"
+    "sourceSha256": "4317ae285b91590f4addc297ea82fc467768ccd98fb723f56d3b484f7f1a319d"
   },
   "2026-yao-yolo-ilb": {
     "title": "A Vision-Based Sensing Framework for PPE Detection and Safety Harness Compliance Recognition in High-Formwork Construction Environments Using YOLO-ILB",
@@ -8461,7 +8597,8 @@
       "construction",
       "execution-quality",
       "spatial-understanding",
-      "efficient-processing"
+      "efficient-processing",
+      "supervised-training"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -8479,7 +8616,7 @@
         "sha256": "c0d78216d32d78d9ce240b935b19381eb808b6749c2f2e86f7e82cebb721c921"
       }
     ],
-    "sourceSha256": "7c26be458fda31975273c482100f9a5242cbee4df78fbccdce016593536f8016"
+    "sourceSha256": "b57130fb080ec04220f59496e6c3c838160d057af938cc7299717d7a0f610576"
   },
   "2026-ye-regular": {
     "title": "RegulAR: Graph-Grounded Error Recognition and Assistance for Procedural Tasks in Augmented Reality",
@@ -8511,7 +8648,8 @@
       "procedure-understanding",
       "execution-quality",
       "egocentric-video",
-      "real-world-evaluation"
+      "real-world-evaluation",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -8529,7 +8667,7 @@
         "sha256": "f6bc74fc787b981fa075542dfbaaadcae3e8e818450ce6db6d96b75023be74ae"
       }
     ],
-    "sourceSha256": "81bfca41e3db5ad1cb6b585ded3ddd4517964aa5529293b5ce2325947c8fbbbd"
+    "sourceSha256": "78ae34af2ac0f28e5435ba0b16c781064df1dd3b911f0b35b5187b366dd7b877"
   },
   "2026-yeh-all-angles-bench": {
     "title": "Seeing from Another Perspective: Evaluating Multi-View Understanding in MLLMs",
@@ -8626,7 +8764,8 @@
       "video-memory",
       "video-retrieval",
       "video-qa",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [
       "kaist-mlai",
@@ -8647,7 +8786,7 @@
         "sha256": "743d9fa35beb3ff874d4d22ae6f7fe14be4a6ab5adca4c8dfc9c1f9b6b1225d3"
       }
     ],
-    "sourceSha256": "bd54fdfc3d15770ff550e775afdab4eaa141031daed77db7a19ff47a1c199e5a",
+    "sourceSha256": "e20ebc8a9402ca7535d1dea57c222dafa74e80e57accf4eb4ac1f8ad273c508f",
     "spotlightReason": "Combines episodic, semantic and visual memory with adaptive retrieval over multiple timescales. An architectural reference to compare against simpler episode retrieval before adopting graph stores.",
     "spotlightLimit": "Prepared-memory latency excludes full ingestion cost. Caption errors, graph-building overhead and bounded retrieval remain, without validated construction-quality judgments.",
     "spotlightSource": "aligned-wiki/raw/manifest.json#/full_review/spotlight"
@@ -8697,7 +8836,8 @@
       "method",
       "video-memory",
       "video-qa",
-      "efficient-processing"
+      "efficient-processing",
+      "sft"
     ],
     "researchGroups": [
       "nju-mcg"
@@ -8717,7 +8857,7 @@
         "sha256": "00f4b2192a755a50dee33085a8b6382cfcc892b718a39d65a832355a67a94ecc"
       }
     ],
-    "sourceSha256": "e9f8d1bfcc42ebc3a1b736bb9b7dd3e1ec0f5aa23b7e38218ff8e6a683f08853"
+    "sourceSha256": "ff80ccade63464e01e3d37a55a7f2fffb631ce31f9e5bf04e89b16e0207009bc"
   },
   "2026-zhang-constructai": {
     "title": "ConstructAI: From Real-Time Safety Insight to Skill Growth in Deployed Construction AI Systems",
@@ -8760,7 +8900,8 @@
       "egocentric-video",
       "construction",
       "real-world-evaluation",
-      "production-use"
+      "production-use",
+      "sft"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -8778,7 +8919,7 @@
         "sha256": "c2ca27542131a54faf1fba6111e4a4d462b976c6c3221df4431aecad7f95bbb7"
       }
     ],
-    "sourceSha256": "113be8d1e0c10e910c9ebf9cd1e035f5004dbacf3cdc442c567f14a6f9377d6b"
+    "sourceSha256": "07f5a447462f1be42a9208de1d29025ea7c721f948dacac38a36fdc39e4c57fc"
   },
   "2026-zhang-egocite": {
     "title": "EgoCITE: Context-Augmented Indexing and Time-Aware Retrieval for Long-Horizon Egocentric Memory",
@@ -8816,7 +8957,8 @@
       "video-retrieval",
       "video-qa",
       "efficient-processing",
-      "egocentric-video"
+      "egocentric-video",
+      "training-free"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -8834,7 +8976,7 @@
         "sha256": "4fb73472b2bca5cbe42455948a644ad8d25267f5b7aa61f790468c91566315c5"
       }
     ],
-    "sourceSha256": "d69ed246c309473b926389860d22f4f7cdbaf02b961c7e7be5482b04b0040694"
+    "sourceSha256": "9d20609fe05cbabc180039a1ac9dde4afc41a561d1f103e6d22c13be6aaee833"
   },
   "2026-zhang-streamarena": {
     "title": "StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding",
@@ -8871,7 +9013,8 @@
       "method",
       "video-memory",
       "video-qa",
-      "efficient-processing"
+      "efficient-processing",
+      "training-free"
     ],
     "researchGroups": [
       "jia-lab"
@@ -8891,7 +9034,7 @@
         "sha256": "1239c75ac8edb7de8d5476fbcc0acb8def56a5cf139d23f583fa2c75c3345bf3"
       }
     ],
-    "sourceSha256": "2172947d11d07c0c2dabe57fd9ee35d3c27b5dbcc889e47fc54d0e91bad2aedb"
+    "sourceSha256": "21c2b0a678533dd581e3939ca83a3d8437e2059a04e690c72b65fd392e37148a"
   },
   "2026-zhao-pasbench-video": {
     "title": "PaSBench-Video: A Streaming Video Benchmark for Proactive Safety Warning",
@@ -8972,7 +9115,10 @@
       "sourceVersion": "arXiv:2602.04755v2, 4 March 2026, ICLR 2026 paper. The experiments concern text QA, not video."
     },
     "tags": [
-      "method"
+      "method",
+      "training-free",
+      "sft",
+      "rl"
     ],
     "researchGroups": [],
     "reviewed": false,
@@ -8990,7 +9136,7 @@
         "sha256": "e027635436807dd9ab081d169da1942339c7c197bef6448bb50e5564d1e68d80"
       }
     ],
-    "sourceSha256": "18bc859435d5ad5a65599a193c44c0e24dd2302d01904e9cf272b9b3e0183734"
+    "sourceSha256": "d74886d7183afc8ed21333c842edfa43f8a89c455fe5e52e14579dfab81a1f21"
   },
   "2026-ziadia-collision-survey": {
     "title": "Computer Vision-Based Collision Prevention in Construction: Bridging Academic Advances and Industrial Requirements",

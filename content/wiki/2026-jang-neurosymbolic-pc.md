@@ -4,7 +4,7 @@ venue: "Journal of Computational Design and Engineering, 13(8), 90–108"
 affiliations: ["Korea Institute of Civil Engineering and Building Technology", "Incheon National University"]
 research_groups: []
 reviewed: false
-tags: [method, procedure-understanding, construction, multi-person]
+tags: [method, procedure-understanding, construction, multi-person, sft]
 ---
 
 # Neuro-symbolic vision framework for construction: Knowledge graph-augmented monitoring and productivity analysis of precast concrete assembly

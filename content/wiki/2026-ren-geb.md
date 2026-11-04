@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["University of Illinois Urbana-Champaign", "Amazon.com, Inc."]
 research_groups: []
 reviewed: false
-tags: [method, video-memory, video-retrieval, video-qa, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, egocentric-video, training-free]
 ---
 
 # Beyond the Timeline: Augmenting Long-Video Memory with Grounded Entity Biographies

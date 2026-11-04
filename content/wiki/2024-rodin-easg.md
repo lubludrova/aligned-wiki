@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["University of Catania", "Intel Labs"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-representation, state-changes, egocentric-video]
+tags: [dataset, benchmark, method, video-representation, state-changes, egocentric-video, supervised-training]
 ---
 
 # Action Scene Graphs for Long-Form Understanding of Egocentric Videos

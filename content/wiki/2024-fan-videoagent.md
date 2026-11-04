@@ -4,7 +4,7 @@ venue: "ECCV"
 affiliations: ["State Key Laboratory of General Artificial Intelligence, BIGAI", "School of Computer Science, Peking University", "School of Intelligence Science and Technology, Peking University"]
 research_groups: []
 reviewed: false
-tags: [method, video-memory, video-retrieval, video-qa, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, egocentric-video, training-free]
 ---
 
 # VideoAgent: A Memory-augmented Multimodal Agent for Video Understanding

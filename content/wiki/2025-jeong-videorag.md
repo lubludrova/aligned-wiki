@@ -4,7 +4,7 @@ venue: "Findings of ACL"
 affiliations: ["KAIST", "DeepAuto.ai"]
 research_groups: [kaist-mlai]
 reviewed: false
-tags: [dataset, benchmark, method, video-retrieval, video-qa, efficient-processing]
+tags: [dataset, benchmark, method, video-retrieval, video-qa, efficient-processing, supervised-training]
 ---
 
 # VideoRAG: Retrieval-Augmented Generation over Video Corpus

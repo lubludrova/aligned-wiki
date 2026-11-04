@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Communication University of China", "State Key Laboratory of Media Convergence and Communication", "The Chinese University of Hong Kong, Shenzhen"]
 research_groups: [cuc-mcc]
 reviewed: false
-tags: [method, video-representation, spatial-understanding, egocentric-video]
+tags: [method, video-representation, spatial-understanding, egocentric-video, self-supervised-learning]
 ---
 
 # Towards Stable Self-Supervised Object Representations in Unconstrained Egocentric Video

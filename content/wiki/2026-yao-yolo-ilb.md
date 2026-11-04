@@ -4,7 +4,7 @@ venue: "Sensors"
 affiliations: ["Chongqing University", "State Key Laboratory of Safety and Resilience of Civil Engineering in Mountain Area"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, construction, execution-quality, spatial-understanding, efficient-processing]
+tags: [dataset, benchmark, method, construction, execution-quality, spatial-understanding, efficient-processing, supervised-training]
 ---
 
 # A Vision-Based Sensing Framework for PPE Detection and Safety Harness Compliance Recognition in High-Formwork Construction Environments Using YOLO-ILB

@@ -32,6 +32,7 @@ pnpm preview           # Preview the built site
 - Papers includes all 161 wiki notes plus 14 review-only publications (175 total). Full-text search covers complete notes and review excerpts. Filter by topic, year, chapter, review coverage, and wiki Spotlight. Sort by newest/oldest year or most/least citations, with unavailable counts always last. Queries, filters and sorting persist in the URL. `⌘K` / `Ctrl+K` searches the whole site.
 - Publication details and catalog cards show dated OpenAlex cited-by snapshots. The November 3 snapshot has 168 verified counts and three explicitly unavailable entries. SAM 3 and three survey additions have separately checked November 4 counts, bringing the current inventory to 172 verified counts and three unavailable entries. Paper headers contain only Original publication and Read chapter resource links. Authors, affiliations, source qualifications, project/code/data links and citations share one consistent details layout. Counts are imported from the wiki and are not fetched live during builds or browsing.
 - All publications have contribution types before topic tags: dataset, benchmark, method, survey and empirical-study. Types can overlap and are searchable with the Papers topic filter. Dataset/benchmark tags identify introducing contributions, not use of another paper's data. Classifications, including the 14 review-only publications, originate in the wiki.
+- Learning-paradigm tags cover all 130 method publications, including 10 without standalone wiki notes: training-free, SFT, RL, supervised training, self-supervised learning, unsupervised learning and preference optimization. Mixed stages or variants can have several tags. These appear on paper pages and in the Papers topic filter, with all tags imported from the canonical wiki contribution register.
 - Chapter outlines, section links, previous/next navigation, and links from discussions to publication pages.
 - Figure enlargement, horizontally scrolling tables, light and dark themes, and print styles.
 - Copy links and mark chapters as read. Reading marks and theme preferences stay in the current browser.
@@ -70,6 +71,7 @@ content/wiki/*.md            Exact wiki note snapshots
 content/wiki-papers.json      Wiki inventory, metadata, topics, source links, and image provenance
 content/citation-counts.json  Generated dated citation snapshots for every publication
 content/publication-types.json  Generated contribution types for every publication
+content/paper-tags.json        Generated full tag lists, including learning paradigms, for every publication
 public/media/wiki/*.png       Imported primary figures
 content/en/notes/             English source notes
 content/en/notes.json         Notes that become pages

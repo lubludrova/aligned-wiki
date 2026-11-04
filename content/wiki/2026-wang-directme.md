@@ -4,7 +4,7 @@ venue: "ICML"
 affiliations: ["City University of Hong Kong", "University of Science and Technology of China", "National University of Singapore", "The Chinese University of Hong Kong, Shenzhen", "University of Electronic Science and Technology of China", "Beijing University of Posts and Telecommunications", "Zhejiang University"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-memory, video-qa, spatial-understanding, egocentric-video]
+tags: [dataset, benchmark, method, video-memory, video-qa, spatial-understanding, egocentric-video, training-free]
 ---
 
 # Keep It in Mind: User-Centric Continual Spatial Intelligence Reasoning in Egocentric Video Streams

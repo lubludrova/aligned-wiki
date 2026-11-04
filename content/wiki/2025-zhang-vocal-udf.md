@@ -4,7 +4,7 @@ venue: "SIGMOD"
 affiliations: ["University of Washington", "Microsoft Gray Systems Lab"]
 research_groups: []
 reviewed: false
-tags: [method, video-retrieval, efficient-processing, spatial-understanding]
+tags: [method, video-retrieval, efficient-processing, spatial-understanding, supervised-training]
 ---
 
 # Self-Enhancing Video Data Management System for Compositional Events with Large Language Models

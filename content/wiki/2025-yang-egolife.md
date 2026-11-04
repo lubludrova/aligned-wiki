@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["S-Lab, Nanyang Technological University", "LMMs-Lab", "IMDEA Networks", "University of Brescia", "Politecnico di Milano"]
 research_groups: [ntu-s-lab, lmms-lab]
 reviewed: false
-tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa, egocentric-video, multi-person]
+tags: [dataset, benchmark, method, video-memory, video-retrieval, video-qa, egocentric-video, multi-person, sft]
 ---
 
 # EgoLife: Towards Egocentric Life Assistant

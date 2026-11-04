@@ -4,7 +4,7 @@ venue: "RSS"
 affiliations: ["University of Southern California", "UT Dallas", "MIT", "University of Washington", "Ai2", "NVIDIA"]
 research_groups: [usc-lira, uw-rse, utd-irvl, mit-clear]
 reviewed: false
-tags: [dataset, benchmark, method, reward-learning, preference-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation]
+tags: [dataset, benchmark, method, reward-learning, preference-learning, execution-quality, robot-learning, rl-fine-tuning, real-world-evaluation, sft]
 ---
 
 # Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory Comparisons

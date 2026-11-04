@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["National University of Singapore", "Reality Labs Research, Meta"]
 research_groups: []
 reviewed: false
-tags: [dataset, method, video-representation, efficient-processing, egocentric-video, video-qa]
+tags: [dataset, method, video-representation, efficient-processing, egocentric-video, video-qa, sft]
 ---
 
 # VideoLLM-online: Online Video Large Language Model for Streaming Video

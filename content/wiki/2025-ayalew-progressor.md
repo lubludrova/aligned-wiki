@@ -4,7 +4,7 @@ venue: "ICCV"
 affiliations: ["University of Chicago", "Toyota Technological Institute at Chicago"]
 research_groups: [ttic-ripl]
 reviewed: false
-tags: [method, reward-learning, robot-learning, egocentric-video, real-world-evaluation]
+tags: [method, reward-learning, robot-learning, egocentric-video, real-world-evaluation, rl, self-supervised-learning]
 ---
 
 # PROGRESSOR: A Perceptually Guided Reward Estimator with Self-Supervised Online Refinement

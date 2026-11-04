@@ -4,7 +4,7 @@ venue: "arXiv"
 affiliations: ["University of New South Wales", "University of Southern Queensland"]
 research_groups: []
 reviewed: false
-tags: [method, video-memory, spatial-understanding, execution-quality, efficient-processing]
+tags: [method, video-memory, spatial-understanding, execution-quality, efficient-processing, sft, self-supervised-learning]
 ---
 
 # From 3D Perception to Safety Reasoning: A Graph-Based Framework for Real-Time Underground Mine Monitoring

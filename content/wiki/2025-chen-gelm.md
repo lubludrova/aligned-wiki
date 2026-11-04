@@ -4,7 +4,7 @@ venue: "AAAI"
 affiliations: [Shanghai Jiao Tong University]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-qa, video-retrieval, egocentric-video]
+tags: [dataset, benchmark, method, video-qa, video-retrieval, egocentric-video, sft]
 ---
 
 # Grounded Multi-Hop VideoQA in Long-Form Egocentric Videos

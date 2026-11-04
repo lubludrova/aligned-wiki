@@ -6,7 +6,7 @@ affiliations:
   - Munich Institute of Robotics and Machine Intelligence (MIRMI)
 research_groups: [tum-lmt]
 reviewed: false
-tags: [method, procedure-understanding, execution-quality, egocentric-video]
+tags: [method, procedure-understanding, execution-quality, egocentric-video, sft, supervised-training]
 ---
 
 # MistSense: Versatile Online Detection of Procedural and Execution Mistakes

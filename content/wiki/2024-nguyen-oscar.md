@@ -4,7 +4,7 @@ venue: "Findings of NAACL"
 affiliations: ["University of Rochester", "University of Texas at Dallas", "Arizona State University"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, state-changes, video-qa, egocentric-video]
+tags: [dataset, benchmark, method, state-changes, video-qa, egocentric-video, sft]
 ---
 
 # OSCaR: Object State Captioning and State Change Representation

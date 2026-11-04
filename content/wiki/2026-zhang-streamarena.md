@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["The Hong Kong University of Science and Technology", "Xiaohongshu Inc.", "The University of Hong Kong", "The Chinese University of Hong Kong"]
 research_groups: [jia-lab]
 reviewed: false
-tags: [dataset, benchmark, method, video-memory, video-qa, efficient-processing]
+tags: [dataset, benchmark, method, video-memory, video-qa, efficient-processing, training-free]
 ---
 
 # StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding

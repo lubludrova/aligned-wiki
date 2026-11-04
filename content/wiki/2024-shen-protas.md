@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Northeastern University"]
 research_groups: []
 reviewed: false
-tags: [dataset, method, procedure-understanding, video-representation, egocentric-video]
+tags: [dataset, method, procedure-understanding, video-representation, egocentric-video, supervised-training]
 ---
 
 # Progress-Aware Online Action Segmentation for Egocentric Procedural Task Videos

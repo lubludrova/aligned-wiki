@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Huazhong University of Science and Technology", "University of Michigan, Ann Arbor", "Kanagawa University"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-qa, efficient-processing, video-representation]
+tags: [dataset, benchmark, method, video-qa, efficient-processing, video-representation, sft, supervised-training]
 ---
 
 # Holmes-VAU: Towards Long-term Video Anomaly Understanding at Any Granularity

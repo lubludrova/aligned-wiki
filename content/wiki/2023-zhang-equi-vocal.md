@@ -4,7 +4,7 @@ venue: "PVLDB 16(11), 2714–2727"
 affiliations: ["University of Washington", "Microsoft Gray Systems Lab"]
 research_groups: []
 reviewed: false
-tags: [method, video-retrieval, spatial-understanding, efficient-processing]
+tags: [method, video-retrieval, spatial-understanding, efficient-processing, supervised-training]
 ---
 
 # EQUI-VOCAL: Synthesizing Queries for Compositional Video Events from Limited User Interactions

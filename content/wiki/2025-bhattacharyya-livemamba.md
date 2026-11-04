@@ -6,7 +6,7 @@ affiliations:
   - "University of British Columbia"
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, procedure-understanding, execution-quality, egocentric-video, efficient-processing]
+tags: [dataset, benchmark, method, procedure-understanding, execution-quality, egocentric-video, efficient-processing, sft]
 ---
 
 # Can Multi-Modal LLMs Provide Live Step-by-Step Task Guidance?

@@ -12,6 +12,7 @@ tags:
 - procedure-understanding
 - execution-quality
 - egocentric-video
+- supervised-training
 ---
 
 # Through a PRISM, Clearly: Step-Sequence Reasoning for Mistake Recognition in Procedural Videos

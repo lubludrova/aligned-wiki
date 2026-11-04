@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["University of Science and Technology Beijing", "Johns Hopkins University"]
 research_groups: []
 reviewed: false
-tags: [method, efficient-processing, execution-quality, real-world-evaluation, production-use]
+tags: [method, efficient-processing, execution-quality, real-world-evaluation, production-use, sft, rl]
 ---
 
 # MonitorVLM-v2: A Deployed Vision-Language Framework for Real-Time Safety Violation Detection

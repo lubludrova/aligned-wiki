@@ -7,7 +7,7 @@ affiliations:
   - Carnegie Mellon University
 research_groups: [meta-fair]
 reviewed: false
-tags: [dataset, benchmark, method, execution-quality, video-retrieval, egocentric-video]
+tags: [dataset, benchmark, method, execution-quality, video-retrieval, egocentric-video, sft]
 ---
 
 # ExpertAF: Expert Actionable Feedback from Video

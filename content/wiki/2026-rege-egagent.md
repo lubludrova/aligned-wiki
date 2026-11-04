@@ -4,7 +4,7 @@ venue: "ACL"
 affiliations: ["Reality Labs Research at Meta", "University of Wisconsin-Madison"]
 research_groups: [meta-reality-labs, wisconsin-waiv]
 reviewed: false
-tags: [method, video-memory, video-retrieval, video-qa, egocentric-video]
+tags: [method, video-memory, video-retrieval, video-qa, egocentric-video, training-free]
 ---
 
 # Agentic Very Long Video Understanding

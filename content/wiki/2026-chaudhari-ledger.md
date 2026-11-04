@@ -4,7 +4,7 @@ venue: "arXiv preprint"
 affiliations: ["Johns Hopkins University", "Johns Hopkins University Applied Physics Laboratory"]
 research_groups: [jhu-b3]
 reviewed: false
-tags: [method, video-memory, spatial-understanding, video-qa, egocentric-video]
+tags: [method, video-memory, spatial-understanding, video-qa, egocentric-video, training-free]
 ---
 
 # Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos

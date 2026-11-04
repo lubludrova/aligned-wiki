@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Northeastern University"]
 research_groups: []
 reviewed: false
-tags: [method, procedure-understanding, execution-quality, egocentric-video]
+tags: [method, procedure-understanding, execution-quality, egocentric-video, training-free]
 ---
 
 # AXG-Reasoner: Error Detection and Explanation in Long Task Videos with Vision–Language Models

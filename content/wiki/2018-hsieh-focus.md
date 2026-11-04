@@ -4,7 +4,7 @@ venue: "OSDI"
 affiliations: ["Carnegie Mellon University", "Microsoft", "University of Wisconsin", "ETH Zürich"]
 research_groups: []
 reviewed: false
-tags: [method, video-retrieval, efficient-processing, video-representation]
+tags: [method, video-retrieval, efficient-processing, video-representation, supervised-training]
 ---
 
 # Focus: Querying Large Video Datasets with Low Latency and Low Cost

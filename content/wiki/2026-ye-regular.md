@@ -4,7 +4,7 @@ venue: "UIST"
 affiliations: ["The Hong Kong University of Science and Technology"]
 research_groups: []
 reviewed: false
-tags: [method, procedure-understanding, execution-quality, egocentric-video, real-world-evaluation]
+tags: [method, procedure-understanding, execution-quality, egocentric-video, real-world-evaluation, training-free]
 ---
 
 # RegulAR: Graph-Grounded Error Recognition and Assistance for Procedural Tasks in Augmented Reality

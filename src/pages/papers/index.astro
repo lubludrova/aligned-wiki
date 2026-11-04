@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import CitationCount from '../../components/CitationCount.astro';
-import { chapters, paperSearchEntries, citationCounts } from '../../lib/content';
+import { chapters, paperSearchEntries, citationCounts, paperTagLabel } from '../../lib/content';
 import { sortPapers } from '../../lib/paper-sort.mjs';
 const sorted = sortPapers(paperSearchEntries);
 const topics = [...new Set(sorted.flatMap(paper => paper.tags))].sort();
@@ -15,7 +15,7 @@ const years = [...new Set(sorted.map(paper => paper.year))].sort((a,b) => b-a);
       <label class="library-search"><Icon name="search"/><span class="sr-only">Search papers</span><input id="paper-query" type="search" name="q" autocomplete="off" placeholder="Search titles, methods, or full notes…"/></label>
     </div>
     <div class="paper-filters">
-      <label><span class="sr-only">Topic</span><select id="paper-topic"><option value="">All topics</option>{topics.map(topic => <option value={topic}>{topic.replaceAll('-', ' ')}</option>)}</select></label>
+      <label><span class="sr-only">Topic</span><select id="paper-topic"><option value="">All topics</option>{topics.map(topic => <option value={topic}>{paperTagLabel(topic)}</option>)}</select></label>
       <label><span class="sr-only">Year</span><select id="paper-year"><option value="">All years</option>{years.map(year => <option value={year}>{year}</option>)}</select></label>
       <label><span class="sr-only">Review coverage</span><select id="paper-coverage"><option value="">All papers</option><option value="review">In the review</option><option value="wiki">Beyond the review</option></select></label>
       <label><span class="sr-only">Chapter</span><select id="paper-chapter"><option value="">All chapters</option>{chapters.filter(ch => sorted.some(p => p.chapters.includes(ch.slug))).map(ch => <option value={ch.slug}>{ch.number}. {ch.title}</option>)}</select></label>

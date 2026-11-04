@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["ReLER, CCAI, Zhejiang University", "ReLER, AAII, University of Technology Sydney"]
 research_groups: []
 reviewed: false
-tags: [method, video-representation, spatial-understanding, state-changes]
+tags: [method, video-representation, spatial-understanding, state-changes, supervised-training]
 ---
 
 # DiffVsgg: Diffusion-Driven Online Video Scene Graph Generation

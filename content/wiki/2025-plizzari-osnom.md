@@ -4,7 +4,7 @@ venue: "3DV"
 affiliations: ["Politecnico di Torino", "Avataar Inc.", "University of California, Berkeley", "University of Bristol"]
 research_groups: [bristol-mavi]
 reviewed: false
-tags: [benchmark, method, spatial-understanding, video-memory, egocentric-video]
+tags: [benchmark, method, spatial-understanding, video-memory, egocentric-video, training-free]
 ---
 
 # Spatial Cognition from Egocentric Video: Out of Sight, Not Out of Mind

@@ -4,7 +4,7 @@ venue: "WACV"
 affiliations: [Microsoft, University of Central Florida]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-representation, egocentric-video, multi-person]
+tags: [dataset, benchmark, method, video-representation, egocentric-video, multi-person, supervised-training, unsupervised-learning]
 ---
 
 # Multi-Stream Dynamic Video Summarization

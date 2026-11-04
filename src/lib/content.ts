@@ -46,7 +46,8 @@ const publicationMetadata: Record<string, PublicationMetadata> = JSON.parse(read
 const tableReferences: Record<string, string> = JSON.parse(readFileSync(join(directory, '..', 'table-references.json'), 'utf8'));
 export const wikiPapers: Record<string, WikiPaper> = JSON.parse(readFileSync(join(directory, '..', 'wiki-papers.json'), 'utf8'));
 export const publicationTypes: Record<string, string[]> = JSON.parse(readFileSync(join(directory, '..', 'publication-types.json'), 'utf8'));
-export const paperTags = Object.fromEntries(Object.entries(publicationTypes).map(([slug, types]) => [slug, wikiPapers[slug]?.tags || types]));
+export const paperTags: Record<string, string[]> = JSON.parse(readFileSync(join(directory, '..', 'paper-tags.json'), 'utf8'));
+export const paperTagLabel = (tag: string) => tag === 'sft' ? 'SFT' : tag === 'rl' ? 'RL' : tag.replaceAll('-', ' ');
 export const reviewPapers: Paper[] = JSON.parse(readFileSync(join(directory, 'papers.json'), 'utf8')).map((paper: Paper) => ({ ...paper, year: publicationMetadata[paper.slug].year, metadata: publicationMetadata[paper.slug] }));
 export const papers: Paper[] = [
   ...reviewPapers.map(paper => {

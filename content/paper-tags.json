@@ -1,0 +1,1361 @@
+{
+  "2009-golparvar-fard-d4ar": [
+    "method",
+    "training-free"
+  ],
+  "2017-christiano-human-preferences": [
+    "method",
+    "reward-learning",
+    "preference-learning",
+    "robot-learning",
+    "rl",
+    "supervised-training"
+  ],
+  "2017-zhang-videostorm": [
+    "method",
+    "efficient-processing",
+    "real-world-evaluation",
+    "training-free"
+  ],
+  "2018-doughty-skill-ranking": [
+    "dataset",
+    "benchmark",
+    "method",
+    "execution-quality",
+    "preference-learning",
+    "sft"
+  ],
+  "2018-hsieh-focus": [
+    "method",
+    "video-retrieval",
+    "efficient-processing",
+    "video-representation",
+    "supervised-training"
+  ],
+  "2018-jiang-chameleon": [
+    "method",
+    "efficient-processing",
+    "real-world-evaluation",
+    "training-free"
+  ],
+  "2019-kang-blazeit": [
+    "method",
+    "video-retrieval",
+    "efficient-processing",
+    "supervised-training"
+  ],
+  "2020-lei-tvr": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-retrieval",
+    "video-representation",
+    "efficient-processing",
+    "supervised-training",
+    "self-supervised-learning"
+  ],
+  "2020-li-reducto": [
+    "method",
+    "efficient-processing",
+    "video-representation",
+    "supervised-training"
+  ],
+  "2021-bain-frozen-in-time": [
+    "dataset",
+    "method",
+    "sft",
+    "self-supervised-learning"
+  ],
+  "2021-luo-clip4clip": [
+    "method",
+    "sft",
+    "self-supervised-learning"
+  ],
+  "2022-elfeki-multi-ego": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-representation",
+    "egocentric-video",
+    "multi-person",
+    "supervised-training",
+    "unsupervised-learning"
+  ],
+  "2022-grauman-ego4d": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "video-retrieval",
+    "state-changes",
+    "egocentric-video",
+    "multi-person"
+  ],
+  "2022-jia-egotaskqa": [
+    "dataset",
+    "benchmark",
+    "video-qa",
+    "state-changes",
+    "procedure-understanding",
+    "egocentric-video",
+    "multi-person"
+  ],
+  "2022-kang-tasti": [
+    "method",
+    "video-representation",
+    "video-retrieval",
+    "efficient-processing",
+    "training-free",
+    "sft"
+  ],
+  "2022-sener-assembly101": [
+    "dataset",
+    "benchmark",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video"
+  ],
+  "2022-soucek-look-for-change": [
+    "dataset",
+    "benchmark",
+    "method",
+    "state-changes",
+    "construction",
+    "self-supervised-learning"
+  ],
+  "2023-ma-vip": [
+    "method",
+    "reward-learning",
+    "video-representation",
+    "robot-learning",
+    "egocentric-video",
+    "real-world-evaluation",
+    "self-supervised-learning"
+  ],
+  "2023-mangalam-egoschema": [
+    "dataset",
+    "benchmark"
+  ],
+  "2023-wang-holoassist": [
+    "dataset",
+    "benchmark",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video",
+    "multi-person"
+  ],
+  "2023-zhang-equi-vocal": [
+    "method",
+    "video-retrieval",
+    "spatial-understanding",
+    "efficient-processing",
+    "supervised-training"
+  ],
+  "2024-chen-videollm-online": [
+    "dataset",
+    "method",
+    "video-representation",
+    "efficient-processing",
+    "egocentric-video",
+    "video-qa",
+    "sft"
+  ],
+  "2024-eyzaguirre-sdqes": [
+    "dataset",
+    "benchmark",
+    "method",
+    "egocentric-video",
+    "efficient-processing",
+    "video-representation",
+    "sft"
+  ],
+  "2024-fan-videoagent": [
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2024-goletto-amego": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "spatial-understanding",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2024-grauman-ego-exo4d": [
+    "dataset",
+    "benchmark",
+    "execution-quality",
+    "procedure-understanding",
+    "spatial-understanding",
+    "egocentric-video"
+  ],
+  "2024-huang-egoexolearn": [
+    "dataset",
+    "benchmark",
+    "execution-quality",
+    "procedure-understanding",
+    "video-representation",
+    "preference-learning",
+    "egocentric-video"
+  ],
+  "2024-lee-egoper": [
+    "dataset",
+    "benchmark",
+    "method",
+    "execution-quality",
+    "procedure-understanding",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2024-nguyen-oscar": [
+    "dataset",
+    "benchmark",
+    "method",
+    "state-changes",
+    "video-qa",
+    "egocentric-video",
+    "sft"
+  ],
+  "2024-peddi-captaincook4d": [
+    "dataset",
+    "benchmark",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video"
+  ],
+  "2024-rodin-easg": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-representation",
+    "state-changes",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2024-schoonbeek-industreal": [
+    "dataset",
+    "benchmark",
+    "method",
+    "procedure-understanding",
+    "state-changes",
+    "execution-quality",
+    "egocentric-video",
+    "sft"
+  ],
+  "2024-seminara-dtgl": [
+    "method",
+    "supervised-training"
+  ],
+  "2024-shen-protas": [
+    "dataset",
+    "method",
+    "procedure-understanding",
+    "video-representation",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2024-song-moviechat": [
+    "dataset",
+    "benchmark",
+    "method",
+    "training-free"
+  ],
+  "2024-wang-internvideo2": [
+    "method",
+    "sft",
+    "self-supervised-learning"
+  ],
+  "2024-wang-videoagent": [
+    "method",
+    "training-free"
+  ],
+  "2024-wu-longvideobench": [
+    "dataset",
+    "benchmark"
+  ],
+  "2024-wu-ovvad": [
+    "method",
+    "execution-quality",
+    "video-representation",
+    "supervised-training"
+  ],
+  "2024-xue-vidosc": [
+    "dataset",
+    "benchmark",
+    "method",
+    "state-changes",
+    "video-representation",
+    "supervised-training"
+  ],
+  "2024-zanella-lavad": [
+    "method",
+    "video-representation",
+    "video-qa",
+    "training-free"
+  ],
+  "2024-zhang-llovi": [
+    "method",
+    "training-free"
+  ],
+  "2024-zhong-onlinetas": [
+    "method",
+    "procedure-understanding",
+    "video-representation",
+    "efficient-processing",
+    "supervised-training"
+  ],
+  "2024-zhou-streaming-dvc": [
+    "method",
+    "video-memory",
+    "video-representation",
+    "efficient-processing",
+    "sft"
+  ],
+  "2025-ahmad-sh17": [
+    "dataset",
+    "benchmark",
+    "video-representation",
+    "execution-quality"
+  ],
+  "2025-anwar-remembr": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-memory",
+    "video-qa",
+    "spatial-understanding",
+    "real-world-evaluation",
+    "training-free"
+  ],
+  "2025-ashutosh-expertaf": [
+    "dataset",
+    "benchmark",
+    "method",
+    "execution-quality",
+    "video-retrieval",
+    "egocentric-video",
+    "sft"
+  ],
+  "2025-ayalew-progressor": [
+    "method",
+    "reward-learning",
+    "robot-learning",
+    "egocentric-video",
+    "real-world-evaluation",
+    "rl",
+    "self-supervised-learning"
+  ],
+  "2025-bhattacharyya-livemamba": [
+    "dataset",
+    "benchmark",
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video",
+    "efficient-processing",
+    "sft"
+  ],
+  "2025-cao-flashmmr": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-retrieval",
+    "video-representation",
+    "supervised-training"
+  ],
+  "2025-chan-domain-vlm": [
+    "dataset",
+    "method",
+    "execution-quality",
+    "construction",
+    "real-world-evaluation",
+    "sft"
+  ],
+  "2025-chavan-indego": [
+    "dataset",
+    "benchmark",
+    "procedure-understanding",
+    "execution-quality",
+    "video-qa",
+    "egocentric-video",
+    "multi-person"
+  ],
+  "2025-chen-clip2safety": [
+    "method",
+    "construction",
+    "execution-quality",
+    "efficient-processing",
+    "sft"
+  ],
+  "2025-chen-diffvsgg": [
+    "method",
+    "video-representation",
+    "spatial-understanding",
+    "state-changes",
+    "supervised-training"
+  ],
+  "2025-chen-gelm": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-qa",
+    "video-retrieval",
+    "egocentric-video",
+    "sft"
+  ],
+  "2025-di-rekv": [
+    "method",
+    "video-memory",
+    "video-qa",
+    "efficient-processing",
+    "training-free"
+  ],
+  "2025-fu-video-mme": [
+    "dataset",
+    "benchmark"
+  ],
+  "2025-guo-egoconqs": [
+    "dataset",
+    "method",
+    "supervised-training"
+  ],
+  "2025-haneji-egooops": [
+    "dataset",
+    "benchmark",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video"
+  ],
+  "2025-he-egoexobench": [
+    "dataset",
+    "benchmark",
+    "video-qa",
+    "execution-quality",
+    "procedure-understanding",
+    "spatial-understanding",
+    "egocentric-video"
+  ],
+  "2025-huang-amnar": [
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2025-jeong-videorag": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-retrieval",
+    "video-qa",
+    "efficient-processing",
+    "supervised-training"
+  ],
+  "2025-lehman-statediffnet": [
+    "method",
+    "state-changes",
+    "execution-quality",
+    "egocentric-video",
+    "sft"
+  ],
+  "2025-li-anomize": [
+    "method",
+    "execution-quality",
+    "video-representation",
+    "supervised-training"
+  ],
+  "2025-liu-egosafe": [
+    "dataset",
+    "method",
+    "training-free"
+  ],
+  "2025-liu-visualsync": [
+    "method",
+    "spatial-understanding",
+    "video-representation",
+    "training-free"
+  ],
+  "2025-luo-hil-serl": [
+    "method",
+    "robot-learning",
+    "reward-learning",
+    "real-world-evaluation",
+    "rl",
+    "supervised-training"
+  ],
+  "2025-luo-video-rag": [
+    "method",
+    "video-retrieval",
+    "video-qa",
+    "efficient-processing",
+    "training-free"
+  ],
+  "2025-mengiste-weekly-progress": [
+    "method",
+    "state-changes",
+    "construction",
+    "real-world-evaluation",
+    "training-free"
+  ],
+  "2025-ortiz-abstention-knobs": [
+    "empirical-study",
+    "video-qa"
+  ],
+  "2025-patsch-mistsense": [
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video",
+    "sft",
+    "supervised-training"
+  ],
+  "2025-perrett-hd-epic": [
+    "dataset",
+    "benchmark",
+    "video-qa",
+    "state-changes",
+    "spatial-understanding",
+    "egocentric-video"
+  ],
+  "2025-plizzari-osnom": [
+    "benchmark",
+    "method",
+    "spatial-understanding",
+    "video-memory",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2025-qian-dispider": [
+    "method",
+    "video-qa",
+    "video-memory",
+    "efficient-processing",
+    "sft"
+  ],
+  "2025-schoonbeek-storm-psr": [
+    "dataset",
+    "benchmark",
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "state-changes",
+    "egocentric-video",
+    "sft",
+    "supervised-training"
+  ],
+  "2025-sun-tubeletgraph": [
+    "dataset",
+    "benchmark",
+    "method",
+    "state-changes",
+    "spatial-understanding",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2025-wang-siteshield": [
+    "method",
+    "execution-quality",
+    "construction",
+    "training-free"
+  ],
+  "2025-wang-videotree": [
+    "method",
+    "video-retrieval",
+    "video-qa",
+    "efficient-processing",
+    "training-free"
+  ],
+  "2025-yang-egolife": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video",
+    "multi-person",
+    "sft"
+  ],
+  "2025-ye-mm-ego": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-qa",
+    "video-retrieval",
+    "video-representation",
+    "egocentric-video",
+    "sft"
+  ],
+  "2025-ye-vera": [
+    "method",
+    "execution-quality",
+    "video-representation",
+    "supervised-training"
+  ],
+  "2025-yoon-uvqa": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-qa",
+    "preference-learning",
+    "sft",
+    "preference-optimization"
+  ],
+  "2025-zameni-moscato": [
+    "dataset",
+    "benchmark",
+    "method",
+    "state-changes",
+    "procedure-understanding",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2025-zeng-streamforest": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-memory",
+    "efficient-processing",
+    "video-qa",
+    "sft"
+  ],
+  "2025-zhang-holmes-vau": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-qa",
+    "efficient-processing",
+    "video-representation",
+    "sft",
+    "supervised-training"
+  ],
+  "2025-zhang-rewind": [
+    "method",
+    "reward-learning",
+    "robot-learning",
+    "rl-fine-tuning",
+    "real-world-evaluation",
+    "rl",
+    "supervised-training"
+  ],
+  "2025-zhang-vocal-udf": [
+    "method",
+    "video-retrieval",
+    "efficient-processing",
+    "spatial-understanding",
+    "supervised-training"
+  ],
+  "2026-alam-supermemory-vqa": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video"
+  ],
+  "2026-bacharidis-mistake-survey": [
+    "survey",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video"
+  ],
+  "2026-bhat-vantage-bench": [
+    "dataset",
+    "benchmark",
+    "spatial-understanding",
+    "state-changes",
+    "video-representation",
+    "video-qa"
+  ],
+  "2026-braun-skillspotter": [
+    "method",
+    "execution-quality",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2026-cai-cfd": [
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "efficient-processing",
+    "training-free"
+  ],
+  "2026-chalk-whareformer": [
+    "method",
+    "spatial-understanding",
+    "video-memory",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2026-chatterjee-spot-bench": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "state-changes",
+    "procedure-understanding"
+  ],
+  "2026-chaudhari-ledger": [
+    "method",
+    "video-memory",
+    "spatial-understanding",
+    "video-qa",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-chavan-indego-assistant": [
+    "method",
+    "procedure-understanding",
+    "egocentric-video",
+    "training-free",
+    "supervised-training"
+  ],
+  "2026-chen-egomonth": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "video-qa",
+    "egocentric-video"
+  ],
+  "2026-chen-em2mem": [
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "efficient-processing",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-chen-reactvau": [
+    "method",
+    "video-memory",
+    "efficient-processing",
+    "video-qa",
+    "sft"
+  ],
+  "2026-choi-merit": [
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "efficient-processing",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-forte-egostream": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "video-qa",
+    "efficient-processing",
+    "egocentric-video"
+  ],
+  "2026-gao-svg2": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-representation",
+    "state-changes",
+    "spatial-understanding",
+    "sft"
+  ],
+  "2026-guo-aem": [
+    "method",
+    "execution-quality",
+    "state-changes",
+    "spatial-understanding",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2026-guo-multimodal-memory-survey": [
+    "survey",
+    "video-memory",
+    "efficient-processing"
+  ],
+  "2026-guo-procobject": [
+    "dataset",
+    "benchmark",
+    "method",
+    "procedure-understanding",
+    "state-changes",
+    "video-qa",
+    "egocentric-video",
+    "sft"
+  ],
+  "2026-gupta-vidparse": [
+    "method",
+    "procedure-understanding",
+    "video-representation",
+    "efficient-processing",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-hou-eventformer": [
+    "method",
+    "video-retrieval",
+    "video-representation",
+    "efficient-processing",
+    "supervised-training"
+  ],
+  "2026-hsieh-ai-bim-progress": [
+    "method",
+    "procedure-understanding",
+    "spatial-understanding",
+    "construction",
+    "real-world-evaluation",
+    "sft"
+  ],
+  "2026-huang-apm-bench": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "video-qa",
+    "efficient-processing",
+    "egocentric-video"
+  ],
+  "2026-isaac-sensing-scheduling": [
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "construction",
+    "training-free"
+  ],
+  "2026-jang-neurosymbolic-pc": [
+    "method",
+    "procedure-understanding",
+    "construction",
+    "multi-person",
+    "sft"
+  ],
+  "2026-kim-ma-egoqa": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video",
+    "multi-person"
+  ],
+  "2026-kriz-multivent-raw": [
+    "dataset",
+    "benchmark"
+  ],
+  "2026-lee-axg-reasoner": [
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-lee-carve": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-lee-roboreward": [
+    "dataset",
+    "benchmark",
+    "method",
+    "reward-learning",
+    "execution-quality",
+    "robot-learning",
+    "rl-fine-tuning",
+    "real-world-evaluation",
+    "sft"
+  ],
+  "2026-leng-flora": [
+    "dataset",
+    "benchmark",
+    "method",
+    "execution-quality",
+    "reward-learning",
+    "efficient-processing",
+    "egocentric-video",
+    "production-use",
+    "sft",
+    "rl"
+  ],
+  "2026-li-egoerrorvqa": [
+    "dataset",
+    "benchmark",
+    "procedure-understanding",
+    "execution-quality",
+    "video-qa",
+    "egocentric-video"
+  ],
+  "2026-li-matt": [
+    "dataset",
+    "benchmark",
+    "method",
+    "execution-quality",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2026-li-streampro": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-representation",
+    "video-qa",
+    "sft",
+    "rl"
+  ],
+  "2026-liang-capmem": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "video-qa",
+    "efficient-processing",
+    "egocentric-video"
+  ],
+  "2026-liang-robometer": [
+    "dataset",
+    "benchmark",
+    "method",
+    "reward-learning",
+    "preference-learning",
+    "execution-quality",
+    "robot-learning",
+    "rl-fine-tuning",
+    "real-world-evaluation",
+    "sft"
+  ],
+  "2026-liao-proactegomem": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "state-changes",
+    "spatial-understanding",
+    "egocentric-video"
+  ],
+  "2026-liu-egoexomem": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-qa",
+    "video-retrieval",
+    "spatial-understanding",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-liu-guideme": [
+    "dataset",
+    "benchmark",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video"
+  ],
+  "2026-liu-svcbench": [
+    "dataset",
+    "benchmark",
+    "state-changes",
+    "video-memory",
+    "video-representation"
+  ],
+  "2026-loginova-prism": [
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2026-long-m3-agent": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video",
+    "multi-person",
+    "sft",
+    "rl"
+  ],
+  "2026-ma-r4dsg": [
+    "method",
+    "video-memory",
+    "spatial-understanding",
+    "video-qa",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-majumder-mistexit": [
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "efficient-processing",
+    "rl",
+    "supervised-training"
+  ],
+  "2026-mandikal-spoc": [
+    "dataset",
+    "benchmark",
+    "method",
+    "state-changes",
+    "spatial-understanding",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2026-mazzamuto-proskill": [
+    "dataset",
+    "benchmark",
+    "execution-quality",
+    "preference-learning",
+    "egocentric-video"
+  ],
+  "2026-mur-labadia-v-jepa-2-1": [
+    "method",
+    "video-representation",
+    "spatial-understanding",
+    "egocentric-video",
+    "real-world-evaluation",
+    "self-supervised-learning"
+  ],
+  "2026-pang-egoprobe": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "video-qa",
+    "egocentric-video"
+  ],
+  "2026-panpatil-egosafetybench": [
+    "dataset",
+    "benchmark",
+    "egocentric-video",
+    "execution-quality"
+  ],
+  "2026-qiu-graphrag-compliance": [
+    "method",
+    "video-qa",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video",
+    "construction",
+    "training-free"
+  ],
+  "2026-ranasinghe-safety-reasoning": [
+    "method",
+    "video-memory",
+    "spatial-understanding",
+    "execution-quality",
+    "efficient-processing",
+    "sft",
+    "self-supervised-learning"
+  ],
+  "2026-rauf-hpp": [
+    "method",
+    "video-retrieval",
+    "video-qa",
+    "efficient-processing",
+    "training-free"
+  ],
+  "2026-rege-egagent": [
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-ren-geb": [
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-ren-videorag": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "training-free"
+  ],
+  "2026-sasaki-egoindassembly": [
+    "dataset",
+    "benchmark",
+    "method",
+    "procedure-understanding",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-seminara-tgml": [
+    "dataset",
+    "benchmark",
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "video-representation",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2026-steenbergen-hoist-case-identifiers": [
+    "empirical-study",
+    "procedure-understanding",
+    "construction"
+  ],
+  "2026-suen-icon-pose": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-representation",
+    "egocentric-video",
+    "construction",
+    "sft",
+    "supervised-training"
+  ],
+  "2026-tan-egovit": [
+    "method",
+    "video-representation",
+    "spatial-understanding",
+    "egocentric-video",
+    "self-supervised-learning"
+  ],
+  "2026-tang-takusen": [
+    "method",
+    "video-representation",
+    "efficient-processing",
+    "sft"
+  ],
+  "2026-tian-ego-r1": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video",
+    "sft",
+    "rl"
+  ],
+  "2026-torne-freeform-preference": [
+    "method",
+    "reward-learning",
+    "preference-learning",
+    "execution-quality",
+    "robot-learning",
+    "rl-fine-tuning",
+    "real-world-evaluation",
+    "sft",
+    "rl"
+  ],
+  "2026-wang-directme": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-memory",
+    "video-qa",
+    "spatial-understanding",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-wang-egomemreason": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "video-qa",
+    "egocentric-video"
+  ],
+  "2026-wang-parsee-vad": [
+    "method",
+    "efficient-processing",
+    "video-memory",
+    "training-free"
+  ],
+  "2026-wang-s-ember": [
+    "dataset",
+    "benchmark",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video"
+  ],
+  "2026-wen-impact": [
+    "dataset",
+    "benchmark",
+    "procedure-understanding",
+    "state-changes",
+    "execution-quality",
+    "egocentric-video"
+  ],
+  "2026-wen-provia": [
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video",
+    "supervised-training"
+  ],
+  "2026-wu-monitorvlm-v2": [
+    "method",
+    "efficient-processing",
+    "execution-quality",
+    "real-world-evaluation",
+    "production-use",
+    "sft",
+    "rl"
+  ],
+  "2026-xia-streamo": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-representation",
+    "video-qa",
+    "state-changes",
+    "sft"
+  ],
+  "2026-xiao-myego": [
+    "dataset",
+    "benchmark",
+    "video-qa",
+    "egocentric-video",
+    "multi-person"
+  ],
+  "2026-xiong-memlife": [
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "efficient-processing",
+    "egocentric-video",
+    "training-free",
+    "rl"
+  ],
+  "2026-yang-egotsr": [
+    "dataset",
+    "benchmark",
+    "method",
+    "procedure-understanding",
+    "state-changes",
+    "spatial-understanding",
+    "egocentric-video",
+    "sft"
+  ],
+  "2026-yao-yolo-ilb": [
+    "dataset",
+    "benchmark",
+    "method",
+    "construction",
+    "execution-quality",
+    "spatial-understanding",
+    "efficient-processing",
+    "supervised-training"
+  ],
+  "2026-ye-regular": [
+    "method",
+    "procedure-understanding",
+    "execution-quality",
+    "egocentric-video",
+    "real-world-evaluation",
+    "training-free"
+  ],
+  "2026-yeh-all-angles-bench": [
+    "dataset",
+    "benchmark",
+    "spatial-understanding",
+    "multi-person",
+    "egocentric-video"
+  ],
+  "2026-yeo-worldmm": [
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-zeng-onestreamer": [
+    "dataset",
+    "method",
+    "video-memory",
+    "video-qa",
+    "efficient-processing",
+    "sft"
+  ],
+  "2026-zhang-constructai": [
+    "dataset",
+    "benchmark",
+    "method",
+    "execution-quality",
+    "egocentric-video",
+    "construction",
+    "real-world-evaluation",
+    "production-use",
+    "sft"
+  ],
+  "2026-zhang-egocite": [
+    "method",
+    "video-memory",
+    "video-retrieval",
+    "video-qa",
+    "efficient-processing",
+    "egocentric-video",
+    "training-free"
+  ],
+  "2026-zhang-streamarena": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-memory",
+    "video-qa",
+    "efficient-processing",
+    "training-free"
+  ],
+  "2026-zhao-pasbench-video": [
+    "dataset",
+    "benchmark",
+    "execution-quality",
+    "video-representation"
+  ],
+  "2026-zhou-temporal-abstention": [
+    "method",
+    "training-free",
+    "sft",
+    "rl"
+  ],
+  "2026-ziadia-collision-survey": [
+    "survey",
+    "construction",
+    "spatial-understanding",
+    "multi-person"
+  ],
+  "2026-carion-sam3": [
+    "dataset",
+    "benchmark",
+    "method",
+    "video-representation",
+    "efficient-processing",
+    "sft",
+    "supervised-training",
+    "self-supervised-learning"
+  ],
+  "2026-deng-agentic-video-survey": [
+    "survey",
+    "video-memory",
+    "video-retrieval",
+    "video-qa"
+  ],
+  "2026-wu-temporal-grounding-survey": [
+    "survey",
+    "video-retrieval",
+    "video-qa",
+    "video-representation"
+  ],
+  "2026-ma-robot-video-survey": [
+    "survey",
+    "robot-learning",
+    "video-representation",
+    "reward-learning",
+    "egocentric-video"
+  ]
+}

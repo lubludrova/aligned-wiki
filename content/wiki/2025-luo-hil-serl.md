@@ -4,7 +4,7 @@ venue: "Science Robotics"
 affiliations: ["UC Berkeley"]
 research_groups: [berkeley-rail]
 reviewed: false
-tags: [method, robot-learning, reward-learning, real-world-evaluation]
+tags: [method, robot-learning, reward-learning, real-world-evaluation, rl, supervised-training]
 ---
 
 # Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning

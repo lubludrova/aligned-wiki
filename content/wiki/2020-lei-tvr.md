@@ -4,7 +4,7 @@ venue: "ECCV 2020"
 affiliations: ["University of North Carolina at Chapel Hill"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-retrieval, video-representation, efficient-processing]
+tags: [dataset, benchmark, method, video-retrieval, video-representation, efficient-processing, supervised-training, self-supervised-learning]
 ---
 
 # TVR: A Large-Scale Dataset for Video-Subtitle Moment Retrieval

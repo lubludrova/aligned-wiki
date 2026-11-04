@@ -4,7 +4,7 @@ venue: "SIGCOMM"
 affiliations: ["University of Chicago", "Microsoft Research", "University of California, Berkeley", "Databricks Inc."]
 research_groups: []
 reviewed: false
-tags: [method, efficient-processing, real-world-evaluation]
+tags: [method, efficient-processing, real-world-evaluation, training-free]
 ---
 
 # Chameleon: Scalable Adaptation of Video Analytics

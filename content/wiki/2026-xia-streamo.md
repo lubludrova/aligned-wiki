@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["Hong Kong Baptist University", "Tencent Youtu Lab"]
 research_groups: []
 reviewed: false
-tags: [dataset, benchmark, method, video-representation, video-qa, state-changes]
+tags: [dataset, benchmark, method, video-representation, video-qa, state-changes, sft]
 ---
 
 # Streaming Video Instruction Tuning

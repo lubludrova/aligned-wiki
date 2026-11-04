@@ -4,7 +4,7 @@ venue: "CVPR"
 affiliations: ["The Chinese University of Hong Kong", "Shanghai AI Laboratory"]
 research_groups: []
 reviewed: false
-tags: [method, video-qa, video-memory, efficient-processing]
+tags: [method, video-qa, video-memory, efficient-processing, sft]
 ---
 
 # Dispider: Enabling Video LLMs with Active Real-Time Interaction via Disentangled Perception, Decision, and Reaction
