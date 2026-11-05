@@ -1,158 +1,561 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1180" viewBox="0 0 1600 1180" role="img" aria-labelledby="title desc">
-<title id="title">STEM: from video to verifiable work history</title><desc id="desc">Two-panel proposed architecture. Source video becomes thirty-second evidence leaves with construction keys and provenance. Global and scoped retrieval complete evidence slots, inspect original video and produce grounded answers. Reports enumerate the full scope. Optional episodes do not replace leaves.</desc>
-<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#718078"/></marker></defs>
-<style>text{font-family:Arial,Helvetica,sans-serif;fill:#28312d}.muted{fill:#64716b}.mono{font-family:Menlo,Consolas,monospace}.serif{font-family:Georgia,serif}.label{font-weight:700;letter-spacing:1.6px}.strong{font-weight:700}</style>
-<rect width="100%" height="100%" fill="#fffefa"/>
-<text x="40" y="38" font-size="17" class="label muted" text-anchor="start"><tspan x="40" dy="0">ALIGNED  /  RESEARCH ARCHITECTURE</tspan></text>
-<text x="40" y="88" font-size="40" class="serif" text-anchor="start"><tspan x="40" dy="0">From video to verifiable work history</tspan></text>
-<text x="40" y="124" font-size="22" class="muted" text-anchor="start"><tspan x="40" dy="0">STEM · Spatio-Temporal Evidence Memory</tspan></text>
-<rect x="1280" y="44" width="280" height="44" rx="22" fill="#e9f0e7" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="1420" y="73" font-size="15" class="label" text-anchor="middle"><tspan x="1420" dy="0">PROPOSED · NOT VALIDATED</tspan></text>
-<rect x="40" y="162" width="676" height="838" rx="12" fill="#f9faf6" stroke="#c9d1cb" stroke-width="1.5"/>
-<rect x="744" y="162" width="816" height="838" rx="12" fill="#fbfafc" stroke="#c9d1cb" stroke-width="1.5"/>
-<rect x="60" y="181" width="34" height="34" rx="17" fill="#e9f0e7" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="77" y="205" font-size="20" class="strong" text-anchor="middle"><tspan x="77" dy="0">a</tspan></text>
-<text x="107" y="207" font-size="28" class="serif strong" text-anchor="start"><tspan x="107" dy="0">Persistent memory construction</tspan></text>
-<rect x="764" y="181" width="34" height="34" rx="17" fill="#eeebf5" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="781" y="205" font-size="20" class="strong" text-anchor="middle"><tspan x="781" dy="0">b</tspan></text>
-<text x="811" y="207" font-size="28" class="serif strong" text-anchor="start"><tspan x="811" dy="0">Evidence retrieval and answering</tspan></text>
-<text x="64" y="249" font-size="16" class="label muted" text-anchor="start"><tspan x="64" dy="0">HELMET VIDEO  +  OPTIONAL AUDIO / LOCATION</tspan></text>
-<rect x="64" y="265" width="145" height="88" rx="5" fill="#f1f2ed" stroke="#c9d1cb" stroke-width="1.5"/>
-<path d="M73 280 L200 280 L200 340 L73 340 Z" fill="#e5e9e3" stroke="#a6b3a8"/>
-<path d="M93.0 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M136.5 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M180.0 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M111.85 340 V307.24 Q111.85 295.8 126.35 295.8 H165.5" fill="none" stroke="#7394a0" stroke-width="8" stroke-linejoin="round"/>
-<circle cx="165.5" cy="295.8" r="9" fill="#e9f0f3" stroke="#7394a0" stroke-width="3"/>
-<rect x="156" y="272" width="46" height="23" rx="3" fill="#fffefa" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="179" y="289" font-size="14" class="mono" text-anchor="middle"><tspan x="179" dy="0">304</tspan></text>
-<text x="136" y="380" font-size="17" class="mono muted" text-anchor="middle"><tspan x="136" dy="0">00–30 s</tspan></text>
-<rect x="220" y="265" width="145" height="88" rx="5" fill="#f1f2ed" stroke="#c9d1cb" stroke-width="1.5"/>
-<path d="M229 280 L356 280 L356 340 L229 340 Z" fill="#e5e9e3" stroke="#a6b3a8"/>
-<path d="M249.0 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M292.5 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M336.0 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M267.85 340 V307.24 Q267.85 295.8 282.35 295.8 H321.5" fill="none" stroke="#7394a0" stroke-width="8" stroke-linejoin="round"/>
-<circle cx="321.5" cy="295.8" r="9" fill="#e9f0f3" stroke="#7394a0" stroke-width="3"/>
-<rect x="312" y="272" width="46" height="23" rx="3" fill="#fffefa" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="335" y="289" font-size="14" class="mono" text-anchor="middle"><tspan x="335" dy="0">304</tspan></text>
-<text x="292" y="380" font-size="17" class="mono muted" text-anchor="middle"><tspan x="292" dy="0">30–60 s</tspan></text>
-<rect x="376" y="265" width="145" height="88" rx="5" fill="#f1f2ed" stroke="#c9d1cb" stroke-width="1.5"/>
-<path d="M385 280 L512 280 L512 340 L385 340 Z" fill="#e5e9e3" stroke="#a6b3a8"/>
-<path d="M405.0 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M448.5 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M492.0 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M423.85 340 V307.24 Q423.85 295.8 438.35 295.8 H477.5" fill="none" stroke="#7394a0" stroke-width="8" stroke-linejoin="round"/>
-<circle cx="477.5" cy="295.8" r="9" fill="#e9f0f3" stroke="#7394a0" stroke-width="3"/>
-<path d="M458.65 335.4 L484.75 310.76 L506.5 331.0" fill="none" stroke="#bd8966" stroke-width="9" stroke-linecap="round"/>
-<rect x="468.8" y="298.44" width="26.099999999999998" height="11.440000000000001" rx="3" fill="#8e7964" stroke="#c9d1cb" stroke-width="1.5"/>
-<rect x="468" y="272" width="46" height="23" rx="3" fill="#fffefa" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="491" y="289" font-size="14" class="mono" text-anchor="middle"><tspan x="491" dy="0">304</tspan></text>
-<text x="448" y="380" font-size="17" class="mono muted" text-anchor="middle"><tspan x="448" dy="0">60–90 s</tspan></text>
-<rect x="532" y="265" width="145" height="88" rx="5" fill="#f1f2ed" stroke="#c9d1cb" stroke-width="1.5"/>
-<path d="M541 280 L668 280 L668 340 L541 340 Z" fill="#e5e9e3" stroke="#a6b3a8"/>
-<path d="M561.0 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M604.5 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M648.0 281 V340" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
-<path d="M579.85 340 V307.24 Q579.85 295.8 594.35 295.8 H633.5" fill="none" stroke="#7394a0" stroke-width="8" stroke-linejoin="round"/>
-<circle cx="633.5" cy="295.8" r="9" fill="#e9f0f3" stroke="#7394a0" stroke-width="3"/>
-<path d="M614.65 335.4 L640.75 310.76 L662.5 331.0" fill="none" stroke="#bd8966" stroke-width="9" stroke-linecap="round"/>
-<rect x="624.8" y="298.44" width="26.099999999999998" height="11.440000000000001" rx="3" fill="#8e7964" stroke="#c9d1cb" stroke-width="1.5"/>
-<rect x="624" y="272" width="46" height="23" rx="3" fill="#fffefa" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="647" y="289" font-size="14" class="mono" text-anchor="middle"><tspan x="647" dy="0">304</tspan></text>
-<text x="604" y="380" font-size="17" class="mono muted" text-anchor="middle"><tspan x="604" dy="0">90–120 s</tspan></text>
-<path d="M64 391 V402 H677 V391" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round"/>
-<text x="370" y="427" font-size="20" class="muted" text-anchor="middle"><tspan x="370" dy="0">Stable 30 s addresses · source video retained</tspan></text>
-<path d="M370 439 V462" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="86" y="470" width="584" height="64" rx="12" fill="white" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="378" y="497" font-size="25" class="strong" text-anchor="middle"><tspan x="378" dy="0">Structured writer</tspan></text>
-<text x="378" y="521" font-size="18" class="muted" text-anchor="middle"><tspan x="378" dy="0">Visual description · OCR · separate speech</tspan></text>
-<path d="M378 534 V562" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="64" y="570" width="628" height="190" rx="12" fill="white" stroke="#c9d1cb" stroke-width="1.5" stroke-dasharray="7 5"/>
-<text x="83" y="600" font-size="16" class="label muted" text-anchor="start"><tspan x="83" dy="0">ONE RECORD · MULTIPLE SEARCHABLE VIEWS</tspan></text>
-<rect x="82" y="618" width="286" height="58" rx="7" fill="#e9f0e7" stroke="#e9f0e7" stroke-width="1.5"/>
-<text x="94" y="641" font-size="18" class="strong" text-anchor="start"><tspan x="94" dy="0">Action → object → target</tspan></text>
-<text x="94" y="664" font-size="16" class="muted" text-anchor="start"><tspan x="94" dy="0">apply / material / around P7</tspan></text>
-<rect x="386" y="618" width="286" height="58" rx="7" fill="#e8eff6" stroke="#e8eff6" stroke-width="1.5"/>
-<text x="398" y="641" font-size="18" class="strong" text-anchor="start"><tspan x="398" dy="0">Object and visible state</tspan></text>
-<text x="398" y="664" font-size="16" class="muted" text-anchor="start"><tspan x="398" dy="0">P7 / exposed penetration</tspan></text>
-<rect x="82" y="687" width="286" height="58" rx="7" fill="#faeee5" stroke="#faeee5" stroke-width="1.5"/>
-<text x="94" y="710" font-size="18" class="strong" text-anchor="start"><tspan x="94" dy="0">Identifiers and place</tspan></text>
-<text x="94" y="733" font-size="16" class="muted" text-anchor="start"><tspan x="94" dy="0">W3 · room 304 · uncertainty</tspan></text>
-<rect x="386" y="687" width="286" height="58" rx="7" fill="#eeebf5" stroke="#eeebf5" stroke-width="1.5"/>
-<text x="398" y="710" font-size="18" class="strong" text-anchor="start"><tspan x="398" dy="0">Source and attribution</tspan></text>
-<text x="398" y="733" font-size="16" class="muted" text-anchor="start"><tspan x="398" dy="0">time · seen / said / inferred</tspan></text>
-<path d="M378 760 V779 H215 V794" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="64" y="797" width="306" height="108" rx="12" fill="#e8eff6" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="83" y="829" font-size="25" class="serif strong" text-anchor="start"><tspan x="83" dy="0">Leaf evidence index</tspan></text>
-<text x="83" y="858" font-size="18" class="muted" text-anchor="start"><tspan x="83" dy="0">Text · visual · literal IDs</tspan><tspan x="83" dy="25.2">Time / zone distributions</tspan></text>
-<rect x="388" y="797" width="304" height="108" rx="12" fill="#eeebf5" stroke="#c9d1cb" stroke-width="1.5" stroke-dasharray="7 5"/>
-<text x="407" y="829" font-size="23" class="serif strong" text-anchor="start"><tspan x="407" dy="0">Work Episode overlay</tspan></text>
-<text x="407" y="858" font-size="17" class="muted" text-anchor="start"><tspan x="407" dy="0">Variable duration · child links</tspan><tspan x="407" dy="23.799999999999997">Optional · leaves stay searchable</tspan></text>
-<path d="M370 849 H386" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
-<rect x="64" y="929" width="628" height="48" rx="12" fill="#e9f0e7" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="378" y="960" font-size="20" class="strong" text-anchor="middle"><tspan x="378" dy="0">Typed observation log + recording / visibility ledger</tspan></text>
-<path d="M215 905 V927" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="768" y="235" width="768" height="70" rx="12" fill="#fff8e9" stroke="#d8c99f" stroke-width="1.5"/>
-<text x="786" y="262" font-size="15" class="label muted" text-anchor="start"><tspan x="786" dy="0">QUESTION</tspan></text>
-<text x="786" y="289" font-size="23" class="serif" text-anchor="start"><tspan x="786" dy="0">What happened to P7 before wall W3 was closed?</tspan></text>
-<path d="M1148 305 V327" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="768" y="335" width="768" height="89" rx="12" fill="#eeebf5" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="790" y="363" font-size="24" class="strong" text-anchor="start"><tspan x="790" dy="0">Typed plan + evidence slots</tspan></text>
-<rect x="790" y="379" width="226" height="30" rx="5" fill="white" stroke="#d2ccdf" stroke-width="1.5"/>
-<text x="801" y="400" font-size="17" class="" text-anchor="start"><tspan x="801" dy="0">01  Identify P7 / W3</tspan></text>
-<rect x="1030" y="379" width="228" height="30" rx="5" fill="white" stroke="#d2ccdf" stroke-width="1.5"/>
-<text x="1041" y="400" font-size="17" class="" text-anchor="start"><tspan x="1041" dy="0">02  Observe work</tspan></text>
-<rect x="1272" y="379" width="243" height="30" rx="5" fill="white" stroke="#d2ccdf" stroke-width="1.5"/>
-<text x="1283" y="400" font-size="17" class="" text-anchor="start"><tspan x="1283" dy="0">03  Locate close-in</tspan></text>
-<path d="M1148 424 V447" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="768" y="455" width="768" height="137" rx="12" fill="white" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="790" y="484" font-size="24" class="strong" text-anchor="start"><tspan x="790" dy="0">Independent candidate branches</tspan></text>
-<rect x="790" y="501" width="223" height="31" rx="5" fill="#e8eff6" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="801" y="523" font-size="17" class="" text-anchor="start"><tspan x="801" dy="0">Global text + visual</tspan></text>
-<rect x="1027" y="501" width="228" height="31" rx="5" fill="#faeee5" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="1038" y="523" font-size="17" class="" text-anchor="start"><tspan x="1038" dy="0">Exact identifiers</tspan></text>
-<rect x="1269" y="501" width="246" height="31" rx="5" fill="#e9f0e7" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="1280" y="523" font-size="17" class="" text-anchor="start"><tspan x="1280" dy="0">Time / place</tspan></text>
-<rect x="790" y="545" width="223" height="31" rx="5" fill="#eeebf5" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="801" y="567" font-size="17" class="" text-anchor="start"><tspan x="801" dy="0">Wearer scope</tspan></text>
-<rect x="1027" y="545" width="228" height="31" rx="5" fill="#eeebf5" stroke="#c9d1cb" stroke-width="1.5" stroke-dasharray="7 5"/>
-<text x="1038" y="567" font-size="17" class="" text-anchor="start"><tspan x="1038" dy="0">Episode → leaves</tspan></text>
-<rect x="1269" y="545" width="246" height="31" rx="5" fill="#e9f0e7" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="1280" y="567" font-size="17" class="" text-anchor="start"><tspan x="1280" dy="0">Unknown location</tspan></text>
-<path d="M215 905 V918 H730 V525 H765" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<path d="M692 849 H728" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
-<path d="M1148 592 V614" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="768" y="622" width="768" height="70" rx="12" fill="#e8eff6" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="790" y="651" font-size="23" class="strong" text-anchor="start"><tspan x="790" dy="0">Fuse → diversify → expand neighbors</tspan></text>
-<text x="790" y="677" font-size="18" class="muted" text-anchor="start"><tspan x="790" dy="0">Preserve an unscoped reserve after final selection</tspan></text>
-<path d="M1148 692 V717" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="768" y="725" width="768" height="100" rx="12" fill="#faeee5" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="790" y="755" font-size="24" class="strong" text-anchor="start"><tspan x="790" dy="0">Read original video · verify each claim</tspan></text>
-<text x="790" y="783" font-size="19" class="" text-anchor="start"><tspan x="790" dy="0">Check the item, visible predicate, time and contradictions.</tspan></text>
-<text x="790" y="809" font-size="18" class="muted" text-anchor="start"><tspan x="790" dy="0">Returned intervals ≠ inspected frames ≠ supported claims.</tspan></text>
-<path d="M1519 765 H1546 V322 H1200 V333" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
-<rect x="1299" y="690" width="228" height="27" rx="0" fill="#fbfafc" stroke="#fbfafc" stroke-width="1.5"/>
-<text x="1413" y="710" font-size="15" class="muted" text-anchor="middle"><tspan x="1413" dy="0">Missing slot? Search again.</tspan></text>
-<path d="M1148 825 V850" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<rect x="768" y="858" width="768" height="116" rx="12" fill="#e9f0e7" stroke="#b5c4b0" stroke-width="1.5"/>
-<text x="790" y="887" font-size="25" class="serif strong" text-anchor="start"><tspan x="790" dy="0">Grounded answer + unresolved parts</tspan></text>
-<text x="790" y="913" font-size="19" class="" text-anchor="start"><tspan x="790" dy="0">“Work on P7 was visible before W3 was covered.”</tspan><tspan x="790" dy="24">Citations: source intervals A, B, C. Acceptance: unknown.</tspan></text>
-<text x="790" y="962" font-size="15" class="muted" text-anchor="start"><tspan x="790" dy="0">Bounded search · every substantive claim needs evidence</tspan></text>
-<rect x="40" y="1026" width="1520" height="114" rx="12" fill="#f0f3ed" stroke="#c4cebe" stroke-width="1.5"/>
-<text x="64" y="1058" font-size="17" class="label" text-anchor="start"><tspan x="64" dy="0">DAILY REPORTS</tspan></text>
-<text x="64" y="1088" font-size="17" class="muted" text-anchor="start"><tspan x="64" dy="0">Complete scope traversal</tspan><tspan x="64" dy="23.799999999999997">Includes unassigned leaves</tspan></text>
-<rect x="362" y="1063" width="258" height="48" rx="8" fill="white" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="491.0" y="1094" font-size="18" class="strong" text-anchor="middle"><tspan x="491.0" dy="0">All intervals in scope</tspan></text>
-<rect x="674" y="1063" width="250" height="48" rx="8" fill="white" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="799.0" y="1094" font-size="18" class="strong" text-anchor="middle"><tspan x="799.0" dy="0">Typed fact inventory</tspan></text>
-<rect x="980" y="1063" width="235" height="48" rx="8" fill="white" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="1097.5" y="1094" font-size="18" class="strong" text-anchor="middle"><tspan x="1097.5" dy="0">Verify source claims</tspan></text>
-<rect x="1272" y="1063" width="264" height="48" rx="8" fill="white" stroke="#c9d1cb" stroke-width="1.5"/>
-<text x="1404.0" y="1094" font-size="18" class="strong" text-anchor="middle"><tspan x="1404.0" dy="0">Report + coverage gaps</tspan></text>
-<path d="M625 1087 H663" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<path d="M929 1087 H967" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<path d="M1220 1087 H1258" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<path d="M215 977 V1023" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
-<text x="40" y="1164" font-size="16" class="muted" text-anchor="start"><tspan x="40" dy="0">Solid: Stage 1 core     Dashed: optional hierarchy or retrieval feedback     Illustrative construction views, not experimental outputs</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+<title id="title">STEM: evidence memory construction and query-time retrieval</title>
+<desc id="desc">An original research schematic. On the left, a continuous helmet video is indexed in thirty-second leaves. A source-linked description yields action, state, identifier and summary keys, bound to original video and uncertain zone context in a memory table. An optional Work Episode overlay preserves direct leaf access. On the right, evidence-slot subqueries retrieve and fuse global and scoped candidates, expand temporal neighbors, filter relevance and verify claims in source video. Missing evidence triggers bounded search. Daily Reports traverse the complete scope separately. Scenes and records are illustrative, not measured results.</desc>
+<defs>
+  <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M1 1 L7 4 L1 7 Z" fill="#686b72"/></marker>
+  <linearGradient id="wall" x2="0.8" y2="1"><stop stop-color="#e5e1d7"/><stop offset="1" stop-color="#b5b7ae"/></linearGradient>
+  <linearGradient id="board" x2="0.8" y2="1"><stop stop-color="#ece6da"/><stop offset="1" stop-color="#cec5b6"/></linearGradient>
+</defs>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #24262a; }
+.serif { font-family: Georgia, 'Times New Roman', serif; }
+.math { font-family: 'Times New Roman', Georgia, serif; font-style: italic; }
+.bold { font-weight: 700; }
+.muted { fill: #62666c; }
+.label { font-size: 15px; font-weight: 700; letter-spacing: 1.5px; }
+</style>
+<rect width="1800" height="1100" fill="white"/>
+<text x="40" y="27" font-size="15" class="label muted" text-anchor="start"><tspan x="40" dy="0">STEM  /  ALIGNED RESEARCH PROPOSAL</tspan></text>
+<text x="1768" y="27" font-size="14" class="label muted" text-anchor="end"><tspan x="1768" dy="0">PROPOSED · NOT VALIDATED</tspan></text>
+<text x="40" y="72" font-size="31" class="serif bold" text-anchor="start"><tspan x="40" dy="0">(a)  Evidence memory construction</tspan></text>
+<text x="884" y="72" font-size="31" class="serif bold" text-anchor="start"><tspan x="884" dy="0">(b)  Retrieval and grounded answering</tspan></text>
+<path d="M850 50 V988" fill="none" stroke="#d2d3d6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="430" y="114" font-size="24" class="math" text-anchor="middle"><tspan x="430" dy="0">Continuous helmet video V</tspan></text>
+<rect x="40" y="131" width="780" height="95" rx="0" fill="#3b3e43" stroke="#3b3e43" stroke-width="1.3"/>
+<rect x="45" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="45" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="60" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="60" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="75" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="75" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="90" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="90" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="105" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="105" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="120" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="120" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="135" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="135" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="150" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="150" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="165" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="165" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="180" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="180" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="195" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="195" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="210" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="210" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="225" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="225" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="240" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="240" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="255" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="255" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="270" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="270" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="285" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="285" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="300" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="300" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="315" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="315" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="330" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="330" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="345" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="345" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="360" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="360" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="375" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="375" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="390" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="390" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="405" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="405" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="420" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="420" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="435" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="435" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="450" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="450" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="465" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="465" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="480" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="480" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="495" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="495" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="510" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="510" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="525" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="525" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="540" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="540" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="555" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="555" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="570" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="570" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="585" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="585" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="600" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="600" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="615" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="615" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="630" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="630" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="645" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="645" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="660" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="660" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="675" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="675" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="690" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="690" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="705" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="705" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="720" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="720" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="735" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="735" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="750" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="750" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="765" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="765" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="780" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="780" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="795" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="795" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="810" y="134" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<rect x="810" y="218" width="9" height="5" rx="0" fill="white" stroke="none" stroke-width="1.3"/>
+<svg x="46" y="143" width="149" height="69" viewBox="0 0 180 104">
+<rect x="0" y="0" width="180" height="104" rx="1" fill="url(#wall)" stroke="#a3a7a2" stroke-width="1.3"/>
+<path d="M0 90 L180 78 V104 H0 Z" fill="#a5a79e"/>
+<path d="M23 2 V89 L28 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M70 2 V89 L75 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M125 2 V89 L130 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M167 2 V89 L172 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M54 101 V47 Q54 35 68 35 H133" fill="none" stroke="#547780" stroke-width="10"/><path d="M52 100 V47 Q52 33 68 33 H133" fill="none" stroke="#9bb6b9" stroke-width="3"/><ellipse cx="135" cy="35" rx="8" ry="11" fill="#3e606a" stroke="#bed2d0" stroke-width="3"/>
+<rect x="108" y="19" width="17" height="31" fill="none" stroke="#a08d78" stroke-width="2"/>
+<rect x="139" y="7" width="32" height="18" rx="1" fill="#f8f7ef" stroke="#999d94" stroke-width="1.3"/>
+<text x="155" y="20" font-size="12" class="" text-anchor="middle"><tspan x="155" dy="0">304</tspan></text>
+<text x="9" y="17" font-size="12" class="" text-anchor="start"><tspan x="9" dy="0">W3</tspan></text>
+<text x="86" y="26" font-size="12" class="" text-anchor="start"><tspan x="86" dy="0">P7</tspan></text>
+</svg>
+<svg x="201" y="143" width="149" height="69" viewBox="0 0 180 104">
+<rect x="0" y="0" width="180" height="104" rx="1" fill="url(#wall)" stroke="#a3a7a2" stroke-width="1.3"/>
+<path d="M0 90 L180 78 V104 H0 Z" fill="#a5a79e"/>
+<path d="M23 2 V89 L28 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M70 2 V89 L75 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M125 2 V89 L130 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M167 2 V89 L172 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M54 101 V47 Q54 35 68 35 H133" fill="none" stroke="#547780" stroke-width="10"/><path d="M52 100 V47 Q52 33 68 33 H133" fill="none" stroke="#9bb6b9" stroke-width="3"/><ellipse cx="135" cy="35" rx="8" ry="11" fill="#3e606a" stroke="#bed2d0" stroke-width="3"/>
+<rect x="108" y="19" width="17" height="31" fill="none" stroke="#a08d78" stroke-width="2"/>
+<rect x="139" y="7" width="32" height="18" rx="1" fill="#f8f7ef" stroke="#999d94" stroke-width="1.3"/>
+<text x="155" y="20" font-size="12" class="" text-anchor="middle"><tspan x="155" dy="0">304</tspan></text>
+<text x="9" y="17" font-size="12" class="" text-anchor="start"><tspan x="9" dy="0">W3</tspan></text>
+<text x="86" y="26" font-size="12" class="" text-anchor="start"><tspan x="86" dy="0">P7</tspan></text>
+</svg>
+<svg x="356" y="143" width="149" height="69" viewBox="0 0 180 104">
+<rect x="0" y="0" width="180" height="104" rx="1" fill="url(#wall)" stroke="#a3a7a2" stroke-width="1.3"/>
+<path d="M0 90 L180 78 V104 H0 Z" fill="#a5a79e"/>
+<path d="M23 2 V89 L28 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M70 2 V89 L75 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M125 2 V89 L130 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M167 2 V89 L172 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M54 101 V47 Q54 35 68 35 H133" fill="none" stroke="#547780" stroke-width="10"/><path d="M52 100 V47 Q52 33 68 33 H133" fill="none" stroke="#9bb6b9" stroke-width="3"/><ellipse cx="135" cy="35" rx="8" ry="11" fill="#3e606a" stroke="#bed2d0" stroke-width="3"/>
+<rect x="108" y="19" width="17" height="31" fill="none" stroke="#a08d78" stroke-width="2"/>
+<path d="M94 104 L114 66 M178 104 L149 67" fill="none" stroke="#a77b61" stroke-width="17"/><path d="M111 69 L124 56 L139 65 M148 71 L135 59" fill="none" stroke="#d0b18c" stroke-width="13" stroke-linecap="round"/><path d="M119 47 L147 41 L147 51 L120 55 Z" fill="#67757a" stroke="#4e5c64"/>
+<rect x="139" y="7" width="32" height="18" rx="1" fill="#f8f7ef" stroke="#999d94" stroke-width="1.3"/>
+<text x="155" y="20" font-size="12" class="" text-anchor="middle"><tspan x="155" dy="0">304</tspan></text>
+<text x="9" y="17" font-size="12" class="" text-anchor="start"><tspan x="9" dy="0">W3</tspan></text>
+<text x="86" y="26" font-size="12" class="" text-anchor="start"><tspan x="86" dy="0">P7</tspan></text>
+</svg>
+<svg x="511" y="143" width="149" height="69" viewBox="0 0 180 104">
+<rect x="0" y="0" width="180" height="104" rx="1" fill="url(#wall)" stroke="#a3a7a2" stroke-width="1.3"/>
+<path d="M0 90 L180 78 V104 H0 Z" fill="#a5a79e"/>
+<path d="M23 2 V89 L28 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M70 2 V89 L75 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M125 2 V89 L130 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M167 2 V89 L172 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M54 101 V47 Q54 35 68 35 H133" fill="none" stroke="#547780" stroke-width="10"/><path d="M52 100 V47 Q52 33 68 33 H133" fill="none" stroke="#9bb6b9" stroke-width="3"/><ellipse cx="135" cy="35" rx="8" ry="11" fill="#3e606a" stroke="#bed2d0" stroke-width="3"/>
+<rect x="108" y="19" width="17" height="31" fill="none" stroke="#a08d78" stroke-width="2"/>
+<path d="M94 104 L114 66 M178 104 L149 67" fill="none" stroke="#a77b61" stroke-width="17"/><path d="M111 69 L124 56 L139 65 M148 71 L135 59" fill="none" stroke="#d0b18c" stroke-width="13" stroke-linecap="round"/><path d="M119 47 L147 41 L147 51 L120 55 Z" fill="#67757a" stroke="#4e5c64"/>
+<rect x="139" y="7" width="32" height="18" rx="1" fill="#f8f7ef" stroke="#999d94" stroke-width="1.3"/>
+<text x="155" y="20" font-size="12" class="" text-anchor="middle"><tspan x="155" dy="0">304</tspan></text>
+<text x="9" y="17" font-size="12" class="" text-anchor="start"><tspan x="9" dy="0">W3</tspan></text>
+<text x="86" y="26" font-size="12" class="" text-anchor="start"><tspan x="86" dy="0">P7</tspan></text>
+</svg>
+<svg x="666" y="143" width="149" height="69" viewBox="0 0 180 104">
+<rect x="0" y="0" width="180" height="104" rx="1" fill="url(#wall)" stroke="#a3a7a2" stroke-width="1.3"/>
+<path d="M0 90 L180 78 V104 H0 Z" fill="#a5a79e"/>
+<path d="M23 2 V89 L28 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M70 2 V89 L75 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M125 2 V89 L130 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M167 2 V89 L172 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<rect x="5" y="3" width="170" height="91" rx="1" fill="url(#board)" stroke="#afa89d" stroke-width="1.3"/>
+<path d="M91 3 V94" fill="none" stroke="#a49b8f" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="88" cy="16" r="1.7" fill="#8c8880"/>
+<circle cx="88" cy="40" r="1.7" fill="#8c8880"/>
+<circle cx="88" cy="64" r="1.7" fill="#8c8880"/>
+<circle cx="88" cy="86" r="1.7" fill="#8c8880"/>
+<rect x="139" y="7" width="32" height="18" rx="1" fill="#f8f7ef" stroke="#999d94" stroke-width="1.3"/>
+<text x="155" y="20" font-size="12" class="" text-anchor="middle"><tspan x="155" dy="0">304</tspan></text>
+<text x="9" y="17" font-size="12" class="" text-anchor="start"><tspan x="9" dy="0">W3</tspan></text>
+</svg>
+<path d="M40 238 H820" fill="none" stroke="#686b72" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 232 V244" fill="none" stroke="#686b72" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M195 232 V244" fill="none" stroke="#686b72" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M350 232 V244" fill="none" stroke="#686b72" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M505 232 V244" fill="none" stroke="#686b72" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M660 232 V244" fill="none" stroke="#686b72" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M820 232 V244" fill="none" stroke="#686b72" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M350 238 H505" fill="none" stroke="#5e968c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="427" y="264" font-size="21" class="math" text-anchor="middle"><tspan x="427" dy="0">30 s leaf i</tspan></text>
+<text x="44" y="264" font-size="17" class="muted" text-anchor="start"><tspan x="44" dy="0">Original video retained</tspan></text>
+<path d="M365 272 C365 283 139 269 139 297" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="51" y="298" width="154" height="100" rx="2" fill="#eef0ed" stroke="#bfc4bf" stroke-width="1.3"/>
+<svg x="60" y="307" width="154" height="93" viewBox="0 0 180 104">
+<rect x="0" y="0" width="180" height="104" rx="1" fill="url(#wall)" stroke="#a3a7a2" stroke-width="1.3"/>
+<path d="M0 90 L180 78 V104 H0 Z" fill="#a5a79e"/>
+<path d="M23 2 V89 L28 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M70 2 V89 L75 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M125 2 V89 L130 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M167 2 V89 L172 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M54 101 V47 Q54 35 68 35 H133" fill="none" stroke="#547780" stroke-width="10"/><path d="M52 100 V47 Q52 33 68 33 H133" fill="none" stroke="#9bb6b9" stroke-width="3"/><ellipse cx="135" cy="35" rx="8" ry="11" fill="#3e606a" stroke="#bed2d0" stroke-width="3"/>
+<rect x="108" y="19" width="17" height="31" fill="none" stroke="#a08d78" stroke-width="2"/>
+<path d="M94 104 L114 66 M178 104 L149 67" fill="none" stroke="#a77b61" stroke-width="17"/><path d="M111 69 L124 56 L139 65 M148 71 L135 59" fill="none" stroke="#d0b18c" stroke-width="13" stroke-linecap="round"/><path d="M119 47 L147 41 L147 51 L120 55 Z" fill="#67757a" stroke="#4e5c64"/>
+<rect x="139" y="7" width="32" height="18" rx="1" fill="#f8f7ef" stroke="#999d94" stroke-width="1.3"/>
+<text x="155" y="20" font-size="12" class="" text-anchor="middle"><tspan x="155" dy="0">304</tspan></text>
+<text x="9" y="17" font-size="12" class="" text-anchor="start"><tspan x="9" dy="0">W3</tspan></text>
+<text x="86" y="26" font-size="12" class="" text-anchor="start"><tspan x="86" dy="0">P7</tspan></text>
+</svg>
+<svg x="70" y="318" width="154" height="93" viewBox="0 0 180 104">
+<rect x="0" y="0" width="180" height="104" rx="1" fill="url(#wall)" stroke="#a3a7a2" stroke-width="1.3"/>
+<path d="M0 90 L180 78 V104 H0 Z" fill="#a5a79e"/>
+<path d="M23 2 V89 L28 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M70 2 V89 L75 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M125 2 V89 L130 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M167 2 V89 L172 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M54 101 V47 Q54 35 68 35 H133" fill="none" stroke="#547780" stroke-width="10"/><path d="M52 100 V47 Q52 33 68 33 H133" fill="none" stroke="#9bb6b9" stroke-width="3"/><ellipse cx="135" cy="35" rx="8" ry="11" fill="#3e606a" stroke="#bed2d0" stroke-width="3"/>
+<rect x="108" y="19" width="17" height="31" fill="none" stroke="#a08d78" stroke-width="2"/>
+<path d="M94 104 L114 66 M178 104 L149 67" fill="none" stroke="#a77b61" stroke-width="17"/><path d="M111 69 L124 56 L139 65 M148 71 L135 59" fill="none" stroke="#d0b18c" stroke-width="13" stroke-linecap="round"/><path d="M119 47 L147 41 L147 51 L120 55 Z" fill="#67757a" stroke="#4e5c64"/>
+<rect x="139" y="7" width="32" height="18" rx="1" fill="#f8f7ef" stroke="#999d94" stroke-width="1.3"/>
+<text x="155" y="20" font-size="12" class="" text-anchor="middle"><tspan x="155" dy="0">304</tspan></text>
+<text x="9" y="17" font-size="12" class="" text-anchor="start"><tspan x="9" dy="0">W3</tspan></text>
+<text x="86" y="26" font-size="12" class="" text-anchor="start"><tspan x="86" dy="0">P7</tspan></text>
+</svg>
+<text x="147" y="438" font-size="20" class="math" text-anchor="middle"><tspan x="147" dy="0">[01:00–01:30]</tspan></text>
+<text x="147" y="462" font-size="20" class="math" text-anchor="middle"><tspan x="147" dy="0">source clip vᵢ</tspan></text>
+<path d="M227 360 H286" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="258" y="342" font-size="17" class="" text-anchor="middle"><tspan x="258" dy="0">Writer</tspan></text>
+<rect x="294" y="295" width="526" height="150" rx="10" fill="#fffbeb" stroke="#d8d0b7" stroke-width="1.3"/>
+<text x="314" y="324" font-size="24" class="math" text-anchor="start"><tspan x="314" dy="0">Source-linked description dᵢ</tspan></text>
+<text x="314" y="355" font-size="21" class="serif" text-anchor="start"><tspan x="314" dy="0">“Material is applied around pipe P7.</tspan><tspan x="314" dy="28">The penetration is visible at wall W3.”</tspan></text>
+<path d="M314 395 H800" fill="none" stroke="#ded8c6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="314" y="423" font-size="17" class="muted" text-anchor="start"><tspan x="314" dy="0">Seen at 01:08 · OCR: 304 · Speech: separate</tspan></text>
+<path d="M553 445 C553 468 437 460 437 482" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="202" y="487" width="470" height="45" rx="4" fill="#f4f4f5" stroke="#b8b9bd" stroke-width="1.3"/>
+<text x="437" y="517" font-size="24" class="math" text-anchor="middle"><tspan x="437" dy="0">Construction-specific key extraction</tspan></text>
+<path d="M437 532 C437 549 133 540 133 561" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="567" width="186" height="107" rx="6" fill="#cceeed" stroke="none" stroke-width="1.3"/>
+<text x="133" y="595" font-size="21" class="math" text-anchor="middle"><tspan x="133" dy="0">“apply material</tspan><tspan x="133" dy="27">around P7”</tspan></text>
+<text x="133" y="656" font-size="19" class="serif bold" text-anchor="middle"><tspan x="133" dy="0">Action key</tspan></text>
+<path d="M437 532 C437 549 331 540 331 561" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="238" y="567" width="186" height="107" rx="6" fill="#d4e5ff" stroke="none" stroke-width="1.3"/>
+<text x="331" y="595" font-size="21" class="math" text-anchor="middle"><tspan x="331" dy="0">“exposed pipe</tspan><tspan x="331" dy="27">penetration”</tspan></text>
+<text x="331" y="656" font-size="19" class="serif bold" text-anchor="middle"><tspan x="331" dy="0">State key</tspan></text>
+<path d="M437 532 C437 549 529 540 529 561" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="436" y="567" width="186" height="107" rx="6" fill="#f5dfc6" stroke="none" stroke-width="1.3"/>
+<text x="529" y="595" font-size="21" class="math" text-anchor="middle"><tspan x="529" dy="0">“P7 · W3</tspan><tspan x="529" dy="27">room 304”</tspan></text>
+<text x="529" y="656" font-size="19" class="serif bold" text-anchor="middle"><tspan x="529" dy="0">Identifier key</tspan></text>
+<path d="M437 532 C437 549 727 540 727 561" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="634" y="567" width="186" height="107" rx="6" fill="#e3dcfa" stroke="none" stroke-width="1.3"/>
+<text x="727" y="595" font-size="21" class="math" text-anchor="middle"><tspan x="727" dy="0">“visible work</tspan><tspan x="727" dy="27">around a pipe”</tspan></text>
+<text x="727" y="656" font-size="19" class="serif bold" text-anchor="middle"><tspan x="727" dy="0">Summary key</tspan></text>
+<path d="M427 677 V714" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="442" y="702" font-size="17" class="muted" text-anchor="start"><tspan x="442" dy="0">Bind to the same source record</tspan></text>
+<rect x="40" y="720" width="780" height="172" rx="6" fill="white" stroke="#a7aab0" stroke-width="1.3"/>
+<rect x="41" y="721" width="778" height="36" rx="5" fill="#f5f6f8" stroke="none" stroke-width="1.3"/>
+<rect x="41" y="800" width="778" height="44" rx="0" fill="#f2f7ff" stroke="none" stroke-width="1.3"/>
+<path d="M119 721 V891" fill="none" stroke="#c8cbd0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M218 721 V891" fill="none" stroke="#c8cbd0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M302 721 V891" fill="none" stroke="#c8cbd0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M568 721 V891" fill="none" stroke="#c8cbd0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41 757 H819" fill="none" stroke="#c8cbd0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41 800 H819" fill="none" stroke="#c8cbd0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41 844 H819" fill="none" stroke="#c8cbd0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="80" y="746" font-size="22" class="math" text-anchor="middle"><tspan x="80" dy="0">leaf</tspan></text>
+<text x="168" y="746" font-size="22" class="math" text-anchor="middle"><tspan x="168" dy="0">dᵢ</tspan></text>
+<text x="260" y="746" font-size="22" class="math" text-anchor="middle"><tspan x="260" dy="0">vᵢ</tspan></text>
+<text x="435" y="746" font-size="22" class="math" text-anchor="middle"><tspan x="435" dy="0">Kᵢ</tspan></text>
+<text x="695" y="746" font-size="20" class="math" text-anchor="middle"><tspan x="695" dy="0">Object-zone qᵢ,ⱼ(z)</tspan></text>
+<text x="80" y="788" font-size="21" class="math" text-anchor="middle"><tspan x="80" dy="0">i − 1</tspan></text>
+<g transform="translate(157 765) scale(0.85)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#f1f2f4" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<g transform="translate(247 765) scale(0.9)"><rect width="30" height="29" rx="1" fill="white" stroke="#59606a" stroke-width="1.4"/><path d="M6 0 V29 M24 0 V29 M6 14.5 H24" fill="none" stroke="#59606a" stroke-width="1.2"/>
+<path d="M1 3 H5 M25 3 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 10 H5 M25 10 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 17 H5 M25 17 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 24 H5 M25 24 H29" stroke="#59606a" stroke-width="2"/>
+</g>
+<rect x="325" y="764" width="29" height="29" rx="4" fill="#cceeed" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(325 764) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="382" y="764" width="29" height="29" rx="4" fill="#d4e5ff" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(382 764) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="439" y="764" width="29" height="29" rx="4" fill="#f5dfc6" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(439 764) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="496" y="764" width="29" height="29" rx="4" fill="#e3dcfa" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(496 764) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="594" y="774" width="180" height="11" rx="3" fill="#e6e7ec" stroke="none" stroke-width="1.3"/>
+<rect x="594" y="774" width="118" height="11" rx="3" fill="#b7d9c7" stroke="none" stroke-width="1.3"/>
+<text x="586" y="786" font-size="14" class="muted" text-anchor="end"><tspan x="586" dy="0">304</tspan></text>
+<text x="785" y="786" font-size="16" class="muted" text-anchor="start"><tspan x="785" dy="0">?</tspan></text>
+<text x="80" y="832" font-size="21" class="math" text-anchor="middle"><tspan x="80" dy="0">i</tspan></text>
+<g transform="translate(157 809) scale(0.85)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#f1f2f4" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<g transform="translate(247 809) scale(0.9)"><rect width="30" height="29" rx="1" fill="white" stroke="#59606a" stroke-width="1.4"/><path d="M6 0 V29 M24 0 V29 M6 14.5 H24" fill="none" stroke="#59606a" stroke-width="1.2"/>
+<path d="M1 3 H5 M25 3 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 10 H5 M25 10 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 17 H5 M25 17 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 24 H5 M25 24 H29" stroke="#59606a" stroke-width="2"/>
+</g>
+<rect x="325" y="808" width="29" height="29" rx="4" fill="#cceeed" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(325 808) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="382" y="808" width="29" height="29" rx="4" fill="#d4e5ff" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(382 808) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="439" y="808" width="29" height="29" rx="4" fill="#f5dfc6" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(439 808) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="496" y="808" width="29" height="29" rx="4" fill="#e3dcfa" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(496 808) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="594" y="818" width="180" height="11" rx="3" fill="#e6e7ec" stroke="none" stroke-width="1.3"/>
+<rect x="594" y="818" width="145" height="11" rx="3" fill="#b7d9c7" stroke="none" stroke-width="1.3"/>
+<text x="586" y="830" font-size="14" class="muted" text-anchor="end"><tspan x="586" dy="0">304</tspan></text>
+<text x="785" y="830" font-size="16" class="muted" text-anchor="start"><tspan x="785" dy="0">?</tspan></text>
+<text x="80" y="876" font-size="21" class="math" text-anchor="middle"><tspan x="80" dy="0">i + 1</tspan></text>
+<g transform="translate(157 853) scale(0.85)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#f1f2f4" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<g transform="translate(247 853) scale(0.9)"><rect width="30" height="29" rx="1" fill="white" stroke="#59606a" stroke-width="1.4"/><path d="M6 0 V29 M24 0 V29 M6 14.5 H24" fill="none" stroke="#59606a" stroke-width="1.2"/>
+<path d="M1 3 H5 M25 3 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 10 H5 M25 10 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 17 H5 M25 17 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 24 H5 M25 24 H29" stroke="#59606a" stroke-width="2"/>
+</g>
+<rect x="325" y="852" width="29" height="29" rx="4" fill="#cceeed" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(325 852) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="382" y="852" width="29" height="29" rx="4" fill="#d4e5ff" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(382 852) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="439" y="852" width="29" height="29" rx="4" fill="#f5dfc6" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(439 852) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="496" y="852" width="29" height="29" rx="4" fill="#e3dcfa" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(496 852) scale(0.9354838709677419)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="594" y="862" width="180" height="11" rx="3" fill="#e6e7ec" stroke="none" stroke-width="1.3"/>
+<rect x="594" y="862" width="103" height="11" rx="3" fill="#b7d9c7" stroke="none" stroke-width="1.3"/>
+<text x="586" y="874" font-size="14" class="muted" text-anchor="end"><tspan x="586" dy="0">304</tspan></text>
+<text x="785" y="874" font-size="16" class="muted" text-anchor="start"><tspan x="785" dy="0">?</tspan></text>
+<text x="430" y="922" font-size="25" class="math" text-anchor="middle"><tspan x="430" dy="0">Persistent evidence memory M</tspan></text>
+<rect x="40" y="941" width="377" height="43" rx="5" fill="#faf9fd" stroke="#b9b5c7" stroke-width="1.3" stroke-dasharray="6 4"/>
+<text x="228" y="968" font-size="20" class="math" text-anchor="middle"><tspan x="228" dy="0">Optional episodes → child leaves</tspan></text>
+<path d="M80 893 V939" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="5 5"/>
+<text x="448" y="962" font-size="18" class="muted" text-anchor="start"><tspan x="448" dy="0">Fine leaves stay searchable.</tspan><tspan x="448" dy="24">Camera zone ≠ object location.</tspan></text>
+<rect x="884" y="110" width="884" height="53" rx="5" fill="#f5f5f2" stroke="#adb0b2" stroke-width="1.3"/>
+<text x="904" y="144" font-size="26" class="math" text-anchor="start"><tspan x="904" dy="0">Q: What happened to P7 before wall W3 was closed?</tspan></text>
+<path d="M1326 164 V183" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="884" y="190" width="884" height="326" rx="9" fill="#fcf9ff" stroke="#bcb4c9" stroke-width="1.3"/>
+<text x="904" y="220" font-size="24" class="serif bold" text-anchor="start"><tspan x="904" dy="0">Multi-key retrieval</tspan></text>
+<text x="1748" y="220" font-size="18" class="muted" text-anchor="end"><tspan x="1748" dy="0">evidence slots → subqueries</tspan></text>
+<rect x="904" y="235" width="265" height="34" rx="4" fill="#f1f8f3" stroke="#bfcfc4" stroke-width="1.3"/>
+<text x="918" y="258" font-size="20" class="math" text-anchor="start"><tspan x="918" dy="0">q¹  Identify P7 / W3</tspan></text>
+<rect x="1181" y="235" width="258" height="34" rx="4" fill="#f1f8f3" stroke="#bfcfc4" stroke-width="1.3"/>
+<text x="1195" y="258" font-size="20" class="math" text-anchor="start"><tspan x="1195" dy="0">q²  Observe work</tspan></text>
+<rect x="1451" y="235" width="297" height="34" rx="4" fill="#f1f8f3" stroke="#bfcfc4" stroke-width="1.3"/>
+<text x="1465" y="258" font-size="20" class="math" text-anchor="start"><tspan x="1465" dy="0">q³  Locate close-in</tspan></text>
+<rect x="904" y="287" width="350" height="174" rx="5" fill="white" stroke="#aeb0b7" stroke-width="1.3"/>
+<path d="M904 325 H1254 M964 287 V461 M1021 287 V461" fill="none" stroke="#bec1c8" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="934" y="313" font-size="23" class="math" text-anchor="middle"><tspan x="934" dy="0">dᵢ</tspan></text>
+<text x="992" y="313" font-size="23" class="math" text-anchor="middle"><tspan x="992" dy="0">vᵢ</tspan></text>
+<text x="1134" y="313" font-size="23" class="math" text-anchor="middle"><tspan x="1134" dy="0">Kᵢ</tspan></text>
+<g transform="translate(925 334) scale(0.74)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#f1f2f4" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<g transform="translate(980 334) scale(0.78)"><rect width="30" height="29" rx="1" fill="white" stroke="#59606a" stroke-width="1.4"/><path d="M6 0 V29 M24 0 V29 M6 14.5 H24" fill="none" stroke="#59606a" stroke-width="1.2"/>
+<path d="M1 3 H5 M25 3 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 10 H5 M25 10 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 17 H5 M25 17 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 24 H5 M25 24 H29" stroke="#59606a" stroke-width="2"/>
+</g>
+<rect x="1040" y="333" width="28" height="28" rx="4" fill="#cceeed" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1040 333) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="1090" y="333" width="28" height="28" rx="4" fill="#d4e5ff" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1090 333) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="1140" y="333" width="28" height="28" rx="4" fill="#f5dfc6" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1140 333) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="1190" y="333" width="28" height="28" rx="4" fill="#e3dcfa" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1190 333) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<g transform="translate(925 377) scale(0.74)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#f1f2f4" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<g transform="translate(980 377) scale(0.78)"><rect width="30" height="29" rx="1" fill="white" stroke="#59606a" stroke-width="1.4"/><path d="M6 0 V29 M24 0 V29 M6 14.5 H24" fill="none" stroke="#59606a" stroke-width="1.2"/>
+<path d="M1 3 H5 M25 3 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 10 H5 M25 10 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 17 H5 M25 17 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 24 H5 M25 24 H29" stroke="#59606a" stroke-width="2"/>
+</g>
+<rect x="1040" y="376" width="28" height="28" rx="4" fill="#cceeed" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1040 376) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="1090" y="376" width="28" height="28" rx="4" fill="#d4e5ff" stroke="#648dc0" stroke-width="1.3"/>
+<g transform="translate(1090 376) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="1140" y="376" width="28" height="28" rx="4" fill="#f5dfc6" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1140 376) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="1190" y="376" width="28" height="28" rx="4" fill="#e3dcfa" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1190 376) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<g transform="translate(925 420) scale(0.74)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#f1f2f4" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<g transform="translate(980 420) scale(0.78)"><rect width="30" height="29" rx="1" fill="white" stroke="#59606a" stroke-width="1.4"/><path d="M6 0 V29 M24 0 V29 M6 14.5 H24" fill="none" stroke="#59606a" stroke-width="1.2"/>
+<path d="M1 3 H5 M25 3 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 10 H5 M25 10 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 17 H5 M25 17 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 24 H5 M25 24 H29" stroke="#59606a" stroke-width="2"/>
+</g>
+<rect x="1040" y="419" width="28" height="28" rx="4" fill="#cceeed" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1040 419) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="1090" y="419" width="28" height="28" rx="4" fill="#d4e5ff" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1090 419) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="1140" y="419" width="28" height="28" rx="4" fill="#f5dfc6" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1140 419) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<rect x="1190" y="419" width="28" height="28" rx="4" fill="#e3dcfa" stroke="#b1b5bf" stroke-width="1.3"/>
+<g transform="translate(1190 419) scale(0.9032258064516129)"><path d="M15 9 A5 5 0 1 1 12 17 L6 23 H3 V19 L9 13 A5 5 0 0 1 15 9 Z" fill="white" fill-opacity=".55" stroke="#606875" stroke-width="1.1"/><circle cx="17" cy="12" r="1.7" fill="#7c8490"/></g>
+<text x="1079" y="487" font-size="22" class="math" text-anchor="middle"><tspan x="1079" dy="0">Memory M</tspan></text>
+<text x="1360" y="328" font-size="19" class="math" text-anchor="middle"><tspan x="1360" dy="0">Key-wise MaxSim</tspan><tspan x="1360" dy="25">+ rank fusion</tspan></text>
+<path d="M1262 375 H1455" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1360" y="411" font-size="17" class="muted" text-anchor="middle"><tspan x="1360" dy="0">soft time / place</tspan><tspan x="1360" dy="22">+ diversification</tspan></text>
+<rect x="1465" y="287" width="283" height="174" rx="5" fill="white" stroke="#aeb0b7" stroke-width="1.3"/>
+<path d="M1465 325 H1748 M1543 325 V461" fill="none" stroke="#bec1c8" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1607" y="312" font-size="22" class="math" text-anchor="middle"><tspan x="1607" dy="0">Selected seeds</tspan></text>
+<text x="1504" y="355" font-size="20" class="math" text-anchor="middle"><tspan x="1504" dy="0">Top 1</tspan></text>
+<g transform="translate(1590 334) scale(0.74)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#f1f2f4" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<g transform="translate(1679 334) scale(0.78)"><rect width="30" height="29" rx="1" fill="white" stroke="#59606a" stroke-width="1.4"/><path d="M6 0 V29 M24 0 V29 M6 14.5 H24" fill="none" stroke="#59606a" stroke-width="1.2"/>
+<path d="M1 3 H5 M25 3 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 10 H5 M25 10 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 17 H5 M25 17 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 24 H5 M25 24 H29" stroke="#59606a" stroke-width="2"/>
+</g>
+<text x="1504" y="398" font-size="20" class="math" text-anchor="middle"><tspan x="1504" dy="0">⋮</tspan></text>
+<g transform="translate(1590 377) scale(0.74)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#f1f2f4" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<g transform="translate(1679 377) scale(0.78)"><rect width="30" height="29" rx="1" fill="white" stroke="#59606a" stroke-width="1.4"/><path d="M6 0 V29 M24 0 V29 M6 14.5 H24" fill="none" stroke="#59606a" stroke-width="1.2"/>
+<path d="M1 3 H5 M25 3 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 10 H5 M25 10 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 17 H5 M25 17 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 24 H5 M25 24 H29" stroke="#59606a" stroke-width="2"/>
+</g>
+<text x="1504" y="441" font-size="20" class="math" text-anchor="middle"><tspan x="1504" dy="0">Top N</tspan></text>
+<g transform="translate(1590 420) scale(0.74)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#f1f2f4" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<g transform="translate(1679 420) scale(0.78)"><rect width="30" height="29" rx="1" fill="white" stroke="#59606a" stroke-width="1.4"/><path d="M6 0 V29 M24 0 V29 M6 14.5 H24" fill="none" stroke="#59606a" stroke-width="1.2"/>
+<path d="M1 3 H5 M25 3 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 10 H5 M25 10 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 17 H5 M25 17 H29" stroke="#59606a" stroke-width="2"/>
+<path d="M1 24 H5 M25 24 H29" stroke="#59606a" stroke-width="2"/>
+</g>
+<text x="1326" y="508" font-size="17" class="muted" text-anchor="middle"><tspan x="1326" dy="0">Global + ID + time/place + wearer branches · keep an unscoped reserve</tspan></text>
+<path d="M820 781 H866 V374 H902" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="884" y="538" width="884" height="219" rx="9" fill="#f5f9ff" stroke="#bac5d4" stroke-width="1.3"/>
+<text x="904" y="568" font-size="24" class="serif bold" text-anchor="start"><tspan x="904" dy="0">Temporal expansion + relevance filtering</tspan></text>
+<path d="M1749 375 H1757 V587 H1166 V614" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M920 633 H1437" fill="none" stroke="#686b72" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="932" y="617" width="68" height="31" rx="3" fill="#e6e7ea" stroke="#98a5b7" stroke-width="1.3"/>
+<text x="966" y="639" font-size="20" class="math" text-anchor="middle"><tspan x="966" dy="0">i − 2</tspan></text>
+<path d="M966 649 V668" fill="none" stroke="#686b72" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<g transform="translate(954 675) scale(0.87)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#e6e7ea" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<rect x="1032" y="617" width="68" height="31" rx="3" fill="#dbe9ff" stroke="#98a5b7" stroke-width="1.3"/>
+<text x="1066" y="639" font-size="20" class="math" text-anchor="middle"><tspan x="1066" dy="0">i − 1</tspan></text>
+<path d="M1066 649 V668" fill="none" stroke="#686b72" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<g transform="translate(1054 675) scale(0.87)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#dbe9ff" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<rect x="1132" y="617" width="68" height="31" rx="3" fill="#a8caff" stroke="#98a5b7" stroke-width="1.3"/>
+<text x="1166" y="639" font-size="20" class="math" text-anchor="middle"><tspan x="1166" dy="0">i</tspan></text>
+<path d="M1166 649 V668" fill="none" stroke="#686b72" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<g transform="translate(1154 675) scale(0.87)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#a8caff" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<rect x="1232" y="617" width="68" height="31" rx="3" fill="#dbe9ff" stroke="#98a5b7" stroke-width="1.3"/>
+<text x="1266" y="639" font-size="20" class="math" text-anchor="middle"><tspan x="1266" dy="0">i + 1</tspan></text>
+<path d="M1266 649 V668" fill="none" stroke="#686b72" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<g transform="translate(1254 675) scale(0.87)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#dbe9ff" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<rect x="1332" y="617" width="68" height="31" rx="3" fill="#e6e7ea" stroke="#98a5b7" stroke-width="1.3"/>
+<text x="1366" y="639" font-size="20" class="math" text-anchor="middle"><tspan x="1366" dy="0">i + 2</tspan></text>
+<path d="M1366 649 V668" fill="none" stroke="#686b72" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<g transform="translate(1354 675) scale(0.87)"><path d="M1 1 H18 L25 8 V32 H1 Z" fill="#e6e7ea" stroke="#717780" stroke-width="1.3"/><path d="M18 1 V8 H25 M6 13 H20 M6 18 H20 M6 23 H20 M6 28 H17" fill="none" stroke="#717780" stroke-width="1.2"/></g>
+<text x="1449" y="639" font-size="24" class="math" text-anchor="start"><tspan x="1449" dy="0">t</tspan></text>
+<text x="1166" y="735" font-size="18" class="muted" text-anchor="middle"><tspan x="1166" dy="0">Neighbor captions + optional episode members</tspan></text>
+<path d="M1390 690 H1490" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1498" y="610" width="248" height="101" rx="6" fill="#fff1e8" stroke="#cbb9ab" stroke-width="1.3"/>
+<text x="1622" y="640" font-size="24" class="math" text-anchor="middle"><tspan x="1622" dy="0">Slot-aware filter</tspan></text>
+<text x="1622" y="671" font-size="17" class="" text-anchor="middle"><tspan x="1622" dy="0">retain relevant context</tspan><tspan x="1622" dy="23">and unresolved slots</tspan></text>
+<path d="M1622 712 V784" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1636" y="744" font-size="23" class="math" text-anchor="start"><tspan x="1636" dy="0">D⁽ʲ⁾</tspan></text>
+<rect x="904" y="791" width="844" height="101" rx="7" fill="#fffdf8" stroke="#c8c1b2" stroke-width="1.3"/>
+<svg x="918" y="804" width="72" height="49" viewBox="0 0 180 104">
+<rect x="0" y="0" width="180" height="104" rx="1" fill="url(#wall)" stroke="#a3a7a2" stroke-width="1.3"/>
+<path d="M0 90 L180 78 V104 H0 Z" fill="#a5a79e"/>
+<path d="M23 2 V89 L28 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M70 2 V89 L75 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M125 2 V89 L130 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M167 2 V89 L172 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M54 101 V47 Q54 35 68 35 H133" fill="none" stroke="#547780" stroke-width="10"/><path d="M52 100 V47 Q52 33 68 33 H133" fill="none" stroke="#9bb6b9" stroke-width="3"/><ellipse cx="135" cy="35" rx="8" ry="11" fill="#3e606a" stroke="#bed2d0" stroke-width="3"/>
+<rect x="108" y="19" width="17" height="31" fill="none" stroke="#a08d78" stroke-width="2"/>
+<rect x="139" y="7" width="32" height="18" rx="1" fill="#f8f7ef" stroke="#999d94" stroke-width="1.3"/>
+<text x="155" y="20" font-size="12" class="" text-anchor="middle"><tspan x="155" dy="0">304</tspan></text>
+<text x="9" y="17" font-size="12" class="" text-anchor="start"><tspan x="9" dy="0">W3</tspan></text>
+<text x="86" y="26" font-size="12" class="" text-anchor="start"><tspan x="86" dy="0">P7</tspan></text>
+</svg>
+<svg x="973" y="804" width="72" height="49" viewBox="0 0 180 104">
+<rect x="0" y="0" width="180" height="104" rx="1" fill="url(#wall)" stroke="#a3a7a2" stroke-width="1.3"/>
+<path d="M0 90 L180 78 V104 H0 Z" fill="#a5a79e"/>
+<path d="M23 2 V89 L28 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M70 2 V89 L75 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M125 2 V89 L130 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M167 2 V89 L172 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M54 101 V47 Q54 35 68 35 H133" fill="none" stroke="#547780" stroke-width="10"/><path d="M52 100 V47 Q52 33 68 33 H133" fill="none" stroke="#9bb6b9" stroke-width="3"/><ellipse cx="135" cy="35" rx="8" ry="11" fill="#3e606a" stroke="#bed2d0" stroke-width="3"/>
+<rect x="108" y="19" width="17" height="31" fill="none" stroke="#a08d78" stroke-width="2"/>
+<path d="M94 104 L114 66 M178 104 L149 67" fill="none" stroke="#a77b61" stroke-width="17"/><path d="M111 69 L124 56 L139 65 M148 71 L135 59" fill="none" stroke="#d0b18c" stroke-width="13" stroke-linecap="round"/><path d="M119 47 L147 41 L147 51 L120 55 Z" fill="#67757a" stroke="#4e5c64"/>
+<rect x="139" y="7" width="32" height="18" rx="1" fill="#f8f7ef" stroke="#999d94" stroke-width="1.3"/>
+<text x="155" y="20" font-size="12" class="" text-anchor="middle"><tspan x="155" dy="0">304</tspan></text>
+<text x="9" y="17" font-size="12" class="" text-anchor="start"><tspan x="9" dy="0">W3</tspan></text>
+<text x="86" y="26" font-size="12" class="" text-anchor="start"><tspan x="86" dy="0">P7</tspan></text>
+</svg>
+<svg x="1028" y="804" width="72" height="49" viewBox="0 0 180 104">
+<rect x="0" y="0" width="180" height="104" rx="1" fill="url(#wall)" stroke="#a3a7a2" stroke-width="1.3"/>
+<path d="M0 90 L180 78 V104 H0 Z" fill="#a5a79e"/>
+<path d="M23 2 V89 L28 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M70 2 V89 L75 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M125 2 V89 L130 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<path d="M167 2 V89 L172 87 V2 Z" fill="#919d9a" stroke="#778783" stroke-width=".8"/>
+<rect x="5" y="3" width="170" height="91" rx="1" fill="url(#board)" stroke="#afa89d" stroke-width="1.3"/>
+<path d="M91 3 V94" fill="none" stroke="#a49b8f" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="88" cy="16" r="1.7" fill="#8c8880"/>
+<circle cx="88" cy="40" r="1.7" fill="#8c8880"/>
+<circle cx="88" cy="64" r="1.7" fill="#8c8880"/>
+<circle cx="88" cy="86" r="1.7" fill="#8c8880"/>
+<rect x="139" y="7" width="32" height="18" rx="1" fill="#f8f7ef" stroke="#999d94" stroke-width="1.3"/>
+<text x="155" y="20" font-size="12" class="" text-anchor="middle"><tspan x="155" dy="0">304</tspan></text>
+<text x="9" y="17" font-size="12" class="" text-anchor="start"><tspan x="9" dy="0">W3</tspan></text>
+</svg>
+<text x="944" y="877" font-size="20" class="math" text-anchor="middle"><tspan x="944" dy="0">A</tspan></text>
+<text x="999" y="877" font-size="20" class="math" text-anchor="middle"><tspan x="999" dy="0">B</tspan></text>
+<text x="1064" y="877" font-size="20" class="math" text-anchor="middle"><tspan x="1064" dy="0">C</tspan></text>
+<path d="M1104 841 H1143" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1160" y="823" font-size="25" class="serif bold" text-anchor="start"><tspan x="1160" dy="0">Read original video · verify claims</tspan></text>
+<text x="1160" y="852" font-size="18" class="" text-anchor="start"><tspan x="1160" dy="0">Item identity · visible predicate · time · contradictions</tspan></text>
+<text x="1160" y="877" font-size="17" class="muted" text-anchor="start"><tspan x="1160" dy="0">Returned intervals ≠ inspected frames ≠ supported claims</tspan></text>
+<path d="M1326 893 V907 H1122 V916" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1326 907 H1427 V916" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1005" y="919" width="234" height="36" rx="4" fill="#e6f4ea" stroke="#aebfb2" stroke-width="1.3"/>
+<text x="1122" y="944" font-size="21" class="math" text-anchor="middle"><tspan x="1122" dy="0">Evidence complete?</tspan></text>
+<rect x="1283" y="919" width="288" height="36" rx="4" fill="#f9e8e9" stroke="#c8b2b6" stroke-width="1.3"/>
+<text x="1427" y="944" font-size="21" class="math" text-anchor="middle"><tspan x="1427" dy="0">Missing slot → search more</tspan></text>
+<path d="M1572 938 H1783 V178 H1326 V189" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="5 5"/>
+<text x="1763" y="909" font-size="15" class="muted" text-anchor="end"><tspan x="1763" dy="0">Budget reached:</tspan><tspan x="1763" dy="18">state missing evidence.</tspan></text>
+<path d="M1122 956 V967" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="904" y="972" width="844" height="44" rx="5" fill="#edf8ef" stroke="#b6cdbb" stroke-width="1.3"/>
+<text x="1326" y="992" font-size="21" class="math" text-anchor="middle"><tspan x="1326" dy="0">Material was applied around P7 before W3 was observed covered. [A–C]</tspan></text>
+<text x="1326" y="1010" font-size="16" class="muted" text-anchor="middle"><tspan x="1326" dy="0">Acceptance: unknown.</tspan></text>
+<path d="M40 1025 H1768" fill="none" stroke="#c8cbcf" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="40" y="1057" font-size="15" class="label" text-anchor="start"><tspan x="40" dy="0">DAILY REPORTS</tspan></text>
+<text x="223" y="1057" font-size="23" class="math" text-anchor="start"><tspan x="223" dy="0">Memory M</tspan></text>
+<path d="M345 1050 H402" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="417" y="1057" font-size="21" class="serif" text-anchor="start"><tspan x="417" dy="0">All intervals in scope</tspan></text>
+<path d="M648 1050 H705" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="720" y="1057" font-size="21" class="serif" text-anchor="start"><tspan x="720" dy="0">Typed fact inventory</tspan></text>
+<path d="M955 1050 H1012" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1027" y="1057" font-size="21" class="serif" text-anchor="start"><tspan x="1027" dy="0">Verify source claims</tspan></text>
+<path d="M1250 1050 H1307" fill="none" stroke="#686b72" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="1322" y="1057" font-size="21" class="serif" text-anchor="start"><tspan x="1322" dy="0">Report + coverage gaps</tspan></text>
+<text x="40" y="1088" font-size="16" class="muted" text-anchor="start"><tspan x="40" dy="0">Solid: core data flow   ·   Dashed: optional hierarchy / search feedback   ·   Construction scenes, records and answers are schematic examples.</tspan></text>
 </svg>
