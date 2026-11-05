@@ -111,6 +111,8 @@ The unnumbered `/chapters/problem-statement/` page reads `content/en/notes/probl
 
 **New chapter:** add Markdown and a record in `content/en/chapters.json`. Array order determines the reading sequence. The group must exist in `groups` in `src/lib/content.ts`. The chapter automatically appears in reading navigation and search. The methods map has its own task taxonomy and contains paper nodes rather than chapters.
 
+**Research architecture proposal:** `/chapters/research-architecture/` is an English supporting proposal imported from `../aligned-wiki/research-architecture.md` by `pnpm sync:wiki`. Edit that canonical document and its original SVGs in `assets/research-architecture/`, then synchronize. The importer strips the duplicate title and maps wiki paper/figure links to website routes. This new proposal is outside the historical translation snapshot. Its math uses opt-in build-time KaTeX, with local fonts and no client math runtime. Original diagrams support the existing figure enlargement control.
+
 **Figures:** add a PNG under `public/media/` and reference `/media/...png`. Before each build, `sync-media.mjs` updates image dimensions to prevent layout shifts while reading.
 
 **Stable links:** retain published paper and chapter slugs. Explicit `paper-*` and `chapter-*` anchors are preserved. Automatic section URLs depend on headings. Inserting new headings does not affect existing aliases. When renaming a heading, update its key in `content/en/heading-aliases.json` and keep its previously published English ID as an explicit anchor.

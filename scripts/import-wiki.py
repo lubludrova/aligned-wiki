@@ -198,6 +198,19 @@ def main():
             description.pop('spotlightReason', None)
             description.pop('spotlightSource', None)
     MAP_DESCRIPTIONS.write_text(json.dumps(map_descriptions, ensure_ascii=False, indent=2) + '\n')
+    # This supporting proposal is canonical wiki content, outside the paper inventory.
+    proposal = (WIKI / 'research-architecture.md').read_text()
+    proposal = re.sub(r'^# .+\n', '', proposal, count=1)
+    proposal = proposal.replace('](https://aligned-wiki.vercel.app/', '](/')
+    for slug in re.findall(r'\]\(wiki/([^/)]+)\.md\)', proposal):
+        assert slug in records, f'Unknown proposal publication: {slug}'
+        proposal = proposal.replace(f'](wiki/{slug}.md)', f'](/papers/{slug}/)')
+    proposal_media = SITE / 'public/media/research-architecture'
+    proposal_media.mkdir(parents=True, exist_ok=True)
+    for name in re.findall(r'\]\(assets/research-architecture/([^/)]+\.svg)\)', proposal):
+        (proposal_media / name).write_bytes((WIKI / 'assets/research-architecture' / name).read_bytes())
+        proposal = proposal.replace(f'](assets/research-architecture/{name})', f'](/media/research-architecture/{name})')
+    (SITE / 'content/en/chapters/research-architecture.md').write_text(proposal)
     print(json.dumps({
         'wikiNotes': len(records), 'reviewPapers': len(review),
         'sameSlugOverlap': len(set(records) & review_slugs),

@@ -96,6 +96,14 @@
     "group": "synthesis"
   },
   {
+    "id": "research-architecture",
+    "slug": "research-architecture",
+    "number": "",
+    "title": "Research architecture proposal",
+    "description": "STEM: construction-specific evidence memory, spatial-temporal retrieval, grounded reports, and a controlled research programme for Aligned.",
+    "group": "synthesis"
+  },
+  {
     "id": "appendix-reading",
     "slug": "reading",
     "number": "A",

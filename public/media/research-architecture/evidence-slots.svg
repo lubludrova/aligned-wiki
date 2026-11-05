@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="755" viewBox="0 0 1500 755" role="img" aria-labelledby="title desc">
+<title id="title">Complete evidence, not a single similar clip</title><desc id="desc">Example evidence slots for an exposed pipe, intervening work and later wall covering. A similar-room candidate is rejected. Item identity and timing are checked, while acceptance remains unresolved.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#718078"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#28312d}.muted{fill:#64716b}.mono{font-family:Menlo,Consolas,monospace}.serif{font-family:Georgia,serif}.label{font-weight:700;letter-spacing:1.6px}.strong{font-weight:700}</style>
+<rect width="100%" height="100%" fill="#fffefa"/>
+<text x="40" y="39" font-size="16" class="label muted" text-anchor="start"><tspan x="40" dy="0">STEM  /  MULTI-EVIDENCE RETRIEVAL</tspan></text>
+<text x="40" y="85" font-size="35" class="serif" text-anchor="start"><tspan x="40" dy="0">Complete the history, one evidence slot at a time</tspan></text>
+<rect x="40" y="116" width="1420" height="59" rx="12" fill="#fff8e9" stroke="#d8c99f" stroke-width="1.5"/>
+<text x="62" y="153" font-size="25" class="serif" text-anchor="start"><tspan x="62" dy="0">Q  What happened to pipe P7 in room 304 before wall W3 was closed?</tspan></text>
+<rect x="40" y="211" width="350" height="330" rx="12" fill="white" stroke="#c9d1cb" stroke-width="1.5"/>
+<rect x="57" y="228" width="34" height="34" rx="17" fill="#e8eff6" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="74" y="252" font-size="20" class="strong" text-anchor="middle"><tspan x="74" dy="0">1</tspan></text>
+<text x="103" y="252" font-size="20" class="strong" text-anchor="start"><tspan x="103" dy="0">Identify the work item</tspan></text>
+<rect x="58" y="272" width="314" height="151" rx="5" fill="#f1f2ed" stroke="#c9d1cb" stroke-width="1.5"/>
+<path d="M67 287 L363 287 L363 410 L67 410 Z" fill="#e5e9e3" stroke="#a6b3a8"/>
+<path d="M120.80000000000001 288 V410" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M215.0 288 V410" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M309.20000000000005 288 V410" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M161.62 410 V344.48 Q161.62 324.85 193.02 324.85 H277.79999999999995" fill="none" stroke="#7394a0" stroke-width="8" stroke-linejoin="round"/>
+<circle cx="277.79999999999995" cy="324.85" r="9" fill="#e9f0f3" stroke="#7394a0" stroke-width="3"/>
+<rect x="319" y="279" width="46" height="23" rx="3" fill="#fffefa" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="342" y="296" font-size="14" class="mono" text-anchor="middle"><tspan x="342" dy="0">304</tspan></text>
+<text x="58" y="455" font-size="16" class="label muted" text-anchor="start"><tspan x="58" dy="0">TUESDAY · 08:10</tspan></text>
+<text x="58" y="484" font-size="18" class="" text-anchor="start"><tspan x="58" dy="0">P7 exposed at wall W3</tspan><tspan x="58" dy="25.2">Room identifier visible</tspan></text>
+<path d="M392 369 H422" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="425" y="211" width="350" height="330" rx="12" fill="white" stroke="#c9d1cb" stroke-width="1.5"/>
+<rect x="442" y="228" width="34" height="34" rx="17" fill="#faeee5" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="459" y="252" font-size="20" class="strong" text-anchor="middle"><tspan x="459" dy="0">2</tspan></text>
+<text x="488" y="252" font-size="20" class="strong" text-anchor="start"><tspan x="488" dy="0">Observe intervening work</tspan></text>
+<rect x="443" y="272" width="314" height="151" rx="5" fill="#f1f2ed" stroke="#c9d1cb" stroke-width="1.5"/>
+<path d="M452 287 L748 287 L748 410 L452 410 Z" fill="#e5e9e3" stroke="#a6b3a8"/>
+<path d="M505.8 288 V410" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M600.0 288 V410" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M694.2 288 V410" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M546.62 410 V344.48 Q546.62 324.85 578.02 324.85 H662.8" fill="none" stroke="#7394a0" stroke-width="8" stroke-linejoin="round"/>
+<circle cx="662.8" cy="324.85" r="9" fill="#e9f0f3" stroke="#7394a0" stroke-width="3"/>
+<path d="M621.98 392.8 L678.5 350.52 L725.6 385.25" fill="none" stroke="#bd8966" stroke-width="9" stroke-linecap="round"/>
+<rect x="643.96" y="329.38" width="56.519999999999996" height="19.63" rx="3" fill="#8e7964" stroke="#c9d1cb" stroke-width="1.5"/>
+<rect x="704" y="279" width="46" height="23" rx="3" fill="#fffefa" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="727" y="296" font-size="14" class="mono" text-anchor="middle"><tspan x="727" dy="0">304</tspan></text>
+<text x="443" y="455" font-size="16" class="label muted" text-anchor="start"><tspan x="443" dy="0">TUESDAY · 09:40</tspan></text>
+<text x="443" y="484" font-size="18" class="" text-anchor="start"><tspan x="443" dy="0">Material applied around P7</tspan><tspan x="443" dy="25.2">Same wall / item supported</tspan></text>
+<path d="M777 369 H807" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="810" y="211" width="350" height="330" rx="12" fill="white" stroke="#c9d1cb" stroke-width="1.5"/>
+<rect x="827" y="228" width="34" height="34" rx="17" fill="#e9f0e7" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="844" y="252" font-size="20" class="strong" text-anchor="middle"><tspan x="844" dy="0">3</tspan></text>
+<text x="873" y="252" font-size="20" class="strong" text-anchor="start"><tspan x="873" dy="0">Locate the later state</tspan></text>
+<rect x="828" y="272" width="314" height="151" rx="5" fill="#f1f2ed" stroke="#c9d1cb" stroke-width="1.5"/>
+<path d="M837 287 L1133 287 L1133 410 L837 410 Z" fill="#e5e9e3" stroke="#a6b3a8"/>
+<path d="M890.8 288 V410" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M985.0 288 V410" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1079.2 288 V410" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<rect x="840" y="290" width="290" height="117" rx="2" fill="#e6dcd0" stroke="#b5a89a" stroke-width="1.5"/>
+<path d="M991.28 291 V407" fill="none" stroke="#ad9f90" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="991.28" cy="312.77" r="2.5" fill="#9b8e80"/>
+<circle cx="991.28" cy="356.56" r="2.5" fill="#9b8e80"/>
+<circle cx="991.28" cy="391.29" r="2.5" fill="#9b8e80"/>
+<rect x="1089" y="279" width="46" height="23" rx="3" fill="#fffefa" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="1112" y="296" font-size="14" class="mono" text-anchor="middle"><tspan x="1112" dy="0">304</tspan></text>
+<text x="828" y="455" font-size="16" class="label muted" text-anchor="start"><tspan x="828" dy="0">WEDNESDAY · 11:20</tspan></text>
+<text x="828" y="484" font-size="18" class="" text-anchor="start"><tspan x="828" dy="0">W3 is covered</tspan><tspan x="828" dy="25.2">Concealed detail now unavailable</tspan></text>
+<rect x="1195" y="211" width="265" height="330" rx="12" fill="#faf5f2" stroke="#dcc6bb" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="1213" y="244" font-size="15" class="label" text-anchor="start"><tspan x="1213" dy="0">REJECTED CANDIDATE</tspan></text>
+<rect x="1213" y="272" width="229" height="113" rx="5" fill="#f1f2ed" stroke="#c9d1cb" stroke-width="1.5"/>
+<path d="M1222 287 L1433 287 L1433 372 L1222 372 Z" fill="#e5e9e3" stroke="#a6b3a8"/>
+<path d="M1258.8 288 V372" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1327.5 288 V372" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1396.2 288 V372" fill="none" stroke="#99aaa0" stroke-width="3" stroke-linejoin="round"/>
+<path d="M1288.57 372 V326.24 Q1288.57 311.55 1311.47 311.55 H1373.3" fill="none" stroke="#7394a0" stroke-width="8" stroke-linejoin="round"/>
+<circle cx="1373.3" cy="311.55" r="9" fill="#e9f0f3" stroke="#7394a0" stroke-width="3"/>
+<path d="M1343.53 362.4 L1384.75 330.76 L1419.1 356.75" fill="none" stroke="#bd8966" stroke-width="9" stroke-linecap="round"/>
+<rect x="1359.56" y="314.94" width="41.22" height="14.690000000000001" rx="3" fill="#8e7964" stroke="#c9d1cb" stroke-width="1.5"/>
+<rect x="1389" y="279" width="46" height="23" rx="3" fill="#fffefa" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="1412" y="296" font-size="14" class="mono" text-anchor="middle"><tspan x="1412" dy="0">305</tspan></text>
+<text x="1213" y="418" font-size="19" class="strong" text-anchor="start"><tspan x="1213" dy="0">Similar appearance.</tspan><tspan x="1213" dy="26.599999999999998">Wrong room / item.</tspan></text>
+<text x="1213" y="484" font-size="18" class="muted" text-anchor="start"><tspan x="1213" dy="0">Similarity cannot</tspan><tspan x="1213" dy="25.2">establish identity.</tspan></text>
+<path d="M57 567 H1150" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="600" y="595" font-size="20" class="muted" text-anchor="middle"><tspan x="600" dy="0">Temporal order + same-item binding are checked across all three intervals.</tspan></text>
+<rect x="40" y="625" width="910" height="91" rx="12" fill="#e9f0e7" stroke="#b5c4b0" stroke-width="1.5"/>
+<text x="60" y="653" font-size="15" class="label muted" text-anchor="start"><tspan x="60" dy="0">SUPPORTED HISTORY</tspan></text>
+<text x="60" y="686" font-size="25" class="serif" text-anchor="start"><tspan x="60" dy="0">Exposed pipe → visible work → later covered wall</tspan></text>
+<rect x="974" y="625" width="486" height="91" rx="12" fill="#eeebf5" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="995" y="653" font-size="14" class="label muted" text-anchor="start"><tspan x="995" dy="0">SEPARATE EVIDENCE REQUIREMENT</tspan></text>
+<text x="995" y="686" font-size="23" class="serif" text-anchor="start"><tspan x="995" dy="0">Accepted quality? Still unresolved.</tspan></text>
+<text x="40" y="743" font-size="16" class="muted" text-anchor="start"><tspan x="40" dy="0">Illustrative source intervals. A sufficient bundle requires every necessary observation, with correct identity and temporal relations.</tspan></text>
+</svg>

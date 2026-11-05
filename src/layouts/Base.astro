@@ -53,7 +53,7 @@ const section = active === 'map' ? 'map' : Astro.url.pathname.startsWith('/paper
       <div id="search-results" aria-live="polite"></div>
       <div class="search-dialog-footer"><span><kbd>↑</kbd><kbd>↓</kbd> select</span><span><kbd>esc</kbd> close</span></div>
     </dialog>
-    <dialog id="figure-dialog" aria-label="Full-size figure"><button class="icon-button" data-figure-close aria-label="Close image"><Icon name="close"/></button><img alt=""/><p></p></dialog>
+    <dialog id="figure-dialog" aria-label="Full-size figure"><button class="icon-button" data-figure-close aria-label="Close image"><Icon name="close"/></button><div class="figure-content"><img alt=""/><p></p></div></dialog>
     <div class="toast" role="status" aria-live="polite"></div>
     <script src="../scripts/site.ts"></script>
   </body>

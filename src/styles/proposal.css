@@ -1,0 +1,24 @@
+@import 'katex/dist/katex.min.css';
+
+.proposal .math-display { overflow-x: auto; margin: 30px 0; padding: 20px 18px; border: 1px solid var(--line); background: var(--soft); border-radius: 5px; }
+.proposal .math-display .katex-display { margin: 0; text-align: left; }
+.proposal .math-display .katex-display > .katex { text-align: left; }
+.proposal .katex { font-size: 1.04em; }
+.proposal > p:first-child { font: 11px/1.7 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.proposal > p:nth-child(2) { font-size: 20px; line-height: 1.8; }
+.proposal .figure-zoom { padding: 7px; background: #fffefa; border-radius: 8px; }
+.proposal .figure-zoom img { max-height: none; }
+.proposal .figure-zoom + em { display: block; }
+.proposal blockquote { border-left: 3px solid #859879; padding: 18px 22px; background: var(--soft); font-size: 14px; line-height: 1.85; }
+.proposal blockquote p:last-child { margin-bottom: 0; }
+.proposal .math-display:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+#figure-dialog:has(img[src*="/research-architecture/"]) img { width: 100%; min-width: 1000px; max-width: none; max-height: none; }
+#figure-dialog:has(img[src*="/research-architecture/"]) { overflow: hidden; }
+#figure-dialog:has(img[src*="/research-architecture/"]) .figure-content { overflow: auto; max-height: calc(94vh - 100px); }
+@media (max-width: 700px) {
+  .proposal > p:nth-child(2) { font-size: 18px; }
+  .proposal .math-display { padding: 16px 12px; font-size: 14px; }
+}
+@media print {
+  .proposal .math-display { overflow: visible; font-size: 9pt; break-inside: avoid; }
+}

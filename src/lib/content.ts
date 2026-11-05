@@ -4,6 +4,7 @@ import { Marked, type Tokens } from 'marked';
 import GithubSlugger from 'github-slugger';
 import { linkTableReferences } from './table-references.mjs';
 import { prepareWikiNote } from './wiki-markdown.mjs';
+import { mathMarkdown } from './math-markdown.mjs';
 
 export interface Chapter {
   id: string; slug: string; number: string | number; title: string; description: string; group: string;
@@ -73,6 +74,7 @@ export function renderMarkdown(markdown: string, route: string, idPrefix = '') {
   const sections: Section[] = [];
   let current: Section | undefined;
   const engine = new Marked({ gfm: true });
+  if (route === '/chapters/research-architecture/') engine.use(mathMarkdown);
   const tokens = engine.lexer(markdown);
   for (const token of tokens) {
     if (token.type === 'heading') {

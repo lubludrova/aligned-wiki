@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="810" viewBox="0 0 1500 810" role="img" aria-labelledby="title desc">
+<title id="title">Stage 2: specialist readers, shared evidence</title><desc id="desc">Progress, quality and process readers combine source-grounded evidence with item scope and requirements. Typed results return to memory, while human acceptance stays independent.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#718078"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#28312d}.muted{fill:#64716b}.mono{font-family:Menlo,Consolas,monospace}.serif{font-family:Georgia,serif}.label{font-weight:700;letter-spacing:1.6px}.strong{font-weight:700}</style>
+<rect width="100%" height="100%" fill="#fffefa"/>
+<text x="40" y="39" font-size="16" class="label muted" text-anchor="start"><tspan x="40" dy="0">STEM  /  STAGE 2 RESEARCH</tspan></text>
+<text x="40" y="85" font-size="35" class="serif" text-anchor="start"><tspan x="40" dy="0">One evidence foundation, three specialist readers</tspan></text>
+<rect x="40" y="124" width="1420" height="92" rx="12" fill="#e8eff6" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="63" y="157" font-size="27" class="serif strong" text-anchor="start"><tspan x="63" dy="0">Shared evidence memory</tspan></text>
+<text x="63" y="190" font-size="23" class="" text-anchor="start"><tspan x="63" dy="0">Original intervals · item hypotheses · state observations · visibility and capture gaps</tspan></text>
+<rect x="40" y="247" width="1420" height="68" rx="12" fill="#f6f3eb" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="63" y="274" font-size="15" class="label muted" text-anchor="start"><tspan x="63" dy="0">TASK CONTEXT</tspan></text>
+<text x="63" y="300" font-size="21" class="" text-anchor="start"><tspan x="63" dy="0">Enumerated scope + versioned requirements + valid process alternatives + required evidence windows</tspan></text>
+<path d="M1460 170 H1483 V335 H260" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round"/>
+<path d="M260 317 V350" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="359" width="440" height="176" rx="12" fill="#e9f0e7" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="63" y="398" font-size="28" class="serif strong" text-anchor="start"><tspan x="63" dy="0">Progress reader</tspan></text>
+<text x="63" y="440" font-size="21" class="" text-anchor="start"><tspan x="63" dy="0">Match observations to items.</tspan><tspan x="63" dy="30">Infer visible milestones.</tspan><tspan x="63" dy="30">Retain unknown quantities.</tspan></text>
+<path d="M260 535 V574" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M750 317 V350" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="530" y="359" width="440" height="176" rx="12" fill="#faeee5" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="553" y="398" font-size="28" class="serif strong" text-anchor="start"><tspan x="553" dy="0">Quality reader</tspan></text>
+<text x="553" y="440" font-size="21" class="" text-anchor="start"><tspan x="553" dy="0">Retrieve a suitable close-up.</tspan><tspan x="553" dy="30">Check the specified property.</tspan><tspan x="553" dy="30">Carry measurement uncertainty.</tspan></text>
+<path d="M750 535 V574" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M1240 317 V350" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="1020" y="359" width="440" height="176" rx="12" fill="#eeebf5" stroke="#c9d1cb" stroke-width="1.5"/>
+<text x="1043" y="398" font-size="28" class="serif strong" text-anchor="start"><tspan x="1043" dy="0">Process reader</tspan></text>
+<text x="1043" y="440" font-size="21" class="" text-anchor="start"><tspan x="1043" dy="0">Read actions and effects.</tspan><tspan x="1043" dy="30">Check prerequisite relations.</tspan><tspan x="1043" dy="30">Preserve valid alternative orders.</tspan></text>
+<path d="M1240 535 V574" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M260 574 H1240" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round"/>
+<path d="M750 574 V603" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="612" width="947" height="124" rx="12" fill="#edf2e9" stroke="#bac8b2" stroke-width="1.5"/>
+<text x="62" y="647" font-size="28" class="serif strong" text-anchor="start"><tspan x="62" dy="0">Typed assessment observations</tspan></text>
+<text x="62" y="682" font-size="21" class="" text-anchor="start"><tspan x="62" dy="0">Item + state / hypothesis + source intervals + uncertainty</tspan><tspan x="62" dy="29.4">Requirement revision + method version + review status</tspan></text>
+<rect x="1015" y="612" width="445" height="124" rx="12" fill="white" stroke="#b7bec8" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="1037" y="647" font-size="25" class="serif strong" text-anchor="start"><tspan x="1037" dy="0">Human acceptance record</tspan></text>
+<text x="1037" y="682" font-size="19" class="" text-anchor="start"><tspan x="1037" dy="0">Separate authority and evidence.</tspan><tspan x="1037" dy="26.599999999999998">Never inferred from appearance alone.</tspan></text>
+<path d="M987 670 H1009" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<path d="M40 674 H17 V170 H37" fill="none" stroke="#718078" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+<text x="40" y="780" font-size="19" class="muted" text-anchor="start"><tspan x="40" dy="0">Visible state ≠ inferred process stage ≠ accepted state. Missing views remain unknown. Removal and rework can reverse progress.</tspan></text>
+</svg>
