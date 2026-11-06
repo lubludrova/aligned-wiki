@@ -26,9 +26,9 @@ test('every proposal equation renders and narrative sections remain intact', () 
   const source = readFileSync(new URL('../content/en/chapters/research-architecture.md', import.meta.url), 'utf8');
   const html = render(source);
   const displayCount = (source.match(/^\$\$$/gm) || []).length / 2;
-  assert(displayCount > 0);
+  assert(displayCount >= 6);
   assert.equal((html.match(/class="math-display"/g) || []).length, displayCount);
-  assert.equal((html.match(/<h3>/g) || []).length, (source.match(/^### /gm) || []).length);
+  assert.equal((html.match(/<h3>/g) || []).length, 12);
   assert(!html.includes('katex-error'));
   assert(!html.includes('$$'));
 });

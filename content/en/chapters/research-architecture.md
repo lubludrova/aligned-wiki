@@ -1,190 +1,366 @@
 
-**STEM · Spatio-Temporal Evidence Memory · Updated 6 November 2026**
+**STEM · Spatio-Temporal Evidence Memory · 5 November 2026**
 
-Aligned should turn helmet video into a searchable history of physical work. Keep short, traceable observations, find the evidence a question needs, and check the original video before answering. Use the same memory to write daily reports.
+Aligned should build a persistent evidence memory that can recover the history of physical work across days, places and camera wearers. The proposed system keeps short video anchors, binds construction observations to their sources, and retrieves several complementary pieces of evidence before answering. Daily Reports use the same memory through a complete traversal of the reporting scope. Assessment becomes a later family of readers over that evidence, with explicit work-item states and requirements.
 
-The main hypothesis is simple: **records that connect an action to an object, a place and a time will recover more useful evidence than captions alone.** This proposal defines how to test that idea. It has not yet been validated on Aligned footage.
+![STEM architecture: persistent memory construction on the left, evidence retrieval and verification on the right, and a separate coverage path for Daily Reports.](/media/research-architecture/stem-overview.svg)
 
-![STEM: video becomes evidence records, which support search, source verification and daily reports.](/media/research-architecture/stem-overview.svg)
+*Figure 1. Proposed STEM pipeline. An original vector illustration using the two-panel construction/retrieval composition of [MERIT](/papers/2026-choi-merit/), Figure 2, as a visual reference. Solid paths form the Stage 1 core. Dashed paths denote optional hierarchy or iterative search. All construction scenes are schematic examples.*
 
-*Figure 1. Proposed STEM pipeline, drawn with [MERIT](/papers/2026-choi-merit/), Figure 2, as a visual reference. Dashed paths show optional episodes or repeated search. All scenes and answers are illustrative.*
+The central research question is whether **construction-specific bindings and uncertain spatial context improve recovery of every necessary observation under a fixed reading budget**. A second question is whether work episodes improve retrieval and reporting without losing short events. Neither effect has been demonstrated on Aligned footage. This document specifies a research programme and a candidate architecture, not an implemented or validated system.
 
-<a id="1-a-shared-memory-for-two-different-questions" class="legacy-anchor" aria-hidden="true"></a>
+> **Reading the evidence.** **[E]** identifies a published result under its original protocol. **[P]** identifies our design or experiment. **[H]** identifies an untested benefit. **[T]** identifies a proposed acceptance target. Calculations state their assumptions. Paper names link to this site's publication pages, with direct primary-source links beside numerical claims.
 
-### 1. What we will build first
+### 1. A shared memory for two different questions
 
-The first version has two jobs. **Historical QA** answers questions such as “What happened to the pipe in room 304 before the wall was closed?” **Daily Reports** describe the work visible during a chosen day or shift. Both provide video references and say what remains unknown.
+“What happened to the pipe in room 304 before the wall was closed?” requires a linked history. Finding one image of a pipe is insufficient. The system needs the relevant item, observations before concealment, the closing event and defensible temporal order. “What work was observed today?” instead requires coverage of an entire period. Both depend on source-grounded memory, but they need different retrieval contracts.
 
-These jobs need different search strategies. A question needs a small set of relevant clips. A report needs a review of the whole reporting period. Quality, progress and process assessment come later, once the evidence can be recovered reliably.
+Stage 1 therefore has two primary outputs: bounded historical QA and evidence-based Daily Reports. Both return observations with citations, attribution and gaps. A separately evaluated detector may propose one visible condition for review. Reports do not depend on that detector succeeding.
 
-Start with video, timestamps and camera-to-wearer assignments. Use audio and location data when available. Accurate indoor positioning is helpful but is not a prerequisite. The site's [problem statement](/chapters/problem-statement/) explains the broader product goal.
-
-<a id="3-memory-construction-preserve-evidence-before-abstraction" class="legacy-anchor" aria-hidden="true"></a>
-<a id="31-stable-leaves-and-typed-observations" class="legacy-anchor" aria-hidden="true"></a>
-
-### 2. Build memory from short observations
-
-Split each recording into **30-second clips**, called evidence leaves. Keep the original video and exact timestamps so a reader can revisit a moment inside a clip. Record capture gaps and poor visibility, even when no useful description can be produced.
-
-For each leaf, save a caption, visual features, source details and a few construction-specific search keys. Start with one sampled frame per second and measure how often this misses brief events.
-
-<a id="32-construction-keys-retain-relationships" class="legacy-anchor" aria-hidden="true"></a>
-
-| Key | Example | Why it matters |
+| Capability | Proposed commitment [P] | Evidence boundary |
 | --- | --- | --- |
-| Action and target | Apply material around pipe P7 | Connects the action to the object it affects. |
-| Object and visible state | P7 penetration is exposed | Supports a history of the same physical item. |
-| Identifier and place | Wall W3, room 304 | Separates similar rooms and components. |
-| Change or quality cue | A gap is visible at the joint | Preserves an observation without declaring a defect. |
+| Historical QA | Find, compare and explain recorded observations across episodes. | Same-item identity and every consequential claim require support. |
+| Daily Reports | Cover the requested day/zone and assemble verified observations. | Recorded activity is not complete site activity or productivity. |
+| Automatic candidates | Evaluate one observable condition in shadow mode. | No general anomaly, compliance or safety verdict. |
+| Stage 2 assessment | Add item states, requirements and specialist readers. | Installed, visually satisfactory and formally accepted remain distinct. |
 
-Store the keys together with their source caption. Keep raw room codes and other identifiers for exact matching. Separate **what was seen, what was said and what was inferred**. A spoken completion claim is not visual proof, and a visible gap is not automatically a quality violation.
+Inputs are original video and timestamps, recording-to-wearer assignments, a versioned zone vocabulary, and audio or location measurements when available. Accurate indoor pose, exhaustive views, resolved speaker identity and a construction-trained captioner are not assumed. Drawings, procedures and acceptance records become dependencies only for claims that require them. The [problem statement](/chapters/problem-statement/) supplies the product context, while the [existing synthesis](/chapters/synthesis/) supplies the wider research landscape.
 
-<a id="33-work-episodes-add-context-without-replacing-leaves" class="legacy-anchor" aria-hidden="true"></a>
+### 2. What the literature supports
 
-An optional **Work Episode** groups neighboring leaves into a longer activity, such as preparation, installation or inspection. Use changes in action, tools, visible state or zone to propose boundaries, then merge compatible neighbors. Brief head turns should not split a task unnecessarily.
+The evidence supports persistent memory, multiple access paths and explicit source checking. It does not establish the performance of their proposed combination. These results answer different questions and must not be read as one leaderboard.
 
-Episodes add context while every leaf remains directly searchable. They do not automatically reduce cost: keeping all captions and adding summaries requires more processing. Selective captioning is a separate experiment that must show it preserves short events.
-
-<a id="4-spatial-memory-as-uncertain-evidence" class="legacy-anchor" aria-hidden="true"></a>
-<a id="41-start-with-zones-earn-a-motion-model" class="legacy-anchor" aria-hidden="true"></a>
-
-### 3. Use location without trusting it blindly
-
-Start with floor and zone IDs. If these are unreliable, combine room signs, visual place recognition and available sensor measurements. Keep several possible zones and an explicit “unknown” option. A motion model can smooth the camera's path, but should be added only if it beats simpler location estimates.
-
-**Camera location and object location are different.** A worker in room 303 may film a pipe in room 304. Store the object's location separately, and leave it unknown when the view cannot establish it.
-
-<a id="42-a-spatial-score-to-test-not-assume" class="legacy-anchor" aria-hidden="true"></a>
-
-Use location to favor plausible clips, rather than discard everything else. After the final ranking and cutoff, keep some candidates found without inferred location constraints. This prevents one wrong room estimate from hiding all the evidence. Explicit dates or other user-given scope still apply.
-
-<a id="34-identity-across-wearers-and-days" class="legacy-anchor" aria-hidden="true"></a>
-
-Link observations across cameras or days only when identifiers, place and appearance support the same item. Preserve uncertain alternatives and original records. Similar-looking pipes are not necessarily the same pipe. Cross-camera event order also needs synchronized timestamps with known uncertainty.
-
-<a id="5-retrieval-that-completes-an-evidence-set" class="legacy-anchor" aria-hidden="true"></a>
-<a id="51-plan-retrieve-diversify-and-inspect" class="legacy-anchor" aria-hidden="true"></a>
-
-### 4. Answer with a complete set of evidence
-
-For the pipe question, define three **evidence slots**: identify P7 and W3, find work on that item, and find the later covered state or closing event. The search should fill these slots, rather than return many similar clips from one moment.
-
-1. **Search several ways.** Use text keys, exact identifiers and visual features, with time, place and wearer information where relevant. Keep a global search path.
-2. **Combine and diversify results.** Prefer clips that cover different required observations. Compare simple ranking methods before adding a complex spatial score.
-3. **Expand the context.** Read neighboring clips and, when available, relevant episode members.
-4. **Check the source.** Inspect original video with timestamps. Verify the item, action, visible state and temporal relationship, including contradictory evidence.
-5. **Fill gaps or stop.** Search again for missing slots within a fixed budget. Return supported claims with citations and name unresolved parts.
-
-For clips with text keys, a useful starting score is MERIT's **best-matching key**:
-
-$$
-s(i,Q)=\max_{k\in K_i}\cos\bigl(e(Q),e(k)\bigr).
-$$
-
-Here $Q$ is the question, $K_i$ contains clip $i$'s keys, and $e$ turns text into an embedding. The clip receives the similarity of its closest key. Compare this with rank fusion, which combines the result lists from different searches without directly adding incompatible scores.
-
-<a id="52-a-worked-history-query" class="legacy-anchor" aria-hidden="true"></a>
-
-![A pipe history needs evidence of the item, the intervening work and the later covered wall.](/media/research-architecture/evidence-slots.svg)
-
-*Figure 2. Three complementary observations support a history. A similar-looking item in another room cannot replace the missing evidence.*
-
-For example, Tuesday's clips may show P7 exposed and material being applied around it. Wednesday's clip may show W3 covered. This supports a description of visible work before the wall was **observed covered**. It does not prove the exact closing time, hidden workmanship or formal acceptance.
-
-<a id="53-verification-is-another-fallible-stage" class="legacy-anchor" aria-hidden="true"></a>
-
-If the work clip cannot be found, say so. Missing evidence does not prove that the work never happened. A verifier can also make mistakes, so compare its judgments with human review. Questions asking for **all events, counts or complete timelines** need the full-scope approach below.
-
-<a id="6-daily-reports-need-complete-scope-traversal" class="legacy-anchor" aria-hidden="true"></a>
-
-### 5. Write reports from the whole period
-
-A daily report should start from **every recorded interval in scope**, including leaves without an episode assignment. Keep uncertain zones and unusable footage visible in the coverage record.
-
-The workflow is: **list the intervals → collect observations → merge repeated views of the same event → check source claims → write the report**. Group the result by work item and zone, with video references and gaps.
-
-A report should distinguish observed actions, visible state changes, attributed speech and reviewed issues. Compute counts from verified records. Merge overlapping camera views only when they show the same event. Recorded activity does not establish total labor time, site-wide productivity or accepted completion.
-
-Reviewing every interval prevents search from silently skipping part of the shift. It does not guarantee that the model notices every event, so test report coverage separately from factual accuracy.
-
-<a id="8-stage-2-readers-over-physical-work-item-histories" class="legacy-anchor" aria-hidden="true"></a>
-<a id="81-separate-physical-state-process-and-acceptance" class="legacy-anchor" aria-hidden="true"></a>
-
-### 6. Add assessment after the memory works
-
-Stage 2 adds specialized readers over the same evidence. Each physical work item gets a dated state history. Keep **observed state**, **inferred process stage** and **formal acceptance** separate. Missing footage must not turn an expected step into a completed one. Allow rework, removal and valid alternative work sequences.
-
-<a id="82-three-readers-and-one-shared-evidence-contract" class="legacy-anchor" aria-hidden="true"></a>
-
-| Reader | Question | Extra evidence needed |
+| Work and protocol | Published evidence [E] | Architectural consequence |
 | --- | --- | --- |
-| Progress | What changed, and how much work is visible? | Defined work items, scope and milestone rules. |
-| Quality | Does this visible feature meet its requirement? | The applicable requirement and a suitable view or measurement. |
-| Process | Were the required steps and effects observed? | Prerequisites, allowed sequences and relevant observations. |
+| [MERIT](/papers/2026-choi-merit/), EgoLifeQA, 500 questions, GPT-5 | QA 71.2%, retrieval hit .56, target-time oracle with neighbor filtering 83.2%. [Tables 1, 3, 5](https://arxiv.org/html/2608.07663v2). | Reproduce the baseline and separate retrieval failure from reader failure. |
+| [EM²Mem](/papers/2026-chen-em2mem/), matched evidence and 300-second retrieval budget | Macro target-time coverage C@300 (%) is 36.7 for bound records versus 31.2 for four-channel rank fusion. Reported paired gain +5.4 points, 95% interval [2.6, 8.3]. QA gain is uncertain. [Table 12, Appendix C.4](https://arxiv.org/html/2609.00551v1). | Test construction-time binding against late fusion on identical evidence. |
+| [EgoCITE](/papers/2026-zhang-egocite/), EgoR1 granularity ablation | Fine, coarse and combined indices yield hit rates 55.7%, 59.3% and 62.7%. [Appendix D](https://arxiv.org/html/2608.12627v1). | Test complementary resolutions while keeping the fine path accessible. |
+| [GEB](/papers/2026-ren-geb/), MultiHop-EgoQA, three-minute clips, Qwen3.5-35B | All-interval overlap is .521 overall and .235 on questions needing at least three intervals. [Table 3](https://arxiv.org/html/2609.38155v1). | A single retrieval hit substantially understates the multi-evidence problem. |
+| [S-EMBER](/papers/2026-wang-s-ember/), audio-free smart-glasses episodes | Gemini 3.1 Pro obtains overall free-form accuracy 47.83% but joint correct-answer/IoU≥.5 score .297. [Table 3](https://arxiv.org/html/2607.02689v2). | Evaluate the answer and its temporal grounding jointly. |
 
-![Progress, quality and process readers reuse shared evidence, with item scope and requirements.](/media/research-architecture/assessment-readers.svg)
+**MERIT is the primary control.** Its 30-second records have event, dialogue, object/state and summary keys. Maximum key similarity retrieves seeds, neighboring captions supply context, and iterative text search precedes final visual QA. Preserve Qwen3-Embedding-4B, top-k=10 for GPT-5 or 5 for Qwen3-VL-8B, ±2 neighbors, the five-round cap and released frame policy. Keep our three-round variant separate. [Method and Appendix A](https://arxiv.org/html/2608.07663v2).
 
-*Figure 3. Specialist results return to memory with their sources and uncertainty. Human acceptance remains a separate record.*
+Two qualifications matter. WorldMM's **65.6** belongs to MERIT Table 1, while **63.2** is the reproduced baseline in Table 5. The released EgoLife setup also uses human-derived captions, not an automatic construction-video pipeline. [WorldMM preprocessing](https://github.com/wgcyeo/WorldMM/blob/main/script/2_preprocess.sh). Run that reproduction and the automatic-caption site baseline as different experiments.
 
-Keep requirement versions and assessment sources so a later decision can be reviewed. A finished surface cannot reveal hidden work. Start with one work package and compare passive helmet footage with deliberate checkpoint views before training a specialist. [IndustReal](/papers/2024-schoonbeek-industreal/) offers a useful state-based evaluation example, although its participants deliberately expose assembly states to the camera. [Source, §§4–5](https://openaccess.thecvf.com/content/WACV2024/papers/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.pdf).
+The [MERIT evaluator](https://github.com/choi-yeeun/MERIT/blob/6edea6e/eval/hit_rate_egolife.py) permits a temporal margin, and the [README command](https://github.com/choi-yeeun/MERIT#egolifeqa) sets it to two clips, or ±60 seconds. This any-target hit does not measure complete evidence or what survives filtering. Its memory-construction accounting also excludes initial captioning. Neither headline is an end-to-end reliability or cost guarantee.
 
-<a id="7-automatic-findings-get-their-own-experiment" class="legacy-anchor" aria-hidden="true"></a>
+### 3. Memory construction: preserve evidence before abstraction
 
-Automatic monitoring is a separate experiment. Choose one visible condition after inspecting real footage, such as materials occupying a known route. Initially keep candidates for human review outside operational reports. Measure missed events, precision and false candidates per hour when the condition can be observed. Use normal footage, not just selected positive examples. Reports should not depend on this detector succeeding.
+#### 3.1 Stable leaves and typed observations
 
-<a id="2-what-the-literature-supports" class="legacy-anchor" aria-hidden="true"></a>
+The baseline partitions each recording into non-overlapping **30-second evidence leaves**. This is a stable indexing address, not a claim about task duration or the finest possible citation. Preserve the shorter final leaf and capture gaps. Decoded source timestamps allow localization below the anchor length.
 
-### 7. What we take from existing research
+For leaf $i$, store the source interval $I_i=[t_i^0,t_i^1]$, recording and wearer IDs, local-to-shared clock mapping with uncertainty, sampled-frame times, modality provenance, visibility indicators and writer version. Retain original video, raw captions, text keys and an independently searchable visual representation. An opaque or blurred interval remains in the coverage ledger even if it produces no reliable observation.
 
-**[MERIT](/papers/2026-choi-merit/) is the main baseline.** It builds several keys per short clip, retrieves likely evidence, reads neighbors and searches again when needed. On EgoLifeQA with GPT-5 it reports 71.2% QA accuracy. This rises to 83.2% when the relevant time points are supplied and neighboring clips are filtered. The first diagnostic is therefore to separate failure to find evidence from failure to understand it. [Tables 1, 3 and 5](https://arxiv.org/html/2608.07663v2).
+An observation is an atomic proposition with an evidence pointer. Its schema distinguishes **observed**, **spoken** and **inferred** content, action participants, object candidates, state, polarity, location uncertainty, valid-as-of time and verification status. “A person fastens a panel” does not identify the wearer as that actor. “The worker says it is complete” is an attributed statement. Neither proves accepted completion.
 
-Reproduce MERIT's published configuration first. Treat the automatic-caption construction-video version as a separate baseline: the released EgoLife pipeline uses human-derived captions. Its tolerant retrieval hit rate also does not measure whether every required observation was found. [Evaluator](https://github.com/choi-yeeun/MERIT/blob/6edea6e/eval/hit_rate_egolife.py), [caption preprocessing](https://github.com/wgcyeo/WorldMM/blob/main/script/2_preprocess.sh).
+The initial writer samples frames at 1 fps, measures image quality, emits a structured visual description and keys, and runs timestamped OCR and optional ASR separately. This rate is a starting budget [P]. Brief events can fall between frames, and query-time rereading cannot retrieve a completely unindexed event by itself. Measure omission by event duration and keep a periodic higher-density audit of otherwise unselected intervals.
 
-**[EM²Mem](/papers/2026-chen-em2mem/) supports testing short anchors.** At a 300-second evidence budget, its reported target-time coverage is 36.7% for 30-second anchors versus 30.3% for 60-second anchors. This motivates our baseline, but does not prove that 30 seconds is best for construction footage or that episode summaries help. [Table 14](https://arxiv.org/html/2609.00551v1).
+#### 3.2 Construction keys retain relationships
 
-**[EgoCITE](/papers/2026-zhang-egocite/)** motivates combining short and longer memory units. **[GEB](/papers/2026-ren-geb/)** motivates evaluating whether several required intervals are recovered together. These results guide experiments, rather than validate the proposed STEM combination. [EgoCITE, Appendix D](https://arxiv.org/html/2608.12627v1), [GEB, Table 3](https://arxiv.org/html/2609.38155v1).
+Store one provenance-linked record per leaf, with several searchable views. The important addition is binding: **who did what to which object, with what visible effect**. A bag containing “panel,” “drill” and “installed” cannot distinguish carrying a panel past an installation from fastening that panel to a stud.
 
-<a id="9-evaluation-must-follow-the-evidence-through-the-system" class="legacy-anchor" aria-hidden="true"></a>
-<a id="91-a-diagnostic-pilot-and-a-larger-validation-study" class="legacy-anchor" aria-hidden="true"></a>
-
-### 8. What to test and build next
-
-Start with about **120 camera-hours and 120 screening questions** across days and wearers in one work package. Include repeated rooms, poor views, brief events and questions the footage cannot answer. Label the evidence each answer needs and a sample of complete reporting periods. This diagnoses memory failures, but is too small to establish reliability for rare anomalies.
-
-Keep all views of the same event and work instance in the same data split. Tune prompts and thresholds on development data, then freeze them before a later test. Compare methods with the same captioner, reader and available evidence when measuring the effect of memory changes.
-
-<a id="93-experiments-that-decide-which-components-survive" class="legacy-anchor" aria-hidden="true"></a>
-
-| Order | Experiment | Decision |
+| Field | Example | Rule |
 | --- | --- | --- |
-| 1 | Reproduce MERIT. Give the reader the correct clips separately. | Is the main problem capture, retrieval or interpretation? |
-| 2 | Compare captions, MERIT keys and construction keys. Add exact-ID and visual search. | Do richer records recover more required evidence? |
-| 3 | Test video alone, with audio, with location, and with both. | Which inputs help which questions? |
-| 4 | Compare leaves alone with episode overlays and neighboring-clip expansion. | Does hierarchy help beyond simple context? |
-| 5 | Test complete-scope reports and claim verification. | Are the facts supported, and is important visible work covered? |
+| Activity and participants | `fasten / board / to metal stud` | Preserve verb–object–target roles. |
+| Object and material state | `W3 / exposed frame / partly boarded` | Keep identity evidence separate from appearance similarity. |
+| Process step | `position → fasten → inspect` | Store observed steps without inventing missing transitions. |
+| Quality cue | `visible gap at joint` | Observation only. A verdict needs a requirement and suitable view. |
+| Progress cue | `open frame → partly covered` | Link before/after observations of the same item. |
+| Literal identifier | `room 304`, `wall W3`, product code | Retain raw OCR/ASR, confidence and normalized code for lexical search. |
+| Place | Floor/zone candidate and source | Distinguish camera location from the viewed object's location. |
+| Speech | Timestamped statement, speaker unresolved if necessary | Keep what was said distinct from what was seen. |
+| Summary and raw caption | Short retrieval phrase plus original wording | Keep detail available when normalized fields are wrong. |
 
-<a id="92-exact-evidence-metrics" class="legacy-anchor" aria-hidden="true"></a>
+Generate compatible fields together, with null for unavailable evidence. A small trade vocabulary can normalize synonyms without creating speculative observations. Polarity remains an explicit field, but retain literal negative wording too. Retrieval may find both “guardrail visible” and “guardrail not visible,” after which predicate checking must distinguish them. A narrow view cannot establish scene-wide absence.
 
-The main retrieval measure is **complete evidence recall**: the share of answerable questions for which the system retrieves at least one sufficient set of observations.
+The first comparison holds the captioner fixed: flat caption, four MERIT keys, construction keys, then a bound-record embedding. Compare MaxSim with reciprocal-rank fusion of lexical, textual and visual lists. A separate writer experiment tests joint caption/key generation, because changing the captioner and key scheme together would confound their effects.
+
+For unit-normalized query and non-null key embeddings $u_Q$ and $v_{ik}$, the simple scores are
 
 $$
-\mathrm{AR}=\frac{N_{\mathrm{complete}}}{N_{\mathrm{answerable}}}.
+\begin{aligned}
+s_{\mathrm{max}}(i,Q)&=\max_k u_Q^\top v_{ik},\\
+s_{\mathrm{RRF}}(i,Q)&=\sum_{c:\,i\in L_c}\frac{w_c}{\kappa+\operatorname{rank}_{L_c}(i)}.
+\end{aligned}
 $$
 
-A complete set must contain every required interval in one valid bundle, from the correct recordings. For the first experiment, count an interval as found when at least 80% is covered, without extra temporal tolerance. Check item identity, temporal relationships and claim support separately in the final answer. A partial answer does not count as a complete, correct answer.
+$L_c$ is a channel's candidate list with ranks starting at 1, $w_c\ge0$ its development-fixed weight and $\kappa\gt0$ a rank-smoothing constant. An absent channel contributes zero. A leaf without text keys remains eligible through other branches. Rank fusion avoids directly adding cosine similarity to uncalibrated lexical scores. Construction keys must earn their place: MERIT's smaller-reader ablation finds a larger gain from neighbor filtering than from keys. [Appendix Table 11](https://arxiv.org/html/2608.07663v2).
 
-Compare at **300 unique source-seconds per question**, including neighbors, repeated searches and source verification, and report frame and token use too. Count different camera views separately. Inspect failures at each stage: candidate search, selection, filtering, source reading and final citations.
+Use frozen captioner, reader and visual-encoder revisions initially. Qwen3-VL-8B is an economical reader starting point from the reproduction, with a stronger reader tested on identical oracle evidence. A pooled visual encoder such as SigLIP2 is a candidate access path, not a proven best construction representation. Pin prompts, sampling, image resolution and token budgets with model revisions.
 
-<a id="10-promotion-gates-and-computation" class="legacy-anchor" aria-hidden="true"></a>
+#### 3.3 Work episodes add context without replacing leaves
 
-For a later supervised MVP, proposed targets are **80% complete evidence recall, 95% supported claims and 90% recall of important visible report events**. These are separate goals, not achieved results. Define important events in advance, freeze targets after the diagnostic pilot, and require confidence bounds to meet them before promotion. Also report incomplete answers and unsupported claims so the system cannot appear accurate by saying very little.
+[EM²Mem](/papers/2026-chen-em2mem/) reports C@300 of **36.7, 30.3, 23.9 and 26.0** for 30-second, 60-second, 120-second and scene-boundary-proxy anchors respectively. Those alternatives replace the anchors. They do not test our overlay or prove that 30 seconds is optimal on construction video. [Table 14](https://arxiv.org/html/2609.00551v1).
 
-Measure the full cost of writing memory, building episodes, searching and checking video. Keep a new component only if it improves evidence quality or achieves comparable quality at lower cost. Add location models, compression and specialist readers only when a measured failure justifies them.
+We therefore propose a variable-length **Work Episode** over retained leaves. Candidate boundaries arise from sustained action/tool changes, state transitions, zone changes, capture gaps and caption/visual drift. Hysteresis reduces fragmentation caused by brief head turns. A bounded LLM merge pass groups adjacent compatible leaves, preserving child IDs, boundary evidence and uncertainty. Travel, waiting and interruptions receive explicit labels. A resumed task links to an earlier episode through a task-instance hypothesis.
 
-<a id="11-implementation-order-and-contribution" class="legacy-anchor" aria-hidden="true"></a>
+Episode summaries and zone/day inventories are additional access paths. Search still reaches every leaf directly, so a faulty parent cannot hide all of its children. Preserve observed state changes explicitly, and score episode-boundary errors through their effects on retrieval, reporting and later step recognition. A long caption alone is not a successful hierarchy.
 
-**Build first:** source records and MERIT reproduction, construction keys and time/place search, multi-evidence answers, then complete-scope reports. Test episode hierarchy next. Quality, progress and monitoring follow once the evidence and capture conditions support their claims.
+Hierarchy and compression are separate experiments. An hour contains 120 thirty-second leaves. Adding six ten-minute summaries while retaining every leaf caption **adds** work. Selective captioning or delta descriptions could reduce expensive calls [H], but require their own recall–cost study. An inherited description must be flagged and must never become new visual evidence.
 
-<a id="12-provenance-and-limits" class="legacy-anchor" aria-hidden="true"></a>
+#### 3.4 Identity across wearers and days
 
-This proposal combines the two supplied architecture drafts. The original drafts remain unchanged. No Aligned footage was processed and no benchmark was reproduced for this page. The linked studies supply the research basis, while the figures illustrate the proposed design.
+Shared memory keeps per-recording observations and tentative `same_event`, `same_item` and `same_place` links. Candidate links require compatible time, location and discriminating identifiers or visual evidence. Source records remain distinct. Jointly visible separate objects veto a same-object merge, but do not prevent two objects participating in one event. [GEB](/papers/2026-ren-geb/) supplies an instance-association precedent, not a construction identity guarantee.
+
+Wearer identity comes from device assignment. Actor and speaker identity require separate evidence. Deduplicate repeated views only for a specified physical-event count, preserving alternative associations when uncertain. [MA-EgoQA](/papers/2026-kim-ma-egoqa/) motivates shared-event retrieval, while its prepared multi-person memories do not validate automatic camera synchronization or cross-site re-identification.
+
+For different cameras, assert that event A precedes B only when A's latest plausible end is earlier than B's earliest plausible start. Otherwise order is unknown. Within one continuous recording, source timing still establishes local order. State histories retain contradictory observations and their dates instead of overwriting an earlier fact with a plausible narrative.
+
+### 4. Spatial memory as uncertain evidence
+
+#### 4.1 Start with zones, earn a motion model
+
+Let $\mathcal Z$ be versioned floor/zone IDs and $\bot$ mean unknown location. Each leaf has a camera-zone distribution $q_i^{\mathrm{cam}}$ and, where supported, object-zone distributions $q_{i,j}^{\mathrm{obj}}$ for individual observations/item candidates $j$. One leaf may show objects in different rooms. A worker standing in room 303 can film a pipe in room 304. If the object's location lacks evidence, keep it unknown. Camera position may be a flagged weak prior, never a silent identity assignment.
+
+Reliable supplied zone IDs need only a spatial index. Otherwise combine OCR/voice anchors, visual place recognition and available sensors. IMU and barometer may constrain motion and floor changes. UWB/BLE require infrastructure and site calibration. VIO/SLAM may add relative trajectories, but registration, repeated floors and changing layouts remain separate problems. A full metric reconstruction is not a Stage 1 prerequisite.
+
+An HMM (hidden Markov model) is one candidate [P] for the camera trajectory, with hidden zone $z_i$, observations $o_i$, likelihood $L_i(z)$ and transition probabilities $A_i(z',z)$. Writing $q_i=q_i^{\mathrm{cam}}$,
+
+$$
+\widetilde q_i(z)=L_i(z)\sum_{z'\in\mathcal Z\cup\{\bot\}}A_i(z',z)q_{i-1}(z'),
+\qquad
+q_i(z)=\frac{\widetilde q_i(z)}{\sum_u\widetilde q_i(u)}.
+$$
+
+The transition model follows plausible adjacency and elapsed time, with explicit paths into and out of unknown. These wearer-motion transitions do not smooth stationary-object locations. Missing observations should weaken localization rather than fabricate certainty. Fit and calibrate likelihoods on development data. Report wrong-floor errors, confidence calibration, assignable share and robustness across map revisions. Compare this model with independent labels and simple anchor propagation before adopting it.
+
+Post-shift reports may use smoothing with the full shift. Causal monitoring must use only the filtering distribution available at that moment. Future anchors, episode summaries and later item associations cannot leak into a replay of an earlier decision.
+
+#### 4.2 A spatial score to test, not assume
+
+For an object-location query, let $\pi_Q(z)$ distribute its intended place over known zones, and let $q_i(z)$ abbreviate the query-relevant candidate's $q_{i,j}^{\mathrm{obj}}(z)$. Preserve alternative item associations instead of selecting the most convenient room. Define a smoothed archive prior $b(z)$ with positive mass on every known zone. The expected match under that prior is $B_Q$:
+
+$$
+\begin{aligned}
+B_Q&=\sum_{z\in\mathcal Z}b(z)\pi_Q(z),\\
+m_i&=\sum_{z\in\mathcal Z}q_i(z)\pi_Q(z)+q_i(\bot)B_Q,\\
+\operatorname{LR}_z(i,Q)&=\frac{(1-\epsilon)m_i+\epsilon B_Q}{B_Q}.
+\end{aligned}
+$$
+
+Here $0\lt\epsilon\le1$ is a development-selected reliability shrinkage parameter. Measured location mistakes inform its choice, but their raw error rate is not automatically a valid mixture probability. If location is entirely unknown, $m_i=B_Q$ and the ratio is exactly 1. Its log contribution is therefore zero. As reliability weakens toward $\epsilon=1$, the term becomes neutral for every leaf.
+
+A candidate ranking score is
+
+$$
+S(i,Q)=s_{\mathrm{fuse}}(i,Q)-\lambda_t d(I_i,T_Q)
++w_Q\log\operatorname{LR}_z(i,Q).
+$$
+
+$s_{\mathrm{fuse}}$ is a normalized retrieval score, $d$ measures temporal distance in a declared unit, and $w_Q$ captures how confidently the query identifies a place. When no time or place is specified, set the corresponding weight to zero. This is a **ranking heuristic**, not a calibrated posterior: captions can contain location evidence already, and channels are dependent. Clamp or tune the spatial contribution on development data to avoid overwhelming semantic relevance.
+
+The simpler baseline is rank fusion plus soft zone preference. Compare both with no location and hard filtering that retains unknowns. Crucially, reserve candidates selected without inferred spatial constraints **after final reranking and truncation**. Merely adding a global branch before a common score cutoff offers no protection if that cutoff removes all of its candidates. Explicit user time scope and causal cutoffs still apply to every branch.
+
+Location and audio answer different questions. Repeated-room discrimination may benefit from location [H], whereas reasons, instructions and named materials may depend on speech. Use a 2×2 audio/location experiment with video fixed, and separate passive speech, deliberate voice notes and sensor-derived location. A spoken room identifier must not accidentally appear in a supposedly audio-free sensor comparison.
+
+### 5. Retrieval that completes an evidence set
+
+#### 5.1 Plan, retrieve, diversify and inspect
+
+A typed query plan specifies the contract, scope, item candidates and **evidence slots**. A slot states a proposition to establish and the evidence needed for it. Slots are revisable hypotheses, since the query may contain a false premise or the first retrieved event may concern another item.
+
+The algorithm below serves bounded find/compare/history questions. `timeline`, `find_all` and `count` instead enumerate the complete scope, check the requested predicate and compute aggregates from supported records, using the reporting traversal below. Top-k retrieval cannot establish completeness. Archive-wide exhaustive answers remain experimental until event recall and visibility coverage are validated.
+
+| Step | Proposed algorithm [P] | Failure to measure |
+| --- | --- | --- |
+| 1. Plan | Resolve explicit time, place and wearer scope. Decompose comparison/history questions into slots. | Wrong date, item binding or assumed event. |
+| 2. Candidate union | Per slot, search text keys, literal identifiers and visual features through global, time, place, wearer and optional episode branches. | Gold evidence never enters the pool. |
+| 3. Fuse and diversify | Compare MaxSim, rank fusion and spatial scoring. Allocate candidates across slots and retain an unscoped reserve. | Repeated clips crowd out a necessary day or state. |
+| 4. Expand | Read temporal neighbors, initially ±2 leaves, and relevant episode children. | A boundary or caption filter drops decisive context. |
+| 5. Verify and localize | Inspect original frames with explicit time offsets, checking identity, predicate, visibility and contradictions. | Right clip, wrong interpretation or timestamp. |
+| 6. Complete | Search missing or contradicted slots again, initially up to three rounds within one total budget. | Fluent answer despite an unsupported premise. |
+| 7. Answer | Emit supported atomic claims with source intervals and unresolved parts. | Citation does not entail the stated claim. |
+
+Temporal references to events require two hops. “Before close-in” first locates the closing event, then searches the preceding period for the same item. Carry ambiguity in the anchor rather than committing to the earliest vaguely similar clip. Bounded search ends with a supported answer, a supported partial answer, or a specific explanation of the gap.
+
+Deduplication uses content and source overlap, not just episode membership. Two distinct required moments inside one episode must survive. Count unique source-seconds, decoded frames and model tokens across expansion, retries and verification. Budgeting only seeds would make a method with unlimited neighboring context appear artificially efficient.
+
+#### 5.2 A worked history query
+
+![Three evidence slots for a pipe history: an exposed pipe, work on the same item, and the later closed wall. A similar-room distractor is rejected, and an unresolved acceptance slot remains explicit.](/media/research-architecture/evidence-slots.svg)
+
+*Figure 2. An illustrative query, not a model result. Matching the wall/item and temporal relation is necessary in addition to recovering each clip. Accepted quality is a separate question with a separate evidence requirement.*
+
+Suppose Tuesday's video shows pipe P7 at wall W3 in room 304, another interval shows a worker applying material around that penetration, and Wednesday's video shows W3 covered. These observations support a dated description of visible work before the later covered state. They do not establish the material specification, hidden workmanship or formal acceptance. A lookalike penetration in room 305 cannot fill the second slot merely because its visual embedding is closer.
+
+If only the first and third slots are supported, the answer describes those observations and says the intervening work was not found in the searched evidence. “Not recorded” requires an independently established recording gap. “Not visually decidable” applies when the footage exists but cannot resolve the property. “Stale” means the last supported state predates the requested one. None implies that the work did not happen.
+
+#### 5.3 Verification is another fallible stage
+
+The verifier reads original evidence and labels each claim supported, contradicted or unresolved. A different model can expose correlated caption errors, but it is not independent ground truth. Keep rejected candidates and their reasons so false rejection can be audited. On a development sample, compare the verifier with blinded human replay and report its precision/retention trade-off.
+
+[S-EMBER](/papers/2026-wang-s-ember/) shows that explicit temporal offsets can materially change grounding, motivating a fixed timestamp interface for every reader. Its experiments concern minutes-long episodes, so long-archive retrieval still needs a separate evaluation. Compare localized reading with whole-episode reading at a declared budget. Fine localization and high-resolution inspection may need different frame allocations.
+
+### 6. Daily Reports need complete scope traversal
+
+Reporting begins with **all recorded intervals in scope**, including leaves without an episode assignment. Enumerate episodes where available and reconcile their children against the leaf ledger. Probable-zone and unknown-zone intervals remain visible in the coverage accounting. The first implementation can traverse leaves directly, so reporting does not wait for the hierarchy to prove useful.
+
+The pipeline is **scope enumeration → typed observation inventory → event deduplication → source verification → report composition**. Verification selects adequate source views for every retained claim. The writer groups facts by work item and zone, preserves attribution and dates, and carries citations through composition. Any newly introduced factual assertion returns to verification.
+
+This still guarantees neither that the writer noticed every visible event nor that every event was recorded. Measure both separately. A coverage-oriented traversal prevents top-k omission by design, while annotated event recall measures remaining perception and selection losses. Sampling only “interesting” clips is unsuitable for evaluating report completeness.
+
+| Report component | Supported content | Required qualification |
+| --- | --- | --- |
+| Observed work | Actions, materials and equipment actually seen. | State the recording scope and unresolved actor/item identity. |
+| State changes | Before/after observations linked to the same item. | Distinguish changed appearance from correct installation. |
+| Attributed statements | Instructions, explanations or completion claims in speech. | Name the source type and retain disagreement with visual evidence. |
+| Reviewed issues | Confirmed visible observations and separately reviewed candidates. | Never silently promote a detector output into an accepted finding. |
+| Coverage | Recorded/usable time, missing intervals, uncertain zones and last observations. | No footage is not evidence of no work or no issue. |
+
+Counts and observed durations are computed from verified records. Merge shared-clock intervals across cameras only after supported same-event/item association, retaining ranges for ambiguous identity or timing. Retrieval cost still counts each camera view separately. A footage-based duration is observed time, not total labor time. Delivery quantities, workforce totals, hidden inspections and accepted completion require their own records.
+
+Construction reporting is a useful but limited precedent. [Mengiste et al.](/papers/2025-mengiste-weekly-progress/) combine images and schedule data, yet one reporting case estimated ceiling completion at 60% against a 21% reference. That is an individual case error, not a general accuracy estimate. [Table 1](https://www.iaarc.org/publications/fulltext/084_Automating_Weekly_Construction_Activity_Progress_Reporting__Leveraging_AI-Driven_Workflows.pdf). Fluent reporting and accurate progress measurement are separate outcomes.
+
+### 7. Automatic findings get their own experiment
+
+Choose **one observable candidate class after inspecting real footage and label availability**. Materials visibly occupying a registered route segment is a reasonable candidate, not a predetermined winner. Its pipeline would check route visibility, localize the route and material, verify spatial consistency in the source, and consolidate repeated views into one event. Adjacent staging, passing carriage and foreground projection are essential hard negatives. Image-plane overlap alone does not establish physical occupancy or permitted clearance.
+
+Evaluate the detector on complete normal periods and independently annotated observable positives. A visibility gate's false rejection counts as a miss when humans judge the condition visible. Keep a separate denominator for genuinely unobservable events. Shadow candidates remain outside operational reports until the class passes its gate, after which human review still distinguishes observation from a compliance decision.
+
+[PROVIA](/papers/2026-wen-provia/) illustrates why a generic monitoring promise is premature: under a nominal validation budget of 0.1 false alarms **per minute**, it reports recall .154 on CaptainCook4D, .098 on IndustReal and .034 on HoloAssist. The IndustReal time-only control reaches .294. These are procedural benchmarks, not route-occupancy estimates. [Table IV](https://arxiv.org/html/2609.20638v1).
+
+For a single class, let $\rho$ be true-event incidence per eligible hour, $r$ event recall and $f$ false candidates per eligible hour. Under a stationary counting approximation with duplicates consolidated,
+
+$$
+\operatorname{Precision}\approx\frac{\rho r}{\rho r+f}.
+$$
+
+At assumed $\rho=0.03$, $r=0.8$ and $f=0.1$, precision is only **19.4%**. This calculation is not an estimate of Aligned prevalence. It explains why low false-candidate burden and adequate precision must both be measured at natural prevalence. Enriched positive samples help diagnose errors but cannot directly estimate deployment precision.
+
+### 8. Stage 2: readers over physical work-item histories
+
+![Stage 2 reads shared evidence through progress, quality and process readers. Requirements and item scope feed the readers, and typed assessment records return with provenance. Human acceptance is recorded separately.](/media/research-architecture/assessment-readers.svg)
+
+*Figure 3. Specialist readers reuse Stage 1 evidence. Additional records preserve item identity, uncertainty, requirements and model version. An acceptance record has its own authority and evidence source.*
+
+#### 8.1 Separate physical state, process and acceptance
+
+For work item $j$, maintain a history of observations and a belief over task-specific physical states $x_{j,t}$. Keep inferred process stage and human acceptance as separate fields. A simple filtering candidate is
+
+$$
+p(x_{j,t}\mid O_{j,\le t})\propto
+p(O_{j,t}\mid x_{j,t})\sum_{x'}p(x_{j,t}\mid x_{j,t-1}=x')p(x_{j,t-1}=x'\mid O_{j,\lt t}).
+$$
+
+The observation likelihood must account for visibility and uncertain item association. Missing evidence supplies no positive state observation. Transition uncertainty may increase over an unobserved period, but the model must not insert a completed step merely because the procedure expects it. Allow removal and rework, so state and progress can regress. This model is an experiment [P], not an inference guarantee.
+
+A partial-order task model expresses prerequisites and valid alternatives rather than one rigid sequence. Events can affect multiple items. Compare it with an ordered-list prompted reader and a current-frame/state accumulator before introducing a complex graph. Invalid transitions and unseen valid branches remain observable outputs instead of being masked away by hard constraints.
+
+Requirements are versioned records with item scope, effective time, expected property, tolerance, required evidence type and an observation window. Pre-concealment evidence cannot be recreated from a later finished surface. A revised requirement triggers a new assessment linked to the old one. It does not rewrite what the camera observed. The distinction between sensed execution and acceptance follows the design argument in [From Sensing to Scheduling](/papers/2026-isaac-sensing-scheduling/), which is conceptual rather than an empirical validation.
+
+#### 8.2 Three readers and one shared evidence contract
+
+| Reader | Additional inputs and procedure [P] | Output and limitation |
+| --- | --- | --- |
+| Progress | Enumerated work items, milestone definitions and coverage. Retrieve and reconcile item-state observations. | Observed quantities and unknown scope. Accepted quantities require acceptance evidence. |
+| Quality | Applicable requirement, suitable close-up and calibrated geometry when dimensions matter. Inspect the relevant component. | A requirement-specific observation with uncertainty. Hidden bonding, torque and pressure need other evidence. |
+| Process | Task definition, allowable order and action/effect observations. Test prerequisites and later state. | Supported transition or unresolved deviation. An unseen step is not automatically omitted. |
+
+Each reader writes typed assessment records with source intervals, requirement version, method version, uncertainty and review status. Preserve the original observations beneath them. Corrections require an original condition, a corrective attempt, a later same-item state and any required acceptance record. An object disappearing from view cannot close the issue.
+
+Evaluate state macro-F1, transition F1 and delay, wrong-item association and false restoration separately. Compare quantities with an independent survey or inspection, scoring observed-installed and accepted quantities independently. Process tests include valid alternative orders, missing views and time-only controls. A reader's success on correct oracle clips does not establish success on its own retrieved history.
+
+[IndustReal](/papers/2024-schoonbeek-industreal/) motivates explicit assembly states, but participants deliberately expose those states between steps. [IMPACT](/papers/2026-wen-impact/) separates state, transitions and recovery, showing why recognizing a final state does not validate the correction history. These are useful mechanisms and evaluation designs, with capture conditions different from incidental helmet footage. [IndustReal, §§4–5](https://openaccess.thecvf.com/content/WACV2024/papers/Schoonbeek_IndustReal_A_Dataset_for_Procedure_Step_Recognition_Handling_Execution_Errors_WACV_2024_paper.pdf), [IMPACT, Tables 1 and 5](https://arxiv.org/html/2604.10409v1).
+
+Start with one tagged partition-wall package and independently checked pre-concealment observations. Compare passive helmet footage with directed checkpoint views before training a specialist. Freeze general models initially, then use local labels for calibration or a narrow detector. A large general model, full scene graph or end-to-end RL objective enters only after a measured failure justifies it.
+
+### 9. Evaluation must follow the evidence through the system
+
+#### 9.1 A diagnostic pilot and a larger validation study
+
+Begin with approximately **120 camera-hours** across several days and wearers in one work package [P]. This is a diagnostic envelope for observability and memory, not a sufficient sample of rare anomalies. Include repeat rooms, overlapping cameras, interruptions, poor views, brief events, unsuccessful corrections and normal periods. Add distractor footage to measure archive growth without pretending it increases the number of independently labeled events.
+
+Collect a question diary and annotate at least 120 screening questions, including answerable, partially answerable, unanswerable and false-premise cases. For answerable questions, experts identify one or more **minimal sufficient evidence bundles** with decisive intervals, recording identity and required item bindings. Independently annotate a stratified set of full reporting periods to expose events that retrieval pooling never proposes. Double-label consequential examples and adjudicate disagreements.
+
+Group all views of a physical event, the same work instance and its correction chain into one split. Use development data for prompts, calibration, thresholds and budgets, then freeze a later test. Keep unseen-worker and eventually unseen-site tests separate. Estimate final sample size from paired disagreement and the desired confidence-interval width. A 120-question screen cannot establish a tight two-point noninferiority claim or a rare-error guarantee.
+
+The larger **480–960 camera-hour** envelope from the longer proposal is an optional archive/field stage. It is not an alternative estimate of the same pilot and not sufficient by itself to validate rare findings. Eligible negative exposure, natural positives, independent event clusters and question diversity determine what can be concluded.
+
+#### 9.2 Exact evidence metrics
+
+For question $Q$, let $\mathcal G_Q$ contain its valid sufficient bundles. Each $G\in\mathcal G_Q$ is a set of decisive, nonzero-duration source intervals. Let $R$ be the union of returned intervals, grouped by recording. The diagnostic match rule uses $\eta=0.8$ coverage without a temporal margin:
+
+$$
+\begin{aligned}
+c(g,R)&=\frac{|g\cap R_{\mathrm{recording}(g)}|}{|g|},\\
+\operatorname{IR}(Q)&=\max_{G\in\mathcal G_Q}\frac{1}{|G|}\sum_{g\in G}\mathbf1[c(g,R)\ge\eta],\\
+\operatorname{AR}(Q)&=\mathbf1\!\left[\exists G\in\mathcal G_Q\;\forall g\in G:\ c(g,R)\ge\eta\right].
+\end{aligned}
+$$
+
+**IR** is required-interval recall. **AR**, the primary retrieval endpoint, is all-required bundle success. Macro-average each over answerable questions. For unanswerable questions, score correct abstention, false-premise rejection and unsupported assertions separately. The joint answer/evidence score is the fraction of all answerable test questions answered completely and correctly, with every required proposition supported, correct item bindings and a sufficient cited bundle. Partial answers and abstentions score zero on this endpoint.
+
+Evaluate curves at **120, 300 and 600 unique source-seconds per question**, counting cameras separately and including expansion and verification. The five-minute point is the initial comparison budget. Report questions whose minimum sufficient bundle exceeds the budget without removing them from the main denominator. Retain temporal IoU at .3/.5 for moment localization and continuous target-time coverage as separate metrics. These proposed coverage rules are stricter than a tolerant any-hit score and are not numerically interchangeable with it.
+
+Instrument a recall funnel: candidate pool → selected intervals → deduplication → context filter → verified evidence → final citations. Record actual inspected frame timestamps and cumulative frame/token expenditure. An interval being returned does not prove its decisive frames were read. Oracle-evidence reader tests use gold intervals but the same declared reader/frame budget, with a separately reported unconstrained human reference.
+
+Report factual precision, citation support, salient-event recall, brief-event recall, wrong-item/zone binding, stale claims and risk–coverage curves. Define answer coverage as the share of questions fully answered, with partial answers reported separately. Also measure omissions of required supported propositions, so a one-fact answer cannot pass by avoiding full abstention. Reports need both claim precision and independently annotated event recall. Monitoring adds event recall, false candidates per eligible negative hour and per recorded hour, duplicates and delay from first observable evidence.
+
+#### 9.3 Experiments that decide which components survive
+
+| Experiment | Controlled comparison | Decision it resolves |
+| --- | --- | --- |
+| E0 · Reproduce and instrument | Published MERIT, margin 0/2, seed and post-filter evidence, exact model/configuration versions. | Establish the reference and locate retrieval losses. |
+| E1 · Observability and reader | Human and model on oracle clips, then directed views/reference records. | Change capture or narrow the claim when evidence itself is insufficient. |
+| E2 · Keys and fusion | Same captions: flat, four keys, construction schema, bound record, MaxSim/RRF. Add visual and literal channels individually. | Retain fields and branches only when they improve recall or the cost frontier. |
+| E3 · Space and audio | Video, +audio, +location, +both. Compare no/soft/hard location and reserved global retrieval. | Measure marginal value by query type without modality leakage. |
+| E4 · Location inference | Supplied labels, anchor propagation, HMM, sensor tiers and oracle labels. Inject correlated wrong-floor runs. | Decide whether probabilistic motion inference earns its complexity. |
+| E5 · Temporal memory | 10/30/60-second leaves, overlay on/off, neighbor versus episode expansion. Separately vary caption density. | Separate hierarchy value from compression and brief-event loss. |
+| E6 · Multi-evidence and scale | Global top-k, slot allocation, re-querying and content deduplication as rooms/days/wearers increase. | Measure all-required recall, false merges and the cost of repetition. |
+| E7 · Grounded reader | Localized versus whole-episode reading, explicit offsets, stronger reader on the same evidence. | Identify residual interpretation and localization failures. |
+| E8 · Reports | Complete-scope inventory versus retrieved/free-form summaries, then verification and composition. | Measure factuality, omissions and reviewer effort independently. |
+| E9 · One candidate class | Same complete periods, with/without detector candidates, blinded event review. | Establish useful findings at natural prevalence and acceptable burden. |
+| E10 · Specialist readers | Same reader on retrieved versus oracle evidence, current-frame and simple procedure baselines. | Separate Stage 2 reasoning from retrieval and process-prior shortcuts. |
+| E11 · Capture windows | Passive helmet, directed checkpoint and independent inspection for selected items. | Bound the quality/progress claims the capture can support. |
+
+Run E0–E1 first. Use E2–E8 as development ablations, then preregister one primary final comparison. E11 precedes substantial Stage 2 modeling, even though it is listed last. A sequential ladder helps implementation, but factorial or leave-one-component-out comparisons are needed to detect interactions. Freeze captioner, reader, evidence availability and budgets whenever attributing a gain to memory.
+
+### 10. Promotion gates and computation
+
+The following are **proposed supervised-MVP targets [T]**, chosen as explicit review criteria rather than predicted performance. Calibrate the achievable scope during the pilot, then freeze thresholds before the final test. Point estimates screen the pilot. For promotion, minimum-quality targets apply to one-sided 95% lower confidence bounds and error limits to upper bounds, with clustering by independent event/work instance or shift as appropriate. Too few independent clusters leaves the gate unresolved. Compression uses paired differences, and the zero-critical-error rule remains a separate screen.
+
+| Capability | Proposed gate [T] | Additional protection |
+| --- | --- | --- |
+| QA retrieval | IR ≥90%, AR ≥80% at 300 source-seconds. | Report single/multiple intervals, wrong-room and long-bundle slices. |
+| Answer and citations | Factual precision and citation support each ≥95%. | Unsupported substantive claims ≤2% of emitted claims, unnecessary incompleteness ≤15% of answerable questions, plus joint correctness/grounding. |
+| Daily Reports | Supported atomic claims ≥95%, salient observable-event recall ≥90%. | Predefine salience, also report unweighted and brief-event recall. |
+| Compression | At most two percentage points loss in AR and brief-event recall. | Paired lower confidence bound on each difference must exceed −2 points. |
+| One visible condition | Event precision ≥90%, observable-event recall ≥80%. | Upper 95% false-candidate-rate bound ≤0.1 per eligible negative hour, at natural prevalence. |
+| Item/acceptance integrity | No unsupported acceptance or critical wrong-item correction in the gate set. | Zero observed failures is a screening condition, not proof of a zero failure rate. |
+
+These targets replace, rather than average, the incompatible 97%/95% criteria and tolerance-based recall floors in the source proposals. Claim precision, citation support and event coverage have different denominators. A model with high citation support can still omit most of the day's work. A model with high retrieval recall can still misinterpret what it found.
+
+For zero false candidates over $T$ eligible negative hours, the homogeneous-Poisson one-sided 95% upper rate is $-\log(0.05)/T\approx3/T$. Thirty such hours give roughly 0.1/hour. Clustering, changing conditions and positive-event scarcity still require a larger field study. Time spent looking away does not increase eligible exposure.
+
+Select the simplest architecture meeting the chosen evidence constraints. A complex layer should improve a preregistered paired endpoint or achieve equal quality at lower measured cost. Small uncertain gains remain provisional research, rather than becoming mandatory infrastructure. Keep [WorldMM](/papers/2026-yeo-worldmm/)-style graph memory as a later comparison for persistent relationship failures, with identical readers and evidence budgets.
+
+Computation must include the writer and the expected query load:
+
+$$
+C_{\mathrm{total}}(N)=C_{\mathrm{decode}}+C_{\mathrm{perception}}+C_{\mathrm{index}}
++C_{\mathrm{episodes}}+\sum_{q=1}^{N}C_{\mathrm{retrieve+read+verify}}(q).
+$$
+
+Choose consistent accounting units, such as money or accelerator-seconds, and report token counts and storage separately. Compare equal-evidence and equal-compute settings explicitly. Generated observations, API calls, frames and tokens are not interchangeable. Record ingestion throughput, availability lag, per-question mean/p95 latency and rereading cost. No Aligned GPU/API savings are established by this proposal.
+
+### 11. Implementation order and contribution
+
+| Priority | Build or evaluate | Completion criterion |
+| --- | --- | --- |
+| P0 | Source/clock ledger, truth set, exact MERIT and oracle reader. | Reproducible decomposition of capture, memory, retrieval and reader errors. |
+| P0 | Construction keys, independent visual/literal retrieval, time/zone access and complete evidence slots. | Paired evidence-recall comparison under a fixed budget. |
+| P0 | Source verification and coverage-based reports. | Claim support and event coverage pass separately. |
+| P1 | Work Episode overlay and zone/day summaries. | Benefit beyond leaf retrieval and ordinary temporal expansion. |
+| P1 | HMM or other probabilistic location inference. | Improvement over simple labels/propagation with calibrated uncertainty. |
+| P2 | One shadow detector and selected specialist readers. | Independent per-class/state/capture gates, including failed corrections. |
+
+The first contribution to test is **spatially informed, construction-specific evidence retrieval with complete-bundle evaluation**. Hierarchy is an additional hypothesis. Compression is another. Neither is a prerequisite for the first useful report. Stage 2 inherits the evidence contract and adds the task knowledge and capture conditions needed for stronger claims.
+
+The research succeeds if it identifies which observations survive memory construction, which necessary intervals can be recovered at realistic budgets, and which conclusions remain defensible after replaying the source. General quality assessment follows only where those three questions have satisfactory answers.
+
+### 12. Provenance and limits
+
+This proposal consolidates the two supplied November 5 architecture drafts and the requested comparison. It keeps STEM's retrieval detail, adds complete-scope reporting and explicit work-item/acceptance states, and treats motion inference, fusion and hierarchy as experiments. The original drafts remain unchanged. Primary-source pointers above identify the methods, tables and code supporting the central claims. The wiki notes preserve broader source qualifications.
+
+No Aligned video was processed, no research model was trained and no benchmark result was independently reproduced for this page. The upstream drafts had different source access, so inaccessible studies and speculative cost estimates are not used as validation here. Figures illustrate the proposed system and invented examples, not measured outputs. Independent document reviews and website checks validate consistency and presentation, not the scientific performance of STEM.
